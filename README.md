@@ -1,30 +1,31 @@
-# OAE Website
+# OAE - Oluwatosin Academy of Excellence
 
-Welcome to the official **OAE (Oluwatosin Academy of Excellence)** website.
+Helping students succeed through smart educational tools, guidance, and quality learning resources.
 
-OAE is an educational platform focused on helping students succeed through quality learning resources, admission guidance, tutorials, quizzes, and smart educational tools.
+## What OAE Does
+OAE is an educational platform focused on helping students with:
+- JAMB guidance and updates
+- WAEC / NECO support
+- Post-UTME preparation
+- Admission prediction tools
+- Interactive quizzes
+- Educational tutorials
+- Tech learning resources
+- Student support communities
 
 ## Features
 - Admission Chance Predictor
-- Post-UTME Practice & Resources
-- Interactive Quizzes
-- Educational News & Updates
-- Student Support Tools
-- Mobile-Friendly Experience
+- Aggregate Score Calculator
+- Practice Quizzes
+- School-specific admission updates
+- Smart educational tools
+- OAE student communities
 
-## Mission
-To make quality education, guidance, and smart learning tools accessible to every student.
+## Follow OAE
+- TikTok: https://www.tiktok.com/@oaeofficial123
+- YouTube: https://www.youtube.com/@oaeofficial123
+- Twitter (X): https://x.com/oaeofficial123
 
-## Built With
-- HTML
-- CSS
-- JavaScript
 
-## Live Preview
-Coming soon on Cloudflare Pages 🚀
-
-## Connect With OAE
-Educational support and updates for students across Nigeria.
-
----
-*_Building smarter education for everyone._*
+## Copyright
+© 2026 OAE (Oluwatosin Academy of Excellence). All Rights Reserved.
