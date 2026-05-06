@@ -11,7 +11,7 @@ from google.genai import types
 # ==========================================
 # IMPORTANT: Put your Gemini API key here or set it as an environment variable
 # export GEMINI_API_KEY="your_api_key"
-API_KEY = "AIzaSyBn6uiRkoB7-3Y2AWuRpmQhZItJWBZ9fRE"
+API_KEY = "THAT KAIN THING"
 
 # We only process .htm files that have "Placeholder notes" in them
 BASE_DIR = os.path.join(os.path.dirname(os.path.abspath(__file__)), "notes")
