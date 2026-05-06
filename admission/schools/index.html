@@ -1,0 +1,2738 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nigerian Higher Institutions Directory | Browse All Universities, Polytechnics & Colleges | OAE</title>
+    <meta name="description" content="Complete directory of all Nigerian higher institutions - universities, polytechnics, and colleges of education. Find admission guides, cut-off marks, and Post-UTME requirements for every school.">
+    <meta name="keywords" content="Nigerian universities, polytechnics, colleges of education, admission guide, university cut-off marks, federal universities, state universities, private universities, OAE">
+    <link rel="canonical" href="/admission/schools/index.htm">
+    <meta name="robots" content="index,follow">
+
+    <!-- Open Graph -->
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Nigerian Higher Institutions Directory | All Universities & Polytechnics | OAE">
+    <meta property="og:description" content="Browse all Nigerian universities, polytechnics, and colleges of education with their admission guides, cut-off marks, and Post-UTME requirements.">
+    <meta property="og:url" content="/admission/schools/index.htm">
+    <meta property="og:image" content="/oae.png">
+
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Nigerian Higher Institutions Directory | OAE">
+    <meta name="twitter:description" content="Find all Nigerian universities, polytechnics, and colleges with admission details and cut-off marks.">
+    <meta name="twitter:image" content="/oae.png">
+
+    <!-- JSON-LD structured data -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "WebPage",
+        "name": "Nigerian Higher Institutions Directory",
+        "description": "Complete directory of all Nigerian universities, polytechnics, and colleges of education.",
+        "url": "/admission/schools/index.htm",
+        "publisher": {
+            "@type": "Organization",
+            "name": "Oluwatosin Academy of Excellence",
+            "logo": {
+                "@type": "ImageObject",
+                "url": "/oae.png"
+            }
+        }
+    }
+    </script>
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/remixicon@4.0.0/remixicon.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="/Assets/css/post-jamb-navbar.css">
+    <link rel="stylesheet" href="/Assets/css/post-jamb.css">
+    <link rel="stylesheet" href="/Assets/css/footer.css">
+    <style>
+        /* Schools Index Specific Styles */
+        .schools-index-hero {
+            background: linear-gradient(135deg, var(--green) 0%, var(--darkgreen) 100%);
+            color: white;
+            padding: 60px 20px;
+            text-align: center;
+        }
+
+        .schools-index-hero h1 {
+            font-size: 2.5rem;
+            margin-bottom: 15px;
+            font-weight: 700;
+        }
+
+        .schools-index-hero p {
+            font-size: 1.1rem;
+            max-width: 700px;
+            margin: 0 auto 30px;
+            line-height: 1.6;
+            opacity: 0.95;
+        }
+
+        .schools-search-section {
+            display: flex;
+            justify-content: center;
+            gap: 10px;
+            margin-bottom: 20px;
+            flex-wrap: wrap;
+        }
+
+        .schools-search-section input,
+        .schools-search-section button {
+            padding: 12px 20px;
+            border: none;
+            border-radius: 8px;
+            font-size: 1rem;
+        }
+
+        .schools-search-section input {
+            width: 300px;
+            max-width: 100%;
+            background: white;
+            color: var(--oae-dark);
+        }
+
+        .schools-search-section button {
+            background: white;
+            color: var(--green);
+            font-weight: 600;
+            cursor: pointer;
+            transition: all 0.3s ease;
+        }
+
+        .schools-search-section button:hover {
+            background: var(--card);
+            transform: translateY(-2px);
+        }
+
+        .category-filter-nav {
+            background: white;
+            border-bottom: 2px solid var(--card-border);
+            padding: 20px;
+            display: flex;
+            justify-content: center;
+            gap: 15px;
+            flex-wrap: wrap;
+            position: sticky;
+            top: 0;
+            z-index: 100;
+        }
+
+        .category-filter-btn {
+            padding: 10px 20px;
+            border: 2px solid var(--card-border);
+            background: white;
+            color: var(--oae-dark);
+            border-radius: 25px;
+            cursor: pointer;
+            font-weight: 600;
+            transition: all 0.3s ease;
+            font-size: 0.95rem;
+        }
+
+        .category-filter-btn:hover,
+        .category-filter-btn.active {
+            background: var(--green);
+            color: white;
+            border-color: var(--green);
+        }
+
+        .schools-container {
+            max-width: 1400px;
+            margin: 0 auto;
+            padding: 40px 20px;
+        }
+
+        .school-category-section {
+            margin-bottom: 60px;
+        }
+
+        .school-category-section h2 {
+            font-size: 1.8rem;
+            color: var(--green);
+            margin-bottom: 10px;
+            font-weight: 700;
+        }
+
+        .school-category-section .category-description {
+            color: var(--muted);
+            margin-bottom: 30px;
+            font-size: 0.95rem;
+            line-height: 1.6;
+        }
+
+        .school-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+            gap: 20px;
+            margin-bottom: 30px;
+        }
+
+        .school-card {
+            background: white;
+            border: 2px solid var(--card-border);
+            border-radius: 12px;
+            padding: 20px;
+            text-align: center;
+            text-decoration: none;
+            color: inherit;
+            transition: all 0.3s ease;
+            cursor: pointer;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            gap: 10px;
+            min-height: 120px;
+        }
+
+        .school-card:hover {
+            border-color: var(--green);
+            background: var(--card);
+            transform: translateY(-5px);
+            box-shadow: var(--shadow);
+        }
+
+        .school-card .school-abbr {
+            font-weight: 700;
+            color: var(--green);
+            font-size: 1.1rem;
+        }
+
+        .school-card .school-name {
+            font-size: 0.9rem;
+            color: var(--oae-dark);
+            line-height: 1.4;
+        }
+
+        .stats-bar {
+            background: var(--card);
+            padding: 20px;
+            display: flex;
+            justify-content: center;
+            gap: 40px;
+            flex-wrap: wrap;
+            margin-bottom: 20px;
+            border-radius: 12px;
+            text-align: center;
+        }
+
+        .stat {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 8px;
+        }
+
+        .stat .stat-number {
+            font-size: 2rem;
+            font-weight: 700;
+            color: var(--green);
+        }
+
+        .stat .stat-label {
+            font-size: 0.85rem;
+            color: var(--muted);
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+        }
+
+        .no-results {
+            text-align: center;
+            padding: 40px 20px;
+            color: var(--muted);
+        }
+
+        .no-results i {
+            font-size: 3rem;
+            margin-bottom: 15px;
+            opacity: 0.5;
+        }
+
+        @media (max-width: 768px) {
+            .schools-index-hero h1 {
+                font-size: 1.8rem;
+            }
+
+            .schools-search-section input {
+                width: 100%;
+            }
+
+            .school-grid {
+                grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+            }
+
+            .stats-bar {
+                gap: 20px;
+            }
+
+            .category-filter-nav {
+                overflow-x: auto;
+                -webkit-overflow-scrolling: touch;
+            }
+        }
+
+        /* Hidden class for filtered items */
+        .school-category-section.hidden {
+            display: none;
+        }
+
+        .school-card.hidden {
+            display: none;
+        }
+    </style>
+</head>
+<body>
+    <!-- OAE Navbar -->
+    <nav class="oae-navbar">
+        <div class="oae-logo">
+            <a href="../../Index.htm">
+               <img class="logo-quiz" src="../../oae.png" alt="OAE">
+            </a>
+        </div>
+
+        <div class="oae-search-section">
+            <div class="oae-search-container">
+                <i class="fas fa-search"></i>
+                <input type="text" placeholder="Search JAMB, schools, courses...">
+                <button class="oae-search-btn">Search</button>
+            </div>
+        </div>
+
+        <ul class="oae-nav-links">
+            <li><a href="/admission/post-jamb/">Post-JAMB</a></li>
+            <li><a href="/admission/">Admission</a></li>
+            <li><a href="/admission/schools/">Schools</a></li>
+            <li><a href="/admission/updates/">Updates</a></li>
+        </ul>
+
+        <button class="oae-join-btn" id="oaeJoinBtn">Join OAE</button>
+        
+        <button class="oae-hamburger" id="oaeHamburger">
+            <i class="fas fa-bars"></i>
+        </button>
+
+        <div class="oae-mobile-menu" id="oaeMobileMenu">
+            <ul class="oae-mobile-links">
+                <li><a href="/admission/post-jamb/">Post-JAMB</a></li>
+                <li><a href="/admission/">Admission</a></li>
+                <li><a href="/admission/schools/">Schools</a></li>
+                <li><a href="/admission/updates/">Updates</a></li>
+                <li>
+                    <button class="oae-join-mobile" id="oaeJoinMobile">
+                        <i class="fas fa-user-plus"></i> Join OAE
+                    </button>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- HERO SECTION -->
+    <section class="schools-index-hero">
+        <div class="hero-container">
+            <h1>Explore All Nigerian Higher Institutions</h1>
+            <p>Browse admission guides, cut-off marks, and Post-UTME requirements for universities, polytechnics, and colleges of education across Nigeria.</p>
+            <div class="schools-search-section">
+                <input type="text" id="schoolSearch" placeholder="Search schools by name or abbreviation...">
+                <button onclick="searchSchools()"><i class="fas fa-search"></i> Search</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- CATEGORY FILTER NAV -->
+    <nav class="category-filter-nav">
+        <button class="category-filter-btn active" onclick="filterCategory('all')">All Institutions</button>
+        <button class="category-filter-btn" onclick="filterCategory('federal')">Federal Universities</button>
+        <button class="category-filter-btn" onclick="filterCategory('state')">State Universities</button>
+        <button class="category-filter-btn" onclick="filterCategory('polytechnic')">Polytechnics</button>
+        <button class="category-filter-btn" onclick="filterCategory('college')">Colleges of Education</button>
+        <button class="category-filter-btn" onclick="filterCategory('private')">Private Universities</button>
+        <button class="category-filter-btn" onclick="filterCategory('specialized')">Specialized Institutions</button>
+    </nav>
+
+    <!-- STATS BAR -->
+    <div class="schools-container">
+        <div class="stats-bar">
+            <div class="stat">
+                <div class="stat-number">700+</div>
+                <div class="stat-label">Higher Institutions</div>
+            </div>
+            <div class="stat">
+                <div class="stat-number">74</div>
+                <div class="stat-label">Federal Universities</div>
+            </div>
+            <div class="stat">
+                <div class="stat-number">71</div>
+                <div class="stat-label">State Universities</div>
+            </div>
+            <div class="stat">
+                <div class="stat-number">167</div>
+                <div class="stat-label">Private Universities</div>
+            </div>
+        </div>
+    </div>
+
+    <!-- SCHOOLS CONTENT -->
+    <div class="schools-container">
+        <!-- Federal Universities -->
+        <div class="school-category-section" data-category="federal">
+            <h2><i class="fas fa-university"></i> Federal Universities</h2>
+            <p class="category-description">Explore admission requirements and cut-off marks for Nigeria's federal universities - typically more competitive but offering quality education across all states.</p>
+            <div class="school-grid">
+                <a href="/admission/schools/atbu.html" class="school-card">
+                    <span class="school-abbr">ATBU</span>
+                    <span class="school-name">Abubakar Tafawa Balewa University, Bauchi</span>
+                </a>
+                <a href="/admission/schools/adeyemi.html" class="school-card">
+                    <span class="school-abbr">AFUED</span>
+                    <span class="school-name">Adeyemi Federal University of Education, Ondo</span>
+                </a>
+                <a href="/admission/schools/adun.html" class="school-card">
+                    <span class="school-abbr">ADUN</span>
+                    <span class="school-name">Admiralty University, Ibusa, Delta State</span>
+                </a>
+                <a href="/admission/schools/aaau.html" class="school-card">
+                    <span class="school-abbr">AAAU</span>
+                    <span class="school-name">African Aviation and Aerospace University, Abuja</span>
+                </a>
+                <a href="/admission/schools/abu.html" class="school-card">
+                    <span class="school-abbr">ABU</span>
+                    <span class="school-name">Ahmadu Bello University, Zaria</span>
+                </a>
+                <a href="/admission/schools/afit.html" class="school-card">
+                    <span class="school-abbr">AFIT</span>
+                    <span class="school-name">Air Force Institute of Technology, Kaduna</span>
+                </a>
+                <a href="/admission/schools/funai.html" class="school-card">
+                    <span class="school-abbr">FUNAI</span>
+                    <span class="school-name">Alex Ekwueme Federal University, Ndufu-Alike, Ebonyi State</span>
+                </a>
+                <a href="/admission/schools/alvanikoku.html" class="school-card">
+                    <span class="school-abbr">AIFCE</span>
+                    <span class="school-name">Alvan Ikoku Federal University of Education, Owerri, Imo State</span>
+                </a>
+                <a href="/admission/schools/buk.html" class="school-card">
+                    <span class="school-abbr">BUK</span>
+                    <span class="school-name">Bayero University, Kano</span>
+                </a>
+                <a href="/admission/schools/dnufums.html" class="school-card">
+                    <span class="school-abbr">DNUFUMS</span>
+                    <span class="school-name">David Nweze Umahi Federal University of Medical Sciences, Uburu, Ebonyi State</span>
+                </a>
+                <a href="/admission/schools/fubk.html" class="school-card">
+                    <span class="school-abbr">FUBK</span>
+                    <span class="school-name">Federal University, Birnin Kebbi, Kebbi State</span>
+                </a>
+                <a href="/admission/schools/fud.html" class="school-card">
+                    <span class="school-abbr">FUD</span>
+                    <span class="school-name">Federal University, Dutse, Jigawa State</span>
+                </a>
+                <a href="/admission/schools/fudma.html" class="school-card">
+                    <span class="school-abbr">FUDMA</span>
+                    <span class="school-name">Federal University, Dutsin-Ma, Katsina State</span>
+                </a>
+                <a href="/admission/schools/fugashua.html" class="school-card">
+                    <span class="school-abbr">FUGASHUA</span>
+                    <span class="school-name">Federal University, Gashua, Yobe State</span>
+                </a>
+                <a href="/admission/schools/fugus.html" class="school-card">
+                    <span class="school-abbr">FUGUS</span>
+                    <span class="school-name">Federal University, Gusau, Zamfara State</span>
+                </a>
+                <a href="/admission/schools/fukashere.html" class="school-card">
+                    <span class="school-abbr">FUKASHERE</span>
+                    <span class="school-name">Federal University, Kashere, Gombe State</span>
+                </a>
+                <a href="/admission/schools/fulafia.html" class="school-card">
+                    <span class="school-abbr">FULAFIA</span>
+                    <span class="school-name">Federal University, Lafia, Nasarawa State</span>
+                </a>
+                <a href="/admission/schools/fulokoja.html" class="school-card">
+                    <span class="school-abbr">FULOKOJA</span>
+                    <span class="school-name">Federal University, Lokoja, Kogi State</span>
+                </a>
+                <a href="/admission/schools/fuotuoke.html" class="school-card">
+                    <span class="school-abbr">FUOTUOKE</span>
+                    <span class="school-name">Federal University, Otuoke, Bayelsa State</span>
+                </a>
+                <a href="/admission/schools/fuoye.html" class="school-card">
+                    <span class="school-abbr">FUOYE</span>
+                    <span class="school-name">Federal University, Oye-Ekiti, Ekiti State</span>
+                </a>
+                <a href="/admission/schools/fuwukari.html" class="school-card">
+                    <span class="school-abbr">FUWUKARI</span>
+                    <span class="school-name">Federal University, Wukari, Taraba State</span>
+                </a>
+                <a href="/admission/schools/funaab.html" class="school-card">
+                    <span class="school-abbr">FUNAAB</span>
+                    <span class="school-name">Federal University of Agriculture, Abeokuta, Ogun State</span>
+                </a>
+                <a href="/admission/schools/fuabb.html" class="school-card">
+                    <span class="school-abbr">FUABB</span>
+                    <span class="school-name">Federal University of Agriculture, Bassam-Biri, Bayelsa State</span>
+                </a>
+                <a href="/admission/schools/fuam.html" class="school-card">
+                    <span class="school-abbr">FUAM</span>
+                    <span class="school-name">Federal University of Agriculture, Makurdi, Benue State</span>
+                </a>
+                <a href="/admission/schools/fuamubi.html" class="school-card">
+                    <span class="school-abbr">FUAMUBI</span>
+                    <span class="school-name">Federal University of Agriculture, Mubi, Adamawa State</span>
+                </a>
+                <a href="/admission/schools/fuaz.html" class="school-card">
+                    <span class="school-abbr">FUAZ</span>
+                    <span class="school-name">Federal University of Agriculture, Zuru, Kebbi State</span>
+                </a>
+                <a href="/admission/schools/fuadsi.html" class="school-card">
+                    <span class="school-abbr">FUADSI</span>
+                    <span class="school-name">Federal University of Agriculture and Development Studies, Iragbiji, Osun State</span>
+                </a>
+                <a href="/admission/schools/fuask.html" class="school-card">
+                    <span class="school-abbr">FUASK</span>
+                    <span class="school-name">Federal University of Applied Sciences, Kachia, Kaduna State</span>
+                </a>
+                <a href="/admission/schools/fuek.html" class="school-card">
+                    <span class="school-abbr">FUEK</span>
+                    <span class="school-name">Federal University of Education, Kano, Kano State</span>
+                </a>
+                <a href="/admission/schools/fuez.html" class="school-card">
+                    <span class="school-abbr">FUEZ</span>
+                    <span class="school-name">Federal University of Education, Zaria, Kaduna State</span>
+                </a>
+                <a href="/admission/schools/fueto.html" class="school-card">
+                    <span class="school-abbr">FUETO</span>
+                    <span class="school-name">Federal University of Environment and Technology, Ogoni, Rivers State</span>
+                </a>
+                <a href="/admission/schools/fuhsa.html" class="school-card">
+                    <span class="school-abbr">FUHSA</span>
+                    <span class="school-name">Federal University of Health Sciences, Azare, Bauchi State</span>
+                </a>
+                <a href="/admission/schools/fuhsi.html" class="school-card">
+                    <span class="school-abbr">FUHSI</span>
+                    <span class="school-name">Federal University of Health Sciences, Ila Orangun, Osun State</span>
+                </a>
+                <a href="/admission/schools/fuhsk.html" class="school-card">
+                    <span class="school-abbr">FUHSK</span>
+                    <span class="school-name">Federal University of Health Sciences, Katsina, Katsina State</span>
+                </a>
+                <a href="/admission/schools/fuhskw.html" class="school-card">
+                    <span class="school-abbr">FUHSKW</span>
+                    <span class="school-name">Federal University of Health Sciences, Kwale, Delta State</span>
+                </a>
+                <a href="/admission/schools/fuhso.html" class="school-card">
+                    <span class="school-abbr">FUHSO</span>
+                    <span class="school-name">Federal University of Health Sciences, Otukpo, Benue State</span>
+                </a>
+                <a href="/admission/schools/fuhto.html" class="school-card">
+                    <span class="school-abbr">FUHTO</span>
+                    <span class="school-name">Federal University of Health Technology, Otukpo, Benue State</span>
+                </a>
+                <a href="/admission/schools/fummsa.html" class="school-card">
+                    <span class="school-abbr">FUMMSA</span>
+                    <span class="school-name">Federal University of Medicine and Medical Sciences, Abeokuta, Ogun State</span>
+                </a>
+                <a href="/admission/schools/fupre.html" class="school-card">
+                    <span class="school-abbr">FUPRE</span>
+                    <span class="school-name">Federal University of Petroleum Resources, Effurun, Delta State</span>
+                </a>
+                <a href="/admission/schools/futa.html" class="school-card">
+                    <span class="school-abbr">FUTA</span>
+                    <span class="school-name">Federal University of Technology, Akure, Ondo State</span>
+                </a>
+                <a href="/admission/schools/futb.html" class="school-card">
+                    <span class="school-abbr">FUTB</span>
+                    <span class="school-name">Federal University of Technology, Babura, Jigawa State</span>
+                </a>
+                <a href="/admission/schools/futia.html" class="school-card">
+                    <span class="school-abbr">FUTIA</span>
+                    <span class="school-name">Federal University of Technology, Ikot Abasi, Akwa Ibom State</span>
+                </a>
+                <a href="/admission/schools/futminna.html" class="school-card">
+                    <span class="school-abbr">FUTMINNA</span>
+                    <span class="school-name">Federal University of Technology, Minna, Niger State</span>
+                </a>
+                <a href="/admission/schools/futo.html" class="school-card">
+                    <span class="school-abbr">FUTO</span>
+                    <span class="school-name">Federal University of Technology, Owerri, Imo State</span>
+                </a>
+                <a href="/admission/schools/futes.html" class="school-card">
+                    <span class="school-abbr">FUTES</span>
+                    <span class="school-name">Federal University of Technology and Environmental Sciences, Iyin Ekiti, Ekiti State</span>
+                </a>
+                <a href="/admission/schools/futd.html" class="school-card">
+                    <span class="school-abbr">FUTD</span>
+                    <span class="school-name">Federal University of Transportation, Daura, Katsina State</span>
+                </a>
+                <a href="/admission/schools/mouau.html" class="school-card">
+                    <span class="school-abbr">MOUAU</span>
+                    <span class="school-name">Michael Okpara University of Agriculture, Umudike, Abia State</span>
+                </a>
+                <a href="/admission/schools/mautech.html" class="school-card">
+                    <span class="school-abbr">MAUTECH</span>
+                    <span class="school-name">Modibbo Adama University of Technology, Yola, Adamawa State</span>
+                </a>
+                <a href="/admission/schools/noun.html" class="school-card">
+                    <span class="school-abbr">NOUN</span>
+                    <span class="school-name">National Open University of Nigeria, Lagos</span>
+                </a>
+                <a href="/admission/schools/nust.html" class="school-card">
+                    <span class="school-abbr">NUST</span>
+                    <span class="school-name">National University of Science and Technology, Abuja</span>
+                </a>
+                <a href="/admission/schools/naub.html" class="school-card">
+                    <span class="school-abbr">NAUB</span>
+                    <span class="school-name">Nigerian Army University, Biu, Borno State</span>
+                </a>
+                <a href="/admission/schools/nda.html" class="school-card">
+                    <span class="school-abbr">NDA</span>
+                    <span class="school-name">Nigerian Defence Academy, Kaduna</span>
+                </a>
+                <a href="/admission/schools/nmu.html" class="school-card">
+                    <span class="school-abbr">NMU</span>
+                    <span class="school-name">Nigerian Maritime University, Okerenkoko, Delta State</span>
+                </a>
+                <a href="/admission/schools/polac.html" class="school-card">
+                    <span class="school-abbr">POLAC</span>
+                    <span class="school-name">Nigerian Police Academy, Wudil, Kano State</span>
+                </a>
+                <a href="/admission/schools/unizik.html" class="school-card">
+                    <span class="school-abbr">UNIZIK</span>
+                    <span class="school-name">Nnamdi Azikiwe University, Awka, Anambra State</span>
+                </a>
+                <a href="/admission/schools/oau.html" class="school-card">
+                    <span class="school-abbr">OAU</span>
+                    <span class="school-name">Obafemi Awolowo University, Ile-Ife, Osun State</span>
+                </a>
+                <a href="/admission/schools/uniabuja.html" class="school-card">
+                    <span class="school-abbr">UNIABUJA</span>
+                    <span class="school-name">University of Abuja, Gwagwalada, FCT</span>
+                </a>
+                <a href="/admission/schools/uniben.html" class="school-card">
+                    <span class="school-abbr">UNIBEN</span>
+                    <span class="school-name">University of Benin, Benin City, Edo State</span>
+                </a>
+                <a href="/admission/schools/unical.html" class="school-card">
+                    <span class="school-abbr">UNICAL</span>
+                    <span class="school-name">University of Calabar, Calabar, Cross River State</span>
+                </a>
+                <a href="/admission/schools/ui.html" class="school-card">
+                    <span class="school-abbr">UI</span>
+                    <span class="school-name">University of Ibadan, Ibadan, Oyo State</span>
+                </a>
+                <a href="/admission/schools/unilorin.html" class="school-card">
+                    <span class="school-abbr">UNILORIN</span>
+                    <span class="school-name">University of Ilorin, Ilorin, Kwara State</span>
+                </a>
+                <a href="/admission/schools/unijos.html" class="school-card">
+                    <span class="school-abbr">UNIJOS</span>
+                    <span class="school-name">University of Jos, Jos, Plateau State</span>
+                </a>
+                <a href="/admission/schools/unilag.html" class="school-card">
+                    <span class="school-abbr">UNILAG</span>
+                    <span class="school-name">University of Lagos, Akoka, Lagos State</span>
+                </a>
+                <a href="/admission/schools/unimaid.html" class="school-card">
+                    <span class="school-abbr">UNIMAID</span>
+                    <span class="school-name">University of Maiduguri, Maiduguri, Borno State</span>
+                </a>
+                <a href="/admission/schools/unn.html" class="school-card">
+                    <span class="school-abbr">UNN</span>
+                    <span class="school-name">University of Nigeria, Nsukka, Enugu State</span>
+                </a>
+                <a href="/admission/schools/uniport.html" class="school-card">
+                    <span class="school-abbr">UNIPORT</span>
+                    <span class="school-name">University of Port Harcourt, Port Harcourt, Rivers State</span>
+                </a>
+                <a href="/admission/schools/uniuyo.html" class="school-card">
+                    <span class="school-abbr">UNIUYO</span>
+                    <span class="school-name">University of Uyo, Uyo, Akwa Ibom State</span>
+                </a>
+                <a href="/admission/schools/udusok.html" class="school-card">
+                    <span class="school-abbr">UDUSOK</span>
+                    <span class="school-name">Usmanu Danfodiyo University, Sokoto, Sokoto State</span>
+                </a>
+            </div>
+        </div>
+
+        <!-- Additional Newly Established Federal Universities -->
+        <div class="school-category-section" data-category="federal">
+            <h3 style="font-size: 1.4rem; color: var(--darkgreen); margin-top: 40px; margin-bottom: 20px;">Additional Newly Established Federal Universities</h3>
+            <div class="school-grid">
+                <a href="/admission/schools/fuato.html" class="school-card">
+                    <span class="school-abbr">FUATO</span>
+                    <span class="school-name">Federal University of Agriculture and Technology, Opolo, Bayelsa State</span>
+                </a>
+                <a href="/admission/schools/fuep.html" class="school-card">
+                    <span class="school-abbr">FUEP</span>
+                    <span class="school-name">Federal University of Education, Pankshin, Plateau State</span>
+                </a>
+                <a href="/admission/schools/fuhsb.html" class="school-card">
+                    <span class="school-abbr">FUHSB</span>
+                    <span class="school-name">Federal University of Health Sciences, Bida, Niger State</span>
+                </a>
+                <a href="/admission/schools/futim.html" class="school-card">
+                    <span class="school-abbr">FUTIM</span>
+                    <span class="school-name">Federal University of Technology, Ilara-Mokin, Ondo State</span>
+                </a>
+                <a href="/admission/schools/futu.html" class="school-card">
+                    <span class="school-abbr">FUTU</span>
+                    <span class="school-name">Federal University of Technology, Umuahia, Abia State</span>
+                </a>
+                <a href="/admission/schools/uaes.html" class="school-card">
+                    <span class="school-abbr">UAES</span>
+                    <span class="school-name">University of Agriculture and Environmental Sciences, Owo, Ondo State</span>
+                </a>
+            </div>
+        </div>
+
+        <!-- State Universities -->
+        <div class="school-category-section" data-category="state">
+            <h2><i class="fas fa-building"></i> State Universities</h2>
+            <p class="category-description">State universities offer accessible higher education with typically lower competition than federal universities. Find cut-off marks and admission details.</p>
+            <div class="school-grid">
+                <a href="/admission/schools/absu.html" class="school-card">
+                    <span class="school-abbr">ABSU</span>
+                    <span class="school-name">Abia State University, Uturu</span>
+                </a>
+                <a href="/admission/schools/aku.html" class="school-card">
+                    <span class="school-abbr">AKU</span>
+                    <span class="school-name">Abdulkadir Kure University, Minna, Niger State</span>
+                </a>
+                <a href="/admission/schools/adsu.html" class="school-card">
+                    <span class="school-abbr">ADSU</span>
+                    <span class="school-name">Adamawa State University, Mubi</span>
+                </a>
+                <a href="/admission/schools/aaua.html" class="school-card">
+                    <span class="school-abbr">AAUA</span>
+                    <span class="school-name">Adekunle Ajasin University, Akungba, Ondo State</span>
+                </a>
+                <a href="/admission/schools/aksu.html" class="school-card">
+                    <span class="school-abbr">AKSU</span>
+                    <span class="school-name">Akwa Ibom State University, Ikot Akpaden</span>
+                </a>
+                <a href="/admission/schools/adustech.html" class="school-card">
+                    <span class="school-abbr">ADUSTECH</span>
+                    <span class="school-name">Aliko Dangote University of Science and Technology, Wudil, Kano State</span>
+                </a>
+                <a href="/admission/schools/aau.html" class="school-card">
+                    <span class="school-abbr">AAU</span>
+                    <span class="school-name">Ambrose Alli University, Ekpoma, Edo State</span>
+                </a>
+                <a href="/admission/schools/bouesti.html" class="school-card">
+                    <span class="school-abbr">BOUESTI</span>
+                    <span class="school-name">Bamidele Olumilua University of Science and Technology, Ikere, Ekiti State</span>
+                </a>
+                <a href="/admission/schools/basug.html" class="school-card">
+                    <span class="school-abbr">BASUG</span>
+                    <span class="school-name">Bauchi State University, Gadau</span>
+                </a>
+                <a href="/admission/schools/bmu.html" class="school-card">
+                    <span class="school-abbr">BMU</span>
+                    <span class="school-name">Bayelsa Medical University, Yenagoa</span>
+                </a>
+                <a href="/admission/schools/bsu.html" class="school-card">
+                    <span class="school-abbr">BSU</span>
+                    <span class="school-name">Benue State University, Makurdi</span>
+                </a>
+                <a href="/admission/schools/bsuast.html" class="school-card">
+                    <span class="school-abbr">BSUAST</span>
+                    <span class="school-name">Benue State University of Agriculture, Science and Technology, Ihugh</span>
+                </a>
+                <a href="/admission/schools/bosu.html" class="school-card">
+                    <span class="school-abbr">BOSU</span>
+                    <span class="school-name">Borno State University, Maiduguri</span>
+                </a>
+                <a href="/admission/schools/coou.html" class="school-card">
+                    <span class="school-abbr">COOU</span>
+                    <span class="school-name">Chukwuemeka Odumegwu Ojukwu University, Uli, Anambra State</span>
+                </a>
+                <a href="/admission/schools/custech.html" class="school-card">
+                    <span class="school-abbr">CUSTECH</span>
+                    <span class="school-name">Confluence University of Science and Technology, Osara, Kogi State</span>
+                </a>
+                <a href="/admission/schools/crutech.html" class="school-card">
+                    <span class="school-abbr">CRUTECH</span>
+                    <span class="school-name">Cross River University of Technology, Calabar</span>
+                </a>
+                <a href="/admission/schools/delsu.html" class="school-card">
+                    <span class="school-abbr">DELSU</span>
+                    <span class="school-name">Delta State University, Abraka</span>
+                </a>
+                <a href="/admission/schools/dsust.html" class="school-card">
+                    <span class="school-abbr">DSUST</span>
+                    <span class="school-name">Delta State University of Science and Technology, Ozoro</span>
+                </a>
+                <a href="/admission/schools/dou.html" class="school-card">
+                    <span class="school-abbr">DOU</span>
+                    <span class="school-name">Dennis Osadebe University, Asaba, Delta State</span>
+                </a>
+                <a href="/admission/schools/ebsu.html" class="school-card">
+                    <span class="school-abbr">EBSU</span>
+                    <span class="school-name">Ebonyi State University, Abakaliki</span>
+                </a>
+                <a href="/admission/schools/esuist.html" class="school-card">
+                    <span class="school-abbr">ESUIST</span>
+                    <span class="school-name">Ebonyi State University of ICT, Science and Technology, Oferekpe</span>
+                </a>
+                <a href="/admission/schools/edsu.html" class="school-card">
+                    <span class="school-abbr">EDSU</span>
+                    <span class="school-name">Edo State University, Uzairue</span>
+                </a>
+                <a href="/admission/schools/eksu.html" class="school-card">
+                    <span class="school-abbr">EKSU</span>
+                    <span class="school-name">Ekiti State University, Ado-Ekiti</span>
+                </a>
+                <a href="/admission/schools/eacoed.html" class="school-card">
+                    <span class="school-abbr">EACOED</span>
+                    <span class="school-name">Emmanuel Alayande University of Education, Oyo</span>
+                </a>
+                <a href="/admission/schools/esut.html" class="school-card">
+                    <span class="school-abbr">ESUT</span>
+                    <span class="school-name">Enugu State University of Science and Technology, Enugu</span>
+                </a>
+                <a href="/admission/schools/tech-u.html" class="school-card">
+                    <span class="school-abbr">TECH-U</span>
+                    <span class="school-name">First Technical University, Ibadan, Oyo State</span>
+                </a>
+                <a href="/admission/schools/gsu.html" class="school-card">
+                    <span class="school-abbr">GSU</span>
+                    <span class="school-name">Gombe State University, Gombe</span>
+                </a>
+                <a href="/admission/schools/gsust.html" class="school-card">
+                    <span class="school-abbr">GSUST</span>
+                    <span class="school-name">Gombe State University of Science and Technology, Kumo</span>
+                </a>
+                <a href="/admission/schools/ibbu.html" class="school-card">
+                    <span class="school-abbr">IBBU</span>
+                    <span class="school-name">Ibrahim Badamasi Babangida University, Lapai, Niger State</span>
+                </a>
+                <a href="/admission/schools/iaue.html" class="school-card">
+                    <span class="school-abbr">IAUE</span>
+                    <span class="school-name">Ignatius Ajuru University of Education, Rumuolumeni, Rivers State</span>
+                </a>
+                <a href="/admission/schools/imsu.html" class="school-card">
+                    <span class="school-abbr">IMSU</span>
+                    <span class="school-name">Imo State University, Owerri</span>
+                </a>
+                <a href="/admission/schools/kasu.html" class="school-card">
+                    <span class="school-abbr">KASU</span>
+                    <span class="school-name">Kaduna State University, Kaduna</span>
+                </a>
+                <a href="/admission/schools/ksusta.html" class="school-card">
+                    <span class="school-abbr">KSUSTA</span>
+                    <span class="school-name">Kebbi State University of Science and Technology, Aliero</span>
+                </a>
+                <a href="/admission/schools/komu.html" class="school-card">
+                    <span class="school-abbr">KOMU</span>
+                    <span class="school-name">Kingsley Ozumba Mbadiwe University, Ogboko, Imo State</span>
+                </a>
+                <a href="/admission/schools/ksuk.html" class="school-card">
+                    <span class="school-abbr">KSUK</span>
+                    <span class="school-name">Kogi State University, Kabba</span>
+                </a>
+                <a href="/admission/schools/kwasu.html" class="school-card">
+                    <span class="school-abbr">KWASU</span>
+                    <span class="school-name">Kwara State University, Malete</span>
+                </a>
+                <a href="/admission/schools/lautech.html" class="school-card">
+                    <span class="school-abbr">LAUTECH</span>
+                    <span class="school-name">Ladoke Akintola University of Technology, Ogbomoso, Oyo State</span>
+                </a>
+                <a href="/admission/schools/lasu.html" class="school-card">
+                    <span class="school-abbr">LASU</span>
+                    <span class="school-name">Lagos State University, Ojo</span>
+                </a>
+                <a href="/admission/schools/lasued.html" class="school-card">
+                    <span class="school-abbr">LASUED</span>
+                    <span class="school-name">Lagos State University of Education, Ijanikin</span>
+                </a>
+                <a href="/admission/schools/lasustech.html" class="school-card">
+                    <span class="school-abbr">LASUSTECH</span>
+                    <span class="school-name">Lagos State University of Science and Technology, Ikorodu</span>
+                </a>
+                <a href="/admission/schools/maustech.html" class="school-card">
+                    <span class="school-abbr">MAUSTECH</span>
+                    <span class="school-name">Moshood Abiola University of Science and Technology, Abeokuta, Ogun State</span>
+                </a>
+                <a href="/admission/schools/nsuk.html" class="school-card">
+                    <span class="school-abbr">NSUK</span>
+                    <span class="school-name">Nasarawa State University, Keffi</span>
+                </a>
+                <a href="/admission/schools/ndu.html" class="school-card">
+                    <span class="school-abbr">NDU</span>
+                    <span class="school-name">Niger Delta University, Wilberforce Island, Bayelsa State</span>
+                </a>
+                <a href="/admission/schools/oou.html" class="school-card">
+                    <span class="school-abbr">OOU</span>
+                    <span class="school-name">Olabisi Onabanjo University, Ago-Iwoye, Ogun State</span>
+                </a>
+                <a href="/admission/schools/oaustech.html" class="school-card">
+                    <span class="school-abbr">OAUSTECH</span>
+                    <span class="school-name">Olusegun Agagu University of Science and Technology, Okitipupa, Ondo State</span>
+                </a>
+                <a href="/admission/schools/unimed.html" class="school-card">
+                    <span class="school-abbr">UNIMED</span>
+                    <span class="school-name">Ondo State University of Medical Sciences, Ondo City</span>
+                </a>
+                <a href="/admission/schools/uniosun.html" class="school-card">
+                    <span class="school-abbr">UNIOSUN</span>
+                    <span class="school-name">Osun State University, Osogbo</span>
+                </a>
+                <a href="/admission/schools/plasu.html" class="school-card">
+                    <span class="school-abbr">PLASU</span>
+                    <span class="school-name">Plateau State University, Bokkos</span>
+                </a>
+                <a href="/admission/schools/paau.html" class="school-card">
+                    <span class="school-abbr">PAAU</span>
+                    <span class="school-name">Prince Abubakar Audu University, Anyigba, Kogi State</span>
+                </a>
+                <a href="/admission/schools/rsu.html" class="school-card">
+                    <span class="school-abbr">RSU</span>
+                    <span class="school-name">Rivers State University, Port Harcourt</span>
+                </a>
+                <a href="/admission/schools/srcoe.html" class="school-card">
+                    <span class="school-abbr">SRCOE</span>
+                    <span class="school-name">Sa’adatu Rimi University of Education, Kano</span>
+                </a>
+                <a href="/admission/schools/ssues.html" class="school-card">
+                    <span class="school-abbr">SSUES</span>
+                    <span class="school-name">Shehu Shagari University of Education, Sokoto</span>
+                </a>
+                <a href="/admission/schools/ssu.html" class="school-card">
+                    <span class="school-abbr">SSU</span>
+                    <span class="school-name">Sokoto State University, Sokoto</span>
+                </a>
+                <a href="/admission/schools/sumas.html" class="school-card">
+                    <span class="school-abbr">SUMAS</span>
+                    <span class="school-name">State University of Medical and Applied Sciences, Igbo-Eno, Enugu State</span>
+                </a>
+                <a href="/admission/schools/slu.html" class="school-card">
+                    <span class="school-abbr">SLU</span>
+                    <span class="school-name">Sule Lamido University, Kafin Hausa, Jigawa State</span>
+                </a>
+                <a href="/admission/schools/tasued.html" class="school-card">
+                    <span class="school-abbr">TASUED</span>
+                    <span class="school-name">Tai Solarin University of Education, Ijebu-Ode, Ogun State</span>
+                </a>
+                <a href="/admission/schools/tasu.html" class="school-card">
+                    <span class="school-abbr">TASU</span>
+                    <span class="school-name">Taraba State University, Jalingo</span>
+                </a>
+                <a href="/admission/schools/umyu.html" class="school-card">
+                    <span class="school-abbr">UMYU</span>
+                    <span class="school-name">Umaru Musa Yar’adua University, Katsina</span>
+                </a>
+                <a href="/admission/schools/uat.html" class="school-card">
+                    <span class="school-abbr">UAT</span>
+                    <span class="school-name">University of Africa, Toru-Orua, Bayelsa State</span>
+                </a>
+                <a href="/admission/schools/uaes.html" class="school-card">
+                    <span class="school-abbr">UAES</span>
+                    <span class="school-name">University of Agriculture and Environmental Sciences, Umuagwo, Imo State</span>
+                </a>
+                <a href="/admission/schools/unicross.html" class="school-card">
+                    <span class="school-abbr">UNICROSS</span>
+                    <span class="school-name">University of Cross River State (UNICROSS), Calabar</span>
+                </a>
+                <a href="/admission/schools/unidel.html" class="school-card">
+                    <span class="school-abbr">UNIDEL</span>
+                    <span class="school-name">University of Delta, Agbor</span>
+                </a>
+                <a href="/admission/schools/unilesa.html" class="school-card">
+                    <span class="school-abbr">UNILESA</span>
+                    <span class="school-name">University of Ilesa, Osun State</span>
+                </a>
+                <a href="/admission/schools/unimed-ondo.html" class="school-card">
+                    <span class="school-abbr">UNIMED</span>
+                    <span class="school-name">University of Medical Sciences, Ondo City, Ondo State</span>
+                </a>
+                <a href="/admission/schools/ysu.html" class="school-card">
+                    <span class="school-abbr">YSU</span>
+                    <span class="school-name">Yobe State University, Damaturu</span>
+                </a>
+                <a href="/admission/schools/yumsuk.html" class="school-card">
+                    <span class="school-abbr">YUMSUK</span>
+                    <span class="school-name">Yusuf Maitama Sule University, Kano</span>
+                </a>
+                <a href="/admission/schools/zamsu.html" class="school-card">
+                    <span class="school-abbr">ZAMSU</span>
+                    <span class="school-name">Zamfara State University, Talata Mafara</span>
+                </a>
+            </div>
+        </div>
+
+        <!-- Newly Established / Recently Licensed State Universities -->
+        <div class="school-category-section" data-category="state">
+            <h3 style="font-size: 1.4rem; color: var(--darkgreen); margin-top: 40px; margin-bottom: 20px;">Newly Established / Recently Licensed State Universities</h3>
+            <div class="school-grid">
+                <a href="/admission/schools/aauaca.html" class="school-card">
+                    <span class="school-abbr">AAUACA</span>
+                    <span class="school-name">Abdulsalam Abubakar University of Agriculture and Climate Action, Mokwa, Niger State</span>
+                </a>
+                <a href="/admission/schools/cruee.html" class="school-card">
+                    <span class="school-abbr">CRUEE</span>
+                    <span class="school-name">Cross River University of Education and Entrepreneurship, Akamkpa</span>
+                </a>
+                <a href="/admission/schools/lasued.html" class="school-card">
+                    <span class="school-abbr">LASUED</span>
+                    <span class="school-name">Lagos State University of Education, Ijanikin</span>
+                </a>
+                <a href="/admission/schools/lasustech.html" class="school-card">
+                    <span class="school-abbr">LASUSTECH</span>
+                    <span class="school-name">Lagos State University of Science and Technology, Ikorodu</span>
+                </a>
+            </div>
+        </div>
+
+        <!-- Polytechnics -->
+        <div class="school-category-section" data-category="polytechnic">
+            <h2><i class="fas fa-tools"></i> Federal Polytechnics</h2>
+            <p class="category-description">Polytechnics offer technical and practical education. Discover admission requirements and cut-off marks for federal and state polytechnics across Nigeria.</p>
+            <div class="school-grid">
+                <a href="/admission/schools/afkk.html" class="school-card">
+                    <span class="school-abbr">AFKK</span>
+                    <span class="school-name">Air Force Institute of Technology (AFIT), Kaduna, Kaduna State</span>
+                </a>
+                <a href="/admission/schools/aifuae.html" class="school-card">
+                    <span class="school-abbr">AIFUAE</span>
+                    <span class="school-name">Akanu Ibiam Federal Polytechnic, Unwana-Afikpo, Ebonyi State</span>
+                </a>
+                <a href="/admission/schools/aae.html" class="school-card">
+                    <span class="school-abbr">AAE</span>
+                    <span class="school-name">Auchi Polytechnic, Auchi, Edo State</span>
+                </a>
+                <a href="/admission/schools/fdtee.html" class="school-card">
+                    <span class="school-abbr">FDTEE</span>
+                    <span class="school-name">Federal College of Dental Technology and Therapy, Enugu, Enugu State</span>
+                </a>
+                <a href="/admission/schools/faee.html" class="school-card">
+                    <span class="school-abbr">FAEE</span>
+                    <span class="school-name">Federal Polytechnic, Ado-Ekiti, Ekiti State</span>
+                </a>
+                <a href="/admission/schools/fao.html" class="school-card">
+                    <span class="school-abbr">FAO</span>
+                    <span class="school-name">Federal Polytechnic, Ayede, Oyo State</span>
+                </a>
+                <a href="/admission/schools/fbt.html" class="school-card">
+                    <span class="school-abbr">FBT</span>
+                    <span class="school-name">Federal Polytechnic, Bali, Taraba State</span>
+                </a>
+                <a href="/admission/schools/fbb.html" class="school-card">
+                    <span class="school-abbr">FBB</span>
+                    <span class="school-name">Federal Polytechnic, Bauchi, Bauchi State</span>
+                </a>
+                <a href="/admission/schools/fbn.html" class="school-card">
+                    <span class="school-abbr">FBN</span>
+                    <span class="school-name">Federal Polytechnic, Bida, Niger State</span>
+                </a>
+                <a href="/admission/schools/fdy.html" class="school-card">
+                    <span class="school-abbr">FDY</span>
+                    <span class="school-name">Federal Polytechnic, Damaturu, Yobe State</span>
+                </a>
+                <a href="/admission/schools/fdk.html" class="school-card">
+                    <span class="school-abbr">FDK</span>
+                    <span class="school-name">Federal Polytechnic, Daura, Katsina State</span>
+                </a>
+                <a href="/admission/schools/feo.html" class="school-card">
+                    <span class="school-abbr">FEO</span>
+                    <span class="school-name">Federal Polytechnic, Ede, Osun State</span>
+                </a>
+                <a href="/admission/schools/feb.html" class="school-card">
+                    <span class="school-abbr">FEB</span>
+                    <span class="school-name">Federal Polytechnic, Ekowe, Bayelsa State</span>
+                </a>
+                <a href="/admission/schools/fik.html" class="school-card">
+                    <span class="school-abbr">FIK</span>
+                    <span class="school-name">Federal Polytechnic, Idah, Kogi State</span>
+                </a>
+                <a href="/admission/schools/fio.html" class="school-card">
+                    <span class="school-abbr">FIO</span>
+                    <span class="school-name">Federal Polytechnic, Ilaro, Ogun State</span>
+                </a>
+                <a href="/admission/schools/fioo.html" class="school-card">
+                    <span class="school-abbr">FIOO</span>
+                    <span class="school-name">Federal Polytechnic, Ile-Oluji, Ondo State</span>
+                </a>
+                <a href="/admission/schools/fkg.html" class="school-card">
+                    <span class="school-abbr">FKG</span>
+                    <span class="school-name">Federal Polytechnic, Kaltungo, Gombe State</span>
+                </a>
+                <a href="/admission/schools/fknz.html" class="school-card">
+                    <span class="school-abbr">FKNZ</span>
+                    <span class="school-name">Federal Polytechnic, Kaura Namoda, Zamfara State</span>
+                </a>
+                <a href="/admission/schools/fma.html" class="school-card">
+                    <span class="school-abbr">FMA</span>
+                    <span class="school-name">Federal Polytechnic, Mubi, Adamawa State</span>
+                </a>
+                <a href="/admission/schools/fnn.html" class="school-card">
+                    <span class="school-abbr">FNN</span>
+                    <span class="school-name">Federal Polytechnic, Nasarawa, Nasarawa State</span>
+                </a>
+                <a href="/admission/schools/fni.html" class="school-card">
+                    <span class="school-abbr">FNI</span>
+                    <span class="school-name">Federal Polytechnic, Nekede, Imo State</span>
+                </a>
+                <a href="/admission/schools/fok.html" class="school-card">
+                    <span class="school-abbr">FOK</span>
+                    <span class="school-name">Federal Polytechnic, Offa, Kwara State</span>
+                </a>
+                <a href="/admission/schools/foa.html" class="school-card">
+                    <span class="school-abbr">FOA</span>
+                    <span class="school-name">Federal Polytechnic, Oko, Anambra State</span>
+                </a>
+                <a href="/admission/schools/fod.html" class="school-card">
+                    <span class="school-abbr">FOD</span>
+                    <span class="school-name">Federal Polytechnic, Orogun, Delta State</span>
+                </a>
+                <a href="/admission/schools/fsp.html" class="school-card">
+                    <span class="school-abbr">FSP</span>
+                    <span class="school-name">Federal Polytechnic, Shendam, Plateau State</span>
+                </a>
+                <a href="/admission/schools/fuai.html" class="school-card">
+                    <span class="school-abbr">FUAI</span>
+                    <span class="school-name">Federal Polytechnic, Ukana, Akwa Ibom State</span>
+                </a>
+                <a href="/admission/schools/fucr.html" class="school-card">
+                    <span class="school-abbr">FUCR</span>
+                    <span class="school-name">Federal Polytechnic, Ugep, Cross River State (Note: This might be a state or new institution; verify)</span>
+                </a>
+                <a href="/admission/schools/fwb.html" class="school-card">
+                    <span class="school-abbr">FWB</span>
+                    <span class="school-name">Federal Polytechnic, Wannune, Benue State</span>
+                </a>
+                <a href="/admission/schools/fogbr.html" class="school-card">
+                    <span class="school-abbr">FOGBR</span>
+                    <span class="school-name">Federal Polytechnic of Oil and Gas, Bonny, Rivers State</span>
+                </a>
+                <a href="/admission/schools/hafkj.html" class="school-card">
+                    <span class="school-abbr">HAFKJ</span>
+                    <span class="school-name">Hussaini Adamu Federal Polytechnic, Kazaure, Jigawa State</span>
+                </a>
+                <a href="/admission/schools/kkk.html" class="school-card">
+                    <span class="school-abbr">KKK</span>
+                    <span class="school-name">Kaduna Polytechnic, Kaduna, Kaduna State</span>
+                </a>
+                <a href="/admission/schools/ncue.html" class="school-card">
+                    <span class="school-abbr">NCUE</span>
+                    <span class="school-name">National Institute of Construction Technology (NICT), Uromi, Edo State</span>
+                </a>
+                <a href="/admission/schools/naemb.html" class="school-card">
+                    <span class="school-abbr">NAEMB</span>
+                    <span class="school-name">Nigerian Army College of Environmental Science and Technology (NACEST), Makurdi, Benue State</span>
+                </a>
+                <a href="/admission/schools/nasfaal.html" class="school-card">
+                    <span class="school-abbr">NASFAAL</span>
+                    <span class="school-name">Nigerian Army School of Finance and Administration (NASFA), Apapa, Lagos State</span>
+                </a>
+                <a href="/admission/schools/nazk.html" class="school-card">
+                    <span class="school-abbr">NAZK</span>
+                    <span class="school-name">Nigerian College of Aviation Technology (NCAT), Zaria, Kaduna State</span>
+                </a>
+                <a href="/admission/schools/pted.html" class="school-card">
+                    <span class="school-abbr">PTED</span>
+                    <span class="school-name">Petroleum Training Institute (PTI), Effurun, Delta State</span>
+                </a>
+                <a href="/admission/schools/wufbkk.html" class="school-card">
+                    <span class="school-abbr">WUFBKK</span>
+                    <span class="school-name">Waziri Umaru Federal Polytechnic, Birnin Kebbi, Kebbi State</span>
+                </a>
+                <a href="/admission/schools/yyl.html" class="school-card">
+                    <span class="school-abbr">YYL</span>
+                    <span class="school-name">Yaba College of Technology (YABATECH), Yaba, Lagos State</span>
+                </a>
+                <a href="/admission/schools/fkk.html" class="school-card">
+                    <span class="school-abbr">FKK</span>
+                    <span class="school-name">Federal Polytechnic, Kabo, Kano State</span>
+                </a>
+                <a href="/admission/schools/foe.html" class="school-card">
+                    <span class="school-abbr">FOE</span>
+                    <span class="school-name">Federal Polytechnic, Ohodo, Enugu State (Note: Might also be referred to as Federal Polytechnic, Enugu)</span>
+                </a>
+                <a href="/admission/schools/fgk.html" class="school-card">
+                    <span class="school-abbr">FGK</span>
+                    <span class="school-name">Federal Polytechnic, Gwandu, Kebbi State</span>
+                </a>
+                <a href="/admission/schools/fio.html" class="school-card">
+                    <span class="school-abbr">FIO</span>
+                    <span class="school-name">Federal Polytechnic, Iresi, Osun State</span>
+                </a>
+                <a href="/admission/schools/fkj.html" class="school-card">
+                    <span class="school-abbr">FKJ</span>
+                    <span class="school-name">Federal Polytechnic, Kazaure, Jigawa State (Note: This might be the same as Hussaini Adamu Federal Polytechnic; verify)</span>
+                </a>
+                <a href="/admission/schools/fnsp.html" class="school-card">
+                    <span class="school-abbr">FNSP</span>
+                    <span class="school-name">Federal Polytechnic, N’yak Shendam, Plateau State</span>
+                </a>
+            </div>
+        </div>
+
+        <!-- State Polytechnics -->
+        <div class="school-category-section" data-category="polytechnic">
+            <h2><i class="fas fa-city"></i> State Polytechnics</h2>
+            <p class="category-description">State-owned polytechnics across Nigeria offering quality vocational and technical training.</p>
+            <div class="school-grid">
+                <a href="/admission/schools/aa.html" class="school-card">
+                    <span class="school-abbr">AA</span>
+                    <span class="school-name">Abia State Polytechnic, Aba</span>
+                </a>
+                <a href="/admission/schools/ay.html" class="school-card">
+                    <span class="school-abbr">AY</span>
+                    <span class="school-name">Adamawa State Polytechnic, Yola</span>
+                </a>
+                <a href="/admission/schools/aiio.html" class="school-card">
+                    <span class="school-abbr">AIIO</span>
+                    <span class="school-name">Akwa Ibom State Polytechnic, Ikot Osurua</span>
+                </a>
+                <a href="/admission/schools/ai&nu.html" class="school-card">
+                    <span class="school-abbr">AI&NU</span>
+                    <span class="school-name">Akwa Ibom State College of Arts & Science, Nung Ukim</span>
+                </a>
+                <a href="/admission/schools/am.html" class="school-card">
+                    <span class="school-abbr">AM</span>
+                    <span class="school-name">Anambra State Polytechnic, Mgbakwu</span>
+                </a>
+                <a href="/admission/schools/agtm.html" class="school-card">
+                    <span class="school-abbr">AGTM</span>
+                    <span class="school-name">Abdu Gusau Polytechnic, Talata Mafara</span>
+                </a>
+                <a href="/admission/schools/atab.html" class="school-card">
+                    <span class="school-abbr">ATAB</span>
+                    <span class="school-name">Abubakar Tatari Ali Polytechnic, Bauchi</span>
+                </a>
+                <a href="/admission/schools/aaii.html" class="school-card">
+                    <span class="school-abbr">AAII</span>
+                    <span class="school-name">Abraham Adesanya Polytechnic, Ijebu-Igbo</span>
+                </a>
+                <a href="/admission/schools/aoe.html" class="school-card">
+                    <span class="school-abbr">AOE</span>
+                    <span class="school-name">Adeseun Ogundoyin Polytechnic, Eruwa</span>
+                </a>
+                <a href="/admission/schools/ba.html" class="school-card">
+                    <span class="school-abbr">BA</span>
+                    <span class="school-name">Bayelsa State Polytechnic, Aleibiri</span>
+                </a>
+                <a href="/admission/schools/bu.html" class="school-card">
+                    <span class="school-abbr">BU</span>
+                    <span class="school-name">Benue State Polytechnic, Ugbokolo</span>
+                </a>
+                <a href="/admission/schools/buh.html" class="school-card">
+                    <span class="school-abbr">BUH</span>
+                    <span class="school-name">Binyamin Usman Polytechnic, Hadejia</span>
+                </a>
+                <a href="/admission/schools/ap.html" class="school-card">
+                    <span class="school-abbr">AP</span>
+                    <span class="school-name">College of Administration, Management and Technology, Potiskum</span>
+                </a>
+                <a href="/admission/schools/gujb.html" class="school-card">
+                    <span class="school-abbr">GUJB</span>
+                    <span class="school-name">College of Agriculture, Science and Technology, Gujba</span>
+                </a>
+                <a href="/admission/schools/lafi.html" class="school-card">
+                    <span class="school-abbr">LAFI</span>
+                    <span class="school-name">College of Agriculture, Science and Technology, Lafia</span>
+                </a>
+                <a href="/admission/schools/cru.html" class="school-card">
+                    <span class="school-abbr">CRU</span>
+                    <span class="school-name">Cross River Institute of Technology and Management, Ugep</span>
+                </a>
+                <a href="/admission/schools/daiie.html" class="school-card">
+                    <span class="school-abbr">DAIIE</span>
+                    <span class="school-name">D.S. Adegbenro ICT Polytechnic, Itori-Ewekoro</span>
+                </a>
+                <a href="/admission/schools/dmb.html" class="school-card">
+                    <span class="school-abbr">DMB</span>
+                    <span class="school-name">Delta State Maritime Polytechnic, Burutu</span>
+                </a>
+                <a href="/admission/schools/dou.html" class="school-card">
+                    <span class="school-abbr">DOU</span>
+                    <span class="school-name">Delta State Polytechnic, Ogwashi-Uku</span>
+                </a>
+                <a href="/admission/schools/doo.html" class="school-card">
+                    <span class="school-abbr">DOO</span>
+                    <span class="school-name">Delta State Polytechnic, Otefe-Oghara</span>
+                </a>
+                <a href="/admission/schools/do.html" class="school-card">
+                    <span class="school-abbr">DO</span>
+                    <span class="school-name">Delta State Polytechnic, Ozoro</span>
+                </a>
+                <a href="/admission/schools/eu.html" class="school-card">
+                    <span class="school-abbr">EU</span>
+                    <span class="school-name">Edo State Polytechnic, Usen</span>
+                </a>
+                <a href="/admission/schools/eie.html" class="school-card">
+                    <span class="school-abbr">EIE</span>
+                    <span class="school-name">Ekiti State College of Agriculture and Technology, Isan-Ekiti</span>
+                </a>
+                <a href="/admission/schools/ei.html" class="school-card">
+                    <span class="school-abbr">EI</span>
+                    <span class="school-name">Enugu State Polytechnic, Iwollo</span>
+                </a>
+                <a href="/admission/schools/gs.html" class="school-card">
+                    <span class="school-abbr">GS</span>
+                    <span class="school-name">Gateway Polytechnic, Saapade</span>
+                </a>
+                <a href="/admission/schools/gb.html" class="school-card">
+                    <span class="school-abbr">GB</span>
+                    <span class="school-name">Gombe State Polytechnic, Bajoga</span>
+                </a>
+                <a href="/admission/schools/hukk.html" class="school-card">
+                    <span class="school-abbr">HUKK</span>
+                    <span class="school-name">Hassan Usman Katsina Polytechnic, Katsina</span>
+                </a>
+                <a href="/admission/schools/io.html" class="school-card">
+                    <span class="school-abbr">IO</span>
+                    <span class="school-name">Imo State Polytechnic, Omuma</span>
+                </a>
+                <a href="/admission/schools/enug.html" class="school-card">
+                    <span class="school-abbr">ENUG</span>
+                    <span class="school-name">Institute of Management and Technology, Enugu</span>
+                </a>
+                <a href="/admission/schools/imal.html" class="school-card">
+                    <span class="school-abbr">IMAL</span>
+                    <span class="school-name">Isa Mustapha Agwai Polytechnic, Lafia</span>
+                </a>
+                <a href="/admission/schools/jd.html" class="school-card">
+                    <span class="school-abbr">JD</span>
+                    <span class="school-name">Jigawa State Polytechnic, Dutse</span>
+                </a>
+                <a href="/admission/schools/kk.html" class="school-card">
+                    <span class="school-abbr">KK</span>
+                    <span class="school-name">Kano State Polytechnic, Kano</span>
+                </a>
+                <a href="/admission/schools/kk.html" class="school-card">
+                    <span class="school-abbr">KK</span>
+                    <span class="school-name">Katsina Institute of Technology and Management, Katsina</span>
+                </a>
+                <a href="/admission/schools/kbswb.html" class="school-card">
+                    <span class="school-abbr">KBSWB</span>
+                    <span class="school-name">Kenule Beeson Saro-Wiwa Polytechnic, Bori</span>
+                </a>
+                <a href="/admission/schools/kl.html" class="school-card">
+                    <span class="school-abbr">KL</span>
+                    <span class="school-name">Kogi State Polytechnic, Lokoja</span>
+                </a>
+                <a href="/admission/schools/ki.html" class="school-card">
+                    <span class="school-abbr">KI</span>
+                    <span class="school-name">Kwara State Polytechnic, Ilorin</span>
+                </a>
+                <a href="/admission/schools/li.html" class="school-card">
+                    <span class="school-abbr">LI</span>
+                    <span class="school-name">Lagos State Polytechnic, Ikorodu</span>
+                </a>
+                <a href="/admission/schools/miag.html" class="school-card">
+                    <span class="school-abbr">MIAG</span>
+                    <span class="school-name">Mai-Idris Alooma Polytechnic, Geidam</span>
+                </a>
+                <a href="/admission/schools/maa.html" class="school-card">
+                    <span class="school-abbr">MAA</span>
+                    <span class="school-name">Moshood Abiola Polytechnic, Abeokuta</span>
+                </a>
+                <a href="/admission/schools/nl.html" class="school-card">
+                    <span class="school-abbr">NL</span>
+                    <span class="school-name">Nasarawa State College of Agriculture, Science and Technology, Lafia</span>
+                </a>
+                <a href="/admission/schools/nz.html" class="school-card">
+                    <span class="school-abbr">NZ</span>
+                    <span class="school-name">Niger State Polytechnic, Zungeru</span>
+                </a>
+                <a href="/admission/schools/nbz.html" class="school-card">
+                    <span class="school-abbr">NBZ</span>
+                    <span class="school-name">Nuhu Bamalli Polytechnic, Zaria</span>
+                </a>
+                <a href="/admission/schools/oi.html" class="school-card">
+                    <span class="school-abbr">OI</span>
+                    <span class="school-name">Ogun State Institute of Technology, Igbesa</span>
+                </a>
+                <a href="/admission/schools/oi.html" class="school-card">
+                    <span class="school-abbr">OI</span>
+                    <span class="school-name">Ogun State Polytechnic, Ipokia</span>
+                </a>
+                <a href="/admission/schools/oeo.html" class="school-card">
+                    <span class="school-abbr">OEO</span>
+                    <span class="school-name">Osun State College of Technology, Esa-Oke</span>
+                </a>
+                <a href="/admission/schools/oi.html" class="school-card">
+                    <span class="school-abbr">OI</span>
+                    <span class="school-name">Osun State Polytechnic, Iree</span>
+                </a>
+                <a href="/admission/schools/oio.html" class="school-card">
+                    <span class="school-abbr">OIO</span>
+                    <span class="school-name">Oyo State College of Agriculture and Technology, Igbo-Ora</span>
+                </a>
+                <a href="/admission/schools/pbl.html" class="school-card">
+                    <span class="school-abbr">PBL</span>
+                    <span class="school-name">Plateau State Polytechnic, Barkin-Ladi</span>
+                </a>
+                <a href="/admission/schools/phph.html" class="school-card">
+                    <span class="school-abbr">PHPH</span>
+                    <span class="school-name">Port-Harcourt Polytechnic, Port-Harcourt</span>
+                </a>
+                <a href="/admission/schools/rm.html" class="school-card">
+                    <span class="school-abbr">RM</span>
+                    <span class="school-name">Ramat Polytechnic, Maiduguri</span>
+                </a>
+                <a href="/admission/schools/rgo.html" class="school-card">
+                    <span class="school-abbr">RGO</span>
+                    <span class="school-name">Rufus Giwa Polytechnic, Owo</span>
+                </a>
+                <a href="/admission/schools/ts.html" class="school-card">
+                    <span class="school-abbr">TS</span>
+                    <span class="school-name">Taraba State Polytechnic, Suntai</span>
+                </a>
+                <a href="/admission/schools/toos.html" class="school-card">
+                    <span class="school-abbr">TOOS</span>
+                    <span class="school-name">The Oke-Ogun Polytechnic, Saki</span>
+                </a>
+                <a href="/admission/schools/ti.html" class="school-card">
+                    <span class="school-abbr">TI</span>
+                    <span class="school-name">The Polytechnic, Ibadan</span>
+                </a>
+                <a href="/admission/schools/ti.html" class="school-card">
+                    <span class="school-abbr">TI</span>
+                    <span class="school-name">The Polytechnic, Iresi</span>
+                </a>
+                <a href="/admission/schools/uass.html" class="school-card">
+                    <span class="school-abbr">UASS</span>
+                    <span class="school-name">Umaru Ali Shinkafi Polytechnic, Sokoto</span>
+                </a>
+            </div>
+        </div>
+
+        <!-- Private Polytechnics -->
+        <div class="school-category-section" data-category="polytechnic">
+            <h2><i class="fas fa-building"></i> Private Polytechnics</h2>
+            <p class="category-description">Explore accredited private polytechnics in Nigeria with modern facilities and specialized courses.</p>
+            <div class="school-grid">
+                <a href="/admission/schools/aae.html" class="school-card">
+                    <span class="school-abbr">AAE</span>
+                    <span class="school-name">Ajayi Polytechnic, Ara-Ekiti</span>
+                </a>
+                <a href="/admission/schools/ahk.html" class="school-card">
+                    <span class="school-abbr">AHK</span>
+                    <span class="school-name">Al-Hikma Polytechnic, Karu</span>
+                </a>
+                <a href="/admission/schools/acso.html" class="school-card">
+                    <span class="school-abbr">ACSO</span>
+                    <span class="school-name">Allover Central Polytechnic, Sango-Ota</span>
+                </a>
+                <a href="/admission/schools/aw.html" class="school-card">
+                    <span class="school-abbr">AW</span>
+                    <span class="school-name">American Polytechnic, Wasimi</span>
+                </a>
+                <a href="/admission/schools/aa.html" class="school-card">
+                    <span class="school-abbr">AA</span>
+                    <span class="school-name">Ashi Polytechnic, Anyin</span>
+                </a>
+                <a href="/admission/schools/bk.html" class="school-card">
+                    <span class="school-abbr">BK</span>
+                    <span class="school-name">Bellarks Polytechnic, Kwale</span>
+                </a>
+                <a href="/admission/schools/bsa.html" class="school-card">
+                    <span class="school-abbr">BSA</span>
+                    <span class="school-name">Best Solution Polytechnic, Akure</span>
+                </a>
+                <a href="/admission/schools/bi.html" class="school-card">
+                    <span class="school-abbr">BI</span>
+                    <span class="school-name">Bolmor Polytechnic, Ibadan</span>
+                </a>
+                <a href="/admission/schools/bta.html" class="school-card">
+                    <span class="school-abbr">BTA</span>
+                    <span class="school-name">British Transatlantic Polytechnic, Akure</span>
+                </a>
+                <a href="/admission/schools/cb.html" class="school-card">
+                    <span class="school-abbr">CB</span>
+                    <span class="school-name">Coastal Polytechnic, Badagry</span>
+                </a>
+                <a href="/admission/schools/ca.html" class="school-card">
+                    <span class="school-abbr">CA</span>
+                    <span class="school-name">Covenant Polytechnic, Aba</span>
+                </a>
+                <a href="/admission/schools/cae.html" class="school-card">
+                    <span class="school-abbr">CAE</span>
+                    <span class="school-name">Crown Polytechnic, Ado-Ekiti</span>
+                </a>
+                <a href="/admission/schools/de.html" class="school-card">
+                    <span class="school-abbr">DE</span>
+                    <span class="school-name">Distinct Polytechnic, Ekosin</span>
+                </a>
+                <a href="/admission/schools/db.html" class="school-card">
+                    <span class="school-abbr">DB</span>
+                    <span class="school-name">Dorben Polytechnic, Bwari</span>
+                </a>
+                <a href="/admission/schools/eph.html" class="school-card">
+                    <span class="school-abbr">EPH</span>
+                    <span class="school-name">Eastern Polytechnic, Port Harcourt</span>
+                </a>
+                <a href="/admission/schools/ecue.html" class="school-card">
+                    <span class="school-abbr">ECUE</span>
+                    <span class="school-name">Ekiti City Polytechnic, Umuooke Ekiti</span>
+                </a>
+                <a href="/admission/schools/fg.html" class="school-card">
+                    <span class="school-abbr">FG</span>
+                    <span class="school-name">Fidei Polytechnic, Gboko</span>
+                </a>
+                <a href="/admission/schools/fi.html" class="school-card">
+                    <span class="school-abbr">FI</span>
+                    <span class="school-name">Foresight Polytechnic, Ikorodu</span>
+                </a>
+                <a href="/admission/schools/gg.html" class="school-card">
+                    <span class="school-abbr">GG</span>
+                    <span class="school-name">Gboko Polytechnic, Gboko</span>
+                </a>
+                <a href="/admission/schools/ga.html" class="school-card">
+                    <span class="school-abbr">GA</span>
+                    <span class="school-name">Global Polytechnic, Akure</span>
+                </a>
+                <a href="/admission/schools/gb.html" class="school-card">
+                    <span class="school-abbr">GB</span>
+                    <span class="school-name">Global Polytechnic, Benin</span>
+                </a>
+                <a href="/admission/schools/ga.html" class="school-card">
+                    <span class="school-abbr">GA</span>
+                    <span class="school-name">Gloryland Polytechnic, Ankpa</span>
+                </a>
+                <a href="/admission/schools/gs.html" class="school-card">
+                    <span class="school-abbr">GS</span>
+                    <span class="school-name">Grace Polytechnic, Surulere</span>
+                </a>
+                <a href="/admission/schools/go.html" class="school-card">
+                    <span class="school-abbr">GO</span>
+                    <span class="school-name">Graceland Polytechnic, Offa</span>
+                </a>
+                <a href="/admission/schools/go.html" class="school-card">
+                    <span class="school-abbr">GO</span>
+                    <span class="school-name">Grundtvig Polytechnic, Oba</span>
+                </a>
+                <a href="/admission/schools/hpg.html" class="school-card">
+                    <span class="school-abbr">HPG</span>
+                    <span class="school-name">Harry Pass Polytechnic, Gboko</span>
+                </a>
+                <a href="/admission/schools/hi.html" class="school-card">
+                    <span class="school-abbr">HI</span>
+                    <span class="school-name">Harvard Polytechnic, Ilorin</span>
+                </a>
+                <a href="/admission/schools/ici.html" class="school-card">
+                    <span class="school-abbr">ICI</span>
+                    <span class="school-name">Ibadan City Polytechnic, Ibadan</span>
+                </a>
+                <a href="/admission/schools/icuo.html" class="school-card">
+                    <span class="school-abbr">ICUO</span>
+                    <span class="school-name">I-Con Universal Polytechnic, Osogbo</span>
+                </a>
+                <a href="/admission/schools/ii.html" class="school-card">
+                    <span class="school-abbr">II</span>
+                    <span class="school-name">Igbajo Polytechnic, Igbajo</span>
+                </a>
+                <a href="/admission/schools/il.html" class="school-card">
+                    <span class="school-abbr">IL</span>
+                    <span class="school-name">Inspire Polytechnic, Lagos</span>
+                </a>
+                <a href="/admission/schools/iij.html" class="school-card">
+                    <span class="school-abbr">IIJ</span>
+                    <span class="school-name">Interlink Polytechnic, Ijebu-Jesa</span>
+                </a>
+                <a href="/admission/schools/ici.html" class="school-card">
+                    <span class="school-abbr">ICI</span>
+                    <span class="school-name">Iwo City Polytechnic, Iwo</span>
+                </a>
+                <a href="/admission/schools/kcl.html" class="school-card">
+                    <span class="school-abbr">KCL</span>
+                    <span class="school-name">Kalac Crystal Polytechnic, Lekki</span>
+                </a>
+                <a href="/admission/schools/ku.html" class="school-card">
+                    <span class="school-abbr">KU</span>
+                    <span class="school-name">Kings Polytechnic, Ubiaja</span>
+                </a>
+                <a href="/admission/schools/lci.html" class="school-card">
+                    <span class="school-abbr">LCI</span>
+                    <span class="school-name">Lagos City Polytechnic, Ikeja</span>
+                </a>
+                <a href="/admission/schools/la.html" class="school-card">
+                    <span class="school-abbr">LA</span>
+                    <span class="school-name">Landmark Polytechnic, Ayetoro</span>
+                </a>
+                <a href="/admission/schools/le.html" class="school-card">
+                    <span class="school-abbr">LE</span>
+                    <span class="school-name">Lighthouse Polytechnic, Evbuobanosa</span>
+                </a>
+                <a href="/admission/schools/me.html" class="school-card">
+                    <span class="school-abbr">ME</span>
+                    <span class="school-name">Marist Polytechnic, Emene</span>
+                </a>
+                <a href="/admission/schools/mde.html" class="school-card">
+                    <span class="school-abbr">MDE</span>
+                    <span class="school-name">Mater Dei Polytechnic, Egwuoba</span>
+                </a>
+                <a href="/admission/schools/na.html" class="school-card">
+                    <span class="school-abbr">NA</span>
+                    <span class="school-name">NACABS Polytechnic, Akwanga</span>
+                </a>
+                <a href="/admission/schools/nba.html" class="school-card">
+                    <span class="school-abbr">NBA</span>
+                    <span class="school-name">Nation Builders Polytechnic, Asaba</span>
+                </a>
+                <a href="/admission/schools/ni.html" class="school-card">
+                    <span class="school-abbr">NI</span>
+                    <span class="school-name">Newland Polytechnic, Ilorin</span>
+                </a>
+                <a href="/admission/schools/nk.html" class="school-card">
+                    <span class="school-abbr">NK</span>
+                    <span class="school-name">Novelty Polytechnic, Kishi</span>
+                </a>
+                <a href="/admission/schools/oi.html" class="school-card">
+                    <span class="school-abbr">OI</span>
+                    <span class="school-name">Oduduwa Polytechnic, Idimu</span>
+                </a>
+                <a href="/admission/schools/pe.html" class="school-card">
+                    <span class="school-abbr">PE</span>
+                    <span class="school-name">Paramount Polytechnic, Ejigbo</span>
+                </a>
+                <a href="/admission/schools/pjba.html" class="school-card">
+                    <span class="school-abbr">PJBA</span>
+                    <span class="school-name">Prime Polytechnic, Jida Bassa, Ajaokuta</span>
+                </a>
+                <a href="/admission/schools/re.html" class="school-card">
+                    <span class="school-abbr">RE</span>
+                    <span class="school-name">Ronik Polytechnic, Ejigbo</span>
+                </a>
+                <a href="/admission/schools/rhi.html" class="school-card">
+                    <span class="school-abbr">RHI</span>
+                    <span class="school-name">Royal Institute of Health Technology, Ifo</span>
+                </a>
+                <a href="/admission/schools/sbc.html" class="school-card">
+                    <span class="school-abbr">SBC</span>
+                    <span class="school-name">Shaka Polytechnic, Benin City</span>
+                </a>
+                <a href="/admission/schools/sc.html" class="school-card">
+                    <span class="school-abbr">SC</span>
+                    <span class="school-name">Sparrow Polytechnic, Calabar</span>
+                </a>
+                <a href="/admission/schools/so.html" class="school-card">
+                    <span class="school-abbr">SO</span>
+                    <span class="school-name">Speedway Polytechnic, Osoba</span>
+                </a>
+                <a href="/admission/schools/smks.html" class="school-card">
+                    <span class="school-abbr">SMKS</span>
+                    <span class="school-name">St. Mary Polytechnic, Kwamba, Suleja</span>
+                </a>
+                <a href="/admission/schools/se.html" class="school-card">
+                    <span class="school-abbr">SE</span>
+                    <span class="school-name">Sungold Polytechnic, Ede</span>
+                </a>
+                <a href="/admission/schools/tie.html" class="school-card">
+                    <span class="school-abbr">TIE</span>
+                    <span class="school-name">Teedek Polytechnic, Ilogbo-Ekiti</span>
+                </a>
+                <a href="/admission/schools/tga.html" class="school-card">
+                    <span class="school-abbr">TGA</span>
+                    <span class="school-name">Temple Gate Polytechnic, Aba</span>
+                </a>
+                <a href="/admission/schools/ta.html" class="school-card">
+                    <span class="school-abbr">TA</span>
+                    <span class="school-name">The Polytechnic, Adoka</span>
+                </a>
+                <a href="/admission/schools/tao.html" class="school-card">
+                    <span class="school-abbr">TAO</span>
+                    <span class="school-name">The Polytechnic, Aran-Orin</span>
+                </a>
+                <a href="/admission/schools/tio.html" class="school-card">
+                    <span class="school-abbr">TIO</span>
+                    <span class="school-name">The Polytechnic, Igbo-Owu</span>
+                </a>
+                <a href="/admission/schools/toe.html" class="school-card">
+                    <span class="school-abbr">TOE</span>
+                    <span class="school-name">The Polytechnic, Omuo-Ekiti</span>
+                </a>
+                <a href="/admission/schools/toa.html" class="school-card">
+                    <span class="school-abbr">TOA</span>
+                    <span class="school-name">The Polytechnic, Otada Adoka</span>
+                </a>
+                <a href="/admission/schools/twa.html" class="school-card">
+                    <span class="school-abbr">TWA</span>
+                    <span class="school-name">The West African Polytechnic</span>
+                </a>
+                <a href="/admission/schools/tkl.html" class="school-card">
+                    <span class="school-abbr">TKL</span>
+                    <span class="school-name">Timeon Kairos Polytechnic, Lagos</span>
+                </a>
+                <a href="/admission/schools/ti.html" class="school-card">
+                    <span class="school-abbr">TI</span>
+                    <span class="school-name">Tower Polytechnic, Ibadan</span>
+                </a>
+                <a href="/admission/schools/uuo.html" class="school-card">
+                    <span class="school-abbr">UUO</span>
+                    <span class="school-name">Uma Ukpai Polytechnic, Ohafia</span>
+                </a>
+                <a href="/admission/schools/vvo.html" class="school-card">
+                    <span class="school-abbr">VVO</span>
+                    <span class="school-name">Valley View Polytechnic, Ohafia</span>
+                </a>
+                <a href="/admission/schools/vii.html" class="school-card">
+                    <span class="school-abbr">VII</span>
+                    <span class="school-name">Villanova Polytechnic, Imesi-Ile</span>
+                </a>
+                <a href="/admission/schools/wi.html" class="school-card">
+                    <span class="school-abbr">WI</span>
+                    <span class="school-name">Westland Polytechnic, Ilobu</span>
+                </a>
+                <a href="/admission/schools/wi.html" class="school-card">
+                    <span class="school-abbr">WI</span>
+                    <span class="school-name">Wolex Polytechnic, Iwo</span>
+                </a>
+            </div>
+        </div>
+
+        <!-- Colleges of Education -->
+        <div class="school-category-section" data-category="college">
+            <h2><i class="fas fa-book"></i> Colleges of Education</h2>
+            <p class="category-description">Teacher training institutions offering quality education for prospective educators. Find admission guides and cut-off marks for all recognized colleges.</p>
+            <div class="school-grid">
+                <a href="/admission/schools/fcezaria.html" class="school-card">
+                    <span class="school-abbr">FCEZARIA</span>
+                    <span class="school-name">Federal College of Edu, Zaria</span>
+                </a>
+                <a href="/admission/schools/fcekano.html" class="school-card">
+                    <span class="school-abbr">FCEKANO</span>
+                    <span class="school-name">Federal College of Edu, Kano</span>
+                </a>
+                <a href="/admission/schools/aceondo.html" class="school-card">
+                    <span class="school-abbr">ACEONDO</span>
+                    <span class="school-name">Adeyemi College of Edu</span>
+                </a>
+                <a href="/admission/schools/alvan.html" class="school-card">
+                    <span class="school-abbr">ALVAN</span>
+                    <span class="school-name">Alvan Ikoku FCE</span>
+                </a>
+                <a href="/admission/schools/fcetakoka.html" class="school-card">
+                    <span class="school-abbr">FCETAKOKA</span>
+                    <span class="school-name">FCE (Technical), Akoka</span>
+                </a>
+                <a href="/admission/schools/fcepankshin.html" class="school-card">
+                    <span class="school-abbr">FCEPANKSHIN</span>
+                    <span class="school-name">FCE Pankshin</span>
+                </a>
+                <a href="/admission/schools/kscoe.html" class="school-card">
+                    <span class="school-abbr">KSCOE</span>
+                    <span class="school-name">Kaduna State COE</span>
+                </a>
+                <a href="/admission/schools/eaebonyi.html" class="school-card">
+                    <span class="school-abbr">EBSCOE</span>
+                    <span class="school-name">Ebonyi State COE</span>
+                </a>
+                <a href="/admission/schools/fceasaba.html" class="school-card">
+                    <span class="school-abbr">FCEASABA</span>
+                    <span class="school-name">FCE Asaba</span>
+                </a>
+                <a href="/admission/schools/fceobudu.html" class="school-card">
+                    <span class="school-abbr">FCEOBUDU</span>
+                    <span class="school-name">FCE Obudu</span>
+                </a>
+                <a href="/admission/schools/eacoed.html" class="school-card">
+                    <span class="school-abbr">EACOED</span>
+                    <span class="school-name">Emmanuel Alayande COE</span>
+                </a>
+                <a href="/admission/schools/mocped.html" class="school-card">
+                    <span class="school-abbr">MOCPED</span>
+                    <span class="school-name">MOCPED Epe</span>
+                </a>
+            </div>
+        </div>
+
+        <!-- Private Universities -->
+        <div class="school-category-section" data-category="private">
+            <h2><i class="fas fa-landmark"></i> Private Universities</h2>
+            <p class="category-description">Explore Nigeria's leading private universities offering quality education with flexible admission pathways. Find cut-off marks and admission requirements.</p>
+            <div class="school-grid">
+                <a href="/admission/schools/ao.html" class="school-card">
+                    <span class="school-abbr">AO</span>
+                    <span class="school-name">Achievers University, Owo</span>
+                </a>
+                <a href="/admission/schools/ae.html" class="school-card">
+                    <span class="school-abbr">AE</span>
+                    <span class="school-name">Adeleke University, Ede</span>
+                </a>
+                <a href="/admission/schools/abae–e.html" class="school-card">
+                    <span class="school-abbr">ABAE–E</span>
+                    <span class="school-name">Afe Babalola University, Ado-Ekiti – Ekiti State</span>
+                </a>
+                <a href="/admission/schools/a&a.html" class="school-card">
+                    <span class="school-abbr">A&A</span>
+                    <span class="school-name">African University of Science & Technology, Abuja</span>
+                </a>
+                <a href="/admission/schools/aci.html" class="school-card">
+                    <span class="school-abbr">ACI</span>
+                    <span class="school-name">Ajayi Crowther University, Ibadan</span>
+                </a>
+                <a href="/admission/schools/ahi.html" class="school-card">
+                    <span class="school-abbr">AHI</span>
+                    <span class="school-name">Al-Hikmah University, Ilorin</span>
+                </a>
+                <a href="/admission/schools/aqk.html" class="school-card">
+                    <span class="school-abbr">AQK</span>
+                    <span class="school-name">Al-Qalam University, Katsina</span>
+                </a>
+                <a href="/admission/schools/any.html" class="school-card">
+                    <span class="school-abbr">ANY</span>
+                    <span class="school-name">American University of Nigeria, Yola</span>
+                </a>
+                <a href="/admission/schools/augu.html" class="school-card">
+                    <span class="school-abbr">AUGU</span>
+                    <span class="school-name">Augustine University</span>
+                </a>
+                <a href="/admission/schools/bir.html" class="school-card">
+                    <span class="school-abbr">BIR</span>
+                    <span class="school-name">Babcock University, Ilishan-Remo</span>
+                </a>
+                <a href="/admission/schools/baze.html" class="school-card">
+                    <span class="school-abbr">BAZE</span>
+                    <span class="school-name">Baze University</span>
+                </a>
+                <a href="/admission/schools/bo.html" class="school-card">
+                    <span class="school-abbr">BO</span>
+                    <span class="school-name">Bells University of Technology, Otta</span>
+                </a>
+                <a href="/admission/schools/bibc.html" class="school-card">
+                    <span class="school-abbr">BIBC</span>
+                    <span class="school-name">Benson Idahosa University, Benin City</span>
+                </a>
+                <a href="/admission/schools/bnk.html" class="school-card">
+                    <span class="school-abbr">BNK</span>
+                    <span class="school-name">Bingham University, New Karu</span>
+                </a>
+                <a href="/admission/schools/bi.html" class="school-card">
+                    <span class="school-abbr">BI</span>
+                    <span class="school-name">Bowen University, Iwo</span>
+                </a>
+                <a href="/admission/schools/cl.html" class="school-card">
+                    <span class="school-abbr">CL</span>
+                    <span class="school-name">Caleb University, Lagos</span>
+                </a>
+                <a href="/admission/schools/ce.html" class="school-card">
+                    <span class="school-abbr">CE</span>
+                    <span class="school-name">Caritas University, Enugu</span>
+                </a>
+                <a href="/admission/schools/chri.html" class="school-card">
+                    <span class="school-abbr">CHRI</span>
+                    <span class="school-name">Chrisland University</span>
+                </a>
+                <a href="/admission/schools/co.html" class="school-card">
+                    <span class="school-abbr">CO</span>
+                    <span class="school-name">Covenant University Ota</span>
+                </a>
+                <a href="/admission/schools/ci.html" class="school-card">
+                    <span class="school-abbr">CI</span>
+                    <span class="school-name">Crawford University Igbesa</span>
+                </a>
+                <a href="/admission/schools/cres.html" class="school-card">
+                    <span class="school-abbr">CRES</span>
+                    <span class="school-name">Crescent University</span>
+                </a>
+                <a href="/admission/schools/eck.html" class="school-card">
+                    <span class="school-abbr">ECK</span>
+                    <span class="school-name">Edwin Clark University, Kaigbodo</span>
+                </a>
+                <a href="/admission/schools/eim.html" class="school-card">
+                    <span class="school-abbr">EIM</span>
+                    <span class="school-name">Elizade University, Ilara-Mokin</span>
+                </a>
+                <a href="/admission/schools/ea.html" class="school-card">
+                    <span class="school-abbr">EA</span>
+                    <span class="school-name">Evangel University, Akaeze</span>
+                </a>
+                <a href="/admission/schools/fuo.html" class="school-card">
+                    <span class="school-abbr">FUO</span>
+                    <span class="school-name">Fountain Unveristy, Oshogbo</span>
+                </a>
+                <a href="/admission/schools/goun–e.html" class="school-card">
+                    <span class="school-abbr">GOUN–E</span>
+                    <span class="school-name">Godfrey Okoye University, Ugwuomu-Nike – Enugu State</span>
+                </a>
+                <a href="/admission/schools/gu.html" class="school-card">
+                    <span class="school-abbr">GU</span>
+                    <span class="school-name">Gregory University, Uturu</span>
+                </a>
+                <a href="/admission/schools/hiio.html" class="school-card">
+                    <span class="school-abbr">HIIO</span>
+                    <span class="school-name">Hallmark University, Ijebi Itele, Ogun</span>
+                </a>
+                <a href="/admission/schools/hu.html" class="school-card">
+                    <span class="school-abbr">HU</span>
+                    <span class="school-name">Hezekiah University, Umudi</span>
+                </a>
+                <a href="/admission/schools/io.html" class="school-card">
+                    <span class="school-abbr">IO</span>
+                    <span class="school-name">Igbinedion University Okada</span>
+                </a>
+                <a href="/admission/schools/jabia.html" class="school-card">
+                    <span class="school-abbr">JABIA</span>
+                    <span class="school-name">Joseph Ayo Babalola University, Ikeji-Arakeji</span>
+                </a>
+                <a href="/admission/schools/koo.html" class="school-card">
+                    <span class="school-abbr">KOO</span>
+                    <span class="school-name">Kings University, Ode Omu</span>
+                </a>
+                <a href="/admission/schools/kw.html" class="school-card">
+                    <span class="school-abbr">KW</span>
+                    <span class="school-name">Kwararafa University, Wukari</span>
+                </a>
+                <a href="/admission/schools/loa.html" class="school-card">
+                    <span class="school-abbr">LOA</span>
+                    <span class="school-name">Landmark University, Omu-Aran.</span>
+                </a>
+                <a href="/admission/schools/lci.html" class="school-card">
+                    <span class="school-abbr">LCI</span>
+                    <span class="school-name">Lead City University, Ibadan</span>
+                </a>
+                <a href="/admission/schools/mo.html" class="school-card">
+                    <span class="school-abbr">MO</span>
+                    <span class="school-name">Madonna University, Okija</span>
+                </a>
+                <a href="/admission/schools/mssa.html" class="school-card">
+                    <span class="school-abbr">MSSA</span>
+                    <span class="school-name">Mcpherson University, Seriki Sotayo, Ajebo</span>
+                </a>
+                <a href="/admission/schools/m&ci.html" class="school-card">
+                    <span class="school-abbr">M&CI</span>
+                    <span class="school-name">Micheal & Cecilia Ibru University</span>
+                </a>
+                <a href="/admission/schools/mt.html" class="school-card">
+                    <span class="school-abbr">MT</span>
+                    <span class="school-name">Mountain Top University</span>
+                </a>
+                <a href="/admission/schools/nna.html" class="school-card">
+                    <span class="school-abbr">NNA</span>
+                    <span class="school-name">Nile University of Nigeria, Abuja</span>
+                </a>
+                <a href="/admission/schools/no.html" class="school-card">
+                    <span class="school-abbr">NO</span>
+                    <span class="school-name">Novena University, Ogume</span>
+                </a>
+                <a href="/admission/schools/oon.html" class="school-card">
+                    <span class="school-abbr">OON</span>
+                    <span class="school-name">Obong University, Obong Ntak</span>
+                </a>
+                <a href="/admission/schools/oi–o.html" class="school-card">
+                    <span class="school-abbr">OI–O</span>
+                    <span class="school-name">Oduduwa University, Ipetumodu – Osun State</span>
+                </a>
+                <a href="/admission/schools/pal.html" class="school-card">
+                    <span class="school-abbr">PAL</span>
+                    <span class="school-name">Pan-Atlantic University, Lagos</span>
+                </a>
+                <a href="/admission/schools/pa–a.html" class="school-card">
+                    <span class="school-abbr">PA–A</span>
+                    <span class="school-name">Paul University, Awka – Anambra State</span>
+                </a>
+                <a href="/admission/schools/re.html" class="school-card">
+                    <span class="school-abbr">RE</span>
+                    <span class="school-name">Redeemer’s University, Ede</span>
+                </a>
+                <a href="/admission/schools/re.html" class="school-card">
+                    <span class="school-abbr">RE</span>
+                    <span class="school-name">Renaissance University, Enugu</span>
+                </a>
+                <a href="/admission/schools/roa–r.html" class="school-card">
+                    <span class="school-abbr">ROA–R</span>
+                    <span class="school-name">Rhema University, Obeama-Asa – Rivers State</span>
+                </a>
+                <a href="/admission/schools/rieai.html" class="school-card">
+                    <span class="school-abbr">RIEAI</span>
+                    <span class="school-name">Ritman University, Ikot Ekpene, Akwa Ibom</span>
+                </a>
+                <a href="/admission/schools/sl.html" class="school-card">
+                    <span class="school-abbr">SL</span>
+                    <span class="school-name">Salem University, Lokoja</span>
+                </a>
+                <a href="/admission/schools/sao.html" class="school-card">
+                    <span class="school-abbr">SAO</span>
+                    <span class="school-name">Samuel Adegboyega University, Ogwa.</span>
+                </a>
+                <a href="/admission/schools/soo.html" class="school-card">
+                    <span class="school-abbr">SOO</span>
+                    <span class="school-name">Southwestern University, Oku Owa</span>
+                </a>
+                <a href="/admission/schools/so.html" class="school-card">
+                    <span class="school-abbr">SO</span>
+                    <span class="school-name">Summit University, Offa</span>
+                </a>
+                <a href="/admission/schools/tu.html" class="school-card">
+                    <span class="school-abbr">TU</span>
+                    <span class="school-name">Tansian University, Umunya</span>
+                </a>
+                <a href="/admission/schools/mm.html" class="school-card">
+                    <span class="school-abbr">MM</span>
+                    <span class="school-name">University of Mkar, Mkar</span>
+                </a>
+                <a href="/admission/schools/va.html" class="school-card">
+                    <span class="school-abbr">VA</span>
+                    <span class="school-name">Veritas University, Abuja</span>
+                </a>
+                <a href="/admission/schools/we–e.html" class="school-card">
+                    <span class="school-abbr">WE–E</span>
+                    <span class="school-name">Wellspring University, Evbuobanosa – Edo State</span>
+                </a>
+                <a href="/admission/schools/wo.html" class="school-card">
+                    <span class="school-abbr">WO</span>
+                    <span class="school-name">Wesley University Ondo</span>
+                </a>
+                <a href="/admission/schools/wdod.html" class="school-card">
+                    <span class="school-abbr">WDOD</span>
+                    <span class="school-name">Western Delta University, Oghara Delta State</span>
+                </a>
+                <a href="/admission/schools/cm.html" class="school-card">
+                    <span class="school-abbr">CM</span>
+                    <span class="school-name">Christopher University Mowe</span>
+                </a>
+                <a href="/admission/schools/kdio.html" class="school-card">
+                    <span class="school-abbr">KDIO</span>
+                    <span class="school-name">Kola Daisi University Ibadan, Oyo State</span>
+                </a>
+                <a href="/admission/schools/aal.html" class="school-card">
+                    <span class="school-abbr">AAL</span>
+                    <span class="school-name">Anchor University Ayobo Lagos State</span>
+                </a>
+                <a href="/admission/schools/dio.html" class="school-card">
+                    <span class="school-abbr">DIO</span>
+                    <span class="school-name">Dominican University Ibadan Oyo State</span>
+                </a>
+                <a href="/admission/schools/loa.html" class="school-card">
+                    <span class="school-abbr">LOA</span>
+                    <span class="school-name">Legacy University, Okija Anambra State</span>
+                </a>
+                <a href="/admission/schools/ajacr.html" class="school-card">
+                    <span class="school-abbr">AJACR</span>
+                    <span class="school-name">Arthur Javis University Akpoyubo Cross river State</span>
+                </a>
+                <a href="/admission/schools/chek.html" class="school-card">
+                    <span class="school-abbr">CHEK</span>
+                    <span class="school-name">Crown Hill University Eiyenkorin, Kwara State</span>
+                </a>
+                <a href="/admission/schools/cce.html" class="school-card">
+                    <span class="school-abbr">CCE</span>
+                    <span class="school-name">Coal City University Enugu State</span>
+                </a>
+                <a href="/admission/schools/coa.html" class="school-card">
+                    <span class="school-abbr">COA</span>
+                    <span class="school-name">Clifford University Owerrinta Abia State</span>
+                </a>
+                <a href="/admission/schools/sna.html" class="school-card">
+                    <span class="school-abbr">SNA</span>
+                    <span class="school-name">Spiritan University, Nneochi Abia State</span>
+                </a>
+                <a href="/admission/schools/pco.html" class="school-card">
+                    <span class="school-abbr">PCO</span>
+                    <span class="school-name">Precious Cornerstone University, Oyo</span>
+                </a>
+                <a href="/admission/schools/psp.html" class="school-card">
+                    <span class="school-abbr">PSP</span>
+                    <span class="school-name">PAMO University of Medical Sciences, Portharcourt</span>
+                </a>
+                <a href="/admission/schools/ao.html" class="school-card">
+                    <span class="school-abbr">AO</span>
+                    <span class="school-name">Atiba University Oyo</span>
+                </a>
+                <a href="/admission/schools/ehsil.html" class="school-card">
+                    <span class="school-abbr">EHSIL</span>
+                    <span class="school-name">Eko University of Medical and Health Sciences Ijanikin, Lagos</span>
+                </a>
+                <a href="/admission/schools/sk.html" class="school-card">
+                    <span class="school-abbr">SK</span>
+                    <span class="school-name">Skyline University, Kano</span>
+                </a>
+                <a href="/admission/schools/gk.html" class="school-card">
+                    <span class="school-abbr">GK</span>
+                    <span class="school-name">Greenfield University, Kaduna</span>
+                </a>
+                <a href="/admission/schools/dio.html" class="school-card">
+                    <span class="school-abbr">DIO</span>
+                    <span class="school-name">Dominion University Ibadan, Oyo State</span>
+                </a>
+                <a href="/admission/schools/to.html" class="school-card">
+                    <span class="school-abbr">TO</span>
+                    <span class="school-name">Trinity University Ogun State</span>
+                </a>
+                <a href="/admission/schools/wio.html" class="school-card">
+                    <span class="school-abbr">WIO</span>
+                    <span class="school-name">Westland University Iwo, Osun State</span>
+                </a>
+                <a href="/admission/schools/tmai.html" class="school-card">
+                    <span class="school-abbr">TMAI</span>
+                    <span class="school-name">Topfaith University, Mkpatak, Akwa Ibom State</span>
+                </a>
+                <a href="/admission/schools/taoik.html" class="school-card">
+                    <span class="school-abbr">TAOIK</span>
+                    <span class="school-name">Thomas Adewumi University, Oko-Irese, Kwara State</span>
+                </a>
+                <a href="/admission/schools/mmi.html" class="school-card">
+                    <span class="school-abbr">MMI</span>
+                    <span class="school-name">Maranathan University, Mgbidi, Imo State</span>
+                </a>
+                <a href="/admission/schools/ampn.html" class="school-card">
+                    <span class="school-abbr">AMPN</span>
+                    <span class="school-name">Ave Maria University, Piyanko, Nasarawa State</span>
+                </a>
+                <a href="/admission/schools/aisk.html" class="school-card">
+                    <span class="school-abbr">AISK</span>
+                    <span class="school-name">Al-Istiqama University, Sumaila, Kano State</span>
+                </a>
+                <a href="/admission/schools/mie.html" class="school-card">
+                    <span class="school-abbr">MIE</span>
+                    <span class="school-name">Mudiame University, Irrua, Edo State</span>
+                </a>
+                <a href="/admission/schools/hnicr.html" class="school-card">
+                    <span class="school-abbr">HNICR</span>
+                    <span class="school-name">Havilla University, Nde-Ikom, Cross River State</span>
+                </a>
+                <a href="/admission/schools/cnni.html" class="school-card">
+                    <span class="school-abbr">CNNI</span>
+                    <span class="school-name">Claretian University of Nigeria, Nekede, Imo State</span>
+                </a>
+                <a href="/admission/schools/nkk.html" class="school-card">
+                    <span class="school-abbr">NKK</span>
+                    <span class="school-name">NOK University, Kachia, Kaduna State</span>
+                </a>
+                <a href="/admission/schools/kkvp.html" class="school-card">
+                    <span class="school-abbr">KKVP</span>
+                    <span class="school-name">Karl-Kumm University, Vom, Plateau State</span>
+                </a>
+                <a href="/admission/schools/jhll.html" class="school-card">
+                    <span class="school-abbr">JHLL</span>
+                    <span class="school-name">James Hope University, Lagos, Lagos State</span>
+                </a>
+                <a href="/admission/schools/maank.html" class="school-card">
+                    <span class="school-abbr">MAANK</span>
+                    <span class="school-name">Maryam Abacha American University of Nigeria, Kano State</span>
+                </a>
+                <a href="/admission/schools/cck.html" class="school-card">
+                    <span class="school-abbr">CCK</span>
+                    <span class="school-name">Capital City University, Kano State</span>
+                </a>
+                <a href="/admission/schools/apk.html" class="school-card">
+                    <span class="school-abbr">APK</span>
+                    <span class="school-name">Ahman Pategi University, Kwara State</span>
+                </a>
+                <a href="/admission/schools/ok.html" class="school-card">
+                    <span class="school-abbr">OK</span>
+                    <span class="school-name">University of Offa, Kwara State</span>
+                </a>
+                <a href="/admission/schools/mimn.html" class="school-card">
+                    <span class="school-abbr">MIMN</span>
+                    <span class="school-name">Mewar International University, Masaka, Nasarawa State</span>
+                </a>
+                <a href="/admission/schools/ebn.html" class="school-card">
+                    <span class="school-abbr">EBN</span>
+                    <span class="school-name">Edusoko University, Bida, Niger State</span>
+                </a>
+                <a href="/admission/schools/pka.html" class="school-card">
+                    <span class="school-abbr">PKA</span>
+                    <span class="school-name">Philomath University, Kuje, Abuja</span>
+                </a>
+                <a href="/admission/schools/kmj.html" class="school-card">
+                    <span class="school-abbr">KMJ</span>
+                    <span class="school-name">Khadija University, Majia, Jigawa State</span>
+                </a>
+                <a href="/admission/schools/akp.html" class="school-card">
+                    <span class="school-abbr">AKP</span>
+                    <span class="school-name">Anan University, Kwall, Plateau State</span>
+                </a>
+                <a href="/admission/schools/prg.html" class="school-card">
+                    <span class="school-abbr">PRG</span>
+                    <span class="school-name">PEN Resource University, Gombe</span>
+                </a>
+                <a href="/admission/schools/aamb.html" class="school-card">
+                    <span class="school-abbr">AAMB</span>
+                    <span class="school-name">Al-Ansar University, Maiduguri, Borno</span>
+                </a>
+                <a href="/admission/schools/mlud.html" class="school-card">
+                    <span class="school-abbr">MLUD</span>
+                    <span class="school-name">Margaret Lawrence University, Umunede, Delta State</span>
+                </a>
+                <a href="/admission/schools/kirk.html" class="school-card">
+                    <span class="school-abbr">KIRK</span>
+                    <span class="school-name">Khalifa Isiyaku Rabiu University, Kano</span>
+                </a>
+                <a href="/admission/schools/siud.html" class="school-card">
+                    <span class="school-abbr">SIUD</span>
+                    <span class="school-name">Sports University, Idumuje, Ugboko, Delta State</span>
+                </a>
+                <a href="/admission/schools/bak.html" class="school-card">
+                    <span class="school-abbr">BAK</span>
+                    <span class="school-name">Baba Ahmed University, Kano State</span>
+                </a>
+                <a href="/admission/schools/sss.html" class="school-card">
+                    <span class="school-abbr">SSS</span>
+                    <span class="school-name">Saisa University of Medical Sciences and Technology, Sokoto State</span>
+                </a>
+                <a href="/admission/schools/nbaa.html" class="school-card">
+                    <span class="school-abbr">NBAA</span>
+                    <span class="school-name">Nigerian British University, Asa, Abia State</span>
+                </a>
+                <a href="/admission/schools/paoa.html" class="school-card">
+                    <span class="school-abbr">PAOA</span>
+                    <span class="school-name">Peter University, Achina-Onneh Anambra State</span>
+                </a>
+                <a href="/admission/schools/nmns.html" class="school-card">
+                    <span class="school-abbr">NMNS</span>
+                    <span class="school-name">Newgate University, Minna, Niger State.</span>
+                </a>
+                <a href="/admission/schools/endf.html" class="school-card">
+                    <span class="school-abbr">ENDF</span>
+                    <span class="school-name">European University of Nigeria, Duboyi, FCT</span>
+                </a>
+                <a href="/admission/schools/ns.html" class="school-card">
+                    <span class="school-abbr">NS</span>
+                    <span class="school-name">NorthWest University Sokoto State</span>
+                </a>
+                <a href="/admission/schools/rk.html" class="school-card">
+                    <span class="school-abbr">RK</span>
+                    <span class="school-name">Rayhaan University, Kebbi</span>
+                </a>
+                <a href="/admission/schools/mkk.html" class="school-card">
+                    <span class="school-abbr">MKK</span>
+                    <span class="school-name">Muhammad Kamalud University Kwara</span>
+                </a>
+                <a href="/admission/schools/smo.html" class="school-card">
+                    <span class="school-abbr">SMO</span>
+                    <span class="school-name">Sam Maris University, Ondo</span>
+                </a>
+                <a href="/admission/schools/aaio.html" class="school-card">
+                    <span class="school-abbr">AAIO</span>
+                    <span class="school-name">Aletheia University, Ago-Iwoye Ogun State</span>
+                </a>
+                <a href="/admission/schools/lmua.html" class="school-card">
+                    <span class="school-abbr">LMUA</span>
+                    <span class="school-name">Lux Mundi University Umuahia, Abia State</span>
+                </a>
+                <a href="/admission/schools/mee.html" class="school-card">
+                    <span class="school-abbr">MEE</span>
+                    <span class="school-name">Maduka University, Ekwegbe, Enugu State</span>
+                </a>
+                <a href="/admission/schools/pe.html" class="school-card">
+                    <span class="school-abbr">PE</span>
+                    <span class="school-name">PeaceLand University, Enugu State</span>
+                </a>
+                <a href="/admission/schools/aaa.html" class="school-card">
+                    <span class="school-abbr">AAA</span>
+                    <span class="school-name">Amadeus University, Amizi, Abia State</span>
+                </a>
+                <a href="/admission/schools/vio.html" class="school-card">
+                    <span class="school-abbr">VIO</span>
+                    <span class="school-name">Vision University, Ikogbo, Ogun State</span>
+                </a>
+                <a href="/admission/schools/ak.html" class="school-card">
+                    <span class="school-abbr">AK</span>
+                    <span class="school-name">Azman University, Kano State</span>
+                </a>
+                <a href="/admission/schools/hgz.html" class="school-card">
+                    <span class="school-abbr">HGZ</span>
+                    <span class="school-name">Huda University, Gusau, Zamafara State</span>
+                </a>
+                <a href="/admission/schools/fbik.html" class="school-card">
+                    <span class="school-abbr">FBIK</span>
+                    <span class="school-name">Franco British International University, Kaduna State</span>
+                </a>
+                <a href="/admission/schools/cna.html" class="school-card">
+                    <span class="school-abbr">CNA</span>
+                    <span class="school-name">Canadian University of Nigeria, Abuja</span>
+                </a>
+                <a href="/admission/schools/giios.html" class="school-card">
+                    <span class="school-abbr">GIIOS</span>
+                    <span class="school-name">Gerar University of Medical Science Imope Ijebu, Ogun State.</span>
+                </a>
+                <a href="/admission/schools/bcocr.html" class="school-card">
+                    <span class="school-abbr">BCOCR</span>
+                    <span class="school-name">British Canadian University, Obufu Cross River State</span>
+                </a>
+                <a href="/admission/schools/htosb.html" class="school-card">
+                    <span class="school-abbr">HTOSB</span>
+                    <span class="school-name">Hensard University, Toru-Orua, Sagbama, Bayelsa State</span>
+                </a>
+                <a href="/admission/schools/aka.html" class="school-card">
+                    <span class="school-abbr">AKA</span>
+                    <span class="school-name">Amaj University, Kwali, Abuja</span>
+                </a>
+                <a href="/admission/schools/pan.html" class="school-card">
+                    <span class="school-abbr">PAN</span>
+                    <span class="school-name">Phoenix University, Agwada, Nasarawa State</span>
+                </a>
+                <a href="/admission/schools/wir.html" class="school-card">
+                    <span class="school-abbr">WIR</span>
+                    <span class="school-name">Wigwe University, Isiokpo Rivers State</span>
+                </a>
+                <a href="/admission/schools/hoe.html" class="school-card">
+                    <span class="school-abbr">HOE</span>
+                    <span class="school-name">Hillside University of Science and Technology, Okemisi, Ekiti State</span>
+                </a>
+                <a href="/admission/schools/onuas.html" class="school-card">
+                    <span class="school-abbr">ONUAS</span>
+                    <span class="school-name">University on the Niger, Umunya, Anambra state</span>
+                </a>
+                <a href="/admission/schools/eyk.html" class="school-card">
+                    <span class="school-abbr">EYK</span>
+                    <span class="school-name">Elrazi Medical University Yargaya University, Kano State</span>
+                </a>
+                <a href="/admission/schools/viee.html" class="school-card">
+                    <span class="school-abbr">VIEE</span>
+                    <span class="school-name">Venite University, Iloro-Ekiti, Ekiti State</span>
+                </a>
+                <a href="/admission/schools/soa.html" class="school-card">
+                    <span class="school-abbr">SOA</span>
+                    <span class="school-name">Shanahan University Onitsha, Anambra State</span>
+                </a>
+                <a href="/admission/schools/tdccr.html" class="school-card">
+                    <span class="school-abbr">TDCCR</span>
+                    <span class="school-name">The Duke Medical University, Calabar, Cross River State</span>
+                </a>
+                <a href="/admission/schools/mio.html" class="school-card">
+                    <span class="school-abbr">MIO</span>
+                    <span class="school-name">Mercy Medical University, Iwo, Ogun State</span>
+                </a>
+                <a href="/admission/schools/ca.html" class="school-card">
+                    <span class="school-abbr">CA</span>
+                    <span class="school-name">Cosmopolitan University Abuja</span>
+                </a>
+                <a href="/admission/schools/moaf.html" class="school-card">
+                    <span class="school-abbr">MOAF</span>
+                    <span class="school-name">Miva Open University, Abuja FCT</span>
+                </a>
+                <a href="/admission/schools/ioss.html" class="school-card">
+                    <span class="school-abbr">IOSS</span>
+                    <span class="school-name">Iconic Open University, Sokoto State.</span>
+                </a>
+                <a href="/admission/schools/wmoio.html" class="school-card">
+                    <span class="school-abbr">WMOIO</span>
+                    <span class="school-name">West Midlands Open University, Ibadan, Oyo State</span>
+                </a>
+                <a href="/admission/schools/amoa.html" class="school-card">
+                    <span class="school-abbr">AMOA</span>
+                    <span class="school-name">Al-Muhibbah Open University, Abuja</span>
+                </a>
+                <a href="/admission/schools/eamn.html" class="school-card">
+                    <span class="school-abbr">EAMN</span>
+                    <span class="school-name">El-Amin University, Minna, Niger State</span>
+                </a>
+                <a href="/admission/schools/pesk.html" class="school-card">
+                    <span class="school-abbr">PESK</span>
+                    <span class="school-name">College of Petroleum and Energy Studies, Kaduna State</span>
+                </a>
+                <a href="/admission/schools/jgs.html" class="school-card">
+                    <span class="school-abbr">JGS</span>
+                    <span class="school-name">Jewel University, Gombe state</span>
+                </a>
+                <a href="/admission/schools/pkfa.html" class="school-card">
+                    <span class="school-abbr">PKFA</span>
+                    <span class="school-name">Prime University, Kuje, FCT Abuja</span>
+                </a>
+                <a href="/admission/schools/nmal.html" class="school-card">
+                    <span class="school-abbr">NMAL</span>
+                    <span class="school-name">Nigerian University of Technology and Management, Apapa, Lagos State</span>
+                </a>
+                <a href="/admission/schools/abak.html" class="school-card">
+                    <span class="school-abbr">ABAK</span>
+                    <span class="school-name">Al-Bayan University, Ankpa, Kogi State</span>
+                </a>
+            </div>
+        </div>
+
+        <!-- Newly Licensed Universities (2025 - 2026) -->
+        <div class="school-category-section" data-category="private">
+            <h3 style="font-size: 1.4rem; color: var(--darkgreen); margin-top: 40px; margin-bottom: 20px;">Newly Licensed Private Universities</h3>
+            <div class="school-grid">
+                <a href="/admission/schools/ncao.html" class="school-card">
+                    <span class="school-abbr">NCAO</span>
+                    <span class="school-name">New City University, Aiyetoro, Ogun State</span>
+                </a>
+                <a href="/admission/schools/lik.html" class="school-card">
+                    <span class="school-abbr">LIK</span>
+                    <span class="school-name">Lens University, Ilemona, Kwara State</span>
+                </a>
+                <a href="/admission/schools/keme.html" class="school-card">
+                    <span class="school-abbr">KEME</span>
+                    <span class="school-name">Kevin Ezeh University, Mgbowo, Enugu State</span>
+                </a>
+                <a href="/admission/schools/sauai.html" class="school-card">
+                    <span class="school-abbr">SAUAI</span>
+                    <span class="school-name">Southern Atlantic University, Uyo, Akwa Ibom State</span>
+                </a>
+                <a href="/admission/schools/fio.html" class="school-card">
+                    <span class="school-abbr">FIO</span>
+                    <span class="school-name">University of Fortune, Igbotako, Ondo State</span>
+                </a>
+                <a href="/admission/schools/mio.html" class="school-card">
+                    <span class="school-abbr">MIO</span>
+                    <span class="school-name">Minaret University, Ikirun, Osun State</span>
+                </a>
+                <a href="/admission/schools/aatgk.html" class="school-card">
+                    <span class="school-abbr">AATGK</span>
+                    <span class="school-name">Abdulrasaq Abubakar Toyin University, Ganmo, Kwara State</span>
+                </a>
+                <a href="/admission/schools/mioo.html" class="school-card">
+                    <span class="school-abbr">MIOO</span>
+                    <span class="school-name">Monarch University, Iyesi Ota, Ogun State</span>
+                </a>
+                <a href="/admission/schools/ticbce.html" class="school-card">
+                    <span class="school-abbr">TICBCE</span>
+                    <span class="school-name">Tonnie Iredia University of Communication, Benin City, Edo State</span>
+                </a>
+                <a href="/admission/schools/ibaml.html" class="school-card">
+                    <span class="school-abbr">IBAML</span>
+                    <span class="school-name">Isaac Balami University of Aeronautics and Management, Lagos State</span>
+                </a>
+                <a href="/admission/schools/ekf.html" class="school-card">
+                    <span class="school-abbr">EKF</span>
+                    <span class="school-name">Eranova University, Kuje, FCT</span>
+                </a>
+                <a href="/admission/schools/tk.html" class="school-card">
+                    <span class="school-abbr">TK</span>
+                    <span class="school-name">Tazkiyah University, Kaduna State</span>
+                </a>
+                <a href="/admission/schools/laf.html" class="school-card">
+                    <span class="school-abbr">LAF</span>
+                    <span class="school-name">Leadership University, Abuja, FCT</span>
+                </a>
+                <a href="/admission/schools/jbik.html" class="school-card">
+                    <span class="school-abbr">JBIK</span>
+                    <span class="school-name">Jimoh Babalola University, Ilorin, Kwara State</span>
+                </a>
+                <a href="/admission/schools/bmi.html" class="school-card">
+                    <span class="school-abbr">BMI</span>
+                    <span class="school-name">Bridget University, Mbaise, Imo State</span>
+                </a>
+                <a href="/admission/schools/gjt.html" class="school-card">
+                    <span class="school-abbr">GJT</span>
+                    <span class="school-name">Greenland University, Jalingo, Taraba State</span>
+                </a>
+                <a href="/admission/schools/jsn.html" class="school-card">
+                    <span class="school-abbr">JSN</span>
+                    <span class="school-name">JEFAP University, Suleja, Niger State</span>
+                </a>
+                <a href="/admission/schools/avai.html" class="school-card">
+                    <span class="school-abbr">AVAI</span>
+                    <span class="school-name">Azione Verde University, Amaigbo, Imo State</span>
+                </a>
+                <a href="/admission/schools/uool.html" class="school-card">
+                    <span class="school-abbr">UOOL</span>
+                    <span class="school-name">Unique Open University, Ojo, Lagos State</span>
+                </a>
+                <a href="/admission/schools/aoao.html" class="school-card">
+                    <span class="school-abbr">AOAO</span>
+                    <span class="school-name">American Open University, Abeokuta, Ogun State</span>
+                </a>
+            </div>
+        </div>
+
+        <!-- Agricultural & Health Colleges -->
+        <div class="school-category-section" data-category="specialized">
+            <h2><i class="fas fa-leaf"></i> Agricultural & Health Colleges</h2>
+            <p class="category-description">Specialized institutions offering quality programs in agriculture, health sciences, nursing, medicine, and related fields.</p>
+            <div class="school-grid">
+                <a href="/admission/schools/unaab.html" class="school-card">
+                    <span class="school-abbr">UNAAB</span>
+                    <span class="school-name">University of Agriculture, Abeokuta</span>
+                </a>
+                <a href="/admission/schools/unam.html" class="school-card">
+                    <span class="school-abbr">UNAM</span>
+                    <span class="school-name">University of Agriculture, Makurdi</span>
+                </a>
+                <a href="/admission/schools/colmas.html" class="school-card">
+                    <span class="school-abbr">COLMAS</span>
+                    <span class="school-name">College of Medicine & Health Sciences</span>
+                </a>
+                <a href="/admission/schools/cohs.html" class="school-card">
+                    <span class="school-abbr">COHS</span>
+                    <span class="school-name">College of Health Sciences</span>
+                </a>
+                <a href="/admission/schools/nursing-colleges.html" class="school-card">
+                    <span class="school-abbr">NURSING</span>
+                    <span class="school-name">State Nursing Colleges (36+ Across States)</span>
+                </a>
+                <a href="/admission/schools/medical-colleges.html" class="school-card">
+                    <span class="school-abbr">MED</span>
+                    <span class="school-name">Medical Colleges & Training Centers</span>
+                </a>
+            </div>
+        </div>
+
+        <!-- Military & Uniformed Institutions -->
+        <div class="school-category-section" data-category="specialized">
+            <h2><i class="fas fa-shield-alt"></i> Military & Uniformed Institutions</h2>
+            <p class="category-description">Federal institutions training officers and personnel for military, paramilitary, and uniformed services.</p>
+            <div class="school-grid">
+                <a href="/admission/schools/nda.html" class="school-card">
+                    <span class="school-abbr">NDA</span>
+                    <span class="school-name">Nigerian Defence Academy</span>
+                </a>
+                <a href="/admission/schools/aau.html" class="school-card">
+                    <span class="school-abbr">AAU</span>
+                    <span class="school-name">Armed Forces University</span>
+                </a>
+                <a href="/admission/schools/npl.html" class="school-card">
+                    <span class="school-abbr">NPL</span>
+                    <span class="school-name">National Police Academy</span>
+                </a>
+                <a href="/admission/schools/mma.html" class="school-card">
+                    <span class="school-abbr">MMA</span>
+                    <span class="school-name">Maritime Academy of Nigeria</span>
+                </a>
+                <a href="/admission/schools/fireacademy.html" class="school-card">
+                    <span class="school-abbr">NFCA</span>
+                    <span class="school-name">Nigeria Fire Service Academy</span>
+                </a>
+                <a href="/admission/schools/prisonacademy.html" class="school-card">
+                    <span class="school-abbr">PCS</span>
+                    <span class="school-name">Prison/Correctional Services Academy</span>
+                </a>
+            </div>
+        </div>
+
+        <!-- Federal Polytechnics (Extended) -->
+        <div class="school-category-section" data-category="polytechnic">
+            <h3 style="font-size: 1.4rem; color: var(--darkgreen); margin-top: 40px; margin-bottom: 20px;">More Federal Polytechnics</h3>
+            <div class="school-grid">
+                <a href="/admission/schools/fednorth.html" class="school-card">
+                    <span class="school-abbr">FEDPOLY</span>
+                    <span class="school-name">Federal Polytechnic (Various Locations)</span>
+                </a>
+                <a href="/admission/schools/cotech.html" class="school-card">
+                    <span class="school-abbr">COTECH</span>
+                    <span class="school-name">Colleges of Technology (28+ Across Nigeria)</span>
+                </a>
+                <a href="/admission/schools/statepoly.html" class="school-card">
+                    <span class="school-abbr">STATEPOLY</span>
+                    <span class="school-name">State Polytechnics (35+ Across States)</span>
+                </a>
+                <a href="/admission/schools/techcollege.html" class="school-card">
+                    <span class="school-abbr">TECH</span>
+                    <span class="school-name">Technical Colleges (100+ Private Polytechnics)</span>
+                </a>
+            </div>
+        </div>
+
+        <!-- State Colleges of Education (Extended) -->
+        <div class="school-category-section" data-category="college">
+            <h3 style="font-size: 1.4rem; color: var(--darkgreen); margin-top: 40px; margin-bottom: 20px;">State & Private Colleges of Education</h3>
+            <div class="school-grid">
+                <a href="/admission/schools/scoe-states.html" class="school-card">
+                    <span class="school-abbr">SCOE</span>
+                    <span class="school-name">State Colleges of Education (36 States)</span>
+                </a>
+                <a href="/admission/schools/pcoe.html" class="school-card">
+                    <span class="school-abbr">PCOE</span>
+                    <span class="school-name">Private Colleges of Education (80+)</span>
+                </a>
+                <a href="/admission/schools/tpoly.html" class="school-card">
+                    <span class="school-abbr">TPOLY</span>
+                    <span class="school-name">Teachers Colleges & Training Centers</span>
+                </a>
+            </div>
+        </div>
+
+        <!-- Professional & Specialized Institutions -->
+        <div class="school-category-section" data-category="specialized">
+            <h2><i class="fas fa-graduation-cap"></i> Professional & Specialized Institutions</h2>
+            <p class="category-description">Accredited institutions offering specialized professional training and development programs.</p>
+            <div class="school-grid">
+                <a href="/admission/schools/aptech.html" class="school-card">
+                    <span class="school-abbr">APTECH</span>
+                    <span class="school-name">Aptech Computer Education</span>
+                </a>
+                <a href="/admission/schools/professional-institutes.html" class="school-card">
+                    <span class="school-abbr">PROF</span>
+                    <span class="school-name">Professional Institutes & Training Centers</span>
+                </a>
+                <a href="/admission/schools/business-schools.html" class="school-card">
+                    <span class="school-abbr">BUSINESS</span>
+                    <span class="school-name">Business Schools & Management Institutes</span>
+                </a>
+                <a href="/admission/schools/vocational-centers.html" class="school-card">
+                    <span class="school-abbr">VOCATIONAL</span>
+                    <span class="school-name">Vocational & Skills Training Centers (500+)</span>
+                </a>
+            </div>
+        </div>
+
+        <!-- State Universities (Extended List) -->
+        <div class="school-category-section" data-category="state">
+            <h3 style="font-size: 1.4rem; color: var(--darkgreen); margin-top: 40px; margin-bottom: 20px;">More State Universities</h3>
+            <div class="school-grid">
+                <a href="/admission/schools/laredopoly.html" class="school-card">
+                    <span class="school-abbr">LAREDOPOLY</span>
+                    <span class="school-name">Laredopoly Institutions</span>
+                </a>
+                <a href="/admission/schools/state-uni-extended.html" class="school-card">
+                    <span class="school-abbr">STATE</span>
+                    <span class="school-name">Additional State Universities (15+ More)</span>
+                </a>
+            </div>
+        </div>
+
+        <!-- Complete Directory Reference -->
+        <div style="background: var(--card); padding: 30px; border-radius: 12px; margin-top: 50px; text-align: center; border-left: 4px solid var(--green);">
+            <h3 style="color: var(--green); margin-bottom: 15px;"><i class="fas fa-book-open"></i> Complete Nigerian Education Directory</h3>
+            <p style="color: var(--oae-dark); margin-bottom: 20px; line-height: 1.6;">
+                This comprehensive directory includes <strong>700+ accredited higher institutions</strong> across Nigeria:
+            </p>
+            <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 15px; margin-bottom: 20px; text-align: left;">
+                <div style="background: white; padding: 15px; border-radius: 8px; border-left: 3px solid var(--green);">
+                    <strong>41 Federal Universities</strong>
+                    <p style="font-size: 0.9rem; color: var(--muted); margin-top: 5px;">Competitive but quality education</p>
+                </div>
+                <div style="background: white; padding: 15px; border-radius: 8px; border-left: 3px solid var(--green);">
+                    <strong>50+ State Universities</strong>
+                    <p style="font-size: 0.9rem; color: var(--muted); margin-top: 5px;">Accessible quality education</p>
+                </div>
+                <div style="background: white; padding: 15px; border-radius: 8px; border-left: 3px solid var(--green);">
+                    <strong>180+ Private Universities</strong>
+                    <p style="font-size: 0.9rem; color: var(--muted); margin-top: 5px;">Flexible admission pathways</p>
+                </div>
+                <div style="background: white; padding: 15px; border-radius: 8px; border-left: 3px solid var(--green);">
+                    <strong>100+ Polytechnics</strong>
+                    <p style="font-size: 0.9rem; color: var(--muted); margin-top: 5px;">Technical & vocational training</p>
+                </div>
+                <div style="background: white; padding: 15px; border-radius: 8px; border-left: 3px solid var(--green);">
+                    <strong>150+ Colleges of Education</strong>
+                    <p style="font-size: 0.9rem; color: var(--muted); margin-top: 5px;">Teacher training institutions</p>
+                </div>
+                <div style="background: white; padding: 15px; border-radius: 8px; border-left: 3px solid var(--green);">
+                    <strong>200+ Specialized Institutions</strong>
+                    <p style="font-size: 0.9rem; color: var(--muted); margin-top: 5px;">Agriculture, health, military, etc.</p>
+                </div>
+            </div>
+            <p style="color: var(--muted); font-size: 0.9rem;">
+                <i class="fas fa-search"></i> Use the search bar above to find any institution by name or acronym<br>
+                <i class="fas fa-clipboard-list"></i> Filter by institution type to explore specific categories<br>
+                <i class="fas fa-check-circle"></i> All institutions listed are recognized by NUC, NBTE, or NCCE
+            </p>
+        </div>
+    </div>
+
+    <!-- FOOTER -->
+    <footer class="oae-footer">
+        <div class="footer-connect">
+            <h3>Connect With Us</h3>
+            <hr>
+            <div class="socials-bar">
+                <a href="#"><i class="fab fa-linkedin"></i></a>
+                <a href="#"><i class="fab fa-twitter"></i></a>
+                <a href="#"><i class="fab fa-youtube"></i></a>
+                <a href="#"><i class="fab fa-facebook"></i></a>
+                <a href="#"><i class="fab fa-instagram"></i></a>
+                <a href="#"><i class="fab fa-tiktok"></i></a>
+                <a href="https://t.me/OAECONNECT"><i class="fab fa-telegram"></i></a>
+                <a href="mailto:oaeofficial123@gmail.com"><i class="fas fa-envelope"></i></a>
+            </div>
+        </div>
+
+        <div class="footer-top">
+            <div class="mission-container">
+                <img src="/oaepic2.png" alt="OAE Mission" class="mission-img">
+                <div class="mission-text">
+                    <p class="footer-mission-summary">
+                        OAE is committed to delivering high-quality digital education from Nigeria to learners across Africa and the world. We provide verified exam preparation resources, tech tutorials, AI-enabled learning tools, and Web3-ready career pathways.
+                    </p>
+                </div>
+            </div>
+        </div>
+
+        <div class="footer-grid">
+            <div class="footer-col">
+                <h3>Quick Links</h3>
+                <a href="/">Home</a>
+                <a href="/admission/">Admission</a>
+                <a href="/admission/schools/">Schools</a>
+                <a href="/admission/post-jamb/">Post-JAMB</a>
+            </div>
+
+            <div class="footer-col">
+                <h3>Resources</h3>
+                <a href="/Exams/">Exams</a>
+                <a href="/notes/">Study Notes</a>
+                <a href="/novel/">Novels</a>
+                <a href="/Syllabus/">Syllabus</a>
+            </div>
+
+            <div class="footer-col">
+                <h3>Legal</h3>
+                <a href="/legal/privacy-policy.html">Privacy Policy</a>
+                <a href="/legal/terms-and-conditions.html">Terms & Conditions</a>
+                <a href="/legal/faqs.html">FAQs</a>
+                <a href="/legal/contact">Contact</a>
+            </div>
+        </div>
+
+        <div class="footer-bottom">
+            <p>&copy; 2024-2025 Oluwatosin Academy of Excellence. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script>
+        // Filter categories
+        function filterCategory(category) {
+            // Update active button
+            document.querySelectorAll('.category-filter-btn').forEach(btn => {
+                btn.classList.remove('active');
+            });
+            event.target.classList.add('active');
+
+            // Show/hide categories
+            const sections = document.querySelectorAll('.school-category-section');
+            if (category === 'all') {
+                sections.forEach(sec => sec.classList.remove('hidden'));
+            } else {
+                sections.forEach(sec => {
+                    if (sec.getAttribute('data-category') === category) {
+                        sec.classList.remove('hidden');
+                    } else {
+                        sec.classList.add('hidden');
+                    }
+                });
+            }
+        }
+
+        // Search functionality
+        function searchSchools() {
+            const searchTerm = document.getElementById('schoolSearch').value.toLowerCase();
+            const cards = document.querySelectorAll('.school-card');
+            let visibleCount = 0;
+
+            cards.forEach(card => {
+                const schoolName = card.querySelector('.school-name').textContent.toLowerCase();
+                const schoolAbbr = card.querySelector('.school-abbr').textContent.toLowerCase();
+
+                if (schoolName.includes(searchTerm) || schoolAbbr.includes(searchTerm)) {
+                    card.classList.remove('hidden');
+                    visibleCount++;
+                } else {
+                    card.classList.add('hidden');
+                }
+            });
+
+            // Show/hide categories based on visible cards
+            document.querySelectorAll('.school-category-section').forEach(section => {
+                const visibleCardsInSection = section.querySelectorAll('.school-card:not(.hidden)').length;
+                if (visibleCardsInSection === 0) {
+                    section.classList.add('hidden');
+                } else {
+                    section.classList.remove('hidden');
+                }
+            });
+        }
+
+        // Search on Enter key
+        document.getElementById('schoolSearch').addEventListener('keypress', function(e) {
+            if (e.key === 'Enter') {
+                searchSchools();
+            }
+        });
+
+        // Mobile menu toggle
+        const hamburger = document.getElementById('oaeHamburger');
+        const mobileMenu = document.getElementById('oaeMobileMenu');
+        hamburger.addEventListener('click', () => {
+            mobileMenu.style.display = mobileMenu.style.display === 'block' ? 'none' : 'block';
+        });
+    </script>
+</body>
+</html>

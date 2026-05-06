@@ -1,0 +1,666 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>OAE Study Dashboard</title>
+    <!-- Font Awesome for professional icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/Assets/css/notes-nav-bar.css">
+    <style>
+        :root {
+            --green: #0a8a2f;
+            --darkgreen: #066426;
+            --muted: #666;
+            --card: #f8fdf9;
+            --card-border: #e6e6e6;
+            --oae-dark: #333;
+            --shadow: 0 8px 24px rgba(8,22,16,0.04);
+        }
+
+        main { max-width: 1400px; margin: 0 auto; }
+
+        @keyframes fadeInUp { from { opacity: 0; transform: translateY(30px); } to { opacity: 1; transform: translateY(0); } }
+        @keyframes slideInDown { from { opacity: 0; transform: translateY(-20px); } to { opacity: 1; transform: translateY(0); } }
+        @keyframes scaleIn { from { opacity: 0; transform: scale(0.95); } to { opacity: 1; transform: scale(1); } }
+        @keyframes float { 0%, 100% { transform: translateY(0px); } 50% { transform: translateY(-8px); } }
+
+        .hero { text-align: center; padding: 3rem 1rem; background-color: var(--card); border-bottom: 1px solid rgba(10,138,47,0.1); margin-top: 80px; }
+        .hero h1 { color: var(--green); font-size: 2.8rem; margin-bottom: 1rem; font-weight: 700; font-family: 'Poppins', sans-serif; }
+        .hero p { max-width: 900px; margin: 0 auto; color: var(--muted); font-size: 1.05rem; line-height: 1.8; }
+        .hero .subtitle { font-size: 0.95rem; opacity: 0.85; margin-top: 0.5rem; }
+
+        .overview-section { padding: 3rem 1rem; background: linear-gradient(135deg, #fafafa 0%, #f5fdf8 100%); border-bottom: 1px solid var(--card-border); }
+        .overview-section h2 { text-align: center; color: var(--green); margin-bottom: 1.5rem; font-weight: 700; font-size: 1.8rem; font-family: 'Poppins', sans-serif; }
+        .overview-box { max-width: 1000px; margin: 0 auto; background-color: white; border-left: 4px solid var(--green); padding: 2rem; border-radius: 8px; box-shadow: var(--shadow); }
+        .overview-box p { color: var(--muted); margin-bottom: 1.5rem; line-height: 1.8; }
+
+        .subjects-section { padding: 3rem 1rem; background-color: white; }
+        .subjects-section h2 { text-align: center; color: var(--green); margin-bottom: 0.75rem; font-size: 1.8rem; font-weight: 700; font-family: 'Poppins', sans-serif; }
+        .subjects-section > p { text-align: center; color: var(--muted); margin-bottom: 2.5rem; max-width: 900px; margin-left: auto; margin-right: auto; }
+
+        .subject-category { max-width: 1300px; margin: 0 auto 3.5rem; padding-bottom: 2rem; border-bottom: 1px solid var(--card-border); }
+        .subject-category h3 { color: var(--green); margin-bottom: 1rem; font-size: 1.35rem; font-weight: 600; position: relative; padding-bottom: 0.75rem; font-family: 'Poppins', sans-serif; }
+        .subject-category h3::after { content: ''; position: absolute; bottom: 0; left: 0; width: 60px; height: 3px; background: linear-gradient(90deg, var(--green), transparent); }
+        .subject-category > p { color: var(--muted); margin-bottom: 1.75rem; font-size: 0.95rem; }
+
+        .subjects-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 2rem; }
+        
+        .subject-card { background-color: var(--card); border: 2px solid var(--card-border); border-radius: 12px; padding: 2rem; text-align: left; box-shadow: var(--shadow); transition: all 0.3s ease; text-decoration: none; display: flex; flex-direction: column; color: inherit; animation: scaleIn 0.6s ease-out both; }
+        .subject-card:nth-child(1) { animation-delay: 0.1s; }
+        .subject-card:nth-child(2) { animation-delay: 0.2s; }
+        .subject-card:nth-child(3) { animation-delay: 0.3s; }
+        .subject-card:nth-child(4) { animation-delay: 0.4s; }
+        .subject-card:hover { transform: translateY(-12px); box-shadow: 0 20px 50px rgba(10,138,47,0.2); border-color: var(--green); }
+
+        .subject-icon-wrapper { font-size: 2.5rem; color: var(--green); margin-bottom: 1.25rem; transition: all 0.3s ease; }
+        .subject-card:hover .subject-icon-wrapper { transform: scale(1.15); animation: float 1s ease-in-out infinite; }
+        .subject-card h3 { color: var(--green); margin: 0 0 0.75rem 0; font-size: 1.25rem; font-weight: 600; font-family: 'Poppins', sans-serif; }
+        .subject-definition { background: #f0f9f5; padding: 1rem; border-radius: 6px; border-left: 3px solid var(--green); margin-bottom: 1.25rem; font-size: 0.9rem; }
+        .subject-definition strong { color: var(--green); }
+        .subject-card p { color: var(--muted); margin-bottom: 1.25rem; font-size: 0.95rem; flex-grow: 1; }
+
+        .subject-topics { background: white; padding: 1rem; border-radius: 6px; margin-bottom: 1.25rem; }
+        .subject-topics h4 { color: var(--green); font-size: 0.9rem; font-weight: 600; margin-bottom: 0.75rem; }
+        .subject-topics ul { list-style-position: inside; color: var(--muted); font-size: 0.85rem; }
+        .subject-topics li { margin-bottom: 0.5rem; }
+
+        .subject-link { color: var(--green); text-decoration: none; font-weight: 600; font-size: 0.95rem; transition: all 0.3s ease; }
+        .subject-link:hover { color: var(--darkgreen); transform: translateX(5px); }
+
+        .why-study-section { padding: 3rem 1rem; background-color: var(--card); border-top: 1px solid var(--card-border); }
+        .why-study-section h2 { text-align: center; color: var(--green); margin-bottom: 1.5rem; font-weight: 700; font-size: 1.8rem; font-family: 'Poppins', sans-serif; }
+
+        .benefits-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 1.5rem; max-width: 1200px; margin: 0 auto; }
+        .benefit-card { background-color: white; padding: 1.75rem; border-radius: 10px; border-left: 4px solid var(--green); box-shadow: var(--shadow); text-align: center; transition: all 0.3s ease; }
+        .benefit-card:nth-child(1) { animation-delay: 0.1s; }
+        .benefit-card:nth-child(2) { animation-delay: 0.2s; }
+        .benefit-card:nth-child(3) { animation-delay: 0.3s; }
+        .benefit-card:nth-child(4) { animation-delay: 0.4s; }
+        .benefit-card:hover { transform: translateY(-8px); box-shadow: 0 16px 40px rgba(10,138,47,0.15); }
+        .benefit-icon { font-size: 2.5rem; color: var(--green); margin-bottom: 1rem; }
+        .benefit-card h3 { color: var(--green); font-size: 1rem; font-weight: 600; margin-bottom: 0.75rem; font-family: 'Poppins', sans-serif; }
+        .benefit-card p { color: var(--muted); font-size: 0.9rem; }
+
+        .how-to-use { padding: 3rem 1rem; background-color: white; border-top: 1px solid var(--card-border); }
+        .how-to-use h2 { text-align: center; color: var(--green); margin-bottom: 1.5rem; font-weight: 700; font-size: 1.8rem; font-family: 'Poppins', sans-serif; }
+        .how-to-use ul { max-width: 800px; margin: 0 auto; color: var(--oae-dark); line-height: 1.8; list-style-position: inside; }
+        .how-to-use li { margin-bottom: 1.25rem; font-size: 1rem; }
+
+        @media (max-width: 768px) {
+            .hero { margin-top: 60px; padding: 2rem 1rem; }
+            .hero h1 { font-size: 1.8rem; }
+            .hero p { font-size: 0.85rem; }
+            .overview-section h2, .subjects-section h2, .why-study-section h2, .how-to-use h2 { font-size: 1.4rem; }
+            .subjects-grid { grid-template-columns: 1fr; gap: 1rem; }
+            .benefits-grid { grid-template-columns: 1fr; gap: 1rem; }
+            .subject-card { padding: 1.25rem; }
+            .benefit-card { padding: 1rem; }
+        }
+    </style>
+</head>
+<body class="font-medium">
+    <!-- ============================================
+         DESKTOP NAVBAR - ALL ITEMS VISIBLE
+         Only shows on desktop (no hamburger here)
+         ============================================ -->
+    <nav class="navbar-desktop" aria-label="Main navigation">
+        <div class="container">
+            <div class="nav-desktop-inner">
+                <!-- Logo with green color -->
+                <a href="#" class="logo desktop-logo" aria-label="OAE Study Dashboard">
+                    <img src="/oae.png" alt="OAE Logo">
+                </a>
+                
+                <!-- Desktop Navigation Items -->
+                <div class="nav-items">
+                    <!-- Enhanced Professional Search Bar -->
+                    <div class="search-container">
+                        <div class="search-wrapper">
+                            <input 
+                                type="text" 
+                                class="search-input" 
+                                placeholder="Search topics, questions, keywords…"
+                                aria-label="Search study materials"
+                                id="search-input"
+                            >
+                            <button class="search-button" type="button" aria-label="Search">
+                                <i class="fas fa-search"></i>
+                            </button>
+                        </div>
+                    </div>
+                    
+                    <!-- Department Dropdown -->
+                    <div class="dropdown">
+                        <button class="nav-link dropdown-toggle" aria-haspopup="true" aria-expanded="false">
+                            <i class="fas fa-graduation-cap"></i>
+                            <span>Department</span>
+                            <i class="fas fa-chevron-down dropdown-chevron"></i>
+                        </button>
+                        <div class="dropdown-menu" role="menu">
+                            <a href="#" class="dropdown-item" role="menuitem">
+                                <i class="fas fa-flask"></i>
+                                Science
+                            </a>
+                            <a href="#" class="dropdown-item" role="menuitem">
+                                <i class="fas fa-palette"></i>
+                                Art & Humanities
+                            </a>
+                            <a href="#" class="dropdown-item" role="menuitem">
+                                <i class="fas fa-chart-line"></i>
+                                Commercial
+                            </a>
+                            <a href="#" class="dropdown-item" role="menuitem">
+                                <i class="fas fa-users"></i>
+                                Social Sciences
+                            </a>
+                            <a href="#" class="dropdown-item" role="menuitem">
+                                <i class="fas fa-book-open"></i>
+                                General Studies
+                            </a>
+                        </div>
+                    </div>
+                    
+                    <!-- Past Questions -->
+                    <a href="#" class="nav-link">
+                        <i class="fas fa-file-alt"></i>
+                        <span>Past Questions</span>
+                    </a>
+                    
+                    <!-- Practice/Quiz -->
+                    <a href="#" class="nav-link">
+                        <i class="fas fa-pencil-alt"></i>
+                        <span>Practice / Quiz</span>
+                    </a>
+                    
+                    <!-- Bookmarks -->
+                    <a href="#" class="nav-link" id="bookmarks-link">
+                        <i class="fas fa-bookmark"></i>
+                        <span>Bookmarks</span>
+                    </a>
+                    
+                    <!-- Settings -->
+                    <button class="nav-link" id="settings-button" aria-label="Open settings">
+                        <i class="fas fa-cog"></i>
+                        <span>Settings</span>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </nav>
+    
+    <!-- ============================================
+         MOBILE NAVBAR - HAMBURGER ONLY ON MOBILE
+         ============================================ -->
+    <nav class="navbar-mobile" aria-label="Mobile navigation">
+        <div class="container">
+            <div class="mobile-top-bar">
+                <!-- Logo -->
+                <a href="#" class="logo mobile-logo" aria-label="OAE Study Dashboard">
+                    <img src="/oae.png" alt="OAE Logo">
+                </a>
+                
+                <!-- Mobile Search Bar -->
+                <div class="mobile-search-container">
+                    <div class="mobile-search-wrapper">
+                        <input 
+                            type="text" 
+                            class="mobile-search-input" 
+                            placeholder="Search topics, questions…"
+                            aria-label="Search study materials"
+                        >
+                        <button class="mobile-search-button" type="button" aria-label="Search">
+                            <i class="fas fa-search"></i>
+                        </button>
+                    </div>
+                </div>
+                
+                <!-- Hamburger Menu Button (ONLY ON MOBILE) -->
+                <button class="hamburger" id="hamburger" aria-label="Open menu" aria-expanded="false">
+                    <i class="fas fa-bars"></i>
+                </button>
+            </div>
+        </div>
+    </nav>
+    
+    <!-- ============================================
+         MOBILE BOTTOM NAVBAR 
+         White with green top border
+         ============================================ -->
+    <nav class="mobile-bottom-nav" aria-label="Bottom navigation">
+        <div class="container">
+            <div class="bottom-nav-items">
+                <a href="#" class="bottom-nav-item" aria-label="Department">
+                    <i class="fas fa-graduation-cap bottom-nav-icon"></i>
+                    <span>Department</span>
+                </a>
+                <a href="#" class="bottom-nav-item" aria-label="Practice">
+                    <i class="fas fa-pencil-alt bottom-nav-icon"></i>
+                    <span>Practice</span>
+                </a>
+                <a href="#" class="bottom-nav-item" aria-label="Bookmarks">
+                    <i class="fas fa-bookmark bottom-nav-icon"></i>
+                    <span>Bookmarks</span>
+                </a>
+                <button class="bottom-nav-item" id="bottom-settings" aria-label="Settings">
+                    <i class="fas fa-cog bottom-nav-icon"></i>
+                    <span>Settings</span>
+                </button>
+            </div>
+        </div>
+    </nav>
+    
+    <!-- ============================================
+         MOBILE SLIDE-IN MENU
+         ============================================ -->
+    <div class="mobile-menu" id="mobile-menu">
+        <div class="mobile-menu-header">
+            <h2>Menu</h2>
+            <button class="close-menu" id="close-menu" aria-label="Close menu">
+                <i class="fas fa-times"></i>
+            </button>
+        </div>
+        
+        <div class="mobile-nav-items">
+            <!-- Department Dropdown -->
+            <button class="mobile-dropdown-toggle" id="mobile-department-toggle">
+                <i class="fas fa-graduation-cap"></i>
+                <span>Department</span>
+                <i class="fas fa-chevron-down"></i>
+            </button>
+            <div class="mobile-dropdown-menu" id="mobile-department-menu">
+                <a href="#" class="mobile-nav-item">
+                    <i class="fas fa-flask"></i>
+                    Science
+                </a>
+                <a href="#" class="mobile-nav-item">
+                    <i class="fas fa-palette"></i>
+                    Art & Humanities
+                </a>
+                <a href="#" class="mobile-nav-item">
+                    <i class="fas fa-chart-line"></i>
+                    Commercial
+                </a>
+                <a href="#" class="mobile-nav-item">
+                    <i class="fas fa-users"></i>
+                    Social Sciences
+                </a>
+                <a href="#" class="mobile-nav-item">
+                    <i class="fas fa-book-open"></i>
+                    General Studies
+                </a>
+            </div>
+            
+            <!-- Past Questions -->
+            <a href="#" class="mobile-nav-item">
+                <i class="fas fa-file-alt"></i>
+                Past Questions
+            </a>
+            
+            <!-- Practice/Quiz -->
+            <a href="#" class="mobile-nav-item">
+                <i class="fas fa-pencil-alt"></i>
+                Practice / Mock Exam
+            </a>
+            
+            <!-- Bookmarks -->
+            <a href="#" class="mobile-nav-item" id="mobile-bookmarks">
+                <i class="fas fa-bookmark"></i>
+                Bookmarks
+            </a>
+            
+            <!-- Settings -->
+            <a href="#" class="mobile-nav-item" id="mobile-settings">
+                <i class="fas fa-cog"></i>
+                Settings
+            </a>
+            
+            <!-- Help/Feedback -->
+            <a href="#" class="mobile-nav-item">
+                <i class="fas fa-question-circle"></i>
+                Help / Feedback
+            </a>
+        </div>
+    </div>
+    
+    <!-- ============================================
+         SETTINGS MODAL
+         ============================================ -->
+    <div class="modal-overlay" id="settings-modal">
+        <div class="settings-modal">
+            <div class="modal-header">
+                <h2>Settings</h2>
+                <button class="close-modal" id="close-settings" aria-label="Close settings">
+                    <i class="fas fa-times"></i>
+                </button>
+            </div>
+            <div class="modal-body">
+                <div class="settings-section">
+                    <h3>Display</h3>
+                    <div class="settings-option">
+                        <div class="settings-label">
+                            <span>Dark Mode</span>
+                            <span>Switch between light and dark themes</span>
+                        </div>
+                        <label class="toggle-switch">
+                            <input type="checkbox" id="dark-mode-toggle">
+                            <span class="toggle-slider"></span>
+                        </label>
+                    </div>
+                    <div class="settings-option">
+                        <div class="settings-label">
+                            <span>Font Size</span>
+                            <span>Adjust the text size for better readability</span>
+                        </div>
+                        <div class="select-container">
+                            <select class="settings-select" id="font-size-select">
+                                <option value="small">Small</option>
+                                <option value="medium" selected>Medium</option>
+                                <option value="large">Large</option>
+                            </select>
+                            <i class="fas fa-chevron-down select-arrow"></i>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="settings-section">
+                    <h3>Colors</h3>
+                    <div class="settings-option">
+                        <div class="settings-label">
+                            <span>Accent Color</span>
+                            <span>Choose your preferred accent color</span>
+                        </div>
+                        <div class="color-options">
+                            <div class="color-option color-green active" id="color-green" data-color="green">
+                                <i class="fas fa-check"></i>
+                            </div>
+                            <div class="color-option color-darkgreen" id="color-darkgreen" data-color="darkgreen">
+                                <i class="fas fa-check"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <!-- ============================================
+         MENU OVERLAY
+         ============================================ -->
+    <div class="menu-overlay" id="menu-overlay"></div>
+    
+    <!-- ============================================
+         MAIN CONTENT AREA - CENTERED
+         ============================================ -->
+    <main class="main-content">
+        <div class="hero">
+            <h1>English Language</h1>
+            <p>Master grammar, comprehension, vocabulary, and effective communication</p>
+            <p class="subtitle">Build strong English language skills for academic and professional success</p>
+        </div>
+
+        <div class="overview-section">
+            <h2>What is English Language?</h2>
+            <div class="overview-box">
+                <p>English Language studies focus on developing comprehensive language skills including grammar, vocabulary, reading comprehension, writing, and oral communication. These skills are fundamental to academic success, professional advancement, and effective communication in today's global society.</p>
+                <p>Whether mastering grammar rules, improving comprehension skills, expanding vocabulary, or perfecting written and spoken English, English Language studies provide the essential tools needed for clear communication, academic excellence, and career opportunities across all fields.</p>
+            </div>
+        </div>
+
+        <div class="subjects-section">
+            <h2>Core English Topics</h2>
+            <p>Master essential English language skills and competencies</p>
+
+            <!-- Grammar & Structure -->
+            <div class="subject-category">
+                <h3>Grammar & Sentence Structure</h3>
+                <p>Master the rules and structure of the English language</p>
+                <div class="subjects-grid">
+                    <a href="/notes/english/grammar" class="subject-card">
+                        <div class="subject-icon-wrapper"><i class="fas fa-code-branch"></i></div>
+                        <h3>Grammar</h3>
+                        <div class="subject-definition"><strong>Definition:</strong> Study of language rules, parts of speech, tenses, and sentence construction</div>
+                        <p>Learn parts of speech, tenses, agreement, sentence structure, clauses, and grammatical rules for correct English writing.</p>
+                        <div class="subject-topics">
+                            <h4>Key Topics:</h4>
+                            <ul>
+                                <li>Parts of Speech</li>
+                                <li>Verb Tenses</li>
+                                <li>Subject-Verb Agreement</li>
+                                <li>Articles & Prepositions</li>
+                                <li>Sentence Construction</li>
+                            </ul>
+                        </div>
+                        <a href="/notes/english/grammar" class="subject-link">Explore Topics →</a>
+                    </a>
+                    <a href="/notes/english/sentence-structure" class="subject-card">
+                        <div class="subject-icon-wrapper"><i class="fas fa-sitemap"></i></div>
+                        <h3>Sentence Structure</h3>
+                        <div class="subject-definition"><strong>Definition:</strong> Study of clauses, phrases, and complex sentence organization</div>
+                        <p>Understand simple, compound, and complex sentences; independent and dependent clauses; and how to construct grammatically correct sentences.</p>
+                        <div class="subject-topics">
+                            <h4>Key Topics:</h4>
+                            <ul>
+                                <li>Simple Sentences</li>
+                                <li>Compound Sentences</li>
+                                <li>Complex Sentences</li>
+                                <li>Clauses</li>
+                                <li>Punctuation & Syntax</li>
+                            </ul>
+                        </div>
+                        <a href="/notes/english/sentence-structure" class="subject-link">Explore Topics →</a>
+                    </a>
+                </div>
+            </div>
+
+            <!-- Comprehension & Writing -->
+            <div class="subject-category">
+                <h3>Reading & Comprehension</h3>
+                <p>Develop strong reading and comprehension skills for effective understanding</p>
+                <div class="subjects-grid">
+                    <a href="/notes/english/comprehension" class="subject-card">
+                        <div class="subject-icon-wrapper"><i class="fas fa-book-reader"></i></div>
+                        <h3>Comprehension</h3>
+                        <div class="subject-definition"><strong>Definition:</strong> Study of reading techniques and understanding written passages</div>
+                        <p>Develop strategies for understanding passages, identifying main ideas, drawing inferences, and answering comprehension questions accurately.</p>
+                        <div class="subject-topics">
+                            <h4>Key Topics:</h4>
+                            <ul>
+                                <li>Main Ideas & Details</li>
+                                <li>Inference & Deduction</li>
+                                <li>Context Clues</li>
+                                <li>Text Analysis</li>
+                                <li>Question Techniques</li>
+                            </ul>
+                        </div>
+                        <a href="/notes/english/comprehension" class="subject-link">Explore Topics →</a>
+                    </a>
+                    <a href="/notes/english/essay-writing" class="subject-card">
+                        <div class="subject-icon-wrapper"><i class="fas fa-pen-nib"></i></div>
+                        <h3>Essay Writing</h3>
+                        <div class="subject-definition"><strong>Definition:</strong> Study of essay structure, composition, and persuasive writing</div>
+                        <p>Master essay organization, thesis statements, paragraph development, and writing techniques for effective academic composition.</p>
+                        <div class="subject-topics">
+                            <h4>Key Topics:</h4>
+                            <ul>
+                                <li>Essay Structure</li>
+                                <li>Thesis Statements</li>
+                                <li>Paragraph Development</li>
+                                <li>Essay Types</li>
+                                <li>Editing & Proofreading</li>
+                            </ul>
+                        </div>
+                        <a href="/notes/english/essay-writing" class="subject-link">Explore Topics →</a>
+                    </a>
+                </div>
+            </div>
+
+            <!-- Vocabulary & Language -->
+            <div class="subject-category">
+                <h3>Vocabulary & Language Skills</h3>
+                <p>Expand vocabulary and improve language proficiency</p>
+                <div class="subjects-grid">
+                    <a href="/notes/english/vocabulary" class="subject-card">
+                        <div class="subject-icon-wrapper"><i class="fas fa-spell-check"></i></div>
+                        <h3>Vocabulary</h3>
+                        <div class="subject-definition"><strong>Definition:</strong> Study of word meanings, synonyms, antonyms, and word usage</div>
+                        <p>Build vocabulary through word families, contextual learning, synonyms, antonyms, and understanding word nuances for precise communication.</p>
+                        <div class="subject-topics">
+                            <h4>Key Topics:</h4>
+                            <ul>
+                                <li>Word Meanings</li>
+                                <li>Synonyms & Antonyms</li>
+                                <li>Word Families</li>
+                                <li>Idiomatic Expressions</li>
+                                <li>Word Usage</li>
+                            </ul>
+                        </div>
+                        <a href="/notes/english/vocabulary" class="subject-link">Explore Topics →</a>
+                    </a>
+                    <a href="/notes/english/phonetics" class="subject-card">
+                        <div class="subject-icon-wrapper"><i class="fas fa-microphone"></i></div>
+                        <h3>Phonetics & Pronunciation</h3>
+                        <div class="subject-definition"><strong>Definition:</strong> Study of sound systems, pronunciation, and effective oral communication</div>
+                        <p>Master phonetic symbols, stress patterns, intonation, and pronunciation for clear and effective spoken English communication.</p>
+                        <div class="subject-topics">
+                            <h4>Key Topics:</h4>
+                            <ul>
+                                <li>Phonetic Symbols</li>
+                                <li>Vowel Sounds</li>
+                                <li>Consonant Sounds</li>
+                                <li>Stress & Intonation</li>
+                                <li>Connected Speech</li>
+                            </ul>
+                        </div>
+                        <a href="/notes/english/phonetics" class="subject-link">Explore Topics →</a>
+                    </a>
+                </div>
+            </div>
+
+            <!-- Punctuation & Writing -->
+            <div class="subject-category">
+                <h3>Punctuation & Writing Mechanics</h3>
+                <p>Master punctuation rules and written communication standards</p>
+                <div class="subjects-grid">
+                    <a href="/notes/english/punctuation" class="subject-card">
+                        <div class="subject-icon-wrapper"><i class="fas fa-quote-left"></i></div>
+                        <h3>Punctuation</h3>
+                        <div class="subject-definition"><strong>Definition:</strong> Study of punctuation marks and their correct usage in writing</div>
+                        <p>Learn proper use of periods, commas, semicolons, colons, apostrophes, quotation marks, and other punctuation for clear writing.</p>
+                        <div class="subject-topics">
+                            <h4>Key Topics:</h4>
+                            <ul>
+                                <li>End Punctuation</li>
+                                <li>Commas</li>
+                                <li>Apostrophes</li>
+                                <li>Quotation Marks</li>
+                                <li>Other Punctuation</li>
+                            </ul>
+                        </div>
+                        <a href="/notes/english/punctuation" class="subject-link">Explore Topics →</a>
+                    </a>
+                    <a href="/notes/english/spelling" class="subject-card">
+                        <div class="subject-icon-wrapper"><i class="fas fa-check-double"></i></div>
+                        <h3>Spelling & Orthography</h3>
+                        <div class="subject-definition"><strong>Definition:</strong> Study of correct spelling, word formation, and writing conventions</div>
+                        <p>Master spelling rules, common spelling patterns, homonyms, and orthographic conventions for accurate written communication.</p>
+                        <div class="subject-topics">
+                            <h4>Key Topics:</h4>
+                            <ul>
+                                <li>Spelling Rules</li>
+                                <li>Common Misspellings</li>
+                                <li>Homonyms & Homophones</li>
+                                <li>Word Formation</li>
+                                <li>Commonly Confused Words</li>
+                            </ul>
+                        </div>
+                        <a href="/notes/english/spelling" class="subject-link">Explore Topics →</a>
+                    </a>
+                </div>
+            </div>
+
+            <!-- Communication Skills -->
+            <div class="subject-category">
+                <h3>Communication & Language Application</h3>
+                <p>Develop practical communication and language application skills</p>
+                <div class="subjects-grid">
+                    <a href="/notes/english/oral-communication" class="subject-card">
+                        <div class="subject-icon-wrapper"><i class="fas fa-comments"></i></div>
+                        <h3>Oral Communication</h3>
+                        <div class="subject-definition"><strong>Definition:</strong> Study of speaking skills, dialogue, presentation, and listening</div>
+                        <p>Develop effective speaking skills, presentation techniques, active listening, and confident verbal communication in various contexts.</p>
+                        <div class="subject-topics">
+                            <h4>Key Topics:</h4>
+                            <ul>
+                                <li>Speaking Skills</li>
+                                <li>Presentations</li>
+                                <li>Active Listening</li>
+                                <li>Dialogue & Discussion</li>
+                                <li>Public Speaking</li>
+                            </ul>
+                        </div>
+                        <a href="/notes/english/oral-communication" class="subject-link">Explore Topics →</a>
+                    </a>
+                    <a href="/notes/english/discourse-analysis" class="subject-card">
+                        <div class="subject-icon-wrapper"><i class="fas fa-brain"></i></div>
+                        <h3>Discourse Analysis</h3>
+                        <div class="subject-definition"><strong>Definition:</strong> Study of how language is used in context and communication</div>
+                        <p>Understand language use in context, text organization, coherence, cohesion, and how meaning is constructed in communication.</p>
+                        <div class="subject-topics">
+                            <h4>Key Topics:</h4>
+                            <ul>
+                                <li>Discourse Features</li>
+                                <li>Cohesion & Coherence</li>
+                                <li>Text Organization</li>
+                                <li>Register & Style</li>
+                                <li>Language in Context</li>
+                            </ul>
+                        </div>
+                        <a href="/notes/english/discourse-analysis" class="subject-link">Explore Topics →</a>
+                    </a>
+                </div>
+            </div>
+        </div>
+
+        <div class="why-study-section">
+            <h2>Why Improve Your English?</h2>
+            <div class="benefits-grid">
+                <div class="benefit-card">
+                    <div class="benefit-icon"><i class="fas fa-graduation-cap"></i></div>
+                    <h3>Academic Success</h3>
+                    <p>Strong English skills are essential for academic achievement in all subjects and standardized examinations.</p>
+                </div>
+                <div class="benefit-card">
+                    <div class="benefit-icon"><i class="fas fa-briefcase"></i></div>
+                    <h3>Professional Advancement</h3>
+                    <p>Excellent English opens doors to global career opportunities and professional development worldwide.</p>
+                </div>
+                <div class="benefit-card">
+                    <div class="benefit-icon"><i class="fas fa-globe"></i></div>
+                    <h3>Global Communication</h3>
+                    <p>Master English to communicate effectively with people around the world in business, education, and personal contexts.</p>
+                </div>
+                <div class="benefit-card">
+                    <div class="benefit-icon"><i class="fas fa-lightbulb"></i></div>
+                    <h3>Enhanced Understanding</h3>
+                    <p>Better language skills lead to deeper understanding of literature, ideas, and different perspectives across cultures.</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="how-to-use">
+            <h2>How to Use These Resources</h2>
+            <ul>
+                <li><strong>Select Your Topic:</strong> Choose from any of the 8 English Language topics above, organized by skill area.</li>
+                <li><strong>Explore Lessons:</strong> Each topic is divided into focused lessons with comprehensive explanations and examples.</li>
+                <li><strong>Practice Regularly:</strong> Engage with exercises, quizzes, and practice questions to reinforce your learning and skill development.</li>
+                <li><strong>Study Systematically:</strong> Use these resources to prepare for JAMB, WAEC, NECO, and GCE examinations in English Language.</li>
+                <li><strong>Review & Revise:</strong> Revisit topics regularly to ensure mastery and long-term retention of language skills.</li>
+                <li><strong>Apply & Improve:</strong> Use your improved English skills in daily communication, writing, and academic work for continuous improvement.</li>
+            </ul>
+        </div>
+    </main>
+    <script type="module" src="/Assets/js/notes-nav-bar.js"></script>
+</body>
+</html>

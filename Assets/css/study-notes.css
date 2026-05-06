@@ -1,0 +1,220 @@
+/* Study Notes Specific Styles - Slow Learner Friendly */
+
+:root {
+    --note-bg: #ffffff;
+    --note-text: #333333;
+    --note-muted: #666666;
+    --note-primary: #0a8a2f;
+    --note-primary-light: #1fb98033;
+    --note-warning: #ff9800;
+    --note-warning-light: #fff3e0;
+    --note-danger: #e53935;
+    --note-danger-light: #ffebee;
+    --note-info: #2196f3;
+    --note-info-light: #e3f2fd;
+    --note-border: #e0e0e0;
+}
+
+body.dark-mode {
+    --note-bg: #1e1e1e;
+    --note-text: #e0e0e0;
+    --note-muted: #999999;
+    --note-primary: #1fb980;
+    --note-primary-light: rgba(31, 185, 128, 0.1);
+    --note-warning: #ffb74d;
+    --note-warning-light: rgba(255, 152, 0, 0.1);
+    --note-danger: #ef5350;
+    --note-danger-light: rgba(229, 57, 53, 0.1);
+    --note-info: #64b5f6;
+    --note-info-light: rgba(33, 150, 243, 0.1);
+    --note-border: #333333;
+}
+
+.study-note-container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 2rem 1rem;
+    font-family: 'Inter', sans-serif;
+    color: var(--note-text);
+    line-height: 1.8;
+}
+
+.study-note-container h1 {
+    color: var(--note-primary);
+    font-size: 2.5rem;
+    margin-bottom: 0.5rem;
+    text-align: center;
+}
+
+.study-note-container h2 {
+    color: var(--note-primary);
+    font-size: 1.8rem;
+    margin-top: 2.5rem;
+    margin-bottom: 1rem;
+    border-bottom: 2px solid var(--note-primary-light);
+    padding-bottom: 0.5rem;
+}
+
+.study-note-container h3 {
+    font-size: 1.4rem;
+    margin-top: 1.5rem;
+    margin-bottom: 0.75rem;
+    color: var(--note-text);
+}
+
+.study-note-container p {
+    font-size: 1.1rem;
+    margin-bottom: 1.5rem;
+}
+
+/* 1. The Hook (Real-World Example) */
+.note-hook {
+    background-color: var(--note-info-light);
+    border-left: 5px solid var(--note-info);
+    padding: 1.5rem;
+    border-radius: 0 12px 12px 0;
+    margin-bottom: 2rem;
+    font-style: italic;
+}
+.note-hook strong {
+    color: var(--note-info);
+    display: block;
+    margin-bottom: 0.5rem;
+    font-style: normal;
+    font-size: 1.2rem;
+}
+
+/* 2. Definitions */
+.note-definition {
+    background-color: var(--note-primary-light);
+    border: 1px solid var(--note-primary);
+    padding: 1rem 1.5rem;
+    border-radius: 8px;
+    margin-bottom: 1.5rem;
+}
+.note-definition strong {
+    color: var(--note-primary);
+}
+
+/* 4. Formula Box */
+.note-formula {
+    background-color: var(--note-bg);
+    border: 2px dashed var(--note-primary);
+    padding: 1.5rem;
+    border-radius: 12px;
+    margin: 2rem 0;
+    text-align: center;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+}
+.note-formula-math {
+    font-size: 2rem;
+    font-weight: bold;
+    color: var(--note-primary);
+    margin-bottom: 1rem;
+    font-family: 'Courier New', Courier, monospace;
+}
+.note-formula-vars {
+    text-align: left;
+    display: inline-block;
+    font-size: 1.05rem;
+    color: var(--note-muted);
+}
+.note-formula-vars li {
+    margin-bottom: 0.5rem;
+}
+
+/* 5. Worked Examples */
+.note-example {
+    background-color: var(--note-bg);
+    border: 1px solid var(--note-border);
+    border-radius: 12px;
+    margin-bottom: 2rem;
+    overflow: hidden;
+}
+.note-example-header {
+    background-color: var(--note-primary);
+    color: white;
+    padding: 0.75rem 1.5rem;
+    font-weight: 600;
+}
+.note-example-body {
+    padding: 1.5rem;
+}
+.note-example-question {
+    font-weight: bold;
+    margin-bottom: 1rem;
+}
+.note-example-step {
+    margin-bottom: 1rem;
+    padding-left: 1rem;
+    border-left: 3px solid var(--note-border);
+}
+.note-example-step-why {
+    font-size: 0.95rem;
+    color: var(--note-muted);
+    font-style: italic;
+    display: block;
+    margin-top: 0.25rem;
+}
+
+/* 6. Exam Traps */
+.note-trap {
+    background-color: var(--note-danger-light);
+    border-left: 5px solid var(--note-danger);
+    padding: 1.5rem;
+    border-radius: 0 12px 12px 0;
+    margin: 2rem 0;
+}
+.note-trap strong {
+    color: var(--note-danger);
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    margin-bottom: 0.5rem;
+    font-size: 1.2rem;
+}
+
+/* 7. Summary */
+.note-summary {
+    background-color: var(--note-bg);
+    border: 1px solid var(--note-border);
+    padding: 1.5rem;
+    border-radius: 12px;
+    margin-top: 3rem;
+    box-shadow: 0 8px 24px rgba(0,0,0,0.05);
+}
+.note-summary h3 {
+    margin-top: 0;
+    color: var(--note-primary);
+}
+.note-summary ul {
+    padding-left: 1.5rem;
+}
+.note-summary li {
+    margin-bottom: 0.75rem;
+}
+
+/* Navigation Buttons */
+.note-nav {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 3rem;
+    padding-top: 2rem;
+    border-top: 1px solid var(--note-border);
+}
+.note-nav a {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem;
+    padding: 0.75rem 1.5rem;
+    background-color: var(--note-primary-light);
+    color: var(--note-primary);
+    text-decoration: none;
+    border-radius: 8px;
+    font-weight: 600;
+    transition: all 0.3s ease;
+}
+.note-nav a:hover {
+    background-color: var(--note-primary);
+    color: white;
+}

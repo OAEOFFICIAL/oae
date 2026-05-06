@@ -1,0 +1,372 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>OAE Smart Admission Chance Predictor | Will You Get Admitted?</title>
+    <meta name="description"
+        content="Find out your real admission chances using OAE's Smart Predictor. Powered by actual historical cut-off data for Nigerian universities — get a verdict in seconds.">
+    <meta name="keywords"
+        content="admission chance predictor, post-utme calculator, UNILAG cutoff, OAU aggregate, Nigeria university admission">
+
+    <!-- Icons & Fonts -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap"
+        rel="stylesheet">
+
+    <!-- OAE Global Styles -->
+    <link rel="stylesheet" href="../../Assets/css/post-jamb-navbar.css">
+    <link rel="stylesheet" href="../../Assets/css/footer.css">
+
+    <!-- Page Style -->
+    <link rel="stylesheet" href="../../Assets/css/chance-predictor.css">
+    <link rel="stylesheet" href="../../Assets/css/cross-tools.css">
+</head>
+
+<body>
+
+    <!-- ══ NAVBAR ══════════════════════════════════════════════ -->
+    <nav class="oae-navbar">
+        <div class="oae-logo">
+            <a href="../../index.html">
+                <img class="logo-quiz" src="../../oae.png" alt="OAE">
+            </a>
+        </div>
+        <div class="oae-search-section">
+            <div class="oae-search-container">
+                <i class="fas fa-search"></i>
+                <input type="text" placeholder="Search JAMB, schools, courses..." autocomplete="off">
+                <button class="oae-search-btn">Search</button>
+            </div>
+        </div>
+        <ul class="oae-nav-links">
+            <li><a href="/admission/post-jamb/index.html">Post-JAMB</a></li>
+            <li><a href="#" class="active">Admission</a></li>
+            <li><a href="/admission/schools/index.htm">Schools</a></li>
+            <li><a href="/admission/updates/index.html">Updates</a></li>
+        </ul>
+        <button class="oae-join-btn" id="oaeJoinBtn">Join OAE</button>
+        <button class="oae-hamburger" id="oaeHamburger">
+            <i class="fas fa-bars"></i>
+        </button>
+        <div class="oae-mobile-menu" id="oaeMobileMenu">
+            <ul class="oae-mobile-links">
+                <li><a href="/admission/post-jamb/index.html">Post-JAMB</a></li>
+                <li><a href="#">Admission</a></li>
+                <li><a href="/admission/schools/index.htm">Schools</a></li>
+                <li><a href="/admission/updates/index.html">Updates</a></li>
+                <li>
+                    <button class="oae-join-mobile" id="oaeJoinMobile">
+                        <i class="fas fa-user-plus"></i> Join OAE
+                    </button>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- ══ HERO ════════════════════════════════════════════════ -->
+    <section class="pred-hero">
+        <div class="ai-badge">
+            <span class="pulse-dot"></span>
+            OAE Smart Predictor — Powered by Real Data
+        </div>
+        <h1>Will You Get <span>Admitted</span>?</h1>
+        <p>Enter your scores and let our engine compare you against actual historical cut-off marks — including merit
+            and state catchment quotas.</p>
+        <div class="hero-stats">
+            <div class="hero-stat">
+                <strong>4+</strong>
+                <span>Universities</span>
+            </div>
+            <div class="hero-stat">
+                <strong>300+</strong>
+                <span>Courses Analysed</span>
+            </div>
+            <div class="hero-stat">
+                <strong>37</strong>
+                <span>States Supported</span>
+            </div>
+            <div class="hero-stat">
+                <strong>2025/26</strong>
+                <span>Latest Data</span>
+            </div>
+        </div>
+    </section>
+
+    <!-- ══ MAIN PREDICTOR GRID ══════════════════════════════════ -->
+    <main class="pred-main">
+        <div class="pred-grid">
+
+            <!-- LEFT: Input Form -->
+            <div class="pred-card">
+                <h3><i class="fas fa-sliders-h"></i> Enter Your Details</h3>
+
+                <!-- Post-UTME Status Question -->
+                <div class="form-group putme-status-group" style="margin-bottom: 20px; padding-bottom: 15px; border-bottom: 1px solid rgba(0, 0, 0, 0.05);">
+                    <label style="font-weight: 600; color: #1e293b; margin-bottom: 10px; display: block;">
+                        <i class="fas fa-question-circle" style="color: #6366f1;"></i> Have you taken your Post-UTME Exam?
+                    </label>
+                    <div class="radio-group" style="display: flex; gap: 20px;">
+                        <label style="display: flex; align-items: center; gap: 8px; cursor: pointer; font-size: 0.95rem;">
+                            <input type="radio" name="putme_status" value="yes" checked style="width: auto; margin: 0; accent-color: #6366f1;">
+                            Yes, I have my score
+                        </label>
+                        <label style="display: flex; align-items: center; gap: 8px; cursor: pointer; font-size: 0.95rem;">
+                            <input type="radio" name="putme_status" value="no" style="width: auto; margin: 0; accent-color: #6366f1;">
+                            No, what score do I need?
+                        </label>
+                    </div>
+                </div>
+
+                <!-- University -->
+                <div class="form-group">
+                    <label for="pred-uni-select"><i class="fas fa-university"></i> University</label>
+                    <select id="pred-uni-select">
+                        <option value="">— Select University —</option>
+                    </select>
+                </div>
+
+                <!-- Course -->
+                <div class="form-group">
+                    <label for="pred-course-select"><i class="fas fa-book-open"></i> Course / Programme</label>
+                    <select id="pred-course-select" disabled>
+                        <option value="">— Select University First —</option>
+                    </select>
+                </div>
+
+                <!-- State of Origin -->
+                <div class="form-group">
+                    <label for="pred-state-select"><i class="fas fa-map-marker-alt"></i> State of Origin</label>
+                    <select id="pred-state-select">
+                        <option value="">— Select State —</option>
+                    </select>
+                    <p class="score-hint">Used to check your catchment quota eligibility.</p>
+                </div>
+
+                <!-- JAMB Score -->
+                <div class="form-group">
+                    <label for="pred-jamb"><i class="fas fa-pencil-alt"></i> JAMB Score (Out of 400)</label>
+                    <input type="number" id="pred-jamb" placeholder="e.g. 260" min="0" max="400">
+                </div>
+
+                <!-- Post-UTME Score -->
+                <div class="form-group" id="pred-putme-group" style="display:none;">
+                    <label id="pred-putme-label" for="pred-putme">Post-UTME Score</label>
+                    <input type="number" id="pred-putme" placeholder="Enter your score" min="0" max="100">
+                </div>
+
+                <!-- O'Level Grades -->
+                <div class="olevel-section" id="pred-olevel-section">
+                    <div class="form-group">
+                        <label><i class="fas fa-graduation-cap"></i> Five (5) O'Level Subject Grades</label>
+                        <div class="olevel-grid-pred">
+                            <div class="olevel-item">
+                                <label>Subject 1</label>
+                                <select class="pred-olevel-grade">
+                                    <option value="">Grade</option>
+                                    <option value="A1">A1</option>
+                                    <option value="B2">B2</option>
+                                    <option value="B3">B3</option>
+                                    <option value="C4">C4</option>
+                                    <option value="C5">C5</option>
+                                    <option value="C6">C6</option>
+                                </select>
+                            </div>
+                            <div class="olevel-item">
+                                <label>Subject 2</label>
+                                <select class="pred-olevel-grade">
+                                    <option value="">Grade</option>
+                                    <option value="A1">A1</option>
+                                    <option value="B2">B2</option>
+                                    <option value="B3">B3</option>
+                                    <option value="C4">C4</option>
+                                    <option value="C5">C5</option>
+                                    <option value="C6">C6</option>
+                                </select>
+                            </div>
+                            <div class="olevel-item">
+                                <label>Subject 3</label>
+                                <select class="pred-olevel-grade">
+                                    <option value="">Grade</option>
+                                    <option value="A1">A1</option>
+                                    <option value="B2">B2</option>
+                                    <option value="B3">B3</option>
+                                    <option value="C4">C4</option>
+                                    <option value="C5">C5</option>
+                                    <option value="C6">C6</option>
+                                </select>
+                            </div>
+                            <div class="olevel-item">
+                                <label>Subject 4</label>
+                                <select class="pred-olevel-grade">
+                                    <option value="">Grade</option>
+                                    <option value="A1">A1</option>
+                                    <option value="B2">B2</option>
+                                    <option value="B3">B3</option>
+                                    <option value="C4">C4</option>
+                                    <option value="C5">C5</option>
+                                    <option value="C6">C6</option>
+                                </select>
+                            </div>
+                            <div class="olevel-item">
+                                <label>Subject 5</label>
+                                <select class="pred-olevel-grade">
+                                    <option value="">Grade</option>
+                                    <option value="A1">A1</option>
+                                    <option value="B2">B2</option>
+                                    <option value="B3">B3</option>
+                                    <option value="C4">C4</option>
+                                    <option value="C5">C5</option>
+                                    <option value="C6">C6</option>
+                                </select>
+                            </div>
+                        </div>
+                        <p class="score-hint">Select grades for your 5 core subjects used in the aggregate formula.</p>
+                    </div>
+                </div>
+
+                <!-- Error Message -->
+                <div class="pred-error" id="pred-error"></div>
+
+                <!-- Predict Button -->
+                <button class="predict-btn" id="predict-btn">
+                    <span id="predict-btn-text"><i class="fas fa-brain"></i> Predict My Admission Chances</span>
+                </button>
+            </div>
+
+            <!-- RIGHT: Result Area -->
+            <div class="result-panel" id="pred-result-panel">
+
+                <!-- Loading -->
+                <div class="pred-loading" id="pred-loading">
+                    <i class="fas fa-circle-notch"></i> Analysing your profile against cut-off data...
+                </div>
+
+                <!-- Default Placeholder -->
+                <div class="result-placeholder" id="pred-result-area">
+                    <div class="placeholder-icon">
+                        <i class="fas fa-brain"></i>
+                    </div>
+                    <h4>Your Prediction Will Appear Here</h4>
+                    <p>Fill in your details on the left and click <strong>"Predict My Admission Chances"</strong> to see
+                        your personalised verdict, cut-off comparison, and smart recommendations.</p>
+                </div>
+
+            </div>
+        </div>
+    </main>
+
+    <!-- ══ HOW IT WORKS ═════════════════════════════════════════ -->
+    <section class="how-section">
+        <h2>How the Smart Predictor Works</h2>
+        <div class="how-grid">
+            <div class="how-card">
+                <div class="how-num">1</div>
+                <h4>Provide Your Details</h4>
+                <p>Enter your JAMB score, O'Level grades, and state of origin. Tell us if you have taken your Post-UTME exam yet.</p>
+            </div>
+            <div class="how-card">
+                <div class="how-num">2</div>
+                <h4>We Run the Algorithms</h4>
+                <p>We calculate your aggregate or reverse-engineer your required target score using the exact formula for your chosen university.</p>
+            </div>
+            <div class="how-card">
+                <div class="how-num">3</div>
+                <h4>Match Against Cut-Offs</h4>
+                <p>Your profile is compared against actual 2025/2026 departmental merit and state catchment cut-off marks.</p>
+            </div>
+            <div class="how-card">
+                <div class="how-num">4</div>
+                <h4>Get Verdict & Alternatives</h4>
+                <p>See your admission chances or target goals. If your chosen course is out of reach, we recommend realistic alternative courses.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- ══ DISCLAIMER ═══════════════════════════════════════════ -->
+    <div class="disclaimer" style="margin: 0 auto 50px; max-width: 1060px; padding: 0 20px;">
+        <div
+            style="background:#fff8e1; border-left:4px solid #ffc107; border-radius:0 12px 12px 0; padding:14px 20px; font-size:0.82rem; color:#5a4000; line-height:1.6;">
+            <strong>⚠️ Disclaimer:</strong> This predictor is based on <strong>historical cut-off data</strong> and does
+            not guarantee admission. Actual admission decisions rest solely with the university. Cut-off marks change
+            annually. Always verify directly with your institution.
+        </div>
+    </div>
+
+    <!-- ══ FOOTER ════════════════════════════════════════════════ -->
+    <footer class="oae-footer">
+        <div class="footer-connect">
+            <h3>Connect With Us</h3>
+            <hr>
+            <div class="socials-bar">
+                <a href="#"><i class="fab fa-linkedin"></i></a>
+                <a href="#"><i class="fab fa-twitter"></i></a>
+                <a href="#"><i class="fab fa-youtube"></i></a>
+                <a href="#"><i class="fab fa-facebook"></i></a>
+                <a href="#"><i class="fab fa-instagram"></i></a>
+                <a href="#"><i class="fab fa-tiktok"></i></a>
+                <a href="https://t.me/OAECONNECT"><i class="fab fa-telegram"></i></a>
+                <a href="mailto:oaeofficial123@gmail.com"><i class="fas fa-envelope"></i></a>
+            </div>
+        </div>
+        <div class="footer-top">
+            <div class="mission-container">
+                <img src="../../oaepic2.png" alt="OAE Mission" class="mission-img">
+                <div class="mission-text">
+                    <p class="footer-mission-summary">OAE is committed to delivering high-quality digital education from
+                        Nigeria to learners across Africa and the world.</p>
+                </div>
+            </div>
+            <p class="short-about">Oluwatosin Academy of Excellence (OAE) is a Nigerian EdTech organisation delivering
+                exam preparation...</p>
+            <div class="newsletter">
+                <input type="email" placeholder="Enter your email for updates">
+                <button>Subscribe</button>
+            </div>
+        </div>
+        <div class="footer-grid">
+            <div class="footer-col">
+                <h3>About OAE</h3>
+                <a href="#">Who We Are</a>
+                <a href="#">Our Mission</a>
+            </div>
+            <div class="footer-col">
+                <h3>Admission Tools</h3>
+                <a href="/admission/aggregate-calculator/">Aggregate Calculator</a>
+                <a href="/admission/chance-predictor/">Chance Predictor</a>
+                <a href="/admission/cut-off-marks/">Cut-Off Explorer</a>
+            </div>
+            <div class="footer-col">
+                <h3>Exam Categories</h3>
+                <a href="#">JAMB Resources</a>
+                <a href="#">Post-UTME</a>
+            </div>
+            <div class="footer-col">
+                <h3>Contact</h3>
+                <div class="contact-item"><i class="ri-map-pin-line"></i> Lagos, Nigeria</div>
+                <div class="contact-item"><i class="ri-mail-line"></i> oaeofficial123@gmail.com</div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>🌍 Trusted by <strong>15,000+ learners</strong> across Nigeria, Africa, and the world.</p>
+            <p>© 2025 OAE — Oluwatosin Academy of Excellence. All rights reserved.</p>
+            <div class="legal-links">
+                <a href="#">Terms of Use</a>
+                <a href="#">Privacy Policy</a>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="../../Assets/js/post-jamb-navbar.js"></script>
+    <script src="../../Assets/js/navbar.js"></script>
+    <!-- Load cutoffs DB first, then predictor engine -->
+    <script src="../../Assets/js/cutoffs-db.js"></script>
+    <script src="../../Assets/js/chance-predictor.js"></script>
+    <script src="../../Assets/js/cross-tools.js"></script>
+
+</body>
+
+</html>

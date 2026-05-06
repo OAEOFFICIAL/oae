@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Live Admission Updates & News Board | OAE</title>
+    <meta name="description" content="Stay fully updated on Post-UTME forms, JAMB cut-off marks, and admission news across Nigerian universities. Don't miss out on your admission opportunities.">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/remixicon@4.0.0/remixicon.css" >
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="/Assets/css/post-jamb-navbar.css">
+    <link rel="stylesheet" href="/Assets/css/footer.css">
+    <link rel="stylesheet" href="/Assets/css/updates.css">
+</head>
+<body>
+    <!-- OAE Navbar - WHITE BACKGROUND (Global Design System) -->
+    <nav class="oae-navbar">
+         <div class="oae-logo">
+            <a href="../../Index.htm">
+               <img class="logo-quiz" src="../../oae.png" alt="OAE">
+            </a>
+        </div>
+
+        <div class="oae-search-section">
+            <div class="oae-search-container">
+                <i class="fas fa-search"></i>
+                <input type="text" placeholder="Search JAMB, schools, updates...">
+                <button class="oae-search-btn">Search</button>
+            </div>
+        </div>
+
+        <ul class="oae-nav-links">
+            <li><a href="/admission/post-jamb/index.html">Post-JAMB</a></li>
+            <li><a href="/admission/index.html">Admission</a></li>
+            <li><a href="/admission/post-jamb/index.html">Schools</a></li>
+            <li><a href="/admission/updates/index.html">Updates</a></li>
+        </ul>
+
+        <button class="oae-join-btn">Join OAE</button>
+        
+        <button class="oae-hamburger" id="oaeHamburger">
+            <i class="fas fa-bars"></i>
+        </button>
+
+        <div class="oae-mobile-menu" id="oaeMobileMenu">
+            <ul class="oae-mobile-links">
+                <li><a href="/admission/post-jamb/index.html">Post-JAMB</a></li>
+                <li><a href="/admission/index.html">Admission</a></li>
+                <li><a href="#">Schools</a></li>
+                <li><a href="#">Updates</a></li>
+                <li>
+                    <button class="oae-join-mobile">
+                        <i class="fas fa-user-plus"></i> Join OAE
+                    </button>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- HERO SECTION -->
+    <header class="news-hero">
+        <h1>Admission Updates Board</h1>
+        <p>Stay ahead of the curve. Get live breaking news on Post-UTME form releases, screening dates, and official JAMB cutoff guidelines.</p>
+    </header>
+
+    <main class="updates-container">
+        <!-- SIDEBAR -->
+        <aside class="news-sidebar">
+            <h3 class="sidebar-title"><i class="fas fa-filter"></i> Topic Filter</h3>
+            <button class="filter-btn active" data-filter="All">All Updates</button>
+            <button class="filter-btn" data-filter="Post-UTME">Post-UTME Forms</button>
+            <button class="filter-btn" data-filter="Cut-Off">Cut-Off Marks</button>
+            <button class="filter-btn" data-filter="JAMB">JAMB News</button>
+            <button class="filter-btn" data-filter="General">General Advice</button>
+        </aside>
+
+        <!-- FEED -->
+        <div class="news-feed" id="newsFeed">
+            <!-- Handled dynamically by Javascript updates-database.js -->
+        </div>
+    </main>
+
+    <!-- FOOTER -->
+    <footer class="oae-footer">
+      <div class="footer-connect">
+        <h3>Connect With Us</h3>
+        <hr>
+        <div class="socials-bar">
+          <a href="#"><i class="fab fa-linkedin"></i></a>
+          <a href="#"><i class="fab fa-twitter"></i></a>
+          <a href="#"><i class="fab fa-youtube"></i></a>
+          <a href="#"><i class="fab fa-facebook"></i></a>
+          <a href="#"><i class="fab fa-instagram"></i></a>
+        </div>
+      </div>
+
+      <div class="footer-top">
+        <div class="mission-container">
+          <img src="/oaepic2.png" alt="OAE Mission" class="mission-img">
+          <div class="mission-text">
+            <p class="footer-mission-summary">
+              OAE is committed to delivering high-quality digital education from Nigeria to learners across Africa and the world. We provide verified exam preparation resources, tech tutorials, and AI-enabled learning tools.
+            </p>
+          </div>
+        </div>
+        <p class="short-about">
+          Oluwatosin Academy of Excellence (OAE) is a Nigerian EdTech organisation delivering exam preparation tools worldwide.
+        </p>
+      </div>
+
+      <div class="footer-bottom">
+        <p>🌍 Trusted by <strong>15,000+ learners</strong> across Nigeria, Africa, and the world.</p>
+        <p>© 2025 OAE — Oluwatosin Academy of Excellence. All rights reserved.</p>
+      </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="/Assets/js/post-jamb-navbar.js"></script>
+    <script src="/Assets/js/navbar.js"></script>
+    <!-- The Fake Database Array -->
+    <script src="/Assets/js/updates-database.js"></script>
+    
+    <!-- Render Engine -->
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            const feedContainer = document.getElementById('newsFeed');
+            const filterBtns = document.querySelectorAll('.filter-btn');
+
+            function renderNews(filter = 'All') {
+                feedContainer.innerHTML = '';
+                
+                let filteredNews = oaeNewsDatabase;
+                if (filter !== 'All') {
+                    filteredNews = oaeNewsDatabase.filter(news => news.category.toLowerCase() === filter.toLowerCase());
+                }
+
+                if (filteredNews.length === 0) {
+                    feedContainer.innerHTML = '<p style="grid-column: 1/-1; text-align:center; color:#64748b; padding: 40px; font-weight: bold; font-size: 1.1rem;"><i class="fas fa-search" style="font-size:2rem;display:block;margin-bottom:10px;color:#cbd5e1"></i> No updates found for this category currently.</p>';
+                    return;
+                }
+
+                filteredNews.forEach(news => {
+                    const card = document.createElement('div');
+                    card.className = 'news-card';
+                    
+                    // Format Date nicely
+                    const d = new Date(news.date);
+                    const dateStr = d.toLocaleDateString('en-US', { month: 'short', day: 'numeric', year: 'numeric' });
+                    
+                    // We'll hardcode hot badge for highly critical news (ID 4 and 2) or recently added ones.
+                    const hotBadge = (news.id === 4 || news.id === 2 || news.id === 3) ? '<div class="hot-badge"><i class="fas fa-fire"></i> HOT</div>' : '';
+
+                    const categoryClass = news.category.toLowerCase();
+
+                    const linkMarkup = news.link && news.link.length > 0 
+                        ? `<a href="${news.link}" class="action-link"><i class="fas fa-external-link-alt"></i> View Full Details</a>`
+                        : '';
+
+                    card.innerHTML = `
+                        ${hotBadge}
+                        <div class="card-header">
+                            <span class="category-tag ${categoryClass}">${news.category}</span>
+                            <span class="date-text"><i class="far fa-clock"></i> ${dateStr}</span>
+                        </div>
+                        <h2 class="news-title">${news.title}</h2>
+                        <p class="news-excerpt">${news.excerpt}</p>
+                        <button class="read-more-btn" onclick="toggleReadMore(this)">
+                            Read Full Story <i class="fas fa-chevron-down"></i>
+                        </button>
+                        <div class="full-content">
+                            ${news.content}
+                            <br>
+                            ${linkMarkup}
+                        </div>
+                    `;
+                    feedContainer.appendChild(card);
+                });
+            }
+
+            // Init Render
+            renderNews('All');
+
+            // Set up Filtering Interactions
+            filterBtns.forEach(btn => {
+                btn.addEventListener('click', (e) => {
+                    filterBtns.forEach(b => b.classList.remove('active'));
+                    e.target.classList.add('active');
+                    renderNews(e.target.getAttribute('data-filter'));
+                });
+            });
+        });
+
+        // Global toggle function
+        window.toggleReadMore = function(btn) {
+            const content = btn.nextElementSibling;
+            const isVisible = content.classList.contains('visible');
+            
+            if (isVisible) {
+                content.classList.remove('visible');
+                btn.innerHTML = 'Read Full Story <i class="fas fa-chevron-down"></i>';
+            } else {
+                content.classList.add('visible');
+                btn.innerHTML = 'Close Detail <i class="fas fa-chevron-up"></i>';
+            }
+        };
+    </script>
+</body>
+</html>

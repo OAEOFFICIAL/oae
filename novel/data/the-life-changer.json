@@ -1,0 +1,283 @@
+{
+  "meta": {
+    "novelId": "the-life-changer",
+    "title": "The Life Changer",
+    "author": "Khadija Abubakar Jalli",
+    "year": 2021,
+    "sectionA": 25,
+    "notes": "JAMB 2021-2024 prescribed novel. Add actual novel extracts and corresponding questions. Current structure shows format with sample comprehension passages."
+  },
+  "questions": [
+    {
+      "id": "tlc-a-001",
+      "type": "comprehension",
+      "passageTitle": "Personal Resilience",
+      "passage": "Resilience is the capacity to recover quickly from difficulties and adapt to challenging circumstances. Throughout history, individuals who have demonstrated exceptional resilience have inspired others to persevere through their own trials. These resilient individuals often share common traits: they maintain realistic optimism, develop strong social support networks, and cultivate a sense of purpose that guides their actions. Psychological research indicates that resilience is not an innate trait but rather a skill that can be developed through practice and experience. People who have overcome significant adversity often report that their struggles taught them valuable lessons about themselves and their capabilities. By recognizing resilience as a learnable skill, individuals can work systematically to strengthen their ability to navigate life's challenges effectively.",
+      "question": "According to the passage, what is the primary characteristic of resilient individuals?",
+      "options": ["A. They never experience difficulties", "B. They maintain realistic optimism and develop strong support networks", "C. They avoid all forms of challenge", "D. They depend entirely on others for guidance"],
+      "answer": 1,
+      "explanation": "The passage states that resilient individuals 'maintain realistic optimism, develop strong social support networks, and cultivate a sense of purpose.'",
+      "topic": "Prescribed Novel Extracts"
+    },
+    {
+      "id": "tlc-a-002",
+      "type": "comprehension",
+      "passageTitle": "Personal Resilience",
+      "passage": "Resilience is the capacity to recover quickly from difficulties and adapt to challenging circumstances. Throughout history, individuals who have demonstrated exceptional resilience have inspired others to persevere through their own trials. These resilient individuals often share common traits: they maintain realistic optimism, develop strong social support networks, and cultivate a sense of purpose that guides their actions. Psychological research indicates that resilience is not an innate trait but rather a skill that can be developed through practice and experience. People who have overcome significant adversity often report that their struggles taught them valuable lessons about themselves and their capabilities. By recognizing resilience as a learnable skill, individuals can work systematically to strengthen their ability to navigate life's challenges effectively.",
+      "question": "What does the passage suggest about the relationship between resilience and personal growth?",
+      "options": ["A. Difficulties prevent personal growth", "B. Resilience offers no lessons for personal development", "C. Struggles with adversity teach valuable lessons about oneself", "D. Personal growth only occurs without challenges"],
+      "answer": 2,
+      "explanation": "The passage indicates that 'people who have overcome significant adversity often report that their struggles taught them valuable lessons about themselves and their capabilities.'",
+      "topic": "Prescribed Novel Extracts"
+    },
+    {
+      "id": "tlc-a-003",
+      "type": "comprehension",
+      "passageTitle": "Community Service",
+      "passage": "Community service plays a vital role in fostering social cohesion and addressing collective challenges. When individuals dedicate their time and talents to serving their communities, they create positive ripple effects that extend far beyond immediate recipients. Volunteer work strengthens social bonds, builds trust among community members, and creates networks of mutual support. Studies show that individuals engaged in community service report higher levels of life satisfaction and a greater sense of purpose. Beyond personal benefits, community service programs address critical social needs—from education and healthcare to environmental protection. For young people in particular, community service provides opportunities to develop leadership skills, understand social issues more deeply, and contribute meaningfully to society. The most effective communities are those where service becomes a shared value embedded in the culture.",
+      "question": "What is the primary benefit of community service according to the passage?",
+      "options": ["A. Only individual financial gain", "B. Fostering social cohesion and addressing collective challenges", "C. Avoiding personal responsibility", "D. Creating divisions within communities"],
+      "answer": 1,
+      "explanation": "The passage explicitly states that 'community service plays a vital role in fostering social cohesion and addressing collective challenges.'",
+      "topic": "Prescribed Novel Extracts"
+    },
+    {
+      "id": "tlc-a-004",
+      "type": "vocabulary",
+      "question": "In the community service passage, 'cohesion' most nearly means:",
+      "options": ["A. Division and separation", "B. The act of sticking together as a unified group", "C. Individual achievement", "D. Financial compensation"],
+      "answer": 1,
+      "explanation": "'Cohesion' refers to the process of coming together and forming a unified whole. Social cohesion means people uniting for common purposes.",
+      "topic": "Prescribed Novel Extracts"
+    },
+    {
+      "id": "tlc-a-005",
+      "type": "inference",
+      "question": "From the community service passage, what can be inferred about the relationship between service and personal development?",
+      "options": ["A. Service provides no benefit to individuals", "B. Only communities benefit from service", "C. Engaging in service contributes to personal growth and a stronger sense of purpose", "D. Service is only for those seeking financial rewards"],
+      "answer": 2,
+      "explanation": "The passage indicates that community service provides 'opportunities to develop leadership skills' and individuals 'report higher levels of life satisfaction and a greater sense of purpose.'",
+      "topic": "Prescribed Novel Extracts"
+    },
+    {
+      "id": "tlc-a-006",
+      "type": "comprehension",
+      "passageTitle": "Educational Access",
+      "passage": "Access to quality education remains one of the most significant challenges facing developing nations. Millions of children, particularly in rural and impoverished areas, lack access to basic schooling due to geographic, economic, and social barriers. Education serves as a powerful tool for breaking cycles of poverty and opening pathways to economic opportunity. Yet educational disparities often reflect and reinforce broader inequalities based on gender, socioeconomic status, and geographic location. International organizations and governments have increasingly recognized that achieving universal education requires coordinated efforts including infrastructure investment, teacher training, curriculum development, and policy reforms. Progressive education systems adapt learning to local contexts while maintaining high standards of instruction. When communities invest in education infrastructure and educator development, they create foundations for sustained economic and social progress.",
+      "question": "According to the passage, what is the primary function of quality education?",
+      "options": ["A. Maintaining existing social hierarchies", "B. Breaking cycles of poverty and opening pathways to economic opportunity", "C. Creating barriers to achievement", "D. Reinforcing educational disparities"],
+      "answer": 1,
+      "explanation": "The passage states that 'education serves as a powerful tool for breaking cycles of poverty and opening pathways to economic opportunity.'",
+      "topic": "Prescribed Novel Extracts"
+    },
+    {
+      "id": "tlc-a-007",
+      "type": "summary",
+      "passageTitle": "Leadership and Vision",
+      "passage": "Effective leadership extends beyond holding a position of authority; it requires the ability to inspire vision, build trust, and mobilize people toward common goals. Throughout history, transformative leaders have combined personal integrity with commitment to serving larger purposes beyond their self-interest. These leaders cultivate emotional intelligence—the capacity to understand and manage emotions in themselves and others—enabling them to navigate complex interpersonal dynamics. Modern research on leadership emphasizes that the most impactful leaders create psychological safety, where team members feel comfortable expressing ideas and taking reasonable risks. Leadership development increasingly focuses on building adaptive capacities: the ability to learn from experience, adjust strategies as circumstances change, and develop resilience in facing setbacks. Organizations led by such visionary leaders tend to demonstrate higher employee engagement, greater innovation, and stronger long-term performance outcomes.",
+      "question": "Which statement best captures the main idea of this passage?",
+      "options": ["A. Leadership is simply holding a position of authority", "B. Effective leadership requires vision, integrity, and emotional intelligence to inspire and mobilize people", "C. Leaders should avoid taking risks or trying new approaches", "D. Leadership has no impact on organizational outcomes"],
+      "answer": 1,
+      "explanation": "The passage discusses how effective leadership combines vision, integrity, emotional intelligence, and adaptive capacities to inspire and motivate people toward shared goals.",
+      "topic": "Prescribed Novel Extracts"
+    },
+    {
+      "id": "tlc-a-008",
+      "type": "comprehension",
+      "passageTitle": "Sample Novel Extract Placeholder",
+      "passage": "[INSERT ACTUAL EXTRACT FROM THE LIFE CHANGER HERE - Replace with text from Khadija Abubakar Jalli's novel]",
+      "question": "Sample Question 1: [Replace with actual question based on the novel extract]",
+      "options": ["A. Sample option A", "B. Sample option B", "C. Sample option C", "D. Sample option D"],
+      "answer": 0,
+      "explanation": "Replace with actual explanation",
+      "topic": "Prescribed Novel Extracts"
+    },
+    {
+      "id": "tlc-a-009",
+      "type": "comprehension",
+      "passageTitle": "Sample Novel Extract Placeholder",
+      "passage": "[INSERT ACTUAL EXTRACT FROM THE LIFE CHANGER HERE]",
+      "question": "Sample Question 2: [Replace with actual question]",
+      "options": ["A. Sample option A", "B. Sample option B", "C. Sample option C", "D. Sample option D"],
+      "answer": 0,
+      "explanation": "Replace with actual explanation",
+      "topic": "Prescribed Novel Extracts"
+    },
+    {
+      "id": "tlc-a-010",
+      "type": "comprehension",
+      "passageTitle": "Sample Novel Extract Placeholder",
+      "passage": "[INSERT ACTUAL EXTRACT FROM THE LIFE CHANGER HERE]",
+      "question": "Sample Question 3: [Replace with actual question]",
+      "options": ["A. Sample option A", "B. Sample option B", "C. Sample option C", "D. Sample option D"],
+      "answer": 0,
+      "explanation": "Replace with actual explanation",
+      "topic": "Prescribed Novel Extracts"
+    },
+    {
+      "id": "tlc-a-011",
+      "type": "comprehension",
+      "passageTitle": "Sample Novel Extract Placeholder",
+      "passage": "[INSERT ACTUAL EXTRACT FROM THE LIFE CHANGER HERE]",
+      "question": "Sample Question 4: [Replace with actual question]",
+      "options": ["A. Sample option A", "B. Sample option B", "C. Sample option C", "D. Sample option D"],
+      "answer": 0,
+      "explanation": "Replace with actual explanation",
+      "topic": "Prescribed Novel Extracts"
+    },
+    {
+      "id": "tlc-a-012",
+      "type": "comprehension",
+      "passageTitle": "Sample Novel Extract Placeholder",
+      "passage": "[INSERT ACTUAL EXTRACT FROM THE LIFE CHANGER HERE]",
+      "question": "Sample Question 5: [Replace with actual question]",
+      "options": ["A. Sample option A", "B. Sample option B", "C. Sample option C", "D. Sample option D"],
+      "answer": 0,
+      "explanation": "Replace with actual explanation",
+      "topic": "Prescribed Novel Extracts"
+    },
+    {
+      "id": "tlc-a-013",
+      "type": "comprehension",
+      "passageTitle": "Sample Novel Extract Placeholder",
+      "passage": "[INSERT ACTUAL EXTRACT FROM THE LIFE CHANGER HERE]",
+      "question": "Sample Question 6: [Replace with actual question]",
+      "options": ["A. Sample option A", "B. Sample option B", "C. Sample option C", "D. Sample option D"],
+      "answer": 0,
+      "explanation": "Replace with actual explanation",
+      "topic": "Prescribed Novel Extracts"
+    },
+    {
+      "id": "tlc-a-014",
+      "type": "comprehension",
+      "passageTitle": "Sample Novel Extract Placeholder",
+      "passage": "[INSERT ACTUAL EXTRACT FROM THE LIFE CHANGER HERE]",
+      "question": "Sample Question 7: [Replace with actual question]",
+      "options": ["A. Sample option A", "B. Sample option B", "C. Sample option C", "D. Sample option D"],
+      "answer": 0,
+      "explanation": "Replace with actual explanation",
+      "topic": "Prescribed Novel Extracts"
+    },
+    {
+      "id": "tlc-a-015",
+      "type": "comprehension",
+      "passageTitle": "Sample Novel Extract Placeholder",
+      "passage": "[INSERT ACTUAL EXTRACT FROM THE LIFE CHANGER HERE]",
+      "question": "Sample Question 8: [Replace with actual question]",
+      "options": ["A. Sample option A", "B. Sample option B", "C. Sample option C", "D. Sample option D"],
+      "answer": 0,
+      "explanation": "Replace with actual explanation",
+      "topic": "Prescribed Novel Extracts"
+    },
+    {
+      "id": "tlc-a-016",
+      "type": "comprehension",
+      "passageTitle": "Sample Novel Extract Placeholder",
+      "passage": "[INSERT ACTUAL EXTRACT FROM THE LIFE CHANGER HERE]",
+      "question": "Sample Question 9: [Replace with actual question]",
+      "options": ["A. Sample option A", "B. Sample option B", "C. Sample option C", "D. Sample option D"],
+      "answer": 0,
+      "explanation": "Replace with actual explanation",
+      "topic": "Prescribed Novel Extracts"
+    },
+    {
+      "id": "tlc-a-017",
+      "type": "comprehension",
+      "passageTitle": "Sample Novel Extract Placeholder",
+      "passage": "[INSERT ACTUAL EXTRACT FROM THE LIFE CHANGER HERE]",
+      "question": "Sample Question 10: [Replace with actual question]",
+      "options": ["A. Sample option A", "B. Sample option B", "C. Sample option C", "D. Sample option D"],
+      "answer": 0,
+      "explanation": "Replace with actual explanation",
+      "topic": "Prescribed Novel Extracts"
+    },
+    {
+      "id": "tlc-a-018",
+      "type": "comprehension",
+      "passageTitle": "Sample Novel Extract Placeholder",
+      "passage": "[INSERT ACTUAL EXTRACT FROM THE LIFE CHANGER HERE]",
+      "question": "Sample Question 11: [Replace with actual question]",
+      "options": ["A. Sample option A", "B. Sample option B", "C. Sample option C", "D. Sample option D"],
+      "answer": 0,
+      "explanation": "Replace with actual explanation",
+      "topic": "Prescribed Novel Extracts"
+    },
+    {
+      "id": "tlc-a-019",
+      "type": "comprehension",
+      "passageTitle": "Sample Novel Extract Placeholder",
+      "passage": "[INSERT ACTUAL EXTRACT FROM THE LIFE CHANGER HERE]",
+      "question": "Sample Question 12: [Replace with actual question]",
+      "options": ["A. Sample option A", "B. Sample option B", "C. Sample option C", "D. Sample option D"],
+      "answer": 0,
+      "explanation": "Replace with actual explanation",
+      "topic": "Prescribed Novel Extracts"
+    },
+    {
+      "id": "tlc-a-020",
+      "type": "comprehension",
+      "passageTitle": "Sample Novel Extract Placeholder",
+      "passage": "[INSERT ACTUAL EXTRACT FROM THE LIFE CHANGER HERE]",
+      "question": "Sample Question 13: [Replace with actual question]",
+      "options": ["A. Sample option A", "B. Sample option B", "C. Sample option C", "D. Sample option D"],
+      "answer": 0,
+      "explanation": "Replace with actual explanation",
+      "topic": "Prescribed Novel Extracts"
+    },
+    {
+      "id": "tlc-a-021",
+      "type": "comprehension",
+      "passageTitle": "Sample Novel Extract Placeholder",
+      "passage": "[INSERT ACTUAL EXTRACT FROM THE LIFE CHANGER HERE]",
+      "question": "Sample Question 14: [Replace with actual question]",
+      "options": ["A. Sample option A", "B. Sample option B", "C. Sample option C", "D. Sample option D"],
+      "answer": 0,
+      "explanation": "Replace with actual explanation",
+      "topic": "Prescribed Novel Extracts"
+    },
+    {
+      "id": "tlc-a-022",
+      "type": "comprehension",
+      "passageTitle": "Sample Novel Extract Placeholder",
+      "passage": "[INSERT ACTUAL EXTRACT FROM THE LIFE CHANGER HERE]",
+      "question": "Sample Question 15: [Replace with actual question]",
+      "options": ["A. Sample option A", "B. Sample option B", "C. Sample option C", "D. Sample option D"],
+      "answer": 0,
+      "explanation": "Replace with actual explanation",
+      "topic": "Prescribed Novel Extracts"
+    },
+    {
+      "id": "tlc-a-023",
+      "type": "comprehension",
+      "passageTitle": "Sample Novel Extract Placeholder",
+      "passage": "[INSERT ACTUAL EXTRACT FROM THE LIFE CHANGER HERE]",
+      "question": "Sample Question 16: [Replace with actual question]",
+      "options": ["A. Sample option A", "B. Sample option B", "C. Sample option C", "D. Sample option D"],
+      "answer": 0,
+      "explanation": "Replace with actual explanation",
+      "topic": "Prescribed Novel Extracts"
+    },
+    {
+      "id": "tlc-a-024",
+      "type": "comprehension",
+      "passageTitle": "Sample Novel Extract Placeholder",
+      "passage": "[INSERT ACTUAL EXTRACT FROM THE LIFE CHANGER HERE]",
+      "question": "Sample Question 17: [Replace with actual question]",
+      "options": ["A. Sample option A", "B. Sample option B", "C. Sample option C", "D. Sample option D"],
+      "answer": 0,
+      "explanation": "Replace with actual explanation",
+      "topic": "Prescribed Novel Extracts"
+    },
+    {
+      "id": "tlc-a-025",
+      "type": "comprehension",
+      "passageTitle": "Sample Novel Extract Placeholder",
+      "passage": "[INSERT ACTUAL EXTRACT FROM THE LIFE CHANGER HERE]",
+      "question": "Sample Question 18: [Replace with actual question]",
+      "options": ["A. Sample option A", "B. Sample option B", "C. Sample option C", "D. Sample option D"],
+      "answer": 0,
+      "explanation": "Replace with actual explanation",
+      "topic": "Prescribed Novel Extracts"
+    }
+  ]
+}

@@ -1,0 +1,3429 @@
+[
+  {
+    "id": "LIT-JAMB-0001",
+    "question": "In J.C. De Graft's play 'Sons and Daughters', the character James Ofosu says: 'I simply don't understand what's the matter with everybody today. Everybody let me down.' Who is the speaker referring to?",
+    "options": [
+      "Fosuwa and Maidservant",
+      "Hannah and George",
+      "Aaron and Maanan",
+      "Lawyer B and Mrs. B"
+    ],
+    "answer": 2,
+    "exam": [
+      "JAMB"
+    ],
+    "level": "medium",
+    "topic": "Drama",
+    "marks": 2,
+    "explanation": "James Ofosu's frustration is directed at his children, Aaron and Maanan, who have both defied his expectations. Aaron has quit his engineering apprenticeship to become a painter, and Maanan rejects a secretarial future to pursue dance, making them the direct source of his feeling of being 'let down.'",
+    "hint": "Think about who has disobeyed the father's wishes for their careers.",
+    "timeLimit": 45,
+    "year": 2010,
+    "tags": [
+      "literature",
+      "drama",
+      "sons and daughters",
+      "j.c. de graft",
+      "character identification",
+      "jamb"
+    ],
+    "requiresCalculator": false,
+    "calculatorType": "none",
+    "formula": "",
+    "constants": {},
+    "createdBy": "OAE Admin",
+    "lastUpdated": "2026-04-06"
+  },
+  {
+    "id": "LIT-JAMB-0002",
+    "question": "In J.C. De Graft's 'Sons and Daughters', why does Maanan express dislike for Lawyer B?",
+    "options": [
+      "His condemnation of her choice of career",
+      "His recent romantic or sexual advances towards her",
+      "The betrayal of her father's trust",
+      "The betrayal of his wife's trust"
+    ],
+    "answer": 1,
+    "exam": [
+      "JAMB"
+    ],
+    "level": "medium",
+    "topic": "Drama",
+    "marks": 2,
+    "explanation": "Maanan's dislike stems from Lawyer B's inappropriate and unwelcome romantic or sexual propositions. As a friend of her father, his actions constitute a betrayal of the trust inherent in that family friendship and create a significant conflict for Maanan, who feels harassed and disrespected.",
+    "hint": "Consider what inappropriate behavior an older family friend might show toward a young woman.",
+    "timeLimit": 45,
+    "year": 2010,
+    "tags": [
+      "literature",
+      "drama",
+      "sons and daughters",
+      "j.c. de graft",
+      "character motivation",
+      "jamb"
+    ],
+    "requiresCalculator": false,
+    "calculatorType": "none",
+    "formula": "",
+    "constants": {},
+    "createdBy": "OAE Admin",
+    "lastUpdated": "2026-04-06"
+  },
+  {
+    "id": "LIT-JAMB-0003",
+    "question": "In J.C. De Graft's 'Sons and Daughters', which character best represents the traditional order?",
+    "options": [
+      "Mrs. B",
+      "Hannah",
+      "Maanan",
+      "The Aunt"
+    ],
+    "answer": 3,
+    "exam": [
+      "JAMB"
+    ],
+    "level": "easy",
+    "topic": "Drama",
+    "marks": 1,
+    "explanation": "The Aunt is the primary symbol of traditional values in the play. She consistently upholds respect for patriarchal authority, customary expectations for children (especially daughters), and conservative social norms. She directly opposes the modern aspirations of Aaron and Maanan, defending their father's traditional plans for them.",
+    "hint": "Which character consistently defends old-fashioned values and criticizes the younger generation?",
+    "timeLimit": 30,
+    "year": 2010,
+    "tags": [
+      "literature",
+      "drama",
+      "sons and daughters",
+      "j.c. de graft",
+      "theme",
+      "jamb"
+    ],
+    "requiresCalculator": false,
+    "calculatorType": "none",
+    "formula": "",
+    "constants": {},
+    "createdBy": "OAE Admin",
+    "lastUpdated": "2026-04-06"
+  },
+  {
+    "id": "LIT-JAMB-0004",
+    "question": "Where does the entire action of J.C. De Graft's 'Sons and Daughters' take place?",
+    "options": [
+      "On the street",
+      "In George's place",
+      "In the Aunt's house",
+      "In James Ofosu's house"
+    ],
+    "answer": 3,
+    "exam": [
+      "JAMB"
+    ],
+    "level": "easy",
+    "topic": "Drama",
+    "marks": 1,
+    "explanation": "The entire action of J.C. De Graft's 'Sons and Daughters' is set in the living room of James Ofosu's house. This single, domestic setting intensifies the focus on the family conflict, making the home the central battleground for the clash between parental authority and children's individuality.",
+    "hint": "The play's conflict centers on a family, so the setting is their home.",
+    "timeLimit": 30,
+    "year": 2010,
+    "tags": [
+      "literature",
+      "drama",
+      "sons and daughters",
+      "j.c. de graft",
+      "setting",
+      "jamb"
+    ],
+    "requiresCalculator": false,
+    "calculatorType": "none",
+    "formula": "",
+    "constants": {},
+    "createdBy": "OAE Admin",
+    "lastUpdated": "2026-04-06"
+  },
+  {
+    "id": "LIT-JAMB-0005",
+    "question": "In William Shakespeare's 'Romeo and Juliet' (Act III, Scene 1), Friar Laurence says to Romeo: 'O deadly sin! O rude unthankfulness! / Thy fault our law calls death, but the kind Prince, / Taking thy part, hath rushed aside the law / And turned that black word...' To what 'deadly sin' is Friar Laurence referring?",
+    "options": [
+      "The suicide of Juliet",
+      "The suicide of Romeo",
+      "The murder of Paris",
+      "The murder of Tybalt"
+    ],
+    "answer": 3,
+    "exam": [
+      "JAMB"
+    ],
+    "level": "medium",
+    "topic": "Drama",
+    "marks": 2,
+    "explanation": "Friar Laurence is scolding Romeo in Act III, Scene 1. The 'deadly sin' is Romeo's act of killing Tybalt, Juliet's cousin, in a vengeful rage after Tybalt killed Mercutio. The Friar contrasts this sin with the Prince's merciful decision to commute the death sentence to banishment.",
+    "hint": "What violent act did Romeo commit earlier in the same scene?",
+    "timeLimit": 45,
+    "year": 2010,
+    "tags": [
+      "literature",
+      "drama",
+      "romeo and juliet",
+      "shakespeare",
+      "plot",
+      "jamb"
+    ],
+    "requiresCalculator": false,
+    "calculatorType": "none",
+    "formula": "",
+    "constants": {},
+    "createdBy": "OAE Admin",
+    "lastUpdated": "2026-04-06"
+  },
+  {
+    "id": "LIT-JAMB-0006",
+    "question": "William Shakespeare's 'Romeo and Juliet' is written predominantly in which poetic form?",
+    "options": [
+      "Blank verse",
+      "Free verse",
+      "Metres (unspecified)",
+      "Foot (unspecified)"
+    ],
+    "answer": 0,
+    "exam": [
+      "JAMB"
+    ],
+    "level": "medium",
+    "topic": "Drama",
+    "marks": 2,
+    "explanation": "Shakespeare's 'Romeo and Juliet', like his other major plays, is written predominantly in blank verse, which is unrhymed iambic pentameter. This poetic form (five iambic feet per line: da-DUM, da-DUM, da-DUM, da-DUM, da-DUM) provides a dignified, rhythmic structure for dialogue while mimicking the natural cadence of English speech.",
+    "hint": "Think of unrhymed iambic pentameter.",
+    "timeLimit": 45,
+    "year": 2010,
+    "tags": [
+      "literature",
+      "drama",
+      "romeo and juliet",
+      "shakespeare",
+      "form",
+      "blank verse",
+      "jamb"
+    ],
+    "requiresCalculator": false,
+    "calculatorType": "none",
+    "formula": "",
+    "constants": {},
+    "createdBy": "OAE Admin",
+    "lastUpdated": "2026-04-06"
+  },
+  {
+    "id": "LIT-JAMB-0007",
+    "question": "In William Shakespeare's 'Romeo and Juliet' (Act III, Scene 2), Juliet exclaims: 'O serpent heart, hid with a flowering face!' To whom is she referring?",
+    "options": [
+      "Juliet herself",
+      "Romeo",
+      "Tybalt",
+      "Benvolio"
+    ],
+    "answer": 1,
+    "exam": [
+      "JAMB"
+    ],
+    "level": "medium",
+    "topic": "Drama",
+    "marks": 2,
+    "explanation": "Juliet exclaims this upon learning Romeo killed Tybalt. It is an oxymoron: 'serpent heart' denotes evil and treachery (the murder), while 'flowering face' denotes beautiful, loving appearance. She is describing the shocking contradiction between Romeo's seemingly gentle nature and his violent act.",
+    "hint": "Who has just committed an act that Juliet finds shocking and contradictory to his loving nature?",
+    "timeLimit": 45,
+    "year": 2010,
+    "tags": [
+      "literature",
+      "drama",
+      "romeo and juliet",
+      "shakespeare",
+      "figurative language",
+      "oxymoron",
+      "jamb"
+    ],
+    "requiresCalculator": false,
+    "calculatorType": "none",
+    "formula": "",
+    "constants": {},
+    "createdBy": "OAE Admin",
+    "lastUpdated": "2026-04-06"
+  },
+  {
+    "id": "LIT-JAMB-0008",
+    "question": "In which Italian city does the prologue to William Shakespeare's 'Romeo and Juliet' establish the play's primary setting?",
+    "options": [
+      "Athens",
+      "Verona",
+      "Padua",
+      "Venice"
+    ],
+    "answer": 1,
+    "exam": [
+      "JAMB"
+    ],
+    "level": "easy",
+    "topic": "Drama",
+    "marks": 1,
+    "explanation": "The prologue to 'Romeo and Juliet' explicitly establishes the setting: 'In fair Verona, where we lay our scene.' The entire feud between the Montagues and Capulets, along with the central love story and tragedy, unfolds in the Italian city of Verona. Romeo's exile takes him to Mantua, but Verona is the primary location.",
+    "hint": "The prologue mentions 'fair Verona'.",
+    "timeLimit": 30,
+    "year": 2010,
+    "tags": [
+      "literature",
+      "drama",
+      "romeo and juliet",
+      "shakespeare",
+      "setting",
+      "jamb"
+    ],
+    "requiresCalculator": false,
+    "calculatorType": "none",
+    "formula": "",
+    "constants": {},
+    "createdBy": "OAE Admin",
+    "lastUpdated": "2026-04-06"
+  },
+  {
+    "id": "LIT-JAMB-0009",
+    "question": "In William Shakespeare's 'Romeo and Juliet', why is Romeo banished to Mantua?",
+    "options": [
+      "He kills Tybalt in a street duel",
+      "He marries Juliet without parental consent",
+      "He attends Capulet's party uninvited",
+      "He attempts to kill Paris, his rival"
+    ],
+    "answer": 0,
+    "exam": [
+      "JAMB"
+    ],
+    "level": "easy",
+    "topic": "Drama",
+    "marks": 1,
+    "explanation": "Prince Escalus banishes Romeo as direct punishment for killing Tybalt. Although the Prince's earlier edict promised death for further violence, he shows clemency because Tybalt first killed Mercutio, making Romeo's act one of vengeful passion. Banishment is the legal consequence for this murder.",
+    "hint": "Remember the duel where Mercutio dies and Romeo retaliates.",
+    "timeLimit": 30,
+    "year": 2010,
+    "tags": [
+      "literature",
+      "drama",
+      "romeo and juliet",
+      "shakespeare",
+      "plot",
+      "jamb"
+    ],
+    "requiresCalculator": false,
+    "calculatorType": "none",
+    "formula": "",
+    "constants": {},
+    "createdBy": "OAE Admin",
+    "lastUpdated": "2026-04-06"
+  },
+  {
+    "id": "LIT-JAMB-0010",
+    "question": "In Buchi Emecheta's novel 'The Joys of Motherhood', what does the traditional Igbo society place the highest value on?",
+    "options": [
+      "Egalitarianism",
+      "Male ascendancy",
+      "Procreation (motherhood)",
+      "Gender equity"
+    ],
+    "answer": 2,
+    "exam": [
+      "JAMB"
+    ],
+    "level": "medium",
+    "topic": "Prose",
+    "marks": 2,
+    "explanation": "Buchi Emecheta's 'The Joys of Motherhood' critically examines a traditional Igbo society where a woman's primary value and identity are derived from her ability to bear children. The protagonist Nnu Ego's entire life, struggles, and social status revolve around motherhood. The novel's ironic title highlights this societal obsession.",
+    "hint": "Consider the ironic title and what brings Nnu Ego social status.",
+    "timeLimit": 45,
+    "year": 2010,
+    "tags": [
+      "literature",
+      "prose",
+      "the joys of motherhood",
+      "buchi emecheta",
+      "themes",
+      "jamb"
+    ],
+    "requiresCalculator": false,
+    "calculatorType": "none",
+    "formula": "",
+    "constants": {},
+    "createdBy": "OAE Admin",
+    "lastUpdated": "2026-04-06"
+  },
+  {
+    "id": "LIT-JAMB-0011",
+    "question": "In Buchi Emecheta's 'The Joys of Motherhood', what explanation does the medicine man give for the lump discovered on Nnu Ego's head at birth?",
+    "options": [
+      "It signifies possession of admirable physical qualities",
+      "It is a wound inflicted on the slave woman buried with Agbadi's wife",
+      "It marks the coming back of Agunwa to live again",
+      "It represents ill-luck and tragic events predestined by fate"
+    ],
+    "answer": 1,
+    "exam": [
+      "JAMB"
+    ],
+    "level": "hard",
+    "topic": "Prose",
+    "marks": 2,
+    "explanation": "The medicine man's diagnosis provides Nnu Ego's spiritual backstory. He explains that the lump is the reincarnation of the slave woman, Ona, who was buried alive with Agbadi's first wife and had been struck on the head. This connection foreshadows Nnu Ego's destined life of suffering and servitude, linking her spirit to that of a slave.",
+    "hint": "The explanation involves a slave woman who was buried alive.",
+    "timeLimit": 60,
+    "year": 2010,
+    "tags": [
+      "literature",
+      "prose",
+      "the joys of motherhood",
+      "buchi emecheta",
+      "plot",
+      "superstition",
+      "jamb"
+    ],
+    "requiresCalculator": false,
+    "calculatorType": "none",
+    "formula": "",
+    "constants": {},
+    "createdBy": "OAE Admin",
+    "lastUpdated": "2026-04-06"
+  },
+  {
+    "id": "LIT-JAMB-0012",
+    "question": "In Buchi Emecheta's 'The Joys of Motherhood', what constant condition does Nnaife's family struggle with in colonial Lagos?",
+    "options": [
+      "Togetherness and happiness",
+      "Poverty and hunger",
+      "Sickness and joblessness",
+      "Disagreement and humiliation"
+    ],
+    "answer": 1,
+    "exam": [
+      "JAMB"
+    ],
+    "level": "medium",
+    "topic": "Prose",
+    "marks": 2,
+    "explanation": "A central theme of the novel is the grinding poverty faced by the family in colonial Lagos. Despite Nnu Ego's relentless labor and sacrifice, the family is in a perpetual struggle against hunger and economic deprivation. This constant financial pressure is a primary source of conflict and suffering in their lives.",
+    "hint": "Think about Nnu Ego's daily struggles to feed her children.",
+    "timeLimit": 45,
+    "year": 2010,
+    "tags": [
+      "literature",
+      "prose",
+      "the joys of motherhood",
+      "buchi emecheta",
+      "social context",
+      "poverty",
+      "jamb"
+    ],
+    "requiresCalculator": false,
+    "calculatorType": "none",
+    "formula": "",
+    "constants": {},
+    "createdBy": "OAE Admin",
+    "lastUpdated": "2026-04-06"
+  },
+  {
+    "id": "LIT-JAMB-0013",
+    "question": "In Ferdinand Oyono's 'The Old Man and the Medal', what is the source of the disagreement between Mvondo and Nti during Meka's celebration feast?",
+    "options": [
+      "Whether Nti assisted Meka in getting the medal",
+      "Nti's claim to have eaten the entire entrails of a sheep",
+      "Whether Nti ate more than his share of the food",
+      "Nti's claim to have been in a white man's office"
+    ],
+    "answer": 1,
+    "exam": [
+      "JAMB"
+    ],
+    "level": "medium",
+    "topic": "Prose",
+    "marks": 2,
+    "explanation": "This seemingly petty argument during Meka's celebration feast serves as satire. Nti's boast about consuming the entire prized sheep's entrails becomes a point of envy and contention with Mvondo. It highlights the triviality of status-seeking and jealousy within the community, even at a moment meant for collective honor.",
+    "hint": "It's a boast about food consumption during the feast.",
+    "timeLimit": 45,
+    "year": 2010,
+    "tags": [
+      "literature",
+      "prose",
+      "the old man and the medal",
+      "ferdinand oyono",
+      "characterization",
+      "satire",
+      "jamb"
+    ],
+    "requiresCalculator": false,
+    "calculatorType": "none",
+    "formula": "",
+    "constants": {},
+    "createdBy": "OAE Admin",
+    "lastUpdated": "2026-04-06"
+  },
+  {
+    "id": "LIT-JAMB-0014",
+    "question": "In Ferdinand Oyono's 'The Old Man and the Medal', how can the protagonist Meka be best described?",
+    "options": [
+      "An egocentric old man",
+      "A simple-hearted old man",
+      "An impulsive old man",
+      "An old religious bigot"
+    ],
+    "answer": 1,
+    "exam": [
+      "JAMB"
+    ],
+    "level": "medium",
+    "topic": "Prose",
+    "marks": 2,
+    "explanation": "Meka is characterized by his naive simplicity and sincere, unquestioning faith. He genuinely believes in the goodwill of the colonial government and the Catholic Church, expecting his loyalty to be met with genuine respect. His central role in the novel is to experience a painful awakening from this simplicity.",
+    "hint": "Think about Meka's naive trust in the colonial system.",
+    "timeLimit": 45,
+    "year": 2010,
+    "tags": [
+      "literature",
+      "prose",
+      "the old man and the medal",
+      "ferdinand oyono",
+      "characterization",
+      "jamb"
+    ],
+    "requiresCalculator": false,
+    "calculatorType": "none",
+    "formula": "",
+    "constants": {},
+    "createdBy": "OAE Admin",
+    "lastUpdated": "2026-04-06"
+  },
+  {
+    "id": "LIT-JAMB-0015",
+    "question": "In Ferdinand Oyono's 'The Old Man and the Medal', how do the colonialists generally treat the Africans?",
+    "options": [
+      "With kid gloves (carefully)",
+      "With disdain",
+      "With indifference",
+      "With honour"
+    ],
+    "answer": 1,
+    "exam": [
+      "JAMB"
+    ],
+    "level": "easy",
+    "topic": "Prose",
+    "marks": 1,
+    "explanation": "Ferdinand Oyono's 'The Old Man and the Medal' is a satirical indictment of colonialism. The European administrators, exemplified by the Commandant, consistently treat Africans like Meka with condescension, mockery, and open contempt. The medal ceremony itself is a hollow ritual that exposes their profound disrespect and hypocrisy.",
+    "hint": "Consider the Commandant's attitude during the medal ceremony.",
+    "timeLimit": 30,
+    "year": 2010,
+    "tags": [
+      "literature",
+      "prose",
+      "the old man and the medal",
+      "ferdinand oyono",
+      "colonialism",
+      "theme",
+      "jamb"
+    ],
+    "requiresCalculator": false,
+    "calculatorType": "none",
+    "formula": "",
+    "constants": {},
+    "createdBy": "OAE Admin",
+    "lastUpdated": "2026-04-06"
+  },
+  {
+    "id": "LIT-JAMB-0016",
+    "question": "In George Orwell's 'Nineteen Eighty-Four', what is the ironic function of the Ministry of Peace (Minipax)?",
+    "options": [
+      "Making instruments",
+      "Making weapons",
+      "Making wars (perpetual warfare)",
+      "Making reconciliation"
+    ],
+    "answer": 2,
+    "exam": [
+      "JAMB"
+    ],
+    "level": "medium",
+    "topic": "Prose",
+    "marks": 2,
+    "explanation": "This is a prime example of Orwellian doublethink. The Ministry of Peace (Minipax) is ironically responsible for the perpetual warfare that defines the state of Oceania. Its name is the opposite of its function, which is to orchestrate and manage continuous war to control the population and the economy.",
+    "hint": "Consider the opposite of what the name suggests.",
+    "timeLimit": 45,
+    "year": 2010,
+    "tags": [
+      "literature",
+      "prose",
+      "nineteen eighty-four",
+      "george orwell",
+      "satire",
+      "irony",
+      "jamb"
+    ],
+    "requiresCalculator": false,
+    "calculatorType": "none",
+    "formula": "",
+    "constants": {},
+    "createdBy": "OAE Admin",
+    "lastUpdated": "2026-04-06"
+  },
+  {
+    "id": "LIT-JAMB-0017",
+    "question": "What is the central subject matter of George Orwell's 'Nineteen Eighty-Four'?",
+    "options": [
+      "Totalitarian dictatorship",
+      "Exploitation and cruelty",
+      "Retributive justice",
+      "Class segregation"
+    ],
+    "answer": 0,
+    "exam": [
+      "JAMB"
+    ],
+    "level": "easy",
+    "topic": "Prose",
+    "marks": 1,
+    "explanation": "George Orwell's 'Nineteen Eighty-Four' is a seminal work exploring the mechanics and horrors of a totalitarian state. Its central subject is the all-encompassing control exerted by such a regime over every aspect of life: thought, language, history, and individuality through surveillance, propaganda, and terror.",
+    "hint": "Think about Big Brother, Thought Police, and Newspeak.",
+    "timeLimit": 30,
+    "year": 2010,
+    "tags": [
+      "literature",
+      "prose",
+      "nineteen eighty-four",
+      "george orwell",
+      "themes",
+      "totalitarianism",
+      "jamb"
+    ],
+    "requiresCalculator": false,
+    "calculatorType": "none",
+    "formula": "",
+    "constants": {},
+    "createdBy": "OAE Admin",
+    "lastUpdated": "2026-04-06"
+  },
+  {
+    "id": "LIT-JAMB-0018",
+    "question": "In George Orwell's 'Nineteen Eighty-Four', what is Winston Smith's first deliberate act of rebellion against the Party?",
+    "options": [
+      "Engaging in anti-party activities",
+      "Keeping a private diary",
+      "Starting a secret affair with Julia",
+      "Spying on the Party"
+    ],
+    "answer": 1,
+    "exam": [
+      "JAMB"
+    ],
+    "level": "medium",
+    "topic": "Prose",
+    "marks": 2,
+    "explanation": "Winston Smith's first deliberate, conscious act of rebellion is the purchase of a secret diary and the act of writing 'DOWN WITH BIG BROTHER' in it. This is the foundational act of thoughtcrime—an attempt to carve out a private space for forbidden thoughts and personal memory, which is the essence of rebellion in the novel.",
+    "hint": "What does Winston buy from the junk shop in the prole district?",
+    "timeLimit": 45,
+    "year": 2010,
+    "tags": [
+      "literature",
+      "prose",
+      "nineteen eighty-four",
+      "george orwell",
+      "plot",
+      "jamb"
+    ],
+    "requiresCalculator": false,
+    "calculatorType": "none",
+    "formula": "",
+    "constants": {},
+    "createdBy": "OAE Admin",
+    "lastUpdated": "2026-04-06"
+  },
+  {
+    "id": "LIT-JAMB-0019",
+    "question": "In George Orwell's 'Nineteen Eighty-Four', for what ultimate purpose does the Party seek power?",
+    "options": [
+      "For the nation",
+      "For its own sake (power as an end in itself)",
+      "For its members",
+      "For the people's sake"
+    ],
+    "answer": 1,
+    "exam": [
+      "JAMB"
+    ],
+    "level": "hard",
+    "topic": "Prose",
+    "marks": 2,
+    "explanation": "O'Brien explains the Party's philosophy to Winston during his torture: 'The object of persecution is persecution. The object of torture is torture. The object of power is power.' The Party desires power not as a means to an end (like improving society), but as the ultimate end in itself—pure, perpetual control.",
+    "hint": "Remember O'Brien's explanation to Winston in the Ministry of Love.",
+    "timeLimit": 60,
+    "year": 2010,
+    "tags": [
+      "literature",
+      "prose",
+      "nineteen eighty-four",
+      "george orwell",
+      "themes",
+      "power",
+      "jamb"
+    ],
+    "requiresCalculator": false,
+    "calculatorType": "none",
+    "formula": "",
+    "constants": {},
+    "createdBy": "OAE Admin",
+    "lastUpdated": "2026-04-06"
+  },
+  {
+    "id": "LIT-JAMB-0020",
+    "question": "In Gbemisola Adeoti's poem 'Naked Soles', as the dancers move through paths strewn with glass chips and blooming thorns, how does the imagery change?",
+    "options": [
+      "From joy to excitement",
+      "From inaction to action",
+      "From physical pain to deeper grief",
+      "From sorrow to joy"
+    ],
+    "answer": 2,
+    "exam": [
+      "JAMB"
+    ],
+    "level": "hard",
+    "topic": "Poetry",
+    "marks": 2,
+    "explanation": "The poem uses the physical imagery of dancers cutting their feet on glass chips to symbolize a painful engagement with history. The initial, sharp physical 'pain' of the cuts deepens into a more profound, emotional, and collective 'grief' as the dance—a metaphor for confronting the past—continues.",
+    "hint": "Consider the progression from physical sensation to emotional state.",
+    "timeLimit": 60,
+    "year": 2010,
+    "tags": [
+      "literature",
+      "poetry",
+      "naked soles",
+      "gbemisola adeoti",
+      "imagery",
+      "mood",
+      "jamb"
+    ],
+    "requiresCalculator": false,
+    "calculatorType": "none",
+    "formula": "",
+    "constants": {},
+    "createdBy": "OAE Admin",
+    "lastUpdated": "2026-04-06"
+  },
+  {
+    "id": "LIT-JAMB-0021",
+    "question": "In David Rubadiri's poem 'An African Thunderstorm', how do the villagers react during the thunderstorm?",
+    "options": [
+      "Women cook their food",
+      "Children play in the rain",
+      "Children are delighted while women move in and out frantically",
+      "Both women and children are equally delighted"
+    ],
+    "answer": 2,
+    "exam": [
+      "JAMB"
+    ],
+    "level": "medium",
+    "topic": "Poetry",
+    "marks": 2,
+    "explanation": "The poem creates a contrast in reactions. The children find the storm thrilling and are 'delighted' by its drama. The women, however, are preoccupied with practical concerns, 'Darting in and out / Madly' to save their washing from the destructive wind and rain, illustrating the different impacts of the storm based on age and responsibility.",
+    "hint": "Look for the words describing children's joy versus women's frantic movements.",
+    "timeLimit": 45,
+    "year": 2010,
+    "tags": [
+      "literature",
+      "poetry",
+      "an african thunderstorm",
+      "david rubadiri",
+      "content",
+      "jamb"
+    ],
+    "requiresCalculator": false,
+    "calculatorType": "none",
+    "formula": "",
+    "constants": {},
+    "createdBy": "OAE Admin",
+    "lastUpdated": "2026-04-06"
+  },
+  {
+    "id": "LIT-JAMB-0022",
+    "question": "In Acquah's poem 'In the Navel of the Soul' (lines: 'Yet in their finger upon / Our navel / The midwives of the spirit say / They feel a foetal throb'), what is the dominant literary device?",
+    "options": [
+      "Epigram",
+      "Allegory",
+      "Enjambment",
+      "Rhythm"
+    ],
+    "answer": 2,
+    "exam": [
+      "JAMB"
+    ],
+    "level": "hard",
+    "topic": "Poetry",
+    "marks": 2,
+    "explanation": "Enjambment is the technique where a sentence or phrase runs over from one line of poetry to the next without a terminal punctuation mark. This extract clearly uses enjambment (e.g., 'upon / Our navel', 'say / They feel'), creating a flowing, uninterrupted rhythm that mirrors the continuous, sensing pulse of the 'foetal throb.'",
+    "hint": "Notice how phrases continue without pause across line breaks.",
+    "timeLimit": 60,
+    "year": 2010,
+    "tags": [
+      "literature",
+      "poetry",
+      "in the navel of the soul",
+      "acquah",
+      "enjambment",
+      "literary devices",
+      "jamb"
+    ],
+    "requiresCalculator": false,
+    "calculatorType": "none",
+    "formula": "",
+    "constants": {},
+    "createdBy": "OAE Admin",
+    "lastUpdated": "2026-04-06"
+  },
+  {
+    "id": "LIT-JAMB-0023",
+    "question": "In Mazisi Kunene's poem 'A Heritage of Liberation', to whom does the poet persona request that the weapons of warfare be handed?",
+    "options": [
+      "Their friends",
+      "Their relations",
+      "Their grandchildren",
+      "Their families"
+    ],
+    "answer": 2,
+    "exam": [
+      "JAMB"
+    ],
+    "level": "medium",
+    "topic": "Poetry",
+    "marks": 2,
+    "explanation": "The poem is about legacy and the transmission of history. The persona wants the weapons—symbols of the struggle and sacrifice—to be passed to the 'grand children.' This act is not meant to perpetuate violence but to ensure that the younger generation inherits the tangible memory and responsibility of their people's past.",
+    "hint": "Think about legacy and the future generation.",
+    "timeLimit": 45,
+    "year": 2010,
+    "tags": [
+      "literature",
+      "poetry",
+      "a heritage of liberation",
+      "mazisi kunene",
+      "theme",
+      "legacy",
+      "jamb"
+    ],
+    "requiresCalculator": false,
+    "calculatorType": "none",
+    "formula": "",
+    "constants": {},
+    "createdBy": "OAE Admin",
+    "lastUpdated": "2026-04-06"
+  },
+  {
+    "id": "LIT-JAMB-0024",
+    "question": "In Launko's poem 'End of the War', what predominant literary device is used to explore the contradictory aftermath of conflict?",
+    "options": [
+      "Onomatopoeia",
+      "Antithesis",
+      "Oxymoron",
+      "Paradox"
+    ],
+    "answer": 3,
+    "exam": [
+      "JAMB"
+    ],
+    "level": "hard",
+    "topic": "Poetry",
+    "marks": 2,
+    "explanation": "The poem 'End of the War' relies heavily on paradox—a statement that seems self-contradictory but reveals a deeper truth. It explores the ironic and contradictory aftermath of war, where peace does not bring simple happiness but complex silence, lingering pain, and unresolved tensions, capturing war's ambiguous legacy.",
+    "hint": "Look for statements that seem contradictory but reveal a deeper truth about war's aftermath.",
+    "timeLimit": 60,
+    "year": 2010,
+    "tags": [
+      "literature",
+      "poetry",
+      "end of the war",
+      "launko",
+      "paradox",
+      "literary devices",
+      "jamb"
+    ],
+    "requiresCalculator": false,
+    "calculatorType": "none",
+    "formula": "",
+    "constants": {},
+    "createdBy": "OAE Admin",
+    "lastUpdated": "2026-04-06"
+  },
+  {
+    "id": "LIT-JAMB-0025",
+    "question": "What is the central theme of J.P. Clark's poem 'Give Me The Minstrel's Seat'?",
+    "options": [
+      "Divorce",
+      "Fortune",
+      "Marriage",
+      "Deep romantic companionship"
+    ],
+    "answer": 3,
+    "exam": [
+      "JAMB"
+    ],
+    "level": "medium",
+    "topic": "Poetry",
+    "marks": 2,
+    "explanation": "J.P. Clark's 'Give Me The Minstrel's Seat' is a celebration of deep, romantic companionship. The 'minstrel's seat' is a metaphor for a place of honored partnership beside the beloved. The speaker desires a union that is creative, supportive, and enduring, emphasizing companionship over more formal or transactional concepts like marriage or fortune.",
+    "hint": "The 'minstrel's seat' symbolizes a place of honor beside the beloved.",
+    "timeLimit": 45,
+    "year": 2010,
+    "tags": [
+      "literature",
+      "poetry",
+      "give me the minstrels seat",
+      "j.p. clark",
+      "theme",
+      "companionship",
+      "jamb"
+    ],
+    "requiresCalculator": false,
+    "calculatorType": "none",
+    "formula": "",
+    "constants": {},
+    "createdBy": "OAE Admin",
+    "lastUpdated": "2026-04-06"
+  },
+  {
+    "id": "LIT-JAMB-0026",
+    "question": "In Andrew Marvell's poem 'To His Coy Mistress', for how long does the poet persona claim he would praise the lady's eyes?",
+    "options": [
+      "Thirty thousand years",
+      "Six decades",
+      "Two centuries",
+      "A hundred years"
+    ],
+    "answer": 0,
+    "exam": [
+      "JAMB"
+    ],
+    "level": "medium",
+    "topic": "Poetry",
+    "marks": 2,
+    "explanation": "The speaker uses hyperbole (extreme exaggeration) to flatter his mistress and set up the poem's central 'carpe diem' (seize the day) argument. He claims he would spend an impossibly vast amount of time—'An hundred years' on her eyes and 'Thirty thousand' on the rest of her—if they had infinite time, which they do not.",
+    "hint": "The number is exaggerated for effect—think of the line 'Thirty thousand to the rest.'",
+    "timeLimit": 45,
+    "year": 2010,
+    "tags": [
+      "literature",
+      "poetry",
+      "to his coy mistress",
+      "andrew marvell",
+      "hyperbole",
+      "jamb"
+    ],
+    "requiresCalculator": false,
+    "calculatorType": "none",
+    "formula": "",
+    "constants": {},
+    "createdBy": "OAE Admin",
+    "lastUpdated": "2026-04-06"
+  },
+  {
+    "id": "LIT-JAMB-0027",
+    "question": "In D.H. Lawrence's poem 'Bat', what creature does the poet persona initially mistake the bats for?",
+    "options": [
+      "Owls",
+      "Swallows",
+      "Pipistrello",
+      "Sparrows"
+    ],
+    "answer": 1,
+    "exam": [
+      "JAMB"
+    ],
+    "level": "medium",
+    "topic": "Poetry",
+    "marks": 1,
+    "explanation": "The poem's emotional pivot hinges on this misidentification. At dusk, the speaker sees what he thinks are the graceful, beloved swallows. His initial pleasure turns to visceral disgust when he realizes they are bats. The contrast between the positive symbolism of swallows and the negative symbolism of bats is central to the poem's meaning.",
+    "hint": "Which graceful bird might be seen at dusk?",
+    "timeLimit": 30,
+    "year": 2010,
+    "tags": [
+      "literature",
+      "poetry",
+      "bat",
+      "d.h. lawrence",
+      "content",
+      "jamb"
+    ],
+    "requiresCalculator": false,
+    "calculatorType": "none",
+    "formula": "",
+    "constants": {},
+    "createdBy": "OAE Admin",
+    "lastUpdated": "2026-04-06"
+  },
+  {
+    "id": "LIT-JAMB-0028",
+    "question": "In T.S. Eliot's poem 'Journey of the Magi', what animals are the magi aided by on their journey?",
+    "options": [
+      "Donkeys",
+      "Horses",
+      "Camels",
+      "Chariots"
+    ],
+    "answer": 2,
+    "exam": [
+      "JAMB"
+    ],
+    "level": "easy",
+    "topic": "Poetry",
+    "marks": 1,
+    "explanation": "The poem opens with a direct quote recalling the difficult journey: 'A cold coming we had of it, / Just the worst time of the year... / And the camels galled, sore-footed, refractory.' The camels are explicitly mentioned as their means of transport, emphasizing the arduous nature of their pilgrimage.",
+    "hint": "The poem mentions animals that are 'galled, sore-footed, refractory.'",
+    "timeLimit": 30,
+    "year": 2010,
+    "tags": [
+      "literature",
+      "poetry",
+      "journey of the magi",
+      "t.s. eliot",
+      "detail",
+      "jamb"
+    ],
+    "requiresCalculator": false,
+    "calculatorType": "none",
+    "formula": "",
+    "constants": {},
+    "createdBy": "OAE Admin",
+    "lastUpdated": "2026-04-06"
+  },
+  {
+    "id": "LIT-JAMB-0029",
+    "question": "According to Wendy Cope's 'Sonnet VII', what is the fundamental purpose or essence of poetry?",
+    "options": [
+      "Boring",
+      "Therapeutic (healing/solace)",
+      "Philosophical",
+      "Inspiring"
+    ],
+    "answer": 1,
+    "exam": [
+      "JAMB"
+    ],
+    "level": "medium",
+    "topic": "Poetry",
+    "marks": 2,
+    "explanation": "In 'Sonnet VII', Cope presents poetry as a therapeutic or healing force. The sonnet describes poetry's power to soothe pain, order chaotic emotions, and provide solace. It argues that the fundamental purpose of poetry is to act as a balm for the human condition, making it essentially therapeutic.",
+    "hint": "Think about what poetry does for emotional pain.",
+    "timeLimit": 45,
+    "year": 2010,
+    "tags": [
+      "literature",
+      "poetry",
+      "sonnet vii",
+      "wendy cope",
+      "theme",
+      "therapeutic",
+      "jamb"
+    ],
+    "requiresCalculator": false,
+    "calculatorType": "none",
+    "formula": "",
+    "constants": {},
+    "createdBy": "OAE Admin",
+    "lastUpdated": "2026-04-06"
+  },
+  {
+    "id": "LIT-JAMB-0030",
+    "question": "What is the name of the dramatic sub-genre that primarily aims to provoke excessive, unrestrained laughter through exaggerated situations and physical humor?",
+    "options": [
+      "Tragi-comedy",
+      "Comedy",
+      "Farce",
+      "Satire"
+    ],
+    "answer": 2,
+    "exam": [
+      "JAMB"
+    ],
+    "level": "easy",
+    "topic": "Drama",
+    "marks": 1,
+    "explanation": "A farce is a sub-genre of comedy characterized by highly exaggerated, improbable situations, physical humor, crude characterizations, and fast-paced action whose primary goal is to provoke loud, unrestrained laughter. While comedy aims to amuse, farce specifically seeks excessive, often slapstick, laughter.",
+    "hint": "Think of plays with slapstick, mistaken identities, and chaotic situations.",
+    "timeLimit": 30,
+    "year": 2010,
+    "tags": [
+      "literature",
+      "drama",
+      "genres",
+      "farce",
+      "jamb"
+    ],
+    "requiresCalculator": false,
+    "calculatorType": "none",
+    "formula": "",
+    "constants": {},
+    "createdBy": "OAE Admin",
+    "lastUpdated": "2026-04-06"
+  },
+  {
+    "id": "LIT-JAMB-0031",
+    "question": "Which element of plot structure is common to both comedy and tragedy?",
+    "options": [
+      "Happy ending",
+      "Climax",
+      "Tragic hero",
+      "Stanza"
+    ],
+    "answer": 1,
+    "exam": [
+      "JAMB"
+    ],
+    "level": "easy",
+    "topic": "Drama",
+    "marks": 1,
+    "explanation": "Climax is a fundamental element of plot structure common to all dramatic genres, including both comedy and tragedy. It is the turning point or moment of highest tension in the narrative. While they differ in resolution (happy vs. sad) and protagonist, both forms are built around a structured plot that includes a climax.",
+    "hint": "Every story has a point of highest tension or turning point.",
+    "timeLimit": 30,
+    "year": 2010,
+    "tags": [
+      "literature",
+      "drama",
+      "elements",
+      "climax",
+      "jamb"
+    ],
+    "requiresCalculator": false,
+    "calculatorType": "none",
+    "formula": "",
+    "constants": {},
+    "createdBy": "OAE Admin",
+    "lastUpdated": "2026-04-06"
+  },
+  {
+    "id": "LIT-JAMB-0032",
+    "question": "What is the term for a formal, dignified speech or piece of writing that praises a person or thing for past or present deeds, often delivered at a funeral?",
+    "options": [
+      "Premiere",
+      "Eulogy",
+      "Anthology",
+      "Lampoon"
+    ],
+    "answer": 1,
+    "exam": [
+      "JAMB"
+    ],
+    "level": "easy",
+    "topic": "Literary Terms & Concepts",
+    "marks": 1,
+    "explanation": "A eulogy is a formal speech or piece of writing that praises someone or something highly, typically someone who has just died. It is characterized by its dignified, laudatory tone. A lampoon is the opposite (satirical ridicule), an anthology is a collection, and a premiere is a first performance.",
+    "hint": "This term is often associated with funeral speeches.",
+    "timeLimit": 30,
+    "year": 2010,
+    "tags": [
+      "literature",
+      "literary terms",
+      "eulogy",
+      "jamb"
+    ],
+    "requiresCalculator": false,
+    "calculatorType": "none",
+    "formula": "",
+    "constants": {},
+    "createdBy": "OAE Admin",
+    "lastUpdated": "2026-04-06"
+  },
+  {
+    "id": "LIT-JAMB-0033",
+    "question": "What is the narrative style called when the hero or protagonist tells his own story directly using 'I'?",
+    "options": [
+      "Objective",
+      "Subjective",
+      "First-person",
+      "Third-person"
+    ],
+    "answer": 2,
+    "exam": [
+      "JAMB"
+    ],
+    "level": "easy",
+    "topic": "Literary Terms & Concepts",
+    "marks": 1,
+    "explanation": "First-person narration occurs when a story is told by a character within the story, using pronouns like 'I,' 'me,' and 'my.' When the protagonist or 'hero' is the one narrating their own experiences directly to the reader, it is a definitive example of first-person point of view.",
+    "hint": "Look for the pronoun 'I' or 'we'.",
+    "timeLimit": 30,
+    "year": 2010,
+    "tags": [
+      "literature",
+      "narrative technique",
+      "first-person",
+      "point of view",
+      "jamb"
+    ],
+    "requiresCalculator": false,
+    "calculatorType": "none",
+    "formula": "",
+    "constants": {},
+    "createdBy": "OAE Admin",
+    "lastUpdated": "2026-04-06"
+  },
+  {
+    "id": "LIT-JAMB-0034",
+    "question": "What is the literary term for the physical, historical, or cultural background of a literary work?",
+    "options": [
+      "Episode",
+      "Plot",
+      "Time",
+      "Setting"
+    ],
+    "answer": 3,
+    "exam": [
+      "JAMB"
+    ],
+    "level": "easy",
+    "topic": "Literary Devices",
+    "marks": 1,
+    "explanation": "Setting is the literary term that encompasses the time, place, and social-cultural environment in which the narrative occurs. It includes the physical location (where), the historical period (when), and the cultural milieu that shapes the characters' lives and the story's events.",
+    "hint": "Think of 'where' and 'when' the story takes place.",
+    "timeLimit": 30,
+    "year": 2010,
+    "tags": [
+      "literature",
+      "literary elements",
+      "setting",
+      "jamb"
+    ],
+    "requiresCalculator": false,
+    "calculatorType": "none",
+    "formula": "",
+    "constants": {},
+    "createdBy": "OAE Admin",
+    "lastUpdated": "2026-04-06"
+  },
+  {
+    "id": "LIT-JAMB-0035",
+    "question": "How is a plot structure that defies chronology and presents loosely connected incidents described?",
+    "options": [
+      "Open-ended",
+      "Circular",
+      "Episodic",
+      "Organic"
+    ],
+    "answer": 2,
+    "exam": [
+      "JAMB"
+    ],
+    "level": "medium",
+    "topic": "Literary Terms & Concepts",
+    "marks": 2,
+    "explanation": "An episodic plot structure presents the story as a series of loosely connected incidents or episodes, often jumping between times, places, and characters without adhering to a strict chronological order. This technique defies linear chronology in favor of thematic or other connections.",
+    "hint": "Think of a story told in separate, loosely connected segments.",
+    "timeLimit": 45,
+    "year": 2010,
+    "tags": [
+      "literature",
+      "plot structure",
+      "episodic",
+      "jamb"
+    ],
+    "requiresCalculator": false,
+    "calculatorType": "none",
+    "formula": "",
+    "constants": {},
+    "createdBy": "OAE Admin",
+    "lastUpdated": "2026-04-06"
+  },
+  {
+    "id": "LIT-JAMB-0036",
+    "question": "What does the literary device 'pun' involve?",
+    "options": [
+      "Placing two opposite phrases",
+      "Placing words side by side",
+      "Playing on words (double meanings/homophones)",
+      "Arrangement of words"
+    ],
+    "answer": 2,
+    "exam": [
+      "JAMB"
+    ],
+    "level": "easy",
+    "topic": "Literary Devices",
+    "marks": 1,
+    "explanation": "A pun is a form of wordplay that exploits the multiple meanings of a word, or two words that sound alike but have different meanings (homophones), for humorous or rhetorical effect. Its essence is 'playing on words' to create a double meaning or a joke.",
+    "hint": "Think of a joke based on a word with two meanings.",
+    "timeLimit": 30,
+    "year": 2010,
+    "tags": [
+      "literature",
+      "literary devices",
+      "pun",
+      "jamb"
+    ],
+    "requiresCalculator": false,
+    "calculatorType": "none",
+    "formula": "",
+    "constants": {},
+    "createdBy": "OAE Admin",
+    "lastUpdated": "2026-04-06"
+  },
+  {
+    "id": "LIT-JAMB-0037",
+    "question": "What is the primary purpose of a narrative poem?",
+    "options": [
+      "To summarize a story",
+      "To describe a place",
+      "To preach a sermon",
+      "To tell a story"
+    ],
+    "answer": 3,
+    "exam": [
+      "JAMB"
+    ],
+    "level": "easy",
+    "topic": "Poetry",
+    "marks": 1,
+    "explanation": "A narrative poem is a genre of poetry that tells a story. It contains key elements of narrative such as characters, setting, plot, and conflict. Unlike a lyric poem (which expresses emotion) or a descriptive poem, the primary objective of a narrative poem is to recount a tale in verse form.",
+    "hint": "This type of poem has a plot and characters.",
+    "timeLimit": 30,
+    "year": 2010,
+    "tags": [
+      "literature",
+      "poetry",
+      "types",
+      "narrative poem",
+      "jamb"
+    ],
+    "requiresCalculator": false,
+    "calculatorType": "none",
+    "formula": "",
+    "constants": {},
+    "createdBy": "OAE Admin",
+    "lastUpdated": "2026-04-06"
+  },
+  {
+    "id": "LIT-JAMB-0038",
+    "question": "What is the term for an account of an individual's experiences during the course of a journey?",
+    "options": [
+      "A travelogue",
+      "An autobiography",
+      "A catalogue",
+      "A memoir"
+    ],
+    "answer": 0,
+    "exam": [
+      "JAMB"
+    ],
+    "level": "easy",
+    "topic": "Literary Terms & Concepts",
+    "marks": 1,
+    "explanation": "A travelogue is a piece of writing (or film) that describes the experiences, observations, and impressions of an author during a journey to a particular place. It focuses specifically on the travel experience, distinguishing it from a general autobiography or memoir which covers a wider life story.",
+    "hint": "This term combines 'travel' with a suffix meaning 'discourse' or 'writing.'",
+    "timeLimit": 30,
+    "year": 2010,
+    "tags": [
+      "literature",
+      "literary terms",
+      "travelogue",
+      "jamb"
+    ],
+    "requiresCalculator": false,
+    "calculatorType": "none",
+    "formula": "",
+    "constants": {},
+    "createdBy": "OAE Admin",
+    "lastUpdated": "2026-04-06"
+  },
+  {
+    "id": "LIT-JAMB-0039",
+    "question": "Which literary device is most central to satirical writing?",
+    "options": [
+      "Epigram",
+      "Synecdoche",
+      "Irony",
+      "Onomatopoeia"
+    ],
+    "answer": 2,
+    "exam": [
+      "JAMB"
+    ],
+    "level": "medium",
+    "topic": "Literary Devices",
+    "marks": 2,
+    "explanation": "Irony—saying one thing but meaning the opposite, or a situation where there is a contrast between expectation and reality—is a fundamental device in satire. Satire uses irony to expose and criticize folly or vice, often through humor, sarcasm, or ridicule. While other devices may be used, irony is central.",
+    "hint": "Think of saying the opposite of what you mean to criticize.",
+    "timeLimit": 45,
+    "year": 2010,
+    "tags": [
+      "literature",
+      "literary devices",
+      "irony",
+      "satire",
+      "jamb"
+    ],
+    "requiresCalculator": false,
+    "calculatorType": "none",
+    "formula": "",
+    "constants": {},
+    "createdBy": "OAE Admin",
+    "lastUpdated": "2026-04-06"
+  },
+  {
+    "id": "LIT-JAMB-0040",
+    "question": "In Wole Soyinka's 'King Baabu', Basha says: 'You dumb skull of a bone head... you will face court martial for this. You look everywhere? You search inside toilet bowl?' What is the profession of the person being addressed?",
+    "options": [
+      "Soldier",
+      "Student",
+      "Domestic servant",
+      "Lawyer"
+    ],
+    "answer": 0,
+    "exam": [
+      "JAMB"
+    ],
+    "level": "medium",
+    "topic": "Drama",
+    "marks": 2,
+    "explanation": "The threat of 'court martial' is definitive. A court-martial is a military court for trying members of the armed forces accused of offenses. Therefore, the person being addressed by Basha (a ruler) must be a soldier or a member of the military who has failed in a duty.",
+    "hint": "What profession is subject to a 'court martial'?",
+    "timeLimit": 45,
+    "year": 2010,
+    "tags": [
+      "literature",
+      "drama",
+      "king baabu",
+      "wole soyinka",
+      "characterization",
+      "jamb"
+    ],
+    "requiresCalculator": false,
+    "calculatorType": "none",
+    "formula": "",
+    "constants": {},
+    "createdBy": "OAE Admin",
+    "lastUpdated": "2026-04-06"
+  },
+  {
+    "id": "LIT-JAMB-0041",
+    "question": "From the tone of Basha's speech in Wole Soyinka's 'King Baabu' ('You dumb skull of a bone head... you will face court martial...'), what is the speaker's emotional state?",
+    "options": [
+      "Enraged",
+      "Lackadaisical",
+      "Elated",
+      "Happy"
+    ],
+    "answer": 0,
+    "exam": [
+      "JAMB"
+    ],
+    "level": "medium",
+    "topic": "Drama",
+    "marks": 1,
+    "explanation": "The tone is clearly one of fury and frustration. The insults ('dumb skull of a bone head'), the threat of severe punishment ('court martial'), and the aggressive, sarcastic questioning ('You search inside toilet bowl?') all combine to convey the speaker's intense anger and exasperation.",
+    "hint": "Consider the insults and the threat of punishment.",
+    "timeLimit": 30,
+    "year": 2010,
+    "tags": [
+      "literature",
+      "drama",
+      "king baabu",
+      "wole soyinka",
+      "tone",
+      "jamb"
+    ],
+    "requiresCalculator": false,
+    "calculatorType": "none",
+    "formula": "",
+    "constants": {},
+    "createdBy": "OAE Admin",
+    "lastUpdated": "2026-04-06"
+  },
+  {
+    "id": "LIT-JAMB-0042",
+    "question": "In Chinua Achebe's 'Things Fall Apart', the narrator states: 'That year the harvest was sad, like a funeral, and many farmers wept as they dug up the miserable yams. One man tied his cloth to a tree branch and hanged himself.' What mood is conveyed in this excerpt?",
+    "options": [
+      "Sadness",
+      "Frustration",
+      "Sympathy",
+      "Dilemma"
+    ],
+    "answer": 0,
+    "exam": [
+      "JAMB"
+    ],
+    "level": "easy",
+    "topic": "Prose",
+    "marks": 1,
+    "explanation": "The mood is overwhelmingly sad and despairing. Direct words like 'sad' and 'funeral' set the tone. The imagery of farmers weeping over 'miserable yams' and one committing suicide by hanging creates a powerful atmosphere of profound loss, communal grief, and hopelessness.",
+    "hint": "Look at words like 'sad,' 'funeral,' 'wept,' and 'hanged himself.'",
+    "timeLimit": 30,
+    "year": 2010,
+    "tags": [
+      "literature",
+      "prose",
+      "things fall apart",
+      "chinua achebe",
+      "mood",
+      "jamb"
+    ],
+    "requiresCalculator": false,
+    "calculatorType": "none",
+    "formula": "",
+    "constants": {},
+    "createdBy": "OAE Admin",
+    "lastUpdated": "2026-04-06"
+  },
+  {
+    "id": "LIT-JAMB-0043",
+    "question": "What is the rhyme scheme of the following lines? 'That age is best which is the first, / when youth and blood are warmer; / But being spent, the worse, and worst / Time still succeed the former.'",
+    "options": [
+      "bbaa",
+      "aabb",
+      "abab",
+      "abba"
+    ],
+    "answer": 1,
+    "exam": [
+      "JAMB"
+    ],
+    "level": "medium",
+    "topic": "Poetry",
+    "marks": 2,
+    "explanation": "Assigning letters to the end rhymes: 'first' (A), 'warmer' (B), 'worst' (B), 'former' (A). Therefore, the pattern is AABB. The first and fourth lines rhyme with each other, and the second and third lines rhyme with each other.",
+    "hint": "Identify which lines end with the same sound.",
+    "timeLimit": 45,
+    "year": 2010,
+    "tags": [
+      "literature",
+      "poetry",
+      "rhyme scheme",
+      "form",
+      "jamb"
+    ],
+    "requiresCalculator": false,
+    "calculatorType": "none",
+    "formula": "",
+    "constants": {},
+    "createdBy": "OAE Admin",
+    "lastUpdated": "2026-04-06"
+  },
+  {
+    "id": "LIT-JAMB-0044",
+    "question": "'But the towering earth was tired sitting in one position. She moved, suddenly, and the houses crumbled, the mountains heaved horribly, and the work of a million years was lost.' What is the subject matter of this extract?",
+    "options": [
+      "Storm",
+      "Sea waves",
+      "House movement",
+      "Earthquake"
+    ],
+    "answer": 3,
+    "exam": [
+      "JAMB"
+    ],
+    "level": "easy",
+    "topic": "Prose",
+    "marks": 1,
+    "explanation": "The description matches an earthquake: the personified earth 'moved, suddenly,' causing houses to crumble and mountains to heave. The scale of destruction ('the work of a million years was lost') is characteristic of a massive seismic event, not a storm or typical erosion.",
+    "hint": "The 'earth' is the subject that 'moved.'",
+    "timeLimit": 30,
+    "year": 2010,
+    "tags": [
+      "literature",
+      "prose",
+      "subject matter",
+      "earthquake",
+      "jamb"
+    ],
+    "requiresCalculator": false,
+    "calculatorType": "none",
+    "formula": "",
+    "constants": {},
+    "createdBy": "OAE Admin",
+    "lastUpdated": "2026-04-06"
+  },
+  {
+    "id": "LIT-JAMB-0045",
+    "question": "In the poem 'And your laughter like a flame piercing the shadows / Has revealed Africa to me beyond the snow of yesterday', what does the word 'shadows' most likely symbolize?",
+    "options": [
+      "Famine",
+      "Bleak future",
+      "Period of suffering/dark past",
+      "Abstract ideas"
+    ],
+    "answer": 2,
+    "exam": [
+      "JAMB"
+    ],
+    "level": "medium",
+    "topic": "Poetry",
+    "marks": 2,
+    "explanation": "In this metaphorical context, 'shadows' symbolizes a dark, difficult period in the past—a time of suffering, ignorance, or oppression ('yesterday'). The laughter, like a flame, pierces through this darkness, revealing a truer, more vibrant Africa that was previously obscured by hardship.",
+    "hint": "'Shadows' is contrasted with 'yesterday' and a revealing 'flame.'",
+    "timeLimit": 45,
+    "year": 2010,
+    "tags": [
+      "literature",
+      "poetry",
+      "symbolism",
+      "jamb"
+    ],
+    "requiresCalculator": false,
+    "calculatorType": "none",
+    "formula": "",
+    "constants": {},
+    "createdBy": "OAE Admin",
+    "lastUpdated": "2026-04-06"
+  },
+  {
+    "id": "LIT-JAMB-0046",
+    "question": "'Don't panic. Be calm. If you are somehow upset... try to regain your exposure.' What is the attitude of the speaker in this excerpt?",
+    "options": [
+      "Hopeless",
+      "Uncertain",
+      "Afraid",
+      "Confident"
+    ],
+    "answer": 3,
+    "exam": [
+      "JAMB"
+    ],
+    "level": "easy",
+    "topic": "Prose",
+    "marks": 1,
+    "explanation": "The speaker is giving instructions to soothe and steady someone else ('Don't panic. Be calm'). The use of imperative verbs and the act of offering guidance in a stressful situation indicate a composed and confident demeanor. The speaker is attempting to project control and assurance.",
+    "hint": "The speaker is telling someone else not to panic.",
+    "timeLimit": 30,
+    "year": 2010,
+    "tags": [
+      "literature",
+      "prose",
+      "tone",
+      "attitude",
+      "jamb"
+    ],
+    "requiresCalculator": false,
+    "calculatorType": "none",
+    "formula": "",
+    "constants": {},
+    "createdBy": "OAE Admin",
+    "lastUpdated": "2026-04-06"
+  },
+  {
+    "id": "LIT-JAMB-0047",
+    "question": "Wilfred Owen's poem 'Futility' (which includes lines: 'Move him into the sun... If anything might rouse him now / This kind old sun will know... Was it for this the clay grew tall?') can be described as which type of poem?",
+    "options": [
+      "A lyric",
+      "An epic",
+      "A sonnet",
+      "An elegy"
+    ],
+    "answer": 3,
+    "exam": [
+      "JAMB"
+    ],
+    "level": "medium",
+    "topic": "Poetry",
+    "marks": 2,
+    "explanation": "An elegy is a mournful, melancholic poem, often a lament for the dead. This poem meditates on the death of a soldier, questioning the purpose of life and the sun's creative power in the face of such meaningless death, fitting the solemn, reflective nature of an elegy.",
+    "hint": "The poem laments the death of a soldier.",
+    "timeLimit": 45,
+    "year": 2010,
+    "tags": [
+      "literature",
+      "poetry",
+      "futility",
+      "wilfred owen",
+      "elegy",
+      "genre",
+      "jamb"
+    ],
+    "requiresCalculator": false,
+    "calculatorType": "none",
+    "formula": "",
+    "constants": {},
+    "createdBy": "OAE Admin",
+    "lastUpdated": "2026-04-06"
+  },
+  {
+    "id": "LIT-JAMB-0048",
+    "question": "What is the central theme of Wilfred Owen's poem 'Futility'?",
+    "options": [
+      "Futility of life (meaninglessness of death)",
+      "Distortion of life",
+      "Creation of life",
+      "Vanity of life"
+    ],
+    "answer": 0,
+    "exam": [
+      "JAMB"
+    ],
+    "level": "hard",
+    "topic": "Poetry",
+    "marks": 2,
+    "explanation": "The central theme of Owen's 'Futility' is the utter futility and meaninglessness of life, especially in the context of war. The speaker questions why the sun, which can awaken seeds and once created life from 'clays of a cold star,' is now powerless to rouse a dead soldier, highlighting life's fragility and the senselessness of his death.",
+    "hint": "The title itself gives a strong clue.",
+    "timeLimit": 60,
+    "year": 2010,
+    "tags": [
+      "literature",
+      "poetry",
+      "futility",
+      "wilfred owen",
+      "theme",
+      "jamb"
+    ],
+    "requiresCalculator": false,
+    "calculatorType": "none",
+    "formula": "",
+    "constants": {},
+    "createdBy": "OAE Admin",
+    "lastUpdated": "2026-04-06"
+  },
+  {
+    "id": "LIT-JAMB-0049",
+    "question": "What is the rhyme scheme of the following stanza? 'A cursing rogue with a merry farce, / A bundle of rags upon a crutch, / Stumbled upon that windy place / Called cruachan, and it was as much.'",
+    "options": [
+      "aabb",
+      "abab",
+      "bbaa",
+      "abba"
+    ],
+    "answer": 0,
+    "exam": [
+      "JAMB"
+    ],
+    "level": "medium",
+    "topic": "Poetry",
+    "marks": 2,
+    "explanation": "Assigning letters to the end rhymes: 'farce' (A), 'crutch' (B), 'place' (B), 'much' (A). The first and fourth lines rhyme ('farce'/'much'), and the second and third lines rhyme ('crutch'/'place'). This creates an AABB rhyme scheme.",
+    "hint": "Identify which lines share ending sounds.",
+    "timeLimit": 45,
+    "year": 2010,
+    "tags": [
+      "literature",
+      "poetry",
+      "rhyme scheme",
+      "form",
+      "jamb"
+    ],
+    "requiresCalculator": false,
+    "calculatorType": "none",
+    "formula": "",
+    "constants": {},
+    "createdBy": "OAE Admin",
+    "lastUpdated": "2026-04-06"
+  },
+  {
+    "id": "LIT-JAMB-0050",
+    "question": "Based on its resolution of conflicts, how can J.C. De Graft's 'Sons and Daughters' be described?",
+    "options": [
+      "Tragedy",
+      "Comedy",
+      "Farce",
+      "Melodrama"
+    ],
+    "answer": 1,
+    "exam": [
+      "JAMB"
+    ],
+    "level": "medium",
+    "topic": "Drama",
+    "marks": 2,
+    "explanation": "J.C. De Graft's 'Sons and Daughters' ends with a reconciliation between the father, James Ofosu, and his children. The conflicts arising from their career choices are resolved amicably, restoring harmony to the family. This happy resolution aligns with the traditional structure of a comedy, not a tragedy.",
+    "hint": "Think about whether the ending is happy or sad.",
+    "timeLimit": 45,
+    "year": 2011,
+    "tags": [
+      "literature",
+      "drama",
+      "sons and daughters",
+      "j.c. de graft",
+      "genre",
+      "comedy",
+      "jamb"
+    ],
+    "requiresCalculator": false,
+    "calculatorType": "none",
+    "formula": "",
+    "constants": {},
+    "createdBy": "OAE Admin",
+    "lastUpdated": "2026-04-06"
+  },
+  {
+    "id": "LIT-JAMB-0051",
+    "question": "What is the prevailing theme of J.C. De Graft's 'Sons and Daughters'?",
+    "options": [
+      "Love",
+      "Affluence",
+      "Social decadence",
+      "Self-will (individual autonomy vs. parental authority)"
+    ],
+    "answer": 3,
+    "exam": [
+      "JAMB"
+    ],
+    "level": "medium",
+    "topic": "Drama",
+    "marks": 2,
+    "explanation": "The central conflict in the play is the clash between parental authority and the children's assertion of their own 'self-will'. Aaron and Maanan insist on pursuing careers in painting and dance against their father's traditional plans, making the struggle for personal autonomy and individual choice the dominant theme.",
+    "hint": "Consider the conflict between father and children over career choices.",
+    "timeLimit": 45,
+    "year": 2011,
+    "tags": [
+      "literature",
+      "drama",
+      "sons and daughters",
+      "j.c. de graft",
+      "themes",
+      "jamb"
+    ],
+    "requiresCalculator": false,
+    "calculatorType": "none",
+    "formula": "",
+    "constants": {},
+    "createdBy": "OAE Admin",
+    "lastUpdated": "2026-04-06"
+  },
+  {
+    "id": "LIT-JAMB-0052",
+    "question": "In J.C. De Graft's 'Sons and Daughters', where does the final harassment of Maanan by Lawyer B take place?",
+    "options": [
+      "Ofosu's office",
+      "Lawyer B's house",
+      "Lawyer B's chamber",
+      "Ofosu's house (the family home)"
+    ],
+    "answer": 3,
+    "exam": [
+      "JAMB"
+    ],
+    "level": "medium",
+    "topic": "Drama",
+    "marks": 2,
+    "explanation": "Lawyer B's most aggressive and final attempt to proposition Maanan occurs in the living room of her father's (Ofosu's) house. This setting underscores the violation of trust and safety, as it happens within her own home.",
+    "hint": "Think about the most intimate family setting.",
+    "timeLimit": 45,
+    "year": 2011,
+    "tags": [
+      "literature",
+      "drama",
+      "sons and daughters",
+      "j.c. de graft",
+      "plot",
+      "jamb"
+    ],
+    "requiresCalculator": false,
+    "calculatorType": "none",
+    "formula": "",
+    "constants": {},
+    "createdBy": "OAE Admin",
+    "lastUpdated": "2026-04-06"
+  },
+  {
+    "id": "LIT-JAMB-0053",
+    "question": "In J.C. De Graft's 'Sons and Daughters', Aaron says: 'Everything in this room outrages my sense of beauty, undermines my will to create pictures of lasting appeal.' What is Aaron's emotional state?",
+    "options": [
+      "Happy",
+      "Frustrated",
+      "Excited",
+      "Tired"
+    ],
+    "answer": 1,
+    "exam": [
+      "JAMB"
+    ],
+    "level": "easy",
+    "topic": "Drama",
+    "marks": 1,
+    "explanation": "The speaker is Aaron. He expresses profound artistic frustration, feeling that the conventional, utilitarian environment of his father's house is aesthetically oppressive and actively stifles his creativity and motivation to produce meaningful art.",
+    "hint": "Words like 'outrages' and 'undermines' suggest a negative feeling.",
+    "timeLimit": 30,
+    "year": 2011,
+    "tags": [
+      "literature",
+      "drama",
+      "sons and daughters",
+      "j.c. de graft",
+      "character",
+      "jamb"
+    ],
+    "requiresCalculator": false,
+    "calculatorType": "none",
+    "formula": "",
+    "constants": {},
+    "createdBy": "OAE Admin",
+    "lastUpdated": "2026-04-06"
+  },
+  {
+    "id": "LIT-JAMB-0054",
+    "question": "In William Shakespeare's 'Romeo and Juliet', Juliet says: 'Farewell... I have a faint cold fear thrills through my veins... Come, vial.' What is her intention when she speaks these lines?",
+    "options": [
+      "To commit suicide",
+      "To take a temporary harmful substance",
+      "To escape from harsh realities",
+      "To fake her own death"
+    ],
+    "answer": 3,
+    "exam": [
+      "JAMB"
+    ],
+    "level": "medium",
+    "topic": "Drama",
+    "marks": 2,
+    "explanation": "The speaker is Juliet. She is about to drink the Friar's potion, which will induce a death-like coma, allowing her to avoid marrying Paris and creating an opportunity to be reunited with Romeo. Her intention is to simulate death, not to end her life permanently.",
+    "hint": "Remember the Friar's plan for Juliet.",
+    "timeLimit": 45,
+    "year": 2011,
+    "tags": [
+      "literature",
+      "drama",
+      "romeo and juliet",
+      "shakespeare",
+      "plot",
+      "jamb"
+    ],
+    "requiresCalculator": false,
+    "calculatorType": "none",
+    "formula": "",
+    "constants": {},
+    "createdBy": "OAE Admin",
+    "lastUpdated": "2026-04-06"
+  },
+  {
+    "id": "LIT-JAMB-0055",
+    "question": "In William Shakespeare's 'Romeo and Juliet', at what point does the play reach its denouement (final resolution)?",
+    "options": [
+      "At the family feast",
+      "When Romeo kills Paris at the tomb",
+      "At the reconciliation of the feuding families",
+      "When Romeo is informed of Juliet's death"
+    ],
+    "answer": 2,
+    "exam": [
+      "JAMB"
+    ],
+    "level": "medium",
+    "topic": "Drama",
+    "marks": 2,
+    "explanation": "The denouement is the final resolution of the plot. In 'Romeo and Juliet', this occurs after the lovers' deaths, when Prince Escalus confronts the families with the consequences of their feud. The public reconciliation of the Montagues and Capulets serves as the play's concluding resolution.",
+    "hint": "Think about what happens after the lovers die.",
+    "timeLimit": 45,
+    "year": 2011,
+    "tags": [
+      "literature",
+      "drama",
+      "romeo and juliet",
+      "shakespeare",
+      "plot structure",
+      "denouement",
+      "jamb"
+    ],
+    "requiresCalculator": false,
+    "calculatorType": "none",
+    "formula": "",
+    "constants": {},
+    "createdBy": "OAE Admin",
+    "lastUpdated": "2026-04-06"
+  },
+  {
+    "id": "LIT-JAMB-0056",
+    "question": "In William Shakespeare's 'Romeo and Juliet', who brings the news of Juliet's death to Romeo in Mantua?",
+    "options": [
+      "Balthasar",
+      "Friar Lawrence",
+      "The Boy",
+      "Friar John"
+    ],
+    "answer": 0,
+    "exam": [
+      "JAMB"
+    ],
+    "level": "easy",
+    "topic": "Drama",
+    "marks": 1,
+    "explanation": "In Act V, Scene 1, Romeo's servant Balthasar arrives in Mantua and reports that he saw Juliet's body placed in the Capulet tomb. This misinformation, based on her apparent death from the potion, directly causes Romeo to buy poison and return to Verona.",
+    "hint": "Romeo's loyal servant brings the tragic news.",
+    "timeLimit": 30,
+    "year": 2011,
+    "tags": [
+      "literature",
+      "drama",
+      "romeo and juliet",
+      "shakespeare",
+      "plot",
+      "jamb"
+    ],
+    "requiresCalculator": false,
+    "calculatorType": "none",
+    "formula": "",
+    "constants": {},
+    "createdBy": "OAE Admin",
+    "lastUpdated": "2026-04-06"
+  },
+  {
+    "id": "LIT-JAMB-0057",
+    "question": "In William Shakespeare's 'Romeo and Juliet', how can Mercutio best be described?",
+    "options": [
+      "Fraudulent",
+      "Quarrelsome",
+      "Gentle",
+      "Kind-hearted"
+    ],
+    "answer": 1,
+    "exam": [
+      "JAMB"
+    ],
+    "level": "easy",
+    "topic": "Drama",
+    "marks": 1,
+    "explanation": "Mercutio is characterized by his quick temper and combative nature. He is easily provoked and engages in the fatal duel with Tybalt primarily because he feels insulted, demonstrating a quarrelsome and volatile personality that contrasts with Romeo's more romantic disposition.",
+    "hint": "Think of his role in the duel with Tybalt.",
+    "timeLimit": 30,
+    "year": 2011,
+    "tags": [
+      "literature",
+      "drama",
+      "romeo and juliet",
+      "shakespeare",
+      "characterization",
+      "mercutio",
+      "jamb"
+    ],
+    "requiresCalculator": false,
+    "calculatorType": "none",
+    "formula": "",
+    "constants": {},
+    "createdBy": "OAE Admin",
+    "lastUpdated": "2026-04-06"
+  },
+  {
+    "id": "LIT-JAMB-0058",
+    "question": "How can the plot of William Shakespeare's 'Romeo and Juliet' be described in terms of structure?",
+    "options": [
+      "Simple (single, linear plot)",
+      "Complicated",
+      "Convoluted",
+      "Chronological"
+    ],
+    "answer": 0,
+    "exam": [
+      "JAMB"
+    ],
+    "level": "medium",
+    "topic": "Drama",
+    "marks": 2,
+    "explanation": "The plot of 'Romeo and Juliet' is a classic example of a simple plot. It follows a single, linear sequence of causally linked events focused on the central love story and feud, without complex subplots or a non-chronological structure. It moves straightforwardly from exposition to tragic conclusion.",
+    "hint": "Contrast with plays that have many subplots.",
+    "timeLimit": 45,
+    "year": 2011,
+    "tags": [
+      "literature",
+      "drama",
+      "romeo and juliet",
+      "shakespeare",
+      "plot structure",
+      "jamb"
+    ],
+    "requiresCalculator": false,
+    "calculatorType": "none",
+    "formula": "",
+    "constants": {},
+    "createdBy": "OAE Admin",
+    "lastUpdated": "2026-04-06"
+  },
+  {
+    "id": "LIT-JAMB-0059",
+    "question": "In Ferdinand Oyono's 'The Old Man and the Medal', what does the heavy downpour on the night of Meka's investiture ceremony symbolize?",
+    "options": [
+      "Revelation",
+      "Mockery",
+      "Conviction",
+      "Blessing"
+    ],
+    "answer": 1,
+    "exam": [
+      "JAMB"
+    ],
+    "level": "hard",
+    "topic": "Prose",
+    "marks": 2,
+    "explanation": "The torrential rain acts as a symbolic mockery of the colonial medal ceremony. It soaks Meka, ruins his new suit, and leads to his illness, literally and figuratively dampening the supposed honor. It exposes the emptiness and humiliation underlying the colonial gesture.",
+    "hint": "Does the rain bring honor or humiliation to Meka?",
+    "timeLimit": 60,
+    "year": 2011,
+    "tags": [
+      "literature",
+      "prose",
+      "the old man and the medal",
+      "ferdinand oyono",
+      "symbolism",
+      "jamb"
+    ],
+    "requiresCalculator": false,
+    "calculatorType": "none",
+    "formula": "",
+    "constants": {},
+    "createdBy": "OAE Admin",
+    "lastUpdated": "2026-04-06"
+  },
+  {
+    "id": "LIT-JAMB-0060",
+    "question": "In Ferdinand Oyono's 'The Old Man and the Medal', what does Father Vandermayer's attitude and action towards Meka (refusing him shelter from the rain) illustrate about the church?",
+    "options": [
+      "Despondency",
+      "Suspicion",
+      "Infuriation",
+      "Hypocrisy"
+    ],
+    "answer": 3,
+    "exam": [
+      "JAMB"
+    ],
+    "level": "medium",
+    "topic": "Prose",
+    "marks": 2,
+    "explanation": "Father Vandermayer embodies the hypocrisy of the colonial church. He preaches Christian charity but practices racial and social exclusion by refusing Meka shelter from the rain. His actions blatantly contradict the church's professed values of compassion and brotherhood.",
+    "hint": "Consider the contrast between what the church preaches and what the priest practices.",
+    "timeLimit": 45,
+    "year": 2011,
+    "tags": [
+      "literature",
+      "prose",
+      "the old man and the medal",
+      "ferdinand oyono",
+      "hypocrisy",
+      "theme",
+      "jamb"
+    ],
+    "requiresCalculator": false,
+    "calculatorType": "none",
+    "formula": "",
+    "constants": {},
+    "createdBy": "OAE Admin",
+    "lastUpdated": "2026-04-06"
+  },
+  {
+    "id": "LIT-JAMB-0061",
+    "question": "In Ferdinand Oyono's 'The Old Man and the Medal', who is described in the following lines: 'As he opened and shut his mouth his lower jaw went down and came up, puffing up and then deflating the skin under his chin'?",
+    "options": [
+      "The High Commissioner",
+      "M. Pipiniakis",
+      "The white chief (Commandant)",
+      "M. Fouconi"
+    ],
+    "answer": 2,
+    "exam": [
+      "JAMB"
+    ],
+    "level": "medium",
+    "topic": "Prose",
+    "marks": 2,
+    "explanation": "This detailed, unflattering physical description is of the 'white chief' or Commandant, the highest-ranking colonial official at the ceremony. The focus on his mechanical, almost grotesque jaw movements serves to undermine his authority and dignity.",
+    "hint": "Think about the highest-ranking colonial official at the ceremony.",
+    "timeLimit": 45,
+    "year": 2011,
+    "tags": [
+      "literature",
+      "prose",
+      "the old man and the medal",
+      "ferdinand oyono",
+      "characterization",
+      "jamb"
+    ],
+    "requiresCalculator": false,
+    "calculatorType": "none",
+    "formula": "",
+    "constants": {},
+    "createdBy": "OAE Admin",
+    "lastUpdated": "2026-04-06"
+  },
+  {
+    "id": "LIT-JAMB-0062",
+    "question": "In Buchi Emecheta's 'The Joys of Motherhood', for how long was Nnaife jailed for attempted murder?",
+    "options": [
+      "Four months",
+      "Three months",
+      "Five months",
+      "Two months"
+    ],
+    "answer": 0,
+    "exam": [
+      "JAMB"
+    ],
+    "level": "medium",
+    "topic": "Prose",
+    "marks": 2,
+    "explanation": "In 'The Joys of Motherhood', Nnaife is imprisoned for four months after violently attacking a man he mistakenly believes is his wife's lover. This incarceration marks a turning point, deepening the family's poverty and crisis during his absence.",
+    "hint": "Recall the incident with the man Nnaife thought was Nnu Ego's lover.",
+    "timeLimit": 45,
+    "year": 2011,
+    "tags": [
+      "literature",
+      "prose",
+      "the joys of motherhood",
+      "buchi emecheta",
+      "plot",
+      "jamb"
+    ],
+    "requiresCalculator": false,
+    "calculatorType": "none",
+    "formula": "",
+    "constants": {},
+    "createdBy": "OAE Admin",
+    "lastUpdated": "2026-04-06"
+  },
+  {
+    "id": "LIT-JAMB-0063",
+    "question": "In Buchi Emecheta's 'The Joys of Motherhood', Nwokocha Agbadi (Nnu Ego's father) is famous for his oratorical powers and what other quality?",
+    "options": [
+      "Height",
+      "Treachery",
+      "Illiteracy",
+      "Wealth"
+    ],
+    "answer": 3,
+    "exam": [
+      "JAMB"
+    ],
+    "level": "easy",
+    "topic": "Prose",
+    "marks": 1,
+    "explanation": "Nnu Ego's father, Agbadi, is a prominent and wealthy chief in Ibuza. His high status, derived from his wealth and persuasive speaking ability, contrasts sharply with the poverty Nnu Ego experiences in Lagos, highlighting her fall in social standing.",
+    "hint": "Agbadi is a chief of high status.",
+    "timeLimit": 30,
+    "year": 2011,
+    "tags": [
+      "literature",
+      "prose",
+      "the joys of motherhood",
+      "buchi emecheta",
+      "characterization",
+      "jamb"
+    ],
+    "requiresCalculator": false,
+    "calculatorType": "none",
+    "formula": "",
+    "constants": {},
+    "createdBy": "OAE Admin",
+    "lastUpdated": "2026-04-06"
+  },
+  {
+    "id": "LIT-JAMB-0064",
+    "question": "In Buchi Emecheta's 'The Joys of Motherhood', what does the handing over of a baby boy in a dream to Nnu Ego by her personal god (chi) signify?",
+    "options": [
+      "Reincarnation",
+      "Future blessing (promise of fertility)",
+      "Idol worship",
+      "Doom"
+    ],
+    "answer": 1,
+    "exam": [
+      "JAMB"
+    ],
+    "level": "medium",
+    "topic": "Prose",
+    "marks": 2,
+    "explanation": "This dream is a pivotal moment of hope. Nnu Ego's chi (personal god) presenting her with a baby boy is interpreted as a divine promise of future fertility—the ultimate blessing she seeks. It motivates her to leave her first husband and move to Lagos, setting the main plot in motion.",
+    "hint": "What does Nnu Ego desire most in life?",
+    "timeLimit": 45,
+    "year": 2011,
+    "tags": [
+      "literature",
+      "prose",
+      "the joys of motherhood",
+      "buchi emecheta",
+      "symbolism",
+      "jamb"
+    ],
+    "requiresCalculator": false,
+    "calculatorType": "none",
+    "formula": "",
+    "constants": {},
+    "createdBy": "OAE Admin",
+    "lastUpdated": "2026-04-06"
+  },
+  {
+    "id": "LIT-JAMB-0065",
+    "question": "What kind of society does George Orwell's 'Nineteen Eighty-Four' depict?",
+    "options": [
+      "A useless past",
+      "A totalitarian future",
+      "An unstable moment",
+      "A peaceful atmosphere"
+    ],
+    "answer": 1,
+    "exam": [
+      "JAMB"
+    ],
+    "level": "easy",
+    "topic": "Prose",
+    "marks": 1,
+    "explanation": "George Orwell's 'Nineteen Eighty-Four' is a dystopian novel that projects a terrifying vision of a totalitarian future. It depicts a society under complete state control with pervasive surveillance, propaganda, and the eradication of individual freedom.",
+    "hint": "Think of Big Brother, Thought Police, and constant surveillance.",
+    "timeLimit": 30,
+    "year": 2011,
+    "tags": [
+      "literature",
+      "prose",
+      "nineteen eighty-four",
+      "george orwell",
+      "themes",
+      "totalitarianism",
+      "jamb"
+    ],
+    "requiresCalculator": false,
+    "calculatorType": "none",
+    "formula": "",
+    "constants": {},
+    "createdBy": "OAE Admin",
+    "lastUpdated": "2026-04-06"
+  },
+  {
+    "id": "LIT-JAMB-0066",
+    "question": "In George Orwell's 'Nineteen Eighty-Four', what dreams of Winston's are crushed by the power and oppression of the Party?",
+    "options": [
+      "Freedom and democracy",
+      "Internal security",
+      "Wealth and capitalism",
+      "Sovereignty"
+    ],
+    "answer": 0,
+    "exam": [
+      "JAMB"
+    ],
+    "level": "medium",
+    "topic": "Prose",
+    "marks": 2,
+    "explanation": "Winston's rebellion is fundamentally motivated by dreams of individual 'freedom' and truth. The novel's central conflict is the state's systematic effort to crush these very dreams through torture and psychological manipulation until he internally accepts the Party's doctrine.",
+    "hint": "What does Winston want that the Party forbids?",
+    "timeLimit": 45,
+    "year": 2011,
+    "tags": [
+      "literature",
+      "prose",
+      "nineteen eighty-four",
+      "george orwell",
+      "themes",
+      "freedom",
+      "jamb"
+    ],
+    "requiresCalculator": false,
+    "calculatorType": "none",
+    "formula": "",
+    "constants": {},
+    "createdBy": "OAE Admin",
+    "lastUpdated": "2026-04-06"
+  },
+  {
+    "id": "LIT-JAMB-0067",
+    "question": "In George Orwell's 'Nineteen Eighty-Four', what does Room 101 in the Ministry of Love symbolize?",
+    "options": [
+      "Rest",
+      "Fun",
+      "Humiliation and psychological breaking",
+      "Tour"
+    ],
+    "answer": 2,
+    "exam": [
+      "JAMB"
+    ],
+    "level": "medium",
+    "topic": "Prose",
+    "marks": 2,
+    "explanation": "Room 101 in the Ministry of Love represents the ultimate place of psychological breaking and humiliation. It is where prisoners are confronted with their worst fear, symbolizing the state's power to destroy a person's spirit and enforce total submission.",
+    "hint": "What happens to Winston in Room 101?",
+    "timeLimit": 45,
+    "year": 2011,
+    "tags": [
+      "literature",
+      "prose",
+      "nineteen eighty-four",
+      "george orwell",
+      "symbolism",
+      "room 101",
+      "jamb"
+    ],
+    "requiresCalculator": false,
+    "calculatorType": "none",
+    "formula": "",
+    "constants": {},
+    "createdBy": "OAE Admin",
+    "lastUpdated": "2026-04-06"
+  },
+  {
+    "id": "LIT-JAMB-0068",
+    "question": "What is the overall tone or outlook of George Orwell's 'Nineteen Eighty-Four'?",
+    "options": [
+      "Optimistic",
+      "Antagonistic",
+      "Persuasive",
+      "Pessimistic"
+    ],
+    "answer": 3,
+    "exam": [
+      "JAMB"
+    ],
+    "level": "medium",
+    "topic": "Prose",
+    "marks": 2,
+    "explanation": "The novel's tone and outcome are profoundly pessimistic. It depicts the complete triumph of the totalitarian state over the individual. Winston is utterly broken, betrays Julia, and learns to love Big Brother, offering no hope for resistance or a better future.",
+    "hint": "Consider how the novel ends for Winston.",
+    "timeLimit": 45,
+    "year": 2011,
+    "tags": [
+      "literature",
+      "prose",
+      "nineteen eighty-four",
+      "george orwell",
+      "tone",
+      "jamb"
+    ],
+    "requiresCalculator": false,
+    "calculatorType": "none",
+    "formula": "",
+    "constants": {},
+    "createdBy": "OAE Admin",
+    "lastUpdated": "2026-04-06"
+  },
+  {
+    "id": "LIT-JAMB-0069",
+    "question": "In Gbemisola Adeoti's 'Naked Soles', through what hazardous landscape does the carnival of naked soles dance?",
+    "options": [
+      "Scorching sun",
+      "A dirty room",
+      "Blooming thorns (paths strewn with glass chips)",
+      "A cloudy atmosphere"
+    ],
+    "answer": 2,
+    "exam": [
+      "JAMB"
+    ],
+    "level": "medium",
+    "topic": "Poetry",
+    "marks": 2,
+    "explanation": "The poem's central image is of dancers with 'naked soles' moving 'through paths strewn with glass chips' and 'blooming thorns.' This painful, hazardous landscape symbolizes the difficult historical or cultural terrain that must be traversed in the act of remembrance or confrontation.",
+    "hint": "The poem mentions glass chips and thorns.",
+    "timeLimit": 45,
+    "year": 2011,
+    "tags": [
+      "literature",
+      "poetry",
+      "naked soles",
+      "gbemisola adeoti",
+      "imagery",
+      "jamb"
+    ],
+    "requiresCalculator": false,
+    "calculatorType": "none",
+    "formula": "",
+    "constants": {},
+    "createdBy": "OAE Admin",
+    "lastUpdated": "2026-04-06"
+  },
+  {
+    "id": "LIT-JAMB-0070",
+    "question": "In David Rubadiri's 'An African Thunderstorm', from which direction do the clouds first appear, signaling the beginning of the storm?",
+    "options": [
+      "Rain from the west",
+      "Clouds from the east",
+      "Rain from the east",
+      "Clouds from the west"
+    ],
+    "answer": 3,
+    "exam": [
+      "JAMB"
+    ],
+    "level": "easy",
+    "topic": "Poetry",
+    "marks": 1,
+    "explanation": "The poem opens with the line 'From the west...' and describes 'Clouds come hurrying with the wind' from that direction. The initial sign of the storm is the ominous approach of clouds from the west, not the immediate onset of rain.",
+    "hint": "The first line mentions 'From the west...'",
+    "timeLimit": 30,
+    "year": 2011,
+    "tags": [
+      "literature",
+      "poetry",
+      "an african thunderstorm",
+      "david rubadiri",
+      "detail",
+      "jamb"
+    ],
+    "requiresCalculator": false,
+    "calculatorType": "none",
+    "formula": "",
+    "constants": {},
+    "createdBy": "OAE Admin",
+    "lastUpdated": "2026-04-06"
+  },
+  {
+    "id": "LIT-JAMB-0071",
+    "question": "What is the central theme of Acquah's poem 'In the Navel of the Soul'?",
+    "options": [
+      "The conflict of traditions",
+      "Ensuring traditions were strictly observed",
+      "The futility of man and his tradition",
+      "The strength in diversity of culture"
+    ],
+    "answer": 2,
+    "exam": [
+      "JAMB"
+    ],
+    "level": "hard",
+    "topic": "Poetry",
+    "marks": 2,
+    "explanation": "The poem is a philosophical meditation on the seeming pointlessness of human existence and ritual. It questions the purpose of life ('What is man?') and traditions, juxtaposing them with the primal 'foetal throb' of the soul, suggesting a search for meaning amidst perceived futility.",
+    "hint": "The poem questions the purpose of man and his traditions.",
+    "timeLimit": 60,
+    "year": 2011,
+    "tags": [
+      "literature",
+      "poetry",
+      "in the navel of the soul",
+      "acquah",
+      "theme",
+      "jamb"
+    ],
+    "requiresCalculator": false,
+    "calculatorType": "none",
+    "formula": "",
+    "constants": {},
+    "createdBy": "OAE Admin",
+    "lastUpdated": "2026-04-06"
+  },
+  {
+    "id": "LIT-JAMB-0072",
+    "question": "In Mazisi Kunene's 'A Heritage of Liberation', what is the persona primarily concerned with?",
+    "options": [
+      "The people's struggle for survival and liberation",
+      "Criticism of modern tradition",
+      "Intolerance of the new generation",
+      "Celebration of African tradition"
+    ],
+    "answer": 0,
+    "exam": [
+      "JAMB"
+    ],
+    "level": "medium",
+    "topic": "Poetry",
+    "marks": 2,
+    "explanation": "The poem focuses on commemorating and passing on the legacy of a people's collective struggle for liberation and survival. The persona's concern is with ensuring this history of resistance is remembered and entrusted to future generations.",
+    "hint": "The title includes the word 'Liberation'.",
+    "timeLimit": 45,
+    "year": 2011,
+    "tags": [
+      "literature",
+      "poetry",
+      "a heritage of liberation",
+      "mazisi kunene",
+      "theme",
+      "jamb"
+    ],
+    "requiresCalculator": false,
+    "calculatorType": "none",
+    "formula": "",
+    "constants": {},
+    "createdBy": "OAE Admin",
+    "lastUpdated": "2026-04-06"
+  },
+  {
+    "id": "LIT-JAMB-0073",
+    "question": "What does Launko's poem 'End of the War' portray?",
+    "options": [
+      "The silence of destruction",
+      "The usefulness of praise singers",
+      "The irony of life (especially war's aftermath)",
+      "The arrangement of war"
+    ],
+    "answer": 2,
+    "exam": [
+      "JAMB"
+    ],
+    "level": "medium",
+    "topic": "Poetry",
+    "marks": 2,
+    "explanation": "The poem 'End of the War' centers on the ironic and contradictory aftermath of conflict. It explores how peace can bring unsettling silence instead of joy, and victory can feel hollow, using paradox to highlight the complex, often ironic, realities that follow war.",
+    "hint": "Think about the contradiction between expected peace and actual experience.",
+    "timeLimit": 45,
+    "year": 2011,
+    "tags": [
+      "literature",
+      "poetry",
+      "end of the war",
+      "launko",
+      "theme",
+      "irony",
+      "jamb"
+    ],
+    "requiresCalculator": false,
+    "calculatorType": "none",
+    "formula": "",
+    "constants": {},
+    "createdBy": "OAE Admin",
+    "lastUpdated": "2026-04-06"
+  },
+  {
+    "id": "LIT-JAMB-0074",
+    "question": "In J.P. Clark's 'Give Me The Minstrel's Seat', the line 'Woman cannot exist except by man, What is there in that to vex some of them so?' exemplifies which literary device?",
+    "options": [
+      "Litotes",
+      "Rhetorical question",
+      "Transferred epithet",
+      "Synecdoche"
+    ],
+    "answer": 1,
+    "exam": [
+      "JAMB"
+    ],
+    "level": "medium",
+    "topic": "Poetry",
+    "marks": 2,
+    "explanation": "This is a rhetorical question. The speaker poses the question not to receive an answer but to emphatically assert his viewpoint—that women's dependence on men should not be a source of anger. It's a persuasive device meant to reinforce his argument.",
+    "hint": "Is the speaker expecting an answer?",
+    "timeLimit": 45,
+    "year": 2011,
+    "tags": [
+      "literature",
+      "poetry",
+      "give me the minstrels seat",
+      "j.p. clark",
+      "rhetorical question",
+      "literary devices",
+      "jamb"
+    ],
+    "requiresCalculator": false,
+    "calculatorType": "none",
+    "formula": "",
+    "constants": {},
+    "createdBy": "OAE Admin",
+    "lastUpdated": "2026-04-06"
+  },
+  {
+    "id": "LIT-JAMB-0075",
+    "question": "In Andrew Marvell's 'To His Coy Mistress', why does the speaker use the imagery of 'coy death' and worms violating the lady's virginity in the grave?",
+    "options": [
+      "To appreciate God's power",
+      "To underscore life's transience (carpe diem)",
+      "To condemn the lady",
+      "To scare the lady"
+    ],
+    "answer": 1,
+    "exam": [
+      "JAMB"
+    ],
+    "level": "hard",
+    "topic": "Poetry",
+    "marks": 2,
+    "explanation": "The vivid, grotesque imagery of worms violating the lady's preserved virginity in the grave is used to underscore the 'carpe diem' (seize the day) theme. It emphasizes the urgency of enjoying love and pleasure in the present because life is short and death is inevitable.",
+    "hint": "What is the speaker trying to convince the lady to do?",
+    "timeLimit": 60,
+    "year": 2011,
+    "tags": [
+      "literature",
+      "poetry",
+      "to his coy mistress",
+      "andrew marvell",
+      "imagery",
+      "carpe diem",
+      "jamb"
+    ],
+    "requiresCalculator": false,
+    "calculatorType": "none",
+    "formula": "",
+    "constants": {},
+    "createdBy": "OAE Admin",
+    "lastUpdated": "2026-04-06"
+  },
+  {
+    "id": "LIT-JAMB-0076",
+    "question": "What technique does D.H. Lawrence use in his poem 'Bat' to sustain the reader's interest?",
+    "options": [
+      "Elision",
+      "Hyperbole",
+      "Suspense (deliberate misidentification)",
+      "Oxymoron"
+    ],
+    "answer": 2,
+    "exam": [
+      "JAMB"
+    ],
+    "level": "medium",
+    "topic": "Poetry",
+    "marks": 2,
+    "explanation": "D.H. Lawrence builds narrative suspense. He spends several lines describing the graceful, appealing flight of what the speaker assumes are swallows. The reader's interest is held by this deliberate misidentification, creating tension that is resolved when the creatures are revealed to be bats, triggering the speaker's disgust.",
+    "hint": "The speaker mistakes bats for another bird initially.",
+    "timeLimit": 45,
+    "year": 2011,
+    "tags": [
+      "literature",
+      "poetry",
+      "bat",
+      "d.h. lawrence",
+      "suspense",
+      "technique",
+      "jamb"
+    ],
+    "requiresCalculator": false,
+    "calculatorType": "none",
+    "formula": "",
+    "constants": {},
+    "createdBy": "OAE Admin",
+    "lastUpdated": "2026-04-06"
+  },
+  {
+    "id": "LIT-JAMB-0077",
+    "question": "In T.S. Eliot's 'Journey of the Magi', the line 'And a water-mill beating the darkness' contains which dominant literary device?",
+    "options": [
+      "Oxymoron",
+      "Personification",
+      "Hyperbole",
+      "Alliteration"
+    ],
+    "answer": 1,
+    "exam": [
+      "JAMB"
+    ],
+    "level": "medium",
+    "topic": "Poetry",
+    "marks": 2,
+    "explanation": "The line 'a water-mill beating the darkness' uses personification. An inanimate object (the water-mill) is attributed with the human action of 'beating,' creating a vivid, rhythmic image of its sound and motion against the night.",
+    "hint": "Can a water-mill literally 'beat' something?",
+    "timeLimit": 45,
+    "year": 2011,
+    "tags": [
+      "literature",
+      "poetry",
+      "journey of the magi",
+      "t.s. eliot",
+      "personification",
+      "literary devices",
+      "jamb"
+    ],
+    "requiresCalculator": false,
+    "calculatorType": "none",
+    "formula": "",
+    "constants": {},
+    "createdBy": "OAE Admin",
+    "lastUpdated": "2026-04-06"
+  },
+  {
+    "id": "LIT-JAMB-0078",
+    "question": "What is the general tone of Wendy Cope's 'Sonnet VII'?",
+    "options": [
+      "Persuasive (didactic)",
+      "Humorous",
+      "Optimistic",
+      "Mournful"
+    ],
+    "answer": 0,
+    "exam": [
+      "JAMB"
+    ],
+    "level": "medium",
+    "topic": "Poetry",
+    "marks": 2,
+    "explanation": "The sonnet adopts a didactic and persuasive tone. The speaker is making a reasoned argument for the value of poetry, asserting its therapeutic function in ordering emotions and providing solace. The structure and language aim to convince the reader of this perspective.",
+    "hint": "The poem is trying to convince the reader of something about poetry.",
+    "timeLimit": 45,
+    "year": 2011,
+    "tags": [
+      "literature",
+      "poetry",
+      "sonnet vii",
+      "wendy cope",
+      "tone",
+      "jamb"
+    ],
+    "requiresCalculator": false,
+    "calculatorType": "none",
+    "formula": "",
+    "constants": {},
+    "createdBy": "OAE Admin",
+    "lastUpdated": "2026-04-06"
+  },
+  {
+    "id": "LIT-JAMB-0079",
+    "question": "What is the term for the large space above the proscenium arch in a theatre from which scenery and lighting are controlled?",
+    "options": [
+      "Aside",
+      "Setting",
+      "Anachronism",
+      "Flies (fly space)"
+    ],
+    "answer": 3,
+    "exam": [
+      "JAMB"
+    ],
+    "level": "hard",
+    "topic": "Drama",
+    "marks": 2,
+    "explanation": "In theatre, the 'flies' or 'fly space' is the area above the stage, concealed by the proscenium arch. It is used to house scenery, curtains, and lighting equipment that can be raised and lowered ('flown') to control the stage setting and manage scene changes.",
+    "hint": "Think of scenery being 'flown' in and out.",
+    "timeLimit": 60,
+    "year": 2011,
+    "tags": [
+      "literature",
+      "drama",
+      "terminology",
+      "flies",
+      "theatre",
+      "jamb"
+    ],
+    "requiresCalculator": false,
+    "calculatorType": "none",
+    "formula": "",
+    "constants": {},
+    "createdBy": "OAE Admin",
+    "lastUpdated": "2026-04-06"
+  },
+  {
+    "id": "LIT-JAMB-0080",
+    "question": "What is the subject matter of this passage from Zhang Yu's 'The Art of War'? 'Good warriors make others come to them and do not go to others. When you induce opponents to come to you, then their force is always empty...'",
+    "options": [
+      "Folly of soldiers",
+      "Inspiration",
+      "Spurring people to action",
+      "War (military strategy)"
+    ],
+    "answer": 3,
+    "exam": [
+      "JAMB"
+    ],
+    "level": "easy",
+    "topic": "Prose",
+    "marks": 1,
+    "explanation": "The passage is a direct excerpt on military strategy from 'The Art of War'. It discusses tactical principles for gaining advantage in combat, making the conduct and strategy of war its central subject matter.",
+    "hint": "The text discusses how warriors should engage opponents.",
+    "timeLimit": 30,
+    "year": 2011,
+    "tags": [
+      "literature",
+      "prose",
+      "the art of war",
+      "zhang yu",
+      "subject matter",
+      "jamb"
+    ],
+    "requiresCalculator": false,
+    "calculatorType": "none",
+    "formula": "",
+    "constants": {},
+    "createdBy": "OAE Admin",
+    "lastUpdated": "2026-04-06"
+  },
+  {
+    "id": "LIT-JAMB-0081",
+    "question": "What is the literary term for the repetition of single words or phrases at the beginning of successive lines or clauses?",
+    "options": [
+      "Assonance",
+      "Parallelism (specifically anaphora)",
+      "Onomatopoeia",
+      "Alliteration"
+    ],
+    "answer": 1,
+    "exam": [
+      "JAMB"
+    ],
+    "level": "medium",
+    "topic": "Literary Devices",
+    "marks": 2,
+    "explanation": "The described technique is a form of parallelism, specifically anaphora. Parallelism involves the repetition of grammatical structures. When this repetition features the same word or phrase at the start of successive lines or clauses, it creates emphasis and rhythm.",
+    "hint": "Think of a famous speech that starts many lines with 'I have a dream...'",
+    "timeLimit": 45,
+    "year": 2011,
+    "tags": [
+      "literature",
+      "literary devices",
+      "parallelism",
+      "anaphora",
+      "jamb"
+    ],
+    "requiresCalculator": false,
+    "calculatorType": "none",
+    "formula": "",
+    "constants": {},
+    "createdBy": "OAE Admin",
+    "lastUpdated": "2026-04-06"
+  },
+  {
+    "id": "LIT-JAMB-0082",
+    "question": "For what primary purpose was the ballad originally intended?",
+    "options": [
+      "To be acted",
+      "To be sung",
+      "To be discussed",
+      "To be read silently"
+    ],
+    "answer": 1,
+    "exam": [
+      "JAMB"
+    ],
+    "level": "easy",
+    "topic": "Poetry",
+    "marks": 1,
+    "explanation": "A ballad is a narrative poem that originated in the oral folk tradition as a song. It is characterized by a simple, rhythmic structure, repetition, and often a refrain, all features designed for musical performance and recitation, not silent reading alone.",
+    "hint": "Ballads were originally folk songs.",
+    "timeLimit": 30,
+    "year": 2011,
+    "tags": [
+      "literature",
+      "poetry",
+      "ballad",
+      "genre",
+      "jamb"
+    ],
+    "requiresCalculator": false,
+    "calculatorType": "none",
+    "formula": "",
+    "constants": {},
+    "createdBy": "OAE Admin",
+    "lastUpdated": "2026-04-06"
+  },
+  {
+    "id": "LIT-JAMB-0083",
+    "question": "In drama, what is the role of a dramaturge (or dramaturg)?",
+    "options": [
+      "One who writes or edits plays (literary advisor)",
+      "One who features in a play",
+      "One who directs a play",
+      "One who acts in a film"
+    ],
+    "answer": 0,
+    "exam": [
+      "JAMB"
+    ],
+    "level": "hard",
+    "topic": "Drama",
+    "marks": 2,
+    "explanation": "A dramaturge (or dramaturg) is a literary advisor or editor within a theatre. Their role involves researching, developing, adapting, or editing play texts. They focus on the literary, historical, and dramatic coherence of the work, distinct from directing or acting.",
+    "hint": "This person works with the text and research, not directing or acting.",
+    "timeLimit": 60,
+    "year": 2011,
+    "tags": [
+      "literature",
+      "drama",
+      "terminology",
+      "dramaturge",
+      "jamb"
+    ],
+    "requiresCalculator": false,
+    "calculatorType": "none",
+    "formula": "",
+    "constants": {},
+    "createdBy": "OAE Admin",
+    "lastUpdated": "2026-04-06"
+  },
+  {
+    "id": "LIT-JAMB-0084",
+    "question": "What defines a travelogue as a work of art?",
+    "options": [
+      "It is written by a famous playwright",
+      "It is written before the death of the author",
+      "It is written by an unpopular novelist",
+      "It is written based on a journey"
+    ],
+    "answer": 3,
+    "exam": [
+      "JAMB"
+    ],
+    "level": "easy",
+    "topic": "Literary Terms & Concepts",
+    "marks": 1,
+    "explanation": "A travelogue is defined by its content: it is a narrative that records the experiences, observations, and reflections of an author during a journey or travels to a particular place or region.",
+    "hint": "The term combines 'travel' with a suffix meaning 'discourse'.",
+    "timeLimit": 30,
+    "year": 2011,
+    "tags": [
+      "literature",
+      "literary terms",
+      "travelogue",
+      "jamb"
+    ],
+    "requiresCalculator": false,
+    "calculatorType": "none",
+    "formula": "",
+    "constants": {},
+    "createdBy": "OAE Admin",
+    "lastUpdated": "2026-04-06"
+  },
+  {
+    "id": "LIT-JAMB-0085",
+    "question": "What is the fundamental, defining purpose of plays as a genre?",
+    "options": [
+      "To change the world",
+      "To keep people out of trouble",
+      "To be ready for pleasure",
+      "To be presented on stage (performance)"
+    ],
+    "answer": 3,
+    "exam": [
+      "JAMB"
+    ],
+    "level": "easy",
+    "topic": "Drama",
+    "marks": 1,
+    "explanation": "Drama is a genre of literature intended for performance. While plays may have various purposes (to educate, entertain, provoke), their fundamental, defining characteristic is that they are written to be 'presented on stage' by actors before an audience.",
+    "hint": "Unlike a novel, this form comes alive on a stage.",
+    "timeLimit": 30,
+    "year": 2011,
+    "tags": [
+      "literature",
+      "drama",
+      "nature",
+      "performance",
+      "jamb"
+    ],
+    "requiresCalculator": false,
+    "calculatorType": "none",
+    "formula": "",
+    "constants": {},
+    "createdBy": "OAE Admin",
+    "lastUpdated": "2026-04-06"
+  },
+  {
+    "id": "LIT-JAMB-0086",
+    "question": "What type of character re-enacts familiar experiences and stereotypes that readers easily identify with?",
+    "options": [
+      "Round character",
+      "Flat character",
+      "Stock character",
+      "Static character"
+    ],
+    "answer": 2,
+    "exam": [
+      "JAMB"
+    ],
+    "level": "medium",
+    "topic": "Literary Terms & Concepts",
+    "marks": 2,
+    "explanation": "A stock character is a stereotypical figure based on common cultural or literary archetypes (e.g., the jealous husband, the fool). Readers easily recognize and identify with them because they represent familiar, recurring types with predictable traits and roles.",
+    "hint": "Think of a 'mad scientist' or 'dumb blonde' stereotype.",
+    "timeLimit": 45,
+    "year": 2011,
+    "tags": [
+      "literature",
+      "characterization",
+      "stock character",
+      "jamb"
+    ],
+    "requiresCalculator": false,
+    "calculatorType": "none",
+    "formula": "",
+    "constants": {},
+    "createdBy": "OAE Admin",
+    "lastUpdated": "2026-04-06"
+  },
+  {
+    "id": "LIT-JAMB-0087",
+    "question": "What does the 'plot' of a story generally refer to?",
+    "options": [
+      "Intrigue made by a character against the hero",
+      "The way the writer ends the story",
+      "The way in which the events of the story are organized",
+      "The way in which the writer begins the story"
+    ],
+    "answer": 2,
+    "exam": [
+      "JAMB"
+    ],
+    "level": "easy",
+    "topic": "Literary Terms & Concepts",
+    "marks": 1,
+    "explanation": "Plot is the sequence and structure of events in a narrative. It refers to the author's deliberate organization of incidents—from exposition and rising action through climax and resolution—to create a coherent and impactful story.",
+    "hint": "Think of 'what happens' and 'in what order.'",
+    "timeLimit": 30,
+    "year": 2011,
+    "tags": [
+      "literature",
+      "plot structure",
+      "definition",
+      "jamb"
+    ],
+    "requiresCalculator": false,
+    "calculatorType": "none",
+    "formula": "",
+    "constants": {},
+    "createdBy": "OAE Admin",
+    "lastUpdated": "2026-04-06"
+  },
+  {
+    "id": "LIT-JAMB-0088",
+    "question": "What is the metrical pattern of a line of poetry containing five stressed and five unstressed syllables (ten syllables total)?",
+    "options": [
+      "Trochaic decameter",
+      "Dactylic metre",
+      "Iambic pentameter",
+      "Anapaestic metre"
+    ],
+    "answer": 2,
+    "exam": [
+      "JAMB"
+    ],
+    "level": "medium",
+    "topic": "Poetry",
+    "marks": 2,
+    "explanation": "Iambic pentameter consists of five iambic feet per line. An iamb is a metrical foot with one unstressed syllable followed by one stressed syllable (da-DUM). Five such feet result in a ten-syllable line with five unstressed and five stressed syllables.",
+    "hint": "Think of Shakespeare's typical verse line.",
+    "timeLimit": 45,
+    "year": 2011,
+    "tags": [
+      "literature",
+      "poetry",
+      "metre",
+      "iambic pentameter",
+      "jamb"
+    ],
+    "requiresCalculator": false,
+    "calculatorType": "none",
+    "formula": "",
+    "constants": {},
+    "createdBy": "OAE Admin",
+    "lastUpdated": "2026-04-06"
+  },
+  {
+    "id": "LIT-JAMB-0089",
+    "question": "In William Shakespeare's 'A Midsummer Night's Dream', Theseus says: 'Now, fair Hippolyta, our nuptial hour / Draws on apace... How slow / This old moon wanes, she lingers my desires, / Like to a step-dame or a dowager...' What literary devices are used here?",
+    "options": [
+      "Personification and simile",
+      "Irony and suspense",
+      "Alliteration and synecdoche",
+      "Rhyme and refrain"
+    ],
+    "answer": 0,
+    "exam": [
+      "JAMB"
+    ],
+    "level": "medium",
+    "topic": "Drama",
+    "marks": 2,
+    "explanation": "The moon is personified: 'she lingers my desires.' This personified moon is then explicitly compared to 'a step-dame or a dowager' using the word 'Like,' which is a simile. The primary devices are thus personification and simile.",
+    "hint": "Look for human qualities given to the moon and a comparison using 'like.'",
+    "timeLimit": 45,
+    "year": 2011,
+    "tags": [
+      "literature",
+      "drama",
+      "a midsummer nights dream",
+      "shakespeare",
+      "personification",
+      "simile",
+      "jamb"
+    ],
+    "requiresCalculator": false,
+    "calculatorType": "none",
+    "formula": "",
+    "constants": {},
+    "createdBy": "OAE Admin",
+    "lastUpdated": "2026-04-06"
+  },
+  {
+    "id": "LIT-JAMB-0090",
+    "question": "In Gbemisola Adeoti's 'Dream Code', the lines 'You are the silent code of pleasure locked in wordless wonder. / You are the hive of treasure, no dragon can plunder' achieve their rhetorical effect through which combination of devices?",
+    "options": [
+      "Repetition and meiosis",
+      "Metaphor and rhyme",
+      "Caesura and hyperbole",
+      "Alliteration and irony"
+    ],
+    "answer": 1,
+    "exam": [
+      "JAMB"
+    ],
+    "level": "hard",
+    "topic": "Poetry",
+    "marks": 2,
+    "explanation": "The lines are built on direct metaphors: 'You are the silent code...' and 'You are the hive of treasure...' They also employ end rhyme ('wonder'/'plunder'). This combination of metaphor and rhyme creates a lyrical, evocative, and structurally cohesive effect.",
+    "hint": "Identify the comparisons (is/are) and the sounds at line ends.",
+    "timeLimit": 60,
+    "year": 2011,
+    "tags": [
+      "literature",
+      "poetry",
+      "dream code",
+      "gbemisola adeoti",
+      "metaphor",
+      "rhyme",
+      "jamb"
+    ],
+    "requiresCalculator": false,
+    "calculatorType": "none",
+    "formula": "",
+    "constants": {},
+    "createdBy": "OAE Admin",
+    "lastUpdated": "2026-04-06"
+  },
+  {
+    "id": "LIT-JAMB-0091",
+    "question": "In the following excerpt, what is the subject's experience in the lift? 'It was not yet closing time, but already most staff were trooping out... He squeezed himself into it, breathing with difficulty the body odour emitted by one of the passengers. He sighed with relief when they got to the ground floor and tumbled out.'",
+    "options": [
+      "Timely",
+      "Comfortable",
+      "Unpleasant",
+      "Amusing"
+    ],
+    "answer": 2,
+    "exam": [
+      "JAMB"
+    ],
+    "level": "easy",
+    "topic": "Prose",
+    "marks": 1,
+    "explanation": "The description emphasizes physical discomfort: he has to 'squeeze' in, breathes 'with difficulty' due to offensive body odor, and only feels relief upon escaping ('tumbled out'). The sensory details clearly convey an unpleasant experience.",
+    "hint": "Consider words like 'squeezed,' 'difficulty,' 'odour,' and 'relief.'",
+    "timeLimit": 30,
+    "year": 2011,
+    "tags": [
+      "literature",
+      "prose",
+      "mood",
+      "atmosphere",
+      "jamb"
+    ],
+    "requiresCalculator": false,
+    "calculatorType": "none",
+    "formula": "",
+    "constants": {},
+    "createdBy": "OAE Admin",
+    "lastUpdated": "2026-04-06"
+  },
+  {
+    "id": "LIT-JAMB-0092",
+    "question": "In Ola Rotimi's 'The Gods Are Not To Blame', Odewale says: 'Do not thank me... What have you done to help yourselves? Answer. Or is the land at peace? Are not people ailing and dying?' Why is the land not at peace?",
+    "options": [
+      "Chieftaincy tussle",
+      "Famine and war",
+      "Political unrest",
+      "Sickness and death (plague)"
+    ],
+    "answer": 3,
+    "exam": [
+      "JAMB"
+    ],
+    "level": "medium",
+    "topic": "Drama",
+    "marks": 2,
+    "explanation": "The speaker (Odewale) directly identifies the problems afflicting the land: people are 'ailing and dying.' This refers to the plague that is devastating the kingdom of Kutuje, which is the central crisis that initiates the plot of the play.",
+    "hint": "The quote explicitly mentions 'ailing and dying.'",
+    "timeLimit": 45,
+    "year": 2011,
+    "tags": [
+      "literature",
+      "drama",
+      "the gods are not to blame",
+      "ola rotimi",
+      "plot",
+      "jamb"
+    ],
+    "requiresCalculator": false,
+    "calculatorType": "none",
+    "formula": "",
+    "constants": {},
+    "createdBy": "OAE Admin",
+    "lastUpdated": "2026-04-06"
+  },
+  {
+    "id": "LIT-JAMB-0093",
+    "question": "In David Diop's poem 'The Vulture', the lines 'In those days. When civilization kicked us in the face, / when holy water slapped brows. / The vultures built in the shadow of their talons' contain which dominant literary device?",
+    "options": [
+      "Pun",
+      "Metaphor",
+      "Personification",
+      "Simile"
+    ],
+    "answer": 2,
+    "exam": [
+      "JAMB"
+    ],
+    "level": "medium",
+    "topic": "Poetry",
+    "marks": 2,
+    "explanation": "Abstract concepts are given human actions: 'civilization kicked us in the face' and 'holy water slapped brows.' This is personification, attributing violent human qualities to non-human entities to convey the physical and spiritual violence of colonialism.",
+    "hint": "Can civilization literally 'kick'? Can water 'slap'?",
+    "timeLimit": 45,
+    "year": 2011,
+    "tags": [
+      "literature",
+      "poetry",
+      "the vulture",
+      "david diop",
+      "personification",
+      "jamb"
+    ],
+    "requiresCalculator": false,
+    "calculatorType": "none",
+    "formula": "",
+    "constants": {},
+    "createdBy": "OAE Admin",
+    "lastUpdated": "2026-04-06"
+  },
+  {
+    "id": "LIT-JAMB-0094",
+    "question": "A character says: 'I am not afraid of anything... I have done almost everything in this world... I have been in prison more hours than I have been out of it within the last five years.' What is the speaker's tone?",
+    "options": [
+      "Regretful",
+      "Boastful",
+      "Subdued",
+      "Repentant"
+    ],
+    "answer": 1,
+    "exam": [
+      "JAMB"
+    ],
+    "level": "easy",
+    "topic": "Prose",
+    "marks": 1,
+    "explanation": "The speaker's declaration of fearlessness and his recitation of an extensive criminal record and prison time are delivered with pride and defiance. He is boasting about his toughness and experiences, not expressing regret, repentance, or humility.",
+    "hint": "Is the speaker ashamed or proud of his criminal past?",
+    "timeLimit": 30,
+    "year": 2011,
+    "tags": [
+      "literature",
+      "prose",
+      "tone",
+      "jamb"
+    ],
+    "requiresCalculator": false,
+    "calculatorType": "none",
+    "formula": "",
+    "constants": {},
+    "createdBy": "OAE Admin",
+    "lastUpdated": "2026-04-06"
+  },
+  {
+    "id": "LIT-JAMB-0095",
+    "question": "In William Shakespeare's 'Twelfth Night', the line 'I have said too much unto a heart of stone' contains which literary device?",
+    "options": [
+      "Metonymy",
+      "Litotes",
+      "Assonance",
+      "Metaphor"
+    ],
+    "answer": 3,
+    "exam": [
+      "JAMB"
+    ],
+    "level": "medium",
+    "topic": "Drama",
+    "marks": 2,
+    "explanation": "'A heart of stone' is a metaphor. It directly equates the person's unfeeling, unyielding nature to the hardness and coldness of stone, suggesting they are incapable of love, pity, or compassion. It is a direct comparison, not a substitution (metonymy).",
+    "hint": "Is the person's heart literally made of stone?",
+    "timeLimit": 45,
+    "year": 2011,
+    "tags": [
+      "literature",
+      "drama",
+      "twelfth night",
+      "shakespeare",
+      "metaphor",
+      "jamb"
+    ],
+    "requiresCalculator": false,
+    "calculatorType": "none",
+    "formula": "",
+    "constants": {},
+    "createdBy": "OAE Admin",
+    "lastUpdated": "2026-04-06"
+  },
+  {
+    "id": "LIT-JAMB-0096",
+    "question": "In Ayi Kwei Armah's 'Two Thousand Seasons', the narrator states: 'Blood was to prove no solace to the king. The rejection he had suffered at Idama's hands pushed his spirit into a comfortless hole... alone with himself, he searched in vain for ways to run from his inner emptiness.' What is the narrator's attitude toward the king?",
+    "options": [
+      "Envy",
+      "Sympathy",
+      "Suspicion",
+      "Contempt (critical judgment)"
+    ],
+    "answer": 3,
+    "exam": [
+      "JAMB"
+    ],
+    "level": "hard",
+    "topic": "Prose",
+    "marks": 2,
+    "explanation": "The narrator describes the king's state with critical detachment and implicit scorn. Phrases like 'comfortless hole,' 'inner emptiness,' and 'searched in vain' suggest a judgmental perspective on the king's moral and spiritual bankruptcy, aligning more with contempt than sympathy.",
+    "hint": "Words like 'comfortless hole' and 'inner emptiness' suggest a harsh judgment.",
+    "timeLimit": 60,
+    "year": 2011,
+    "tags": [
+      "literature",
+      "prose",
+      "two thousand seasons",
+      "ayi kwei armah",
+      "narrative perspective",
+      "tone",
+      "jamb"
+    ],
+    "requiresCalculator": false,
+    "calculatorType": "none",
+    "formula": "",
+    "constants": {},
+    "createdBy": "OAE Admin",
+    "lastUpdated": "2026-04-06"
+  },
+  {
+    "id": "LIT-JAMB-0097",
+    "question": "In Gbemisola Adeoti's 'Salutation to the gods', the lines 'Homage to Peregede the triumphant mother of morning radiant in Chameleon's velvet. / Let today's dawn bring on its rails trains of good tidings' are an example of which poetic form/function?",
+    "options": [
+      "Invocation (appeal to a deity)",
+      "Limerick",
+      "Ode",
+      "Elegy"
+    ],
+    "answer": 0,
+    "exam": [
+      "JAMB"
+    ],
+    "level": "medium",
+    "topic": "Poetry",
+    "marks": 2,
+    "explanation": "The lines constitute an invocation—a call or appeal to a deity (Peregede) for inspiration, blessing, or assistance. It is an address at the beginning of a poem or ritual, asking the divine being to bring favorable outcomes ('good tidings').",
+    "hint": "The speaker is addressing a god directly.",
+    "timeLimit": 45,
+    "year": 2011,
+    "tags": [
+      "literature",
+      "poetry",
+      "salutation to the gods",
+      "gbemisola adeoti",
+      "invocation",
+      "jamb"
+    ],
+    "requiresCalculator": false,
+    "calculatorType": "none",
+    "formula": "",
+    "constants": {},
+    "createdBy": "OAE Admin",
+    "lastUpdated": "2026-04-06"
+  },
+  {
+    "id": "LIT-JAMB-0098",
+    "question": "What is the subject matter of the following lines from Tennyson's 'Tithonus'? 'The woods decay, the woods decay and fall, / The vapours weep their burthen to the ground, / Man comes and tills the field and lies beneath, / And after many a summer dies the swan.'",
+    "options": [
+      "Death (mortality and decay)",
+      "Rainfall",
+      "Famine",
+      "Storm"
+    ],
+    "answer": 0,
+    "exam": [
+      "JAMB"
+    ],
+    "level": "medium",
+    "topic": "Poetry",
+    "marks": 2,
+    "explanation": "The lines present a series of images unified by the theme of mortality and decay: decaying wood, weeping vapour (rain), man being buried, and the dying swan. All serve as metaphors for the inevitability and universality of death.",
+    "hint": "Every image shows something ending or passing away.",
+    "timeLimit": 45,
+    "year": 2011,
+    "tags": [
+      "literature",
+      "poetry",
+      "tithonus",
+      "tennyson",
+      "theme",
+      "death",
+      "jamb"
+    ],
+    "requiresCalculator": false,
+    "calculatorType": "none",
+    "formula": "",
+    "constants": {},
+    "createdBy": "OAE Admin",
+    "lastUpdated": "2026-04-06"
+  }
+]

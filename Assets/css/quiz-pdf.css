@@ -1,0 +1,137 @@
+/**
+ * OAE Quiz PDF / Print Styles
+ * Applied when printing or generating PDF.
+ */
+
+@media print {
+  /* Hide navigation, buttons, and interactive elements */
+  nav,
+  footer,
+  .quiz-navbar,
+  .oae-footer,
+  .quiz-hamburger,
+  .quiz-join-btn,
+  .quiz-search-section,
+  .btn-primary,
+  .btn-outline,
+  button:not(.keep-for-print),
+  .subject-tab,
+  #timer-display,
+  [onclick] {
+    display: none !important;
+  }
+
+  /* Ensure results container is visible and clean */
+  #results-container,
+  .quiz-interface {
+    background: white !important;
+    color: black !important;
+    padding: 20px !important;
+    box-shadow: none !important;
+    border: none !important;
+    max-width: 100% !important;
+    margin: 0 !important;
+  }
+
+  /* Headings */
+  h1, h2, h3, h4, h5, h6 {
+    color: #0a8a2f !important;
+    page-break-after: avoid;
+  }
+
+  h1 {
+    font-size: 28px !important;
+  }
+
+  h2 {
+    font-size: 22px !important;
+  }
+
+  h3 {
+    font-size: 18px !important;
+  }
+
+  /* Text colors */
+  p, span, div, li {
+    color: black !important;
+  }
+
+  /* Score cards */
+  [style*="background:rgba(10,138,47,0.05)"],
+  [style*="background: rgba(10,138,47,0.05)"] {
+    background: #f0f0f0 !important;
+    border: 1px solid #ccc !important;
+    -webkit-print-color-adjust: exact;
+    print-color-adjust: exact;
+  }
+
+  /* Green backgrounds */
+  [style*="background: var(--green)"],
+  [style*="background: #0a8a2f"],
+  [style*="background: var(--darkgreen)"] {
+    background: #0a8a2f !important;
+    color: white !important;
+    -webkit-print-color-adjust: exact;
+    print-color-adjust: exact;
+  }
+
+  /* Green text */
+  [style*="color: var(--green)"],
+  [style*="color: #0a8a2f"] {
+    color: #0a8a2f !important;
+  }
+
+  /* Question review items */
+  [style*="border-bottom"] {
+    border-bottom: 1px solid #ddd !important;
+    page-break-inside: avoid;
+  }
+
+  /* Correct answers */
+  [style*="background:rgba(10,138,47,0.03)"],
+  [style*="background: rgba(10,138,47,0.03)"] {
+    background: #e8f5e9 !important;
+    -webkit-print-color-adjust: exact;
+    print-color-adjust: exact;
+  }
+
+  /* Wrong answers */
+  [style*="background:rgba(231,76,60,0.02)"],
+  [style*="background: rgba(231,76,60,0.02)"] {
+    background: #ffebee !important;
+    -webkit-print-color-adjust: exact;
+    print-color-adjust: exact;
+  }
+
+  /* Force page breaks appropriately */
+  .subject-section {
+    page-break-before: always;
+  }
+
+  .subject-section:first-of-type {
+    page-break-before: avoid;
+  }
+
+  /* Ensure links are not underlined */
+  a {
+    text-decoration: none !important;
+    color: black !important;
+  }
+
+  /* Remove shadows */
+  * {
+    box-shadow: none !important;
+    text-shadow: none !important;
+  }
+
+  /* Set page margins */
+  @page {
+    margin: 1.5cm;
+  }
+
+  /* Ensure backgrounds print */
+  * {
+    -webkit-print-color-adjust: exact;
+    print-color-adjust: exact;
+  }
+}

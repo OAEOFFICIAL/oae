@@ -1,0 +1,283 @@
+{
+  "meta": {
+    "novelId": "sweet-sixteen",
+    "title": "Sweet Sixteen",
+    "author": "Bolaji Abdullahi",
+    "year": 2019,
+    "sectionA": 25,
+    "notes": "JAMB 2019-2020 prescribed novel. Add actual novel extracts and corresponding questions. Current structure shows format with sample comprehension passages."
+  },
+  "questions": [
+    {
+      "id": "ss-a-001",
+      "type": "comprehension",
+      "passageTitle": "Adolescent Development",
+      "passage": "Adolescence is a critical period of human development characterized by rapid physical, emotional, and social changes. During these formative years, teenagers develop their sense of identity, establish peer relationships, and begin to form values and beliefs that will guide their adult lives. The role of parents, educators, and mentors becomes increasingly important during this period, as young people navigate complex social dynamics and peer pressure. Research indicates that teenagers who have strong support systems and positive role models tend to develop healthier coping mechanisms and make more responsible decisions. The challenges of adolescence—including academic pressure, social acceptance, and identity exploration—require understanding and compassionate guidance from adults.",
+      "question": "According to the passage, what is the most important factor in helping teenagers navigate adolescence successfully?",
+      "options": ["A. Complete freedom from adult supervision", "B. Strong support systems and positive role models", "C. Isolation from peer influence", "D. Academic achievement above all else"],
+      "answer": 1,
+      "explanation": "The passage states that 'teenagers who have strong support systems and positive role models tend to develop healthier coping mechanisms and make more responsible decisions.'",
+      "topic": "Prescribed Novel Extracts"
+    },
+    {
+      "id": "ss-a-002",
+      "type": "comprehension",
+      "passageTitle": "Adolescent Development",
+      "passage": "Adolescence is a critical period of human development characterized by rapid physical, emotional, and social changes. During these formative years, teenagers develop their sense of identity, establish peer relationships, and begin to form values and beliefs that will guide their adult lives. The role of parents, educators, and mentors becomes increasingly important during this period, as young people navigate complex social dynamics and peer pressure. Research indicates that teenagers who have strong support systems and positive role models tend to develop healthier coping mechanisms and make more responsible decisions. The challenges of adolescence—including academic pressure, social acceptance, and identity exploration—require understanding and compassionate guidance from adults.",
+      "question": "What does the passage suggest about values formed during adolescence?",
+      "options": ["A. They change frequently throughout life", "B. They are unimportant compared to adult values", "C. They guide people's decisions in their adult lives", "D. They are determined solely by peer influence"],
+      "answer": 2,
+      "explanation": "The passage indicates that values and beliefs formed during adolescence 'will guide their adult lives.'",
+      "topic": "Prescribed Novel Extracts"
+    },
+    {
+      "id": "ss-a-003",
+      "type": "comprehension",
+      "passageTitle": "Gender Equality",
+      "passage": "Despite decades of advocacy and legislative reforms, gender inequality persists in many societies, affecting women's access to education, employment, and political participation. In developing countries, girls often face barriers such as early marriage and limited educational opportunities, which perpetuate cycles of poverty and dependence. Yet evidence from numerous countries demonstrates that investing in girls' education yields substantial returns, including improved economic productivity, reduced fertility rates, and better health outcomes for entire communities. Organizations working on gender equality have shifted focus from addressing discrimination alone to creating positive opportunities for women and girls. This comprehensive approach recognizes that true equality requires not just removing barriers but actively building supportive structures and policies.",
+      "question": "What does the passage identify as the most effective approach to achieving gender equality?",
+      "options": ["A. Legislation alone", "B. Removing barriers through advocacy", "C. Creating positive opportunities and supportive structures alongside removing discrimination", "D. Focusing exclusively on women in developed countries"],
+      "answer": 2,
+      "explanation": "The passage states that 'organizations have shifted focus from addressing discrimination alone to creating positive opportunities' and that 'true equality requires not just removing barriers but actively building supportive structures and policies.'",
+      "topic": "Prescribed Novel Extracts"
+    },
+    {
+      "id": "ss-a-004",
+      "type": "vocabulary",
+      "question": "In the gender equality passage, 'perpetuate' most nearly means:",
+      "options": ["A. End immediately", "B. Continue and cause to last", "C. Make something worse", "D. Reverse completely"],
+      "answer": 1,
+      "explanation": "'Perpetuate' means to cause something to continue indefinitely, as limited opportunities perpetuate cycles of poverty.",
+      "topic": "Prescribed Novel Extracts"
+    },
+    {
+      "id": "ss-a-005",
+      "type": "inference",
+      "question": "From the gender equality passage, what can be inferred about the relationship between girls' education and community welfare?",
+      "options": ["A. Girls' education has no effect on communities", "B. Educating girls primarily benefits individual families only", "C. Girls' education contributes to improved outcomes for entire communities", "D. Only boys' education affects community development"],
+      "answer": 2,
+      "explanation": "The passage indicates that investing in girls' education yields benefits including 'improved economic productivity, reduced fertility rates, and better health outcomes for entire communities.'",
+      "topic": "Prescribed Novel Extracts"
+    },
+    {
+      "id": "ss-a-006",
+      "type": "comprehension",
+      "passageTitle": "Technology and Society",
+      "passage": "The rapid advancement of technology has fundamentally transformed human societies, creating unprecedented opportunities while simultaneously introducing new challenges. Social media, e-commerce, and digital communication tools have connected billions of people worldwide, enabling instant information exchange and commerce. However, this digital revolution has also raised concerns about privacy, cybersecurity, and the psychological effects of constant connectivity. Younger generations, growing up immersed in digital environments, exhibit different patterns of social interaction and information consumption compared to previous generations. Educational institutions face the challenge of preparing students for a digitally-driven future while teaching critical thinking about information sources and digital ethics. Balancing technological innovation with human well-being remains one of the defining challenges of our era.",
+      "question": "According to the passage, what is a significant concern arising from the digital revolution?",
+      "options": ["A. Lack of information availability", "B. Decreased global connectivity", "C. Issues related to privacy, cybersecurity, and psychological effects of connectivity", "D. Insufficient technology for developing nations"],
+      "answer": 2,
+      "explanation": "The passage explicitly mentions concerns about 'privacy, cybersecurity, and the psychological effects of constant connectivity' as challenges introduced by the digital revolution.",
+      "topic": "Prescribed Novel Extracts"
+    },
+    {
+      "id": "ss-a-007",
+      "type": "summary",
+      "passageTitle": "Mental Health Awareness",
+      "passage": "Mental health has emerged as a critical component of overall well-being, yet many societies still stigmatize mental illness and provide inadequate support services. Depression, anxiety, and other mental health conditions affect hundreds of millions of people globally, yet many cases go undiagnosed and untreated due to stigma and lack of access to healthcare. Advocacy campaigns promoting mental health awareness have successfully reduced stigma in some communities, encouraging people to seek help without shame. Workplace mental health programs and school-based counseling services have demonstrated positive effects on productivity and student outcomes. Despite these advances, significant disparities exist between developed and developing countries in terms of mental health resources and public understanding. Addressing these disparities requires increased funding, training of mental health professionals, and sustained public education efforts.",
+      "question": "Which statement best summarizes the main points of this passage?",
+      "options": ["A. Mental illness is not a serious health issue", "B. Mental health awareness is improving but significant disparities in resources and understanding remain", "C. Only developed countries need mental health services", "D. Stigma around mental illness has been completely eliminated"],
+      "answer": 1,
+      "explanation": "The passage discusses both progress in mental health awareness and the persistent challenges of stigma, inadequate services, and disparities between developed and developing countries.",
+      "topic": "Prescribed Novel Extracts"
+    },
+    {
+      "id": "ss-a-008",
+      "type": "comprehension",
+      "passageTitle": "Sample Novel Extract Placeholder",
+      "passage": "[INSERT ACTUAL EXTRACT FROM SWEET SIXTEEN HERE - Replace with text from Bolaji Abdullahi's novel]",
+      "question": "Sample Question 1: [Replace with actual question based on the novel extract]",
+      "options": ["A. Sample option A", "B. Sample option B", "C. Sample option C", "D. Sample option D"],
+      "answer": 0,
+      "explanation": "Replace with actual explanation",
+      "topic": "Prescribed Novel Extracts"
+    },
+    {
+      "id": "ss-a-009",
+      "type": "comprehension",
+      "passageTitle": "Sample Novel Extract Placeholder",
+      "passage": "[INSERT ACTUAL EXTRACT FROM SWEET SIXTEEN HERE]",
+      "question": "Sample Question 2: [Replace with actual question]",
+      "options": ["A. Sample option A", "B. Sample option B", "C. Sample option C", "D. Sample option D"],
+      "answer": 0,
+      "explanation": "Replace with actual explanation",
+      "topic": "Prescribed Novel Extracts"
+    },
+    {
+      "id": "ss-a-010",
+      "type": "comprehension",
+      "passageTitle": "Sample Novel Extract Placeholder",
+      "passage": "[INSERT ACTUAL EXTRACT FROM SWEET SIXTEEN HERE]",
+      "question": "Sample Question 3: [Replace with actual question]",
+      "options": ["A. Sample option A", "B. Sample option B", "C. Sample option C", "D. Sample option D"],
+      "answer": 0,
+      "explanation": "Replace with actual explanation",
+      "topic": "Prescribed Novel Extracts"
+    },
+    {
+      "id": "ss-a-011",
+      "type": "comprehension",
+      "passageTitle": "Sample Novel Extract Placeholder",
+      "passage": "[INSERT ACTUAL EXTRACT FROM SWEET SIXTEEN HERE]",
+      "question": "Sample Question 4: [Replace with actual question]",
+      "options": ["A. Sample option A", "B. Sample option B", "C. Sample option C", "D. Sample option D"],
+      "answer": 0,
+      "explanation": "Replace with actual explanation",
+      "topic": "Prescribed Novel Extracts"
+    },
+    {
+      "id": "ss-a-012",
+      "type": "comprehension",
+      "passageTitle": "Sample Novel Extract Placeholder",
+      "passage": "[INSERT ACTUAL EXTRACT FROM SWEET SIXTEEN HERE]",
+      "question": "Sample Question 5: [Replace with actual question]",
+      "options": ["A. Sample option A", "B. Sample option B", "C. Sample option C", "D. Sample option D"],
+      "answer": 0,
+      "explanation": "Replace with actual explanation",
+      "topic": "Prescribed Novel Extracts"
+    },
+    {
+      "id": "ss-a-013",
+      "type": "comprehension",
+      "passageTitle": "Sample Novel Extract Placeholder",
+      "passage": "[INSERT ACTUAL EXTRACT FROM SWEET SIXTEEN HERE]",
+      "question": "Sample Question 6: [Replace with actual question]",
+      "options": ["A. Sample option A", "B. Sample option B", "C. Sample option C", "D. Sample option D"],
+      "answer": 0,
+      "explanation": "Replace with actual explanation",
+      "topic": "Prescribed Novel Extracts"
+    },
+    {
+      "id": "ss-a-014",
+      "type": "comprehension",
+      "passageTitle": "Sample Novel Extract Placeholder",
+      "passage": "[INSERT ACTUAL EXTRACT FROM SWEET SIXTEEN HERE]",
+      "question": "Sample Question 7: [Replace with actual question]",
+      "options": ["A. Sample option A", "B. Sample option B", "C. Sample option C", "D. Sample option D"],
+      "answer": 0,
+      "explanation": "Replace with actual explanation",
+      "topic": "Prescribed Novel Extracts"
+    },
+    {
+      "id": "ss-a-015",
+      "type": "comprehension",
+      "passageTitle": "Sample Novel Extract Placeholder",
+      "passage": "[INSERT ACTUAL EXTRACT FROM SWEET SIXTEEN HERE]",
+      "question": "Sample Question 8: [Replace with actual question]",
+      "options": ["A. Sample option A", "B. Sample option B", "C. Sample option C", "D. Sample option D"],
+      "answer": 0,
+      "explanation": "Replace with actual explanation",
+      "topic": "Prescribed Novel Extracts"
+    },
+    {
+      "id": "ss-a-016",
+      "type": "comprehension",
+      "passageTitle": "Sample Novel Extract Placeholder",
+      "passage": "[INSERT ACTUAL EXTRACT FROM SWEET SIXTEEN HERE]",
+      "question": "Sample Question 9: [Replace with actual question]",
+      "options": ["A. Sample option A", "B. Sample option B", "C. Sample option C", "D. Sample option D"],
+      "answer": 0,
+      "explanation": "Replace with actual explanation",
+      "topic": "Prescribed Novel Extracts"
+    },
+    {
+      "id": "ss-a-017",
+      "type": "comprehension",
+      "passageTitle": "Sample Novel Extract Placeholder",
+      "passage": "[INSERT ACTUAL EXTRACT FROM SWEET SIXTEEN HERE]",
+      "question": "Sample Question 10: [Replace with actual question]",
+      "options": ["A. Sample option A", "B. Sample option B", "C. Sample option C", "D. Sample option D"],
+      "answer": 0,
+      "explanation": "Replace with actual explanation",
+      "topic": "Prescribed Novel Extracts"
+    },
+    {
+      "id": "ss-a-018",
+      "type": "comprehension",
+      "passageTitle": "Sample Novel Extract Placeholder",
+      "passage": "[INSERT ACTUAL EXTRACT FROM SWEET SIXTEEN HERE]",
+      "question": "Sample Question 11: [Replace with actual question]",
+      "options": ["A. Sample option A", "B. Sample option B", "C. Sample option C", "D. Sample option D"],
+      "answer": 0,
+      "explanation": "Replace with actual explanation",
+      "topic": "Prescribed Novel Extracts"
+    },
+    {
+      "id": "ss-a-019",
+      "type": "comprehension",
+      "passageTitle": "Sample Novel Extract Placeholder",
+      "passage": "[INSERT ACTUAL EXTRACT FROM SWEET SIXTEEN HERE]",
+      "question": "Sample Question 12: [Replace with actual question]",
+      "options": ["A. Sample option A", "B. Sample option B", "C. Sample option C", "D. Sample option D"],
+      "answer": 0,
+      "explanation": "Replace with actual explanation",
+      "topic": "Prescribed Novel Extracts"
+    },
+    {
+      "id": "ss-a-020",
+      "type": "comprehension",
+      "passageTitle": "Sample Novel Extract Placeholder",
+      "passage": "[INSERT ACTUAL EXTRACT FROM SWEET SIXTEEN HERE]",
+      "question": "Sample Question 13: [Replace with actual question]",
+      "options": ["A. Sample option A", "B. Sample option B", "C. Sample option C", "D. Sample option D"],
+      "answer": 0,
+      "explanation": "Replace with actual explanation",
+      "topic": "Prescribed Novel Extracts"
+    },
+    {
+      "id": "ss-a-021",
+      "type": "comprehension",
+      "passageTitle": "Sample Novel Extract Placeholder",
+      "passage": "[INSERT ACTUAL EXTRACT FROM SWEET SIXTEEN HERE]",
+      "question": "Sample Question 14: [Replace with actual question]",
+      "options": ["A. Sample option A", "B. Sample option B", "C. Sample option C", "D. Sample option D"],
+      "answer": 0,
+      "explanation": "Replace with actual explanation",
+      "topic": "Prescribed Novel Extracts"
+    },
+    {
+      "id": "ss-a-022",
+      "type": "comprehension",
+      "passageTitle": "Sample Novel Extract Placeholder",
+      "passage": "[INSERT ACTUAL EXTRACT FROM SWEET SIXTEEN HERE]",
+      "question": "Sample Question 15: [Replace with actual question]",
+      "options": ["A. Sample option A", "B. Sample option B", "C. Sample option C", "D. Sample option D"],
+      "answer": 0,
+      "explanation": "Replace with actual explanation",
+      "topic": "Prescribed Novel Extracts"
+    },
+    {
+      "id": "ss-a-023",
+      "type": "comprehension",
+      "passageTitle": "Sample Novel Extract Placeholder",
+      "passage": "[INSERT ACTUAL EXTRACT FROM SWEET SIXTEEN HERE]",
+      "question": "Sample Question 16: [Replace with actual question]",
+      "options": ["A. Sample option A", "B. Sample option B", "C. Sample option C", "D. Sample option D"],
+      "answer": 0,
+      "explanation": "Replace with actual explanation",
+      "topic": "Prescribed Novel Extracts"
+    },
+    {
+      "id": "ss-a-024",
+      "type": "comprehension",
+      "passageTitle": "Sample Novel Extract Placeholder",
+      "passage": "[INSERT ACTUAL EXTRACT FROM SWEET SIXTEEN HERE]",
+      "question": "Sample Question 17: [Replace with actual question]",
+      "options": ["A. Sample option A", "B. Sample option B", "C. Sample option C", "D. Sample option D"],
+      "answer": 0,
+      "explanation": "Replace with actual explanation",
+      "topic": "Prescribed Novel Extracts"
+    },
+    {
+      "id": "ss-a-025",
+      "type": "comprehension",
+      "passageTitle": "Sample Novel Extract Placeholder",
+      "passage": "[INSERT ACTUAL EXTRACT FROM SWEET SIXTEEN HERE]",
+      "question": "Sample Question 18: [Replace with actual question]",
+      "options": ["A. Sample option A", "B. Sample option B", "C. Sample option C", "D. Sample option D"],
+      "answer": 0,
+      "explanation": "Replace with actual explanation",
+      "topic": "Prescribed Novel Extracts"
+    }
+  ]
+}

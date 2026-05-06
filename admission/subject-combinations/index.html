@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JAMB & O'Level Subject Combination Verifier | OAE</title>
+    <meta name="description" content="Verify the exact JAMB and O'Level subject combinations for your desired university course to guarantee your admission success.">
+    
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/remixicon@4.0.0/remixicon.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    
+    <link rel="stylesheet" href="/Assets/css/post-jamb-navbar.css">
+    <link rel="stylesheet" href="/Assets/css/footer.css">
+    <link rel="stylesheet" href="/Assets/css/subject-combinations.css">
+    <link rel="stylesheet" href="/Assets/css/cross-tools.css">
+    
+    <!-- html2pdf for downloading result -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/html2pdf.js/0.10.1/html2pdf.bundle.min.js"></script>
+</head>
+<body>
+    <!-- OAE Navbar -->
+    <nav class="oae-navbar">
+         <div class="oae-logo">
+            <a href="../../Index.htm">
+               <img class="logo-quiz" src="../../oae.png" alt="OAE">
+            </a>
+        </div>
+        <div class="oae-search-section">
+            <div class="oae-search-container">
+                <i class="fas fa-search"></i>
+                <input type="text" placeholder="Search JAMB, schools, courses...">
+                <button class="oae-search-btn">Search</button>
+            </div>
+        </div>
+        <ul class="oae-nav-links">
+            <li><a href="/admission/post-jamb/index.html">Post-JAMB</a></li>
+            <li><a href="#">Admission</a></li>
+            <li><a href="#">Schools</a></li>
+            <li><a href="#">Updates</a></li>
+        </ul>
+        <button class="oae-join-btn" id="oaeJoinBtn">Join OAE</button>
+        <button class="oae-hamburger" id="oaeHamburger">
+            <i class="fas fa-bars"></i>
+        </button>
+        <div class="oae-mobile-menu" id="oaeMobileMenu">
+            <ul class="oae-mobile-links">
+                <li><a href="/admission/post-jamb/index.html">Post-JAMB</a></li>
+                <li><a href="#">Admission</a></li>
+                <li><a href="#">Schools</a></li>
+                <li><a href="#">Updates</a></li>
+                <li><button class="oae-join-mobile"><i class="fas fa-user-plus"></i> Join OAE</button></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- HERO SECTION -->
+    <section class="combo-hero">
+        <div class="combo-hero-content">
+            <h1><i class="fas fa-search-location" style="color: #60a5fa;"></i> Subject Combination Verifier</h1>
+            <p>A single wrong subject in JAMB or WAEC automatically disqualifies you. Search for your target course below to see the exact subjects you must register for.</p>
+        </div>
+    </section>
+
+    <!-- MAIN SEARCH SECTION -->
+    <section class="combo-main">
+        <div class="combo-container">
+            
+            <div class="search-panel">
+                <h2>Find Your Course</h2>
+                <div class="search-input-wrapper">
+                    <i class="fas fa-search search-icon"></i>
+                    <input type="text" id="course-search" placeholder="e.g. Medicine and Surgery, Law, Computer Science..." autocomplete="off">
+                </div>
+                <div id="search-dropdown" class="search-dropdown hidden"></div>
+            </div>
+
+            <!-- RESULT PANEL -->
+            <div id="result-panel" class="result-panel hidden">
+                <div class="result-card" id="pdf-container">
+                    <div class="result-header">
+                        <h3>Subject Requirements for:</h3>
+                        <h2 id="result-course-name">Medicine and Surgery</h2>
+                    </div>
+
+                    <div class="req-section">
+                        <h4><i class="fas fa-vial"></i> Required JAMB Subjects</h4>
+                        <ul id="result-jamb-list"></ul>
+                    </div>
+
+                    <div class="req-section">
+                        <h4><i class="fas fa-file-alt"></i> Required O'Level Subjects (WAEC/NECO)</h4>
+                        <p class="subtitle">You need 5 Credit passes in the following:</p>
+                        <ul id="result-olevel-list"></ul>
+                    </div>
+
+                    <div class="req-section warning-box">
+                        <h4><i class="fas fa-exclamation-circle"></i> Special Waiver / Remarks</h4>
+                        <p id="result-remarks"></p>
+                    </div>
+
+                    <!-- User Disclaimer Link -->
+                    <div class="disclaimer-alert">
+                        <i class="fas fa-info-circle"></i>
+                        <p><strong>Note:</strong> Subject combinations are officially guided by standard university regulations, but may be slightly different depending on your chosen institution. <br><a href="#" id="institution-disclaimer-link">Click here to check for your particular institution</a>.</p>
+                    </div>
+                </div>
+
+                <div class="action-buttons">
+                    <button id="download-pdf-btn" class="combo-btn pdf-btn"><i class="fas fa-file-pdf"></i> Download as PDF</button>
+                    <button id="reset-btn" class="combo-btn reset-btn"><i class="fas fa-redo"></i> Find Another Course</button>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="oae-footer">
+        <div class="footer-bottom">
+            <p>🌍 Trusted by <strong>15,000+ learners</strong> across Nigeria, Africa, and the world.</p>
+            <p>© 2025 OAE — Oluwatosin Academy of Excellence. All rights reserved.</p>
+            <div class="legal-links">
+                <a href="#">Terms of Use</a>
+                <a href="#">Privacy Policy</a>
+            </div>
+        </div>
+    </footer>
+    
+    <script src="/Assets/js/post-jamb-navbar.js"></script>
+    <script src="/Assets/js/navbar.js"></script>
+    <script src="/Assets/js/subject-combinations.js"></script>
+    <script src="/Assets/js/cross-tools.js"></script>
+</body>
+</html>

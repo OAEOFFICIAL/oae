@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Dashboard | OAE</title>
+    <meta name="description" content="Your personal OAE Dashboard. View your calculated aggregate scores, target institution, and recent mock exam performance.">
+    <meta name="robots" content="noindex, nofollow"> <!-- Dashboards are private, block Google from indexing -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/remixicon@4.0.0/remixicon.css" >
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <link rel="stylesheet" href="/Assets/css/post-jamb-navbar.css">
+    <link rel="stylesheet" href="/Assets/css/footer.css">
+    <link rel="stylesheet" href="/Assets/css/dashboard.css">
+</head>
+<body>
+    <!-- OAE Navbar - Shared component -->
+    <nav class="oae-navbar">
+         <div class="oae-logo">
+            <a href="Index.htm">
+               <img class="logo-quiz" src="oae.png" alt="OAE">
+            </a>
+        </div>
+
+        <ul class="oae-nav-links">
+            <li><a href="/admission/post-jamb/index.html">Post-JAMB</a></li>
+            <li><a href="/admission/index.html">Admission</a></li>
+            <li><a href="/admission/updates/index.html">Updates</a></li>
+            <li><a href="/jamb.htm">Exams</a></li>
+        </ul>
+
+        <button class="oae-join-btn" id="navDashBtn">Dashboard</button>
+        
+        <button class="oae-hamburger" id="oaeHamburger">
+            <i class="fas fa-bars"></i>
+        </button>
+
+        <div class="oae-mobile-menu" id="oaeMobileMenu">
+            <ul class="oae-mobile-links">
+                <li><a href="/admission/post-jamb/index.html">Post-JAMB</a></li>
+                <li><a href="/admission/index.html">Admission</a></li>
+                <li><a href="/jamb.htm">Exams</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- DASHBOARD CONTAINER -->
+    <div class="dashboard-wrapper">
+        <!-- SIDEBAR -->
+        <aside class="dash-sidebar">
+            <div class="user-profile-widget">
+                <div class="user-avatar" id="dashAvatar">U</div>
+                <div id="dashNameDisplay" style="font-weight:bold; color:#0f172a; margin-bottom:5px;">User Name</div>
+                <div class="user-email" id="dashEmail" style="margin-bottom:10px;">student@example.com</div>
+                <button id="editProfileBtn" style="background:transparent; border:1px solid #cbd5e1; border-radius:5px; padding:4px 8px; font-size:0.8rem; cursor:pointer; color:#64748b;">
+                    <i class="fas fa-edit"></i> Edit Name
+                </button>
+                
+                <!-- Edit Mode Hidden by Default -->
+                <div id="editProfileForm" style="display:none; margin-top:10px; text-align:left;">
+                    <input type="text" id="editNameInput" style="width:100%; padding:5px; margin-bottom:5px; border:1px solid #cbd5e1; border-radius:4px; box-sizing:border-box;" placeholder="New Name">
+                    <button id="saveProfileBtn" style="background:#10b981; color:white; border:none; padding:4px 8px; border-radius:4px; cursor:pointer; font-size:0.8rem;">Save</button>
+                    <button id="cancelProfileBtn" style="background:#ef4444; color:white; border:none; padding:4px 8px; border-radius:4px; cursor:pointer; font-size:0.8rem;">Cancel</button>
+                </div>
+            </div>
+            
+            <a href="#" class="dash-nav-btn active"><i class="fas fa-home"></i> Overview</a>
+            <a href="/admission/index.html" class="dash-nav-btn"><i class="fas fa-university"></i> Admission Hub</a>
+            <a href="/jamb.htm" class="dash-nav-btn"><i class="fas fa-laptop-code"></i> Quiz Arena</a>
+            <a href="/admission/updates/index.html" class="dash-nav-btn"><i class="fas fa-bullhorn"></i> Live News</a>
+            
+            <button class="dash-nav-btn logout-btn" id="logoutBtn"><i class="fas fa-sign-out-alt"></i> Logout</button>
+        </aside>
+
+        <!-- MAIN -->
+        <main class="dash-main">
+            <div class="dash-header">
+                <h1 id="dashGreeting">Welcome back!</h1>
+                <p>Track your academic progress and monitor your admission chances from your command center.</p>
+            </div>
+
+            <!-- METRICS -->
+            <div class="metrics-grid">
+                
+                <!-- Target School Box -->
+                <div class="metric-card">
+                    <div class="metric-title">My Target Institution</div>
+                    <select class="target-school-select" id="targetSchoolSelect">
+                        <option value="">-- Choose Your Dream School --</option>
+                        <option value="unilag">University of Lagos (UNILAG)</option>
+                        <option value="ui">University of Ibadan (UI)</option>
+                        <option value="oau">Obafemi Awolowo University (OAU)</option>
+                        <option value="unizik">Nnamdi Azikiwe University (UNIZIK)</option>
+                        <option value="uniosun">Osun State University (UNIOSUN)</option>
+                        <option value="abuad">Afe Babalola University (ABUAD)</option>
+                        <option value="covenant">Covenant University</option>
+                    </select>
+                    <div style="margin-top: 10px;">
+                        <a href="/admission/post-jamb/index.html" class="metric-action">Explore Schools</a>
+                    </div>
+                </div>
+
+                <!-- Aggregate Score Box -->
+                <div class="metric-card success">
+                    <div class="metric-title">Computed Aggregate Score</div>
+                    <div class="metric-value" id="savedAggregateVal">Not Computed</div>
+                    <div id="savedAggregateSchool" style="font-size:0.85rem; color:#64748b; font-weight:bold; margin-bottom:15px; text-transform:uppercase;"></div>
+                    <a href="/admission/aggregate-calculator/index.html" class="metric-action primary"><i class="fas fa-calculator"></i> Re-Calculate</a>
+                </div>
+
+                <!-- Quiz Progress Box -->
+                <div class="metric-card warning">
+                    <div class="metric-title">Recent Quiz Average</div>
+                    <div class="metric-value">0%</div>
+                    <p style="font-size:0.85rem; color:#64748b; margin-bottom:15px;">You haven't completed any quizzes yet.</p>
+                    <a href="/jamb.htm" class="metric-action primary"><i class="fas fa-play"></i> Start Practice</a>
+                </div>
+            </div>
+
+            <!-- ACTIVITY -->
+            <div class="activity-section">
+                <h2 class="section-title"><i class="fas fa-history"></i> Recent Activity</h2>
+                <div class="empty-state">
+                    <i class="fas fa-clipboard-list"></i>
+                    <h3>No Recent Activity</h3>
+                    <p>Your quiz attempts and document downloads will appear here.</p>
+                </div>
+            </div>
+
+        </main>
+    </div>
+
+    <!-- FOOTER -->
+    <footer class="oae-footer">
+      <div class="footer-bottom">
+        <p>🌍 Trusted by <strong>15,000+ learners</strong> across Nigeria, Africa, and the world.</p>
+        <p>© 2025 OAE — Oluwatosin Academy of Excellence. All rights reserved.</p>
+      </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="/Assets/js/post-jamb-navbar.js"></script>
+    <script src="/Assets/js/dashboard.js"></script>
+</body>
+</html>

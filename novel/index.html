@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Literature Hub | OAE - Master JAMB & WAEC Novels</title>
+    <meta name="description" content="Read chapter summaries and character analyses for compulsory JAMB, WAEC, and NECO novels like The Life Changer.">
+    <meta name="keywords" content="JAMB novels, The Life Changer summary, WAEC literature, OAE literature hub">
+    <meta property="og:title" content="Interactive Literature Hub | OAE">
+    <meta property="og:description" content="Master your assigned novels with chapter breakdowns and character analysis.">
+    <meta property="og:type" content="website">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <link rel="stylesheet" href="/Assets/css/post-jamb-navbar.css">
+    <link rel="stylesheet" href="/Assets/css/footer.css">
+    <link rel="stylesheet" href="css/literature.css">
+</head>
+<body>
+
+    <!-- OAE Global Navbar -->
+    <nav class="oae-navbar">
+         <div class="oae-logo">
+            <a href="/Index.htm"><img class="logo-quiz" src="/oae.png" alt="OAE"></a>
+        </div>
+        <ul class="oae-nav-links">
+            <li><a href="/admission/post-jamb/index.html">Post-JAMB</a></li>
+            <li><a href="/admission/index.html">Admission</a></li>
+            <li><a href="/jamb.htm">Exams</a></li>
+        </ul>
+        <button class="oae-join-btn" id="oaeJoinBtn">Join OAE</button>
+        <button class="oae-hamburger" id="oaeHamburger"><i class="fas fa-bars"></i></button>
+        <div class="oae-mobile-menu" id="oaeMobileMenu">
+            <ul class="oae-mobile-links">
+                <li><a href="/admission/post-jamb/index.html">Post-JAMB</a></li>
+                <li><button class="oae-join-mobile" id="oaeJoinMobile"><i class="fas fa-user-plus"></i> Join OAE</button></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="lib-hero">
+        <h1>OAE Literature Hub</h1>
+        <p>Master your compulsory exam novels. Read chapter summaries, analyze characters, and test your knowledge for JAMB, WAEC, and NECO.</p>
+    </section>
+
+    <!-- Library Container -->
+    <main class="lib-container">
+        
+        <div class="lib-category" id="jamb-category">
+            <h2>JAMB Assigned Texts</h2>
+            <div class="books-grid" id="jamb-books">
+                <!-- Dynamically populated -->
+            </div>
+        </div>
+
+        <div class="lib-category" id="waec-category">
+            <h2>WAEC Assigned Texts</h2>
+            <div class="books-grid" id="waec-books">
+                <!-- Dynamically populated -->
+            </div>
+        </div>
+
+    </main>
+
+    <!-- FOOTER -->
+    <footer class="oae-footer">
+      <div class="footer-bottom">
+        <p>🌍 Trusted by <strong>15,000+ learners</strong> across Nigeria, Africa, and the world.</p>
+        <p>© 2025 OAE — Oluwatosin Academy of Excellence.</p>
+      </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="/Assets/js/post-jamb-navbar.js"></script>
+    <script src="data/books.js"></script>
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            const jambGrid = document.getElementById('jamb-books');
+            const waecGrid = document.getElementById('waec-books');
+
+            literatureDatabase.forEach(book => {
+                const cardHTML = `
+                    <a href="render.html?id=${book.id}" class="book-card">
+                        <img src="${book.coverImage}" alt="${book.title}" class="book-cover">
+                        <div class="book-info">
+                            <span class="book-tag">${book.examCategory}</span>
+                            <h3 class="book-title">${book.title}</h3>
+                            <p class="book-author">by ${book.author}</p>
+                        </div>
+                    </a>
+                `;
+
+                if (book.examCategory === 'JAMB') {
+                    jambGrid.innerHTML += cardHTML;
+                } else if (book.examCategory === 'WAEC') {
+                    waecGrid.innerHTML += cardHTML;
+                }
+            });
+        });
+    </script>
+</body>
+</html>

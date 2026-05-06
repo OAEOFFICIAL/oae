@@ -1,0 +1,39 @@
+{
+  "novels": [
+    {
+      "id": "the-successors",
+      "title": "The Successors",
+      "author": "Jerry Agada",
+      "year": 2013,
+      "file": "the-successors.json"
+    },
+    {
+      "id": "the-potters-wheel",
+      "title": "The Potter's Wheel",
+      "author": "Chukwuemeka Ike",
+      "year": 2013,
+      "file": "the-potters-wheel.json"
+    },
+    {
+      "id": "sweet-sixteen",
+      "title": "Sweet Sixteen",
+      "author": "Bolaji Abdullahi",
+      "year": 2019,
+      "file": "sweet-sixteen.json"
+    },
+    {
+      "id": "the-life-changer",
+      "title": "The Life Changer",
+      "author": "Khadija Abubakar Jalli",
+      "year": 2021,
+      "file": "the-life-changer.json"
+    },
+    {
+      "id": "lekki-headmaster",
+      "title": "The Lekki Headmaster",
+      "author": "Kabir Garba",
+      "year": 2025,
+      "file": "lekki-headmaster.json"
+    }
+  ]
+}

@@ -1,0 +1,751 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>OAE Study Dashboard</title>
+    <!-- Font Awesome for professional icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/Assets/css/notes-nav-bar.css">
+    <style>
+        :root {
+            --green: #0a8a2f;
+            --darkgreen: #066426;
+            --muted: #666;
+            --card: #f8fdf9;
+            --card-border: #e6e6e6;
+            --oae-dark: #333;
+            --shadow: 0 8px 24px rgba(8,22,16,0.04);
+        }
+
+        main { max-width: 1400px; margin: 0 auto; }
+
+        @keyframes fadeInUp { from { opacity: 0; transform: translateY(30px); } to { opacity: 1; transform: translateY(0); } }
+        @keyframes slideInDown { from { opacity: 0; transform: translateY(-20px); } to { opacity: 1; transform: translateY(0); } }
+        @keyframes scaleIn { from { opacity: 0; transform: scale(0.95); } to { opacity: 1; transform: scale(1); } }
+        @keyframes float { 0%, 100% { transform: translateY(0px); } 50% { transform: translateY(-8px); } }
+
+        .hero { text-align: center; padding: 3rem 1rem; background-color: var(--card); border-bottom: 1px solid rgba(10,138,47,0.1); margin-top: 80px; }
+        .hero h1 { color: var(--green); font-size: 2.8rem; margin-bottom: 1rem; font-weight: 700; font-family: 'Poppins', sans-serif; }
+        .hero p { max-width: 900px; margin: 0 auto; color: var(--muted); font-size: 1.05rem; line-height: 1.8; }
+        .hero .subtitle { font-size: 0.95rem; opacity: 0.85; margin-top: 0.5rem; }
+
+        .overview-section { padding: 3rem 1rem; background: linear-gradient(135deg, #fafafa 0%, #f5fdf8 100%); border-bottom: 1px solid var(--card-border); }
+        .overview-section h2 { text-align: center; color: var(--green); margin-bottom: 1.5rem; font-weight: 700; font-size: 1.8rem; font-family: 'Poppins', sans-serif; }
+        .overview-box { max-width: 1000px; margin: 0 auto; background-color: white; border-left: 4px solid var(--green); padding: 2rem; border-radius: 8px; box-shadow: var(--shadow); }
+        .overview-box p { color: var(--muted); margin-bottom: 1.5rem; line-height: 1.8; }
+
+        .subjects-section { padding: 3rem 1rem; background-color: white; }
+        .subjects-section h2 { text-align: center; color: var(--green); margin-bottom: 0.75rem; font-size: 1.8rem; font-weight: 700; font-family: 'Poppins', sans-serif; }
+        .subjects-section > p { text-align: center; color: var(--muted); margin-bottom: 2.5rem; max-width: 900px; margin-left: auto; margin-right: auto; }
+
+        .subject-category { max-width: 1300px; margin: 0 auto 3.5rem; padding-bottom: 2rem; border-bottom: 1px solid var(--card-border); }
+        .subject-category h3 { color: var(--green); margin-bottom: 1rem; font-size: 1.35rem; font-weight: 600; position: relative; padding-bottom: 0.75rem; font-family: 'Poppins', sans-serif; }
+        .subject-category h3::after { content: ''; position: absolute; bottom: 0; left: 0; width: 60px; height: 3px; background: linear-gradient(90deg, var(--green), transparent); }
+        .subject-category > p { color: var(--muted); margin-bottom: 1.75rem; font-size: 0.95rem; }
+
+        .subjects-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 2rem; }
+        
+        .subject-card { background-color: var(--card); border: 2px solid var(--card-border); border-radius: 12px; padding: 2rem; text-align: left; box-shadow: var(--shadow); transition: all 0.3s ease; text-decoration: none; display: flex; flex-direction: column; color: inherit; animation: scaleIn 0.6s ease-out both; }
+        .subject-card:nth-child(1) { animation-delay: 0.1s; }
+        .subject-card:nth-child(2) { animation-delay: 0.2s; }
+        .subject-card:nth-child(3) { animation-delay: 0.3s; }
+        .subject-card:nth-child(4) { animation-delay: 0.4s; }
+        .subject-card:hover { transform: translateY(-12px); box-shadow: 0 20px 50px rgba(10,138,47,0.2); border-color: var(--green); }
+
+        .subject-icon-wrapper { font-size: 2.5rem; color: var(--green); margin-bottom: 1.25rem; transition: all 0.3s ease; }
+        .subject-card:hover .subject-icon-wrapper { transform: scale(1.15); animation: float 1s ease-in-out infinite; }
+        .subject-card h3 { color: var(--green); margin: 0 0 0.75rem 0; font-size: 1.25rem; font-weight: 600; font-family: 'Poppins', sans-serif; }
+        .subject-definition { background: #f0f9f5; padding: 1rem; border-radius: 6px; border-left: 3px solid var(--green); margin-bottom: 1.25rem; font-size: 0.9rem; }
+        .subject-definition strong { color: var(--green); }
+        .subject-card p { color: var(--muted); margin-bottom: 1.25rem; font-size: 0.95rem; flex-grow: 1; }
+
+        .subject-topics { background: white; padding: 1rem; border-radius: 6px; margin-bottom: 1.25rem; }
+        .subject-topics h4 { color: var(--green); font-size: 0.9rem; font-weight: 600; margin-bottom: 0.75rem; }
+        .subject-topics ul { list-style-position: inside; color: var(--muted); font-size: 0.85rem; }
+        .subject-topics li { margin-bottom: 0.5rem; }
+
+        .subject-link { color: var(--green); text-decoration: none; font-weight: 600; font-size: 0.95rem; transition: all 0.3s ease; }
+        .subject-link:hover { color: var(--darkgreen); transform: translateX(5px); }
+
+        .why-study-section { padding: 3rem 1rem; background-color: var(--card); border-top: 1px solid var(--card-border); }
+        .why-study-section h2 { text-align: center; color: var(--green); margin-bottom: 1.5rem; font-weight: 700; font-size: 1.8rem; font-family: 'Poppins', sans-serif; }
+
+        .benefits-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 1.5rem; max-width: 1200px; margin: 0 auto; }
+        .benefit-card { background-color: white; padding: 1.75rem; border-radius: 10px; border-left: 4px solid var(--green); box-shadow: var(--shadow); text-align: center; transition: all 0.3s ease; }
+        .benefit-card:nth-child(1) { animation-delay: 0.1s; }
+        .benefit-card:nth-child(2) { animation-delay: 0.2s; }
+        .benefit-card:nth-child(3) { animation-delay: 0.3s; }
+        .benefit-card:nth-child(4) { animation-delay: 0.4s; }
+        .benefit-card:hover { transform: translateY(-8px); box-shadow: 0 16px 40px rgba(10,138,47,0.15); }
+        .benefit-icon { font-size: 2.5rem; color: var(--green); margin-bottom: 1rem; }
+        .benefit-card h3 { color: var(--green); font-size: 1rem; font-weight: 600; margin-bottom: 0.75rem; font-family: 'Poppins', sans-serif; }
+        .benefit-card p { color: var(--muted); font-size: 0.9rem; }
+
+        .how-to-use { padding: 3rem 1rem; background-color: white; border-top: 1px solid var(--card-border); }
+        .how-to-use h2 { text-align: center; color: var(--green); margin-bottom: 1.5rem; font-weight: 700; font-size: 1.8rem; font-family: 'Poppins', sans-serif; }
+        .how-to-use ul { max-width: 800px; margin: 0 auto; color: var(--oae-dark); line-height: 1.8; list-style-position: inside; }
+        .how-to-use li { margin-bottom: 1.25rem; font-size: 1rem; }
+
+        @media (max-width: 768px) {
+            .hero { margin-top: 60px; padding: 2rem 1rem; }
+            .hero h1 { font-size: 1.8rem; }
+            .hero p { font-size: 0.85rem; }
+            .overview-section h2, .subjects-section h2, .why-study-section h2, .how-to-use h2 { font-size: 1.4rem; }
+            .subjects-grid { grid-template-columns: 1fr; gap: 1rem; }
+            .benefits-grid { grid-template-columns: 1fr; gap: 1rem; }
+            .subject-card { padding: 1.25rem; }
+            .benefit-card { padding: 1rem; }
+        }
+    </style>
+</head>
+<body class="font-medium">
+    <!-- ============================================
+         DESKTOP NAVBAR - ALL ITEMS VISIBLE
+         Only shows on desktop (no hamburger here)
+         ============================================ -->
+    <nav class="navbar-desktop" aria-label="Main navigation">
+        <div class="container">
+            <div class="nav-desktop-inner">
+                <!-- Logo with green color -->
+                <a href="#" class="logo desktop-logo" aria-label="OAE Study Dashboard">
+                    <img src="/oae.png" alt="OAE Logo">
+                </a>
+                
+                <!-- Desktop Navigation Items -->
+                <div class="nav-items">
+                    <!-- Enhanced Professional Search Bar -->
+                    <div class="search-container">
+                        <div class="search-wrapper">
+                            <input 
+                                type="text" 
+                                class="search-input" 
+                                placeholder="Search topics, questions, keywords…"
+                                aria-label="Search study materials"
+                                id="search-input"
+                            >
+                            <button class="search-button" type="button" aria-label="Search">
+                                <i class="fas fa-search"></i>
+                            </button>
+                        </div>
+                    </div>
+                    
+                    <!-- Department Dropdown -->
+                    <div class="dropdown">
+                        <button class="nav-link dropdown-toggle" aria-haspopup="true" aria-expanded="false">
+                            <i class="fas fa-graduation-cap"></i>
+                            <span>Department</span>
+                            <i class="fas fa-chevron-down dropdown-chevron"></i>
+                        </button>
+                        <div class="dropdown-menu" role="menu">
+                            <a href="#" class="dropdown-item" role="menuitem">
+                                <i class="fas fa-flask"></i>
+                                Science
+                            </a>
+                            <a href="#" class="dropdown-item" role="menuitem">
+                                <i class="fas fa-palette"></i>
+                                Art & Humanities
+                            </a>
+                            <a href="#" class="dropdown-item" role="menuitem">
+                                <i class="fas fa-chart-line"></i>
+                                Commercial
+                            </a>
+                            <a href="#" class="dropdown-item" role="menuitem">
+                                <i class="fas fa-users"></i>
+                                Social Sciences
+                            </a>
+                            <a href="#" class="dropdown-item" role="menuitem">
+                                <i class="fas fa-book-open"></i>
+                                General Studies
+                            </a>
+                        </div>
+                    </div>
+                    
+                    <!-- Past Questions -->
+                    <a href="#" class="nav-link">
+                        <i class="fas fa-file-alt"></i>
+                        <span>Past Questions</span>
+                    </a>
+                    
+                    <!-- Practice/Quiz -->
+                    <a href="#" class="nav-link">
+                        <i class="fas fa-pencil-alt"></i>
+                        <span>Practice / Quiz</span>
+                    </a>
+                    
+                    <!-- Bookmarks -->
+                    <a href="#" class="nav-link" id="bookmarks-link">
+                        <i class="fas fa-bookmark"></i>
+                        <span>Bookmarks</span>
+                    </a>
+                    
+                    <!-- Settings -->
+                    <button class="nav-link" id="settings-button" aria-label="Open settings">
+                        <i class="fas fa-cog"></i>
+                        <span>Settings</span>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </nav>
+    
+    <!-- ============================================
+         MOBILE NAVBAR - HAMBURGER ONLY ON MOBILE
+         ============================================ -->
+    <nav class="navbar-mobile" aria-label="Mobile navigation">
+        <div class="container">
+            <div class="mobile-top-bar">
+                <!-- Logo -->
+                <a href="#" class="logo mobile-logo" aria-label="OAE Study Dashboard">
+                    <img src="/oae.png" alt="OAE Logo">
+                </a>
+                
+                <!-- Mobile Search Bar -->
+                <div class="mobile-search-container">
+                    <div class="mobile-search-wrapper">
+                        <input 
+                            type="text" 
+                            class="mobile-search-input" 
+                            placeholder="Search topics, questions…"
+                            aria-label="Search study materials"
+                        >
+                        <button class="mobile-search-button" type="button" aria-label="Search">
+                            <i class="fas fa-search"></i>
+                        </button>
+                    </div>
+                </div>
+                
+                <!-- Hamburger Menu Button (ONLY ON MOBILE) -->
+                <button class="hamburger" id="hamburger" aria-label="Open menu" aria-expanded="false">
+                    <i class="fas fa-bars"></i>
+                </button>
+            </div>
+        </div>
+    </nav>
+    
+    <!-- ============================================
+         MOBILE BOTTOM NAVBAR 
+         White with green top border
+         ============================================ -->
+    <nav class="mobile-bottom-nav" aria-label="Bottom navigation">
+        <div class="container">
+            <div class="bottom-nav-items">
+                <a href="#" class="bottom-nav-item" aria-label="Department">
+                    <i class="fas fa-graduation-cap bottom-nav-icon"></i>
+                    <span>Department</span>
+                </a>
+                <a href="#" class="bottom-nav-item" aria-label="Practice">
+                    <i class="fas fa-pencil-alt bottom-nav-icon"></i>
+                    <span>Practice</span>
+                </a>
+                <a href="#" class="bottom-nav-item" aria-label="Bookmarks">
+                    <i class="fas fa-bookmark bottom-nav-icon"></i>
+                    <span>Bookmarks</span>
+                </a>
+                <button class="bottom-nav-item" id="bottom-settings" aria-label="Settings">
+                    <i class="fas fa-cog bottom-nav-icon"></i>
+                    <span>Settings</span>
+                </button>
+            </div>
+        </div>
+    </nav>
+    
+    <!-- ============================================
+         MOBILE SLIDE-IN MENU
+         ============================================ -->
+    <div class="mobile-menu" id="mobile-menu">
+        <div class="mobile-menu-header">
+            <h2>Menu</h2>
+            <button class="close-menu" id="close-menu" aria-label="Close menu">
+                <i class="fas fa-times"></i>
+            </button>
+        </div>
+        
+        <div class="mobile-nav-items">
+            <!-- Department Dropdown -->
+            <button class="mobile-dropdown-toggle" id="mobile-department-toggle">
+                <i class="fas fa-graduation-cap"></i>
+                <span>Department</span>
+                <i class="fas fa-chevron-down"></i>
+            </button>
+            <div class="mobile-dropdown-menu" id="mobile-department-menu">
+                <a href="#" class="mobile-nav-item">
+                    <i class="fas fa-flask"></i>
+                    Science
+                </a>
+                <a href="#" class="mobile-nav-item">
+                    <i class="fas fa-palette"></i>
+                    Art & Humanities
+                </a>
+                <a href="#" class="mobile-nav-item">
+                    <i class="fas fa-chart-line"></i>
+                    Commercial
+                </a>
+                <a href="#" class="mobile-nav-item">
+                    <i class="fas fa-users"></i>
+                    Social Sciences
+                </a>
+                <a href="#" class="mobile-nav-item">
+                    <i class="fas fa-book-open"></i>
+                    General Studies
+                </a>
+            </div>
+            
+            <!-- Past Questions -->
+            <a href="#" class="mobile-nav-item">
+                <i class="fas fa-file-alt"></i>
+                Past Questions
+            </a>
+            
+            <!-- Practice/Quiz -->
+            <a href="#" class="mobile-nav-item">
+                <i class="fas fa-pencil-alt"></i>
+                Practice / Mock Exam
+            </a>
+            
+            <!-- Bookmarks -->
+            <a href="#" class="mobile-nav-item" id="mobile-bookmarks">
+                <i class="fas fa-bookmark"></i>
+                Bookmarks
+            </a>
+            
+            <!-- Settings -->
+            <a href="#" class="mobile-nav-item" id="mobile-settings">
+                <i class="fas fa-cog"></i>
+                Settings
+            </a>
+            
+            <!-- Help/Feedback -->
+            <a href="#" class="mobile-nav-item">
+                <i class="fas fa-question-circle"></i>
+                Help / Feedback
+            </a>
+        </div>
+    </div>
+    
+    <!-- ============================================
+         SETTINGS MODAL
+         ============================================ -->
+    <div class="modal-overlay" id="settings-modal">
+        <div class="settings-modal">
+            <div class="modal-header">
+                <h2>Settings</h2>
+                <button class="close-modal" id="close-settings" aria-label="Close settings">
+                    <i class="fas fa-times"></i>
+                </button>
+            </div>
+            <div class="modal-body">
+                <div class="settings-section">
+                    <h3>Display</h3>
+                    <div class="settings-option">
+                        <div class="settings-label">
+                            <span>Dark Mode</span>
+                            <span>Switch between light and dark themes</span>
+                        </div>
+                        <label class="toggle-switch">
+                            <input type="checkbox" id="dark-mode-toggle">
+                            <span class="toggle-slider"></span>
+                        </label>
+                    </div>
+                    <div class="settings-option">
+                        <div class="settings-label">
+                            <span>Font Size</span>
+                            <span>Adjust the text size for better readability</span>
+                        </div>
+                        <div class="select-container">
+                            <select class="settings-select" id="font-size-select">
+                                <option value="small">Small</option>
+                                <option value="medium" selected>Medium</option>
+                                <option value="large">Large</option>
+                            </select>
+                            <i class="fas fa-chevron-down select-arrow"></i>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="settings-section">
+                    <h3>Colors</h3>
+                    <div class="settings-option">
+                        <div class="settings-label">
+                            <span>Accent Color</span>
+                            <span>Choose your preferred accent color</span>
+                        </div>
+                        <div class="color-options">
+                            <div class="color-option color-green active" id="color-green" data-color="green">
+                                <i class="fas fa-check"></i>
+                            </div>
+                            <div class="color-option color-darkgreen" id="color-darkgreen" data-color="darkgreen">
+                                <i class="fas fa-check"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <!-- ============================================
+         MENU OVERLAY
+         ============================================ -->
+    <div class="menu-overlay" id="menu-overlay"></div>
+    
+    <!-- ============================================
+         MAIN CONTENT AREA - CENTERED
+         ============================================ -->
+    <main class="main-content">
+        <div class="hero">
+            <h1>Art & Humanities</h1>
+            <p>Explore the diverse disciplines of human culture, creativity, and society</p>
+            <p class="subtitle">Master Language, History, Creative Arts, and Social Sciences</p>
+        </div>
+
+        <div class="overview-section">
+            <h2>What is Art & Humanities?</h2>
+            <div class="overview-box">
+                <p>Art & Humanities encompasses the study of human culture, creativity, expression, and society. This discipline includes the study of languages, literature, history, philosophy, religious studies, visual arts, music, and social sciences. These subjects develop critical thinking, communication skills, and cultural awareness essential for understanding our world.</p>
+                <p>Whether exploring written masterpieces, analyzing historical events, creating visual art, or understanding societal structures, Art & Humanities disciplines provide insights into the human experience and prepare students for careers in education, media, diplomacy, culture, and social sciences.</p>
+            </div>
+        </div>
+
+        <div class="subjects-section">
+            <h2>Core Disciplines</h2>
+            <p>Master the subjects that form the foundation of Art & Humanities studies</p>
+
+            <!-- Language & Literature -->
+            <div class="subject-category">
+                <h3>Language & Literature</h3>
+                <p>Study the power of language and written expression across cultures</p>
+                <div class="subjects-grid">
+                    <a href="/notes/art-and-humanities/literature-in-english" class="subject-card">
+                        <div class="subject-icon-wrapper"><i class="fas fa-book"></i></div>
+                        <h3>Literature in English</h3>
+                        <div class="subject-definition"><strong>Definition:</strong> Study of prose, poetry, and drama from various periods and cultures</div>
+                        <p>Analyze literary works, understand themes, appreciate writing styles, and develop critical reading skills through classic and contemporary texts.</p>
+                        <div class="subject-topics">
+                            <h4>Key Topics:</h4>
+                            <ul>
+                                <li>Novel Analysis</li>
+                                <li>Poetry Appreciation</li>
+                                <li>Drama & Theatre</li>
+                                <li>Literary Devices</li>
+                                <li>JAMB Recommended Texts</li>
+                            </ul>
+                        </div>
+                        <a href="/notes/art-and-humanities/literature-in-english" class="subject-link">Explore Topics →</a>
+                    </a>
+                    <a href="/notes/art-and-humanities/english-language" class="subject-card">
+                        <div class="subject-icon-wrapper"><i class="fas fa-font"></i></div>
+                        <h3>English Language</h3>
+                        <div class="subject-definition"><strong>Definition:</strong> Comprehensive study of English grammar, comprehension, and communication</div>
+                        <p>Master grammar rules, vocabulary, comprehension techniques, and effective communication skills needed for both academic and professional success.</p>
+                        <div class="subject-topics">
+                            <h4>Key Topics:</h4>
+                            <ul>
+                                <li>Grammar & Syntax</li>
+                                <li>Comprehension</li>
+                                <li>Vocabulary Building</li>
+                                <li>Essay Writing</li>
+                                <li>Discourse Analysis</li>
+                            </ul>
+                        </div>
+                        <a href="/notes/art-and-humanities/english-language" class="subject-link">Explore Topics →</a>
+                    </a>
+                    <a href="/notes/art-and-humanities/french" class="subject-card">
+                        <div class="subject-icon-wrapper"><i class="fas fa-language"></i></div>
+                        <h3>French</h3>
+                        <div class="subject-definition"><strong>Definition:</strong> Study of French language, culture, and communication</div>
+                        <p>Learn French vocabulary, grammar, and pronunciation while exploring Francophone literature and culture for comprehensive language proficiency.</p>
+                        <div class="subject-topics">
+                            <h4>Key Topics:</h4>
+                            <ul>
+                                <li>Vocabulary & Grammar</li>
+                                <li>Listening Comprehension</li>
+                                <li>French Literature</li>
+                                <li>Cultural Studies</li>
+                                <li>Conversation Skills</li>
+                            </ul>
+                        </div>
+                        <a href="/notes/art-and-humanities/french" class="subject-link">Explore Topics →</a>
+                    </a>
+                    <a href="/notes/art-and-humanities/arabic" class="subject-card">
+                        <div class="subject-icon-wrapper"><i class="fas fa-mosque"></i></div>
+                        <h3>Arabic</h3>
+                        <div class="subject-definition"><strong>Definition:</strong> Study of Arabic language and Islamic/Middle Eastern culture</div>
+                        <p>Explore Arabic language fundamentals, Islamic teachings, literature, and cultural heritage to understand this important global language and civilization.</p>
+                        <div class="subject-topics">
+                            <h4>Key Topics:</h4>
+                            <ul>
+                                <li>Arabic Alphabet & Phonetics</li>
+                                <li>Islamic Studies</li>
+                                <li>Quranic Text</li>
+                                <li>Cultural Context</li>
+                                <li>Basic Conversation</li>
+                            </ul>
+                        </div>
+                        <a href="/notes/art-and-humanities/arabic" class="subject-link">Explore Topics →</a>
+                    </a>
+                </div>
+            </div>
+
+            <!-- History & Social Studies -->
+            <div class="subject-category">
+                <h3>History & Social Studies</h3>
+                <p>Understand past events and societies that shape our present world</p>
+                <div class="subjects-grid">
+                    <a href="/notes/art-and-humanities/history" class="subject-card">
+                        <div class="subject-icon-wrapper"><i class="fas fa-earth-americas"></i></div>
+                        <h3>History</h3>
+                        <div class="subject-definition"><strong>Definition:</strong> Study of major world events, civilizations, and historical movements</div>
+                        <p>Analyze historical periods, understand cause-and-effect relationships, and learn how past events continue to influence contemporary society.</p>
+                        <div class="subject-topics">
+                            <h4>Key Topics:</h4>
+                            <ul>
+                                <li>Ancient Civilizations</li>
+                                <li>Medieval Period</li>
+                                <li>Industrial Revolution</li>
+                                <li>World Wars</li>
+                                <li>Cold War Era</li>
+                            </ul>
+                        </div>
+                        <a href="/notes/art-and-humanities/history" class="subject-link">Explore Topics →</a>
+                    </a>
+                    <a href="/notes/art-and-humanities/nigerian-history" class="subject-card">
+                        <div class="subject-icon-wrapper"><i class="fas fa-map"></i></div>
+                        <h3>Nigerian History</h3>
+                        <div class="subject-definition"><strong>Definition:</strong> Comprehensive study of Nigeria's past from pre-colonial to modern times</div>
+                        <p>Explore Nigeria's kingdoms, colonial period, independence struggle, and nation-building to understand the foundation of modern Nigerian society.</p>
+                        <div class="subject-topics">
+                            <h4>Key Topics:</h4>
+                            <ul>
+                                <li>Pre-Colonial States</li>
+                                <li>Slave Trade</li>
+                                <li>Colonial Rule</li>
+                                <li>Independence Movement</li>
+                                <li>Civil War & Nation Building</li>
+                            </ul>
+                        </div>
+                        <a href="/notes/art-and-humanities/nigerian-history" class="subject-link">Explore Topics →</a>
+                    </a>
+                    <a href="/notes/art-and-humanities/government" class="subject-card">
+                        <div class="subject-icon-wrapper"><i class="fas fa-scale-balanced"></i></div>
+                        <h3>Government</h3>
+                        <div class="subject-definition"><strong>Definition:</strong> Study of political systems, governance structures, and international relations</div>
+                        <p>Understand different government systems, political ideologies, constitution, and how nations interact in the global political arena.</p>
+                        <div class="subject-topics">
+                            <h4>Key Topics:</h4>
+                            <ul>
+                                <li>Political Systems</li>
+                                <li>Constitution & Law</li>
+                                <li>Legislative Process</li>
+                                <li>International Relations</li>
+                                <li>Political Ideologies</li>
+                            </ul>
+                        </div>
+                        <a href="/notes/art-and-humanities/government" class="subject-link">Explore Topics →</a>
+                    </a>
+                    <a href="/notes/art-and-humanities/civic-education" class="subject-card">
+                        <div class="subject-icon-wrapper"><i class="fas fa-people-group"></i></div>
+                        <h3>Civic Education</h3>
+                        <div class="subject-definition"><strong>Definition:</strong> Study of citizenship, rights, responsibilities, and community participation</div>
+                        <p>Learn about democratic participation, human rights, social responsibilities, and how to be an effective and informed member of society.</p>
+                        <div class="subject-topics">
+                            <h4>Key Topics:</h4>
+                            <ul>
+                                <li>Citizenship Rights</li>
+                                <li>Democracy & Participation</li>
+                                <li>Human Rights</li>
+                                <li>Social Responsibility</li>
+                                <li>Conflict Resolution</li>
+                            </ul>
+                        </div>
+                        <a href="/notes/art-and-humanities/civic-education" class="subject-link">Explore Topics →</a>
+                    </a>
+                </div>
+            </div>
+
+            <!-- Religious & Philosophical -->
+            <div class="subject-category">
+                <h3>Religious & Philosophical Studies</h3>
+                <p>Explore faith, ethics, philosophy, and meaning in human life</p>
+                <div class="subjects-grid">
+                    <a href="/notes/art-and-humanities/crs" class="subject-card">
+                        <div class="subject-icon-wrapper"><i class="fas fa-cross"></i></div>
+                        <h3>Christian Religious Studies</h3>
+                        <div class="subject-definition"><strong>Definition:</strong> Study of Christian beliefs, teachings, ethics, and practice</div>
+                        <p>Examine Christian theology, biblical studies, church history, and ethical principles based on Christian teachings and traditions.</p>
+                        <div class="subject-topics">
+                            <h4>Key Topics:</h4>
+                            <ul>
+                                <li>Biblical Studies</li>
+                                <li>Christian Theology</li>
+                                <li>Church History</li>
+                                <li>Christian Ethics</li>
+                                <li>Faith & Practice</li>
+                            </ul>
+                        </div>
+                        <a href="/notes/art-and-humanities/crs" class="subject-link">Explore Topics →</a>
+                    </a>
+                    <a href="/notes/art-and-humanities/irs" class="subject-card">
+                        <div class="subject-icon-wrapper"><i class="fas fa-star-and-crescent"></i></div>
+                        <h3>Islamic Religious Studies</h3>
+                        <div class="subject-definition"><strong>Definition:</strong> Study of Islamic beliefs, teachings, ethics, and practice</div>
+                        <p>Understand Islamic theology, Quranic teachings, Islamic law, and ethical principles that guide Muslim faith and practice.</p>
+                        <div class="subject-topics">
+                            <h4>Key Topics:</h4>
+                            <ul>
+                                <li>Quranic Studies</li>
+                                <li>Islamic Theology</li>
+                                <li>Islamic Law (Sharia)</li>
+                                <li>Islamic Ethics</li>
+                                <li>History of Islam</li>
+                            </ul>
+                        </div>
+                        <a href="/notes/art-and-humanities/irs" class="subject-link">Explore Topics →</a>
+                    </a>
+                </div>
+            </div>
+
+            <!-- Creative & Practical Arts -->
+            <div class="subject-category">
+                <h3>Creative & Practical Arts</h3>
+                <p>Develop creative expression through visual, musical, and practical skills</p>
+                <div class="subjects-grid">
+                    <a href="/notes/art-and-humanities/visual-arts" class="subject-card">
+                        <div class="subject-icon-wrapper"><i class="fas fa-palette"></i></div>
+                        <h3>Visual Arts</h3>
+                        <div class="subject-definition"><strong>Definition:</strong> Study of drawing, painting, sculpture, design, and visual expression</div>
+                        <p>Develop artistic techniques, understand art history, composition, color theory, and create meaningful visual works across various media.</p>
+                        <div class="subject-topics">
+                            <h4>Key Topics:</h4>
+                            <ul>
+                                <li>Drawing & Sketching</li>
+                                <li>Painting Techniques</li>
+                                <li>Sculpture & 3D Art</li>
+                                <li>Art History</li>
+                                <li>Design Principles</li>
+                            </ul>
+                        </div>
+                        <a href="/notes/art-and-humanities/visual-arts" class="subject-link">Explore Topics →</a>
+                    </a>
+                    <a href="/notes/art-and-humanities/music" class="subject-card">
+                        <div class="subject-icon-wrapper"><i class="fas fa-music"></i></div>
+                        <h3>Music</h3>
+                        <div class="subject-definition"><strong>Definition:</strong> Study of music theory, composition, performance, and cultural music traditions</div>
+                        <p>Learn music fundamentals, composition techniques, performance skills, and understand music's role across cultures and history.</p>
+                        <div class="subject-topics">
+                            <h4>Key Topics:</h4>
+                            <ul>
+                                <li>Music Theory</li>
+                                <li>Notation & Composition</li>
+                                <li>Performance Skills</li>
+                                <li>Music History</li>
+                                <li>Cultural Music Forms</li>
+                            </ul>
+                        </div>
+                        <a href="/notes/art-and-humanities/music" class="subject-link">Explore Topics →</a>
+                    </a>
+                    <a href="/notes/art-and-humanities/home-management" class="subject-card">
+                        <div class="subject-icon-wrapper"><i class="fas fa-house"></i></div>
+                        <h3>Home Management</h3>
+                        <div class="subject-definition"><strong>Definition:</strong> Study of household management, budgeting, nutrition, and family welfare</div>
+                        <p>Learn practical skills for managing households, budgeting, nutrition, childcare, and creating healthy, productive home environments.</p>
+                        <div class="subject-topics">
+                            <h4>Key Topics:</h4>
+                            <ul>
+                                <li>Household Management</li>
+                                <li>Food & Nutrition</li>
+                                <li>Personal Finance</li>
+                                <li>Family Welfare</li>
+                                <li>Resource Planning</li>
+                            </ul>
+                        </div>
+                        <a href="/notes/art-and-humanities/home-management" class="subject-link">Explore Topics →</a>
+                    </a>
+                    <a href="/notes/art-and-humanities/catering-craft" class="subject-card">
+                        <div class="subject-icon-wrapper"><i class="fas fa-hat-chef"></i></div>
+                        <h3>Catering Craft</h3>
+                        <div class="subject-definition"><strong>Definition:</strong> Study of food preparation, cooking, catering management, and food safety</div>
+                        <p>Master culinary techniques, food safety standards, nutrition planning, and catering business management for professional food service excellence.</p>
+                        <div class="subject-topics">
+                            <h4>Key Topics:</h4>
+                            <ul>
+                                <li>Cooking Techniques</li>
+                                <li>Food Safety & Hygiene</li>
+                                <li>Menu Planning</li>
+                                <li>Catering Management</li>
+                                <li>Nutrition & Diet</li>
+                            </ul>
+                        </div>
+                        <a href="/notes/art-and-humanities/catering-craft" class="subject-link">Explore Topics →</a>
+                    </a>
+                </div>
+            </div>
+
+            <!-- Regional Languages -->
+            <div class="subject-category">
+                <h3>Regional Languages</h3>
+                <p>Preserve and master Nigeria's linguistic heritage</p>
+                <div class="subjects-grid">
+                    <a href="/notes/art-and-humanities/nigerian-languages" class="subject-card">
+                        <div class="subject-icon-wrapper"><i class="fas fa-comments"></i></div>
+                        <h3>One Nigerian Language</h3>
+                        <div class="subject-definition"><strong>Definition:</strong> Study of major Nigerian languages: Yoruba, Igbo, or Hausa</div>
+                        <p>Learn to speak, read, and write in one of Nigeria's major languages, understanding linguistic structure, culture, and oral traditions.</p>
+                        <div class="subject-topics">
+                            <h4>Key Topics:</h4>
+                            <ul>
+                                <li>Language Structure</li>
+                                <li>Vocabulary & Grammar</li>
+                                <li>Oral Literature</li>
+                                <li>Cultural Context</li>
+                                <li>Contemporary Usage</li>
+                            </ul>
+                        </div>
+                        <a href="/notes/art-and-humanities/nigerian-languages" class="subject-link">Explore Topics →</a>
+                    </a>
+                </div>
+            </div>
+        </div>
+
+        <div class="why-study-section">
+            <h2>Why Study Art & Humanities?</h2>
+            <div class="benefits-grid">
+                <div class="benefit-card">
+                    <div class="benefit-icon"><i class="fas fa-brain"></i></div>
+                    <h3>Critical Thinking</h3>
+                    <p>Develop analytical skills to evaluate information, solve complex problems, and make informed decisions in any field.</p>
+                </div>
+                <div class="benefit-card">
+                    <div class="benefit-icon"><i class="fas fa-comment"></i></div>
+                    <h3>Communication</h3>
+                    <p>Master written and verbal communication skills essential for success in education, business, diplomacy, and leadership.</p>
+                </div>
+                <div class="benefit-card">
+                    <div class="benefit-icon"><i class="fas fa-globe"></i></div>
+                    <h3>Cultural Awareness</h3>
+                    <p>Understand diverse cultures, traditions, and perspectives, preparing you for an interconnected global society.</p>
+                </div>
+                <div class="benefit-card">
+                    <div class="benefit-icon"><i class="fas fa-book"></i></div>
+                    <h3>Career Readiness</h3>
+                    <p>Prepare for careers in education, journalism, law, diplomacy, arts, culture, business, social services, and more.</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="how-to-use">
+            <h2>How to Use These Resources</h2>
+            <ul>
+                <li><strong>Select Your Subject:</strong> Choose from any of the 15 Art & Humanities subjects above, organized by discipline.</li>
+                <li><strong>Explore Topics:</strong> Each subject is divided into focused topics with comprehensive study materials and practice questions.</li>
+                <li><strong>Study Strategically:</strong> Use these resources to prepare for JAMB, WAEC, NECO, and GCE examinations in Art & Humanities.</li>
+                <li><strong>Practice Regularly:</strong> Engage with practice questions and quizzes to reinforce your understanding and identify weak areas.</li>
+                <li><strong>Review & Revise:</strong> Revisit topics regularly to ensure long-term retention and mastery of subject content.</li>
+                <li><strong>Track Progress:</strong> Monitor your learning journey and measure improvement over time with detailed performance analytics.</li>
+            </ul>
+        </div>
+    </main>
+<script type="module" src="/Assets/js/notes-nav-bar.js"></script>
+</body>
+</html>

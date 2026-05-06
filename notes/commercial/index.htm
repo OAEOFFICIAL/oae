@@ -1,0 +1,624 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>OAE Study Dashboard</title>
+    <!-- Font Awesome for professional icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/Assets/css/notes-nav-bar.css">
+    <style>
+        :root {
+            --green: #0a8a2f;
+            --darkgreen: #066426;
+            --muted: #666;
+            --card: #f8fdf9;
+            --card-border: #e6e6e6;
+            --oae-dark: #333;
+            --shadow: 0 8px 24px rgba(8,22,16,0.04);
+        }
+
+        main { max-width: 1400px; margin: 0 auto; }
+
+        @keyframes fadeInUp { from { opacity: 0; transform: translateY(30px); } to { opacity: 1; transform: translateY(0); } }
+        @keyframes slideInDown { from { opacity: 0; transform: translateY(-20px); } to { opacity: 1; transform: translateY(0); } }
+        @keyframes scaleIn { from { opacity: 0; transform: scale(0.95); } to { opacity: 1; transform: scale(1); } }
+        @keyframes float { 0%, 100% { transform: translateY(0px); } 50% { transform: translateY(-8px); } }
+
+        .hero { text-align: center; padding: 3rem 1rem; background-color: var(--card); border-bottom: 1px solid rgba(10,138,47,0.1); margin-top: 80px; }
+        .hero h1 { color: var(--green); font-size: 2.8rem; margin-bottom: 1rem; font-weight: 700; font-family: 'Poppins', sans-serif; }
+        .hero p { max-width: 900px; margin: 0 auto; color: var(--muted); font-size: 1.05rem; line-height: 1.8; }
+        .hero .subtitle { font-size: 0.95rem; opacity: 0.85; margin-top: 0.5rem; }
+
+        .overview-section { padding: 3rem 1rem; background: linear-gradient(135deg, #fafafa 0%, #f5fdf8 100%); border-bottom: 1px solid var(--card-border); }
+        .overview-section h2 { text-align: center; color: var(--green); margin-bottom: 1.5rem; font-weight: 700; font-size: 1.8rem; font-family: 'Poppins', sans-serif; }
+        .overview-box { max-width: 1000px; margin: 0 auto; background-color: white; border-left: 4px solid var(--green); padding: 2rem; border-radius: 8px; box-shadow: var(--shadow); }
+        .overview-box p { color: var(--muted); margin-bottom: 1.5rem; line-height: 1.8; }
+
+        .subjects-section { padding: 3rem 1rem; background-color: white; }
+        .subjects-section h2 { text-align: center; color: var(--green); margin-bottom: 0.75rem; font-size: 1.8rem; font-weight: 700; font-family: 'Poppins', sans-serif; }
+        .subjects-section > p { text-align: center; color: var(--muted); margin-bottom: 2.5rem; max-width: 900px; margin-left: auto; margin-right: auto; }
+
+        .subject-category { max-width: 1300px; margin: 0 auto 3.5rem; padding-bottom: 2rem; border-bottom: 1px solid var(--card-border); }
+        .subject-category h3 { color: var(--green); margin-bottom: 1rem; font-size: 1.35rem; font-weight: 600; position: relative; padding-bottom: 0.75rem; font-family: 'Poppins', sans-serif; }
+        .subject-category h3::after { content: ''; position: absolute; bottom: 0; left: 0; width: 60px; height: 3px; background: linear-gradient(90deg, var(--green), transparent); }
+        .subject-category > p { color: var(--muted); margin-bottom: 1.75rem; font-size: 0.95rem; }
+
+        .subjects-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 2rem; }
+        
+        .subject-card { background-color: var(--card); border: 2px solid var(--card-border); border-radius: 12px; padding: 2rem; text-align: left; box-shadow: var(--shadow); transition: all 0.3s ease; text-decoration: none; display: flex; flex-direction: column; color: inherit; animation: scaleIn 0.6s ease-out both; }
+        .subject-card:nth-child(1) { animation-delay: 0.1s; }
+        .subject-card:nth-child(2) { animation-delay: 0.2s; }
+        .subject-card:nth-child(3) { animation-delay: 0.3s; }
+        .subject-card:nth-child(4) { animation-delay: 0.4s; }
+        .subject-card:hover { transform: translateY(-12px); box-shadow: 0 20px 50px rgba(10,138,47,0.2); border-color: var(--green); }
+
+        .subject-icon-wrapper { font-size: 2.5rem; color: var(--green); margin-bottom: 1.25rem; transition: all 0.3s ease; }
+        .subject-card:hover .subject-icon-wrapper { transform: scale(1.15); animation: float 1s ease-in-out infinite; }
+        .subject-card h3 { color: var(--green); margin: 0 0 0.75rem 0; font-size: 1.25rem; font-weight: 600; font-family: 'Poppins', sans-serif; }
+        .subject-definition { background: #f0f9f5; padding: 1rem; border-radius: 6px; border-left: 3px solid var(--green); margin-bottom: 1.25rem; font-size: 0.9rem; }
+        .subject-definition strong { color: var(--green); }
+        .subject-card p { color: var(--muted); margin-bottom: 1.25rem; font-size: 0.95rem; flex-grow: 1; }
+
+        .subject-topics { background: white; padding: 1rem; border-radius: 6px; margin-bottom: 1.25rem; }
+        .subject-topics h4 { color: var(--green); font-size: 0.9rem; font-weight: 600; margin-bottom: 0.75rem; }
+        .subject-topics ul { list-style-position: inside; color: var(--muted); font-size: 0.85rem; }
+        .subject-topics li { margin-bottom: 0.5rem; }
+
+        .subject-link { color: var(--green); text-decoration: none; font-weight: 600; font-size: 0.95rem; transition: all 0.3s ease; }
+        .subject-link:hover { color: var(--darkgreen); transform: translateX(5px); }
+
+        .why-study-section { padding: 3rem 1rem; background-color: var(--card); border-top: 1px solid var(--card-border); }
+        .why-study-section h2 { text-align: center; color: var(--green); margin-bottom: 1.5rem; font-weight: 700; font-size: 1.8rem; font-family: 'Poppins', sans-serif; }
+
+        .benefits-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 1.5rem; max-width: 1200px; margin: 0 auto; }
+        .benefit-card { background-color: white; padding: 1.75rem; border-radius: 10px; border-left: 4px solid var(--green); box-shadow: var(--shadow); text-align: center; transition: all 0.3s ease; }
+        .benefit-card:nth-child(1) { animation-delay: 0.1s; }
+        .benefit-card:nth-child(2) { animation-delay: 0.2s; }
+        .benefit-card:nth-child(3) { animation-delay: 0.3s; }
+        .benefit-card:nth-child(4) { animation-delay: 0.4s; }
+        .benefit-card:hover { transform: translateY(-8px); box-shadow: 0 16px 40px rgba(10,138,47,0.15); }
+        .benefit-icon { font-size: 2.5rem; color: var(--green); margin-bottom: 1rem; }
+        .benefit-card h3 { color: var(--green); font-size: 1rem; font-weight: 600; margin-bottom: 0.75rem; font-family: 'Poppins', sans-serif; }
+        .benefit-card p { color: var(--muted); font-size: 0.9rem; }
+
+        .how-to-use { padding: 3rem 1rem; background-color: white; border-top: 1px solid var(--card-border); }
+        .how-to-use h2 { text-align: center; color: var(--green); margin-bottom: 1.5rem; font-weight: 700; font-size: 1.8rem; font-family: 'Poppins', sans-serif; }
+        .how-to-use ul { max-width: 800px; margin: 0 auto; color: var(--oae-dark); line-height: 1.8; list-style-position: inside; }
+        .how-to-use li { margin-bottom: 1.25rem; font-size: 1rem; }
+
+        @media (max-width: 768px) {
+            .hero { margin-top: 60px; padding: 2rem 1rem; }
+            .hero h1 { font-size: 1.8rem; }
+            .hero p { font-size: 0.85rem; }
+            .overview-section h2, .subjects-section h2, .why-study-section h2, .how-to-use h2 { font-size: 1.4rem; }
+            .subjects-grid { grid-template-columns: 1fr; gap: 1rem; }
+            .benefits-grid { grid-template-columns: 1fr; gap: 1rem; }
+            .subject-card { padding: 1.25rem; }
+            .benefit-card { padding: 1rem; }
+        }
+    </style>
+</head>
+<body class="font-medium">
+    <!-- ============================================
+         DESKTOP NAVBAR - ALL ITEMS VISIBLE
+         Only shows on desktop (no hamburger here)
+         ============================================ -->
+    <nav class="navbar-desktop" aria-label="Main navigation">
+        <div class="container">
+            <div class="nav-desktop-inner">
+                <!-- Logo with green color -->
+                <a href="#" class="logo desktop-logo" aria-label="OAE Study Dashboard">
+                    <img src="/oae.png" alt="OAE Logo">
+                </a>
+                
+                <!-- Desktop Navigation Items -->
+                <div class="nav-items">
+                    <!-- Enhanced Professional Search Bar -->
+                    <div class="search-container">
+                        <div class="search-wrapper">
+                            <input 
+                                type="text" 
+                                class="search-input" 
+                                placeholder="Search topics, questions, keywords…"
+                                aria-label="Search study materials"
+                                id="search-input"
+                            >
+                            <button class="search-button" type="button" aria-label="Search">
+                                <i class="fas fa-search"></i>
+                            </button>
+                        </div>
+                    </div>
+                    
+                    <!-- Department Dropdown -->
+                    <div class="dropdown">
+                        <button class="nav-link dropdown-toggle" aria-haspopup="true" aria-expanded="false">
+                            <i class="fas fa-graduation-cap"></i>
+                            <span>Department</span>
+                            <i class="fas fa-chevron-down dropdown-chevron"></i>
+                        </button>
+                        <div class="dropdown-menu" role="menu">
+                            <a href="#" class="dropdown-item" role="menuitem">
+                                <i class="fas fa-flask"></i>
+                                Science
+                            </a>
+                            <a href="#" class="dropdown-item" role="menuitem">
+                                <i class="fas fa-palette"></i>
+                                Art & Humanities
+                            </a>
+                            <a href="#" class="dropdown-item" role="menuitem">
+                                <i class="fas fa-chart-line"></i>
+                                Commercial
+                            </a>
+                            <a href="#" class="dropdown-item" role="menuitem">
+                                <i class="fas fa-users"></i>
+                                Social Sciences
+                            </a>
+                            <a href="#" class="dropdown-item" role="menuitem">
+                                <i class="fas fa-book-open"></i>
+                                General Studies
+                            </a>
+                        </div>
+                    </div>
+                    
+                    <!-- Past Questions -->
+                    <a href="#" class="nav-link">
+                        <i class="fas fa-file-alt"></i>
+                        <span>Past Questions</span>
+                    </a>
+                    
+                    <!-- Practice/Quiz -->
+                    <a href="#" class="nav-link">
+                        <i class="fas fa-pencil-alt"></i>
+                        <span>Practice / Quiz</span>
+                    </a>
+                    
+                    <!-- Bookmarks -->
+                    <a href="#" class="nav-link" id="bookmarks-link">
+                        <i class="fas fa-bookmark"></i>
+                        <span>Bookmarks</span>
+                    </a>
+                    
+                    <!-- Settings -->
+                    <button class="nav-link" id="settings-button" aria-label="Open settings">
+                        <i class="fas fa-cog"></i>
+                        <span>Settings</span>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </nav>
+    
+    <!-- ============================================
+         MOBILE NAVBAR - HAMBURGER ONLY ON MOBILE
+         ============================================ -->
+    <nav class="navbar-mobile" aria-label="Mobile navigation">
+        <div class="container">
+            <div class="mobile-top-bar">
+                <!-- Logo -->
+                <a href="#" class="logo mobile-logo" aria-label="OAE Study Dashboard">
+                    <img src="/oae.png" alt="OAE Logo">
+                </a>
+                
+                <!-- Mobile Search Bar -->
+                <div class="mobile-search-container">
+                    <div class="mobile-search-wrapper">
+                        <input 
+                            type="text" 
+                            class="mobile-search-input" 
+                            placeholder="Search topics, questions…"
+                            aria-label="Search study materials"
+                        >
+                        <button class="mobile-search-button" type="button" aria-label="Search">
+                            <i class="fas fa-search"></i>
+                        </button>
+                    </div>
+                </div>
+                
+                <!-- Hamburger Menu Button (ONLY ON MOBILE) -->
+                <button class="hamburger" id="hamburger" aria-label="Open menu" aria-expanded="false">
+                    <i class="fas fa-bars"></i>
+                </button>
+            </div>
+        </div>
+    </nav>
+    
+    <!-- ============================================
+         MOBILE BOTTOM NAVBAR 
+         White with green top border
+         ============================================ -->
+    <nav class="mobile-bottom-nav" aria-label="Bottom navigation">
+        <div class="container">
+            <div class="bottom-nav-items">
+                <a href="#" class="bottom-nav-item" aria-label="Department">
+                    <i class="fas fa-graduation-cap bottom-nav-icon"></i>
+                    <span>Department</span>
+                </a>
+                <a href="#" class="bottom-nav-item" aria-label="Practice">
+                    <i class="fas fa-pencil-alt bottom-nav-icon"></i>
+                    <span>Practice</span>
+                </a>
+                <a href="#" class="bottom-nav-item" aria-label="Bookmarks">
+                    <i class="fas fa-bookmark bottom-nav-icon"></i>
+                    <span>Bookmarks</span>
+                </a>
+                <button class="bottom-nav-item" id="bottom-settings" aria-label="Settings">
+                    <i class="fas fa-cog bottom-nav-icon"></i>
+                    <span>Settings</span>
+                </button>
+            </div>
+        </div>
+    </nav>
+    
+    <!-- ============================================
+         MOBILE SLIDE-IN MENU
+         ============================================ -->
+    <div class="mobile-menu" id="mobile-menu">
+        <div class="mobile-menu-header">
+            <h2>Menu</h2>
+            <button class="close-menu" id="close-menu" aria-label="Close menu">
+                <i class="fas fa-times"></i>
+            </button>
+        </div>
+        
+        <div class="mobile-nav-items">
+            <!-- Department Dropdown -->
+            <button class="mobile-dropdown-toggle" id="mobile-department-toggle">
+                <i class="fas fa-graduation-cap"></i>
+                <span>Department</span>
+                <i class="fas fa-chevron-down"></i>
+            </button>
+            <div class="mobile-dropdown-menu" id="mobile-department-menu">
+                <a href="#" class="mobile-nav-item">
+                    <i class="fas fa-flask"></i>
+                    Science
+                </a>
+                <a href="#" class="mobile-nav-item">
+                    <i class="fas fa-palette"></i>
+                    Art & Humanities
+                </a>
+                <a href="#" class="mobile-nav-item">
+                    <i class="fas fa-chart-line"></i>
+                    Commercial
+                </a>
+                <a href="#" class="mobile-nav-item">
+                    <i class="fas fa-users"></i>
+                    Social Sciences
+                </a>
+                <a href="#" class="mobile-nav-item">
+                    <i class="fas fa-book-open"></i>
+                    General Studies
+                </a>
+            </div>
+            
+            <!-- Past Questions -->
+            <a href="#" class="mobile-nav-item">
+                <i class="fas fa-file-alt"></i>
+                Past Questions
+            </a>
+            
+            <!-- Practice/Quiz -->
+            <a href="#" class="mobile-nav-item">
+                <i class="fas fa-pencil-alt"></i>
+                Practice / Mock Exam
+            </a>
+            
+            <!-- Bookmarks -->
+            <a href="#" class="mobile-nav-item" id="mobile-bookmarks">
+                <i class="fas fa-bookmark"></i>
+                Bookmarks
+            </a>
+            
+            <!-- Settings -->
+            <a href="#" class="mobile-nav-item" id="mobile-settings">
+                <i class="fas fa-cog"></i>
+                Settings
+            </a>
+            
+            <!-- Help/Feedback -->
+            <a href="#" class="mobile-nav-item">
+                <i class="fas fa-question-circle"></i>
+                Help / Feedback
+            </a>
+        </div>
+    </div>
+    
+    <!-- ============================================
+         SETTINGS MODAL
+         ============================================ -->
+    <div class="modal-overlay" id="settings-modal">
+        <div class="settings-modal">
+            <div class="modal-header">
+                <h2>Settings</h2>
+                <button class="close-modal" id="close-settings" aria-label="Close settings">
+                    <i class="fas fa-times"></i>
+                </button>
+            </div>
+            <div class="modal-body">
+                <div class="settings-section">
+                    <h3>Display</h3>
+                    <div class="settings-option">
+                        <div class="settings-label">
+                            <span>Dark Mode</span>
+                            <span>Switch between light and dark themes</span>
+                        </div>
+                        <label class="toggle-switch">
+                            <input type="checkbox" id="dark-mode-toggle">
+                            <span class="toggle-slider"></span>
+                        </label>
+                    </div>
+                    <div class="settings-option">
+                        <div class="settings-label">
+                            <span>Font Size</span>
+                            <span>Adjust the text size for better readability</span>
+                        </div>
+                        <div class="select-container">
+                            <select class="settings-select" id="font-size-select">
+                                <option value="small">Small</option>
+                                <option value="medium" selected>Medium</option>
+                                <option value="large">Large</option>
+                            </select>
+                            <i class="fas fa-chevron-down select-arrow"></i>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="settings-section">
+                    <h3>Colors</h3>
+                    <div class="settings-option">
+                        <div class="settings-label">
+                            <span>Accent Color</span>
+                            <span>Choose your preferred accent color</span>
+                        </div>
+                        <div class="color-options">
+                            <div class="color-option color-green active" id="color-green" data-color="green">
+                                <i class="fas fa-check"></i>
+                            </div>
+                            <div class="color-option color-darkgreen" id="color-darkgreen" data-color="darkgreen">
+                                <i class="fas fa-check"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <!-- ============================================
+         MENU OVERLAY
+         ============================================ -->
+    <div class="menu-overlay" id="menu-overlay"></div>
+    
+    <!-- ============================================
+         MAIN CONTENT AREA - CENTERED
+         ============================================ -->
+    <main class="main-content">
+        <div class="hero">
+            <h1>Commercial Studies</h1>
+            <p>Master business, finance, and commerce for professional success</p>
+            <p class="subtitle">Prepare for careers in accounting, business, and commerce</p>
+        </div>
+
+        <div class="overview-section">
+            <h2>What is Commercial Studies?</h2>
+            <div class="overview-box">
+                <p>Commercial Studies encompasses the discipline of business management, accounting, finance, economics, and office administration. These subjects prepare students for careers in accounting, business management, commerce, finance, entrepreneurship, and trade.</p>
+                <p>Whether pursuing accounting qualifications, business management roles, or entrepreneurial ventures, Commercial Studies disciplines provide the knowledge and skills needed to excel in the modern business world and prepare for professional success.</p>
+            </div>
+        </div>
+
+        <div class="subjects-section">
+            <h2>Core Commercial Subjects</h2>
+            <p>Master the disciplines that form the foundation of business and commerce</p>
+
+            <!-- Accounting & Finance -->
+            <div class="subject-category">
+                <h3>Accounting & Finance</h3>
+                <p>Master financial management, accounting principles, and business finance</p>
+                <div class="subjects-grid">
+                    <a href="/notes/commercial/accounting" class="subject-card">
+                        <div class="subject-icon-wrapper"><i class="fas fa-calculator"></i></div>
+                        <h3>Accounting</h3>
+                        <div class="subject-definition"><strong>Definition:</strong> Study of financial records, bookkeeping, and financial statement preparation</div>
+                        <p>Learn double-entry bookkeeping, financial accounting, cost accounting, and preparation of financial statements for businesses.</p>
+                        <div class="subject-topics">
+                            <h4>Key Topics:</h4>
+                            <ul>
+                                <li>Double-Entry Bookkeeping</li>
+                                <li>Financial Statements</li>
+                                <li>Trial Balance</li>
+                                <li>Cost Accounting</li>
+                                <li>Auditing Principles</li>
+                            </ul>
+                        </div>
+                        <a href="/notes/commercial/accounting" class="subject-link">Explore Topics →</a>
+                    </a>
+                    <a href="/notes/commercial/economics" class="subject-card">
+                        <div class="subject-icon-wrapper"><i class="fas fa-chart-line"></i></div>
+                        <h3>Economics</h3>
+                        <div class="subject-definition"><strong>Definition:</strong> Study of production, consumption, trade, and economic systems</div>
+                        <p>Understand microeconomics, macroeconomics, market dynamics, and economic principles affecting business and society.</p>
+                        <div class="subject-topics">
+                            <h4>Key Topics:</h4>
+                            <ul>
+                                <li>Supply & Demand</li>
+                                <li>Market Structures</li>
+                                <li>National Income</li>
+                                <li>Inflation & Interest Rates</li>
+                                <li>Trade & Commerce</li>
+                            </ul>
+                        </div>
+                        <a href="/notes/commercial/economics" class="subject-link">Explore Topics →</a>
+                    </a>
+                </div>
+            </div>
+
+            <!-- Business Management -->
+            <div class="subject-category">
+                <h3>Business Management & Administration</h3>
+                <p>Learn organizational management, business operations, and office administration</p>
+                <div class="subjects-grid">
+                    <a href="/notes/commercial/business-studies" class="subject-card">
+                        <div class="subject-icon-wrapper"><i class="fas fa-briefcase"></i></div>
+                        <h3>Business Studies</h3>
+                        <div class="subject-definition"><strong>Definition:</strong> Study of business organization, management, and entrepreneurship</div>
+                        <p>Explore business structures, management principles, business planning, and entrepreneurial development for successful ventures.</p>
+                        <div class="subject-topics">
+                            <h4>Key Topics:</h4>
+                            <ul>
+                                <li>Business Organization</li>
+                                <li>Management Functions</li>
+                                <li>Entrepreneurship</li>
+                                <li>Business Planning</li>
+                                <li>Customer Relations</li>
+                            </ul>
+                        </div>
+                        <a href="/notes/commercial/business-studies" class="subject-link">Explore Topics →</a>
+                    </a>
+                    <a href="/notes/commercial/marketing" class="subject-card">
+                        <div class="subject-icon-wrapper"><i class="fas fa-bullhorn"></i></div>
+                        <h3>Marketing</h3>
+                        <div class="subject-definition"><strong>Definition:</strong> Study of product promotion, sales, advertising, and consumer behavior</div>
+                        <p>Master marketing strategies, promotional techniques, advertising, and sales management for business growth and customer engagement.</p>
+                        <div class="subject-topics">
+                            <h4>Key Topics:</h4>
+                            <ul>
+                                <li>Marketing Mix</li>
+                                <li>Consumer Behavior</li>
+                                <li>Advertising & Promotion</li>
+                                <li>Sales Management</li>
+                                <li>Market Research</li>
+                            </ul>
+                        </div>
+                        <a href="/notes/commercial/marketing" class="subject-link">Explore Topics →</a>
+                    </a>
+                    <a href="/notes/commercial/office-practice" class="subject-card">
+                        <div class="subject-icon-wrapper"><i class="fas fa-file-alt"></i></div>
+                        <h3>Office Practice</h3>
+                        <div class="subject-definition"><strong>Definition:</strong> Study of office management, procedures, and administrative skills</div>
+                        <p>Learn office organization, filing systems, document management, correspondence, and administrative best practices for efficient operations.</p>
+                        <div class="subject-topics">
+                            <h4>Key Topics:</h4>
+                            <ul>
+                                <li>Office Organization</li>
+                                <li>Filing & Records</li>
+                                <li>Correspondence</li>
+                                <li>Meetings & Minutes</li>
+                                <li>Administrative Duties</li>
+                            </ul>
+                        </div>
+                        <a href="/notes/commercial/office-practice" class="subject-link">Explore Topics →</a>
+                    </a>
+                </div>
+            </div>
+
+            <!-- Office Technology & Data -->
+            <div class="subject-category">
+                <h3>Office Technology & Data Management</h3>
+                <p>Master modern office software, data processing, and information systems</p>
+                <div class="subjects-grid">
+                    <a href="/notes/commercial/data-processing" class="subject-card">
+                        <div class="subject-icon-wrapper"><i class="fas fa-database"></i></div>
+                        <h3>Data Processing</h3>
+                        <div class="subject-definition"><strong>Definition:</strong> Study of data input, processing, storage, and computer systems</div>
+                        <p>Learn data entry techniques, computer software applications, spreadsheets, databases, and information technology for business operations.</p>
+                        <div class="subject-topics">
+                            <h4>Key Topics:</h4>
+                            <ul>
+                                <li>Computer Fundamentals</li>
+                                <li>Data Entry & Input</li>
+                                <li>Spreadsheet Applications</li>
+                                <li>Database Management</li>
+                                <li>Office Software</li>
+                            </ul>
+                        </div>
+                        <a href="/notes/commercial/data-processing" class="subject-link">Explore Topics →</a>
+                    </a>
+                    <a href="/notes/commercial/shorthand" class="subject-card">
+                        <div class="subject-icon-wrapper"><i class="fas fa-pen-fancy"></i></div>
+                        <h3>Shorthand</h3>
+                        <div class="subject-definition"><strong>Definition:</strong> Study of rapid writing system for fast note-taking and transcription</div>
+                        <p>Master shorthand techniques, speed writing, note-taking, and transcription skills for efficient office communication and record-keeping.</p>
+                        <div class="subject-topics">
+                            <h4>Key Topics:</h4>
+                            <ul>
+                                <li>Shorthand Theory</li>
+                                <li>Speed Writing</li>
+                                <li>Transcription</li>
+                                <li>Note-Taking</li>
+                                <li>Dictation Skills</li>
+                            </ul>
+                        </div>
+                        <a href="/notes/commercial/shorthand" class="subject-link">Explore Topics →</a>
+                    </a>
+                </div>
+            </div>
+
+            <!-- Specialized Commercial -->
+            <div class="subject-category">
+                <h3>Specialized Commercial Subjects</h3>
+                <p>Explore specialized areas of commerce and business</p>
+                <div class="subjects-grid">
+                    <a href="/notes/commercial/insurance" class="subject-card">
+                        <div class="subject-icon-wrapper"><i class="fas fa-shield-alt"></i></div>
+                        <h3>Insurance</h3>
+                        <div class="subject-definition"><strong>Definition:</strong> Study of insurance principles, types, and claims management</div>
+                        <p>Understand insurance concepts, risk management, insurance products, underwriting, and claims processing for financial security.</p>
+                        <div class="subject-topics">
+                            <h4>Key Topics:</h4>
+                            <ul>
+                                <li>Insurance Principles</li>
+                                <li>Types of Insurance</li>
+                                <li>Risk Management</li>
+                                <li>Claims Processing</li>
+                                <li>Insurance Contracts</li>
+                            </ul>
+                        </div>
+                        <a href="/notes/commercial/insurance" class="subject-link">Explore Topics →</a>
+                    </a>
+                </div>
+            </div>
+        </div>
+
+        <div class="why-study-section">
+            <h2>Why Study Commercial Subjects?</h2>
+            <div class="benefits-grid">
+                <div class="benefit-card">
+                    <div class="benefit-icon"><i class="fas fa-wallet"></i></div>
+                    <h3>Financial Literacy</h3>
+                    <p>Develop strong understanding of finance, accounting, and money management for personal and professional success.</p>
+                </div>
+                <div class="benefit-card">
+                    <div class="benefit-icon"><i class="fas fa-handshake"></i></div>
+                    <h3>Business Skills</h3>
+                    <p>Master practical business management, operations, and administrative skills needed in professional environments.</p>
+                </div>
+                <div class="benefit-card">
+                    <div class="benefit-icon"><i class="fas fa-graduation-cap"></i></div>
+                    <h3>Career Preparation</h3>
+                    <p>Prepare for careers in accounting, finance, business management, marketing, administration, and entrepreneurship.</p>
+                </div>
+                <div class="benefit-card">
+                    <div class="benefit-icon"><i class="fas fa-chart-pie"></i></div>
+                    <h3>Entrepreneurship</h3>
+                    <p>Develop knowledge and skills to start and manage your own business ventures successfully.</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="how-to-use">
+            <h2>How to Use These Resources</h2>
+            <ul>
+                <li><strong>Select Your Subject:</strong> Choose from any of the 8 Commercial Studies subjects above, organized by discipline.</li>
+                <li><strong>Explore Topics:</strong> Each subject is divided into focused topics with comprehensive study materials and practice questions.</li>
+                <li><strong>Study Strategically:</strong> Use these resources to prepare for JAMB, WAEC, NECO, and GCE examinations in Commercial Studies.</li>
+                <li><strong>Practice Regularly:</strong> Engage with practice questions and quizzes to reinforce your understanding and identify weak areas.</li>
+                <li><strong>Review & Revise:</strong> Revisit topics regularly to ensure long-term retention and mastery of subject content.</li>
+                <li><strong>Track Progress:</strong> Monitor your learning journey and measure improvement over time with detailed performance analytics.</li>
+            </ul>
+        </div>
+    </main>
+<script type="module" src="/Assets/js/notes-nav-bar.js"></script>
+</body>
+</html>

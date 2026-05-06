@@ -1,0 +1,283 @@
+{
+  "meta": {
+    "novelId": "lekki-headmaster",
+    "title": "The Lekki Headmaster",
+    "author": "Kabir Garba",
+    "year": 2025,
+    "sectionA": 25,
+    "notes": "JAMB 2025 prescribed novel. Add actual novel extracts and corresponding questions. Current structure shows format with sample comprehension passages."
+  },
+  "questions": [
+    {
+      "id": "lh-a-001",
+      "type": "comprehension",
+      "passageTitle": "Educational Excellence",
+      "passage": "Educational institutions serve as crucial sites for developing not just academic knowledge but also moral character and civic responsibility. In successful educational systems, teachers function as more than content deliverers; they become mentors and guides who shape young people's understanding of the world and their place in it. Excellence in education requires a holistic approach that develops critical thinking, creativity, and interpersonal skills alongside traditional academic subjects. The most effective schools create inclusive environments where students from diverse backgrounds collaborate, learn from one another, and develop appreciation for different perspectives. Research consistently demonstrates that when educators invest in understanding individual student needs and adapt instruction accordingly, student outcomes improve significantly across all demographics. Educational leaders who prioritize both academic rigor and student well-being create institutions that transform lives and strengthen communities.",
+      "question": "According to the passage, what is the primary role of teachers in educational excellence?",
+      "options": ["A. Solely delivering academic content", "B. Serving as mentors who shape students' understanding and develop their character", "C. Maintaining strict discipline without regard for student welfare", "D. Limiting student exposure to diverse perspectives"],
+      "answer": 1,
+      "explanation": "The passage states that 'teachers function as more than content deliverers; they become mentors and guides who shape young people's understanding of the world.'",
+      "topic": "Prescribed Novel Extracts"
+    },
+    {
+      "id": "lh-a-002",
+      "type": "comprehension",
+      "passageTitle": "Educational Excellence",
+      "passage": "Educational institutions serve as crucial sites for developing not just academic knowledge but also moral character and civic responsibility. In successful educational systems, teachers function as more than content deliverers; they become mentors and guides who shape young people's understanding of the world and their place in it. Excellence in education requires a holistic approach that develops critical thinking, creativity, and interpersonal skills alongside traditional academic subjects. The most effective schools create inclusive environments where students from diverse backgrounds collaborate, learn from one another, and develop appreciation for different perspectives. Research consistently demonstrates that when educators invest in understanding individual student needs and adapt instruction accordingly, student outcomes improve significantly across all demographics. Educational leaders who prioritize both academic rigor and student well-being create institutions that transform lives and strengthen communities.",
+      "question": "What does the passage identify as essential for school effectiveness?",
+      "options": ["A. Homogeneity of student backgrounds", "B. Exclusive focus on academic subjects without development of soft skills", "C. Inclusive environments where diverse students collaborate and learn from each other", "D. Uniform instruction without adaptation to individual needs"],
+      "answer": 2,
+      "explanation": "The passage emphasizes that 'the most effective schools create inclusive environments where students from diverse backgrounds collaborate, learn from one another, and develop appreciation for different perspectives.'",
+      "topic": "Prescribed Novel Extracts"
+    },
+    {
+      "id": "lh-a-003",
+      "type": "comprehension",
+      "passageTitle": "Social Responsibility",
+      "passage": "Social responsibility represents a moral obligation individuals and organizations bear toward their societies. This concept extends beyond legal compliance to encompassing ethical conduct that contributes to the common good. Corporations and institutions increasingly recognize that sustainable success requires balancing profit and growth with genuine commitment to social welfare. Socially responsible organizations invest in their employees' development, support their communities through charitable initiatives, and adopt environmentally sustainable practices. When leadership prioritizes social responsibility, organizations build stronger relationships with stakeholders, enhance their reputation, and create positive workplace cultures. Young professionals entering the workforce increasingly seek employers whose values align with their own commitment to social impact. The integration of social responsibility into organizational culture requires intentional leadership decisions, transparent communication about values and practices, and accountability mechanisms that ensure commitments translate into action.",
+      "question": "According to the passage, what motivates organizations to embrace social responsibility?",
+      "options": ["A. Legal requirements alone", "B. Avoiding public criticism only", "C. Sustainable success requires balancing growth with commitment to social welfare", "D. No genuine motivation exists; it is purely marketing"],
+      "answer": 2,
+      "explanation": "The passage states that 'sustainable success requires balancing profit and growth with genuine commitment to social welfare' and that responsible organizations build 'stronger relationships with stakeholders and enhance their reputation.'",
+      "topic": "Prescribed Novel Extracts"
+    },
+    {
+      "id": "lh-a-004",
+      "type": "vocabulary",
+      "question": "In the social responsibility passage, 'encompassing' most nearly means:",
+      "options": ["A. Excluding or avoiding", "B. Including or containing within", "C. Reducing in scope", "D. Refusing to acknowledge"],
+      "answer": 1,
+      "explanation": "'Encompassing' means to include or contain. The passage indicates that social responsibility 'extends beyond legal compliance to encompassing ethical conduct,' meaning it includes ethical conduct.",
+      "topic": "Prescribed Novel Extracts"
+    },
+    {
+      "id": "lh-a-005",
+      "type": "inference",
+      "question": "From the social responsibility passage, what can be inferred about the relationship between organizational values and employee attraction?",
+      "options": ["A. Employee values are unrelated to organizational culture", "B. Organizations need not align with employee values", "C. Employees increasingly seek employers whose values align with their own commitment to social impact", "D. Only profit matters to modern professionals"],
+      "answer": 2,
+      "explanation": "The passage indicates that 'young professionals increasingly seek employers whose values align with their own commitment to social impact,' demonstrating the connection between organizational values and employee attraction.",
+      "topic": "Prescribed Novel Extracts"
+    },
+    {
+      "id": "lh-a-006",
+      "type": "comprehension",
+      "passageTitle": "Mentorship and Growth",
+      "passage": "Mentorship relationships represent one of the most valuable investments individuals can make in their personal and professional development. Effective mentors provide more than advice; they offer guidance grounded in their own experience, help mentees navigate complex decisions, and encourage growth beyond current capabilities. The mentor-mentee relationship thrives on mutual respect, open communication, and shared commitment to the mentee's development. Mentorship creates spaces where younger professionals can explore ideas, discuss challenges, and receive constructive feedback without fear of judgment. Research on mentorship demonstrates that individuals with mentors progress more quickly in their careers, develop stronger professional networks, and report greater job satisfaction. Beyond individual benefits, mentorship strengthens organizations by facilitating knowledge transfer, building leadership capacity, and creating cultures of continuous learning. Successful organizations institutionalize mentorship by creating formal programs and cultures that value knowledge-sharing across experience levels.",
+      "question": "What does the passage identify as the foundation of effective mentorship?",
+      "options": ["A. Power differential between mentor and mentee", "B. One-way advice giving from mentor to mentee", "C. Mutual respect, open communication, and shared commitment to development", "D. Fear-based motivation for the mentee"],
+      "answer": 2,
+      "explanation": "The passage states that 'the mentor-mentee relationship thrives on mutual respect, open communication, and shared commitment to the mentee's development.'",
+      "topic": "Prescribed Novel Extracts"
+    },
+    {
+      "id": "lh-a-007",
+      "type": "summary",
+      "passageTitle": "Change and Adaptation",
+      "passage": "Change is constant in modern society, affecting organizations, communities, and individuals in profound ways. Those who adapt successfully to change recognize it not as threat but as opportunity for growth and innovation. Adaptation requires flexibility, willingness to learn new skills, and openness to different approaches. Organizations and individuals who resist change often find themselves increasingly marginalized as industries transform and new challenges emerge. History demonstrates that societies and organizations that embrace change while maintaining core values tend to thrive. The most resilient individuals develop adaptive capacity—the ability to assess new situations, learn quickly, and adjust strategies as needed. Educational systems, workplaces, and communities that explicitly teach adaptive skills prepare people for a future characterized by ongoing transformation. Rather than fearing change, forward-thinking leaders cultivate cultures of continuous improvement and innovation.",
+      "question": "Which statement best summarizes the passage's main message?",
+      "options": ["A. Change should be feared and resisted at all costs", "B. Successful individuals and organizations view change as an opportunity for growth and develop adaptive capacity", "C. Only young people can adapt to change", "D. Change has no impact on organizational success"],
+      "answer": 1,
+      "explanation": "The passage emphasizes that those who 'adapt successfully to change recognize it not as threat but as opportunity for growth' and that the most resilient 'develop adaptive capacity' to navigate change.",
+      "topic": "Prescribed Novel Extracts"
+    },
+    {
+      "id": "lh-a-008",
+      "type": "comprehension",
+      "passageTitle": "Sample Novel Extract Placeholder",
+      "passage": "[INSERT ACTUAL EXTRACT FROM THE LEKKI HEADMASTER HERE - Replace with text from Kabir Garba's novel]",
+      "question": "Sample Question 1: [Replace with actual question based on the novel extract]",
+      "options": ["A. Sample option A", "B. Sample option B", "C. Sample option C", "D. Sample option D"],
+      "answer": 0,
+      "explanation": "Replace with actual explanation",
+      "topic": "Prescribed Novel Extracts"
+    },
+    {
+      "id": "lh-a-009",
+      "type": "comprehension",
+      "passageTitle": "Sample Novel Extract Placeholder",
+      "passage": "[INSERT ACTUAL EXTRACT FROM THE LEKKI HEADMASTER HERE]",
+      "question": "Sample Question 2: [Replace with actual question]",
+      "options": ["A. Sample option A", "B. Sample option B", "C. Sample option C", "D. Sample option D"],
+      "answer": 0,
+      "explanation": "Replace with actual explanation",
+      "topic": "Prescribed Novel Extracts"
+    },
+    {
+      "id": "lh-a-010",
+      "type": "comprehension",
+      "passageTitle": "Sample Novel Extract Placeholder",
+      "passage": "[INSERT ACTUAL EXTRACT FROM THE LEKKI HEADMASTER HERE]",
+      "question": "Sample Question 3: [Replace with actual question]",
+      "options": ["A. Sample option A", "B. Sample option B", "C. Sample option C", "D. Sample option D"],
+      "answer": 0,
+      "explanation": "Replace with actual explanation",
+      "topic": "Prescribed Novel Extracts"
+    },
+    {
+      "id": "lh-a-011",
+      "type": "comprehension",
+      "passageTitle": "Sample Novel Extract Placeholder",
+      "passage": "[INSERT ACTUAL EXTRACT FROM THE LEKKI HEADMASTER HERE]",
+      "question": "Sample Question 4: [Replace with actual question]",
+      "options": ["A. Sample option A", "B. Sample option B", "C. Sample option C", "D. Sample option D"],
+      "answer": 0,
+      "explanation": "Replace with actual explanation",
+      "topic": "Prescribed Novel Extracts"
+    },
+    {
+      "id": "lh-a-012",
+      "type": "comprehension",
+      "passageTitle": "Sample Novel Extract Placeholder",
+      "passage": "[INSERT ACTUAL EXTRACT FROM THE LEKKI HEADMASTER HERE]",
+      "question": "Sample Question 5: [Replace with actual question]",
+      "options": ["A. Sample option A", "B. Sample option B", "C. Sample option C", "D. Sample option D"],
+      "answer": 0,
+      "explanation": "Replace with actual explanation",
+      "topic": "Prescribed Novel Extracts"
+    },
+    {
+      "id": "lh-a-013",
+      "type": "comprehension",
+      "passageTitle": "Sample Novel Extract Placeholder",
+      "passage": "[INSERT ACTUAL EXTRACT FROM THE LEKKI HEADMASTER HERE]",
+      "question": "Sample Question 6: [Replace with actual question]",
+      "options": ["A. Sample option A", "B. Sample option B", "C. Sample option C", "D. Sample option D"],
+      "answer": 0,
+      "explanation": "Replace with actual explanation",
+      "topic": "Prescribed Novel Extracts"
+    },
+    {
+      "id": "lh-a-014",
+      "type": "comprehension",
+      "passageTitle": "Sample Novel Extract Placeholder",
+      "passage": "[INSERT ACTUAL EXTRACT FROM THE LEKKI HEADMASTER HERE]",
+      "question": "Sample Question 7: [Replace with actual question]",
+      "options": ["A. Sample option A", "B. Sample option B", "C. Sample option C", "D. Sample option D"],
+      "answer": 0,
+      "explanation": "Replace with actual explanation",
+      "topic": "Prescribed Novel Extracts"
+    },
+    {
+      "id": "lh-a-015",
+      "type": "comprehension",
+      "passageTitle": "Sample Novel Extract Placeholder",
+      "passage": "[INSERT ACTUAL EXTRACT FROM THE LEKKI HEADMASTER HERE]",
+      "question": "Sample Question 8: [Replace with actual question]",
+      "options": ["A. Sample option A", "B. Sample option B", "C. Sample option C", "D. Sample option D"],
+      "answer": 0,
+      "explanation": "Replace with actual explanation",
+      "topic": "Prescribed Novel Extracts"
+    },
+    {
+      "id": "lh-a-016",
+      "type": "comprehension",
+      "passageTitle": "Sample Novel Extract Placeholder",
+      "passage": "[INSERT ACTUAL EXTRACT FROM THE LEKKI HEADMASTER HERE]",
+      "question": "Sample Question 9: [Replace with actual question]",
+      "options": ["A. Sample option A", "B. Sample option B", "C. Sample option C", "D. Sample option D"],
+      "answer": 0,
+      "explanation": "Replace with actual explanation",
+      "topic": "Prescribed Novel Extracts"
+    },
+    {
+      "id": "lh-a-017",
+      "type": "comprehension",
+      "passageTitle": "Sample Novel Extract Placeholder",
+      "passage": "[INSERT ACTUAL EXTRACT FROM THE LEKKI HEADMASTER HERE]",
+      "question": "Sample Question 10: [Replace with actual question]",
+      "options": ["A. Sample option A", "B. Sample option B", "C. Sample option C", "D. Sample option D"],
+      "answer": 0,
+      "explanation": "Replace with actual explanation",
+      "topic": "Prescribed Novel Extracts"
+    },
+    {
+      "id": "lh-a-018",
+      "type": "comprehension",
+      "passageTitle": "Sample Novel Extract Placeholder",
+      "passage": "[INSERT ACTUAL EXTRACT FROM THE LEKKI HEADMASTER HERE]",
+      "question": "Sample Question 11: [Replace with actual question]",
+      "options": ["A. Sample option A", "B. Sample option B", "C. Sample option C", "D. Sample option D"],
+      "answer": 0,
+      "explanation": "Replace with actual explanation",
+      "topic": "Prescribed Novel Extracts"
+    },
+    {
+      "id": "lh-a-019",
+      "type": "comprehension",
+      "passageTitle": "Sample Novel Extract Placeholder",
+      "passage": "[INSERT ACTUAL EXTRACT FROM THE LEKKI HEADMASTER HERE]",
+      "question": "Sample Question 12: [Replace with actual question]",
+      "options": ["A. Sample option A", "B. Sample option B", "C. Sample option C", "D. Sample option D"],
+      "answer": 0,
+      "explanation": "Replace with actual explanation",
+      "topic": "Prescribed Novel Extracts"
+    },
+    {
+      "id": "lh-a-020",
+      "type": "comprehension",
+      "passageTitle": "Sample Novel Extract Placeholder",
+      "passage": "[INSERT ACTUAL EXTRACT FROM THE LEKKI HEADMASTER HERE]",
+      "question": "Sample Question 13: [Replace with actual question]",
+      "options": ["A. Sample option A", "B. Sample option B", "C. Sample option C", "D. Sample option D"],
+      "answer": 0,
+      "explanation": "Replace with actual explanation",
+      "topic": "Prescribed Novel Extracts"
+    },
+    {
+      "id": "lh-a-021",
+      "type": "comprehension",
+      "passageTitle": "Sample Novel Extract Placeholder",
+      "passage": "[INSERT ACTUAL EXTRACT FROM THE LEKKI HEADMASTER HERE]",
+      "question": "Sample Question 14: [Replace with actual question]",
+      "options": ["A. Sample option A", "B. Sample option B", "C. Sample option C", "D. Sample option D"],
+      "answer": 0,
+      "explanation": "Replace with actual explanation",
+      "topic": "Prescribed Novel Extracts"
+    },
+    {
+      "id": "lh-a-022",
+      "type": "comprehension",
+      "passageTitle": "Sample Novel Extract Placeholder",
+      "passage": "[INSERT ACTUAL EXTRACT FROM THE LEKKI HEADMASTER HERE]",
+      "question": "Sample Question 15: [Replace with actual question]",
+      "options": ["A. Sample option A", "B. Sample option B", "C. Sample option C", "D. Sample option D"],
+      "answer": 0,
+      "explanation": "Replace with actual explanation",
+      "topic": "Prescribed Novel Extracts"
+    },
+    {
+      "id": "lh-a-023",
+      "type": "comprehension",
+      "passageTitle": "Sample Novel Extract Placeholder",
+      "passage": "[INSERT ACTUAL EXTRACT FROM THE LEKKI HEADMASTER HERE]",
+      "question": "Sample Question 16: [Replace with actual question]",
+      "options": ["A. Sample option A", "B. Sample option B", "C. Sample option C", "D. Sample option D"],
+      "answer": 0,
+      "explanation": "Replace with actual explanation",
+      "topic": "Prescribed Novel Extracts"
+    },
+    {
+      "id": "lh-a-024",
+      "type": "comprehension",
+      "passageTitle": "Sample Novel Extract Placeholder",
+      "passage": "[INSERT ACTUAL EXTRACT FROM THE LEKKI HEADMASTER HERE]",
+      "question": "Sample Question 17: [Replace with actual question]",
+      "options": ["A. Sample option A", "B. Sample option B", "C. Sample option C", "D. Sample option D"],
+      "answer": 0,
+      "explanation": "Replace with actual explanation",
+      "topic": "Prescribed Novel Extracts"
+    },
+    {
+      "id": "lh-a-025",
+      "type": "comprehension",
+      "passageTitle": "Sample Novel Extract Placeholder",
+      "passage": "[INSERT ACTUAL EXTRACT FROM THE LEKKI HEADMASTER HERE]",
+      "question": "Sample Question 18: [Replace with actual question]",
+      "options": ["A. Sample option A", "B. Sample option B", "C. Sample option C", "D. Sample option D"],
+      "answer": 0,
+      "explanation": "Replace with actual explanation",
+      "topic": "Prescribed Novel Extracts"
+    }
+  ]
+}

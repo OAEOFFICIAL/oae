@@ -1,0 +1,13 @@
+{
+  "meta": {
+    "novelId": "things-fall-apart",
+    "title": "Things Fall Apart",
+    "author": "Chinua Achebe",
+    "sections": { "sectionA": 25 },
+    "notes": "Novel extract questions for Section A. Add or replace as needed."
+  },
+  "questions": [
+    { "id": "tfa-a-001", "question": "(Extract) What is Okonkwo's major fear?", "options": ["A. Poverty", "B. Failure", "C. Weakness", "D. Illness"], "answer": 2, "explanation": "Okonkwo fears appearing weak.", "topic": "Prescribed Novel Extracts" },
+    { "id": "tfa-a-002", "question": "(Extract) Who is Ikemefuna?", "options": ["A. Okonkwo's son", "B. A village elder", "C. A boy given to Umuofia", "D. The white man"], "answer": 2, "explanation": "Ikemefuna is given to Umuofia and lives with Okonkwo's family.", "topic": "Prescribed Novel Extracts" }
+  ]
+}

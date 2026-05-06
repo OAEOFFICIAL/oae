@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign Up | OAE - Join 15,000+ Students</title>
+    <meta name="description" content="Create a free OAE account to master your exams. Track JAMB scores, save target universities, and study intelligently.">
+    <meta name="keywords" content="OAE signup, register JAMB CBT, WAEC tutorials, free admission portal, Oluwatosin Academy">
+    <meta property="og:title" content="Sign Up | OAE">
+    <meta property="og:description" content="Create your free account today and join 15,000+ students mastering their exams.">
+    <meta property="og:type" content="website">
+    <link rel="stylesheet" href="Assets/css/auth.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+
+    <!-- Animated Background -->
+    <div class="bg-animation">
+        <div class="blob blob-1"></div>
+        <div class="blob blob-2"></div>
+        <div class="blob blob-3"></div>
+    </div>
+
+    <!-- The Floating Glass Card -->
+    <div class="auth-wrapper">
+        <div class="glass-card">
+            
+            <a href="Index.htm" class="back-home">
+                <i class="fas fa-arrow-left"></i> Home
+            </a>
+            
+            <div class="auth-header">
+                <img src="OAE.png" alt="OAE Logo" class="auth-logo">
+                <h2 class="auth-title">Start learning</h2>
+                <p class="auth-subtitle">Join thousands of students smashing their target scores.</p>
+            </div>
+
+            <form id="signup-form" novalidate>
+                
+                <div class="input-group">
+                    <div class="input-wrapper">
+                        <i class="fas fa-user"></i>
+                        <input type="text" id="name" name="name" placeholder="Full Name" required>
+                    </div>
+                </div>
+
+                <div class="input-group">
+                    <div class="input-wrapper">
+                        <i class="fas fa-envelope"></i>
+                        <input type="email" id="email" name="email" placeholder="Email Address" required>
+                    </div>
+                </div>
+
+                <div class="input-group">
+                    <div class="input-wrapper">
+                        <i class="fas fa-lock"></i>
+                        <input type="password" id="password" name="password" placeholder="Create Password" minlength="6" required>
+                    </div>
+                </div>
+
+                <div class="input-group">
+                    <div class="input-wrapper">
+                        <i class="fas fa-shield-alt"></i>
+                        <input type="password" id="confirm" name="confirm" placeholder="Confirm Password" minlength="6" required>
+                    </div>
+                </div>
+
+                <button type="submit" class="auth-btn">Create Account</button>
+
+                <div id="signup-msg" class="auth-msg"></div>
+
+                <div class="auth-switch">
+                    Already have an account? <a href="login.htm">Sign in</a>
+                </div>
+            </form>
+
+        </div>
+    </div>
+
+    <script src="Assets/js/signup.js"></script>
+</body>
+</html>

@@ -1,0 +1,297 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>OAE Ultimate Aggregate Score Calculator</title>
+    <meta name="description" content="Calculate your university Post-UTME aggregate score dynamically. Select your real school for an exact standard calculation.">
+    
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/remixicon@4.0.0/remixicon.css" >
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <link rel="stylesheet" href="../../Assets/css/post-jamb-navbar.css">
+    <link rel="stylesheet" href="../../Assets/css/footer.css">
+    <link rel="stylesheet" href="../../Assets/css/aggregate-calculator.css">
+    <link rel="stylesheet" href="../../Assets/css/cross-tools.css">
+    <!-- html2pdf for downloading result -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/html2pdf.js/0.10.1/html2pdf.bundle.min.js"></script>
+</head>
+<body>
+    <!-- OAE Navbar - WHITE BACKGROUND (Global Design System) -->
+    <nav class="oae-navbar">
+         <div class="oae-logo">
+            <a href="../../Index.htm">
+               <img class="logo-quiz" src="../../oae.png" alt="OAE">
+            </a>
+        </div>
+
+        <!-- Search Bar - Visible on ALL devices with proper input field -->
+        <div class="oae-search-section">
+            <div class="oae-search-container">
+                <i class="fas fa-search"></i>
+                <input type="text" placeholder="Search JAMB, schools, courses...">
+                <button class="oae-search-btn">Search</button>
+            </div>
+        </div>
+
+        <!-- Navigation Links (Desktop) - Post-JAMB, Admission, Schools, Updates -->
+        <ul class="oae-nav-links">
+            <li><a href="/admission/post-jamb/index.html">Post-JAMB</a></li>
+            <li><a href="#">Admission</a></li>
+            <li><a href="#">Schools</a></li>
+            <li><a href="#">Updates</a></li>
+        </ul>
+
+        <!-- Join/Dashboard Button (Desktop) -->
+        <button class="oae-join-btn" id="oaeJoinBtn">Join OAE</button>
+        
+        <!-- Hamburger Menu (Mobile) -->
+        <button class="oae-hamburger" id="oaeHamburger">
+            <i class="fas fa-bars"></i>
+        </button>
+
+        <!-- Mobile Menu (contains Post-JAMB, Admission, Schools, Updates) -->
+        <div class="oae-mobile-menu" id="oaeMobileMenu">
+            <ul class="oae-mobile-links">
+                <li><a href="/admission/post-jamb/index.html">Post-JAMB</a></li>
+                <li><a href="#">Admission</a></li>
+                <li><a href="#">Schools</a></li>
+                <li><a href="#">Updates</a></li>
+                <li>
+                    <button class="oae-join-mobile" id="oaeJoinMobile">
+                        <i class="fas fa-user-plus"></i> Join OAE
+                    </button>
+                </li>
+                <li>
+                    <button class="oae-demo" id="oaeDemo">
+                        <i class="fas fa-user-circle"></i> Demo: User Dashboard
+                    </button>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- AGGREGATE CALCULATOR HERO -->
+    <section class="calc-hero">
+        <div class="calc-hero-content">
+            <h1><i class="fas fa-calculator" style="color: #0a8a2f;"></i> Aggregate Score Calculator</h1>
+            <p>Know your real chances. Select your university to dynamically configure the exact formula needed to compute your final Post-UTME aggregate score.</p>
+        </div>
+    </section>
+
+    <!-- CALCULATOR MAIN SECTION -->
+    <section class="calc-main">
+        <div class="calc-container">
+            
+            <!-- INPUT PANEL -->
+            <div class="calc-input-panel">
+                <h3>Input Your Scores</h3>
+                
+                <div class="form-group">
+                    <label for="university-select"><i class="fas fa-university"></i> Select University</label>
+                    <select id="university-select">
+                        <option value="general">General (Standard JAMB/8 + PostUTME/2)</option>
+                        <option value="unilag">University of Lagos (UNILAG)</option>
+                        <option value="oau">Obafemi Awolowo University (OAU)</option>
+                        <option value="ui">University of Ibadan (UI)</option>
+                        <option value="unizik">Nnamdi Azikiwe University (UNIZIK)</option>
+                        <option value="uniosun">Osun State University (UNIOSUN)</option>
+                        <option value="lasu">Lagos State University (LASU)</option>
+                        <option value="fuhsi">FUHSI </option>
+                        <option value="uniport">University of Port Harcourt (UNIPORT)</option>
+                        <option value="abu">Ahmadu Bello University (ABU)</option>
+                        <option value="unilorin">University of Ilorin (UNILORIN)</option>
+                        <option value="unn">University of Nigeria, Nsukka (UNN)</option>
+                        <option value="fuoye">Federal University Oye-Ekiti (FUOYE)</option>
+                        <option value="uniben">University of Benin (UNIBEN)</option>
+                        <option value="futa">Fed. Univ. of Technology, Akure (FUTA)</option>
+                        <option value="unical">University of Calabar (UNICAL)</option>
+                        <option value="oou">Olabisi Onabanjo University (OOU)</option>
+                        <option value="kwasu">Kwara State University (KWASU)</option>
+                        <option value="delsu">Delta State University (DELSU)</option>
+                        <option value="rsu">Rivers State University (RSU)</option>
+                        <option value="fedpolyilaro">Federal Polytechnic Ilaro (FED POLY ILARO)</option>
+                        <option value="yabatech">Yaba College of Technology (YABATECH)</option>
+                        <option value="ebsu">Ebonyi State University (EBSU)</option>
+                        <option value="lasued">Lagos State Univ. of Education (LASUED)</option>
+                        <option value="afit">Air Force Inst. of Technology (AFIT)</option>
+                        <option value="futminna">Fed. Univ. of Technology, Minna (FUTMINNA)</option>
+                    </select>
+                </div>
+
+                <!-- Dynamic Form Container -->
+                <div id="dynamic-form-area">
+                    <!-- Standard Inputs (Default) -->
+                    <div class="form-group">
+                        <label for="jamb-score">JAMB Score (Out of 400)</label>
+                        <input type="number" id="jamb-score" placeholder="e.g. 250" min="0" max="400">
+                    </div>
+                    
+                    <!-- Post UTME Input -->
+                    <div class="form-group" id="postutme-group">
+                        <label id="postutme-label" for="postutme-score">Post-UTME Score (Out of 100)</label>
+                        <input type="number" id="postutme-score" placeholder="e.g. 70" min="0" max="100">
+                    </div>
+                    
+                    <!-- Sittings Input -->
+                    <div class="form-group" id="sittings-group" style="display: none;">
+                        <label for="sittings-select">Number of O'Level Sittings</label>
+                        <select id="sittings-select">
+                            <option value="1">Single Sitting</option>
+                            <option value="2">Two Sittings</option>
+                        </select>
+                    </div>
+
+                    <!-- O'Level Input Container (Hidden by Default) -->
+                    <div class="form-group" id="olevel-group" style="display: none;">
+                        <label>Five (5) Core O'Level Subjects Grades</label>
+                        <div class="olevel-grid">
+                            <select class="olevel-grade">
+                                <option value="">Select Grade</option>
+                                <option value="A1">A1</option><option value="B2">B2</option><option value="B3">B3</option>
+                                <option value="C4">C4</option><option value="C5">C5</option><option value="C6">C6</option>
+                            </select>
+                            <select class="olevel-grade">
+                                <option value="">Select Grade</option>
+                                <option value="A1">A1</option><option value="B2">B2</option><option value="B3">B3</option>
+                                <option value="C4">C4</option><option value="C5">C5</option><option value="C6">C6</option>
+                            </select>
+                            <select class="olevel-grade">
+                                <option value="">Select Grade</option>
+                                <option value="A1">A1</option><option value="B2">B2</option><option value="B3">B3</option>
+                                <option value="C4">C4</option><option value="C5">C5</option><option value="C6">C6</option>
+                            </select>
+                            <select class="olevel-grade">
+                                <option value="">Select Grade</option>
+                                <option value="A1">A1</option><option value="B2">B2</option><option value="B3">B3</option>
+                                <option value="C4">C4</option><option value="C5">C5</option><option value="C6">C6</option>
+                            </select>
+                            <select class="olevel-grade" id="olevel-5">
+                                <option value="">Select Grade</option>
+                                <option value="A1">A1</option><option value="B2">B2</option><option value="B3">B3</option>
+                                <option value="C4">C4</option><option value="C5">C5</option><option value="C6">C6</option>
+                            </select>
+                        </div>
+                    </div>
+                </div>
+                
+                <div id="calc-error" class="calc-error"></div>
+                <button id="calculate-btn" class="calc-action-btn">Compute Aggregate</button>
+            </div>
+
+            <!-- RESULT PANEL -->
+            <div class="calc-result-panel" id="pdf-dashboard">
+                <h3 id="result-school-title">Your Result Dashboard</h3>
+                
+                <div class="score-ring-container">
+                    <svg class="progress-ring" width="180" height="180">
+                      <circle class="progress-ring-circle-bg" stroke="#f0f0f0" stroke-width="12" fill="transparent" r="78" cx="90" cy="90"/>
+                      <circle id="score-ring-circle" class="progress-ring-circle" stroke="#e0e0e0" stroke-width="12" fill="transparent" r="78" cx="90" cy="90"/>
+                    </svg>
+                    <div class="score-text">
+                        <span id="final-score-value">0.0</span><span id="score-unit" style="font-size: 1.2rem;">%</span>
+                    </div>
+                </div>
+
+                <div class="feedback-card" id="feedback-card">
+                    <h4 id="feedback-title">Awaiting Input</h4>
+                    <p id="feedback-message">Enter your scores on the left and click computing to see your chances here.</p>
+                </div>
+                
+                <div class="formula-info">
+                    <p><strong>Current Formula:</strong> <span id="formula-display">(JAMB ÷ 8) + (Post-UTME ÷ 2)</span></p>
+                </div>
+
+                <!-- Channel Link Container -->
+                <div id="channel-link-container" style="display: none; margin-top: 15px; padding: 15px; background: #e8f5e9; border-radius: 8px; text-align: center; border: 1px solid #c8e6c9;">
+                    <a id="channel-link" href="#" target="_blank" style="color: #2e7d32; font-weight: bold; text-decoration: none; font-size: 1.1rem; display: flex; align-items: center; justify-content: center; gap: 8px;">
+                        <i class="fab fa-whatsapp" style="font-size: 1.4rem; color: #25D366;"></i>
+                        <span id="channel-link-text">Tap to join OAE MAIN CHANNEL for updates</span>
+                    </a>
+                </div>
+                
+                <button id="download-pdf-btn" class="calc-action-btn" style="background:#1976d2; margin-top:20px; display:none;">
+                    <i class="fas fa-file-pdf"></i> Download Result as PDF
+                </button>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="oae-footer">
+      <div class="footer-connect">
+        <h3>Connect With Us</h3>
+        <hr>
+        <div class="socials-bar">
+          <a href="#"><i class="fab fa-linkedin"></i></a>
+          <a href="#"><i class="fab fa-twitter"></i></a>
+          <a href="#"><i class="fab fa-youtube"></i></a>
+          <a href="#"><i class="fab fa-facebook"></i></a>
+          <a href="#"><i class="fab fa-instagram"></i></a>
+          <a href="#"><i class="fab fa-tiktok"></i></a>
+          <a href="https://t.me/OAECONNECT"><i class="fab fa-telegram"></i></a>
+          <a href="mailto:oaeofficial123@gmail.com"><i class="fas fa-envelope"></i></a>
+        </div>
+      </div>
+
+      <div class="footer-top">
+        <div class="mission-container">
+          <img src="../../oaepic2.png" alt="OAE Mission" class="mission-img">
+          <div class="mission-text">
+            <p class="footer-mission-summary">
+              OAE is committed to delivering high-quality digital education from Nigeria to learners across Africa and the world. 
+            </p>
+          </div>
+        </div>
+
+        <p class="short-about">
+          Oluwatosin Academy of Excellence (OAE) is a Nigerian EdTech organisation delivering exam preparation...
+        </p>
+
+        <div class="newsletter">
+          <input type="email" placeholder="Enter your email for updates">
+          <button>Subscribe</button>
+        </div>
+      </div>
+
+      <div class="footer-grid">
+        <div class="footer-col">
+          <h3>About OAE</h3>
+          <a href="#">Who We Are</a>
+          <a href="#">Our Mission</a>
+        </div>
+        <div class="footer-col">
+          <h3>Navigation</h3>
+          <a href="#">News & Updates</a>
+          <a href="#">Exam Tips</a>
+        </div>
+        <div class="footer-col">
+          <h3>Exam Categories</h3>
+          <a href="#">JAMB Resources</a>
+          <a href="#">Post-UTME</a>
+        </div>
+        <div class="footer-col">
+          <h3>Contact</h3>
+          <div class="contact-item"><i class="ri-map-pin-line"></i> Lagos, Nigeria</div>
+          <div class="contact-item"><i class="ri-mail-line"></i> oaeofficial123@gmail.com</div>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <p>🌍 Trusted by <strong>15,000+ learners</strong> across Nigeria, Africa, and the world.</p>
+        <p>© 2025 OAE — Oluwatosin Academy of Excellence. All rights reserved.</p>
+        <div class="legal-links">
+          <a href="#">Terms of Use</a>
+          <a href="#">Privacy Policy</a>
+        </div>
+      </div>
+    </footer>
+    
+    <script src="../../Assets/js/post-jamb-navbar.js"></script>
+    <script src="../../Assets/js/navbar.js"></script>
+    <script src="../../Assets/js/aggregate-calculator.js"></script>
+    <script src="../../Assets/js/cross-tools.js"></script>
+</body>
+</html>

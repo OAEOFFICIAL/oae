@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Official Departmental Cut-Off Marks 2025/2026 | OAE Database</title>
+    <meta name="description" content="Check official departmental and general JAMB cut-off marks for Nigerian Universities, Polytechnics, and Colleges. Real-time admission target explorer.">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="/Assets/css/post-jamb-navbar.css">
+    <link rel="stylesheet" href="/Assets/css/cross-tools.css">
+    <link rel="stylesheet" href="/Assets/css/footer.css">
+    <link rel="stylesheet" href="/Assets/css/cutoffs.css">
+</head>
+<body>
+    <!-- OAE Navbar -->
+    <nav class="oae-navbar">
+        <div class="oae-logo">
+            <a href="../../Index.htm">
+               <img class="logo-quiz" src="../../oae.png" alt="OAE">
+            </a>
+        </div>
+        <div class="oae-search-section">
+            <div class="oae-search-container">
+                <i class="fas fa-search"></i>
+                <input type="text" id="site-search" placeholder="Search JAMB, schools, courses...">
+                <button class="oae-search-btn" id="search-btn">Search</button>
+            </div>
+        </div>
+        <ul class="oae-nav-links">
+            <li><a href="/admission/post-jamb/index.html">Post-JAMB</a></li>
+            <li><a href="/admission/index.html">Admission</a></li>
+            <li><a href="/admission/schools/index.html">Schools</a></li>
+            <li><a href="/admission/updates/index.html">Updates</a></li>
+        </ul>
+        <button class="oae-join-btn">Join OAE</button>
+        <button class="oae-hamburger" id="oaeHamburger">
+            <i class="fas fa-bars"></i>
+        </button>
+        <div class="oae-mobile-menu" id="oaeMobileMenu">
+            <ul class="oae-mobile-links">
+                <li><a href="/admission/post-jamb/index.html">Post-JAMB</a></li>
+                <li><a href="/admission/index.html">Admission</a></li>
+                <li><a href="/admission/schools/index.html">Schools</a></li>
+                <li><a href="/admission/updates/index.html">Updates</a></li>
+                <li>
+                    <button class="oae-join-mobile">
+                        <i class="fas fa-user-plus"></i> Join OAE
+                    </button>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="cutoffs-hero">
+        <h1>Official Cut-Off Marks Database</h1>
+        <p>Explore verified departmental cut-off marks for top institutions to set accurate target scores for your admission year.</p>
+        
+        <!-- Control Panel -->
+        <div class="control-panel">
+            <div class="control-group">
+                <label for="school-select">Select Institution</label>
+                <div style="position:relative;">
+                    <i class="fas fa-university" style="position:absolute; left:15px; top:17px; color:var(--green);"></i>
+                    <select id="school-select" style="padding-left:45px;"></select>
+                </div>
+            </div>
+            <div class="control-group">
+                <label for="year-select">Academic Year</label>
+                <div style="position:relative;">
+                    <i class="fas fa-calendar-alt" style="position:absolute; left:15px; top:17px; color:var(--green);"></i>
+                    <select id="year-select" style="padding-left:45px;" disabled>
+                        <option value="" disabled selected>Select School First...</option>
+                    </select>
+                </div>
+            </div>
+            <div class="control-group">
+                <label for="course-search">Find Your Course</label>
+                <div style="position:relative;">
+                    <i class="fas fa-search" style="position:absolute; left:15px; top:17px; color:var(--green);"></i>
+                    <input type="text" id="course-search" placeholder="e.g. Medicine, Law..." style="padding-left:45px;" disabled>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Main Content Container -->
+    <main class="data-container">
+        
+        <!-- Empty State -->
+        <div class="empty-state" id="empty-state">
+            <i class="fas fa-database"></i>
+            <h3>No School Selected</h3>
+            <p>Please select an institution and academic year from the controls above to view the official cut-off marks.</p>
+        </div>
+
+        <!-- School Banner (Hidden Initially) -->
+        <div class="school-banner" id="school-banner" style="display: none;">
+            <div class="school-banner-info">
+                <div style="display:flex; align-items:center; gap:15px;">
+                    <i class="fas fa-university" id="banner-school-icon" style="font-size:2.5rem; color:var(--green);"></i>
+                    <div>
+                        <h2 id="banner-school-name">University Name</h2>
+                        <p>Official Departmental Breakdown</p>
+                    </div>
+                </div>
+            </div>
+            <div class="general-cutoff-badge">
+                <span class="label">General JAMB Cut-Off</span>
+                <span class="score" id="banner-general-score">200+</span>
+            </div>
+        </div>
+
+        <!-- Accordion Container -->
+        <div class="accordion-container" id="accordion-container" style="display: none;">
+            <!-- Rendered via JS -->
+        </div>
+
+    </main>
+
+    <!-- Footer -->
+    <footer class="oae-footer">
+        <div class="footer-connect">
+            <h3>Connect With Us</h3>
+            <hr>
+            <div class="socials-bar">
+                <a href="#"><i class="fab fa-facebook"></i></a>
+                <a href="#"><i class="fab fa-twitter"></i></a>
+                <a href="#"><i class="fab fa-instagram"></i></a>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>© 2026 OAE — Oluwatosin Academy of Excellence. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="/Assets/js/enhance-ui.js"></script>
+    <script src="/Assets/js/post-jamb-navbar.js"></script>
+    <script src="/Assets/js/cutoffs-db.js"></script>
+    <script src="/Assets/js/cutoffs.js"></script>
+    <script src="/Assets/js/cross-tools.js"></script>
+</body>
+</html>

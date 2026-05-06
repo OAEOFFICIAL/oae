@@ -1,0 +1,283 @@
+{
+  "meta": {
+    "novelId": "the-successors",
+    "title": "The Successors",
+    "author": "Jerry Agada",
+    "year": 2013,
+    "sectionA": 25,
+    "notes": "JAMB 2013 prescribed novel. Add actual novel extracts and corresponding questions. Current structure shows format with sample comprehension passages."
+  },
+  "questions": [
+    {
+      "id": "ts-a-001",
+      "type": "comprehension",
+      "passageTitle": "Environmental Conservation",
+      "passage": "The degradation of our environment has become a critical issue that demands immediate attention from every sector of society. Deforestation, pollution, and climate change have combined to create a crisis that threatens the survival of countless species and the stability of ecosystems worldwide. Environmental scientists argue that we have reached a tipping point where the actions we take today will determine the viability of our planet for future generations. Many developing nations face the challenge of balancing economic development with environmental protection, as industries essential for poverty reduction often contribute significantly to environmental damage.",
+      "question": "According to the passage, what is the primary consequence of the environmental crisis described?",
+      "options": ["A. Industrial growth will be limited", "B. The survival of species and ecosystem stability are threatened", "C. Developing nations will refuse industrialization", "D. Climate change will affect only coastal regions"],
+      "answer": 1,
+      "explanation": "The passage explicitly states that environmental degradation 'threatens the survival of countless species and the stability of ecosystems worldwide.' This is presented as the consequence of deforestation, pollution, and climate change.",
+      "topic": "Prescribed Novel Extracts"
+    },
+    {
+      "id": "ts-a-002",
+      "type": "comprehension",
+      "passageTitle": "Environmental Conservation",
+      "passage": "The degradation of our environment has become a critical issue that demands immediate attention from every sector of society. Deforestation, pollution, and climate change have combined to create a crisis that threatens the survival of countless species and the stability of ecosystems worldwide. Environmental scientists argue that we have reached a tipping point where the actions we take today will determine the viability of our planet for future generations. Many developing nations face the challenge of balancing economic development with environmental protection, as industries essential for poverty reduction often contribute significantly to environmental damage.",
+      "question": "What does the phrase 'reached a tipping point' imply in this context?",
+      "options": ["A. We have finally found a solution to environmental problems", "B. We have exhausted all resources and cannot recover", "C. Our actions now will be critical in determining future outcomes", "D. Environmental scientists have stopped researching climate change"],
+      "answer": 2,
+      "explanation": "A 'tipping point' refers to a critical threshold. The passage indicates that actions taken now will determine the planet's viability, suggesting this is a critical juncture.",
+      "topic": "Prescribed Novel Extracts"
+    },
+    {
+      "id": "ts-a-003",
+      "type": "comprehension",
+      "passageTitle": "The Role of Education",
+      "passage": "Education remains the cornerstone of national development and individual advancement. Throughout history, societies that have invested significantly in their educational systems have experienced unprecedented growth in multiple sectors—from technology to commerce. Quality education empowers individuals to think critically, participate actively in democratic processes, and contribute meaningfully to their communities. However, access to quality education remains unequal across different regions and socioeconomic strata. In many developing countries, girls face additional barriers to schooling due to cultural practices and economic constraints. Addressing these inequalities requires multifaceted approaches including policy reforms, increased funding, and community engagement.",
+      "question": "Which of the following best describes the main idea of this passage?",
+      "options": ["A. Technology is more important than education for development", "B. Education is crucial for development but access remains unequally distributed", "C. Girls should not pursue higher education", "D. Developing countries do not value education"],
+      "answer": 1,
+      "explanation": "The passage emphasizes education as fundamental to development while also highlighting persistent inequalities in access. This balanced view is the main theme.",
+      "topic": "Prescribed Novel Extracts"
+    },
+    {
+      "id": "ts-a-004",
+      "type": "comprehension",
+      "passageTitle": "The Role of Education",
+      "passage": "Education remains the cornerstone of national development and individual advancement. Throughout history, societies that have invested significantly in their educational systems have experienced unprecedented growth in multiple sectors—from technology to commerce. Quality education empowers individuals to think critically, participate actively in democratic processes, and contribute meaningfully to their communities. However, access to quality education remains unequal across different regions and socioeconomic strata. In many developing countries, girls face additional barriers to schooling due to cultural practices and economic constraints. Addressing these inequalities requires multifaceted approaches including policy reforms, increased funding, and community engagement.",
+      "question": "The author mentions 'cultural practices and economic constraints' primarily to:",
+      "options": ["A. Praise developing countries for their traditions", "B. Explain why girls in developing countries face barriers to education", "C. Suggest that girls are not interested in education", "D. Argue that education is unnecessary in developing countries"],
+      "answer": 1,
+      "explanation": "These factors are presented as explanations for the additional barriers girls face in developing countries to accessing schooling.",
+      "topic": "Prescribed Novel Extracts"
+    },
+    {
+      "id": "ts-a-005",
+      "type": "comprehension",
+      "passageTitle": "Healthcare Innovation",
+      "passage": "The advancement of medical technology has revolutionized patient care and outcomes. From diagnostic imaging to surgical innovations, modern medicine now offers treatments that were unimaginable two decades ago. However, the high costs of these technologies have created a significant divide between wealthy nations and developing countries. Many African nations struggle to acquire and maintain essential medical equipment, leading to preventable deaths that could be avoided with adequate resources. International partnerships and technology transfer initiatives have begun to narrow this gap, but much remains to be done. Governments must prioritize healthcare infrastructure as a fundamental right rather than a luxury commodity.",
+      "question": "What problem is highlighted regarding the high costs of medical technology?",
+      "options": ["A. It has improved the quality of life for wealthy nations only", "B. It has created inequality in access to medical care between wealthy and developing nations", "C. It has discouraged doctors from pursuing medical careers", "D. It has made traditional medicine obsolete worldwide"],
+      "answer": 1,
+      "explanation": "The passage explicitly states that high costs have 'created a significant divide between wealthy nations and developing countries,' leading to preventable deaths in nations without resources.",
+      "topic": "Prescribed Novel Extracts"
+    },
+    {
+      "id": "ts-a-006",
+      "type": "vocabulary",
+      "question": "In the passage about healthcare, the word 'revolutionized' most nearly means:",
+      "options": ["A. Made no significant change", "B. Caused complete and dramatic change", "C. Returned to traditional methods", "D. Made changes very slowly"],
+      "answer": 1,
+      "explanation": "'Revolutionized' means to fundamentally transform or make dramatic changes, as medical technology has done to patient care.",
+      "topic": "Prescribed Novel Extracts"
+    },
+    {
+      "id": "ts-a-007",
+      "type": "summary",
+      "passageTitle": "Digital Transformation",
+      "passage": "Digital transformation has become inevitable in the modern economy. Businesses across all sectors have embraced digital technologies to streamline operations, reduce costs, and enhance customer experience. Cloud computing, artificial intelligence, and big data analytics now form the backbone of competitive advantage. Companies that fail to adapt to these changes risk becoming obsolete within a few years. Small and medium enterprises (SMEs), in particular, face challenges in acquiring the necessary technology and skilled personnel. Governments and private sector organizations are partnering to provide training and support to help SMEs navigate this transition. The digital revolution promises greater efficiency and innovation, but also requires continuous learning and adaptation from the workforce.",
+      "question": "Which statement best summarizes the main points of this passage?",
+      "options": ["A. Only large corporations can benefit from digital technology", "B. Digital transformation is optional for modern businesses", "C. Digital transformation is necessary but challenging for all businesses, particularly SMEs", "D. The digital revolution will eliminate the need for human workers"],
+      "answer": 2,
+      "explanation": "The passage emphasizes digital transformation as essential ('inevitable'), highlights particular challenges for SMEs, and notes the need for ongoing adaptation—all captured in option C.",
+      "topic": "Prescribed Novel Extracts"
+    },
+    {
+      "id": "ts-a-008",
+      "type": "comprehension",
+      "passageTitle": "Cultural Heritage",
+      "passage": "Cultural heritage represents the collective memory and identity of a people. Through traditional practices, languages, and artistic expressions, communities maintain connections to their ancestors and pass on values to future generations. However, rapid globalization and urbanization have threatened many traditional cultures. Younger generations, attracted to modern lifestyles and international influences, often abandon traditional practices. Museums and cultural organizations work tirelessly to document and preserve endangered traditions. Some communities have found success in monetizing their cultural heritage through tourism, creating economic incentives to maintain traditions. Nevertheless, commercialization poses its own risks, as traditions may be altered or misrepresented to appeal to external audiences.",
+      "question": "According to the passage, what is one positive outcome of monetizing cultural heritage?",
+      "options": ["A. Traditions are no longer needed", "B. It creates economic incentives for communities to maintain their traditions", "C. It eliminates the need for museums", "D. It ensures that all traditions remain unchanged"],
+      "answer": 1,
+      "explanation": "The passage states that monetization through tourism has 'created economic incentives to maintain traditions' in some communities.",
+      "topic": "Prescribed Novel Extracts"
+    },
+    {
+      "id": "ts-a-009",
+      "type": "comprehension",
+      "passageTitle": "Agricultural Innovation",
+      "passage": "Modern agricultural practices face unprecedented challenges from climate change, soil degradation, and growing population demands. Traditional farming methods, while sustainable, often cannot produce sufficient yields to feed a global population exceeding 8 billion people. Agricultural scientists have embraced genetic modification and precision farming technologies to increase productivity. These innovations promise to reduce pesticide use, conserve water, and enhance crop resilience to extreme weather. However, adoption of these technologies requires significant investment in research, infrastructure, and farmer education. Developing nations, with limited resources, struggle to access and implement these innovations. International cooperation and technology-sharing agreements are essential to ensure that agricultural advancements benefit all communities, not just wealthy nations.",
+      "question": "What is the main challenge addressed in this passage?",
+      "options": ["A. Traditional farming is superior to modern methods", "B. Feeding the global population requires balancing productivity with sustainability", "C. Genetic modification should be banned worldwide", "D. Developing nations have abundant resources for agriculture"],
+      "answer": 1,
+      "explanation": "The passage discusses the challenge of meeting food demands while managing environmental concerns, and how this is complicated by unequal access to technology between wealthy and developing nations.",
+      "topic": "Prescribed Novel Extracts"
+    },
+    {
+      "id": "ts-a-010",
+      "type": "inference",
+      "question": "From the agricultural passage, what can be inferred about international cooperation?",
+      "options": ["A. It is unnecessary for agricultural development", "B. It is essential for ensuring equitable access to agricultural innovations", "C. It has already solved all food security problems", "D. It should only benefit wealthy nations"],
+      "answer": 1,
+      "explanation": "The passage explicitly states that 'international cooperation and technology-sharing agreements are essential to ensure that agricultural advancements benefit all communities,' making this a direct inference.",
+      "topic": "Prescribed Novel Extracts"
+    },
+    {
+      "id": "ts-a-011",
+      "type": "comprehension",
+      "passageTitle": "Sample Novel Extract Placeholder",
+      "passage": "[INSERT ACTUAL EXTRACT FROM THE SUCCESSORS HERE - This section is reserved for a comprehension passage taken directly from Jerry Agada's 'The Successors'. Please replace this placeholder with the actual text from the novel and adjust the questions accordingly.]",
+      "question": "Sample Question 1: [Replace with actual question based on the novel extract]",
+      "options": ["A. Sample option A", "B. Sample option B", "C. Sample option C", "D. Sample option D"],
+      "answer": 0,
+      "explanation": "Replace with actual explanation",
+      "topic": "Prescribed Novel Extracts"
+    },
+    {
+      "id": "ts-a-012",
+      "type": "comprehension",
+      "passageTitle": "Sample Novel Extract Placeholder",
+      "passage": "[INSERT ACTUAL EXTRACT FROM THE SUCCESSORS HERE]",
+      "question": "Sample Question 2: [Replace with actual question based on the novel extract]",
+      "options": ["A. Sample option A", "B. Sample option B", "C. Sample option C", "D. Sample option D"],
+      "answer": 0,
+      "explanation": "Replace with actual explanation",
+      "topic": "Prescribed Novel Extracts"
+    },
+    {
+      "id": "ts-a-013",
+      "type": "comprehension",
+      "passageTitle": "Sample Novel Extract Placeholder",
+      "passage": "[INSERT ACTUAL EXTRACT FROM THE SUCCESSORS HERE]",
+      "question": "Sample Question 3: [Replace with actual question based on the novel extract]",
+      "options": ["A. Sample option A", "B. Sample option B", "C. Sample option C", "D. Sample option D"],
+      "answer": 0,
+      "explanation": "Replace with actual explanation",
+      "topic": "Prescribed Novel Extracts"
+    },
+    {
+      "id": "ts-a-014",
+      "type": "comprehension",
+      "passageTitle": "Sample Novel Extract Placeholder",
+      "passage": "[INSERT ACTUAL EXTRACT FROM THE SUCCESSORS HERE]",
+      "question": "Sample Question 4: [Replace with actual question based on the novel extract]",
+      "options": ["A. Sample option A", "B. Sample option B", "C. Sample option C", "D. Sample option D"],
+      "answer": 0,
+      "explanation": "Replace with actual explanation",
+      "topic": "Prescribed Novel Extracts"
+    },
+    {
+      "id": "ts-a-015",
+      "type": "comprehension",
+      "passageTitle": "Sample Novel Extract Placeholder",
+      "passage": "[INSERT ACTUAL EXTRACT FROM THE SUCCESSORS HERE]",
+      "question": "Sample Question 5: [Replace with actual question based on the novel extract]",
+      "options": ["A. Sample option A", "B. Sample option B", "C. Sample option C", "D. Sample option D"],
+      "answer": 0,
+      "explanation": "Replace with actual explanation",
+      "topic": "Prescribed Novel Extracts"
+    },
+    {
+      "id": "ts-a-016",
+      "type": "comprehension",
+      "passageTitle": "Sample Novel Extract Placeholder",
+      "passage": "[INSERT ACTUAL EXTRACT FROM THE SUCCESSORS HERE]",
+      "question": "Sample Question 6: [Replace with actual question based on the novel extract]",
+      "options": ["A. Sample option A", "B. Sample option B", "C. Sample option C", "D. Sample option D"],
+      "answer": 0,
+      "explanation": "Replace with actual explanation",
+      "topic": "Prescribed Novel Extracts"
+    },
+    {
+      "id": "ts-a-017",
+      "type": "comprehension",
+      "passageTitle": "Sample Novel Extract Placeholder",
+      "passage": "[INSERT ACTUAL EXTRACT FROM THE SUCCESSORS HERE]",
+      "question": "Sample Question 7: [Replace with actual question based on the novel extract]",
+      "options": ["A. Sample option A", "B. Sample option B", "C. Sample option C", "D. Sample option D"],
+      "answer": 0,
+      "explanation": "Replace with actual explanation",
+      "topic": "Prescribed Novel Extracts"
+    },
+    {
+      "id": "ts-a-018",
+      "type": "comprehension",
+      "passageTitle": "Sample Novel Extract Placeholder",
+      "passage": "[INSERT ACTUAL EXTRACT FROM THE SUCCESSORS HERE]",
+      "question": "Sample Question 8: [Replace with actual question based on the novel extract]",
+      "options": ["A. Sample option A", "B. Sample option B", "C. Sample option C", "D. Sample option D"],
+      "answer": 0,
+      "explanation": "Replace with actual explanation",
+      "topic": "Prescribed Novel Extracts"
+    },
+    {
+      "id": "ts-a-019",
+      "type": "comprehension",
+      "passageTitle": "Sample Novel Extract Placeholder",
+      "passage": "[INSERT ACTUAL EXTRACT FROM THE SUCCESSORS HERE]",
+      "question": "Sample Question 9: [Replace with actual question based on the novel extract]",
+      "options": ["A. Sample option A", "B. Sample option B", "C. Sample option C", "D. Sample option D"],
+      "answer": 0,
+      "explanation": "Replace with actual explanation",
+      "topic": "Prescribed Novel Extracts"
+    },
+    {
+      "id": "ts-a-020",
+      "type": "comprehension",
+      "passageTitle": "Sample Novel Extract Placeholder",
+      "passage": "[INSERT ACTUAL EXTRACT FROM THE SUCCESSORS HERE]",
+      "question": "Sample Question 10: [Replace with actual question based on the novel extract]",
+      "options": ["A. Sample option A", "B. Sample option B", "C. Sample option C", "D. Sample option D"],
+      "answer": 0,
+      "explanation": "Replace with actual explanation",
+      "topic": "Prescribed Novel Extracts"
+    },
+    {
+      "id": "ts-a-021",
+      "type": "comprehension",
+      "passageTitle": "Sample Novel Extract Placeholder",
+      "passage": "[INSERT ACTUAL EXTRACT FROM THE SUCCESSORS HERE]",
+      "question": "Sample Question 11: [Replace with actual question based on the novel extract]",
+      "options": ["A. Sample option A", "B. Sample option B", "C. Sample option C", "D. Sample option D"],
+      "answer": 0,
+      "explanation": "Replace with actual explanation",
+      "topic": "Prescribed Novel Extracts"
+    },
+    {
+      "id": "ts-a-022",
+      "type": "comprehension",
+      "passageTitle": "Sample Novel Extract Placeholder",
+      "passage": "[INSERT ACTUAL EXTRACT FROM THE SUCCESSORS HERE]",
+      "question": "Sample Question 12: [Replace with actual question based on the novel extract]",
+      "options": ["A. Sample option A", "B. Sample option B", "C. Sample option C", "D. Sample option D"],
+      "answer": 0,
+      "explanation": "Replace with actual explanation",
+      "topic": "Prescribed Novel Extracts"
+    },
+    {
+      "id": "ts-a-023",
+      "type": "comprehension",
+      "passageTitle": "Sample Novel Extract Placeholder",
+      "passage": "[INSERT ACTUAL EXTRACT FROM THE SUCCESSORS HERE]",
+      "question": "Sample Question 13: [Replace with actual question based on the novel extract]",
+      "options": ["A. Sample option A", "B. Sample option B", "C. Sample option C", "D. Sample option D"],
+      "answer": 0,
+      "explanation": "Replace with actual explanation",
+      "topic": "Prescribed Novel Extracts"
+    },
+    {
+      "id": "ts-a-024",
+      "type": "comprehension",
+      "passageTitle": "Sample Novel Extract Placeholder",
+      "passage": "[INSERT ACTUAL EXTRACT FROM THE SUCCESSORS HERE]",
+      "question": "Sample Question 14: [Replace with actual question based on the novel extract]",
+      "options": ["A. Sample option A", "B. Sample option B", "C. Sample option C", "D. Sample option D"],
+      "answer": 0,
+      "explanation": "Replace with actual explanation",
+      "topic": "Prescribed Novel Extracts"
+    },
+    {
+      "id": "ts-a-025",
+      "type": "comprehension",
+      "passageTitle": "Sample Novel Extract Placeholder",
+      "passage": "[INSERT ACTUAL EXTRACT FROM THE SUCCESSORS HERE]",
+      "question": "Sample Question 15: [Replace with actual question based on the novel extract]",
+      "options": ["A. Sample option A", "B. Sample option B", "C. Sample option C", "D. Sample option D"],
+      "answer": 0,
+      "explanation": "Replace with actual explanation",
+      "topic": "Prescribed Novel Extracts"
+    }
+  ]
+}

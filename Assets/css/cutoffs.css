@@ -1,0 +1,393 @@
+/* cutoffs.css - OAE Global Design System */
+
+:root {
+    --green: #0a8a2f;
+    --darkgreen: #076222;
+    --lightgreen: #e8f5e9;
+    --accent: #fbc02d;
+    --oae-dark: #1a1a1a;
+    --muted: #666;
+    --card: #f8f9fa;
+    --card-border: #e0e0e0;
+    --shadow: 0 4px 20px rgba(0, 0, 0, 0.05);
+    --shadow-hover: 0 8px 30px rgba(10, 138, 47, 0.15);
+    --font-main: 'Inter', system-ui, -apple-system, sans-serif;
+}
+
+body {
+    font-family: var(--font-main);
+    background-color: #fcfcfc;
+    color: var(--oae-dark);
+    margin: 0;
+    padding: 0;
+}
+
+/* Hero Section */
+.cutoffs-hero {
+    background: linear-gradient(135deg, var(--green) 0%, var(--darkgreen) 100%);
+    color: white;
+    padding: 80px 20px 60px;
+    text-align: center;
+    position: relative;
+    overflow: hidden;
+}
+
+.cutoffs-hero::before {
+    content: '';
+    position: absolute;
+    top: 0; left: 0; right: 0; bottom: 0;
+    background: url('data:image/svg+xml;utf8,<svg width="20" height="20" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><circle cx="2" cy="2" r="2" fill="rgba(255,255,255,0.05)"/></svg>');
+    background-size: 20px 20px;
+    pointer-events: none;
+}
+
+.cutoffs-hero h1 {
+    font-size: 2.8rem;
+    margin-bottom: 20px;
+    font-weight: 800;
+    letter-spacing: -0.5px;
+}
+
+.cutoffs-hero p {
+    font-size: 1.15rem;
+    max-width: 700px;
+    margin: 0 auto 30px;
+    line-height: 1.6;
+    opacity: 0.95;
+}
+
+/* Control Panel (Glassmorphism) */
+.control-panel {
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    border-radius: 16px;
+    padding: 25px;
+    max-width: 900px;
+    margin: 0 auto;
+    display: flex;
+    gap: 15px;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+}
+
+.control-group {
+    flex: 1;
+    min-width: 250px;
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+}
+
+.control-group label {
+    font-size: 0.85rem;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-weight: 600;
+    margin-bottom: 8px;
+    color: rgba(255,255,255,0.9);
+}
+
+.control-group select,
+.control-group input {
+    width: 100%;
+    padding: 14px 20px;
+    border-radius: 8px;
+    border: 2px solid transparent;
+    font-size: 1rem;
+    background: white;
+    color: var(--oae-dark);
+    transition: all 0.3s ease;
+    outline: none;
+    box-sizing: border-box;
+}
+
+.control-group select:focus,
+.control-group input:focus {
+    border-color: var(--accent);
+    box-shadow: 0 0 0 3px rgba(251, 192, 45, 0.3);
+}
+
+/* Main Container */
+.data-container {
+    max-width: 1000px;
+    margin: -30px auto 60px;
+    padding: 0 20px;
+    position: relative;
+    z-index: 10;
+}
+
+/* Empty State */
+.empty-state {
+    background: white;
+    border-radius: 16px;
+    padding: 60px 20px;
+    text-align: center;
+    box-shadow: var(--shadow);
+    border: 1px solid var(--card-border);
+}
+
+.empty-state i {
+    font-size: 4rem;
+    color: #e0e0e0;
+    margin-bottom: 20px;
+}
+
+.empty-state h3 {
+    font-size: 1.5rem;
+    color: var(--muted);
+    margin-bottom: 10px;
+}
+
+/* Banner */
+.school-banner {
+    background: white;
+    border-radius: 16px;
+    padding: 30px;
+    margin-bottom: 30px;
+    box-shadow: var(--shadow);
+    border-left: 6px solid var(--green);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.school-banner-info h2 {
+    font-size: 2rem;
+    margin: 0 0 10px 0;
+    color: var(--oae-dark);
+}
+
+.school-banner-info p {
+    margin: 0;
+    color: var(--muted);
+    font-size: 1.1rem;
+}
+
+.general-cutoff-badge {
+    background: var(--lightgreen);
+    color: var(--darkgreen);
+    padding: 15px 25px;
+    border-radius: 12px;
+    text-align: center;
+    border: 1px solid rgba(10, 138, 47, 0.2);
+}
+
+.general-cutoff-badge .label {
+    display: block;
+    font-size: 0.85rem;
+    text-transform: uppercase;
+    font-weight: 700;
+    margin-bottom: 5px;
+}
+
+.general-cutoff-badge .score {
+    display: block;
+    font-size: 2.2rem;
+    font-weight: 800;
+}
+
+/* Accordion Styling */
+.accordion-container {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.accordion-item {
+    background: white;
+    border-radius: 12px;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.03);
+    border: 1px solid var(--card-border);
+    overflow: hidden;
+    transition: all 0.3s ease;
+}
+
+.accordion-item.active {
+    border-color: var(--green);
+    box-shadow: var(--shadow-hover);
+}
+
+.accordion-header {
+    padding: 20px 25px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    cursor: pointer;
+    background: white;
+    transition: background 0.3s ease;
+    user-select: none;
+}
+
+.accordion-header:hover {
+    background: var(--card);
+}
+
+.accordion-title {
+    font-size: 1.2rem;
+    font-weight: 700;
+    color: var(--oae-dark);
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.accordion-title i {
+    color: var(--green);
+    font-size: 1.4rem;
+}
+
+.accordion-icon {
+    font-size: 1.2rem;
+    color: var(--muted);
+    transition: transform 0.3s ease;
+}
+
+.accordion-item.active .accordion-icon {
+    transform: rotate(180deg);
+    color: var(--green);
+}
+
+/* Accordion Content */
+.accordion-content {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.4s cubic-bezier(0, 1, 0, 1);
+    background: #fafafa;
+}
+
+.accordion-item.active .accordion-content {
+    max-height: 3000px;
+    transition: max-height 0.6s ease-in-out;
+}
+
+/* Responsive Table Wrapper */
+.table-scroll-wrapper {
+    width: 100%;
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+}
+
+.course-table {
+    width: 100%;
+    border-collapse: collapse;
+    min-width: 600px; /* Forces horizontal scroll on small screens */
+}
+
+.course-table th,
+.course-table td {
+    padding: 13px 16px;
+    text-align: left;
+    border-bottom: 1px solid var(--card-border);
+    white-space: nowrap;
+}
+
+.course-table .col-course {
+    min-width: 200px;
+    white-space: normal;
+}
+
+.course-table th {
+    background: #f1f3f5;
+    font-size: 0.82rem;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    color: var(--muted);
+    font-weight: 700;
+    position: sticky;
+    top: 0;
+}
+
+.course-table th.col-merit {
+    background: var(--lightgreen);
+    color: var(--darkgreen);
+}
+
+.course-table tr:last-child td { border-bottom: none; }
+
+.course-table tbody tr { transition: background 0.2s ease; }
+.course-table tbody tr:hover { background: white; }
+
+.course-name {
+    font-weight: 600;
+    color: var(--oae-dark);
+    font-size: 1rem;
+}
+
+.course-score {
+    font-weight: 800;
+    color: var(--green);
+    font-size: 1.1rem;
+    background: rgba(232, 245, 233, 0.4);
+}
+
+.state-score {
+    font-weight: 600;
+    color: #555;
+    font-size: 0.95rem;
+    text-align: center;
+}
+
+.nil-badge {
+    background: #f1f1f1;
+    color: #bbb;
+    font-size: 0.78rem;
+    padding: 2px 8px;
+    border-radius: 20px;
+    font-weight: 600;
+}
+
+
+/* Notification/Alert */
+.data-alert {
+    background: #fff3e0;
+    border-left: 4px solid #ff9800;
+    padding: 15px 20px;
+    border-radius: 8px;
+    margin-bottom: 20px;
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    font-size: 0.95rem;
+    color: #e65100;
+}
+
+.data-alert i {
+    font-size: 1.4rem;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .cutoffs-hero {
+        padding: 60px 15px 40px;
+    }
+    
+    .cutoffs-hero h1 {
+        font-size: 2rem;
+    }
+
+    .school-banner {
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 20px;
+    }
+
+    .general-cutoff-badge {
+        width: 100%;
+        box-sizing: border-box;
+    }
+
+    .course-table th,
+    .course-table td {
+        padding: 12px 15px;
+    }
+
+    .accordion-header {
+        padding: 15px 20px;
+    }
+}

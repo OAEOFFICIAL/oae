@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Literature Reader | OAE</title>
+    <meta name="description" content="Interactive reading interface for JAMB and WAEC literature texts. Navigate chapters instantly and analyze key characters.">
+    <meta name="keywords" content="literature reader, chapter summary, character analysis, OAE">
+    <meta property="og:type" content="website">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <link rel="stylesheet" href="/Assets/css/post-jamb-navbar.css">
+    <link rel="stylesheet" href="/Assets/css/footer.css">
+    <link rel="stylesheet" href="css/literature.css">
+</head>
+<body>
+
+    <!-- OAE Global Navbar -->
+    <nav class="oae-navbar">
+         <div class="oae-logo">
+            <a href="/Index.htm"><img class="logo-quiz" src="/oae.png" alt="OAE"></a>
+        </div>
+        <ul class="oae-nav-links">
+            <li><a href="index.html">Library</a></li>
+            <li><a href="/admission/post-jamb/index.html">Post-JAMB</a></li>
+            <li><a href="/jamb.htm">Exams</a></li>
+        </ul>
+        <button class="oae-join-btn" id="oaeJoinBtn">Join OAE</button>
+    </nav>
+
+    <!-- READER WRAPPER -->
+    <div class="reader-wrapper" id="reader-container" style="display: none;">
+        
+        <!-- SIDEBAR NAVIGATION -->
+        <aside class="reader-sidebar">
+            <img src="" alt="Book Cover" class="reader-cover-small" id="side-cover">
+            <h3 style="margin: 0 0 5px; color: #fff;" id="side-title">Book Title</h3>
+            <p style="color: #94a3b8; font-size: 0.85rem; margin-bottom: 20px;" id="side-author">Author</p>
+            
+            <div class="tab-buttons">
+                <button class="tab-btn active" id="tab-chapters">Chapters</button>
+                <button class="tab-btn" id="tab-characters">Characters</button>
+            </div>
+
+            <ul class="chapter-list" id="sidebar-list">
+                <!-- Dynamically populated -->
+            </ul>
+        </aside>
+
+        <!-- MAIN READING AREA -->
+        <main class="reader-main">
+            <div id="content-area">
+                <h1 class="reader-title" id="content-title">Loading...</h1>
+                <div class="reader-content" id="content-body">
+                    Please wait while the text is loaded.
+                </div>
+            </div>
+        </main>
+    </div>
+
+    <!-- ERROR STATE -->
+    <div id="error-container" style="display: none; text-align: center; padding: 100px 20px;">
+        <i class="fas fa-exclamation-triangle" style="font-size: 4rem; color: #ef4444; margin-bottom: 20px;"></i>
+        <h1 style="color: white;">Book Not Found</h1>
+        <a href="index.html" style="color: #10b981; text-decoration: none; font-weight: bold;">Return to Library</a>
+    </div>
+
+    <script src="/Assets/js/post-jamb-navbar.js"></script>
+    <script src="data/books.js"></script>
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            // Get book ID from URL
+            const urlParams = new URLSearchParams(window.location.search);
+            const bookId = urlParams.get('id');
+
+            // Find book in DB
+            const book = literatureDatabase.find(b => b.id === bookId);
+
+            if (!book) {
+                document.getElementById('error-container').style.display = 'block';
+                return;
+            }
+
+            // Populate Sidebar Info
+            document.getElementById('reader-container').style.display = 'flex';
+            document.getElementById('side-cover').src = book.coverImage;
+            document.getElementById('side-title').innerText = book.title;
+            document.getElementById('side-author').innerText = book.author;
+            document.title = `${book.title} | OAE`;
+
+            // State
+            let currentView = 'chapters'; // or 'characters'
+            let activeChapter = 1;
+
+            const sidebarList = document.getElementById('sidebar-list');
+            const contentTitle = document.getElementById('content-title');
+            const contentBody = document.getElementById('content-body');
+            
+            const tabChapters = document.getElementById('tab-chapters');
+            const tabCharacters = document.getElementById('tab-characters');
+
+            function renderSidebar() {
+                sidebarList.innerHTML = '';
+                if (currentView === 'chapters') {
+                    book.chapters.forEach(chap => {
+                        const li = document.createElement('li');
+                        li.className = `chapter-item ${activeChapter === chap.number ? 'active' : ''}`;
+                        li.innerText = `Chapter ${chap.number}: ${chap.title}`;
+                        li.onclick = () => {
+                            activeChapter = chap.number;
+                            renderContent();
+                            renderSidebar();
+                        };
+                        sidebarList.appendChild(li);
+                    });
+                } else {
+                    const li = document.createElement('li');
+                    li.className = 'chapter-item active';
+                    li.innerText = 'All Characters Overview';
+                    sidebarList.appendChild(li);
+                }
+            }
+
+            function renderContent() {
+                if (currentView === 'chapters') {
+                    const chap = book.chapters.find(c => c.number === activeChapter);
+                    contentTitle.innerText = `Chapter ${chap.number}: ${chap.title}`;
+                    contentBody.innerHTML = `<p>${chap.summary}</p>`;
+                } else {
+                    contentTitle.innerText = "Character Analysis";
+                    let charHTML = '<div class="character-grid">';
+                    book.characters.forEach(c => {
+                        charHTML += `
+                            <div class="character-card">
+                                <h3 class="character-name">${c.name}</h3>
+                                <div class="character-role">${c.role}</div>
+                                <p style="margin:0; font-size:0.95rem;">${c.desc}</p>
+                            </div>
+                        `;
+                    });
+                    charHTML += '</div>';
+                    contentBody.innerHTML = charHTML;
+                }
+            }
+
+            // Tab listeners
+            tabChapters.onclick = () => {
+                currentView = 'chapters';
+                tabChapters.classList.add('active');
+                tabCharacters.classList.remove('active');
+                renderSidebar();
+                renderContent();
+            };
+
+            tabCharacters.onclick = () => {
+                currentView = 'characters';
+                tabCharacters.classList.add('active');
+                tabChapters.classList.remove('active');
+                renderSidebar();
+                renderContent();
+            };
+
+            // Init
+            renderSidebar();
+            renderContent();
+        });
+    </script>
+</body>
+</html>

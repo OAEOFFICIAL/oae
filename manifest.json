@@ -1,0 +1,21 @@
+{
+  "name": "Oluwatosin Academy of Excellence",
+  "short_name": "OAE",
+  "description": "Educational Platform for JAMB, WAEC, NECO & Tech Careers",
+  "start_url": "/index.html",
+  "display": "standalone",
+  "background_color": "#ffffff",
+  "theme_color": "#0a8a2f",
+  "icons": [
+    {
+      "src": "/OAE.png",
+      "sizes": "192x192",
+      "type": "image/png"
+    },
+    {
+      "src": "/OAE.png",
+      "sizes": "512x512",
+      "type": "image/png"
+    }
+  ]
+}

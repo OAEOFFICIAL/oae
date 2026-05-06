@@ -1,0 +1,261 @@
+/* --- AGGREGATE CALCULATOR PREMIUM CSS --- */
+
+/* Hero Section */
+.calc-hero {
+    background: linear-gradient(135deg, #0f9b3c 0%, #064d1a 100%);
+    color: white;
+    padding: 70px 20px;
+    text-align: center;
+    position: relative;
+    overflow: hidden;
+}
+.calc-hero::after {
+    content: '';
+    position: absolute;
+    top: -50%; left: -50%; width: 200%; height: 200%;
+    background: radial-gradient(circle, rgba(255,255,255,0.1) 0%, transparent 60%);
+    pointer-events: none;
+}
+.calc-hero-content {
+    max-width: 800px;
+    margin: 0 auto;
+    position: relative;
+    z-index: 2;
+}
+.calc-hero-content h1 {
+    font-size: 2.8rem;
+    margin-bottom: 15px;
+    font-weight: 800;
+    letter-spacing: -0.5px;
+}
+.calc-hero-content h1 i {
+    color: #4ade80;
+    margin-right: 12px;
+}
+.calc-hero-content p {
+    font-size: 1.15rem;
+    line-height: 1.6;
+    opacity: 0.95;
+}
+
+/* Main Container */
+.calc-main {
+    padding: 70px 20px;
+    background: #f1f5f9;
+}
+
+.calc-container {
+    max-width: 1050px;
+    margin: -100px auto 0;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 30px;
+    position: relative;
+    z-index: 10;
+}
+
+/* Panel Styles */
+.calc-input-panel, .calc-result-panel {
+    background: #ffffff;
+    border-radius: 20px;
+    padding: 40px 30px;
+    box-shadow: 0 20px 40px rgba(0,0,0,0.08);
+    border: 1px solid rgba(0,0,0,0.03);
+    transition: transform 0.3s ease;
+}
+
+.calc-input-panel h3, .calc-result-panel h3 {
+    margin-top: 0;
+    margin-bottom: 30px;
+    color: #1e293b;
+    font-size: 1.6rem;
+    font-weight: 700;
+    border-bottom: 2px solid #f1f5f9;
+    padding-bottom: 15px;
+}
+
+/* Form Groups */
+.form-group {
+    margin-bottom: 22px;
+}
+.form-group label {
+    display: block;
+    margin-bottom: 10px;
+    font-weight: 600;
+    color: #475569;
+    font-size: 0.95rem;
+}
+.form-group input, .form-group select {
+    width: 100%;
+    padding: 14px 18px;
+    border: 2px solid #e2e8f0;
+    border-radius: 10px;
+    font-size: 1.05rem;
+    box-sizing: border-box;
+    transition: all 0.3s ease;
+    font-family: inherit;
+    background: #f8fafc;
+    color: #334155;
+}
+.form-group input:hover, .form-group select:hover {
+    border-color: #cbd5e1;
+}
+.form-group input:focus, .form-group select:focus {
+    border-color: #10b981;
+    background: #ffffff;
+    outline: none;
+    box-shadow: 0 0 0 4px rgba(16, 185, 129, 0.15);
+}
+
+.olevel-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 12px;
+}
+.olevel-grade {
+    width: 100%;
+}
+
+.calc-action-btn {
+    width: 100%;
+    padding: 16px;
+    background: linear-gradient(135deg, #10b981 0%, #059669 100%);
+    color: white;
+    border: none;
+    border-radius: 12px;
+    font-size: 1.2rem;
+    font-weight: 700;
+    cursor: pointer;
+    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+    margin-top: 15px;
+    box-shadow: 0 10px 15px -3px rgba(16, 185, 129, 0.3);
+}
+.calc-action-btn:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 15px 25px -5px rgba(16, 185, 129, 0.4);
+}
+.calc-action-btn:active {
+    transform: translateY(1px);
+}
+
+.calc-error {
+    color: #ef4444;
+    font-size: 0.95rem;
+    margin-bottom: 15px;
+    display: none;
+    font-weight: 600;
+    background: #fef2f2;
+    padding: 12px;
+    border-radius: 8px;
+    border-left: 4px solid #ef4444;
+}
+
+/* Result Panel */
+.calc-result-panel {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: #ffffff; /* Crucial for html2pdf */
+}
+
+/* SVG Ring Chart */
+.score-ring-container {
+    position: relative;
+    width: 200px;
+    height: 200px;
+    margin: 10px auto 35px;
+    filter: drop-shadow(0px 10px 15px rgba(0,0,0,0.05));
+}
+
+.progress-ring {
+    width: 100%;
+    height: 100%;
+}
+
+.progress-ring-circle {
+    transition: stroke-dashoffset 1.5s cubic-bezier(0.16, 1, 0.3, 1), stroke 0.5s ease;
+    transform: rotate(-90deg);
+    transform-origin: 50% 50%;
+    stroke-dasharray: 490;
+    stroke-dashoffset: 490;
+    stroke: #e2e8f0;
+    stroke-linecap: round;
+}
+
+.score-text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 3rem;
+    font-weight: 800;
+    color: #1e293b;
+    letter-spacing: -1px;
+}
+
+.feedback-card {
+    background: #f8fafc;
+    padding: 25px;
+    border-radius: 16px;
+    width: 100%;
+    box-sizing: border-box;
+    transition: all 0.4s ease;
+    border: 1px solid rgba(0,0,0,0.03);
+}
+.feedback-card h4 {
+    margin-top: 0;
+    margin-bottom: 12px;
+    font-size: 1.35rem;
+    font-weight: 700;
+}
+.feedback-card p {
+    margin: 0;
+    color: #475569;
+    line-height: 1.6;
+    font-size: 1.05rem;
+}
+
+.formula-info {
+    margin-top: auto;
+    padding-top: 30px;
+    font-size: 0.95rem;
+    color: #64748b;
+    background: white; /* Important for PDF readability */
+    width: 100%;
+}
+.formula-info span {
+    font-family: monospace;
+    background: #f1f5f9;
+    padding: 4px 8px;
+    border-radius: 4px;
+    font-weight: bold;
+    color: #334155;
+}
+
+/* Download Button Enhancements */
+#download-pdf-btn {
+    background: linear-gradient(135deg, #3b82f6 0%, #2563eb 100%);
+    box-shadow: 0 8px 15px -3px rgba(59, 130, 246, 0.3);
+}
+#download-pdf-btn:hover {
+    box-shadow: 0 15px 25px -5px rgba(59, 130, 246, 0.4);
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .calc-container {
+        grid-template-columns: 1fr;
+        margin-top: -30px;
+    }
+    .calc-hero-content h1 {
+        font-size: 2.2rem;
+    }
+    .score-ring-container {
+        width: 160px;
+        height: 160px;
+    }
+    .score-text {
+        font-size: 2.4rem;
+    }
+}

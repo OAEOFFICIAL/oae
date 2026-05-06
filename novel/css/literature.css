@@ -1,0 +1,239 @@
+/* novel/css/literature.css */
+body {
+    background-color: #0f172a;
+    color: #f8fafc;
+    font-family: 'Inter', sans-serif;
+    margin: 0;
+}
+
+/* Navbar overrides for dark theme */
+.oae-navbar {
+    background: rgba(15, 23, 42, 0.95) !important;
+    border-bottom: 1px solid #1e293b;
+}
+
+/* LIBRARY HUB */
+.lib-hero {
+    padding: 80px 20px 40px;
+    text-align: center;
+    background: linear-gradient(to bottom, #1e293b, #0f172a);
+}
+
+.lib-hero h1 {
+    font-size: 2.5rem;
+    color: #fff;
+    margin-bottom: 10px;
+}
+
+.lib-hero p {
+    color: #94a3b8;
+    max-width: 600px;
+    margin: 0 auto;
+    font-size: 1.1rem;
+}
+
+.lib-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.lib-category {
+    margin-bottom: 50px;
+}
+
+.lib-category h2 {
+    font-size: 1.5rem;
+    border-left: 4px solid #10b981;
+    padding-left: 10px;
+    margin-bottom: 20px;
+}
+
+.books-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+    gap: 25px;
+}
+
+.book-card {
+    background: #1e293b;
+    border-radius: 12px;
+    overflow: hidden;
+    transition: transform 0.3s;
+    text-decoration: none;
+    color: white;
+    display: block;
+    border: 1px solid #334155;
+}
+
+.book-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 25px rgba(16, 185, 129, 0.2);
+    border-color: #10b981;
+}
+
+.book-cover {
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+}
+
+.book-info {
+    padding: 15px;
+}
+
+.book-tag {
+    font-size: 0.75rem;
+    background: #10b981;
+    color: #fff;
+    padding: 3px 8px;
+    border-radius: 12px;
+    font-weight: bold;
+    margin-bottom: 8px;
+    display: inline-block;
+}
+
+.book-title {
+    font-size: 1.1rem;
+    margin: 0 0 5px 0;
+}
+
+.book-author {
+    color: #94a3b8;
+    font-size: 0.85rem;
+    margin: 0;
+}
+
+
+/* READER UI */
+.reader-wrapper {
+    display: flex;
+    max-width: 1400px;
+    margin: 20px auto;
+    gap: 20px;
+    padding: 0 20px;
+    min-height: calc(100vh - 100px);
+}
+
+.reader-sidebar {
+    width: 300px;
+    background: #1e293b;
+    border-radius: 12px;
+    padding: 20px;
+    position: sticky;
+    top: 90px;
+    height: fit-content;
+    border: 1px solid #334155;
+}
+
+.reader-main {
+    flex: 1;
+    background: #1e293b;
+    border-radius: 12px;
+    padding: 40px;
+    border: 1px solid #334155;
+}
+
+.reader-cover-small {
+    width: 100%;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 8px;
+    margin-bottom: 15px;
+}
+
+.tab-buttons {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 20px;
+    border-bottom: 1px solid #334155;
+    padding-bottom: 10px;
+}
+
+.tab-btn {
+    background: transparent;
+    color: #94a3b8;
+    border: none;
+    font-size: 1rem;
+    font-weight: bold;
+    cursor: pointer;
+    padding: 5px 10px;
+}
+
+.tab-btn.active {
+    color: #10b981;
+    border-bottom: 2px solid #10b981;
+}
+
+.chapter-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.chapter-item {
+    padding: 10px;
+    border-radius: 6px;
+    cursor: pointer;
+    color: #cbd5e1;
+    transition: 0.2s;
+    margin-bottom: 5px;
+}
+
+.chapter-item:hover, .chapter-item.active {
+    background: #334155;
+    color: #10b981;
+}
+
+.reader-title {
+    font-size: 2rem;
+    margin-top: 0;
+    margin-bottom: 20px;
+    color: #f8fafc;
+}
+
+.reader-content {
+    font-size: 1.15rem;
+    line-height: 1.8;
+    color: #cbd5e1;
+}
+
+/* Character Cards */
+.character-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 20px;
+}
+
+.character-card {
+    background: #0f172a;
+    padding: 20px;
+    border-radius: 10px;
+    border: 1px solid #334155;
+}
+
+.character-name {
+    font-size: 1.2rem;
+    color: #10b981;
+    margin: 0 0 5px 0;
+}
+
+.character-role {
+    font-size: 0.85rem;
+    color: #94a3b8;
+    text-transform: uppercase;
+    margin-bottom: 15px;
+}
+
+@media (max-width: 900px) {
+    .reader-wrapper {
+        flex-direction: column;
+    }
+    .reader-sidebar {
+        width: 100%;
+        position: static;
+    }
+    .reader-main {
+        padding: 20px;
+    }
+}

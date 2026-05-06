@@ -1,0 +1,283 @@
+{
+  "meta": {
+    "novelId": "the-potters-wheel",
+    "title": "The Potter's Wheel",
+    "author": "Chukwuemeka Ike",
+    "year": 2013,
+    "sectionA": 25,
+    "notes": "JAMB 2013 prescribed novel. Add actual novel extracts and corresponding questions. Current structure shows format with sample comprehension passages."
+  },
+  "questions": [
+    {
+      "id": "tpw-a-001",
+      "type": "comprehension",
+      "passageTitle": "Social Responsibility",
+      "passage": "Social responsibility represents a commitment by organizations and individuals to act in ways that benefit society. This concept extends beyond profit-making to encompass ethical practices, environmental stewardship, and community development. Companies that embrace social responsibility often find that it enhances their brand reputation, increases employee loyalty, and attracts socially conscious consumers. However, implementing social responsibility initiatives requires significant investment in time and resources. Balancing profit objectives with social commitments can be challenging, particularly for small enterprises operating with limited budgets. Nevertheless, evidence suggests that organizations with strong social responsibility programs are more resilient during economic downturns and enjoy greater long-term sustainability.",
+      "question": "What is the main advantage of social responsibility mentioned in the passage?",
+      "options": ["A. It eliminates the need for profit", "B. It enhances brand reputation and creates multiple benefits", "C. It only applies to large corporations", "D. It requires no investment of resources"],
+      "answer": 1,
+      "explanation": "The passage explicitly states that social responsibility 'enhances brand reputation, increases employee loyalty, and attracts socially conscious consumers.'",
+      "topic": "Prescribed Novel Extracts"
+    },
+    {
+      "id": "tpw-a-002",
+      "type": "comprehension",
+      "passageTitle": "Social Responsibility",
+      "passage": "Social responsibility represents a commitment by organizations and individuals to act in ways that benefit society. This concept extends beyond profit-making to encompass ethical practices, environmental stewardship, and community development. Companies that embrace social responsibility often find that it enhances their brand reputation, increases employee loyalty, and attracts socially conscious consumers. However, implementing social responsibility initiatives requires significant investment in time and resources. Balancing profit objectives with social commitments can be challenging, particularly for small enterprises operating with limited budgets. Nevertheless, evidence suggests that organizations with strong social responsibility programs are more resilient during economic downturns and enjoy greater long-term sustainability.",
+      "question": "According to the passage, why might small enterprises find social responsibility challenging?",
+      "options": ["A. They do not care about society", "B. They have limited budgets and resources", "C. Social responsibility is impossible for small companies", "D. They are not legally required to implement it"],
+      "answer": 1,
+      "explanation": "The passage states that 'balancing profit objectives with social commitments can be challenging, particularly for small enterprises operating with limited budgets.'",
+      "topic": "Prescribed Novel Extracts"
+    },
+    {
+      "id": "tpw-a-003",
+      "type": "comprehension",
+      "passageTitle": "Urban Development",
+      "passage": "Rapid urbanization in developing countries has created both opportunities and challenges for urban planners and policymakers. Cities attract migrants seeking economic opportunities, education, and improved living standards. However, this influx often exceeds the capacity of existing infrastructure, leading to inadequate housing, traffic congestion, and environmental pollution. Informal settlements proliferate in urban areas where affordable housing is scarce, creating zones of poverty and social instability. Urban development strategies that prioritize affordable housing, public transportation, and green spaces have shown promise in creating more livable and sustainable cities. Singapore and Curitiba, Brazil, are frequently cited as examples of cities that have managed rapid growth while maintaining quality of life through comprehensive planning and investment in public services.",
+      "question": "What does the passage suggest about the relationship between urbanization and infrastructure?",
+      "options": ["A. Infrastructure always expands faster than population", "B. Rapid population growth often exceeds infrastructure capacity", "C. Infrastructure is unimportant for urban areas", "D. Only developed countries have infrastructure problems"],
+      "answer": 1,
+      "explanation": "The passage states: 'this influx often exceeds the capacity of existing infrastructure, leading to inadequate housing, traffic congestion, and environmental pollution.'",
+      "topic": "Prescribed Novel Extracts"
+    },
+    {
+      "id": "tpw-a-004",
+      "type": "vocabulary",
+      "question": "In the urban development passage, 'proliferate' most nearly means:",
+      "options": ["A. Decrease rapidly", "B. Increase in number significantly", "C. Remain stable", "D. Disappear completely"],
+      "answer": 1,
+      "explanation": "'Proliferate' means to multiply or increase rapidly, as informal settlements do in areas lacking affordable housing.",
+      "topic": "Prescribed Novel Extracts"
+    },
+    {
+      "id": "tpw-a-005",
+      "type": "comprehension",
+      "passageTitle": "Youth Empowerment",
+      "passage": "Youth empowerment has become a priority for governments and non-governmental organizations worldwide, recognizing that young people represent the future workforce and leadership of nations. Programs focused on skill development, entrepreneurship training, and access to quality education aim to equip youth with tools to succeed in competitive global markets. In Africa, despite significant youth unemployment rates, innovative programs using digital technology have created pathways for young people to develop marketable skills and establish their own businesses. These initiatives not only reduce unemployment but also foster innovation and economic growth. However, ensuring equitable access to these opportunities remains challenging, particularly in rural areas where digital infrastructure is limited.",
+      "question": "What is the primary purpose of youth empowerment programs according to the passage?",
+      "options": ["A. To restrict youth employment", "B. To equip young people with skills for success in competitive markets", "C. To eliminate the need for formal education", "D. To reduce the population of young people"],
+      "answer": 1,
+      "explanation": "The passage states that programs 'aim to equip youth with tools to succeed in competitive global markets' through skill development and entrepreneurship training.",
+      "topic": "Prescribed Novel Extracts"
+    },
+    {
+      "id": "tpw-a-006",
+      "type": "inference",
+      "question": "From the youth empowerment passage, what can be inferred about digital technology in developing regions?",
+      "options": ["A. It is equally accessible everywhere", "B. Its limited availability in rural areas creates barriers to youth opportunity", "C. It is unnecessary for economic development", "D. It only exists in developed countries"],
+      "answer": 1,
+      "explanation": "The passage indicates that 'ensuring equitable access to these opportunities remains challenging, particularly in rural areas where digital infrastructure is limited,' suggesting that lack of digital access creates inequality.",
+      "topic": "Prescribed Novel Extracts"
+    },
+    {
+      "id": "tpw-a-007",
+      "type": "summary",
+      "passageTitle": "Workplace Diversity",
+      "passage": "Workplace diversity encompasses the representation of people from different backgrounds, including gender, ethnicity, age, and experience levels. Research consistently demonstrates that diverse teams produce more innovative solutions, make better decisions, and achieve superior financial performance compared to homogeneous teams. Companies that prioritize diversity often report higher employee satisfaction and reduced turnover. However, simply recruiting diverse candidates is insufficient; organizations must create inclusive cultures where all employees feel valued and empowered to contribute. Unconscious bias training, mentorship programs, and transparent promotion policies are essential components of diversity initiatives. Companies like Microsoft and Accenture have shown that deliberate investments in diversity and inclusion yield tangible business benefits.",
+      "question": "Which statement best summarizes this passage?",
+      "options": ["A. Workplace diversity is a legal requirement with no business benefits", "B. Diversity and inclusion require intentional strategies and create both social and business benefits", "C. Only large corporations should pursue diversity goals", "D. Diversity is achieved through recruitment alone"],
+      "answer": 1,
+      "explanation": "The passage emphasizes that diversity brings benefits but requires active culture-building and intentional strategies like bias training and transparent policies.",
+      "topic": "Prescribed Novel Extracts"
+    },
+    {
+      "id": "tpw-a-008",
+      "type": "comprehension",
+      "passageTitle": "Sample Novel Extract Placeholder",
+      "passage": "[INSERT ACTUAL EXTRACT FROM THE POTTER'S WHEEL HERE - Replace with text from Chukwuemeka Ike's novel]",
+      "question": "Sample Question 1: [Replace with actual question based on the novel extract]",
+      "options": ["A. Sample option A", "B. Sample option B", "C. Sample option C", "D. Sample option D"],
+      "answer": 0,
+      "explanation": "Replace with actual explanation",
+      "topic": "Prescribed Novel Extracts"
+    },
+    {
+      "id": "tpw-a-009",
+      "type": "comprehension",
+      "passageTitle": "Sample Novel Extract Placeholder",
+      "passage": "[INSERT ACTUAL EXTRACT FROM THE POTTER'S WHEEL HERE]",
+      "question": "Sample Question 2: [Replace with actual question]",
+      "options": ["A. Sample option A", "B. Sample option B", "C. Sample option C", "D. Sample option D"],
+      "answer": 0,
+      "explanation": "Replace with actual explanation",
+      "topic": "Prescribed Novel Extracts"
+    },
+    {
+      "id": "tpw-a-010",
+      "type": "comprehension",
+      "passageTitle": "Sample Novel Extract Placeholder",
+      "passage": "[INSERT ACTUAL EXTRACT FROM THE POTTER'S WHEEL HERE]",
+      "question": "Sample Question 3: [Replace with actual question]",
+      "options": ["A. Sample option A", "B. Sample option B", "C. Sample option C", "D. Sample option D"],
+      "answer": 0,
+      "explanation": "Replace with actual explanation",
+      "topic": "Prescribed Novel Extracts"
+    },
+    {
+      "id": "tpw-a-011",
+      "type": "comprehension",
+      "passageTitle": "Sample Novel Extract Placeholder",
+      "passage": "[INSERT ACTUAL EXTRACT FROM THE POTTER'S WHEEL HERE]",
+      "question": "Sample Question 4: [Replace with actual question]",
+      "options": ["A. Sample option A", "B. Sample option B", "C. Sample option C", "D. Sample option D"],
+      "answer": 0,
+      "explanation": "Replace with actual explanation",
+      "topic": "Prescribed Novel Extracts"
+    },
+    {
+      "id": "tpw-a-012",
+      "type": "comprehension",
+      "passageTitle": "Sample Novel Extract Placeholder",
+      "passage": "[INSERT ACTUAL EXTRACT FROM THE POTTER'S WHEEL HERE]",
+      "question": "Sample Question 5: [Replace with actual question]",
+      "options": ["A. Sample option A", "B. Sample option B", "C. Sample option C", "D. Sample option D"],
+      "answer": 0,
+      "explanation": "Replace with actual explanation",
+      "topic": "Prescribed Novel Extracts"
+    },
+    {
+      "id": "tpw-a-013",
+      "type": "comprehension",
+      "passageTitle": "Sample Novel Extract Placeholder",
+      "passage": "[INSERT ACTUAL EXTRACT FROM THE POTTER'S WHEEL HERE]",
+      "question": "Sample Question 6: [Replace with actual question]",
+      "options": ["A. Sample option A", "B. Sample option B", "C. Sample option C", "D. Sample option D"],
+      "answer": 0,
+      "explanation": "Replace with actual explanation",
+      "topic": "Prescribed Novel Extracts"
+    },
+    {
+      "id": "tpw-a-014",
+      "type": "comprehension",
+      "passageTitle": "Sample Novel Extract Placeholder",
+      "passage": "[INSERT ACTUAL EXTRACT FROM THE POTTER'S WHEEL HERE]",
+      "question": "Sample Question 7: [Replace with actual question]",
+      "options": ["A. Sample option A", "B. Sample option B", "C. Sample option C", "D. Sample option D"],
+      "answer": 0,
+      "explanation": "Replace with actual explanation",
+      "topic": "Prescribed Novel Extracts"
+    },
+    {
+      "id": "tpw-a-015",
+      "type": "comprehension",
+      "passageTitle": "Sample Novel Extract Placeholder",
+      "passage": "[INSERT ACTUAL EXTRACT FROM THE POTTER'S WHEEL HERE]",
+      "question": "Sample Question 8: [Replace with actual question]",
+      "options": ["A. Sample option A", "B. Sample option B", "C. Sample option C", "D. Sample option D"],
+      "answer": 0,
+      "explanation": "Replace with actual explanation",
+      "topic": "Prescribed Novel Extracts"
+    },
+    {
+      "id": "tpw-a-016",
+      "type": "comprehension",
+      "passageTitle": "Sample Novel Extract Placeholder",
+      "passage": "[INSERT ACTUAL EXTRACT FROM THE POTTER'S WHEEL HERE]",
+      "question": "Sample Question 9: [Replace with actual question]",
+      "options": ["A. Sample option A", "B. Sample option B", "C. Sample option C", "D. Sample option D"],
+      "answer": 0,
+      "explanation": "Replace with actual explanation",
+      "topic": "Prescribed Novel Extracts"
+    },
+    {
+      "id": "tpw-a-017",
+      "type": "comprehension",
+      "passageTitle": "Sample Novel Extract Placeholder",
+      "passage": "[INSERT ACTUAL EXTRACT FROM THE POTTER'S WHEEL HERE]",
+      "question": "Sample Question 10: [Replace with actual question]",
+      "options": ["A. Sample option A", "B. Sample option B", "C. Sample option C", "D. Sample option D"],
+      "answer": 0,
+      "explanation": "Replace with actual explanation",
+      "topic": "Prescribed Novel Extracts"
+    },
+    {
+      "id": "tpw-a-018",
+      "type": "comprehension",
+      "passageTitle": "Sample Novel Extract Placeholder",
+      "passage": "[INSERT ACTUAL EXTRACT FROM THE POTTER'S WHEEL HERE]",
+      "question": "Sample Question 11: [Replace with actual question]",
+      "options": ["A. Sample option A", "B. Sample option B", "C. Sample option C", "D. Sample option D"],
+      "answer": 0,
+      "explanation": "Replace with actual explanation",
+      "topic": "Prescribed Novel Extracts"
+    },
+    {
+      "id": "tpw-a-019",
+      "type": "comprehension",
+      "passageTitle": "Sample Novel Extract Placeholder",
+      "passage": "[INSERT ACTUAL EXTRACT FROM THE POTTER'S WHEEL HERE]",
+      "question": "Sample Question 12: [Replace with actual question]",
+      "options": ["A. Sample option A", "B. Sample option B", "C. Sample option C", "D. Sample option D"],
+      "answer": 0,
+      "explanation": "Replace with actual explanation",
+      "topic": "Prescribed Novel Extracts"
+    },
+    {
+      "id": "tpw-a-020",
+      "type": "comprehension",
+      "passageTitle": "Sample Novel Extract Placeholder",
+      "passage": "[INSERT ACTUAL EXTRACT FROM THE POTTER'S WHEEL HERE]",
+      "question": "Sample Question 13: [Replace with actual question]",
+      "options": ["A. Sample option A", "B. Sample option B", "C. Sample option C", "D. Sample option D"],
+      "answer": 0,
+      "explanation": "Replace with actual explanation",
+      "topic": "Prescribed Novel Extracts"
+    },
+    {
+      "id": "tpw-a-021",
+      "type": "comprehension",
+      "passageTitle": "Sample Novel Extract Placeholder",
+      "passage": "[INSERT ACTUAL EXTRACT FROM THE POTTER'S WHEEL HERE]",
+      "question": "Sample Question 14: [Replace with actual question]",
+      "options": ["A. Sample option A", "B. Sample option B", "C. Sample option C", "D. Sample option D"],
+      "answer": 0,
+      "explanation": "Replace with actual explanation",
+      "topic": "Prescribed Novel Extracts"
+    },
+    {
+      "id": "tpw-a-022",
+      "type": "comprehension",
+      "passageTitle": "Sample Novel Extract Placeholder",
+      "passage": "[INSERT ACTUAL EXTRACT FROM THE POTTER'S WHEEL HERE]",
+      "question": "Sample Question 15: [Replace with actual question]",
+      "options": ["A. Sample option A", "B. Sample option B", "C. Sample option C", "D. Sample option D"],
+      "answer": 0,
+      "explanation": "Replace with actual explanation",
+      "topic": "Prescribed Novel Extracts"
+    },
+    {
+      "id": "tpw-a-023",
+      "type": "comprehension",
+      "passageTitle": "Sample Novel Extract Placeholder",
+      "passage": "[INSERT ACTUAL EXTRACT FROM THE POTTER'S WHEEL HERE]",
+      "question": "Sample Question 16: [Replace with actual question]",
+      "options": ["A. Sample option A", "B. Sample option B", "C. Sample option C", "D. Sample option D"],
+      "answer": 0,
+      "explanation": "Replace with actual explanation",
+      "topic": "Prescribed Novel Extracts"
+    },
+    {
+      "id": "tpw-a-024",
+      "type": "comprehension",
+      "passageTitle": "Sample Novel Extract Placeholder",
+      "passage": "[INSERT ACTUAL EXTRACT FROM THE POTTER'S WHEEL HERE]",
+      "question": "Sample Question 17: [Replace with actual question]",
+      "options": ["A. Sample option A", "B. Sample option B", "C. Sample option C", "D. Sample option D"],
+      "answer": 0,
+      "explanation": "Replace with actual explanation",
+      "topic": "Prescribed Novel Extracts"
+    },
+    {
+      "id": "tpw-a-025",
+      "type": "comprehension",
+      "passageTitle": "Sample Novel Extract Placeholder",
+      "passage": "[INSERT ACTUAL EXTRACT FROM THE POTTER'S WHEEL HERE]",
+      "question": "Sample Question 18: [Replace with actual question]",
+      "options": ["A. Sample option A", "B. Sample option B", "C. Sample option C", "D. Sample option D"],
+      "answer": 0,
+      "explanation": "Replace with actual explanation",
+      "topic": "Prescribed Novel Extracts"
+    }
+  ]
+}

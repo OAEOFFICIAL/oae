@@ -1,0 +1,247 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Smart Quiz Arena — OAE</title>
+  
+  <!-- Base Styles -->
+  <link rel="stylesheet" href="../Assets/css/quiz.css">
+  <link rel="stylesheet" href="../Assets/css/style.css">
+  <link rel="stylesheet" href="../Assets/css/quiz-navbar.css">
+  <link rel="stylesheet" href="../Assets/css/footer.css">
+  
+  <!-- Responsive & PDF overrides -->
+  <link rel="stylesheet" href="../Assets/css/quiz-mobile.css">
+  <link rel="stylesheet" href="../Assets/css/quiz-pdf.css" media="print">
+  
+  <!-- Icons -->
+  <link href="https://cdn.jsdelivr.net/npm/remixicon@3.5.0/fonts/remixicon.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  
+  <!-- PDF Library -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/html2pdf.js/0.10.1/html2pdf.bundle.min.js"></script>
+  
+  <style>
+    /* =======================================
+       PREMIUM CONFIG PANEL STYLES
+       ======================================= */
+    .quiz-wrap { max-width: 1100px; margin: 40px auto; padding: 0 20px; animation: fadeIn 0.5s ease-out; }
+    
+    @keyframes fadeIn { from { opacity: 0; transform: translateY(15px); } to { opacity: 1; transform: translateY(0); } }
+    
+    .quiz-header { text-align: center; margin-bottom: 40px; }
+    .quiz-title { font-size: 2.8rem; font-weight: 800; color: var(--oae-dark); margin-bottom: 10px; }
+    .quiz-header .small { font-size: 1.15rem; color: var(--muted); }
+
+    .config-card {
+      background: white; border-radius: 24px; padding: 32px; margin-bottom: 30px;
+      box-shadow: 0 12px 36px rgba(10,138,47,0.06); border: 1px solid rgba(10,138,47,0.1);
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+    .config-card:hover { box-shadow: 0 16px 48px rgba(10,138,47,0.09); }
+    body.dark-mode .config-card { background: #1a1a1a; border-color: #333; box-shadow: 0 12px 36px rgba(0,0,0,0.3); }
+
+    .config-header { display: flex; align-items: center; gap: 16px; margin-bottom: 24px; border-bottom: 1px solid var(--card-border); padding-bottom: 16px; }
+    .config-header i { font-size: 1.6rem; color: white; background: linear-gradient(135deg, var(--green), var(--darkgreen)); padding: 12px; border-radius: 14px; box-shadow: 0 4px 12px rgba(10,138,47,0.3); }
+    .config-header h3 { margin: 0; font-size: 1.5rem; font-weight: 700; color: var(--oae-dark); }
+
+    .mode-cards { display: grid; grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); gap: 20px; }
+    .mode-card {
+      border: 2px solid var(--card-border); border-radius: 20px; padding: 24px;
+      cursor: pointer; background: var(--card); transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+      position: relative; overflow: hidden;
+    }
+    .mode-card:hover { transform: translateY(-4px); border-color: var(--green); box-shadow: 0 8px 24px rgba(10,138,47,0.1); }
+    .mode-card.active { border-color: var(--green); background: rgba(10,138,47,0.03); transform: translateY(-4px); box-shadow: 0 12px 32px rgba(10,138,47,0.15); }
+    .mode-card.active::before { content: '\f058'; font-family: 'Font Awesome 5 Free', 'Font Awesome 6 Free'; font-weight: 900; position: absolute; top: 20px; right: 20px; color: var(--green); font-size: 1.4rem; }
+    .mode-card i { font-size: 2.2rem; color: var(--green); margin-bottom: 16px; display: block; }
+    .mode-card h4 { margin: 0 0 10px; color: var(--oae-dark); font-size: 1.2rem; font-weight: 700; }
+    .mode-card p { margin: 0; color: var(--muted); line-height: 1.5; font-size: 0.95rem; }
+
+    .subject-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(160px, 1fr)); gap: 16px; }
+    .subject-card {
+      padding: 16px 12px; border: 2px solid var(--card-border); border-radius: 16px;
+      cursor: pointer; background: var(--card); text-align: center; font-weight: 600;
+      transition: all 0.2s ease; display: flex; flex-direction: column; align-items: center; gap: 8px;
+    }
+    .subject-card i { font-size: 1.5rem; color: var(--muted); transition: color 0.2s ease; }
+    .subject-card:hover { border-color: var(--green); transform: translateY(-2px); box-shadow: 0 6px 16px rgba(0,0,0,0.05); }
+    .subject-card:hover i { color: var(--green); }
+    .subject-card.selected { background: linear-gradient(135deg, var(--green), var(--darkgreen)); border-color: transparent; color: white; box-shadow: 0 8px 20px rgba(10,138,47,0.25); }
+    .subject-card.selected i { color: white; }
+    .subject-card.disabled { opacity: 0.4; pointer-events: none; filter: grayscale(1); }
+
+    /* Filters & Settings Layout */
+    .filters-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 20px; }
+    .filter-group { display: flex; flex-direction: column; gap: 8px; }
+    .filter-group label { font-weight: 600; color: var(--oae-dark); font-size: 0.95rem; }
+    .filter-select, .settings-input {
+      padding: 12px 16px; border: 2px solid var(--card-border); border-radius: 12px;
+      background: white; width: 100%; font-family: inherit; font-size: 1rem;
+      transition: border-color 0.2s ease;
+    }
+    .filter-select:focus, .settings-input:focus { outline: none; border-color: var(--green); box-shadow: 0 0 0 3px rgba(10,138,47,0.1); }
+    body.dark-mode .filter-select, body.dark-mode .settings-input { background: #222; border-color: #444; color: white; }
+
+    .settings-grid { display: flex; flex-wrap: wrap; gap: 24px; align-items: center; }
+    .setting-item { display: flex; align-items: center; gap: 12px; background: rgba(0,0,0,0.03); padding: 12px 20px; border-radius: 12px; border: 1px solid var(--card-border); }
+    body.dark-mode .setting-item { background: rgba(255,255,255,0.05); border-color: #333; }
+    .toggle-label { display: flex; align-items: center; gap: 10px; cursor: pointer; font-weight: 600; color: var(--oae-dark); font-size: 0.95rem; }
+    .toggle-label input[type="checkbox"] { width: 18px; height: 18px; accent-color: var(--green); cursor: pointer; }
+
+    .summary-bar {
+      display: flex; flex-wrap: wrap; justify-content: space-between; align-items: center; gap: 20px;
+      background: white; padding: 24px 32px; border-radius: 20px;
+      box-shadow: 0 12px 40px rgba(0,0,0,0.08); border: 1px solid rgba(10,138,47,0.1);
+      position: sticky; bottom: 20px; z-index: 10;
+    }
+    body.dark-mode .summary-bar { background: #1a1a1a; box-shadow: 0 -4px 30px rgba(0,0,0,0.4); border-color: #333; }
+    .summary-info strong { font-size: 1.1rem; color: var(--oae-dark); }
+    .summary-info #selected-subjects-text { color: var(--green); font-weight: 700; font-size: 1.15rem; }
+    .summary-info .small { display: inline-block; margin-top: 6px; padding: 6px 14px; background: rgba(10,138,47,0.1); color: var(--darkgreen); border-radius: 20px; font-weight: 600; font-size: 0.9rem; }
+    body.dark-mode .summary-info .small { background: rgba(10,138,47,0.2); color: #81c784; }
+
+    .summary-actions { display: flex; gap: 16px; flex-wrap: wrap; width: 100%; justify-content: flex-end; }
+    @media (min-width: 600px) { .summary-actions { width: auto; } }
+    
+    .btn-primary {
+      background: linear-gradient(135deg, var(--green), var(--darkgreen)); color: white; border: none; 
+      padding: 16px 40px; border-radius: 16px; font-weight: 700; font-size: 1.1rem; cursor: pointer;
+      transition: all 0.3s ease; box-shadow: 0 8px 24px rgba(10,138,47,0.3); display: flex; align-items: center; gap: 10px;
+    }
+    .btn-primary:hover { transform: translateY(-3px); box-shadow: 0 12px 32px rgba(10,138,47,0.4); }
+    .btn-outline {
+      background: transparent; border: 2px solid var(--card-border); color: var(--oae-dark);
+      padding: 16px 32px; border-radius: 16px; font-weight: 600; font-size: 1.1rem; cursor: pointer;
+      transition: all 0.3s ease; display: flex; align-items: center; gap: 10px;
+    }
+    .btn-outline:hover { border-color: var(--muted); background: rgba(0,0,0,0.03); }
+    body.dark-mode .btn-outline { border-color: #444; color: white; }
+    body.dark-mode .btn-outline:hover { background: rgba(255,255,255,0.05); }
+
+    /* Fix responsive breakpoints */
+    @media (max-width: 768px) {
+      .quiz-wrap { margin: 20px auto; padding: 0 16px; }
+      .config-card { padding: 24px 20px; border-radius: 20px; }
+      .summary-bar { padding: 20px; flex-direction: column; align-items: stretch; text-align: center; }
+      .summary-actions { justify-content: stretch; }
+      .summary-actions button { flex: 1; justify-content: center; }
+      .quiz-title { font-size: 2.2rem; }
+      .settings-grid { flex-direction: column; align-items: stretch; }
+      .setting-item { justify-content: space-between; }
+      .mode-card::before { display: none; /* Hide absolute checkmark on mobile for space */ }
+    }
+  </style>
+</head>
+<body>
+  <nav class="quiz-navbar">
+    <div class="quiz-logo"><a href="/Index.htm"><img class="logo-quiz" src="/oae.png" alt="OAE"></a></div>
+    <div class="quiz-search-section">
+      <div class="quiz-search-container"><i class="fas fa-search"></i><input placeholder="Search quizzes..."><button class="quiz-search-btn">Search</button></div>
+    </div>
+    <div class="quiz-nav-container">
+      <ul class="quiz-nav-links">
+        <li><a href="#">Practice <i class="fas fa-chevron-down"></i></a></li>
+        <li><a href="#">Subjects <i class="fas fa-chevron-down"></i></a></li>
+        <li><a href="#">Leaderboard <i class="fas fa-chevron-down"></i></a></li>
+      </ul>
+    </div>
+    <button class="quiz-join-btn">Join OAE</button>
+    <button class="quiz-hamburger"><i class="fas fa-bars"></i></button>
+  </nav>
+
+  <main class="section">
+    <div class="quiz-wrap">
+      <header class="quiz-header">
+        <h1 class="quiz-title">Smart Quiz Arena</h1>
+        <div class="small">Choose your mode and subjects — let's practice.</div>
+      </header>
+
+      <div class="config-card">
+        <div class="config-header"><i class="fas fa-sliders-h"></i><h3>1. Select Mode</h3></div>
+        <div class="mode-cards">
+          <div class="mode-card active" data-mode="exam"><i class="fas fa-clock"></i><h4>Exam Mode</h4><p>English (60Q) + 3 others. 1h 45m strict.</p></div>
+          <div class="mode-card" data-mode="quiz"><i class="fas fa-gamepad"></i><h4>Quiz Mode</h4><p>Any subjects, custom time.</p></div>
+          <div class="mode-card" data-mode="study"><i class="fas fa-book-open"></i><h4>Study Mode</h4><p>Filter by topic/year.</p></div>
+        </div>
+      </div>
+
+      <div class="config-card">
+        <div class="config-header"><i class="fas fa-book"></i><h3>2. Choose Subjects</h3></div>
+        <div id="subject-container" class="subject-grid"></div>
+        <div id="subject-message" style="margin-top:16px;color:var(--muted);"></div>
+      </div>
+
+      <div class="config-card" id="study-filters" style="display:none;">
+        <div class="config-header"><i class="fas fa-filter"></i><h3>3. Study Filters</h3></div>
+        <div class="filters-grid">
+          <div class="filter-group">
+            <label>Subject for filters:</label>
+            <select id="filter-subject" class="filter-select">
+              <option value="">Select subject first</option>
+            </select>
+          </div>
+          <div class="filter-group">
+            <label>Topic:</label>
+            <select id="topic-filter" class="filter-select" disabled><option value="">All Topics</option></select>
+          </div>
+          <div class="filter-group">
+            <label>Year:</label>
+            <select id="year-filter" class="filter-select" disabled><option value="">All Years</option></select>
+          </div>
+        </div>
+      </div>
+
+      <div class="config-card">
+        <div class="config-header"><i class="fas fa-cog"></i><h3>4. Settings</h3></div>
+        <div class="settings-grid">
+          <div class="setting-item">
+             <div class="toggle-label"><i class="fas fa-hourglass-half" style="color:var(--green)"></i> Time (min):</div>
+             <input type="number" id="time-limit" class="settings-input" value="105" min="5" max="300" style="width:100px; padding: 8px 12px;" disabled>
+          </div>
+          <div class="setting-item">
+             <label class="toggle-label"><input type="checkbox" id="shuffle-options" checked> Shuffle Options</label>
+          </div>
+          <div class="setting-item">
+             <label class="toggle-label"><input type="checkbox" id="show-explanations" checked> Show Explanations</label>
+          </div>
+        </div>
+      </div>
+
+      <div class="summary-bar">
+        <div class="summary-info"><strong>Selected:</strong> <span id="selected-subjects-text">English</span><br><span class="small" id="question-count-display">60 questions</span></div>
+        <div class="summary-actions">
+          <button class="btn-outline" onclick="location.href='../Index.htm'"><i class="fas fa-arrow-left"></i> Home</button>
+          <button class="btn-primary" id="start-quiz-btn">Start Quiz <i class="fas fa-play"></i></button>
+        </div>
+      </div>
+
+      <div id="quiz-container" style="margin-top:30px;"></div>
+    </div>
+  </main>
+
+  <footer class="oae-footer">
+    <div class="footer-connect"><h3>Connect With Us</h3><hr><div class="socials-bar"><a href="https://x.com/oaeofficial123" target="_blank"><i class="ri-twitter-x-fill"></i></a><a href="#"><i class="ri-telegram-fill"></i></a></div></div>
+    <div class="footer-bottom"><p>© 2025 OAE. All rights reserved.</p></div>
+  </footer>
+
+  <!-- Quiz Modules -->
+  <script src="../Assets/js/quiz-data.js"></script>
+  <script src="../Assets/js/quiz-engine.js"></script>
+  <script src="../Assets/js/quiz-render.js"></script>
+  <script src="../Assets/js/quiz-pdf.js"></script>
+  <script src="../Assets/js/quiz-config.js"></script>
+  
+  <!-- Initialization -->
+  <script>
+    document.addEventListener('DOMContentLoaded', () => {
+      if (typeof QuizConfig !== 'undefined') {
+        QuizConfig.init();
+      } else {
+        console.error('QuizConfig module not loaded');
+      }
+    });
+  </script>
+</body>
+</html>

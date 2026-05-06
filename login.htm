@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Log In | OAE - Oluwatosin Academy of Excellence</title>
+    <meta name="description" content="Log in to your OAE Dashboard to resume mock exams, access JAMB/WAEC resources, and track your admission progress.">
+    <meta name="keywords" content="OAE login, JAMB CBT practice, WAEC past questions, Oluwatosin Academy of Excellence, student dashboard">
+    <meta property="og:title" content="Log In | OAE">
+    <meta property="og:description" content="Access your personalized admission dashboard and resume your mock exams on OAE.">
+    <meta property="og:type" content="website">
+    <link rel="stylesheet" href="Assets/css/auth.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+
+    <!-- Animated Background -->
+    <div class="bg-animation">
+        <div class="blob blob-1"></div>
+        <div class="blob blob-2"></div>
+        <div class="blob blob-3"></div>
+    </div>
+
+    <!-- The Floating Glass Card -->
+    <div class="auth-wrapper">
+        <div class="glass-card">
+            
+            <a href="Index.htm" class="back-home">
+                <i class="fas fa-arrow-left"></i> Home
+            </a>
+            
+            <div class="auth-header">
+                <img src="OAE.png" alt="OAE Logo" class="auth-logo">
+                <h2 class="auth-title">Welcome back</h2>
+                <p class="auth-subtitle">Pick up exactly where you left off.</p>
+            </div>
+
+            <form id="login-form" novalidate>
+                
+                <div class="input-group">
+                    <div class="input-wrapper">
+                        <i class="fas fa-envelope"></i>
+                        <input type="email" id="login-email" name="email" placeholder="Email Address" required>
+                    </div>
+                </div>
+
+                <div class="input-group">
+                    <div class="input-wrapper">
+                        <i class="fas fa-lock"></i>
+                        <input type="password" id="login-password" name="password" placeholder="Password" required>
+                    </div>
+                </div>
+
+                <button type="submit" class="auth-btn">Sign In</button>
+
+                <div id="login-msg" class="auth-msg"></div>
+
+                <div class="auth-switch">
+                    Don't have an account? <a href="signup.htm">Sign up</a>
+                </div>
+            </form>
+
+        </div>
+    </div>
+
+    <script src="Assets/js/login.js"></script>
+</body>
+</html>
