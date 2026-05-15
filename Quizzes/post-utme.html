@@ -1,0 +1,902 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>OAE — Post-UTME Automated Prep Engine</title>
+  <link rel="stylesheet" href="/Assets/css/style.css">
+  <link rel="stylesheet" href="/Assets/css/quiz-navbar.css">
+  <link rel="stylesheet" href="/Assets/css/footer.css">
+  <link href="https://cdn.jsdelivr.net/npm/remixicon@3.5.0/fonts/remixicon.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <style>
+    body {
+      background: #f8fafc;
+      font-family: 'Inter', system-ui, sans-serif;
+    }
+
+    .prep-hero {
+      background: linear-gradient(135deg, #1e293b 0%, #0f172a 100%);
+      padding: 60px 20px;
+      text-align: center;
+      color: white;
+    }
+
+    .prep-hero h1 {
+      font-size: 2.5rem;
+      font-weight: 800;
+      margin-bottom: 15px;
+      background: linear-gradient(to right, #60a5fa, #a78bfa);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
+
+    .prep-hero p {
+      font-size: 1.1rem;
+      max-width: 600px;
+      margin: 0 auto;
+      color: #cbd5e1;
+      line-height: 1.6;
+    }
+
+    .prep-container {
+      max-width: 1000px;
+      margin: 40px auto;
+      padding: 0 20px;
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 30px;
+    }
+
+    .prep-card {
+      background: white;
+      border-radius: 16px;
+      padding: 30px;
+      box-shadow: 0 10px 25px rgba(0,0,0,0.05);
+      border: 1px solid #e2e8f0;
+    }
+
+    .prep-card h2 {
+      font-size: 1.4rem;
+      color: #0f172a;
+      margin-top: 0;
+      margin-bottom: 20px;
+      display: flex;
+      align-items: center;
+      gap: 10px;
+    }
+
+    .prep-card h2 i {
+      color: #3b82f6;
+    }
+
+    .form-group {
+      margin-bottom: 20px;
+    }
+
+    .form-group label {
+      display: block;
+      font-weight: 600;
+      color: #475569;
+      margin-bottom: 8px;
+    }
+
+    .form-select {
+      width: 100%;
+      padding: 12px;
+      border: 2px solid #e2e8f0;
+      border-radius: 8px;
+      font-size: 1rem;
+      color: #334155;
+      background: #f8fafc;
+      transition: 0.3s;
+      outline: none;
+    }
+
+    .form-select:focus {
+      border-color: #3b82f6;
+      background: white;
+    }
+
+    .start-btn {
+      width: 100%;
+      padding: 15px;
+      background: #3b82f6;
+      color: white;
+      border: none;
+      border-radius: 8px;
+      font-size: 1.1rem;
+      font-weight: bold;
+      cursor: pointer;
+      transition: 0.3s;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 10px;
+    }
+
+    .start-btn:hover {
+      background: #2563eb;
+      transform: translateY(-2px);
+      box-shadow: 0 5px 15px rgba(37, 99, 235, 0.3);
+    }
+    
+    .start-btn:disabled {
+      background: #94a3b8;
+      cursor: not-allowed;
+      transform: none;
+      box-shadow: none;
+    }
+
+    /* School Config Box */
+    .config-box {
+      background: #eff6ff;
+      border: 1px solid #bfdbfe;
+      border-radius: 12px;
+      padding: 20px;
+      display: none;
+    }
+
+    .config-box.active {
+      display: block;
+      animation: fadeIn 0.5s ease;
+    }
+
+    .config-header {
+      display: flex;
+      align-items: center;
+      gap: 15px;
+      margin-bottom: 15px;
+      padding-bottom: 15px;
+      border-bottom: 1px solid #dbeafe;
+    }
+
+    .config-logo {
+      width: 50px;
+      height: 50px;
+      background: white;
+      border-radius: 8px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 1.5rem;
+      font-weight: bold;
+      color: #2563eb;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    }
+
+    .config-title h3 {
+      margin: 0 0 5px;
+      color: #1e3a8a;
+      font-size: 1.2rem;
+    }
+
+    .config-title p {
+      margin: 0;
+      color: #3b82f6;
+      font-size: 0.9rem;
+      font-weight: 600;
+    }
+
+    .config-details {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 15px;
+    }
+
+    .detail-item {
+      background: white;
+      padding: 12px;
+      border-radius: 8px;
+    }
+
+    .detail-label {
+      font-size: 0.8rem;
+      color: #64748b;
+      text-transform: uppercase;
+      letter-spacing: 0.5px;
+      margin-bottom: 5px;
+      display: block;
+    }
+
+    .detail-value {
+      font-size: 1.1rem;
+      color: #0f172a;
+      font-weight: 700;
+    }
+
+    .config-warning {
+      margin-top: 15px;
+      padding: 12px;
+      background: #fffbeb;
+      border: 1px solid #fde68a;
+      border-radius: 8px;
+      color: #b45309;
+      font-size: 0.9rem;
+      display: flex;
+      gap: 10px;
+    }
+
+    @keyframes fadeIn {
+      from { opacity: 0; transform: translateY(10px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+
+    /* Features Section */
+    .features-section {
+        padding: 80px 20px;
+        background: white;
+    }
+    .section-title {
+        text-align: center;
+        font-size: 2.2rem;
+        color: #0f172a;
+        margin-bottom: 50px;
+        font-weight: 800;
+    }
+    .section-title span {
+        color: #3b82f6;
+    }
+    .features-grid {
+        max-width: 1200px;
+        margin: 0 auto;
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+        gap: 30px;
+    }
+    .feature-card {
+        background: #f8fafc;
+        padding: 40px 30px;
+        border-radius: 20px;
+        border: 1px solid #e2e8f0;
+        transition: 0.3s;
+        text-align: center;
+    }
+    .feature-card:hover {
+        transform: translateY(-8px);
+        box-shadow: 0 15px 30px rgba(0,0,0,0.05);
+        border-color: #bfdbfe;
+    }
+    .feature-icon {
+        font-size: 3rem;
+        color: #3b82f6;
+        margin-bottom: 20px;
+        display: inline-block;
+        background: #eff6ff;
+        width: 80px;
+        height: 80px;
+        line-height: 80px;
+        border-radius: 50%;
+    }
+    .feature-card h3 {
+        font-size: 1.3rem;
+        color: #1e293b;
+        margin-bottom: 15px;
+    }
+    .feature-card p {
+        color: #64748b;
+        line-height: 1.6;
+        font-size: 1rem;
+    }
+
+    /* Testimonials */
+    .testimonials-section {
+        padding: 80px 20px;
+        background: #eff6ff;
+        position: relative;
+    }
+    .testimonials-grid {
+        max-width: 1200px;
+        margin: 0 auto;
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+        gap: 25px;
+    }
+    .testimonial-card {
+        background: white;
+        padding: 30px;
+        border-radius: 20px;
+        box-shadow: 0 4px 20px rgba(0,0,0,0.03);
+        border-left: 5px solid #3b82f6;
+    }
+    .testim-header {
+        display: flex;
+        align-items: center;
+        gap: 15px;
+        margin-bottom: 20px;
+    }
+    .testim-avatar {
+        width: 55px;
+        height: 55px;
+        background: linear-gradient(135deg, #3b82f6, #2563eb);
+        color: white;
+        border-radius: 50%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-weight: bold;
+        font-size: 1.4rem;
+    }
+    .testim-info h4 {
+        margin: 0;
+        font-size: 1.1rem;
+        color: #0f172a;
+    }
+    .testim-stars {
+        color: #f59e0b;
+        font-size: 0.9rem;
+        margin-top: 3px;
+    }
+    .testimonial-card p {
+        color: #475569;
+        font-style: italic;
+        line-height: 1.7;
+        margin: 0;
+    }
+
+    /* CTA Section */
+    .cta-section {
+        padding: 100px 20px;
+        background: linear-gradient(135deg, #0f172a 0%, #1e293b 100%);
+        color: white;
+        text-align: center;
+    }
+    .cta-content {
+        max-width: 800px;
+        margin: 0 auto;
+    }
+    .cta-content h2 {
+        font-size: 2.8rem;
+        font-weight: 800;
+        margin-bottom: 25px;
+        background: linear-gradient(to right, #10b981, #34d399);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+    }
+    .cta-content p {
+        font-size: 1.2rem;
+        color: #cbd5e1;
+        margin-bottom: 40px;
+        line-height: 1.6;
+    }
+    .btn-free-cta {
+        display: inline-flex;
+        align-items: center;
+        gap: 10px;
+        padding: 18px 45px;
+        background: #10b981;
+        color: white;
+        font-size: 1.2rem;
+        font-weight: bold;
+        border-radius: 50px;
+        text-decoration: none;
+        transition: 0.3s;
+        box-shadow: 0 10px 25px rgba(16, 185, 129, 0.4);
+    }
+    .btn-free-cta:hover {
+        background: #059669;
+        transform: translateY(-3px);
+        box-shadow: 0 15px 35px rgba(16, 185, 129, 0.5);
+    }
+
+    @media (max-width: 768px) {
+      .prep-container {
+        grid-template-columns: 1fr;
+      }
+      .cta-content h2 { font-size: 2rem; }
+    }
+  </style>
+</head>
+<body>
+    <!-- Quiz Navbar - WHITE BACKGROUND -->
+    <nav class="quiz-navbar">
+        <!-- Logo -->
+        <div class="quiz-logo">
+            <a href="/Index.htm">
+               <img class="logo-quiz" src="/oae.png" alt="OAE">
+            </a>
+        </div>
+
+        <!-- Quiz Search - Visible on all devices -->
+        <div class="quiz-search-section">
+            <div class="quiz-search-container">
+                <i class="fas fa-search"></i>
+                <input type="text" placeholder="Search quizzes, subjects, years, topics...">
+                <button class="quiz-search-btn">Search</button>
+            </div>
+        </div>
+
+        <!-- Quiz Navigation Links - Desktop only -->
+        <div class="quiz-nav-container">
+            <ul class="quiz-nav-links">
+                <li>
+                    <a href="#">
+                        Quizzes <i class="fas fa-chevron-down"></i>
+                    </a>
+                    <div class="quiz-dropdown">
+                        <div class="quiz-dropdown-section">
+                            <h4>Quiz Types</h4>
+                            <ul class="quiz-dropdown-links">
+                                <li class="popular"><a href="#">All Quizzes <i class="fas fa-globe"></i></a></li>
+                                <li><a href="#">Popular Quizzes <i class="fas fa-fire"></i></a></li>
+                                <li><a href="#">Recently Added <i class="fas fa-clock"></i></a></li>
+                                <li><a href="#">Recommended for You <i class="fas fa-star"></i></a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <a href="#">
+                        Subjects <i class="fas fa-chevron-down"></i>
+                    </a>
+                    <div class="quiz-dropdown">
+                        <div class="quiz-dropdown-section">
+                            <h4>Quiz Subjects</h4>
+                            <ul class="quiz-dropdown-links">
+                                <li><a href="#">Mathematics <i class="fas fa-calculator"></i></a></li>
+                                <li><a href="#">English Language <i class="fas fa-language"></i></a></li>
+                                <li><a href="#">Biology <i class="fas fa-dna"></i></a></li>
+                                <li><a href="#">Chemistry <i class="fas fa-flask"></i></a></li>
+                                <li><a href="#">Physics <i class="fas fa-atom"></i></a></li>
+                                <li><a href="#">Government <i class="fas fa-landmark"></i></a></li>
+                                <li><a href="#">Literature <i class="fas fa-book-open"></i></a></li>
+                                <li><a href="#">Economics <i class="fas fa-chart-line"></i></a></li>
+                                <li><a href="#">CRS / IRS <i class="fas fa-church"></i></a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <a href="#">
+                        Exams <i class="fas fa-chevron-down"></i>
+                    </a>
+                    <div class="quiz-dropdown">
+                        <div class="quiz-dropdown-section">
+                            <h4>Exam Practice</h4>
+                            <ul class="quiz-dropdown-links">
+                                <li class="popular"><a href="#">JAMB CBT Practice <i class="fas fa-laptop-code"></i></a></li>
+                                <li><a href="#">WAEC Practice <i class="fas fa-certificate"></i></a></li>
+                                <li><a href="#">NECO Practice <i class="fas fa-award"></i></a></li>
+                                <li><a href="#">Post-UTME Practice <i class="fas fa-university"></i></a></li>
+                                <li><a href="#">Mock Exams <i class="fas fa-clipboard-check"></i></a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </li>
+            </ul>
+        </div>
+
+        <!-- Join/Dashboard Button - Desktop only -->
+        <button class="quiz-join-btn" id="quizJoinBtn">Join OAE</button>
+        
+        <!-- Hamburger Menu - Mobile only -->
+        <button class="quiz-hamburger" id="quizHamburger">
+            <i class="fas fa-bars"></i>
+        </button>
+
+        <!-- Mobile Menu -->
+        <div class="quiz-mobile-menu" id="quizMobileMenu">
+            <ul class="quiz-mobile-links">
+                <li>
+                    <a href="#" class="quiz-mobile-toggle">
+                        <span><i class="fas fa-question-circle"></i> Quizzes</span>
+                        <i class="fas fa-chevron-down"></i>
+                    </a>
+                    <ul class="quiz-mobile-dropdown">
+                        <li><a href="#"><i class="fas fa-globe"></i> All Quizzes</a></li>
+                        <li><a href="#"><i class="fas fa-fire"></i> Popular Quizzes</a></li>
+                        <li><a href="#"><i class="fas fa-clock"></i> Recently Added</a></li>
+                        <li><a href="#"><i class="fas fa-star"></i> Recommended for You</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="#" class="quiz-mobile-toggle">
+                        <span><i class="fas fa-book"></i> Subjects</span>
+                        <i class="fas fa-chevron-down"></i>
+                    </a>
+                    <ul class="quiz-mobile-dropdown">
+                        <li><a href="#"><i class="fas fa-calculator"></i> Mathematics</a></li>
+                        <li><a href="#"><i class="fas fa-language"></i> English Language</a></li>
+                        <li><a href="#"><i class="fas fa-dna"></i> Biology</a></li>
+                        <li><a href="#"><i class="fas fa-flask"></i> Chemistry</a></li>
+                        <li><a href="#"><i class="fas fa-atom"></i> Physics</a></li>
+                        <li><a href="#"><i class="fas fa-landmark"></i> Government</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="#" class="quiz-mobile-toggle">
+                        <span><i class="fas fa-graduation-cap"></i> Exams</span>
+                        <i class="fas fa-chevron-down"></i>
+                    </a>
+                    <ul class="quiz-mobile-dropdown">
+                        <li><a href="#"><i class="fas fa-laptop-code"></i> JAMB CBT Practice</a></li>
+                        <li><a href="#"><i class="fas fa-certificate"></i> WAEC Practice</a></li>
+                        <li><a href="#"><i class="fas fa-award"></i> NECO Practice</a></li>
+                        <li><a href="#"><i class="fas fa-university"></i> Post-UTME Practice</a></li>
+                        <li><a href="#"><i class="fas fa-clipboard-check"></i> Mock Exams</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <button class="quiz-join-mobile" id="quizJoinMobile">
+                        <i class="fas fa-user-plus"></i> Join OAE
+                    </button>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <div class="prep-hero">
+        <h1>Post-UTME Automated Prep</h1>
+        <p>Every university screens differently. Stop practicing blindly. Select your target institution to get past questions and timed mock exams formatted exactly like their actual Post-UTME.</p>
+    </div>
+
+    <div class="prep-container">
+        <!-- Setup Form -->
+        <div class="prep-card">
+            <h2><i class="fas fa-cogs"></i> Configure Your Exam</h2>
+            
+            <div class="form-group">
+                <label>Select Target University</label>
+                <select class="form-select" id="schoolSelect">
+                    <option value="">-- Choose an Institution --</option>
+                    <option value="unilag">University of Lagos (UNILAG)</option>
+                    <option value="oau">Obafemi Awolowo University (OAU)</option>
+                    <option value="ui">University of Ibadan (UI)</option>
+                    <option value="unilorin">University of Ilorin (UNILORIN)</option>
+                    <option value="unn">University of Nigeria, Nsukka (UNN)</option>
+                    <option value="abu">Ahmadu Bello University (ABU)</option>
+                    <option value="uniben">University of Benin (UNIBEN)</option>
+                    <option value="funaab">Federal Univ. of Agriculture (FUNAAB)</option>
+                    <option value="futa">Federal Univ. of Technology (FUTA)</option>
+                    <option value="lasu">Lagos State University (LASU)</option>
+                    <option value="uniport">University of Port Harcourt (UNIPORT)</option>
+                    <option value="buk">Bayero University Kano (BUK)</option>
+                    <option value="uniuyo">University of Uyo (UNIUYO)</option>
+                    <option value="unical">University of Calabar (UNICAL)</option>
+                    <option value="futo">Federal Univ. of Technology, Owerri (FUTO)</option>
+                    <option value="oou">Olabisi Onabanjo University (OOU)</option>
+                    <option value="aaua">Adekunle Ajasin University (AAUA)</option>
+                    <option value="eksu">Ekiti State University (EKSU)</option>
+                    <option value="delsu">Delta State University (DELSU)</option>
+                    <option value="rsu">Rivers State University (RSU)</option>
+                    <option value="uniabuja">University of Abuja (UNIABUJA)</option>
+                    <option value="ndu">Niger Delta University (NDU)</option>
+                    <option value="uniosun">Osun State University (UNIOSUN)</option>
+                    <option value="unizik">Nnamdi Azikiwe University (UNIZIK)</option>
+                    <option value="mouau">Michael Okpara Univ. of Agriculture (MOUAU)</option>
+                    <option value="kasu">Kaduna State University (KASU)</option>
+                    <option value="lautech">Ladoke Akintola Univ. of Technology (LAUTECH)</option>
+                    <option value="tasued">Tai Solarin Univ. of Education (TASUED)</option>
+                    <option value="ksu">Prince Abubakar Audu University (KSU)</option>
+                    <option value="unimaid">University of Maiduguri (UNIMAID)</option>
+                    <option value="unijos">University of Jos (UNIJOS)</option>
+                    <option value="futminna">Federal Univ. of Technology, Minna (FUTMINNA)</option>
+                    <option value="atbu">Abubakar Tafawa Balewa Univ. (ATBU)</option>
+                </select>
+            </div>
+
+            <div class="form-group" id="courseGroup" style="display:none;">
+                <label>Select Course Faculty</label>
+                <select class="form-select" id="facultySelect">
+                    <option value="">-- Choose Faculty --</option>
+                    <option value="science">Science / Engineering / Medicine</option>
+                    <option value="arts">Arts / Humanities</option>
+                    <option value="social">Social Sciences / Management</option>
+                </select>
+            </div>
+
+            <button class="start-btn" id="startExamBtn" disabled>
+                <i class="fas fa-play"></i> Start Simulation
+            </button>
+        </div>
+
+        <!-- Dynamic School Info -->
+        <div class="prep-card">
+            <h2><i class="fas fa-info-circle"></i> Screening Intelligence</h2>
+            
+            <div id="emptyConfig" style="color:#94a3b8; text-align:center; padding: 40px 0;">
+                <i class="fas fa-university" style="font-size: 3rem; margin-bottom: 15px; opacity: 0.5;"></i>
+                <p>Select a university to load its screening format and intelligence data.</p>
+            </div>
+
+            <div class="config-box" id="activeConfig">
+                <div class="config-header">
+                    <div class="config-logo" id="cfgLogo">UN</div>
+                    <div class="config-title">
+                        <h3 id="cfgName">University Name</h3>
+                        <p id="cfgType">Computer Based Test (CBT)</p>
+                    </div>
+                </div>
+                
+                <div class="config-details">
+                    <div class="detail-item">
+                        <span class="detail-label">Questions</span>
+                        <span class="detail-value" id="cfgQuestions">40</span>
+                    </div>
+                    <div class="detail-item">
+                        <span class="detail-label">Time Limit</span>
+                        <span class="detail-value" id="cfgTime">30 Minutes</span>
+                    </div>
+                    <div class="detail-item" style="grid-column: 1 / -1;">
+                        <span class="detail-label">Subjects Tested</span>
+                        <span class="detail-value" id="cfgSubjects">Math, English, General Paper</span>
+                    </div>
+                </div>
+
+                <div class="config-warning">
+                    <i class="fas fa-exclamation-triangle" style="margin-top: 3px;"></i>
+                    <span id="cfgTip">UNILAG tests Mathematics and General Paper for ALL candidates regardless of course. Speed is your biggest advantage.</span>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- FEATURES SECTION -->
+    <section class="features-section">
+        <h2 class="section-title">Why Use OAE <span>Post-UTME Practice?</span></h2>
+        <div class="features-grid">
+            <div class="feature-card">
+                <i class="fas fa-database feature-icon"></i>
+                <h3>Over 3000 Questions</h3>
+                <p>Access thousands of strictly vetted past questions from Federal, State Universities, and Polytechnics across Nigeria.</p>
+            </div>
+            <div class="feature-card">
+                <i class="fas fa-bolt feature-icon"></i>
+                <h3>100% Free & Instant Access</h3>
+                <p>No hidden charges, no subscription fees. Just create a free OAE account and get unlimited automatic access immediately.</p>
+            </div>
+            <div class="feature-card">
+                <i class="fas fa-stopwatch feature-icon"></i>
+                <h3>Master Time Management</h3>
+                <p>Don't get timed out! Practice against the exact countdown timer used by your target institution to build your speed.</p>
+            </div>
+            <div class="feature-card">
+                <i class="fas fa-random feature-icon"></i>
+                <h3>Dynamic Question Shuffling</h3>
+                <p>Questions and options are randomized for each practice test to ensure you are actually learning, not just cramming.</p>
+            </div>
+            <div class="feature-card">
+                <i class="fas fa-chart-pie feature-icon"></i>
+                <h3>Deep Performance Analysis</h3>
+                <p>After each session, review your corrections, see the right answers, and analyze your weak spots to improve rapidly.</p>
+            </div>
+            <div class="feature-card">
+                <i class="fas fa-bullseye feature-icon"></i>
+                <h3>Accurate Learning Materials</h3>
+                <p>Our past questions are vetted to ensure precision. Many schools repeat questions—gain a massive edge over others!</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- TESTIMONIALS SECTION -->
+    <section class="testimonials-section">
+        <h2 class="section-title">What <span>Other Students</span> Are Saying</h2>
+        <div class="testimonials-grid">
+            <div class="testimonial-card">
+                <div class="testim-header">
+                    <div class="testim-avatar">T</div>
+                    <div class="testim-info">
+                        <h4>Toheeb O.</h4>
+                        <div class="testim-stars">
+                            <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+                        </div>
+                    </div>
+                </div>
+                <p>"I love the platform, feels exactly like an actual CBT exam, and I can review my answers immediately after. It's completely free too!"</p>
+            </div>
+            
+            <div class="testimonial-card">
+                <div class="testim-header">
+                    <div class="testim-avatar">B</div>
+                    <div class="testim-info">
+                        <h4>Balikis A.</h4>
+                        <div class="testim-stars">
+                            <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star-half-alt"></i>
+                        </div>
+                    </div>
+                </div>
+                <p>"Thank you OAE for this platform. I can access it at any time on my phone and study for my UNILAG Post-UTME effortlessly."</p>
+            </div>
+
+            <div class="testimonial-card">
+                <div class="testim-header">
+                    <div class="testim-avatar">K</div>
+                    <div class="testim-info">
+                        <h4>Khadijat M.</h4>
+                        <div class="testim-stars">
+                            <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+                        </div>
+                    </div>
+                </div>
+                <p>"As a Science student, I'm preparing for my Post-UTME coming up very soon. OAE's precise past questions have given me so much confidence."</p>
+            </div>
+
+            <div class="testimonial-card">
+                <div class="testim-header">
+                    <div class="testim-avatar">S</div>
+                    <div class="testim-info">
+                        <h4>Sunday F.</h4>
+                        <div class="testim-stars">
+                            <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+                        </div>
+                    </div>
+                </div>
+                <p>"My CBT exam was wonderful! I had a very high score after practicing and studying heavily on this platform. Thank you so much!"</p>
+            </div>
+
+            <div class="testimonial-card">
+                <div class="testim-header">
+                    <div class="testim-avatar">A</div>
+                    <div class="testim-info">
+                        <h4>Adigun T.</h4>
+                        <div class="testim-stars">
+                            <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star-half-alt"></i>
+                        </div>
+                    </div>
+                </div>
+                <p>"I'm so glad to be on this platform because it's showing me exactly how to get myself ready and fully prepared. No more exam tension."</p>
+            </div>
+
+            <div class="testimonial-card">
+                <div class="testim-header">
+                    <div class="testim-avatar">E</div>
+                    <div class="testim-info">
+                        <h4>Eniola A.</h4>
+                        <div class="testim-stars">
+                            <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+                        </div>
+                    </div>
+                </div>
+                <p>"I just created my free account and was able to access practice questions instantly. I will study it non-stop until the CBT exam!"</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ & CONTACT -->
+    <section class="features-section" style="background: white; border-top: 1px solid #e2e8f0;">
+        <h2 class="section-title">Frequently Asked <span>Questions (FAQ)</span></h2>
+        <div style="max-width: 800px; margin: 0 auto; text-align: center;">
+            <div style="background: #f8fafc; padding: 30px; border-radius: 16px; margin-bottom: 20px; text-align: left; border: 1px solid #e2e8f0;">
+                <h3 style="color: #0f172a; margin-top: 0;"><i class="fas fa-question-circle" style="color: #3b82f6;"></i> Do I have to pay to use this?</h3>
+                <p style="color: #475569; margin-bottom: 0;"><strong>Absolutely not.</strong> OAE is committed to free education. This entire Post-UTME platform, including all past questions and CBT features, is 100% free forever.</p>
+            </div>
+            
+            <div style="background: #f8fafc; padding: 30px; border-radius: 16px; margin-bottom: 40px; text-align: left; border: 1px solid #e2e8f0;">
+                <h3 style="color: #0f172a; margin-top: 0;"><i class="fas fa-question-circle" style="color: #3b82f6;"></i> How do I get access?</h3>
+                <p style="color: #475569; margin-bottom: 0;">Simply create an account or login to your dashboard. Select your target institution above, choose your faculty, and click <strong>Start Simulation</strong>.</p>
+            </div>
+
+            <h3>Need More Enquiries?</h3>
+            <p style="color: #64748b; margin-bottom: 20px;">We are always available for any of your enquiries. Contact us via WhatsApp or the live chat below.</p>
+            <a href="https://wa.me/2347051763835" target="_blank" style="display: inline-flex; align-items: center; gap: 8px; padding: 12px 25px; background: #25D366; color: white; text-decoration: none; border-radius: 8px; font-weight: bold; transition: 0.3s;">
+                <i class="fab fa-whatsapp" style="font-size: 1.2rem;"></i> Chat on WhatsApp
+            </a>
+        </div>
+    </section>
+
+    <!-- CTA SECTION -->
+    <section class="cta-section">
+        <div class="cta-content">
+            <h2>Obtain a High Score in your Post UTME examination!</h2>
+            <p>Practice, they say, makes perfect. We provide you the platform to practice until you're perfect. Gain confidence, improve your speed, and secure your admission today.</p>
+            <a href="#" onclick="window.scrollTo({top:0, behavior:'smooth'}); return false;" class="btn-free-cta">
+                <i class="fas fa-rocket"></i> Start Practicing 100% Free
+            </a>
+        </div>
+    </section>
+
+   <!-- FOOTER -->
+<footer class="oae-footer">
+  <!-- CONNECT WITH US BAR -->
+  <div class="footer-connect">
+    <h3>Connect With Us</h3>
+    <hr>
+    <div class="socials-bar">
+      <a href="https://linkedin.com/in/oaeofficial123" target="_blank"><i class="ri-linkedin-fill"></i></a>
+      <a href="https://x.com/oaeofficial123" target="_blank"><i class="ri-twitter-x-fill"></i></a>
+      <a href="https://youtube.com/@oaeofficial123" target="_blank"><i class="ri-youtube-fill"></i></a>
+      <a href="https://facebook.com/oaeofficial123" target="_blank"><i class="ri-facebook-circle-fill"></i></a>
+      <a href="https://instagram.com/oaeofficial123" target="_blank"><i class="ri-instagram-fill"></i></a>
+      <a href="https://tiktok.com/@oaeofficial123" target="_blank"><i class="ri-tiktok-fill"></i></a>
+      <a href="https://t.me/OAECONNECT"><i class="ri-telegram-fill"></i></a>
+      <a href="mailto:oaeofficial123@gmail.com"><i class="ri-mail-line"></i></a>
+    </div>
+  </div>
+
+  <div class="footer-top">
+    <p class="short-about">
+      Oluwatosin Academy of Excellence (OAE) is a Nigerian EdTech organisation delivering exam preparation, tech tutorials, and learning tools to students in Nigeria, across Africa, and worldwide.
+    </p>
+    <div class="newsletter">
+      <input type="email" placeholder="Enter your email for updates">
+      <button>Subscribe</button>
+    </div>
+  </div>
+
+  <div class="footer-grid">
+    <div class="footer-col">
+      <h3>About OAE</h3>
+      <a href="#">Who We Are</a>
+      <a href="#">Our Mission</a>
+      <a href="#">Our Team</a>
+    </div>
+    <div class="footer-col">
+      <h3>Navigation</h3>
+      <a href="#">News & Updates</a>
+      <a href="#">Past Questions</a>
+      <a href="#">Exam Tips</a>
+    </div>
+    <div class="footer-col">
+      <h3>Exams</h3>
+      <a href="#">JAMB Resources</a>
+      <a href="#">WAEC Materials</a>
+      <a href="#">NECO Guides</a>
+    </div>
+    <div class="footer-col">
+      <h3>Contact</h3>
+      <div class="contact-item"><i class="ri-mail-line"></i> oaeofficial123@gmail.com</div>
+      <div class="contact-item"><i class="ri-phone-line"></i> +234 705 176 3835</div>
+    </div>
+  </div>
+
+  <div class="footer-bottom">
+    <p>© 2025 OAE — Oluwatosin Academy of Excellence. All rights reserved.</p>
+  </div>
+</footer>
+
+<script src="/Assets/js/quiz-navbar.js"></script>
+<script src="/Assets/js/post-utme-prep.js"></script>
+<script>
+  /* ============================================
+     GLOBAL DARK MODE MANAGER FOR QUIZ
+     ============================================ */
+  class QuizDarkModeManager {
+    constructor() {
+      this.storageKey = 'oae-dark-mode';
+      this.init();
+    }
+
+    init() {
+      // Apply saved preference on page load
+      this.applySavedPreference();
+      
+      // Listen for storage changes from other tabs/windows
+      window.addEventListener('storage', (e) => {
+        if (e.key === this.storageKey) {
+          this.applySavedPreference();
+        }
+      });
+
+      // Listen for dark mode change events from settings modal
+      window.addEventListener('dark-mode-changed', (e) => {
+        this.applySavedPreference();
+      });
+    }
+
+    applySavedPreference() {
+      const isDarkMode = localStorage.getItem(this.storageKey) === 'true';
+      this.setDarkMode(isDarkMode);
+    }
+
+    setDarkMode(isDarkMode) {
+      if (isDarkMode) {
+        document.body.classList.add('dark-mode');
+        document.documentElement.classList.add('dark-mode');
+      } else {
+        document.body.classList.remove('dark-mode');
+        document.documentElement.classList.remove('dark-mode');
+      }
+    }
+  }
+
+  // Initialize dark mode manager when DOM is ready
+  if (document.readyState === 'loading') {
+    document.addEventListener('DOMContentLoaded', () => {
+      new QuizDarkModeManager();
+    });
+  } else {
+    new QuizDarkModeManager();
+  }
+</script>
+</body>
+</html>

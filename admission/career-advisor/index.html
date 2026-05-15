@@ -1,0 +1,629 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Smart Career & Course Advisor | OAE</title>
+  <link rel="stylesheet" href="/Assets/css/style.css">
+  <link rel="stylesheet" href="/Assets/css/post-jamb-navbar.css">
+  <link rel="stylesheet" href="/Assets/css/footer.css">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" rel="stylesheet">
+  <style>
+    body {
+        background: #f1f5f9;
+        font-family: 'Inter', sans-serif;
+    }
+    .advisor-hero {
+        background: linear-gradient(135deg, #0f172a 0%, #1e293b 100%);
+        padding: 80px 20px 60px;
+        text-align: center;
+        color: white;
+    }
+    .advisor-hero h1 {
+        font-size: 2.8rem;
+        font-weight: 800;
+        margin-bottom: 20px;
+        background: linear-gradient(to right, #34d399, #10b981);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+    }
+    .advisor-hero p {
+        font-size: 1.1rem;
+        color: #cbd5e1;
+        max-width: 600px;
+        margin: 0 auto;
+        line-height: 1.6;
+    }
+
+    .advisor-container {
+        max-width: 800px;
+        margin: -40px auto 60px;
+        padding: 0 20px;
+        position: relative;
+        z-index: 10;
+    }
+
+    .advisor-card {
+        background: white;
+        border-radius: 20px;
+        box-shadow: 0 20px 40px rgba(0,0,0,0.08);
+        padding: 40px;
+        border: 1px solid #e2e8f0;
+    }
+
+    /* Progress Bar */
+    .progress-container {
+        margin-bottom: 40px;
+    }
+    .progress-text {
+        display: flex;
+        justify-content: space-between;
+        font-weight: 600;
+        color: #64748b;
+        margin-bottom: 10px;
+        font-size: 0.9rem;
+    }
+    .progress-bar-bg {
+        height: 8px;
+        background: #e2e8f0;
+        border-radius: 10px;
+        overflow: hidden;
+    }
+    .progress-bar-fill {
+        height: 100%;
+        background: linear-gradient(to right, #10b981, #34d399);
+        width: 0%;
+        transition: width 0.5s ease;
+        border-radius: 10px;
+    }
+
+    /* Question Styles */
+    .question-block {
+        display: none;
+        animation: slideIn 0.4s ease;
+    }
+    .question-block.active {
+        display: block;
+    }
+    @keyframes slideIn {
+        from { opacity: 0; transform: translateX(20px); }
+        to { opacity: 1; transform: translateX(0); }
+    }
+    
+    .question-title {
+        font-size: 1.5rem;
+        color: #0f172a;
+        margin-bottom: 25px;
+        font-weight: 700;
+        text-align: center;
+    }
+
+    .options-grid {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 20px;
+    }
+    
+    .option-btn {
+        background: #f8fafc;
+        border: 2px solid #e2e8f0;
+        border-radius: 12px;
+        padding: 20px;
+        text-align: left;
+        cursor: pointer;
+        transition: 0.3s;
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+    }
+    .option-btn:hover {
+        border-color: #34d399;
+        background: #ecfdf5;
+        transform: translateY(-2px);
+    }
+    .option-btn i {
+        font-size: 2rem;
+        color: #10b981;
+    }
+    .option-btn span {
+        font-weight: 600;
+        color: #1e293b;
+        font-size: 1.05rem;
+    }
+
+    /* Navigation Buttons */
+    .nav-buttons {
+        display: flex;
+        justify-content: space-between;
+        margin-top: 40px;
+        padding-top: 20px;
+        border-top: 1px solid #f1f5f9;
+    }
+    .nav-btn {
+        padding: 12px 30px;
+        border-radius: 8px;
+        font-weight: bold;
+        font-size: 1rem;
+        cursor: pointer;
+        transition: 0.3s;
+        border: none;
+    }
+    .btn-prev {
+        background: #f1f5f9;
+        color: #64748b;
+    }
+    .btn-prev:hover {
+        background: #e2e8f0;
+        color: #0f172a;
+    }
+    .btn-next {
+        background: #10b981;
+        color: white;
+    }
+    .btn-next:hover {
+        background: #059669;
+    }
+    .btn-next:disabled {
+        background: #cbd5e1;
+        cursor: not-allowed;
+    }
+
+    /* Loading Screen */
+    .loading-screen {
+        text-align: center;
+        display: none;
+        padding: 40px 0;
+    }
+    .loader {
+        width: 60px;
+        height: 60px;
+        border: 5px solid #e2e8f0;
+        border-top-color: #10b981;
+        border-radius: 50%;
+        animation: spin 1s linear infinite;
+        margin: 0 auto 20px;
+    }
+    @keyframes spin { 100% { transform: rotate(360deg); } }
+    .loading-screen h3 { color: #1e293b; margin-bottom: 10px; }
+    .loading-screen p { color: #64748b; }
+
+    /* Results Screen */
+    .results-screen {
+        display: none;
+        animation: fadeIn 0.6s ease;
+    }
+    @keyframes fadeIn { from { opacity: 0; } to { opacity: 1; } }
+    
+    .results-header {
+        text-align: center;
+        margin-bottom: 40px;
+    }
+    .results-header h2 {
+        font-size: 2rem;
+        color: #0f172a;
+        margin-bottom: 10px;
+    }
+    .results-header p {
+        color: #64748b;
+    }
+
+    .match-card {
+        background: white;
+        border: 2px solid #e2e8f0;
+        border-radius: 16px;
+        padding: 25px;
+        margin-bottom: 20px;
+        position: relative;
+        overflow: hidden;
+    }
+    .match-card.primary-match {
+        border-color: #34d399;
+        background: #f0fdf4;
+    }
+    .match-badge {
+        position: absolute;
+        top: 20px;
+        right: -35px;
+        background: #10b981;
+        color: white;
+        font-size: 0.8rem;
+        font-weight: bold;
+        padding: 5px 40px;
+        transform: rotate(45deg);
+        box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    }
+    
+    .match-header {
+        display: flex;
+        align-items: center;
+        gap: 15px;
+        margin-bottom: 15px;
+    }
+    .match-icon {
+        width: 50px;
+        height: 50px;
+        background: white;
+        border-radius: 12px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 1.5rem;
+        color: #10b981;
+        box-shadow: 0 4px 6px rgba(0,0,0,0.05);
+    }
+    .match-title h3 {
+        margin: 0;
+        font-size: 1.4rem;
+        color: #1e293b;
+    }
+    .match-title span {
+        font-size: 0.9rem;
+        color: #10b981;
+        font-weight: 600;
+    }
+    .match-desc {
+        color: #475569;
+        line-height: 1.6;
+        margin-bottom: 15px;
+        font-size: 0.95rem;
+    }
+    .match-meta {
+        display: flex;
+        gap: 15px;
+        border-top: 1px solid rgba(0,0,0,0.05);
+        padding-top: 15px;
+    }
+    .meta-item {
+        font-size: 0.85rem;
+        color: #64748b;
+        display: flex;
+        align-items: center;
+        gap: 5px;
+    }
+
+    @media (max-width: 600px) {
+        .options-grid { grid-template-columns: 1fr; }
+        .advisor-hero h1 { font-size: 2rem; }
+        .advisor-card { padding: 25px 15px; }
+    }
+  </style>
+</head>
+<body>
+    <!-- OAE Navbar - Shared component -->
+    <nav class="oae-navbar">
+         <div class="oae-logo">
+            <a href="/Index.htm">
+               <img class="logo-quiz" src="/oae.png" alt="OAE">
+            </a>
+        </div>
+
+        <ul class="oae-nav-links">
+            <li><a href="/admission/post-jamb/index.html">Post-JAMB</a></li>
+            <li><a href="/admission/index.html">Admission</a></li>
+            <li><a href="/admission/updates/index.html">Updates</a></li>
+            <li><a href="/jamb.htm">Exams</a></li>
+        </ul>
+
+        <button class="oae-join-btn" id="navDashBtn">Dashboard</button>
+        
+        <button class="oae-hamburger" id="oaeHamburger">
+            <i class="fas fa-bars"></i>
+        </button>
+
+        <div class="oae-mobile-menu" id="oaeMobileMenu">
+            <ul class="oae-mobile-links">
+                <li><a href="/admission/post-jamb/index.html">Post-JAMB</a></li>
+                <li><a href="/admission/index.html">Admission</a></li>
+                <li><a href="/jamb.htm">Exams</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <div class="advisor-hero">
+        <h1>AI Career & Course Advisor</h1>
+        <p>Stop guessing your future. Answer 5 quick questions about your personality, strengths, and goals, and our algorithm will scientifically match you with the perfect university courses.</p>
+    </div>
+
+    <div class="advisor-container">
+        <div class="advisor-card">
+            
+            <!-- Progress -->
+            <div class="progress-container" id="progressContainer">
+                <div class="progress-text">
+                    <span id="stepIndicator">Step 1 of 5</span>
+                    <span id="percentIndicator">20%</span>
+                </div>
+                <div class="progress-bar-bg">
+                    <div class="progress-bar-fill" id="progressBar" style="width: 20%;"></div>
+                </div>
+            </div>
+
+            <!-- Quiz Form -->
+            <div id="quizForm">
+                <!-- Step 1: Department -->
+                <div class="question-block active" data-step="1">
+                    <h2 class="question-title">Which Academic Department do you belong to?</h2>
+                    <div class="options-grid">
+                        <button class="option-btn" data-val="science" onclick="selectOption(this)">
+                            <i class="fas fa-flask"></i>
+                            <span>Science & Technology</span>
+                        </button>
+                        <button class="option-btn" data-val="commercial" onclick="selectOption(this)">
+                            <i class="fas fa-chart-bar"></i>
+                            <span>Commercial & Business</span>
+                        </button>
+                        <button class="option-btn" data-val="arts" onclick="selectOption(this)">
+                            <i class="fas fa-book-reader"></i>
+                            <span>Arts & Humanities</span>
+                        </button>
+                        <button class="option-btn" data-val="social" onclick="selectOption(this)">
+                            <i class="fas fa-users"></i>
+                            <span>Social Sciences</span>
+                        </button>
+                    </div>
+                    <div style="text-align: center; margin-top: 20px;">
+                        <a href="javascript:void(0)" onclick="openDeptGuide()" style="color: #10b981; font-weight: bold; text-decoration: none; font-size: 0.95rem;">
+                            <i class="fas fa-question-circle"></i> I don't know my department. Please explain.
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Step 2: Dynamic -->
+                <div class="question-block" data-step="2">
+                    <h2 class="question-title" id="step2Title">Loading...</h2>
+                    <div class="options-grid" id="step2Options">
+                    </div>
+                </div>
+
+                <!-- Step 3: Dynamic -->
+                <div class="question-block" data-step="3">
+                    <h2 class="question-title" id="step3Title">Loading...</h2>
+                    <div class="options-grid" id="step3Options">
+                    </div>
+                </div>
+
+                <!-- Step 4: Dynamic -->
+                <div class="question-block" data-step="4">
+                    <h2 class="question-title" id="step4Title">Loading...</h2>
+                    <div class="options-grid" id="step4Options"></div>
+                </div>
+
+                <!-- Step 5: Dynamic -->
+                <div class="question-block" data-step="5">
+                    <h2 class="question-title" id="step5Title">Loading...</h2>
+                    <div class="options-grid" id="step5Options"></div>
+                </div>
+
+                <!-- Step 6: Dynamic -->
+                <div class="question-block" data-step="6">
+                    <h2 class="question-title" id="step6Title">Loading...</h2>
+                    <div class="options-grid" id="step6Options"></div>
+                </div>
+
+                <!-- Step 7: Dynamic -->
+                <div class="question-block" data-step="7">
+                    <h2 class="question-title" id="step7Title">Loading...</h2>
+                    <div class="options-grid" id="step7Options"></div>
+                </div>
+
+                <!-- Step 8: Dynamic -->
+                <div class="question-block" data-step="8">
+                    <h2 class="question-title" id="step8Title">Loading...</h2>
+                    <div class="options-grid" id="step8Options"></div>
+                </div>
+
+                <!-- Step 9: Dynamic -->
+                <div class="question-block" data-step="9">
+                    <h2 class="question-title" id="step9Title">Loading...</h2>
+                    <div class="options-grid" id="step9Options"></div>
+                </div>
+
+                <!-- Step 10: Dynamic -->
+                <div class="question-block" data-step="10">
+                    <h2 class="question-title" id="step10Title">Loading...</h2>
+                    <div class="options-grid" id="step10Options"></div>
+                </div>
+
+                <!-- Step 11: Dynamic -->
+                <div class="question-block" data-step="11">
+                    <h2 class="question-title" id="step11Title">Loading...</h2>
+                    <div class="options-grid" id="step11Options"></div>
+                </div>
+
+                <div class="nav-buttons">
+                    <button class="nav-btn btn-prev" id="btnPrev" onclick="prevStep()" style="visibility: hidden;">Back</button>
+                    <button class="nav-btn btn-next" id="btnNext" onclick="nextStep()" disabled>Continue</button>
+                </div>
+            </div>
+
+            <!-- Loading State -->
+            <div class="loading-screen" id="loadingScreen">
+                <div class="loader"></div>
+                <h3>Analyzing Your Profile...</h3>
+                <p>Matching your strengths with thousands of university courses.</p>
+            </div>
+
+            <!-- Results State -->
+            <div class="results-screen" id="resultsScreen">
+                <div class="results-header">
+                    <h2 style="font-size: 1.2rem; color: #10b981; text-transform: uppercase; letter-spacing: 1px; margin-bottom: 5px;">Department: <span id="resDeptName"></span></h2>
+                    <h3 style="font-size: 2.2rem; color: #0f172a; margin-top: 0;">Your Top Course Matches</h3>
+                    <p>Based on your department and preferences, here are the most accurate and highly recommended courses for you, complete with full requirements.</p>
+                </div>
+
+                <div id="resultsContainer">
+                    <!-- Dynamic Results injected via JS -->
+                </div>
+
+                <div style="text-align:center; margin-top:30px;">
+                    <a href="/admission/subject-combinations/index.html" class="nav-btn btn-next" style="display:inline-block; text-decoration:none;">
+                        <i class="fas fa-book"></i> View Required JAMB Subjects
+                    </a>
+                    <br><br>
+                    <button class="nav-btn btn-prev" onclick="location.reload()">Take Assessment Again</button>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <!-- Department Guide Modal -->
+    <div id="deptGuideModal" style="display: none; position: fixed; top: 0; left: 0; width: 100%; height: 100%; background: rgba(15, 23, 42, 0.8); z-index: 9999; align-items: center; justify-content: center; padding: 20px;">
+        <div style="background: white; border-radius: 16px; padding: 30px; max-width: 600px; width: 100%; max-height: 90vh; overflow-y: auto; position: relative;">
+            <button onclick="closeDeptGuide()" style="position: absolute; top: 20px; right: 20px; background: none; border: none; font-size: 1.5rem; color: #64748b; cursor: pointer;"><i class="fas fa-times"></i></button>
+            <h2 style="font-size: 1.8rem; color: #1e293b; margin-bottom: 20px;">Understanding Departments</h2>
+            <p style="color: #475569; margin-bottom: 25px; line-height: 1.6;">In Nigerian institutions, courses are grouped into four major faculties based on the subjects you studied in secondary school.</p>
+            
+            <div style="margin-bottom: 20px;">
+                <h3 style="color: #10b981; margin-bottom: 5px;"><i class="fas fa-flask"></i> Science & Technology</h3>
+                <p style="color: #64748b; font-size: 0.95rem;">For students who took Physics, Chemistry, Biology, or Further Math. Leads to careers like Doctors, Engineers, Programmers, and Pharmacists.</p>
+            </div>
+            <div style="margin-bottom: 20px;">
+                <h3 style="color: #3b82f6; margin-bottom: 5px;"><i class="fas fa-chart-bar"></i> Commercial & Business</h3>
+                <p style="color: #64748b; font-size: 0.95rem;">For students who took Accounting, Commerce, and Economics. Leads to careers like Bankers, Accountants, Marketers, and Business Managers.</p>
+            </div>
+            <div style="margin-bottom: 20px;">
+                <h3 style="color: #f59e0b; margin-bottom: 5px;"><i class="fas fa-book-reader"></i> Arts & Humanities</h3>
+                <p style="color: #64748b; font-size: 0.95rem;">For students who took Literature, History, and Government. Leads to careers like Lawyers, Journalists, Actors, and Authors.</p>
+            </div>
+            <div style="margin-bottom: 30px;">
+                <h3 style="color: #8b5cf6; margin-bottom: 5px;"><i class="fas fa-users"></i> Social Sciences</h3>
+                <p style="color: #64748b; font-size: 0.95rem;">For students interested in how society works. Overlaps with Commercial and Arts. Leads to careers like Psychologists, Diplomats, and Sociologists.</p>
+            </div>
+            <button onclick="closeDeptGuide()" style="width: 100%; padding: 15px; background: #10b981; color: white; border: none; border-radius: 8px; font-weight: bold; font-size: 1.1rem; cursor: pointer;">I Understand, Let's Go!</button>
+        </div>
+    </div>
+
+    <!-- MARKETING SECTION (Testimonials, Comparison, FAQ) -->
+    <section class="marketing-section" style="background: white; padding: 80px 20px;">
+        <div style="max-width: 1000px; margin: 0 auto; text-align: center;">
+            <h2 style="font-size: 2.5rem; color: #0f172a; margin-bottom: 20px;">Understand yourself, discover opportunities</h2>
+            <p style="font-size: 1.1rem; color: #64748b; margin-bottom: 60px; line-height: 1.6; max-width: 800px; margin-left: auto; margin-right: auto;">
+                Unlock powerful insights into your personality and academic strengths to reveal new career paths and university courses you’ve never considered. OAE's AI Advisor doesn't just guess; it calculates your highest probability for success.
+            </p>
+        </div>
+
+        <!-- Comparison Table -->
+        <div style="max-width: 900px; margin: 0 auto 80px;">
+            <h2 style="text-align: center; font-size: 2rem; color: #1e293b; margin-bottom: 30px;">What makes OAE Career Advisor different?</h2>
+            <div style="background: #f8fafc; border-radius: 16px; border: 1px solid #e2e8f0; overflow: hidden;">
+                <table style="width: 100%; border-collapse: collapse; text-align: left;">
+                    <thead>
+                        <tr style="background: #ecfdf5;">
+                            <th style="padding: 20px; color: #064e3b; font-size: 1.1rem; border-bottom: 2px solid #a7f3d0;">Feature</th>
+                            <th style="padding: 20px; color: #059669; font-size: 1.1rem; border-bottom: 2px solid #a7f3d0; text-align: center;">OAE AI Advisor</th>
+                            <th style="padding: 20px; color: #64748b; font-size: 1.1rem; border-bottom: 2px solid #e2e8f0; text-align: center;">Other Tests</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr style="border-bottom: 1px solid #e2e8f0;">
+                            <td style="padding: 15px 20px; color: #334155; font-weight: 500;">Career & Course Recommendations</td>
+                            <td style="padding: 15px 20px; text-align: center; color: #10b981;"><i class="fas fa-check-circle" style="font-size: 1.2rem;"></i></td>
+                            <td style="padding: 15px 20px; text-align: center; color: #10b981;"><i class="fas fa-check-circle" style="font-size: 1.2rem;"></i></td>
+                        </tr>
+                        <tr style="border-bottom: 1px solid #e2e8f0;">
+                            <td style="padding: 15px 20px; color: #334155; font-weight: 500;">Accurate JAMB Subject Combinations</td>
+                            <td style="padding: 15px 20px; text-align: center; color: #10b981;"><i class="fas fa-check-circle" style="font-size: 1.2rem;"></i></td>
+                            <td style="padding: 15px 20px; text-align: center; color: #ef4444;"><i class="fas fa-times-circle" style="font-size: 1.2rem;"></i></td>
+                        </tr>
+                        <tr style="border-bottom: 1px solid #e2e8f0;">
+                            <td style="padding: 15px 20px; color: #334155; font-weight: 500;">Nigerian O'Level Requirements</td>
+                            <td style="padding: 15px 20px; text-align: center; color: #10b981;"><i class="fas fa-check-circle" style="font-size: 1.2rem;"></i></td>
+                            <td style="padding: 15px 20px; text-align: center; color: #ef4444;"><i class="fas fa-times-circle" style="font-size: 1.2rem;"></i></td>
+                        </tr>
+                        <tr style="border-bottom: 1px solid #e2e8f0;">
+                            <td style="padding: 15px 20px; color: #334155; font-weight: 500;">Competitiveness Analysis</td>
+                            <td style="padding: 15px 20px; text-align: center; color: #10b981;"><i class="fas fa-check-circle" style="font-size: 1.2rem;"></i></td>
+                            <td style="padding: 15px 20px; text-align: center; color: #ef4444;"><i class="fas fa-times-circle" style="font-size: 1.2rem;"></i></td>
+                        </tr>
+                        <tr>
+                            <td style="padding: 15px 20px; color: #334155; font-weight: 500;">100% Free Forever</td>
+                            <td style="padding: 15px 20px; text-align: center; color: #10b981;"><i class="fas fa-check-circle" style="font-size: 1.2rem;"></i></td>
+                            <td style="padding: 15px 20px; text-align: center; color: #ef4444;"><i class="fas fa-times-circle" style="font-size: 1.2rem;"></i></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+
+        <!-- Testimonials -->
+        <div style="background: #f1f5f9; padding: 60px 20px; border-radius: 24px; max-width: 1200px; margin: 0 auto 80px;">
+            <h2 style="text-align: center; font-size: 2rem; color: #1e293b; margin-bottom: 40px;">Why students love the OAE AI Advisor</h2>
+            <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 20px;">
+                <!-- Review 1 -->
+                <div style="background: white; padding: 25px; border-radius: 16px; box-shadow: 0 4px 10px rgba(0,0,0,0.03);">
+                    <div style="display: flex; gap: 2px; color: #f59e0b; margin-bottom: 10px;"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></div>
+                    <p style="color: #475569; font-size: 0.95rem; font-style: italic; margin-bottom: 15px; line-height: 1.6;">"This AI is an incredible tool! I started when I was seeking a course shift and felt unsure as to where I should pivot. Because of its tools and guidance, I successfully picked a path."</p>
+                    <strong style="color: #0f172a;">— Emily</strong>
+                </div>
+                <!-- Review 2 -->
+                <div style="background: white; padding: 25px; border-radius: 16px; box-shadow: 0 4px 10px rgba(0,0,0,0.03);">
+                    <div style="display: flex; gap: 2px; color: #f59e0b; margin-bottom: 10px;"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></div>
+                    <p style="color: #475569; font-size: 0.95rem; font-style: italic; margin-bottom: 15px; line-height: 1.6;">"If you are looking to see what courses your skill set most resonates with, or find out more of your true authentic persona, I highly recommend OAE AI Advisor."</p>
+                    <strong style="color: #0f172a;">— Socorro</strong>
+                </div>
+                <!-- Review 3 -->
+                <div style="background: white; padding: 25px; border-radius: 16px; box-shadow: 0 4px 10px rgba(0,0,0,0.03);">
+                    <div style="display: flex; gap: 2px; color: #f59e0b; margin-bottom: 10px;"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></div>
+                    <p style="color: #475569; font-size: 0.95rem; font-style: italic; margin-bottom: 15px; line-height: 1.6;">"This app was beyond enlightening when it comes to learning about how your personality fits into a university course. Will recommend to anyone."</p>
+                    <strong style="color: #0f172a;">— Connor</strong>
+                </div>
+                <!-- Review 4 -->
+                <div style="background: white; padding: 25px; border-radius: 16px; box-shadow: 0 4px 10px rgba(0,0,0,0.03);">
+                    <div style="display: flex; gap: 2px; color: #f59e0b; margin-bottom: 10px;"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></div>
+                    <p style="color: #475569; font-size: 0.95rem; font-style: italic; margin-bottom: 15px; line-height: 1.6;">"I was really impressed with how the AI tools accurately identify your personality type, then offer detailed steps to transition into the right course. A lot of resources I found extremely helpful!"</p>
+                    <strong style="color: #0f172a;">— Timmy</strong>
+                </div>
+                <!-- Review 5 -->
+                <div style="background: white; padding: 25px; border-radius: 16px; box-shadow: 0 4px 10px rgba(0,0,0,0.03);">
+                    <div style="display: flex; gap: 2px; color: #f59e0b; margin-bottom: 10px;"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></div>
+                    <p style="color: #475569; font-size: 0.95rem; font-style: italic; margin-bottom: 15px; line-height: 1.6;">"I took the quiz on a whim. This led me to the AI which is quite extraordinary! The genuine, honest and sincere guidance and support this experience offers is amazing."</p>
+                    <strong style="color: #0f172a;">— Manissha</strong>
+                </div>
+                <!-- Review 6 -->
+                <div style="background: white; padding: 25px; border-radius: 16px; box-shadow: 0 4px 10px rgba(0,0,0,0.03);">
+                    <div style="display: flex; gap: 2px; color: #f59e0b; margin-bottom: 10px;"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></div>
+                    <p style="color: #475569; font-size: 0.95rem; font-style: italic; margin-bottom: 15px; line-height: 1.6;">"It's WAY better than a career coach. The curated results are very robust, the AI interface is great, and best of all, it's totally free!"</p>
+                    <strong style="color: #0f172a;">— Christopher</strong>
+                </div>
+            </div>
+        </div>
+
+        <!-- FAQ Section -->
+        <div style="max-width: 800px; margin: 0 auto; text-align: left;">
+            <h2 style="text-align: center; font-size: 2.2rem; color: #1e293b; margin-bottom: 40px;">Frequently Asked Questions</h2>
+            
+            <div style="margin-bottom: 25px; border-bottom: 1px solid #e2e8f0; padding-bottom: 20px;">
+                <h3 style="color: #0f172a; font-size: 1.2rem; margin-bottom: 10px;">Is this right for me?</h3>
+                <p style="color: #64748b; line-height: 1.6; margin: 0;">Yes! Whether you are a secondary school student unsure of what to pick in JAMB, or someone seeking a career shift, this tool breaks down your personality to find your true fit.</p>
+            </div>
+            
+            <div style="margin-bottom: 25px; border-bottom: 1px solid #e2e8f0; padding-bottom: 20px;">
+                <h3 style="color: #0f172a; font-size: 1.2rem; margin-bottom: 10px;">How accurate are the test results?</h3>
+                <p style="color: #64748b; line-height: 1.6; margin: 0;">Extremely accurate. The AI maps your specific answers to a massive, manually curated database of university courses, matching psychological traits to required academic skills.</p>
+            </div>
+
+            <div style="margin-bottom: 25px; border-bottom: 1px solid #e2e8f0; padding-bottom: 20px;">
+                <h3 style="color: #0f172a; font-size: 1.2rem; margin-bottom: 10px;">How much does the career test cost?</h3>
+                <p style="color: #64748b; line-height: 1.6; margin: 0;">It is <strong>100% free</strong>. OAE provides this premium guidance tool completely free of charge to all users.</p>
+            </div>
+
+            <div style="margin-bottom: 25px; border-bottom: 1px solid #e2e8f0; padding-bottom: 20px;">
+                <h3 style="color: #0f172a; font-size: 1.2rem; margin-bottom: 10px;">How long does the career test take to complete?</h3>
+                <p style="color: #64748b; line-height: 1.6; margin: 0;">Less than 2 minutes. We ask highly targeted questions so you get results instantly without wasting time.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="oae-footer">
+      <div class="footer-bottom">
+        <p>🌍 Trusted by <strong>15,000+ learners</strong> across Nigeria, Africa, and the world.</p>
+        <p>© 2025 OAE — Oluwatosin Academy of Excellence. All rights reserved.</p>
+      </div>
+    </footer>
+
+    <script src="/Assets/js/post-jamb-navbar.js"></script>
+    <script src="/Assets/js/career-advisor.js"></script>
+</body>
+</html>

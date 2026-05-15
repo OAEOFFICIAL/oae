@@ -67,6 +67,7 @@
             
             <a href="#" class="dash-nav-btn active"><i class="fas fa-home"></i> Overview</a>
             <a href="/admission/index.html" class="dash-nav-btn"><i class="fas fa-university"></i> Admission Hub</a>
+            <a href="/admission/career-advisor/index.html" class="dash-nav-btn" style="color: #6366f1; font-weight:bold;"><i class="fas fa-compass"></i> AI Course Advisor</a>
             <a href="/jamb.htm" class="dash-nav-btn"><i class="fas fa-laptop-code"></i> Quiz Arena</a>
             <a href="/admission/updates/index.html" class="dash-nav-btn"><i class="fas fa-bullhorn"></i> Live News</a>
             
@@ -118,13 +119,127 @@
                 </div>
             </div>
 
-            <!-- ACTIVITY -->
-            <div class="activity-section">
-                <h2 class="section-title"><i class="fas fa-history"></i> Recent Activity</h2>
-                <div class="empty-state">
-                    <i class="fas fa-clipboard-list"></i>
-                    <h3>No Recent Activity</h3>
-                    <p>Your quiz attempts and document downloads will appear here.</p>
+            <!-- ADMISSION TRACKER -->
+            <div class="tracker-section">
+                <div class="tracker-header">
+                    <h2 class="section-title"><i class="fas fa-route"></i> My Admission Journey</h2>
+                    <p class="tracker-desc">Track every step from your JAMB result to your final JAMB CAPS admission letter.</p>
+                </div>
+                
+                <div class="timeline-container" id="admissionTimeline">
+                    <!-- Step 1 -->
+                    <div class="timeline-step" data-step="1">
+                        <div class="step-indicator">
+                            <div class="step-circle"><i class="fas fa-check"></i></div>
+                            <div class="step-line"></div>
+                        </div>
+                        <div class="step-content">
+                            <div class="step-header">
+                                <h3>1. JAMB Result Released</h3>
+                                <label class="step-toggle">
+                                    <input type="checkbox" class="step-checkbox" id="step1-check">
+                                    <span class="toggle-slider"></span>
+                                </label>
+                            </div>
+                            <p>Have you seen your official JAMB score?</p>
+                            <div class="step-action" id="step1-action">
+                                <input type="number" id="tracker-jamb-score" placeholder="Enter your JAMB Score (e.g. 260)" class="tracker-input">
+                                <button class="tracker-btn" id="save-jamb-btn">Save Score</button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Step 2 -->
+                    <div class="timeline-step" data-step="2">
+                        <div class="step-indicator">
+                            <div class="step-circle"><i class="fas fa-check"></i></div>
+                            <div class="step-line"></div>
+                        </div>
+                        <div class="step-content">
+                            <div class="step-header">
+                                <h3>2. Post-UTME Form Registration</h3>
+                                <label class="step-toggle">
+                                    <input type="checkbox" class="step-checkbox" id="step2-check">
+                                    <span class="toggle-slider"></span>
+                                </label>
+                            </div>
+                            <p>Have you successfully purchased and registered for your Post-UTME screening?</p>
+                            <div class="step-action" id="step2-action">
+                                <select id="tracker-putme-status" class="tracker-input">
+                                    <option value="">-- Registration Status --</option>
+                                    <option value="waiting">Waiting for form to be out</option>
+                                    <option value="registered">Registered successfully</option>
+                                </select>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Step 3 -->
+                    <div class="timeline-step" data-step="3">
+                        <div class="step-indicator">
+                            <div class="step-circle"><i class="fas fa-check"></i></div>
+                            <div class="step-line"></div>
+                        </div>
+                        <div class="step-content">
+                            <div class="step-header">
+                                <h3>3. Post-UTME Screening Exam</h3>
+                                <label class="step-toggle">
+                                    <input type="checkbox" class="step-checkbox" id="step3-check">
+                                    <span class="toggle-slider"></span>
+                                </label>
+                            </div>
+                            <p>When is your screening exam date?</p>
+                            <div class="step-action" id="step3-action">
+                                <input type="date" id="tracker-exam-date" class="tracker-input">
+                                <a href="/Quizzes/post-utme.html" class="tracker-link-btn primary"><i class="fas fa-laptop-code"></i> Launch Post-UTME Engine</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Step 4 -->
+                    <div class="timeline-step" data-step="4">
+                        <div class="step-indicator">
+                            <div class="step-circle"><i class="fas fa-check"></i></div>
+                            <div class="step-line"></div>
+                        </div>
+                        <div class="step-content">
+                            <div class="step-header">
+                                <h3>4. Departmental Cut-off Marks</h3>
+                                <label class="step-toggle">
+                                    <input type="checkbox" class="step-checkbox" id="step4-check">
+                                    <span class="toggle-slider"></span>
+                                </label>
+                            </div>
+                            <p>Compare your aggregate against the released cut-off marks.</p>
+                            <div class="step-action" id="step4-action">
+                                <a href="/admission/chance-predictor/index.html" class="tracker-link-btn primary"><i class="fas fa-brain"></i> Predict Admission Chance</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Step 5 -->
+                    <div class="timeline-step" data-step="5">
+                        <div class="step-indicator">
+                            <div class="step-circle"><i class="fas fa-check"></i></div>
+                        </div>
+                        <div class="step-content">
+                            <div class="step-header">
+                                <h3>5. JAMB CAPS Admission Status</h3>
+                                <label class="step-toggle">
+                                    <input type="checkbox" class="step-checkbox" id="step5-check">
+                                    <span class="toggle-slider"></span>
+                                </label>
+                            </div>
+                            <p>Monitor your final admission status on the JAMB portal.</p>
+                            <div class="step-action" id="step5-action">
+                                <select id="tracker-caps-status" class="tracker-input" style="font-weight:bold;">
+                                    <option value="not_admitted">Not Admitted</option>
+                                    <option value="in_progress">Admission In Progress</option>
+                                    <option value="admitted" style="color:#10b981;">Admitted!</option>
+                                </select>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
 
