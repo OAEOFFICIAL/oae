@@ -18,14 +18,34 @@ const courseDatabase = [
         desc: "You are drawn to a life of extraordinary challenge and purpose. You want to stand in the room where every decision matters, diagnosing, deciding, and healing. If you choose Medicine, you will spend years mastering every system of the human body — and a lifetime using that mastery to save lives."
     },
     {
-        title: "Computer Science / Software Engineering",
+        title: "Computer Science",
         department: "science",
-        tags: ["computers", "building_tech", "tech_hub", "flexible"],
+        tags: ["computers", "software_dev", "algorithms", "theory_logic", "office_design"],
         jamb: "English, Math, Physics, Chemistry (or Biology/Agric)",
         olevel: "5 Credits: English, Math, Physics, plus two sciences",
-        careers: "Software Developer, Data Scientist, AI Engineer",
+        careers: "Software Developer, Data Scientist, AI Engineer, Systems Analyst",
         competitiveness: "High",
-        desc: "The fastest growing field globally. Perfect for logical thinkers who love technology, coding, and building digital solutions."
+        desc: "You are drawn to the world of code, algorithms, and the endless creativity of software. You want to understand how computers think — and then make them think better. Whether you build apps, analyse data, or push the boundaries of artificial intelligence, you belong at the heart of the digital revolution."
+    },
+    {
+        title: "Computer Science & Mathematics",
+        department: "science",
+        tags: ["computers", "theory_logic", "algorithms", "office_design"],
+        jamb: "English, Math, Physics, Chemistry",
+        olevel: "5 Credits: English, Math, Physics, plus two others",
+        careers: "Algorithm Engineer, Cryptographer, Quantitative Analyst",
+        competitiveness: "High",
+        desc: "For those who want to master the mathematical foundations of computing. You will solve the most complex problems in logic, security, and data science by combining pure math with high-level programming."
+    },
+    {
+        title: "Computer Science & Economics",
+        department: "science",
+        tags: ["computers", "data_science", "market_trends", "office_design"],
+        jamb: "English, Math, Economics, plus one science/social science",
+        olevel: "5 Credits: English, Math, Economics, plus two others",
+        careers: "Financial Tech Developer, Business Intelligence Analyst, Economic Modeler",
+        competitiveness: "High",
+        desc: "The intersection of logic and the market. You will build the systems that run modern finance, using data science and computing to understand and predict economic behaviour."
     },
     {
         title: "Civil / Mechanical Engineering",
@@ -96,6 +116,196 @@ const courseDatabase = [
         careers: "Civil Engineer, Structural Engineer, Environmental Engineer, Construction Manager",
         competitiveness: "High",
         desc: "You are drawn to the big stuff — the roads, bridges, buildings, and water systems that make communities liveable. Your work will stand the test of time and serve generations to come."
+    },
+    {
+        title: "Mechanical & Production Engineering",
+        department: "science",
+        tags: ["machines_structures", "mech_engine", "field_site_eng", "office_design"],
+        jamb: "English, Math, Physics, Chemistry",
+        olevel: "5 Credits: English, Math, Physics, Chem, Further Math/Technical Drawing",
+        careers: "Mechanical Engineer, Production Engineer, Automotive Engineer, Maintenance Engineer",
+        competitiveness: "High",
+        desc: "You are drawn to machines, engines, and the moving parts that make the world run. You enjoy understanding how things work and making them work better, faster, and stronger. You are a builder of machines and a master of motion."
+    },
+    {
+        title: "Electrical & Electronics Engineering",
+        department: "science",
+        tags: ["machines_structures", "elec_power", "office_design"],
+        jamb: "English, Math, Physics, Chemistry",
+        olevel: "5 Credits: English, Math, Physics, Chem, Further Math/Technical Drawing",
+        careers: "Electrical Engineer, Electronics Designer, Telecommunications Engineer, Power Systems Engineer",
+        competitiveness: "Very High",
+        desc: "You are fascinated by the invisible power that lights up homes, runs machines, and connects the world. Whether it is the massive scale of the national grid or the tiny world of microchips, you are the one who keeps the current flowing and the devices buzzing."
+    },
+    {
+        title: "Chemical & Process Engineering",
+        department: "science",
+        tags: ["machines_structures", "chem_process", "office_design"],
+        jamb: "English, Math, Physics, Chemistry",
+        olevel: "5 Credits: English, Math, Physics, Chem, Further Math/Technical Drawing",
+        careers: "Chemical Engineer, Process Engineer, Refinery Manager, Food Process Engineer",
+        competitiveness: "High",
+        desc: "You are fascinated by how raw materials — oil, gas, minerals, or even food — can be transformed into the products we use every day. You turn raw potential into everyday reality, working with massive reactors and complex systems to create the world's essentials."
+    },
+    {
+        title: "Petroleum & Gas Engineering",
+        department: "science",
+        tags: ["machines_structures", "petroleum", "field_site_eng", "office_design"],
+        jamb: "English, Math, Physics, Chemistry",
+        olevel: "5 Credits: English, Math, Physics, Chem, Further Math/Technical Drawing",
+        careers: "Petroleum Engineer, Drilling Engineer, Reservoir Engineer, Production Engineer",
+        competitiveness: "Very High",
+        desc: "You are fascinated by the treasures deep underground — oil and gas — and the technology needed to find them, extract them, and bring them to the surface. You solve problems thousands of metres below the earth to power the world."
+    },
+    {
+        title: "Aerospace & Aeronautical Engineering",
+        department: "science",
+        tags: ["machines_structures", "aerospace", "office_design"],
+        jamb: "English, Math, Physics, Chemistry",
+        olevel: "5 Credits: English, Math, Physics, Chem, Further Math/Technical Drawing",
+        careers: "Aerospace Engineer, Aeronautical Engineer, Aircraft Designer, Avionics Specialist",
+        competitiveness: "Very High",
+        desc: "You are drawn to the sky and beyond — the machines that conquer gravity. Whether it is passenger jets, supersonic planes, or rockets that leave our planet, you are a builder of wings and a dreamer of stars."
+    },
+    {
+        title: "Marine & Naval Engineering",
+        department: "science",
+        tags: ["machines_structures", "marine_eng", "field_site_eng", "office_design"],
+        jamb: "English, Math, Physics, Chemistry",
+        olevel: "5 Credits: English, Math, Physics, Chem, Further Math/Technical Drawing",
+        careers: "Marine Engineer, Naval Architect, Offshore Engineer, Shipyard Manager",
+        competitiveness: "High",
+        desc: "You are drawn to the sea — the massive machines and structures that conquer it. Whether you are designing elegant hulls or maintaining the massive engines of a tanker, you are the one who tames the waves."
+    },
+    {
+        title: "Mining & Geological Engineering",
+        department: "science",
+        tags: ["machines_structures", "mining_geo", "field_site_eng", "office_design"],
+        jamb: "English, Math, Physics, Chemistry",
+        olevel: "5 Credits: English, Math, Physics, Chem, Further Math/Technical Drawing",
+        careers: "Mining Engineer, Geological Engineer, Mineral Processor, Geotechnical Engineer",
+        competitiveness: "High",
+        desc: "You are drawn to the treasures hidden in the earth — the metals, minerals, and gems that build our world. You want to find them, extract them safely, and unlock the earth's riches with respect for the ground."
+    },
+    {
+        title: "Materials & Metallurgical Engineering",
+        department: "science",
+        tags: ["machines_structures", "materials_eng", "office_design"],
+        jamb: "English, Math, Physics, Chemistry",
+        olevel: "5 Credits: English, Math, Physics, Chem, Further Math/Technical Drawing",
+        careers: "Materials Engineer, Metallurgist, Polymer Scientist, Failure Analyst",
+        competitiveness: "High",
+        desc: "You are fascinated by what things are made of — metals, plastics, ceramics, and composites. You want to understand why materials break, how to make them stronger, and how to create new ones that have never existed before."
+    },
+    {
+        title: "Agricultural & Biosystems Engineering",
+        department: "science",
+        tags: ["machines_structures", "agric_eng", "field_site_eng", "office_design"],
+        jamb: "English, Math, Physics, Chemistry",
+        olevel: "5 Credits: English, Math, Physics, Chem, plus one other",
+        careers: "Agricultural Engineer, Irrigation Engineer, Food Engineer, Bio-systems Specialist",
+        competitiveness: "High",
+        desc: "You are drawn to the land, the food we eat, and the machines and systems that make farming productive and sustainable. You are the engineer who feeds the world, managing everything from soil and water to processing raw harvests."
+    },
+    {
+        title: "Biomedical & Medical Engineering",
+        department: "science",
+        tags: ["machines_structures", "biomedical", "office_design"],
+        jamb: "English, Math, Physics, Biology (or Chemistry)",
+        olevel: "5 Credits: English, Math, Physics, Chem, Bio",
+        careers: "Biomedical Engineer, Clinical Engineer, Prosthetist, Medical Device Designer",
+        competitiveness: "Very High",
+        desc: "You are the bridge between medicine and engineering — using technology to replace, repair, and support the human body. You are an engineer of healing, designing devices that save lives and improve the very quality of human existence."
+    },
+    {
+        title: "Mechatronics & Robotics Engineering",
+        department: "science",
+        tags: ["machines_structures", "robotics", "embedded_systems", "office_design"],
+        jamb: "English, Math, Physics, Chemistry",
+        olevel: "5 Credits: English, Math, Physics, Chem, plus one science",
+        careers: "Mechatronics Engineer, Robotics Specialist, Automation Engineer, Control Systems Engineer",
+        competitiveness: "Very High",
+        desc: "You are the one who will make machines come alive. You don't want to choose just one field — you want mechanics, electronics, and computer science all at once to build the intelligent machines of the future."
+    },
+    {
+        title: "Computer Engineering",
+        department: "science",
+        tags: ["computers", "comp_hardware", "embedded_systems", "office_design"],
+        jamb: "English, Math, Physics, Chemistry",
+        olevel: "5 Credits: English, Math, Physics, Chem, plus one science",
+        careers: "Computer Hardware Engineer, Embedded Systems Engineer, Network Architect",
+        competitiveness: "High",
+        desc: "You are a builder of the digital age — fascinated by the hardware that powers our world. You want to design faster processors, smarter machines, and the physical circuits that make code come alive."
+    },
+    {
+        title: "Software Engineering",
+        department: "science",
+        tags: ["computers", "software_dev", "app_building", "office_design"],
+        jamb: "English, Math, Physics, Chemistry (or Biology/Agric)",
+        olevel: "5 Credits: English, Math, Physics, plus two sciences",
+        careers: "Software Developer, Systems Architect, Full-Stack Engineer",
+        competitiveness: "Very High",
+        desc: "You are a creator whose primary tool is code. You want to build elegant, powerful software that solves real-world problems for millions of users. If you can dream it, you can program it."
+    },
+    {
+        title: "Web & Mobile Development",
+        department: "science",
+        tags: ["computers", "software_dev", "app_building", "flexible"],
+        jamb: "English, Math, Physics, Chemistry/Biology",
+        olevel: "5 Credits: English, Math, Physics, plus two others",
+        careers: "Frontend Developer, App Developer, UI/UX Designer",
+        competitiveness: "High",
+        desc: "You are drawn to the apps and websites we use every day. You want to design the interfaces, build the features, and ensure that every user has a perfect digital experience."
+    },
+    {
+        title: "Data Science & Artificial Intelligence",
+        department: "science",
+        tags: ["computers", "data_science", "theory_logic", "office_design"],
+        jamb: "English, Math, Physics, Chemistry/Biology",
+        olevel: "5 Credits: English, Math, Physics, plus two others",
+        careers: "AI Researcher, Data Scientist, ML Engineer",
+        competitiveness: "Very High",
+        desc: "You want to be at the edge of the future — where machines learn and data tells stories. You will build the intelligent systems that power the next generation of technology."
+    },
+    {
+        title: "Information Technology & Systems",
+        department: "science",
+        tags: ["computers", "network_security", "it_systems", "office_design"],
+        jamb: "English, Math, Physics, Chemistry",
+        olevel: "5 Credits: English, Math, Physics, plus two others",
+        careers: "IT Manager, Systems Analyst, Network Architect",
+        competitiveness: "High",
+        desc: "You are the one who makes technology work for people and businesses. You bridge the gap between complex systems and the real-world problems they solve."
+    },
+    {
+        title: "Information & Communication Technology",
+        department: "science",
+        tags: ["computers", "it_systems", "telecom", "office_design"],
+        jamb: "English, Math, Physics, Chemistry",
+        olevel: "5 Credits: English, Math, Physics, plus two others",
+        careers: "Telecom Engineer, ICT Consultant, Broadcast Engineer",
+        competitiveness: "High",
+        desc: "You are fascinated by how information travels. You want to connect people, whether through massive telecommunications networks, TV broadcasts, or enterprise IT infrastructure."
+    },
+    {
+        title: "Multimedia Technology",
+        department: "science",
+        tags: ["computers", "app_building", "it_systems", "flexible"],
+        jamb: "English, Math, Physics, Art/Chemistry",
+        olevel: "5 Credits: English, Math, Physics, plus two others",
+        careers: "Multimedia Designer, Video Editor, Creative Technologist",
+        competitiveness: "Medium",
+        desc: "You are drawn to the creative side of technology. You want to build video, animation, and digital media systems that inform, entertain, and inspire."
+    },
+    {
+        title: "Cybersecurity & Digital Forensics",
+        department: "science",
+        tags: ["computers", "network_security", "forensic", "office_design"],
+        jamb: "English, Math, Physics, Chemistry",
+        olevel: "5 Credits: English, Math, Physics, plus two others",
+        careers: "Ethical Hacker, Forensic Analyst, Security Consultant",
+        competitiveness: "Very High",
+        desc: "You are the guardian of the digital world. You protect systems from attackers, investigate digital crimes, and ensure that data stays safe and secure."
     },
     {
         title: "Medical Laboratory Science",
@@ -248,14 +458,24 @@ const courseDatabase = [
         desc: "You are drawn to the quiet, green world of plants — how they live, grow, and sustain life on earth. You want to study them, protect them, and perhaps improve them through genetics or biotechnology. The world of plants is vast, vital, and beautiful."
     },
     {
-        title: "Agriculture / Animal Science",
+        title: "Crop Science & Agriculture",
         department: "science",
-        tags: ["chemicals_drugs", "discovering_patterns", "field_site", "structured"],
+        tags: ["plants", "field_site", "nature_environment", "research_nature"],
         jamb: "English, Biology/Agric, Chemistry, Physics/Math",
         olevel: "5 Credits: English, Math, Bio/Agric, Chem, Physics",
-        careers: "Agricultural Economist, Farm Manager, Researcher",
+        careers: "Agronomist, Crop Scientist, Farm Manager",
         competitiveness: "Medium",
-        desc: "Focuses on food production, animal husbandry, and agricultural economics. Essential for global food security and rural development."
+        desc: "You are drawn to the land and the plants that feed us. You want to understand how crops grow, how to protect them, and how to produce more food sustainably to feed a growing world."
+    },
+    {
+        title: "Soil Science & Horticulture",
+        department: "science",
+        tags: ["plants", "earth_rocks", "field_site", "nature_environment"],
+        jamb: "English, Biology/Agric, Chemistry, Physics/Math",
+        olevel: "5 Credits: English, Math, Bio/Agric, Chem, Geography",
+        careers: "Soil Scientist, Horticulturist, Landscape Manager",
+        competitiveness: "Medium",
+        desc: "You are fascinated by the foundation of all life — the soil — and the art of growing ornamental plants. Whether maintaining soil health or designing beautiful landscapes, you work at the root of nature."
     },
     {
         title: "Zoology & Animal Biology",
@@ -268,14 +488,14 @@ const courseDatabase = [
         desc: "You are fascinated by the animal kingdom — from the largest mammals to the smallest insects. You want to study animals in the wild, understand their behaviour, and protect their habitats. The world is full of creatures waiting to be understood — and you will be their voice."
     },
     {
-        title: "Marine & Aquatic Sciences",
+        title: "Oceanography & Marine Sciences",
         department: "science",
-        tags: ["nature_environment", "earth_rocks", "marine", "field_nature"],
+        tags: ["nature_environment", "earth_rocks", "marine", "field_site"],
         jamb: "English, Biology, Chemistry, Physics",
         olevel: "5 Credits: English, Math, Bio, Chem, Physics",
-        careers: "Marine Biologist, Oceanographer, Fisheries Scientist, Aquaculture Specialist",
+        careers: "Oceanographer, Marine Scientist, Maritime Specialist",
         competitiveness: "Low",
-        desc: "You are drawn to the water — the vast oceans, the quiet rivers, and the life within them. You want to explore, understand, and protect the underwater world. The ocean is calling, and you are ready to answer."
+        desc: "You are captivated by the ocean — its physics, chemistry, geology, and its role in shaping the planet. You want to study the sea with scientific instruments, research vessels, and computer models."
     },
     {
         title: "Forensic Science & Criminology",
@@ -296,6 +516,166 @@ const courseDatabase = [
         careers: "Laboratory Technologist, Analytical Chemist, QC Officer, Lab Manager",
         competitiveness: "Medium",
         desc: "You are the backbone of every laboratory — the one who knows the machines, follows the protocols, and delivers results that can be trusted. Science is only as good as its measurements, and you are the person who makes every measurement count."
+    },
+    {
+        title: "Environmental Science & Biology",
+        department: "science",
+        tags: ["nature_environment", "field_site", "lab_nature"],
+        jamb: "English, Biology, Chemistry, Physics/Geography",
+        olevel: "5 Credits: English, Math, Bio, Chem, Geography/Physics",
+        careers: "Environmental Scientist, Conservation Officer, Ecologist",
+        competitiveness: "High",
+        desc: "You are deeply concerned about the planet. You want to understand the science behind environmental problems and use that knowledge to create real solutions, from conservation to sustainable policy."
+    },
+    {
+        title: "Environmental Management & Toxicology",
+        department: "science",
+        tags: ["nature_environment", "toxicology", "office_design"],
+        jamb: "English, Biology, Chemistry, Physics",
+        olevel: "5 Credits: English, Math, Bio, Chem, Physics",
+        careers: "Toxicologist, Environmental Consultant, Waste Management Specialist",
+        competitiveness: "Medium",
+        desc: "You are drawn to the human side of the environment — investigating pollution, ensuring corporate compliance, and analyzing the impact of chemicals on ecosystems and public health."
+    },
+    {
+        title: "Geology & Geoscience",
+        department: "science",
+        tags: ["earth_rocks", "field_site", "research_nature", "office_design"],
+        jamb: "English, Physics, Chemistry, Biology/Math",
+        olevel: "5 Credits: English, Math, Physics, Chem, Bio/Geography",
+        careers: "Geologist, Seismologist, Hydrogeologist",
+        competitiveness: "High",
+        desc: "You are fascinated by the ground beneath your feet. You want to read the history of the earth written in stone and use it to find water, minerals, or simply understand our planet."
+    },
+    {
+        title: "Geophysics & Petroleum Studies",
+        department: "science",
+        tags: ["earth_rocks", "field_site", "lab_nature"],
+        jamb: "English, Physics, Chemistry, Math",
+        olevel: "5 Credits: English, Math, Physics, Chem, Geography",
+        careers: "Geophysicist, Petroleum Geologist, Exploration Scientist",
+        competitiveness: "Very High",
+        desc: "You are drawn to the physics of the earth — seismic waves, gravity, and the invisible forces that shape our world. You use advanced technology to see what lies miles beneath the surface."
+    },
+    {
+        title: "Geography & Regional Planning",
+        department: "science",
+        tags: ["nature_environment", "office_design", "field_site"],
+        jamb: "English, Geography, Math, plus one Science/Social Science",
+        olevel: "5 Credits: English, Math, Geography, plus two others",
+        careers: "Urban Planner, GIS Analyst, Geographer",
+        competitiveness: "Medium",
+        desc: "You are the one who sees the big picture — how people live, move, and build on the land. You use maps, data, and planning to design cities and manage resources sustainably."
+    },
+    {
+        title: "Meteorology & Climate Science",
+        department: "science",
+        tags: ["nature_environment", "research_nature", "office_design"],
+        jamb: "English, Physics, Math, Geography/Chemistry",
+        olevel: "5 Credits: English, Math, Physics, Geography, plus one other",
+        careers: "Meteorologist, Climate Scientist, Weather Forecaster",
+        competitiveness: "High",
+        desc: "You are fascinated by the atmosphere above — the weather that shapes our days and the climate that shapes our future. You forecast storms and study the changing climate to protect communities."
+    },
+    {
+        title: "Physics & Applied Physics",
+        department: "science",
+        tags: ["research_nature", "theory_logic", "office_design", "lab_nature"],
+        jamb: "English, Physics, Math, Chemistry",
+        olevel: "5 Credits: English, Math, Physics, Chem, plus one other",
+        careers: "Physicist, Research Scientist, Data Analyst",
+        competitiveness: "High",
+        desc: "You are fascinated by the fundamental laws that govern everything — from the smallest particle to the largest galaxy. You want to understand how the universe works and solve complex theoretical problems."
+    },
+    {
+        title: "Physics with Electronics & Solar Energy",
+        department: "science",
+        tags: ["elec_power", "machines_structures", "lab_nature", "computers"],
+        jamb: "English, Physics, Math, Chemistry",
+        olevel: "5 Credits: English, Math, Physics, Chem, plus one other",
+        careers: "Electronics Physicist, Solar Energy Specialist, Applied Scientist",
+        competitiveness: "High",
+        desc: "You want to use the laws of physics to build something useful. From designing renewable solar energy systems to creating advanced electronic sensors, you bridge the gap between pure science and engineering."
+    },
+    {
+        title: "Chemistry & Medicinal Chemistry",
+        department: "science",
+        tags: ["chemicals_drugs", "lab_nature", "forensic", "lab_tech"],
+        jamb: "English, Chemistry, Physics, Biology/Math",
+        olevel: "5 Credits: English, Math, Chemistry, Physics, Bio",
+        careers: "Chemist, Medicinal Chemist, Forensic Analyst",
+        competitiveness: "High",
+        desc: "You are fascinated by molecules — how they are made, how they react, and how they can be used to create everything from life-saving medicines to new materials."
+    },
+    {
+        title: "Industrial & Petroleum Chemistry",
+        department: "science",
+        tags: ["chem_process", "petroleum", "lab_nature", "machines_structures"],
+        jamb: "English, Chemistry, Physics, Math",
+        olevel: "5 Credits: English, Math, Chemistry, Physics, plus one other",
+        careers: "Industrial Chemist, Petroleum Analyst, Quality Control Manager",
+        competitiveness: "High",
+        desc: "You are drawn to industry — making products on a large scale. Whether you are formulating new plastics, refining crude oil into fuels, or managing a massive chemical plant, you are the architect of modern materials."
+    },
+    {
+        title: "Mathematics & Applied Mathematics",
+        department: "science",
+        tags: ["theory_logic", "data_science", "numbers_math", "office_design"],
+        jamb: "English, Math, Physics, Chemistry/Economics",
+        olevel: "5 Credits: English, Math, Physics, plus two others",
+        careers: "Mathematician, Quantitative Analyst, Research Scientist",
+        competitiveness: "High",
+        desc: "You are drawn to the language of the universe — numbers, equations, and the logic that underpins everything. You find beauty in patterns and satisfaction in solving the hardest problems."
+    },
+    {
+        title: "Industrial & Computational Mathematics",
+        department: "science",
+        tags: ["algorithms", "computers", "data_science", "theory_logic"],
+        jamb: "English, Math, Physics, Chemistry/Computer Studies",
+        olevel: "5 Credits: English, Math, Physics, plus two others",
+        careers: "Computational Scientist, Algorithm Developer, Operations Researcher",
+        competitiveness: "High",
+        desc: "You want to use maths to solve real-world problems. Whether modelling disease spread, optimizing a supply chain, or building the algorithms that power AI, your logic is the engine of modern industry."
+    },
+    {
+        title: "Statistics & Data Analytics",
+        department: "science",
+        tags: ["data_science", "numbers_math", "office_design", "discovering_patterns"],
+        jamb: "English, Math, Physics/Chemistry, Economics",
+        olevel: "5 Credits: English, Math, Physics, plus two others",
+        careers: "Statistician, Data Analyst, Market Researcher",
+        competitiveness: "High",
+        desc: "You are the one who makes sense of uncertainty. You use data and careful analysis to guide decisions that affect millions of people, turning raw numbers into powerful knowledge."
+    },
+    {
+        title: "Actuarial Science & Biostatistics",
+        department: "science",
+        tags: ["managing_money", "data_science", "numbers_math", "discovering_patterns"],
+        jamb: "English, Math, Economics, plus one Science",
+        olevel: "5 Credits: English, Math, Economics, plus two Sciences",
+        careers: "Actuary, Biostatistician, Risk Manager",
+        competitiveness: "Very High",
+        desc: "You calculate risk and reward. Whether you are setting insurance premiums in a bank or analyzing clinical trial data in a hospital, you use mathematical probability to predict the future."
+    },
+    {
+        title: "Animal Science & Production",
+        department: "science",
+        tags: ["wild_animals", "field_site", "nature_environment", "research_nature"],
+        jamb: "English, Biology/Agric, Chemistry, Physics/Math",
+        olevel: "5 Credits: English, Math, Bio/Agric, Chem, Physics",
+        careers: "Animal Scientist, Livestock Manager, Nutritionist",
+        competitiveness: "Medium",
+        desc: "You are drawn to the creatures that feed us. You want to improve animal health, their production, and the systems that raise them, ensuring sustainable and efficient farming."
+    },
+    {
+        title: "Fisheries & Aquaculture",
+        department: "science",
+        tags: ["wild_animals", "marine", "field_site", "nature_environment"],
+        jamb: "English, Biology/Agric, Chemistry, Physics/Math",
+        olevel: "5 Credits: English, Math, Bio/Agric, Chem, Geography",
+        careers: "Aquaculturist, Fisheries Officer, Farm Manager",
+        competitiveness: "Medium",
+        desc: "Your heart is in the water — fish, shrimp, and aquatic farming. You want to study the science of aquaculture to build productive systems that provide protein to communities."
     },
 
     // --- COMMERCIAL & BUSINESS ---
@@ -494,175 +874,88 @@ const dynamicQuestions = {
                 { val: "human_body", label: "Someone in pain, sick, or unwell — I want to help them feel better.", icon: "fas fa-user-injured" },
                 { val: "machines_structures", label: "A broken device, machine, or structure that needs to be built or repaired.", icon: "fas fa-tools" },
                 { val: "computers", label: "A confusing set of data, a slow app, or a network that keeps failing.", icon: "fas fa-laptop-code" },
-                { val: "nature_environment", label: "A chemical reaction, an environmental issue, or something in nature out of balance.", icon: "fas fa-leaf" }
+                { val: "nature_environment", label: "A chemical reaction, an environmental issue, or something in nature that’s out of balance.", icon: "fas fa-leaf" }
             ]
         },
         {
             title: "When you imagine helping a living being who is unwell, what feels most natural to you?",
             options: [
-                { val: "saving_lives", label: "Being right there with them — talking to them, examining them, and guiding recovery.", icon: "fas fa-stethoscope" },
-                { val: "lab", label: "Working behind the scenes in a lab, running tests to find out what’s wrong.", icon: "fas fa-vial" },
-                { val: "field_site", label: "Making sure communities stay healthy, preventing diseases before they even start.", icon: "fas fa-shield-virus" },
-                { val: "animals", label: "Working directly with animals — examining, calming, and treating them.", icon: "fas fa-paw" },
-                { val: "physiotherapy", label: "Helping them regain movement, speech, or daily abilities after an injury.", icon: "fas fa-walking" },
-                { val: "nutrition", label: "Helping them regain strength and energy through the right foods and meal plans.", icon: "fas fa-apple-alt" }
+                { val: "saving_lives", label: "Direct Care: Being right there with them — examining, treating, and guiding recovery.", icon: "fas fa-stethoscope" },
+                { val: "lab", label: "Behind the Scenes: Working in a lab or research centre to find out what is wrong.", icon: "fas fa-vial" },
+                { val: "field_site", label: "Community Health: Making sure environments stay healthy and preventing outbreaks.", icon: "fas fa-shield-virus" },
+                { val: "physiotherapy", label: "Rehabilitation: Helping patients regain movement, speech, or strength after injury.", icon: "fas fa-walking" }
             ]
         },
         {
-            title: "Which part of being a healer most excites you?",
+            title: "Which part of being a scientist or healer most excites you?",
             options: [
-                { val: "discovering_patterns", label: "Diagnosing mysterious illnesses and creating the entire treatment plan.", icon: "fas fa-search-plus" },
-                { val: "high_stress", label: "Performing procedures with my hands — surgery, stitching, or delicate operations.", icon: "fas fa-hands" },
-                { val: "hospital", label: "Building long-term relationships with patients and being their first point of care.", icon: "fas fa-handshake" },
-                { val: "teeth_smile", label: "Specialising in a specific part of the body, like the teeth, gums, and jaws.", icon: "fas fa-tooth" },
-                { val: "chemicals_drugs", label: "Understanding medicines — how they work, how to make them, and how to give them safely.", icon: "fas fa-pills" },
-                { val: "nursing_midwifery", label: "Specialising in a specific area, like pregnancy, childbirth, or the care of newborns.", icon: "fas fa-baby" },
-                { val: "diagnostics", label: "Specialising in tests that reveal hidden problems, like X-rays or blood work.", icon: "fas fa-microscope" },
-                { val: "public_health", label: "Studying patterns of disease — how to stop outbreaks and keep populations well.", icon: "fas fa-globe-africa" },
-                { val: "physiotherapy", label: "Using exercises and hands-on techniques to help someone walk again or recover.", icon: "fas fa-dumbbell" },
-                { val: "eyes_vision", label: "Specialising in a specific part of the body, like the eyes and vision.", icon: "fas fa-eye" },
-                { val: "speech_hearing", label: "Helping someone hear the world again, or find their voice after losing speech.", icon: "fas fa-deaf" },
-                { val: "health_admin", label: "Specialising in the systems and information that keep healthcare organised.", icon: "fas fa-folder-open" },
-                { val: "nutrition", label: "Using food as medicine — planning meals that help people recover and live healthier.", icon: "fas fa-carrot" },
-                { val: "biomedical", label: "Studying the body at the deepest level — cells, tissues, and organs — to understand disease.", icon: "fas fa-microscope" },
-                { val: "biochemistry", label: "Understanding life at the molecular level — how DNA, proteins, and enzymes work.", icon: "fas fa-dna" },
-                { val: "microbiology", label: "Studying invisible invaders — bacteria and viruses — and how the body fights back.", icon: "fas fa-bacteria" },
-                { val: "genetics", label: "Studying the blueprint of life — DNA, genes, and why diseases run in families.", icon: "fas fa-dna" },
-                { val: "pharmacology", label: "Studying how drugs interact with the body — how a tiny pill can cure or, wrongly dosed, poison.", icon: "fas fa-pills" },
-                { val: "physiology", label: "Understanding how body systems work and using machines to measure, image, and support them.", icon: "fas fa-heartbeat" }
+                { val: "discovering_patterns", label: "The Diagnosis: Using tests and logic to find the cause of mysterious illnesses.", icon: "fas fa-search-plus" },
+                { val: "high_stress", label: "The Procedure: Performing surgical or delicate operations with your hands.", icon: "fas fa-hands" },
+                { val: "chemicals_drugs", label: "The Medicine: Understanding drugs, how to make them, and how they work in the body.", icon: "fas fa-pills" },
+                { val: "nursing_midwifery", label: "The Support: Providing continuous care for mothers, newborns, or hospital patients.", icon: "fas fa-baby" }
             ]
         },
         {
             title: "How do you handle high-pressure situations?",
             options: [
                 { val: "high_stress", label: "I stay calm, make fast decisions, and take charge when every second counts.", icon: "fas fa-bolt" },
-                { val: "structured", label: "I prefer a steady, controlled environment where I can think deeply before acting.", icon: "fas fa-brain" },
-                { val: "flexible", label: "I rely on clear protocols and teamwork, supporting others in a fast-paced setting.", icon: "fas fa-users" },
-                { val: "high_stress", label: "I thrive when the pressure is on and I have to act purely on instinct.", icon: "fas fa-fire" }
+                { val: "structured", label: "I prefer a steady, controlled environment where I can think deeply.", icon: "fas fa-brain" },
+                { val: "flexible", label: "I rely on clear protocols and teamwork to support others.", icon: "fas fa-users" },
+                { val: "high_stress", label: "I thrive on adrenaline and acting purely on professional instinct.", icon: "fas fa-fire" }
             ]
         },
         {
             title: "Where do you see yourself working in 10 years?",
             options: [
-                { val: "hospital", label: "In a busy hospital, moving from patient to patient, making critical decisions.", icon: "fas fa-hospital-alt" },
-                { val: "structured", label: "In a quiet clinic, seeing familiar patients and managing their ongoing health.", icon: "fas fa-clinic-medical" },
-                { val: "lab", label: "In a research lab, studying diseases and testing new treatments.", icon: "fas fa-microscope" },
-                { val: "field_site", label: "Out in the field, working directly in communities to improve health.", icon: "fas fa-map-marked-alt" },
-                { val: "chemicals_drugs", label: "In a pharmacy or pharmaceutical company, ensuring people get the right medicines.", icon: "fas fa-prescription-bottle-alt" },
-                { val: "nursing_midwifery", label: "In a maternity unit or clinic, helping mothers before, during, and after childbirth.", icon: "fas fa-baby-carriage" },
-                { val: "diagnostics", label: "In a laboratory or imaging centre, surrounded by microscopes and scanning machines.", icon: "fas fa-x-ray" },
-                { val: "physiotherapy", label: "In a rehabilitation centre or clinic, restoring patients' strength over many sessions.", icon: "fas fa-crutch" },
-                { val: "eyes_vision", label: "In a quiet eye clinic, using advanced equipment to examine eyes and prescribe lenses.", icon: "fas fa-glasses" },
-                { val: "speech_hearing", label: "In a quiet clinic, conducting hearing tests or teaching a stroke survivor to speak.", icon: "fas fa-head-side-medical" },
-                { val: "health_admin", label: "In a quiet office within a hospital, managing databases, budgets, or patient records.", icon: "fas fa-database" },
-                { val: "nutrition", label: "In a nutrition clinic, advising patients on healthy eating and managing diet-related diseases.", icon: "fas fa-utensils" },
-                { val: "biomedical", label: "In a research lab or university, studying cells and tissues to advance medicine.", icon: "fas fa-flask" },
-                { val: "biochemistry", label: "In a research lab, studying enzymes, DNA, or proteins and developing new drugs.", icon: "fas fa-atom" },
-                { val: "microbiology", label: "In a microbiology lab, culturing bacteria and researching how the immune system defends us.", icon: "fas fa-viruses" },
-                { val: "genetics", label: "In a genetics institute, analyzing DNA samples and studying how traits and diseases are inherited.", icon: "fas fa-chart-bar" },
-                { val: "pharmacology", label: "In a pharmaceutical company, testing how new drugs work in the body and whether they are safe.", icon: "fas fa-flask" },
-                { val: "physiology", label: "In a hospital's cardiology or neurology department, running ECGs, EEGs, or fine-tuning radiation therapy.", icon: "fas fa-wave-square" }
+                { val: "hospital", label: "A Major Hospital: Dealing with emergencies and performing surgeries.", icon: "fas fa-hospital-alt" },
+                { val: "lab", label: "A Research Lab: Studying diseases and testing new treatments or vaccines.", icon: "fas fa-microscope" },
+                { val: "structured", label: "A Specialist Clinic: Focusing on eyes, teeth, or patient rehabilitation.", icon: "fas fa-clinic-medical" },
+                { val: "chemicals_drugs", label: "A Pharmaceutical Hub: Managing medications or developing new drugs.", icon: "fas fa-prescription-bottle-alt" }
             ]
         },
         {
             title: "What kind of challenge would make you feel most alive?",
             options: [
-                { val: "high_stress", label: "A trauma emergency where I have to act fast to save a life.", icon: "fas fa-ambulance" },
-                { val: "discovering_patterns", label: "A complex medical puzzle where the diagnosis isn’t obvious.", icon: "fas fa-puzzle-piece" },
-                { val: "saving_lives", label: "A long-term battle with a chronic illness, walking with a patient through their journey.", icon: "fas fa-route" },
-                { val: "animals", label: "An outbreak of disease among a herd or in wildlife that requires quick action.", icon: "fas fa-paw" },
-                { val: "nursing_midwifery", label: "A long labour where I guide a mother through the pain and joy of bringing new life.", icon: "fas fa-baby" },
-                { val: "diagnostics", label: "A complex diagnostic puzzle — looking at a blood slide or scan to find a tiny clue.", icon: "fas fa-search" },
-                { val: "public_health", label: "An outbreak of disease that spreads quickly — tracing its source and protecting thousands.", icon: "fas fa-chart-line" },
-                { val: "physiotherapy", label: "Helping a patient take their first steps after months of hard work and physical therapy.", icon: "fas fa-running" },
-                { val: "eyes_vision", label: "A complex puzzle where a patient's vision is failing and I must find the exact cause.", icon: "fas fa-eye-dropper" },
-                { val: "speech_hearing", label: "A child who hasn’t spoken a word, and I find the right therapy to change their life.", icon: "fas fa-comment-medical" },
-                { val: "health_admin", label: "A hospital's records are a mess, and I design a new digital system that fixes everything.", icon: "fas fa-project-diagram" },
-                { val: "nutrition", label: "A long-term partnership guiding a patient battling obesity or diabetes to transform their diet.", icon: "fas fa-weight" },
-                { val: "biomedical", label: "A disease with an unknown cause — I search through cells and molecules until I find the answer.", icon: "fas fa-dna" },
-                { val: "biochemistry", label: "A disease that no one understands, and I use biochemistry to uncover its molecular cause.", icon: "fas fa-viruses" },
-                { val: "microbiology", label: "A fever of unknown origin, and I identify the rare bacteria or virus causing it.", icon: "fas fa-bug" },
-                { val: "genetics", label: "A child with a rare disorder — I search through their genes to find the single mutation responsible.", icon: "fas fa-dna" },
-                { val: "pharmacology", label: "A new drug with strange side effects — I figure out why and fix it, or trace an outbreak of poisoning.", icon: "fas fa-vial" },
-                { val: "physiology", label: "A patient's heart rhythm is unstable, and I use cardiac physiology to pinpoint the exact problem.", icon: "fas fa-procedures" }
+                { val: "high_stress", label: "A Medical Emergency: Saving a life when every second counts.", icon: "fas fa-ambulance" },
+                { val: "discovering_patterns", label: "A Diagnostic Puzzle: Finding the cause of a rare or unknown disease.", icon: "fas fa-puzzle-piece" },
+                { val: "nursing_midwifery", label: "A Journey of Care: Helping a mother through birth or a patient through recovery.", icon: "fas fa-heart" },
+                { val: "public_health", label: "A Global Health Crisis: Stopping an outbreak and protecting a community.", icon: "fas fa-globe-africa" }
             ]
         },
         {
-            title: "Which of these would you be most proud to learn?",
+            title: "What area of biology/chemistry fascinates you most?",
             options: [
-                { val: "saving_lives", label: "How to perform a life-saving operation.", icon: "fas fa-heartbeat" },
-                { val: "lab", label: "How to interpret complex lab results and scans to find hidden clues.", icon: "fas fa-x-ray" },
-                { val: "structured", label: "How to manage a whole healthcare team and improve hospital systems.", icon: "fas fa-clipboard-list" },
-                { val: "chemicals_drugs", label: "How to develop a new vaccine or drug that saves millions.", icon: "fas fa-flask" },
-                { val: "nursing_midwifery", label: "How to deliver a baby safely and support the mother through the entire process.", icon: "fas fa-baby-carriage" },
-                { val: "diagnostics", label: "How to operate a CT scanner or run a blood test to identify a rare disease.", icon: "fas fa-vial" },
-                { val: "public_health", label: "How to design a national vaccination campaign that eradicates a disease.", icon: "fas fa-shield-alt" },
-                { val: "physiotherapy", label: "How to teach someone with a spinal injury how to sit up, stand, and move again.", icon: "fas fa-wheelchair" },
-                { val: "eyes_vision", label: "How to examine the inside of an eye, spot damage, and prescribe the perfect treatment.", icon: "fas fa-eye" },
-                { val: "speech_hearing", label: "How to fit a cochlear implant or teach a stutterer to speak fluently.", icon: "fas fa-ear-listen" },
-                { val: "health_admin", label: "How to build a secure, efficient electronic health records system that serves thousands.", icon: "fas fa-network-wired" },
-                { val: "nutrition", label: "How to design a nutrition programme that eradicates childhood malnutrition in a community.", icon: "fas fa-seedling" },
-                { val: "biomedical", label: "How to read tissue slides and genetic data to uncover the root of a disease.", icon: "fas fa-atom" },
-                { val: "biochemistry", label: "How to read a DNA sequence and pinpoint the mutation causing a genetic disease.", icon: "fas fa-project-diagram" },
-                { val: "microbiology", label: "How to grow a pathogen in the lab and test which antibiotic kills it, or design a new vaccine.", icon: "fas fa-syringe" },
-                { val: "genetics", label: "How to read a whole genome and use gene editing tools like CRISPR to correct a disorder.", icon: "fas fa-cut" },
-                { val: "pharmacology", label: "How to determine the exact dose of a drug that heals without harming, or identify an unknown poison.", icon: "fas fa-balance-scale" },
-                { val: "physiology", label: "How to interpret a complex ECG or calibrate a radiation machine to destroy a tumour precisely.", icon: "fas fa-radiation" }
+                { val: "human_body", label: "Human Anatomy: How every organ and system works together to sustain life.", icon: "fas fa-human-capacity" },
+                { val: "chemicals_drugs", label: "Pharmacology: How molecules and drugs interact with cells to cure disease.", icon: "fas fa-pills" },
+                { val: "genetics", label: "Genetics: The DNA blueprint that determines who we are and what diseases we carry.", icon: "fas fa-dna" },
+                { val: "microbiology", label: "Microbiology: The invisible world of bacteria and viruses and how we fight them.", icon: "fas fa-viruses" }
             ]
         },
         {
-            title: "When you think about living bodies or systems, what fascinates you most?",
+            title: "How do you prefer to spend your work day?",
             options: [
-                { val: "human_body", label: "The entire body as an interconnected system — I want to understand it all.", icon: "fas fa-child" },
-                { val: "teeth_smile", label: "A specific system, like the mouth, jaw, and teeth.", icon: "fas fa-tooth" },
-                { val: "chemicals_drugs", label: "The microscopic world of cells, genes, and molecules that make us who we are.", icon: "fas fa-dna" },
-                { val: "animals", label: "The way animals move, behave, and respond to their environment.", icon: "fas fa-paw" },
-                { val: "nursing_midwifery", label: "The process of pregnancy and birth — how a new life grows and enters the world.", icon: "fas fa-baby" },
-                { val: "public_health", label: "The bigger picture — how poverty, environment, and policy shape who gets sick.", icon: "fas fa-users" },
-                { val: "physiotherapy", label: "The way the body moves — muscles, bones, joints, and how to restore movement.", icon: "fas fa-walking" },
-                { val: "eyes_vision", label: "A specific system — the eyes and visual system, and how the brain creates sight.", icon: "fas fa-eye" },
-                { val: "speech_hearing", label: "The ear and the auditory pathways, or the vocal cords and the brain’s language centres.", icon: "fas fa-volume-up" },
-                { val: "health_admin", label: "How health systems, data, and technology come together to deliver care efficiently.", icon: "fas fa-sitemap" },
-                { val: "nutrition", label: "How the body uses food — digestion, metabolism, and the power of nutrients to heal.", icon: "fas fa-apple-alt" },
-                { val: "biomedical", label: "The microscopic world of cells, tissues, and organs — the intricate machinery of life.", icon: "fas fa-bacteria" },
-                { val: "biochemistry", label: "The molecular world — DNA, RNA, proteins, and how they control every breath and heartbeat.", icon: "fas fa-dna" },
-                { val: "microbiology", label: "The invisible battlefield — how germs invade and how the immune system defends every inch.", icon: "fas fa-shield-virus" },
-                { val: "genetics", label: "The microscopic world of genes, chromosomes, and the code that builds every living thing.", icon: "fas fa-project-diagram" },
-                { val: "pharmacology", label: "How a single drug molecule binds to a receptor and changes the way a cell behaves.", icon: "fas fa-capsules" },
-                { val: "physiology", label: "How the heart pumps, the lungs exchange gases, or nerves fire — and how we measure every signal.", icon: "fas fa-heartbeat" }
+                { val: "hospital", label: "Always Moving: Walking wards, seeing patients, and taking quick action.", icon: "fas fa-walking" },
+                { val: "lab", label: "Focused Study: Working in a quiet, sterile lab with high-tech equipment.", icon: "fas fa-microscope" },
+                { val: "structured", label: "Patient Interaction: Talking to people and counseling them on their health.", icon: "fas fa-comments" },
+                { val: "flexible", label: "Community Outreach: Traveling to different locations to improve public health.", icon: "fas fa-route" }
             ]
         },
         {
-            title: "How do you feel about working long, unpredictable hours?",
+            title: "Which of these would you be most proud to achieve?",
             options: [
-                { val: "high_stress", label: "I accept it — it’s part of the job when lives are on the line.", icon: "fas fa-clock" },
-                { val: "structured", label: "I’d rather have more control over my schedule and a predictable routine.", icon: "fas fa-calendar-check" },
-                { val: "flexible", label: "I’d prefer shift work that’s structured, even if it includes nights.", icon: "fas fa-moon" },
-                { val: "hospital", label: "I’m fine with long hours as long as I’m not constantly on call.", icon: "fas fa-bed" }
+                { val: "saving_lives", label: "Successfully performing a difficult surgery that saves a patient's life.", icon: "fas fa-star" },
+                { val: "lab", label: "Discovering a new drug or vaccine that wipes out a major disease.", icon: "fas fa-search" },
+                { val: "public_health", label: "Designing a healthcare system that makes medical care free for everyone.", icon: "fas fa-university" },
+                { val: "physiotherapy", label: "Helping a paralyzed patient take their very first steps after months of therapy.", icon: "fas fa-walking" }
             ]
         },
         {
-            title: "If you could shadow a professional for a day, who would you choose?",
+            title: "If you could shadow a professional, who would it be?",
             options: [
-                { val: "saving_lives", label: "A surgeon in the operating theatre.", icon: "fas fa-procedures" },
-                { val: "discovering_patterns", label: "A physician diagnosing complex cases in a teaching hospital.", icon: "fas fa-user-md" },
-                { val: "animals", label: "A mixed-practice vet diagnosing animals on a farm or in a clinic.", icon: "fas fa-paw" },
-                { val: "teeth_smile", label: "A dentist performing fillings, extractions, or smile makeovers.", icon: "fas fa-tooth" },
-                { val: "chemicals_drugs", label: "A pharmacist advising on medicines and preparing prescriptions.", icon: "fas fa-capsules" },
-                { val: "nursing_midwifery", label: "A nurse or midwife in a busy hospital ward or maternity unit.", icon: "fas fa-user-nurse" },
-                { val: "diagnostics", label: "A medical lab scientist or radiographer analyzing samples and medical scans.", icon: "fas fa-laptop-medical" },
-                { val: "public_health", label: "An epidemiologist investigating a disease outbreak and crunching data.", icon: "fas fa-search-location" },
-                { val: "physiotherapy", label: "A physiotherapist guiding a stroke patient through exercises to regain strength.", icon: "fas fa-heartbeat" },
-                { val: "eyes_vision", label: "An optometrist examining patients, fitting contact lenses, and detecting eye diseases.", icon: "fas fa-glasses" },
-                { val: "speech_hearing", label: "An audiologist testing a baby’s hearing, or a speech therapist helping a child.", icon: "fas fa-comments" },
-                { val: "health_admin", label: "A health information manager analyzing hospital data and designing record systems.", icon: "fas fa-folder-open" },
-                { val: "nutrition", label: "A dietitian planning special meals for patients with kidney disease or diabetes.", icon: "fas fa-utensils" },
-                { val: "biomedical", label: "A biomedical scientist looking at a biopsy sample under a microscope to identify a cancer type.", icon: "fas fa-vial" },
-                { val: "biochemistry", label: "A biochemist using gel electrophoresis to separate DNA fragments and find a disease marker.", icon: "fas fa-wave-square" },
-                { val: "microbiology", label: "A microbiologist streaking bacteria onto a petri dish, or an immunologist studying T-cells.", icon: "fas fa-bacteria" },
-                { val: "genetics", label: "A geneticist analyzing a family's DNA to predict inherited cancer risk, or a bioinformatician comparing genomes.", icon: "fas fa-sitemap" },
-                { val: "pharmacology", label: "A pharmacologist testing drug absorption in the body, or a toxicologist assessing whether a pesticide is safe.", icon: "fas fa-prescription" },
-                { val: "physiology", label: "A clinical physiologist running a patient stress test, or a medical physicist calibrating radiation therapy.", icon: "fas fa-stethoscope" }
+                { val: "human_body", label: "A Neurosurgeon operating on the brain at a top hospital.", icon: "fas fa-brain" },
+                { val: "lab", label: "A Medical Researcher sequencing DNA in a state-of-the-art lab.", icon: "fas fa-dna" },
+                { val: "public_health", label: "A WHO Official managing an international disease prevention program.", icon: "fas fa-globe" },
+                { val: "chemicals_drugs", label: "A Lead Pharmacologist developing the next generation of cancer drugs.", icon: "fas fa-pills" }
             ]
         }
     ],
@@ -787,104 +1080,82 @@ const dynamicQuestionsNature = [
     {
         title: "When you think about the natural world, what draws your curiosity the most?",
         options: [
-            { val: "plants", label: "The plants around me — how they grow, what they need, and why some die.", icon: "fas fa-seedling" },
-            { val: "wild_animals", label: "The animals in the wild — their behaviour, health, and habitats.", icon: "fas fa-paw" },
-            { val: "earth_rocks", label: "The rocks, land, and oceans — how the earth itself is shaped.", icon: "fas fa-mountain" },
-            { val: "climate", label: "The weather and climate — how they change and affect all life on earth.", icon: "fas fa-cloud-sun" },
-            { val: "forensic", label: "Evidence and clues — the hidden physical traces that reveal the truth behind events.", icon: "fas fa-search" },
-            { val: "lab_tech", label: "A chemical process or lab procedure — instruments, protocols, and precise measurements.", icon: "fas fa-vial" }
+            { val: "plants", label: "Flora: Plants, forests, and how they produce food and medicine.", icon: "fas fa-seedling" },
+            { val: "wild_animals", label: "Fauna: Wild animals, their biology, and protecting their habitats.", icon: "fas fa-paw" },
+            { val: "earth_rocks", label: "Geology: Rocks, minerals, and the physical forces that shape the Earth.", icon: "fas fa-mountain" },
+            { val: "nature_environment", label: "Environment: The big picture — pollution, climate change, and human impact.", icon: "fas fa-globe-americas" }
         ]
     },
     {
         title: "What kind of scientific work excites you the most?",
         options: [
-            { val: "research_nature", label: "Discovering new species or studying genetics to understand how life evolves.", icon: "fas fa-dna" },
-            { val: "field_nature", label: "Working outdoors — collecting samples, observing wildlife, and exploring ecosystems.", icon: "fas fa-binoculars" },
-            { val: "lab_nature", label: "Working in a lab — studying cells, molecules, or running controlled experiments.", icon: "fas fa-flask" },
-            { val: "applied_nature", label: "Applying science to real problems — improving crops, restoring land, or protecting species.", icon: "fas fa-tractor" },
-            { val: "forensic", label: "Investigating crime scenes and analysing physical evidence to solve mysteries.", icon: "fas fa-fingerprint" },
-            { val: "lab_tech", label: "Running sophisticated instruments and analytical tests with exacting precision.", icon: "fas fa-microscope" }
-        ]
-    },
-    {
-        title: "How do you prefer to work?",
-        options: [
-            { val: "lab_nature", label: "Indoors in a lab or office, with controlled experiments and data analysis.", icon: "fas fa-microscope" },
-            { val: "field_nature", label: "Outdoors in forests, fields, or oceans — I love being in nature itself.", icon: "fas fa-leaf" },
-            { val: "research_nature", label: "In a university or research station, designing studies and publishing findings.", icon: "fas fa-university" },
-            { val: "applied_nature", label: "On a farm, reserve, or in a community — applying science where it matters most.", icon: "fas fa-globe-africa" },
-            { val: "forensic", label: "At a crime scene or in a forensic lab — processing evidence and uncovering the truth.", icon: "fas fa-search-location" },
-            { val: "lab_tech", label: "In a quality control or analytical lab — following standard procedures to deliver trusted results.", icon: "fas fa-clipboard-check" }
+            { val: "plants", label: "Discovery: Mapping DNA of plants or finding new plant species.", icon: "fas fa-leaf" },
+            { val: "wild_animals", label: "Exploration: Working in remote forests or oceans to study wildlife.", icon: "fas fa-binoculars" },
+            { val: "earth_rocks", label: "Investigation: Exploring the earth's crust to find hidden resources.", icon: "fas fa-gem" },
+            { val: "nature_environment", label: "Protection: Investigating pollution and holding polluters accountable.", icon: "fas fa-shield-alt" }
         ]
     },
     {
         title: "Where do you see yourself working in 10 years?",
         options: [
-            { val: "research_nature", label: "In a university or research institute, studying and publishing scientific discoveries.", icon: "fas fa-graduation-cap" },
-            { val: "applied_nature", label: "Working with farmers, conservationists, or industries to solve real-world problems.", icon: "fas fa-handshake" },
-            { val: "field_nature", label: "In a conservation park or environmental agency, protecting ecosystems and wildlife.", icon: "fas fa-tree" },
-            { val: "lab_nature", label: "In a biotech or agro-industry company, using science to improve products or processes.", icon: "fas fa-industry" },
-            { val: "forensic", label: "In a forensic laboratory or as a crime scene investigator, helping solve cases.", icon: "fas fa-gavel" },
-            { val: "lab_tech", label: "In a pharmaceutical, food safety, or environmental QC lab, running analytical tests.", icon: "fas fa-flask" }
+            { val: "plants", label: "In a Biotech Lab: Developing new agricultural products or medicines.", icon: "fas fa-flask" },
+            { val: "wild_animals", label: "In a National Park: Managing conservation and wildlife protection.", icon: "fas fa-tree" },
+            { val: "earth_rocks", label: "In the Field: Surveying land for minerals or oil extraction.", icon: "fas fa-map-marked-alt" },
+            { val: "nature_environment", label: "In a Government Agency: Writing and enforcing environmental laws.", icon: "fas fa-building" }
         ]
     },
     {
         title: "What kind of challenge would make you feel most alive?",
         options: [
-            { val: "plants", label: "A drought-resistant crop crisis — I develop a new plant variety that saves thousands from hunger.", icon: "fas fa-seedling" },
-            { val: "wild_animals", label: "A rare animal near extinction — I study its biology and design a breeding programme to save it.", icon: "fas fa-dove" },
-            { val: "earth_rocks", label: "A degraded ecosystem — I lead the effort to restore the soil, water, and biodiversity.", icon: "fas fa-mountain" },
-            { val: "climate", label: "A city facing flooding — I model the climate data and design a solution for the community.", icon: "fas fa-water" },
-            { val: "marine", label: "A dying coral reef — I dive in, find the cause, and lead the conservation effort to restore it.", icon: "fas fa-fish" },
-            { val: "forensic", label: "A crime scene — finding a single hair, lifting a fingerprint, and identifying the suspect.", icon: "fas fa-fingerprint" },
-            { val: "lab_tech", label: "A product batch that fails a purity test — I identify the contamination and fix the process.", icon: "fas fa-clipboard-check" }
+            { val: "plants", label: "Saving a Crop: Developing a plant that can survive extreme droughts.", icon: "fas fa-sun" },
+            { val: "wild_animals", label: "Saving a Species: Bringing a rare animal back from the brink of extinction.", icon: "fas fa-dove" },
+            { val: "earth_rocks", label: "Solving a Mystery: Using rocks to understand the history of the earth.", icon: "fas fa-search" },
+            { val: "nature_environment", label: "Saving a River: Collecting samples to shut down illegal toxic dumping.", icon: "fas fa-water" }
         ]
     },
     {
-        title: "Which of these discoveries would you be most proud to make?",
+        title: "Which tool would you be most comfortable using daily?",
         options: [
-            { val: "research_nature", label: "Mapping the complete DNA of a rare medicinal plant or undiscovered animal species.", icon: "fas fa-dna" },
-            { val: "applied_nature", label: "Developing a fertiliser-free farming method that doubles crop yields sustainably.", icon: "fas fa-tractor" },
-            { val: "field_nature", label: "Finding a new species of insect in a tropical rainforest that no human has ever seen.", icon: "fas fa-bug" },
-            { val: "climate", label: "Predicting a major weather event three weeks early and saving thousands of lives.", icon: "fas fa-cloud-sun" },
-            { val: "marine", label: "Tracking a pod of dolphins across thousands of kilometres using satellite tags.", icon: "fas fa-water" },
-            { val: "forensic", label: "Tracing a poison in a victim's blood and linking it directly to the suspect.", icon: "fas fa-vial" },
-            { val: "lab_tech", label: "How to calibrate a sophisticated analytical instrument and write a national standard operating procedure.", icon: "fas fa-cog" }
+            { val: "plants", label: "Microscopes and genetic sequencers for studying plant cells.", icon: "fas fa-microscope" },
+            { val: "wild_animals", label: "High-powered binoculars and GPS for tracking wildlife.", icon: "fas fa-binoculars" },
+            { val: "earth_rocks", label: "Geological hammers, compasses, and seismic mapping tools.", icon: "fas fa-hammer" },
+            { val: "nature_environment", label: "Water quality testers and air pollution monitoring kits.", icon: "fas fa-vial" }
         ]
     },
     {
-        title: "When you think about the natural world, what fascinates you the most?",
+        title: "What is your primary goal as a scientist?",
         options: [
-            { val: "plants", label: "Plants and their ecosystems — photosynthesis, root systems, and why forests matter.", icon: "fas fa-tree" },
-            { val: "wild_animals", label: "Animals — their behaviour, social structures, and how they survive in the wild.", icon: "fas fa-paw" },
-            { val: "earth_rocks", label: "The earth itself — rocks, minerals, soils, and the geological forces that shape the planet.", icon: "fas fa-mountain" },
-            { val: "climate", label: "The atmosphere, oceans, and climate — the invisible systems that sustain all life.", icon: "fas fa-wind" },
-            { val: "marine", label: "The ocean — from microscopic plankton to the great blue whale, and all the mysteries below the surface.", icon: "fas fa-fish" },
-            { val: "forensic", label: "The physical traces we leave behind — fingerprints, fibres, and DNA — and what they reveal.", icon: "fas fa-search" },
-            { val: "lab_tech", label: "Precision instruments that can measure a part per billion, and the systems that make every result repeatable.", icon: "fas fa-chart-line" }
+            { val: "plants", label: "Ensuring global food security through advanced agriculture.", icon: "fas fa-utensils" },
+            { val: "wild_animals", label: "Protecting biodiversity and preserving natural animal habitats.", icon: "fas fa-paw" },
+            { val: "earth_rocks", label: "Discovering and sustainably extracting the earth's natural resources.", icon: "fas fa-industry" },
+            { val: "nature_environment", label: "Reversing the effects of climate change and cleaning up pollution.", icon: "fas fa-leaf" }
         ]
     },
     {
-        title: "How do you feel about working in remote or outdoor locations?",
+        title: "Which of these subjects did you find most fascinating?",
         options: [
-            { val: "field_nature", label: "I would love it — hiking through forests and collecting samples in remote places.", icon: "fas fa-hiking" },
-            { val: "lab_nature", label: "I prefer a stable lab or office environment, with occasional field trips.", icon: "fas fa-flask" },
-            { val: "applied_nature", label: "I want to be outdoors most of the time, working hands-on in the field.", icon: "fas fa-seedling" },
-            { val: "research_nature", label: "I prefer a purely indoor research setting with controlled, reproducible experiments.", icon: "fas fa-microscope" },
-            { val: "forensic", label: "I'm comfortable anywhere — crime scene or lab — as long as I am finding the truth.", icon: "fas fa-search-location" },
-            { val: "lab_tech", label: "I prefer a fully controlled lab environment — precision and consistency are my comfort zone.", icon: "fas fa-flask" }
+            { val: "plants", label: "Botany: How plants breathe, grow, and adapt to their surroundings.", icon: "fas fa-seedling" },
+            { val: "wild_animals", label: "Zoology: How animals behave, evolve, and survive in the wild.", icon: "fas fa-fish" },
+            { val: "earth_rocks", label: "Geology: How tectonic plates shift and create mountains and oceans.", icon: "fas fa-mountain" },
+            { val: "nature_environment", label: "Toxicology: How chemicals interact with living organisms and ecosystems.", icon: "fas fa-skull-crossbones" }
+        ]
+    },
+    {
+        title: "What kind of environment do you thrive in?",
+        options: [
+            { val: "plants", label: "A quiet greenhouse or an agricultural research farm.", icon: "fas fa-tractor" },
+            { val: "wild_animals", label: "The great outdoors — forests, savannas, and rugged terrain.", icon: "fas fa-campground" },
+            { val: "earth_rocks", label: "Deep underground, in mines, or working with rock formations.", icon: "fas fa-hard-hat" },
+            { val: "nature_environment", label: "A mix of field testing and office work writing policy reports.", icon: "fas fa-file-alt" }
         ]
     },
     {
         title: "If you could shadow a professional for a day, who would you choose?",
         options: [
-            { val: "plants", label: "A botanist in a tropical forest, cataloguing plants and searching for new medicines.", icon: "fas fa-leaf" },
-            { val: "wild_animals", label: "A wildlife biologist tracking lions in the savanna or diving with marine mammals.", icon: "fas fa-dove" },
-            { val: "earth_rocks", label: "A geologist mapping rock formations and assessing land for infrastructure.", icon: "fas fa-mountain" },
-            { val: "climate", label: "A meteorologist at a national weather centre, analyzing storm systems and forecasting.", icon: "fas fa-cloud-sun" },
-            { val: "marine", label: "A marine biologist scuba diving on a coral reef, recording fish diversity and health.", icon: "fas fa-fish" },
-            { val: "forensic", label: "A forensic chemist testing an unknown substance, or a crime scene investigator dusting for prints.", icon: "fas fa-fingerprint" },
-            { val: "lab_tech", label: "A laboratory technologist in a pharmaceutical QC lab, testing products for purity and safety.", icon: "fas fa-pills" }
+            { val: "plants", label: "A Plant Geneticist developing a new disease-resistant crop.", icon: "fas fa-dna" },
+            { val: "wild_animals", label: "A Wildlife Biologist tagging and tracking endangered lions.", icon: "fas fa-paw" },
+            { val: "earth_rocks", label: "A Geologist analyzing core samples from a new drill site.", icon: "fas fa-gem" },
+            { val: "nature_environment", label: "An Environmental Scientist testing a polluted river for heavy metals.", icon: "fas fa-water" }
         ]
     }
 ];
@@ -894,82 +1165,167 @@ const dynamicQuestionsEngineering = [
     {
         title: "When you see something broken in the physical world, what do you want to fix first?",
         options: [
-            { val: "mech_engine", label: "A small gadget or appliance that has stopped working.", icon: "fas fa-tools" },
-            { val: "mech_engine", label: "A car, engine, or moving part that needs to run again.", icon: "fas fa-car" },
-            { val: "civil_struct", label: "A bridge, road, or building that is cracking or falling apart.", icon: "fas fa-road" },
-            { val: "elec_power", label: "A power line, circuit board, or electrical device.", icon: "fas fa-bolt" }
+            { val: "mech_engine", label: "Machines: A car engine, a robotic arm, or a complex industrial device.", icon: "fas fa-cogs" },
+            { val: "civil_struct", label: "Structures: A bridge, highway, or building that is failing or needs building.", icon: "fas fa-archway" },
+            { val: "elec_power", label: "Power Systems: A circuit board, a solar grid, or an electrical network.", icon: "fas fa-bolt" },
+            { val: "petroleum", label: "Resources: An oil well, a gas refinery, or a mineral extraction site.", icon: "fas fa-oil-well" }
         ]
     },
     {
         title: "Which kind of engineering project excites you the most?",
         options: [
-            { val: "mech_engine", label: "Designing a robot or industrial machine that works in a factory.", icon: "fas fa-robot" },
-            { val: "civil_struct", label: "Building a dam or highway that serves an entire region.", icon: "fas fa-water" },
-            { val: "elec_power", label: "Designing a solar power grid that brings electricity to a remote community.", icon: "fas fa-sun" },
-            { val: "chem_process", label: "Developing a new fuel from plant waste or designing a refinery process.", icon: "fas fa-industry" }
-        ]
-    },
-    {
-        title: "What part of a city do you look at and think — I could engineer that better?",
-        options: [
-            { val: "civil_struct", label: "The traffic flow, road networks, and interchange systems.", icon: "fas fa-road" },
-            { val: "civil_struct", label: "The buildings, bridges, and stadiums that shape the skyline.", icon: "fas fa-building" },
-            { val: "field_site_eng", label: "The water supply — how clean water reaches every tap.", icon: "fas fa-tint" },
-            { val: "field_site_eng", label: "Waste management — how rubbish and sewage are handled without harming the environment.", icon: "fas fa-recycle" }
+            { val: "robotics", label: "Automation: Designing robots and smart machines for factories or space.", icon: "fas fa-robot" },
+            { val: "aerospace", label: "Aerodynamics: Building aircraft, drones, or rockets that travel high and fast.", icon: "fas fa-plane" },
+            { val: "marine_eng", label: "Maritime: Designing ships, offshore platforms, or deep-sea engines.", icon: "fas fa-ship" },
+            { val: "biomedical", label: "Biotech: Creating artificial hearts, prosthetic limbs, or life-saving devices.", icon: "fas fa-heartbeat" }
         ]
     },
     {
         title: "Where do you see yourself working in 10 years?",
         options: [
-            { val: "field_site_eng", label: "On a construction site, overseeing the building of a bridge, dam, or highway.", icon: "fas fa-hard-hat" },
-            { val: "office_design", label: "In an office, using CAD software to model a skyscraper before it is built.", icon: "fas fa-drafting-compass" },
-            { val: "field_site_eng", label: "In a water treatment or environmental monitoring facility.", icon: "fas fa-tint" },
-            { val: "mech_engine", label: "In a factory or plant, optimizing production processes and machinery.", icon: "fas fa-cogs" }
+            { val: "field_site_eng", label: "On Site: Managing a construction project or an oil rig in the field.", icon: "fas fa-hard-hat" },
+            { val: "office_design", label: "In the Studio: Using CAD software to design skyscrapers or engines.", icon: "fas fa-desktop" },
+            { val: "robotics", label: "In a Lab: Researching robotics, new materials, or aerospace tech.", icon: "fas fa-brain" },
+            { val: "agric_eng", label: "Rural Impact: Engineering food systems, dams, and tractors for farms.", icon: "fas fa-tractor" }
         ]
     },
     {
         title: "What kind of challenge would make you feel most alive?",
         options: [
-            { val: "civil_struct", label: "Designing an earthquake-proof building that saves thousands of lives.", icon: "fas fa-building" },
-            { val: "civil_struct", label: "Building a road through a mountain that connects two remote towns.", icon: "fas fa-mountain" },
-            { val: "field_site_eng", label: "Cleaning up a polluted river and restoring its ecosystem.", icon: "fas fa-water" },
-            { val: "civil_struct", label: "Designing a drainage system that stops a city from flooding every rainy season.", icon: "fas fa-cloud-rain" }
+            { val: "civil_struct", label: "Building a bridge that connects a remote village to the world.", icon: "fas fa-road" },
+            { val: "elec_power", label: "Bringing electricity to a community that has never had it.", icon: "fas fa-sun" },
+            { val: "aerospace", label: "Designing a rocket that takes the first humans to Mars.", icon: "fas fa-rocket" },
+            { val: "biomedical", label: "Inventing a robotic limb that feels and moves like a real one.", icon: "fas fa-hand-paper" }
+        ]
+    },
+    {
+        title: "What is your attitude toward safety and ethics in engineering?",
+        options: [
+            { val: "civil_struct", label: "Safety is #1 — I want to ensure buildings never collapse.", icon: "fas fa-shield-alt" },
+            { val: "mining_geo", label: "Ethics is key — I want to ensure mining doesn't destroy the earth.", icon: "fas fa-leaf" },
+            { val: "materials_eng", label: "Quality is vital — I want to create the strongest, safest materials.", icon: "fas fa-atom" },
+            { val: "biomedical", label: "Humanity is first — I want to design tools that extend human life.", icon: "fas fa-heart" }
+        ]
+    },
+    {
+        title: "Which environment sounds most interesting to you?",
+        options: [
+            { val: "marine_eng", label: "The Deep Ocean: Designing structures that withstand massive pressure.", icon: "fas fa-water" },
+            { val: "aerospace", label: "High Altitude: Designing wings that slice through thin air at Mach 3.", icon: "fas fa-wind" },
+            { val: "mining_geo", label: "Underground: Designing tunnels and shafts for mineral extraction.", icon: "fas fa-mountain" },
+            { val: "agric_eng", label: "The Farm: Designing automated irrigation and harvest systems.", icon: "fas fa-seedling" }
+        ]
+    },
+    {
+        title: "How do you prefer to spend your creative energy?",
+        options: [
+            { val: "office_design", label: "Sketching and 3D modeling on a powerful computer.", icon: "fas fa-draw-polygon" },
+            { val: "mech_engine", label: "Tinkering with gears, pistons, and physical prototypes.", icon: "fas fa-cogs" },
+            { val: "elec_power", label: "Soldering circuits and writing code for microcontrollers.", icon: "fas fa-microchip" },
+            { val: "field_site_eng", label: "Leading a crew of workers to execute a massive project.", icon: "fas fa-users" }
+        ]
+    },
+    {
+        title: "What is your 'Dream Project'?",
+        options: [
+            { val: "aerospace", label: "A self-sustaining city on the Moon or Mars.", icon: "fas fa-moon" },
+            { val: "marine_eng", label: "A floating city that moves across the oceans.", icon: "fas fa-anchor" },
+            { val: "civil_struct", label: "A skyscraper that is 2 kilometres tall and perfectly safe.", icon: "fas fa-building" },
+            { val: "robotics", label: "A robotic companion that can perform any human task.", icon: "fas fa-robot" }
+        ]
+    },
+    {
+        title: "Which of these subjects did you find most fascinating?",
+        options: [
+            { val: "mech_engine", label: "Physics: Forces, motion, and energy in machines.", icon: "fas fa-apple-alt" },
+            { val: "materials_eng", label: "Chemistry: How atoms bond to create steel, carbon, or glass.", icon: "fas fa-vial" },
+            { val: "mining_geo", label: "Geology: The composition of the earth and how to find minerals.", icon: "fas fa-layer-group" },
+            { val: "elec_power", label: "Electromagnetism: How current flows and powers the world.", icon: "fas fa-bolt" }
+        ]
+    }
+];
+
+// Computing branch for Science & Technology (Q1 option C: computers)
+const dynamicQuestionsComputing = [
+    {
+        title: "When you see a problem with computers or technology, what do you want to fix first?",
+        options: [
+            { val: "software_dev", label: "The Software: The app code or the programme that is crashing.", icon: "fas fa-code" },
+            { val: "it_systems", label: "The System: How computers, networks, and people work together.", icon: "fas fa-network-wired" },
+            { val: "data_science", label: "The Data: Messy records that need to be organised and analysed.", icon: "fas fa-database" },
+            { val: "network_security", label: "The Security: A breach where someone has broken into the system.", icon: "fas fa-shield-alt" }
+        ]
+    },
+    {
+        title: "Which kind of digital project excites you the most?",
+        options: [
+            { val: "app_building", label: "Engineering: Building a mobile app or a web platform for millions.", icon: "fas fa-mobile-alt" },
+            { val: "it_systems", label: "Systems: Setting up a company's entire network and servers.", icon: "fas fa-server" },
+            { val: "data_science", label: "AI: Building a system that suggests movies or predicts trends.", icon: "fas fa-brain" },
+            { val: "forensic", label: "Forensics: Recovering deleted files and tracing a hacker's path.", icon: "fas fa-user-secret" }
+        ]
+    },
+    {
+        title: "What part of technology draws you in the most?",
+        options: [
+            { val: "software_dev", label: "The Experience: How an app looks, feels, and works for the user.", icon: "fas fa-paint-brush" },
+            { val: "it_systems", label: "The Solution: Matching the right technology to a business problem.", icon: "fas fa-lightbulb" },
+            { val: "data_science", label: "The Patterns: Finding hidden trends that no human could spot.", icon: "fas fa-chart-line" },
+            { val: "network_security", label: "The Battle: Ethical hacking to find weaknesses before the bad guys do.", icon: "fas fa-user-ninja" }
+        ]
+    },
+    {
+        title: "Where do you see yourself working in 10 years?",
+        options: [
+            { val: "app_building", label: "Tech Startup: Launching a new app that solves a real problem.", icon: "fas fa-rocket" },
+            { val: "it_systems", label: "Consultancy: Helping companies improve their business systems.", icon: "fas fa-briefcase" },
+            { val: "data_science", label: "Research Lab: Pushing the boundaries of what machines can learn.", icon: "fas fa-microscope" },
+            { val: "forensic", label: "Police Unit: Analysing suspects' devices for criminal evidence.", icon: "fas fa-building-shield" }
+        ]
+    },
+    {
+        title: "What kind of challenge would make you feel most alive?",
+        options: [
+            { val: "app_building", label: "Scaling a website to handle a million visitors at once.", icon: "fas fa-users" },
+            { val: "it_systems", label: "Getting a company's crashed email server back online in an hour.", icon: "fas fa-envelope-open-text" },
+            { val: "data_science", label: "Building a model that predicts exactly what a user will click next.", icon: "fas fa-mouse-pointer" },
+            { val: "network_security", label: "Breaking a ransomware encryption to restore a hospital's data.", icon: "fas fa-unlock-alt" }
         ]
     },
     {
         title: "Which of these would you be most proud to learn?",
         options: [
-            { val: "civil_struct", label: "How to calculate the exact steel and concrete needed for a 20-storey building.", icon: "fas fa-ruler-combined" },
-            { val: "civil_struct", label: "How to test soil to determine if it can safely support a heavy dam.", icon: "fas fa-mountain" },
-            { val: "field_site_eng", label: "How to design a wastewater treatment process that turns sewage into clean water.", icon: "fas fa-recycle" },
-            { val: "office_design", label: "How to survey land and model the best route for a new highway using GIS software.", icon: "fas fa-map-marked-alt" }
+            { val: "software_dev", label: "How to write clean, reusable code that a whole team can use.", icon: "fas fa-broom" },
+            { val: "it_systems", label: "How to manage a massive IT project from planning to completion.", icon: "fas fa-clipboard-list" },
+            { val: "data_science", label: "How to build a neural network that can see and understand images.", icon: "fas fa-eye" },
+            { val: "network_security", label: "How to perform a penetration test on a corporate network.", icon: "fas fa-shield-virus" }
         ]
     },
     {
-        title: "When you think about engineering, what fascinates you the most?",
+        title: "When you think about technology, what fascinates you the most?",
         options: [
-            { val: "civil_struct", label: "Huge structures that stand for centuries — towers, tunnels, bridges, and monuments.", icon: "fas fa-archway" },
-            { val: "field_site_eng", label: "Hidden systems that make life possible — pipes, filters, and canals through farmland.", icon: "fas fa-tint" },
-            { val: "mech_engine", label: "The power of machines and engines that move industries and transport the world.", icon: "fas fa-cogs" },
-            { val: "elec_power", label: "The speed and intelligence of electronics and power systems.", icon: "fas fa-microchip" }
+            { val: "software_dev", label: "The Impact: Creating something tangible that solves real problems.", icon: "fas fa-heart" },
+            { val: "it_systems", label: "The Users: Making technology easy and helpful for everyone.", icon: "fas fa-users" },
+            { val: "data_science", label: "The Intelligence: How machines can learn and become smart.", icon: "fas fa-microchip" },
+            { val: "forensic", label: "The Clues: How every click and file tells a forensic story.", icon: "fas fa-search-plus" }
         ]
     },
     {
-        title: "How do you feel about working outdoors in all kinds of weather and conditions?",
+        title: "How do you feel about working with others?",
         options: [
-            { val: "field_site_eng", label: "I would love it — fresh air, real sites, and hands-on problem-solving.", icon: "fas fa-hard-hat" },
-            { val: "office_design", label: "I'd split my time between the office and the field.", icon: "fas fa-drafting-compass" },
-            { val: "office_design", label: "I prefer a comfortable office with occasional site visits.", icon: "fas fa-desktop" },
-            { val: "elec_power", label: "I want to be fully indoors, working with computers or lab equipment.", icon: "fas fa-laptop" }
+            { val: "software_dev", label: "I love it — great software is built by great, collaborative teams.", icon: "fas fa-users" },
+            { val: "it_systems", label: "I love being the go-to person people rely on for solutions.", icon: "fas fa-hands-helping" },
+            { val: "data_science", label: "I prefer to present my data findings to a team of decision-makers.", icon: "fas fa-presentation" },
+            { val: "network_security", label: "I am the vault keeper, protecting everyone's data and privacy.", icon: "fas fa-vault" }
         ]
     },
     {
         title: "If you could shadow a professional for a day, who would you choose?",
         options: [
-            { val: "civil_struct", label: "A civil engineer inspecting the steel frame of a new stadium.", icon: "fas fa-building" },
-            { val: "field_site_eng", label: "An environmental engineer testing water samples from a lagoon being restored.", icon: "fas fa-flask" },
-            { val: "civil_struct", label: "A structural engineer checking a bridge for cracks after a heavy storm.", icon: "fas fa-road" },
-            { val: "mech_engine", label: "A construction manager coordinating trucks, cranes, and workers on a highway project.", icon: "fas fa-hard-hat" }
+            { val: "app_building", label: "A Mobile App Developer launching a feature to millions.", icon: "fas fa-mobile-alt" },
+            { val: "it_systems", label: "An IT Manager planning a massive digital upgrade for a hospital.", icon: "fas fa-clinic-medical" },
+            { val: "data_science", label: "A Machine Learning Engineer training a self-driving car.", icon: "fas fa-car" },
+            { val: "network_security", label: "An Ethical Hacker trying to break into a bank's system.", icon: "fas fa-user-ninja" }
         ]
     }
 ];
@@ -1008,10 +1364,8 @@ function updateProgress() {
 
 function generateDynamicQuestions(dept) {
     const questions = dynamicQuestions[dept];
-    
-    // Generate the exact number of steps dynamically
     questions.forEach((q, index) => {
-        const stepNum = index + 2; // Questions start at Step 2
+        const stepNum = index + 2; 
         document.getElementById(`step${stepNum}Title`).innerText = q.title;
         let html = '';
         q.options.forEach(opt => {
@@ -1023,7 +1377,7 @@ function generateDynamicQuestions(dept) {
 
 function generateNatureQuestions() {
     dynamicQuestionsNature.forEach((q, index) => {
-        const stepNum = index + 2;
+        const stepNum = index + 3; // Branch questions start at Step 3
         document.getElementById(`step${stepNum}Title`).innerText = q.title;
         let html = '';
         q.options.forEach(opt => {
@@ -1035,7 +1389,19 @@ function generateNatureQuestions() {
 
 function generateEngineeringQuestions() {
     dynamicQuestionsEngineering.forEach((q, index) => {
-        const stepNum = index + 2;
+        const stepNum = index + 3; // Branch questions start at Step 3
+        document.getElementById(`step${stepNum}Title`).innerText = q.title;
+        let html = '';
+        q.options.forEach(opt => {
+            html += `<button class="option-btn" data-val="${opt.val}" onclick="selectOption(this)"><i class="${opt.icon}"></i><span>${opt.label}</span></button>`;
+        });
+        document.getElementById(`step${stepNum}Options`).innerHTML = html;
+    });
+}
+
+function generateComputingQuestions() {
+    dynamicQuestionsComputing.forEach((q, index) => {
+        const stepNum = index + 3; // Branch questions start at Step 3
         document.getElementById(`step${stepNum}Title`).innerText = q.title;
         let html = '';
         q.options.forEach(opt => {
@@ -1050,25 +1416,28 @@ function nextStep() {
     const selectedBtn = currentBlock.querySelector('.option-btn.selected');
     
     if (selectedBtn) {
+        userProfile[`q${currentStep}`] = selectedBtn.dataset.val;
+
         if (currentStep === 1) {
             userProfile.department = selectedBtn.dataset.val;
-            const q1Answer = selectedBtn.dataset.val;
-            if (q1Answer === 'nature_environment') {
+            totalSteps = dynamicQuestions[userProfile.department].length + 1;
+            generateDynamicQuestions(userProfile.department);
+            userProfile.branch = 'health_tech'; // Default for Science, or only branch for others
+        } else if (currentStep === 2 && userProfile.department === 'science') {
+            const q2Answer = selectedBtn.dataset.val;
+            if (q2Answer === 'nature_environment') {
                 userProfile.branch = 'nature';
-                totalSteps = dynamicQuestionsNature.length + 1;
+                totalSteps = dynamicQuestionsNature.length + 2; // Q1 + Q2 + dynamic questions
                 generateNatureQuestions();
-            } else if (q1Answer === 'machines_structures') {
+            } else if (q2Answer === 'machines_structures') {
                 userProfile.branch = 'engineering';
-                userProfile.department = 'science';
-                totalSteps = dynamicQuestionsEngineering.length + 1;
+                totalSteps = dynamicQuestionsEngineering.length + 2;
                 generateEngineeringQuestions();
-            } else {
-                userProfile.branch = 'health_tech';
-                totalSteps = dynamicQuestions[userProfile.department].length + 1;
-                generateDynamicQuestions(userProfile.department);
+            } else if (q2Answer === 'computers') {
+                userProfile.branch = 'computing';
+                totalSteps = dynamicQuestionsComputing.length + 2;
+                generateComputingQuestions();
             }
-        } else {
-            userProfile[`q${currentStep}`] = selectedBtn.dataset.val;
         }
     }
 
@@ -1133,6 +1502,20 @@ function calculateResults() {
             }
             course.matchScore = score;
         });
+    } else if (userProfile.branch === 'computing') {
+        // Computing branch: filter science courses with computers tag
+        departmentMatches = courseDatabase.filter(c =>
+            c.department === 'science' &&
+            c.tags.includes('computers')
+        );
+        departmentMatches.forEach(course => {
+            let score = 0;
+            for (let i = 2; i <= totalSteps; i++) {
+                let answer = userProfile[`q${i}`];
+                if (answer && course.tags.includes(answer)) score += 3;
+            }
+            course.matchScore = score;
+        });
     } else {
         // Health/Tech branch: filter by department AND Q2 tag
         departmentMatches = courseDatabase.filter(c => 
@@ -1154,8 +1537,8 @@ function calculateResults() {
     // Sort by highest score
     departmentMatches.sort((a, b) => b.matchScore - a.matchScore);
 
-    // Keep only the top 4
-    const finalMatches = departmentMatches.slice(0, 4);
+    // Keep only the top 6 to give a comprehensive list of related options
+    const finalMatches = departmentMatches.slice(0, 6);
 
     setTimeout(() => {
         document.getElementById('loadingScreen').style.display = 'none';
@@ -1184,41 +1567,80 @@ function displayResults(matches) {
                     <p style="color:#64748b;">Your unique combination of answers didn't strongly align with our primary courses in this department. Try adjusting your preferences or exploring another department!</p>
                 </div>`;
     } else {
-        matches.forEach((course, index) => {
-            const isTop = index === 0;
-            const badgeHTML = isTop ? `<div class="match-badge">#1 Best Fit</div>` : ``;
-            const cardClass = isTop ? `primary-match` : ``;
+        const topCourse = matches[0];
+        
+        // Render Top Match Prominently
+        html += `
+            <div class="match-card primary-match" style="border: 2px solid #2563eb; background: #f8fafc; transform: scale(1.02); margin-bottom: 40px; position: relative;">
+                <div class="match-badge" style="background: #2563eb; color: white; padding: 6px 15px; border-radius: 20px; font-weight: bold; font-size: 0.85rem; display: inline-block; margin-bottom: 15px;">
+                    <i class="fas fa-star" style="color: #fbbf24; margin-right: 5px;"></i> #1 Primary Career Match
+                </div>
+                <h3 style="font-size: 1.6rem; color: #1e293b; margin-bottom: 5px;">${topCourse.title}</h3>
+                <div style="margin-bottom: 15px;">
+                    <span style="display:inline-block; background:#ecfdf5; color:#059669; padding:4px 10px; border-radius:4px; font-size:0.8rem; font-weight:bold;">${topCourse.competitiveness} Competition</span>
+                    <span style="display:inline-block; background:#eff6ff; color:#2563eb; padding:4px 10px; border-radius:4px; font-size:0.8rem; font-weight:bold; margin-left: 5px;">Highly Recommended</span>
+                </div>
+                
+                <p style="color: #475569; font-size: 1rem; line-height: 1.6; margin-bottom: 20px;">
+                    ${topCourse.desc}
+                </p>
 
-            html += `
-                <div class="match-card ${cardClass}">
-                    ${badgeHTML}
-                    <h3 style="font-size: 1.4rem; color: #1e293b; margin-bottom: 5px;">${course.title}</h3>
-                    <div style="margin-bottom: 15px;">
-                        <span style="display:inline-block; background:#ecfdf5; color:#059669; padding:4px 10px; border-radius:4px; font-size:0.8rem; font-weight:bold;">${course.competitiveness} Competition</span>
-                        <span style="display:inline-block; background:#f0fdf4; color:#16a34a; padding:4px 10px; border-radius:4px; font-size:0.8rem; font-weight:bold; margin-left: 5px;">Perfect Alignment</span>
+                <div style="background: white; border: 1px solid #e2e8f0; border-radius: 8px; padding: 15px; display: grid; gap: 15px;">
+                    <div>
+                        <strong style="color: #0f172a; font-size: 0.9rem; display: block; margin-bottom: 4px;"><i class="fas fa-book-open"></i> JAMB Subjects:</strong>
+                        <div style="color: #64748b; font-size: 0.9rem;">${topCourse.jamb}</div>
                     </div>
-                    
-                    <p style="color: #475569; font-size: 0.95rem; line-height: 1.6; margin-bottom: 20px;">
-                        ${course.desc}
-                    </p>
-
-                    <div style="background: #f8fafc; border: 1px solid #e2e8f0; border-radius: 8px; padding: 15px;">
-                        <div style="margin-bottom: 10px;">
-                            <strong style="color: #0f172a; font-size: 0.9rem;">JAMB Subjects:</strong>
-                            <div style="color: #64748b; font-size: 0.9rem;">${course.jamb}</div>
-                        </div>
-                        <div style="margin-bottom: 10px;">
-                            <strong style="color: #0f172a; font-size: 0.9rem;">O'Level Requirements:</strong>
-                            <div style="color: #64748b; font-size: 0.9rem;">${course.olevel}</div>
-                        </div>
-                        <div>
-                            <strong style="color: #0f172a; font-size: 0.9rem;">Future Careers:</strong>
-                            <div style="color: #64748b; font-size: 0.9rem;">${course.careers}</div>
-                        </div>
+                    <div>
+                        <strong style="color: #0f172a; font-size: 0.9rem; display: block; margin-bottom: 4px;"><i class="fas fa-graduation-cap"></i> O'Level Requirements:</strong>
+                        <div style="color: #64748b; font-size: 0.9rem;">${topCourse.olevel}</div>
+                    </div>
+                    <div>
+                        <strong style="color: #0f172a; font-size: 0.9rem; display: block; margin-bottom: 4px;"><i class="fas fa-briefcase"></i> Future Careers:</strong>
+                        <div style="color: #64748b; font-size: 0.9rem;">${topCourse.careers}</div>
                     </div>
                 </div>
+            </div>
+        `;
+
+        if (matches.length > 1) {
+            html += `
+            <div style="margin-top: 30px; margin-bottom: 20px;">
+                <h4 style="font-size: 1.2rem; color: #334155; border-bottom: 2px solid #e2e8f0; padding-bottom: 10px;">Related Courses You Can Also Study</h4>
+                <p style="color: #64748b; font-size: 0.9rem; margin-top: 5px;">Based on your answers, you also have a strong affinity for these related fields:</p>
+            </div>
+            <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 20px;">
             `;
-        });
+            
+            for (let i = 1; i < matches.length; i++) {
+                const course = matches[i];
+                html += `
+                    <div class="match-card" style="padding: 20px; border-top: 4px solid #64748b; background: white; display: flex; flex-direction: column; box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.05);">
+                        <h3 style="font-size: 1.25rem; color: #1e293b; margin-bottom: 8px;">${course.title}</h3>
+                        <div style="margin-bottom: 12px;">
+                            <span style="display:inline-block; background:#f1f5f9; color:#475569; padding:4px 8px; border-radius:4px; font-size:0.75rem; font-weight:bold;">${course.competitiveness} Competition</span>
+                        </div>
+                        <p style="color: #475569; font-size: 0.95rem; margin-bottom: 20px; line-height: 1.6; flex-grow: 1;">${course.desc}</p>
+                        
+                        <div style="background: #f8fafc; border: 1px solid #e2e8f0; border-radius: 6px; padding: 12px; margin-bottom: 15px;">
+                            <div style="margin-bottom: 10px;">
+                                <strong style="color: #334155; font-size: 0.85rem; display: block; margin-bottom: 2px;"><i class="fas fa-book-open" style="color: #94a3b8; margin-right: 4px;"></i> JAMB Subjects:</strong>
+                                <div style="color: #64748b; font-size: 0.85rem;">${course.jamb}</div>
+                            </div>
+                            <div>
+                                <strong style="color: #334155; font-size: 0.85rem; display: block; margin-bottom: 2px;"><i class="fas fa-graduation-cap" style="color: #94a3b8; margin-right: 4px;"></i> O'Level Requirements:</strong>
+                                <div style="color: #64748b; font-size: 0.85rem;">${course.olevel}</div>
+                            </div>
+                        </div>
+                        
+                        <div style="padding-top: 10px; border-top: 1px dashed #e2e8f0;">
+                            <strong style="font-size: 0.85rem; color: #334155; display: block; margin-bottom: 4px;"><i class="fas fa-briefcase" style="color: #94a3b8; margin-right: 4px;"></i> Potential Careers:</strong>
+                            <div style="font-size: 0.85rem; color: #2563eb; font-weight: 500; line-height: 1.4;">${course.careers}</div>
+                        </div>
+                    </div>
+                `;
+            }
+            html += `</div>`;
+        }
     }
 
     resultsContainer.innerHTML = html;
