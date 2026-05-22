@@ -19,7 +19,22 @@ class QuizDataLoader {
       { id: 'accounting', name: 'Accounting', file: 'accounting.json', questionCap: 40 },
       { id: 'government', name: 'Government', file: 'government.json', questionCap: 40 },
       { id: 'literature', name: 'Literature', file: 'literature.json', questionCap: 40 },
-      { id: 'crs', name: 'CRS', file: 'crs.json', questionCap: 40 }
+      { id: 'crs', name: 'CRS', file: 'crs.json', questionCap: 40 },
+      { id: 'geography', name: 'Geography', file: 'geography.json', questionCap: 40 },
+      { id: 'history', name: 'History', file: 'history.json', questionCap: 40 },
+      { id: 'agricultural-science', name: 'Agricultural Science', file: 'agricultural-science.json', questionCap: 40 },
+      { id: 'further-mathematics', name: 'Further Mathematics', file: 'further-mathematics.json', questionCap: 40 },
+      { id: 'commerce', name: 'Commerce', file: 'commerce.json', questionCap: 40 },
+      { id: 'french', name: 'French', file: 'french.json', questionCap: 40 },
+      { id: 'yoruba', name: 'Yoruba', file: 'yoruba.json', questionCap: 40 },
+      { id: 'igbo', name: 'Igbo', file: 'igbo.json', questionCap: 40 },
+      { id: 'hausa', name: 'Hausa', file: 'hausa.json', questionCap: 40 },
+      { id: 'music', name: 'Music', file: 'music.json', questionCap: 40 },
+      { id: 'fine-arts', name: 'Fine Arts', file: 'fine-arts.json', questionCap: 40 },
+      { id: 'arabic', name: 'Arabic', file: 'arabic.json', questionCap: 40 },
+      { id: 'home-economics', name: 'Home Economics', file: 'home-economics.json', questionCap: 40 },
+      { id: 'physical-health-education', name: 'Physical & Health Education', file: 'physical-health-education.json', questionCap: 40 },
+      { id: 'irs', name: 'IRS', file: 'irs.json', questionCap: 40 }
     ];
     
     // Cache for loaded questions

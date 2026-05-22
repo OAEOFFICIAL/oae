@@ -128,3 +128,71 @@
                 });
             }
         });
+
+        // Dynamically fix subject and exam links to absolute quiz.htm paths with appropriate params
+        const navbarSubjectNameMap = {
+            'mathematics': 'mathematics',
+            'maths': 'mathematics',
+            'english language': 'english',
+            'english': 'english',
+            'biology': 'biology',
+            'chemistry': 'chemistry',
+            'physics': 'physics',
+            'government': 'government',
+            'literature': 'literature',
+            'economics': 'economics',
+            'crs': 'crs',
+            'irs': 'crs',
+            'crs / irs': 'crs',
+            'geography': 'geography',
+            'french': 'french',
+            'agriculture': 'agriculture',
+            'home economics': 'home-economics',
+            'commerce': 'commerce',
+            'accounting': 'accounting'
+        };
+
+        const navbarExamNameMap = {
+            'jamb cbt practice': 'jamb',
+            'jamb cbt': 'jamb',
+            'jamb': 'jamb',
+            'waec practice': 'waec',
+            'waec': 'waec',
+            'neco practice': 'neco',
+            'neco': 'neco',
+            'gce practice': 'gce',
+            'gce': 'gce',
+            'post-utme practice': 'post-utme',
+            'post-utme': 'post-utme',
+            'mock exams': 'semester-exam',
+            'nabteb': 'semester-exam',
+            'semester exams': 'semester-exam'
+        };
+
+        document.querySelectorAll('.quiz-navbar a, .quiz-mobile-menu a').forEach(link => {
+            if (link.classList.contains('quiz-mobile-toggle')) return;
+            const href = link.getAttribute('href');
+            const isPlaceholder = href === '#' || href === '' || !href || href.includes('Exam/') || href.includes('post-utme.html');
+            if (isPlaceholder) {
+                const text = link.textContent.trim().toLowerCase();
+                
+                // Match exam first
+                let matched = false;
+                for (const [key, value] of Object.entries(navbarExamNameMap)) {
+                    if (text === key || text.includes(key)) {
+                        link.href = `/Quizzes/quiz.htm?exam=${value}`;
+                        matched = true;
+                        break;
+                    }
+                }
+                
+                if (!matched) {
+                    for (const [key, value] of Object.entries(navbarSubjectNameMap)) {
+                        if (text === key || text.includes(key)) {
+                            link.href = `/Quizzes/quiz.htm?subject=${value}`;
+                            break;
+                        }
+                    }
+                }
+            }
+        });

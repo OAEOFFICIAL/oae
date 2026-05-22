@@ -1,0 +1,516 @@
+/* =============================================
+   QUIZ BEAUTIFICATION — DAZZLING PREMIUM LAYER
+   Animated gradients, glassmorphism, micro-animations,
+   proper mobile scaling
+   ============================================= */
+
+/* Google Font */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap');
+
+/* Enhanced root tokens */
+:root {
+  --glow: rgba(10, 138, 47, 0.15);
+  --glow-strong: rgba(10, 138, 47, 0.25);
+  --accent-gradient: linear-gradient(135deg, #0a8a2f 0%, #34c25a 50%, #066426 100%);
+  --card-glass: rgba(255, 255, 255, 0.85);
+  --card-glass-border: rgba(10, 138, 47, 0.12);
+  --shine: linear-gradient(110deg, transparent 25%, rgba(255,255,255,0.4) 50%, transparent 75%);
+}
+
+/* ---- Animated background for body ---- */
+body {
+  font-family: 'Inter', 'Segoe UI', system-ui, sans-serif !important;
+  background: linear-gradient(135deg, #f0fdf4 0%, #f7f8fb 40%, #ecfdf5 70%, #f0fdf4 100%) !important;
+  background-size: 400% 400% !important;
+  animation: bgShift 20s ease infinite !important;
+}
+@keyframes bgShift {
+  0%, 100% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+}
+
+/* ---- Floating particle decorations ---- */
+.quiz-wrap::before,
+.quiz-wrap::after {
+  content: '';
+  position: fixed;
+  border-radius: 50%;
+  pointer-events: none;
+  z-index: -1;
+  opacity: 0.08;
+  filter: blur(60px);
+}
+.quiz-wrap::before {
+  width: 400px; height: 400px;
+  background: radial-gradient(circle, #0a8a2f, transparent 70%);
+  top: -100px; right: -80px;
+  animation: floatOrb 12s ease-in-out infinite;
+}
+.quiz-wrap::after {
+  width: 300px; height: 300px;
+  background: radial-gradient(circle, #34c25a, transparent 70%);
+  bottom: 100px; left: -60px;
+  animation: floatOrb 16s ease-in-out infinite reverse;
+}
+@keyframes floatOrb {
+  0%, 100% { transform: translate(0, 0) scale(1); }
+  33% { transform: translate(30px, -20px) scale(1.05); }
+  66% { transform: translate(-20px, 15px) scale(0.95); }
+}
+
+/* ---- Quiz Title — Gradient Text ---- */
+.quiz-title {
+  background: linear-gradient(135deg, #0a8a2f, #34c25a, #066426) !important;
+  -webkit-background-clip: text !important;
+  -webkit-text-fill-color: transparent !important;
+  background-clip: text !important;
+  font-size: 2.4rem !important;
+  font-weight: 900 !important;
+  letter-spacing: -1px !important;
+  position: relative;
+}
+.quiz-header .small {
+  font-size: 1.05rem !important;
+  color: #586068 !important;
+  font-weight: 500 !important;
+  letter-spacing: 0.3px;
+}
+
+/* ---- Config Card — Glassmorphism ---- */
+.config-card {
+  background: var(--card-glass) !important;
+  backdrop-filter: blur(16px) !important;
+  -webkit-backdrop-filter: blur(16px) !important;
+  border: 1px solid var(--card-glass-border) !important;
+  border-radius: 20px !important;
+  padding: 28px !important;
+  margin-bottom: 24px !important;
+  box-shadow:
+    0 8px 32px rgba(10, 138, 47, 0.06),
+    0 1px 3px rgba(0, 0, 0, 0.04),
+    inset 0 1px 0 rgba(255, 255, 255, 0.6) !important;
+  transition: transform 0.35s cubic-bezier(0.34, 1.56, 0.64, 1), box-shadow 0.35s ease !important;
+  position: relative;
+  overflow: hidden;
+}
+.config-card::after {
+  content: '';
+  position: absolute;
+  top: 0; left: -100%; right: 0;
+  height: 100%; width: 200%;
+  background: var(--shine);
+  animation: cardShine 6s ease-in-out infinite;
+  pointer-events: none;
+  opacity: 0.5;
+}
+@keyframes cardShine {
+  0% { transform: translateX(-50%); }
+  100% { transform: translateX(50%); }
+}
+.config-card:hover {
+  transform: translateY(-3px) !important;
+  box-shadow:
+    0 16px 48px rgba(10, 138, 47, 0.1),
+    0 4px 12px rgba(0, 0, 0, 0.04),
+    inset 0 1px 0 rgba(255, 255, 255, 0.8) !important;
+}
+
+/* ---- Config Header — Icon Glow ---- */
+.config-header i {
+  background: var(--accent-gradient) !important;
+  padding: 10px !important;
+  border-radius: 12px !important;
+  font-size: 1.3rem !important;
+  box-shadow: 0 4px 16px var(--glow-strong) !important;
+  animation: iconPulse 3s ease-in-out infinite;
+}
+@keyframes iconPulse {
+  0%, 100% { box-shadow: 0 4px 16px var(--glow); }
+  50% { box-shadow: 0 6px 24px var(--glow-strong), 0 0 40px rgba(10, 138, 47, 0.08); }
+}
+.config-header h3 {
+  font-size: 1.3rem !important;
+  font-weight: 800 !important;
+  letter-spacing: -0.3px;
+}
+
+/* ---- Mode Cards — Premium Hover ---- */
+.mode-card {
+  border-radius: 16px !important;
+  padding: 20px !important;
+  border-width: 1.5px !important;
+  transition: all 0.35s cubic-bezier(0.34, 1.56, 0.64, 1) !important;
+  position: relative;
+}
+.mode-card i {
+  font-size: 1.8rem !important;
+  transition: transform 0.3s ease, color 0.3s ease !important;
+}
+.mode-card:hover i { transform: scale(1.15) rotate(-5deg); }
+.mode-card h4 { font-size: 1.1rem !important; font-weight: 700 !important; }
+.mode-card p { font-size: 0.88rem !important; line-height: 1.5 !important; }
+.mode-card.active {
+  background: linear-gradient(135deg, rgba(10,138,47,0.04), rgba(52,194,90,0.02)) !important;
+  box-shadow: 0 8px 28px rgba(10, 138, 47, 0.12) !important;
+}
+
+/* ---- Subject Cards — Compact & Dazzling ---- */
+.subject-grid {
+  grid-template-columns: repeat(auto-fill, minmax(130px, 1fr)) !important;
+  gap: 12px !important;
+}
+.subject-card {
+  padding: 14px 10px !important;
+  border-radius: 14px !important;
+  font-size: 0.85rem !important;
+  font-weight: 600 !important;
+  border-width: 1.5px !important;
+  transition: all 0.3s cubic-bezier(0.34, 1.56, 0.64, 1) !important;
+}
+.subject-card i { font-size: 1.3rem !important; }
+.subject-card:hover {
+  transform: translateY(-3px) scale(1.02) !important;
+  box-shadow: 0 8px 20px rgba(10, 138, 47, 0.1) !important;
+}
+.subject-card.selected {
+  background: var(--accent-gradient) !important;
+  box-shadow: 0 6px 20px rgba(10, 138, 47, 0.3) !important;
+  transform: translateY(-2px) scale(1.02) !important;
+}
+
+/* ---- Settings — Refined ---- */
+.setting-item {
+  padding: 10px 16px !important;
+  border-radius: 10px !important;
+  background: rgba(10, 138, 47, 0.03) !important;
+  border: 1px solid rgba(10, 138, 47, 0.08) !important;
+  transition: background 0.2s ease;
+}
+.setting-item:hover { background: rgba(10, 138, 47, 0.06) !important; }
+.toggle-label { font-size: 0.9rem !important; }
+
+/* ---- Summary Bar — Glass Floating ---- */
+.summary-bar {
+  background: var(--card-glass) !important;
+  backdrop-filter: blur(20px) !important;
+  -webkit-backdrop-filter: blur(20px) !important;
+  border: 1px solid var(--card-glass-border) !important;
+  border-radius: 16px !important;
+  padding: 20px 24px !important;
+  box-shadow: 0 -4px 30px rgba(10, 138, 47, 0.08), 0 8px 32px rgba(0, 0, 0, 0.06) !important;
+}
+
+/* ---- Primary Button — Animated Gradient ---- */
+.summary-bar .btn-primary,
+.wizard-footer .btn-primary,
+#form-submit-btn {
+  background: var(--accent-gradient) !important;
+  background-size: 200% 200% !important;
+  animation: btnGradient 4s ease infinite !important;
+  padding: 14px 32px !important;
+  border-radius: 14px !important;
+  font-size: 1rem !important;
+  font-weight: 700 !important;
+  box-shadow: 0 6px 20px rgba(10, 138, 47, 0.25) !important;
+  transition: transform 0.25s ease, box-shadow 0.25s ease !important;
+  border: none !important;
+  color: white !important;
+}
+@keyframes btnGradient {
+  0%, 100% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+}
+.summary-bar .btn-primary:hover,
+.wizard-footer .btn-primary:hover {
+  transform: translateY(-2px) scale(1.02) !important;
+  box-shadow: 0 10px 30px rgba(10, 138, 47, 0.35) !important;
+}
+
+/* ---- Outline Button ---- */
+.summary-bar .btn-outline,
+.wizard-footer .btn-outline {
+  padding: 14px 24px !important;
+  border-radius: 14px !important;
+  font-size: 1rem !important;
+  font-weight: 600 !important;
+  border-width: 1.5px !important;
+  transition: all 0.25s ease !important;
+}
+
+/* ---- Wizard Container — Enhanced ---- */
+.wizard-container {
+  max-width: 720px !important;
+  padding: 36px 36px 30px !important;
+  border-radius: 24px !important;
+  box-shadow: 0 20px 60px rgba(10, 138, 47, 0.08), 0 2px 6px rgba(0, 0, 0, 0.03) !important;
+}
+.wizard-container::before {
+  height: 3px !important;
+  background: var(--accent-gradient) !important;
+}
+
+/* Wizard Cards — Compact */
+.wizard-card {
+  padding: 18px 14px 16px !important;
+  border-radius: 16px !important;
+  gap: 10px !important;
+}
+.wizard-card i {
+  font-size: 1.6rem !important;
+  padding: 12px !important;
+}
+.wizard-card h4 { font-size: 0.95rem !important; }
+.wizard-card p { font-size: 0.78rem !important; }
+
+/* ---- Wizard Title ---- */
+.wizard-title-large {
+  font-size: 1.7rem !important;
+  font-weight: 900 !important;
+  background: linear-gradient(135deg, #0a8a2f, #066426) !important;
+  -webkit-background-clip: text !important;
+  -webkit-text-fill-color: transparent !important;
+  background-clip: text !important;
+}
+
+/* ---- Progress Steps — Smaller ---- */
+.progress-step {
+  width: 30px !important;
+  height: 30px !important;
+  font-size: 0.8rem !important;
+}
+.progress-step + .progress-step { margin-left: 50px !important; }
+.progress-step.active {
+  box-shadow: 0 0 0 3px rgba(10, 138, 47, 0.1) !important;
+}
+.progress-step.completed {
+  box-shadow: 0 3px 10px rgba(10, 138, 47, 0.25) !important;
+}
+
+/* ---- Filter selects ---- */
+.filter-select, .settings-input {
+  border-radius: 10px !important;
+  padding: 10px 14px !important;
+  font-size: 0.92rem !important;
+  border-width: 1.5px !important;
+  transition: border-color 0.2s ease, box-shadow 0.2s ease !important;
+}
+
+/* ---- Staggered entrance animation ---- */
+.config-card:nth-child(1) { animation: cardEnter 0.5s ease-out 0.1s both; }
+.config-card:nth-child(2) { animation: cardEnter 0.5s ease-out 0.2s both; }
+.config-card:nth-child(3) { animation: cardEnter 0.5s ease-out 0.3s both; }
+.config-card:nth-child(4) { animation: cardEnter 0.5s ease-out 0.4s both; }
+@keyframes cardEnter {
+  from { opacity: 0; transform: translateY(20px) scale(0.98); }
+  to { opacity: 1; transform: translateY(0) scale(1); }
+}
+
+/* ==================================================
+   RESPONSIVE — TABLET (≤ 768px)
+   ================================================== */
+@media (max-width: 768px) {
+  .quiz-wrap {
+    margin: 12px auto !important;
+    padding: 0 10px !important;
+  }
+  .quiz-title { font-size: 1.8rem !important; }
+  .quiz-header .small { font-size: 0.9rem !important; }
+  .quiz-header { margin-bottom: 20px !important; }
+
+  .config-card {
+    padding: 18px 14px !important;
+    border-radius: 16px !important;
+    margin-bottom: 16px !important;
+  }
+  .config-header i { padding: 8px !important; font-size: 1.1rem !important; border-radius: 10px !important; }
+  .config-header h3 { font-size: 1.1rem !important; }
+  .config-header { margin-bottom: 16px !important; padding-bottom: 12px !important; gap: 12px !important; }
+
+  .mode-cards { grid-template-columns: 1fr !important; gap: 10px !important; }
+  .mode-card { padding: 16px 14px !important; border-radius: 14px !important; }
+  .mode-card i { font-size: 1.5rem !important; margin-bottom: 8px !important; }
+  .mode-card h4 { font-size: 1rem !important; }
+  .mode-card p { font-size: 0.82rem !important; }
+
+  .subject-grid {
+    grid-template-columns: repeat(3, 1fr) !important;
+    gap: 8px !important;
+  }
+  .subject-card {
+    padding: 10px 6px !important;
+    border-radius: 10px !important;
+    font-size: 0.75rem !important;
+    gap: 4px !important;
+  }
+  .subject-card i { font-size: 1.1rem !important; }
+
+  .settings-grid { gap: 10px !important; }
+  .setting-item { padding: 10px 12px !important; border-radius: 8px !important; }
+  .toggle-label { font-size: 0.85rem !important; }
+
+  .summary-bar {
+    padding: 14px 16px !important;
+    border-radius: 14px !important;
+    gap: 12px !important;
+    flex-direction: column !important;
+    align-items: stretch !important;
+    text-align: center !important;
+    bottom: 10px !important;
+  }
+  .summary-actions { width: 100% !important; justify-content: stretch !important; }
+  .summary-actions button { flex: 1 !important; justify-content: center !important; }
+  .summary-bar .btn-primary,
+  .summary-bar .btn-outline {
+    padding: 12px 16px !important;
+    font-size: 0.9rem !important;
+    border-radius: 12px !important;
+  }
+
+  .summary-info strong { font-size: 0.95rem !important; }
+  .summary-info #selected-subjects-text { font-size: 1rem !important; }
+  .summary-info .small { font-size: 0.8rem !important; padding: 4px 10px !important; }
+
+  /* Wizard */
+  .wizard-container {
+    padding: 24px 16px 20px !important;
+    border-radius: 18px !important;
+    margin: 0 4px !important;
+  }
+  .wizard-title-large { font-size: 1.35rem !important; }
+  .wizard-subtitle { font-size: 0.88rem !important; margin-bottom: 20px !important; }
+  .wizard-grid { grid-template-columns: repeat(2, 1fr) !important; gap: 10px !important; }
+  .wizard-card { padding: 14px 10px 12px !important; border-radius: 12px !important; gap: 6px !important; }
+  .wizard-card i { font-size: 1.3rem !important; padding: 10px !important; }
+  .wizard-card h4 { font-size: 0.85rem !important; }
+  .wizard-card p { font-size: 0.72rem !important; }
+  .wizard-footer { margin-top: 20px !important; padding-top: 12px !important; gap: 10px !important; }
+  .wizard-footer .btn-outline { padding: 10px 16px !important; font-size: 0.88rem !important; }
+  .wizard-skip { font-size: 0.78rem !important; }
+  .progress-step { width: 26px !important; height: 26px !important; font-size: 0.72rem !important; }
+  .progress-step + .progress-step { margin-left: 36px !important; }
+  .wizard-progress { max-width: 240px !important; margin-bottom: 20px !important; }
+
+  /* Filters */
+  .filters-grid { grid-template-columns: 1fr !important; gap: 12px !important; }
+  .filter-select { font-size: 0.88rem !important; }
+}
+
+/* ==================================================
+   RESPONSIVE — MOBILE (≤ 480px)
+   ================================================== */
+@media (max-width: 480px) {
+  .quiz-wrap { padding: 0 6px !important; margin: 8px auto !important; }
+  .quiz-title { font-size: 1.5rem !important; letter-spacing: -0.5px !important; }
+  .quiz-header .small { font-size: 0.82rem !important; }
+  .quiz-header { margin-bottom: 14px !important; }
+
+  .config-card { padding: 14px 10px !important; border-radius: 14px !important; margin-bottom: 12px !important; }
+  .config-header { gap: 10px !important; margin-bottom: 12px !important; padding-bottom: 10px !important; }
+  .config-header i { padding: 7px !important; font-size: 1rem !important; border-radius: 8px !important; }
+  .config-header h3 { font-size: 1rem !important; }
+
+  .mode-card { padding: 12px !important; border-radius: 12px !important; }
+  .mode-card i { font-size: 1.3rem !important; margin-bottom: 6px !important; }
+  .mode-card h4 { font-size: 0.9rem !important; margin-bottom: 4px !important; }
+  .mode-card p { font-size: 0.78rem !important; }
+  .mode-card.active::before { font-size: 1rem !important; top: 10px !important; right: 10px !important; }
+
+  .subject-grid { grid-template-columns: repeat(3, 1fr) !important; gap: 6px !important; }
+  .subject-card {
+    padding: 8px 4px !important;
+    border-radius: 8px !important;
+    font-size: 0.68rem !important;
+    gap: 3px !important;
+    min-height: 0 !important;
+  }
+  .subject-card i { font-size: 0.95rem !important; }
+
+  .setting-item { padding: 8px 10px !important; }
+  .toggle-label { font-size: 0.8rem !important; gap: 8px !important; }
+  .settings-input { width: 70px !important; padding: 6px 8px !important; font-size: 0.85rem !important; }
+
+  .summary-bar {
+    padding: 12px !important;
+    border-radius: 12px !important;
+    bottom: 6px !important;
+    gap: 10px !important;
+  }
+  .summary-bar .btn-primary,
+  .summary-bar .btn-outline {
+    padding: 10px 12px !important;
+    font-size: 0.82rem !important;
+    border-radius: 10px !important;
+  }
+  .summary-info strong { font-size: 0.85rem !important; }
+  .summary-info #selected-subjects-text { font-size: 0.9rem !important; }
+  .summary-info .small { font-size: 0.75rem !important; padding: 3px 8px !important; }
+
+  /* Wizard mobile */
+  .wizard-container { padding: 18px 10px 16px !important; border-radius: 14px !important; }
+  .wizard-title-large { font-size: 1.15rem !important; letter-spacing: -0.2px !important; }
+  .wizard-subtitle { font-size: 0.82rem !important; margin-bottom: 16px !important; }
+  .wizard-grid { gap: 8px !important; }
+  .wizard-card { padding: 10px 8px 10px !important; border-radius: 10px !important; gap: 4px !important; }
+  .wizard-card i { font-size: 1.1rem !important; padding: 8px !important; }
+  .wizard-card h4 { font-size: 0.78rem !important; }
+  .wizard-card p { font-size: 0.65rem !important; line-height: 1.3 !important; }
+  .wizard-footer .btn-outline { padding: 8px 14px !important; font-size: 0.82rem !important; border-radius: 10px !important; }
+  .wizard-skip { font-size: 0.72rem !important; }
+  .progress-step { width: 22px !important; height: 22px !important; font-size: 0.65rem !important; border-width: 2px !important; }
+  .progress-step + .progress-step { margin-left: 28px !important; }
+  .wizard-progress { max-width: 200px !important; margin-bottom: 16px !important; }
+
+  /* Manual form */
+  #manual-personalization-form .wizard-container { padding: 16px 10px 14px !important; }
+  #manual-personalization-form .settings-input { padding: 10px !important; font-size: 0.88rem !important; }
+}
+
+/* ==================================================
+   RESPONSIVE — EXTRA SMALL (≤ 360px)
+   ================================================== */
+@media (max-width: 360px) {
+  .quiz-title { font-size: 1.3rem !important; }
+  .config-card { padding: 12px 8px !important; }
+  .subject-grid { grid-template-columns: repeat(2, 1fr) !important; gap: 5px !important; }
+  .subject-card { padding: 7px 4px !important; font-size: 0.65rem !important; }
+  .subject-card i { font-size: 0.85rem !important; }
+  .mode-card { padding: 10px !important; }
+  .mode-card i { font-size: 1.1rem !important; }
+  .mode-card h4 { font-size: 0.82rem !important; }
+  .mode-card p { font-size: 0.72rem !important; }
+  .wizard-title-large { font-size: 1.05rem !important; }
+  .wizard-card h4 { font-size: 0.72rem !important; }
+}
+
+/* ---- Dark mode enhancements ---- */
+body.dark-mode {
+  background: linear-gradient(135deg, #0d1117 0%, #161b22 50%, #0d1117 100%) !important;
+}
+body.dark-mode .config-card {
+  background: rgba(30, 36, 40, 0.9) !important;
+  border-color: rgba(10, 138, 47, 0.2) !important;
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.3), inset 0 1px 0 rgba(255, 255, 255, 0.05) !important;
+}
+body.dark-mode .summary-bar {
+  background: rgba(30, 36, 40, 0.95) !important;
+  border-color: rgba(10, 138, 47, 0.2) !important;
+}
+body.dark-mode .wizard-container {
+  background: rgba(22, 27, 30, 0.95) !important;
+}
+body.dark-mode .quiz-title {
+  background: linear-gradient(135deg, #34c25a, #81c784, #34c25a) !important;
+  -webkit-background-clip: text !important;
+  background-clip: text !important;
+}
+body.dark-mode .wizard-title-large {
+  background: linear-gradient(135deg, #34c25a, #81c784) !important;
+  -webkit-background-clip: text !important;
+  background-clip: text !important;
+}
+
+/* ---- Smooth scrollbar ---- */
+::-webkit-scrollbar { width: 6px; }
+::-webkit-scrollbar-track { background: transparent; }
+::-webkit-scrollbar-thumb { background: rgba(10, 138, 47, 0.2); border-radius: 10px; }
+::-webkit-scrollbar-thumb:hover { background: rgba(10, 138, 47, 0.35); }
