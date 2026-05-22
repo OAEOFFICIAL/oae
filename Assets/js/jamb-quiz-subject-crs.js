@@ -11,7 +11,7 @@
         const queryString = new URLSearchParams(quizParams).toString();
 
         // Redirect to quiz page
-        window.location.href = `../../../quiz.htm?${queryString}`;
+        window.location.href = `/Quizzes/quiz.htm?${queryString}`;
     }
 
     // Add click event listeners to difficulty cards
