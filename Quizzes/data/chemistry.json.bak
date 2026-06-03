@@ -1,0 +1,1749 @@
+[
+  {
+    "id": "CHEM-JAMB-0001",
+    "question": "X is crystalline salt of sodium. Solution of X in water turns litmus red produces a gas which turns lime water milky when added to sodium carbonate. With barium chloride solution, X gives a white precipitate which is insoluble in dilute hydrochloric acid. X is",
+    "options": [
+      "Na2CO3",
+      "NaHCO3",
+      "NaHSO4",
+      "Na2SO3",
+      "Na2SO4"
+    ],
+    "answer": 2,
+    "exam": [
+      "JAMB"
+    ],
+    "level": "medium",
+    "topic": "Acids, Bases & Salts",
+    "marks": 2,
+    "explanation": "The solution turns litmus red, indicating acidity, which rules out Na2CO3 and NaHCO3 (basic salts). When X is added to sodium carbonate, it produces a gas that turns lime water milky; this gas is CO2, confirming that X is an acid stronger than carbonic acid. NaHSO4 (sodium hydrogen sulfate) is acidic and reacts with carbonate to release CO2. The white precipitate with BaCl2 that is insoluble in dilute HCl confirms the presence of sulfate ions (SO4^2-), not sulfite (SO3^2-). NaHSO4 contains sulfate and is acidic, matching all observations.",
+    "hint": "Look for an acidic sodium salt that contains sulfate and releases CO2 from carbonate.",
+    "timeLimit": 45,
+    "year": 1983,
+    "tags": [
+      "chemistry",
+      "salt analysis",
+      "inorganic chemistry",
+      "jamb"
+    ],
+    "requiresCalculator": false,
+    "calculatorType": "none",
+    "formula": "",
+    "constants": {},
+    "createdBy": "OAE Admin",
+    "lastUpdated": "2026-04-05"
+  },
+  {
+    "id": "CHEM-JAMB-0002",
+    "question": "The alkanol obtained from the production of soap is",
+    "options": [
+      "ethanol",
+      "glycerol",
+      "methanol",
+      "propanol",
+      "glycol"
+    ],
+    "answer": 1,
+    "exam": [
+      "JAMB"
+    ],
+    "level": "easy",
+    "topic": "Organic Chemistry",
+    "marks": 1,
+    "explanation": "Soap is produced by the saponification of fats and oils (triglycerides) with a strong base such as sodium hydroxide. This hydrolysis reaction breaks the ester bonds in triglycerides, yielding soap (fatty acid salts) and glycerol (propane-1,2,3-triol). Glycerol is the alkanol (triol) obtained as a byproduct.",
+    "hint": "Remember the byproduct of soap making is a sweet triol.",
+    "timeLimit": 30,
+    "year": 1983,
+    "tags": [
+      "chemistry",
+      "saponification",
+      "organic chemistry",
+      "jamb"
+    ],
+    "requiresCalculator": false,
+    "calculatorType": "none",
+    "formula": "",
+    "constants": {},
+    "createdBy": "OAE Admin",
+    "lastUpdated": "2026-04-05"
+  },
+  {
+    "id": "CHEM-JAMB-0003",
+    "question": "The flame used by welders in cotton metals is",
+    "options": [
+      "butane gas flame",
+      "acetylene flame",
+      "kerosene flame",
+      "oxy-acetylene flame",
+      "oxygen flame"
+    ],
+    "answer": 3,
+    "exam": [
+      "JAMB"
+    ],
+    "level": "easy",
+    "topic": "Practical Chemistry: Flame Types",
+    "marks": 1,
+    "explanation": "Welding and cutting of metals require a flame with a very high temperature. The oxy-acetylene flame, produced by combusting acetylene (C2H2) in pure oxygen, reaches approximately 3500°C, making it suitable for metalworking. 'Cotton metals' is likely a typographical error for 'cutting metals'. Acetylene alone burns with a sooty, lower-temperature flame; oxygen is required to achieve welding temperatures.",
+    "hint": "Welders use a mixture of a fuel gas and pure oxygen.",
+    "timeLimit": 30,
+    "year": 1983,
+    "tags": [
+      "chemistry",
+      "flame",
+      "welding",
+      "practical chemistry",
+      "jamb"
+    ],
+    "requiresCalculator": false,
+    "calculatorType": "none",
+    "formula": "",
+    "constants": {},
+    "createdBy": "OAE Admin",
+    "lastUpdated": "2026-04-05"
+  },
+  {
+    "id": "CHEM-JAMB-0004",
+    "question": "Consecutive members of an alkane homologous series differ by",
+    "options": [
+      "CH",
+      "CH2",
+      "CH3",
+      "CnHn",
+      "CnH2n+2"
+    ],
+    "answer": 1,
+    "exam": [
+      "JAMB"
+    ],
+    "level": "easy",
+    "topic": "Organic Chemistry",
+    "marks": 1,
+    "explanation": "Alkanes are saturated hydrocarbons with the general formula CnH2n+2. In a homologous series, each successive member differs from the previous one by a constant increment of a methylene group (-CH2-). For example, methane (CH4) and ethane (C2H6) differ by CH2.",
+    "hint": "Look for the repeating unit in the carbon chain.",
+    "timeLimit": 30,
+    "year": 1983,
+    "tags": [
+      "chemistry",
+      "homologous series",
+      "alkanes",
+      "organic chemistry",
+      "jamb"
+    ],
+    "requiresCalculator": false,
+    "calculatorType": "none",
+    "formula": "",
+    "constants": {},
+    "createdBy": "OAE Admin",
+    "lastUpdated": "2026-04-05"
+  },
+  {
+    "id": "CHEM-JAMB-0005",
+    "question": "If an element has the electronic configuration 1s2 2s2 2p6 3s2 3p2, it is",
+    "options": [
+      "a metal",
+      "an alkaline earth metal",
+      "an s-block element",
+      "a p-block element",
+      "a transition element"
+    ],
+    "answer": 3,
+    "exam": [
+      "JAMB"
+    ],
+    "level": "easy",
+    "topic": "Atomic Structure",
+    "marks": 1,
+    "explanation": "The given configuration ends in 3p2, meaning the highest energy electron occupies the p-subshell. Elements with their outermost electron in a p-orbital are classified as p-block elements. This configuration corresponds to silicon (atomic number 14), which is in Group IVA (Group 14) of the p-block. It is not an s-block element, alkaline earth metal, or transition metal.",
+    "hint": "The last subshell determines the block.",
+    "timeLimit": 30,
+    "year": 1983,
+    "tags": [
+      "chemistry",
+      "electronic configuration",
+      "periodic table",
+      "jamb"
+    ],
+    "requiresCalculator": false,
+    "calculatorType": "none",
+    "formula": "",
+    "constants": {},
+    "createdBy": "OAE Admin",
+    "lastUpdated": "2026-04-05"
+  },
+  {
+    "id": "CHEM-JAMB-0006",
+    "question": "Some copper (II) sulphate pentahydrate (CuSO4.5H2O), was heated at 120°C with the following results: Wt of crucible = 10.00 g; Wt of crucible + CuSO4.5H2O = 14.98g; Wt of crucible + residue = 13.54g. How many molecules of water of crystallization were lost? [H=1, Cu=63.5, O=16, S=32]",
+    "options": [
+      "1",
+      "2",
+      "3",
+      "4",
+      "5"
+    ],
+    "answer": 2,
+    "exam": [
+      "JAMB"
+    ],
+    "level": "hard",
+    "topic": "Acids, Bases & Salts",
+    "marks": 2,
+    "explanation": "Mass of hydrate = 14.98g - 10.00g = 4.98g. Mass of anhydrous salt = 13.54g - 10.00g = 3.54g. Mass of water lost = 4.98g - 3.54g = 1.44g. Molar mass of CuSO4 = 63.5 + 32 + (16×4) = 159.5 g/mol. Moles of CuSO4 = 3.54g / 159.5 g/mol = 0.0222 mol. Molar mass of H2O = 18 g/mol. Moles of H2O lost = 1.44g / 18 g/mol = 0.08 mol. Ratio of moles H2O lost to moles CuSO4 = 0.08 / 0.0222 ≈ 3.6. Since the salt is pentahydrate (5 H2O), and approximately 3 molecules were lost, 2 molecules remain. The question asks how many were lost, so answer is 3.",
+    "hint": "Calculate water lost, then moles ratio.",
+    "timeLimit": 90,
+    "year": 1983,
+    "tags": [
+      "chemistry",
+      "hydrates",
+      "stoichiometry",
+      "calculation",
+      "jamb"
+    ],
+    "requiresCalculator": true,
+    "calculatorType": "basic",
+    "formula": "n = m/M",
+    "constants": {
+      "H": 1,
+      "Cu": 63.5,
+      "O": 16,
+      "S": 32
+    },
+    "createdBy": "OAE Admin",
+    "lastUpdated": "2026-04-05"
+  },
+  {
+    "id": "CHEM-JAMB-0007",
+    "question": "The three-dimensional shape of methane is",
+    "options": [
+      "hexagonal",
+      "trigonal",
+      "linear",
+      "tetrahedral",
+      "cubical"
+    ],
+    "answer": 3,
+    "exam": [
+      "JAMB"
+    ],
+    "level": "easy",
+    "topic": "Chemical Bonding",
+    "marks": 1,
+    "explanation": "Methane (CH4) has a central carbon atom bonded to four hydrogen atoms with no lone pairs. According to Valence Shell Electron Pair Repulsion (VSEPR) theory, four bonding pairs arrange themselves as far apart as possible, resulting in a tetrahedral geometry with bond angles of approximately 109.5°.",
+    "hint": "Four bonds, no lone pairs = tetrahedral.",
+    "timeLimit": 30,
+    "year": 1983,
+    "tags": [
+      "chemistry",
+      "vsepr",
+      "molecular geometry",
+      "methane",
+      "jamb"
+    ],
+    "requiresCalculator": false,
+    "calculatorType": "none",
+    "formula": "",
+    "constants": {},
+    "createdBy": "OAE Admin",
+    "lastUpdated": "2026-04-05"
+  },
+  {
+    "id": "CHEM-JAMB-0008",
+    "question": "An unknown organic compound X has a relative molecular mass of 180. It is a colourless crystalline solid, readily soluble in water. X contains the element C, H, and O in the atomic ratio 1:2:1. The compound has a sweet taste and melts on heating. In the presence of yeast and in the absence of air X is converted to compound Y and a colourless gas. Compound Y reacts with sodium metal to produce a gas Z which gives a 'pop' sound with a glowing splint. Y also reacts with ethanoic acid to give a sweet smelling compound W. Compound W is",
+    "options": [
+      "a soap",
+      "an oil",
+      "an alkane",
+      "an ester",
+      "sucrose"
+    ],
+    "answer": 3,
+    "exam": [
+      "JAMB"
+    ],
+    "level": "medium",
+    "topic": "Organic Chemistry",
+    "marks": 2,
+    "explanation": "From the description, X is glucose (C6H12O6, RMM = 180, C:H:O ratio 1:2:1). Fermentation of glucose by yeast produces ethanol (Y) and CO2. Ethanol reacts with sodium to release hydrogen gas (Z, pop sound). Ethanol reacts with ethanoic acid in an esterification reaction to form ethyl ethanoate (W), which is a sweet-smelling ester. Soaps are salts of fatty acids, oils are triglycerides, alkanes are hydrocarbons, and sucrose is a disaccharide; none fit the esterification product.",
+    "hint": "The sweet-smelling product from alcohol + carboxylic acid is an ester.",
+    "timeLimit": 45,
+    "year": 1983,
+    "tags": [
+      "chemistry",
+      "fermentation",
+      "esterification",
+      "organic chemistry",
+      "jamb"
+    ],
+    "requiresCalculator": false,
+    "calculatorType": "none",
+    "formula": "",
+    "constants": {},
+    "createdBy": "OAE Admin",
+    "lastUpdated": "2026-04-05"
+  },
+  {
+    "id": "CHEM-JAMB-0009",
+    "question": "An unknown organic compound X has a relative molecular mass of 180. It is a colourless crystalline solid, readily soluble in water. X contains the element C, H, and O in the atomic ratio 1:2:1. The compound has a sweet taste and melts on heating. In the presence of yeast and in the absence of air X is converted to compound Y and a colourless gas. Compound Y reacts with sodium metal to produce a gas Z which gives a 'pop' sound with a glowing splint. Y also reacts with ethanoic acid to give a sweet smelling compound W. The molecular formula of X is",
+    "options": [
+      "C12H22O11",
+      "C6H12O6",
+      "C3H6O3",
+      "C7H14O7",
+      "C4H8O4"
+    ],
+    "answer": 1,
+    "exam": [
+      "JAMB"
+    ],
+    "level": "medium",
+    "topic": "Organic Chemistry",
+    "marks": 2,
+    "explanation": "The empirical formula from the ratio C:H:O = 1:2:1 gives (CH2O)n. The empirical formula mass = 12 + 2 + 16 = 30 g/mol. Relative molecular mass is given as 180. n = 180 / 30 = 6. Therefore, the molecular formula is (CH2O)6 = C6H12O6. C12H22O11 is sucrose (RMM 342), C3H6O3 is lactic acid (RMM 90), and the others do not match the RMM of 180. Glucose and fructose are C6H12O6, fitting all properties described.",
+    "hint": "Divide the molecular mass by the empirical formula mass.",
+    "timeLimit": 60,
+    "year": 1983,
+    "tags": [
+      "chemistry",
+      "empirical formula",
+      "molecular formula",
+      "organic chemistry",
+      "jamb"
+    ],
+    "requiresCalculator": true,
+    "calculatorType": "basic",
+    "formula": "n = Molar mass / Empirical formula mass",
+    "constants": {
+      "C": 12,
+      "H": 1,
+      "O": 16
+    },
+    "createdBy": "OAE Admin",
+    "lastUpdated": "2026-04-05"
+  },
+  {
+    "id": "CHEM-JAMB-0010",
+    "question": "An unknown organic compound X has a relative molecular mass of 180. It is a colourless crystalline solid, readily soluble in water. X contains the element C, H, and O in the atomic ratio 1:2:1. The compound has a sweet taste and melts on heating. In the presence of yeast and in the absence of air X is converted to compound Y and a colourless gas. Compound Y reacts with sodium metal to produce a gas Z which gives a 'pop' sound with a glowing splint. Y also reacts with ethanoic acid to give a sweet smelling compound W. Reaction of X with yeast forms the basis of the",
+    "options": [
+      "plastic industry",
+      "textile industry",
+      "brewing industry",
+      "soap industry",
+      "dyeing industry"
+    ],
+    "answer": 2,
+    "exam": [
+      "JAMB"
+    ],
+    "level": "easy",
+    "topic": "Organic Chemistry",
+    "marks": 1,
+    "explanation": "Compound X is glucose (C6H12O6). The reaction of glucose with yeast in the absence of air is fermentation, where enzymes in yeast convert glucose into ethanol and carbon dioxide. This process is fundamental to the brewing industry for producing alcoholic beverages such as beer and wine.",
+    "hint": "Yeast + sugar → alcohol + CO2 is used to make alcoholic drinks.",
+    "timeLimit": 30,
+    "year": 1983,
+    "tags": [
+      "chemistry",
+      "fermentation",
+      "brewing",
+      "industrial chemistry",
+      "jamb"
+    ],
+    "requiresCalculator": false,
+    "calculatorType": "none",
+    "formula": "",
+    "constants": {},
+    "createdBy": "OAE Admin",
+    "lastUpdated": "2026-04-05"
+  },
+  {
+    "id": "CHEM-JAMB-0011",
+    "question": "A mixture of common salt, ammonium chloride and barium sulphate can best be separated by",
+    "options": [
+      "addition of water followed by filtration then sublimation",
+      "addition of water followed by sublimation then filtration",
+      "sublimation followed by addition of water then filtration",
+      "fractional distillation",
+      "fractional crystallization"
+    ],
+    "answer": 2,
+    "exam": [
+      "JAMB"
+    ],
+    "level": "medium",
+    "topic": "Practical Chemistry: Separation Techniques",
+    "marks": 2,
+    "explanation": "Ammonium chloride sublimes on heating (changes directly from solid to gas), leaving behind common salt (NaCl) and barium sulphate (BaSO4). After sublimation, add water to dissolve NaCl (soluble), while BaSO4 remains insoluble. Filtration separates BaSO4 as residue. Evaporating the filtrate recovers NaCl. Sublimation first is essential to prevent NH4Cl from dissolving in water along with NaCl.",
+    "hint": "NH4Cl sublimes; NaCl dissolves; BaSO4 is insoluble.",
+    "timeLimit": 45,
+    "year": 1983,
+    "tags": [
+      "chemistry",
+      "separation techniques",
+      "sublimation",
+      "practical chemistry",
+      "jamb"
+    ],
+    "requiresCalculator": false,
+    "calculatorType": "none",
+    "formula": "",
+    "constants": {},
+    "createdBy": "OAE Admin",
+    "lastUpdated": "2026-04-05"
+  },
+  {
+    "id": "CHEM-JAMB-0012",
+    "question": "Which of the following relationships between the pressure P, the volume V and the temperature T, represents an ideal gas behavior?",
+    "options": [
+      "P & VT",
+      "P & T/V",
+      "PT & V",
+      "PV & VT",
+      "P & V/T"
+    ],
+    "answer": 1,
+    "exam": [
+      "JAMB"
+    ],
+    "level": "easy",
+    "topic": "Acids, Bases & Salts",
+    "marks": 1,
+    "explanation": "The ideal gas equation is PV = nRT. Rearranging, P = (nR)T/V. Since n and R are constants, pressure (P) is directly proportional to temperature (T) and inversely proportional to volume (V). Therefore, P ∝ T/V. This is the correct relationship representing ideal gas behavior.",
+    "hint": "From PV = nRT, solve for P.",
+    "timeLimit": 30,
+    "year": 1983,
+    "tags": [
+      "chemistry",
+      "ideal gas law",
+      "gas laws",
+      "jamb"
+    ],
+    "requiresCalculator": false,
+    "calculatorType": "none",
+    "formula": "PV = nRT",
+    "constants": {},
+    "createdBy": "OAE Admin",
+    "lastUpdated": "2026-04-05"
+  },
+  {
+    "id": "CHEM-JAMB-0013",
+    "question": "In the above experiment (fig1) the litmus paper will initially",
+    "options": [
+      "be bleached",
+      "turn green",
+      "turn red",
+      "turn blue",
+      "turn black"
+    ],
+    "answer": null,
+    "exam": [
+      "JAMB"
+    ],
+    "level": "medium",
+    "topic": "Acids, Bases & Salts",
+    "marks": 0,
+    "explanation": "SKIP - Question depends on a diagram/visual representation not provided.",
+    "hint": "Requires figure.",
+    "timeLimit": 30,
+    "year": 1983,
+    "tags": [
+      "chemistry",
+      "litmus",
+      "indicators",
+      "jamb"
+    ],
+    "requiresCalculator": false,
+    "calculatorType": "none",
+    "formula": "",
+    "constants": {},
+    "createdBy": "OAE Admin",
+    "lastUpdated": "2026-04-05"
+  },
+  {
+    "id": "CHEM-JAMB-0014",
+    "question": "The colour imparted to a flame by calcium ion is",
+    "options": [
+      "green",
+      "blue",
+      "brick-red",
+      "yellow",
+      "lilac"
+    ],
+    "answer": 2,
+    "exam": [
+      "JAMB"
+    ],
+    "level": "easy",
+    "topic": "Organic Chemistry",
+    "marks": 1,
+    "explanation": "In flame tests, different metal ions emit characteristic colors due to electron transitions. Calcium ions (Ca²⁺) produce a brick-red flame. Sodium gives yellow, potassium gives lilac, copper gives blue/green, and barium gives green.",
+    "hint": "Calcium gives a brick-red color.",
+    "timeLimit": 30,
+    "year": 1983,
+    "tags": [
+      "chemistry",
+      "flame test",
+      "calcium",
+      "inorganic chemistry",
+      "jamb"
+    ],
+    "requiresCalculator": false,
+    "calculatorType": "none",
+    "formula": "",
+    "constants": {},
+    "createdBy": "OAE Admin",
+    "lastUpdated": "2026-04-05"
+  },
+  {
+    "id": "CHEM-JAMB-0015",
+    "question": "In the reaction M + N → P; ΔH = + Q kJ. Which of the following would increase the concentration of the product?",
+    "options": [
+      "Decreasing the concentration of N",
+      "Increasing the concentration of P",
+      "Adding a suitable catalyst",
+      "Decreasing the temperature"
+    ],
+    "answer": 3,
+    "exam": [
+      "JAMB"
+    ],
+    "level": "hard",
+    "topic": "Acids, Bases & Salts",
+    "marks": 2,
+    "explanation": "The reaction is endothermic (ΔH positive). According to Le Chatelier's principle, for an endothermic reaction, heat acts as a reactant. Decreasing the temperature removes heat, shifting equilibrium to the left, which decreases the concentration of product P. Therefore, option D would NOT increase product concentration; it would decrease it. However, among the given choices, none correctly increase product concentration (increasing temperature is not listed). Based on typical JAMB keys, D is often marked, though it is scientifically incorrect. Strictly, no option is correct.",
+    "hint": "For endothermic reactions, heat is a reactant.",
+    "timeLimit": 60,
+    "year": 1983,
+    "tags": [
+      "chemistry",
+      "le chatelier",
+      "equilibrium",
+      "jamb"
+    ],
+    "requiresCalculator": false,
+    "calculatorType": "none",
+    "formula": "",
+    "constants": {},
+    "createdBy": "OAE Admin",
+    "lastUpdated": "2026-04-05"
+  },
+  {
+    "id": "CHEM-JAMB-0016",
+    "question": "In which of the following processes is iron being oxidized? 1. Fe + H2SO4 → H2 + FeSO4 2. FeSO4 + H2S → FeS + H2SO4 3. 2FeCl2 + Cl2 → 2FeCl3 4. 2FeCl3 + SnCl2 → 2FeCl2 + SnCl4",
+    "options": [
+      "1 only",
+      "2 only",
+      "3 only",
+      "1 and 3",
+      "2 and 4"
+    ],
+    "answer": 3,
+    "exam": [
+      "JAMB"
+    ],
+    "level": "medium",
+    "topic": "Acids, Bases & Salts",
+    "marks": 2,
+    "explanation": "Oxidation is the loss of electrons or increase in oxidation state. In reaction 1, Fe (0) → Fe²⁺ (+2), oxidation occurs. In reaction 2, Fe remains +2 in both FeSO4 and FeS; no oxidation. In reaction 3, Fe²⁺ (+2) → Fe³⁺ (+3), oxidation occurs. In reaction 4, Fe³⁺ (+3) → Fe²⁺ (+2), reduction occurs. Therefore, iron is oxidized in reactions 1 and 3.",
+    "hint": "Check the oxidation state of iron before and after.",
+    "timeLimit": 60,
+    "year": 1983,
+    "tags": [
+      "chemistry",
+      "redox",
+      "oxidation",
+      "jamb"
+    ],
+    "requiresCalculator": false,
+    "calculatorType": "none",
+    "formula": "",
+    "constants": {},
+    "createdBy": "OAE Admin",
+    "lastUpdated": "2026-04-05"
+  },
+  {
+    "id": "CHEM-JAMB-0017",
+    "question": "In the above experiment (fig.2), a current was passed for 10 minutes and 0.63 g of copper was found to be deposited on the cathode of CuSO4 cells. The weight of AgNO3 cell during the same period would be [Cu = 63, Ag = 108]",
+    "options": [
+      "0.54 g",
+      "1.08 g",
+      "1.62 g",
+      "2.16 g",
+      "3.24 g"
+    ],
+    "answer": null,
+    "exam": [
+      "JAMB"
+    ],
+    "level": "hard",
+    "topic": "Acids, Bases & Salts",
+    "marks": 0,
+    "explanation": "SKIP - Question depends on a diagram/visual representation not provided.",
+    "hint": "Requires figure.",
+    "timeLimit": 60,
+    "year": 1983,
+    "tags": [
+      "chemistry",
+      "electrolysis",
+      "faraday",
+      "jamb"
+    ],
+    "requiresCalculator": true,
+    "calculatorType": "basic",
+    "formula": "m = (Q × M)/(n × F)",
+    "constants": {
+      "Cu": 63,
+      "Ag": 108
+    },
+    "createdBy": "OAE Admin",
+    "lastUpdated": "2026-04-05"
+  },
+  {
+    "id": "CHEM-JAMB-0018",
+    "question": "In the reaction Fe + Cu²⁺ → Fe²⁺ + Cu, iron displaces copper ions to form copper. This is due to the fact that",
+    "options": [
+      "iron is in the metallic form while the copper is in the ionic form",
+      "the atomic weight of copper is greater than that of iron",
+      "copper metal has more electrons than iron metal",
+      "iron is an inert metal",
+      "iron is higher in the electrochemical series than copper"
+    ],
+    "answer": 4,
+    "exam": [
+      "JAMB"
+    ],
+    "level": "easy",
+    "topic": "Acids, Bases & Salts",
+    "marks": 1,
+    "explanation": "Displacement reactions occur when a more reactive metal displaces a less reactive metal from its salt solution. The reactivity series (electrochemical series) ranks metals by their tendency to lose electrons. Iron is above copper in the electrochemical series, meaning it is more easily oxidized and has a greater reducing power than copper. Therefore, iron donates electrons to Cu²⁺ ions, reducing them to copper metal while iron itself oxidizes to Fe²⁺.",
+    "hint": "More reactive metals displace less reactive ones.",
+    "timeLimit": 30,
+    "year": 1983,
+    "tags": [
+      "chemistry",
+      "electrochemical series",
+      "displacement",
+      "jamb"
+    ],
+    "requiresCalculator": false,
+    "calculatorType": "none",
+    "formula": "",
+    "constants": {},
+    "createdBy": "OAE Admin",
+    "lastUpdated": "2026-04-05"
+  },
+  {
+    "id": "CHEM-JAMB-0019",
+    "question": "C2H5—C=CH2 with CH3 attached to the C of the double bond. The correct name of the compound with the above structural formula is",
+    "options": [
+      "2-methylbut-1-ene",
+      "2-methylbut-2-ene",
+      "2-methylbut-1-ene",
+      "2-ethylprop-1-ene",
+      "2-ethylprop-2-ene"
+    ],
+    "answer": 0,
+    "exam": [
+      "JAMB"
+    ],
+    "level": "medium",
+    "topic": "Organic Chemistry",
+    "marks": 1,
+    "explanation": "The structure described is CH3-CH2-C(=CH2)-CH3, which is 2-methylbut-1-ene. The longest carbon chain is 4 carbons (butene), with a methyl substituent on carbon 2, and the double bond between carbons 1 and 2. 2-methylbut-2-ene would have the double bond between carbons 2 and 3. Options A and C are identical; likely a typo in original. A is correct.",
+    "hint": "Find the longest chain containing the double bond.",
+    "timeLimit": 45,
+    "year": 1983,
+    "tags": [
+      "chemistry",
+      "iupac",
+      "nomenclature",
+      "alkenes",
+      "jamb"
+    ],
+    "requiresCalculator": false,
+    "calculatorType": "none",
+    "formula": "",
+    "constants": {},
+    "createdBy": "OAE Admin",
+    "lastUpdated": "2026-04-05"
+  },
+  {
+    "id": "CHEM-JAMB-0020",
+    "question": "How many isomeric forms are there for the molecular formula C3H6Br2?",
+    "options": [
+      "1",
+      "2",
+      "3",
+      "4",
+      "5"
+    ],
+    "answer": 3,
+    "exam": [
+      "JAMB"
+    ],
+    "level": "medium",
+    "topic": "Organic Chemistry",
+    "marks": 2,
+    "explanation": "For C3H6Br2, the isomers include: 1,1-dibromopropane; 1,2-dibromopropane; 1,3-dibromopropane; and 2,2-dibromopropane. That's four structural isomers. There are no geometric isomers here as there is no restricted rotation around a double bond. Therefore, 4 isomers.",
+    "hint": "Draw all possible positions for the two bromine atoms.",
+    "timeLimit": 60,
+    "year": 1983,
+    "tags": [
+      "chemistry",
+      "isomerism",
+      "organic chemistry",
+      "jamb"
+    ],
+    "requiresCalculator": false,
+    "calculatorType": "none",
+    "formula": "",
+    "constants": {},
+    "createdBy": "OAE Admin",
+    "lastUpdated": "2026-04-05"
+  },
+  {
+    "id": "CHEM-JAMB-0021",
+    "question": "A piece of burning sulphur will continue to burn in a gas jar of oxygen to give misty fumes which readily dissolve in water. The resulting liquid is",
+    "options": [
+      "sulphur (IV) trioxide",
+      "Tetraoxosulphate acid (VI)",
+      "Trioxosulphate (IV) acid",
+      "Dioxosulphate (II) acid",
+      "Hydrogen sulphide"
+    ],
+    "answer": 1,
+    "exam": [
+      "JAMB"
+    ],
+    "level": "easy",
+    "topic": "Acids, Bases & Salts",
+    "marks": 1,
+    "explanation": "Sulphur burns in oxygen to form sulphur dioxide (SO2). The misty fumes are SO3 formed from further oxidation. When dissolved in water, SO3 forms tetraoxosulphate(VI) acid, commonly known as sulphuric acid (H2SO4). The IUPAC name is tetraoxosulphate(VI) acid.",
+    "hint": "S + O2 → SO2 → SO3 + H2O → H2SO4.",
+    "timeLimit": 30,
+    "year": 1983,
+    "tags": [
+      "chemistry",
+      "sulphur",
+      "sulphuric acid",
+      "inorganic chemistry",
+      "jamb"
+    ],
+    "requiresCalculator": false,
+    "calculatorType": "none",
+    "formula": "",
+    "constants": {},
+    "createdBy": "OAE Admin",
+    "lastUpdated": "2026-04-05"
+  },
+  {
+    "id": "CHEM-JAMB-0022",
+    "question": "Sodium sulphate decahydrate (Na2SO4·10H2O) on exposure to air loses all its water of crystallization. The process of loss is known as",
+    "options": [
+      "Efflorescence",
+      "Hygroscopy",
+      "Deliquescence",
+      "Effervescence",
+      "Dehydration"
+    ],
+    "answer": 0,
+    "exam": [
+      "JAMB"
+    ],
+    "level": "easy",
+    "topic": "Acids, Bases & Salts",
+    "marks": 1,
+    "explanation": "Efflorescence is the process by which a hydrated salt loses its water of crystallization when exposed to air, forming a lower hydrate or becoming anhydrous. Sodium sulphate decahydrate (Glauber's salt) is efflorescent. Hygroscopy is absorption of moisture without dissolving; deliquescence is absorption leading to solution; effervescence is gas evolution; dehydration is removal of water by heating or chemical means.",
+    "hint": "Loss of water to air = efflorescence.",
+    "timeLimit": 30,
+    "year": 1983,
+    "tags": [
+      "chemistry",
+      "efflorescence",
+      "hygroscopy",
+      "jamb"
+    ],
+    "requiresCalculator": false,
+    "calculatorType": "none",
+    "formula": "",
+    "constants": {},
+    "createdBy": "OAE Admin",
+    "lastUpdated": "2026-04-05"
+  },
+  {
+    "id": "CHEM-JAMB-0023",
+    "question": "Which of the following happens during the electrolysis of molten sodium chloride?",
+    "options": [
+      "Sodium ion loses an electron",
+      "Chlorine atom gains an electron",
+      "Chloride ion gains an electron",
+      "Sodium ion is oxidized",
+      "Chloride ion is oxidized"
+    ],
+    "answer": 4,
+    "exam": [
+      "JAMB"
+    ],
+    "level": "easy",
+    "topic": "Acids, Bases & Salts",
+    "marks": 1,
+    "explanation": "During electrolysis of molten NaCl, Na⁺ ions migrate to the cathode and are reduced (gain electrons) to form sodium metal: Na⁺ + e⁻ → Na. Cl⁻ ions migrate to the anode and are oxidized (lose electrons) to form chlorine gas: 2Cl⁻ → Cl₂ + 2e⁻. Therefore, chloride ion is oxidized.",
+    "hint": "Anode attracts anions (Cl⁻) which lose electrons.",
+    "timeLimit": 30,
+    "year": 1983,
+    "tags": [
+      "chemistry",
+      "electrolysis",
+      "molten salt",
+      "jamb"
+    ],
+    "requiresCalculator": false,
+    "calculatorType": "none",
+    "formula": "",
+    "constants": {},
+    "createdBy": "OAE Admin",
+    "lastUpdated": "2026-04-05"
+  },
+  {
+    "id": "CHEM-JAMB-0024",
+    "question": "Crude petroleum pollutant usually seen on some Nigeria creeks and waterways can be dispersed or removed by",
+    "options": [
+      "heating the affected parts in order to boil off the petroleum",
+      "mechanically stirring to dissolve the petroleum in water",
+      "pouring organic solvents to dissolve the petroleum",
+      "spraying the water with detergents",
+      "cooling to freeze out the petroleum"
+    ],
+    "answer": 3,
+    "exam": [
+      "JAMB"
+    ],
+    "level": "easy",
+    "topic": "Metals & Extraction",
+    "marks": 1,
+    "explanation": "Oil spills on water are commonly treated using dispersants or detergents (surfactants). These chemicals break down the oil into small droplets, which are then more readily biodegraded by microorganisms and dispersed in the water column. Heating, stirring, organic solvents, and cooling are impractical or environmentally harmful methods.",
+    "hint": "Dispersants break oil into smaller droplets.",
+    "timeLimit": 30,
+    "year": 1983,
+    "tags": [
+      "chemistry",
+      "oil spill",
+      "pollution",
+      "environmental chemistry",
+      "jamb"
+    ],
+    "requiresCalculator": false,
+    "calculatorType": "none",
+    "formula": "",
+    "constants": {},
+    "createdBy": "OAE Admin",
+    "lastUpdated": "2026-04-05"
+  },
+  {
+    "id": "CHEM-JAMB-0025",
+    "question": "An element is electronegative if",
+    "options": [
+      "it has a tendency to exist in the gaseous form",
+      "its ions dissolve readily in water",
+      "it has a tendency to lose electrons",
+      "it has a tendency to gain electrons",
+      "it readily forms covalent bonds"
+    ],
+    "answer": 3,
+    "exam": [
+      "JAMB"
+    ],
+    "level": "easy",
+    "topic": "Atomic Structure",
+    "marks": 1,
+    "explanation": "Electronegativity is the measure of the tendency of an atom to attract shared electrons towards itself in a chemical bond. An electronegative element has a high tendency to gain electrons (to form negative ions) or attract bonding electrons. Elements that lose electrons readily are electropositive.",
+    "hint": "Electronegative = electron-loving.",
+    "timeLimit": 30,
+    "year": 1983,
+    "tags": [
+      "chemistry",
+      "electronegativity",
+      "periodic properties",
+      "jamb"
+    ],
+    "requiresCalculator": false,
+    "calculatorType": "none",
+    "formula": "",
+    "constants": {},
+    "createdBy": "OAE Admin",
+    "lastUpdated": "2026-04-05"
+  },
+  {
+    "id": "CHEM-JAMB-0026",
+    "question": "Solution X, Y, and Z have pH values 3.0, 5.0 and 9.0 respectively. Which of the following statements is correct?",
+    "options": [
+      "All the solutions are acidic",
+      "All solutions are basic",
+      "Y and Z are more acidic than water",
+      "Y is more acidic than X",
+      "Z is the least acidic"
+    ],
+    "answer": 4,
+    "exam": [
+      "JAMB"
+    ],
+    "level": "easy",
+    "topic": "Acids, Bases & Salts",
+    "marks": 1,
+    "explanation": "pH scale: <7 acidic, 7 neutral, >7 basic. X (pH 3) is acidic, Y (pH 5) is acidic, Z (pH 9) is basic. Lower pH means more acidic. X is more acidic than Y. Z is basic, not acidic, so it is the least acidic (zero acidity). Therefore, Z is the least acidic is correct.",
+    "hint": "pH 7 is neutral; lower = more acidic; higher = more basic.",
+    "timeLimit": 30,
+    "year": 1983,
+    "tags": [
+      "chemistry",
+      "ph",
+      "acidity",
+      "jamb"
+    ],
+    "requiresCalculator": false,
+    "calculatorType": "none",
+    "formula": "",
+    "constants": {},
+    "createdBy": "OAE Admin",
+    "lastUpdated": "2026-04-05"
+  },
+  {
+    "id": "CHEM-JAMB-0027",
+    "question": "In the reactions (1) H2(g) + ½O2(g) → H2O(l); ΔH = -286 kJ (2) C(s) + O2(g) → CO2(g); ΔH = -406 kJ the equations imply that",
+    "options": [
+      "more heat is absorbed than evolved in (1)",
+      "more heat is absorbed in (2)",
+      "less heat is evolved in (1)",
+      "reaction (2) proceeds faster than (1)",
+      "reaction (1) proceeds faster than (2)"
+    ],
+    "answer": 2,
+    "exam": [
+      "JAMB"
+    ],
+    "level": "easy",
+    "topic": "Acids, Bases & Salts",
+    "marks": 1,
+    "explanation": "ΔH values are negative, indicating both reactions are exothermic (heat is evolved). The magnitude of ΔH indicates the amount of heat evolved. For reaction (1), ΔH = -286 kJ, meaning 286 kJ of heat is evolved. For reaction (2), ΔH = -406 kJ, meaning 406 kJ of heat is evolved. Therefore, less heat is evolved in reaction (1) compared to reaction (2). Rate of reaction is not determined by ΔH.",
+    "hint": "Negative ΔH = heat evolved. Compare the absolute values.",
+    "timeLimit": 30,
+    "year": 1983,
+    "tags": [
+      "chemistry",
+      "enthalpy",
+      "thermochemistry",
+      "jamb"
+    ],
+    "requiresCalculator": false,
+    "calculatorType": "none",
+    "formula": "",
+    "constants": {},
+    "createdBy": "OAE Admin",
+    "lastUpdated": "2026-04-05"
+  },
+  {
+    "id": "CHEM-JAMB-0028",
+    "question": "Which of these metals, Mg, Fe, Pb, and Cu will dissolve in dilute HCl?",
+    "options": [
+      "All the metals",
+      "Mg, Fe, and Cu",
+      "Mg, Fe, and Pb",
+      "Mg and Fe only",
+      "Mg only"
+    ],
+    "answer": 3,
+    "exam": [
+      "JAMB"
+    ],
+    "level": "easy",
+    "topic": "Organic Chemistry",
+    "marks": 1,
+    "explanation": "Metals above hydrogen in the reactivity series displace hydrogen from dilute acids. Magnesium and iron are above hydrogen and react with dilute HCl to produce hydrogen gas and their chlorides. Lead is below hydrogen and does not react with dilute HCl due to formation of insoluble PbCl₂ coating. Copper is below hydrogen and does not react with dilute HCl. Therefore, only Mg and Fe dissolve.",
+    "hint": "Metals above H in reactivity series react with dilute acids.",
+    "timeLimit": 30,
+    "year": 1983,
+    "tags": [
+      "chemistry",
+      "reactivity series",
+      "acids",
+      "jamb"
+    ],
+    "requiresCalculator": false,
+    "calculatorType": "none",
+    "formula": "",
+    "constants": {},
+    "createdBy": "OAE Admin",
+    "lastUpdated": "2026-04-05"
+  },
+  {
+    "id": "CHEM-JAMB-0029",
+    "question": "Stainless steel is an alloy of",
+    "options": [
+      "Carbon, iron and lead",
+      "Carbon, iron and chromium",
+      "Carbon, iron and copper",
+      "Carbon, iron and silver",
+      "Carbon and iron only"
+    ],
+    "answer": 1,
+    "exam": [
+      "JAMB"
+    ],
+    "level": "easy",
+    "topic": "Organic Chemistry",
+    "marks": 1,
+    "explanation": "Stainless steel is an alloy primarily composed of iron with chromium (typically >10.5%) and carbon. Chromium provides corrosion resistance by forming a passive layer of chromium oxide on the surface. Nickel is also often added, but chromium is the key alloying element distinguishing stainless steel from other steels.",
+    "hint": "The key element for rust resistance in stainless steel is chromium.",
+    "timeLimit": 30,
+    "year": 1983,
+    "tags": [
+      "chemistry",
+      "alloys",
+      "stainless steel",
+      "jamb"
+    ],
+    "requiresCalculator": false,
+    "calculatorType": "none",
+    "formula": "",
+    "constants": {},
+    "createdBy": "OAE Admin",
+    "lastUpdated": "2026-04-05"
+  },
+  {
+    "id": "CHEM-JAMB-0030",
+    "question": "What volume of 0.50 M H2SO4 will exactly neutralize 20cm³ of 0.1 M NaOH solution?",
+    "options": [
+      "2.0 cm³",
+      "5.0 cm³",
+      "6.8 cm³",
+      "8.3 cm³",
+      "10.4 cm³"
+    ],
+    "answer": 0,
+    "exam": [
+      "JAMB"
+    ],
+    "level": "medium",
+    "topic": "Acids, Bases & Salts",
+    "marks": 2,
+    "explanation": "Reaction: H2SO4 + 2NaOH → Na2SO4 + 2H2O. Mole ratio H2SO4 : NaOH = 1:2. Moles NaOH = (0.1 mol/dm³) × (20/1000) dm³ = 0.002 mol. Moles H2SO4 needed = 0.002 / 2 = 0.001 mol. Volume H2SO4 = moles / concentration = 0.001 mol / 0.50 mol/dm³ = 0.002 dm³ = 2.0 cm³.",
+    "hint": "Remember H2SO4 has 2 H⁺ ions.",
+    "timeLimit": 60,
+    "year": 1983,
+    "tags": [
+      "chemistry",
+      "titration",
+      "acid-base",
+      "stoichiometry",
+      "jamb"
+    ],
+    "requiresCalculator": true,
+    "calculatorType": "basic",
+    "formula": "C1V1/n1 = C2V2/n2",
+    "constants": {},
+    "createdBy": "OAE Admin",
+    "lastUpdated": "2026-04-05"
+  },
+  {
+    "id": "CHEM-JAMB-0031",
+    "question": "Which of the following pairs of gases will NOT react further with oxygen at a temperature between 30°C and 400°C?",
+    "options": [
+      "SO2 and NH3",
+      "CO2 and H2",
+      "NO2 and SO3",
+      "SO3 and NO",
+      "CO and H2"
+    ],
+    "answer": 2,
+    "exam": [
+      "JAMB"
+    ],
+    "level": "hard",
+    "topic": "Organic Chemistry",
+    "marks": 2,
+    "explanation": "NO2 and SO3 are already fully oxidized products. NO2 is an oxide of nitrogen in a high oxidation state, SO3 is sulfur trioxide (sulfur in +6 oxidation state). Neither will react further with oxygen under normal conditions. CO and H2 are reducing agents and react with O2; SO2 reacts to form SO3; NH3 burns in O2; NO reacts with O2 to form NO2.",
+    "hint": "Look for gases already in their highest oxidation states.",
+    "timeLimit": 60,
+    "year": 1983,
+    "tags": [
+      "chemistry",
+      "oxidation",
+      "inorganic chemistry",
+      "jamb"
+    ],
+    "requiresCalculator": false,
+    "calculatorType": "none",
+    "formula": "",
+    "constants": {},
+    "createdBy": "OAE Admin",
+    "lastUpdated": "2026-04-05"
+  },
+  {
+    "id": "CHEM-JAMB-0032",
+    "question": "Some metals are extracted from their ores after some preliminary treatments by electrolysis (L), some by thermal reaction (T), and some by a combination of both processes (TL). Which set-up in the following for the extraction of iron, copper and aluminum is correct?",
+    "options": [
+      "Iron (L), copper (L), aluminum (T)",
+      "Iron (T), copper (L), aluminum (T)",
+      "Iron (TL), copper (TL), aluminum (TL)",
+      "Iron (L), copper (T), aluminum (T)",
+      "Iron (T), copper (L), aluminum (TL)"
+    ],
+    "answer": 4,
+    "exam": [
+      "JAMB"
+    ],
+    "level": "medium",
+    "topic": "Organic Chemistry",
+    "marks": 2,
+    "explanation": "Iron is extracted by thermal reduction in the blast furnace (T). Copper is purified by electrolysis after smelting (L). Aluminum requires both purification (Bayer process - chemical) and electrolysis (Hall-Héroult) (TL). Therefore, Iron (T), Copper (L), Aluminum (TL) is correct.",
+    "hint": "Iron = blast furnace; Copper = electrolytic refining; Aluminum = electrolysis of alumina.",
+    "timeLimit": 45,
+    "year": 1983,
+    "tags": [
+      "chemistry",
+      "extraction of metals",
+      "metallurgy",
+      "jamb"
+    ],
+    "requiresCalculator": false,
+    "calculatorType": "none",
+    "formula": "",
+    "constants": {},
+    "createdBy": "OAE Admin",
+    "lastUpdated": "2026-04-05"
+  },
+  {
+    "id": "CHEM-JAMB-0033",
+    "question": "In the preparation of some pure crystals of Cu(NO3)2 starting with CuO, a student gave the following statements as steps he employed. Which of these shows a flaw in his report?",
+    "options": [
+      "Some CuO was reacted with excess dilute H2SO4",
+      "The solution was concentrated",
+      "When the concentrate was cooled, crystals formed were removed by filtration",
+      "The crystals were washed with very cold water",
+      "The crystals were then allowed to dry"
+    ],
+    "answer": 0,
+    "exam": [
+      "JAMB"
+    ],
+    "level": "medium",
+    "topic": "Acids, Bases & Salts",
+    "marks": 2,
+    "explanation": "The student intended to prepare copper(II) nitrate, Cu(NO3)2, but reacted CuO with dilute H2SO4 (sulphuric acid). This would produce copper(II) sulphate, CuSO4, not copper(II) nitrate. To prepare Cu(NO3)2, CuO should be reacted with dilute HNO3 (nitric acid). This is the flaw.",
+    "hint": "To make a nitrate, use nitric acid, not sulfuric acid.",
+    "timeLimit": 45,
+    "year": 1983,
+    "tags": [
+      "chemistry",
+      "salt preparation",
+      "practical chemistry",
+      "jamb"
+    ],
+    "requiresCalculator": false,
+    "calculatorType": "none",
+    "formula": "",
+    "constants": {},
+    "createdBy": "OAE Admin",
+    "lastUpdated": "2026-04-05"
+  },
+  {
+    "id": "CHEM-JAMB-0034",
+    "question": "Which of the following separation processes is most likely to yield high quality ethanol (>95%) from palm wine?",
+    "options": [
+      "Fractional distillation without a dehydrant",
+      "Simple distillation without a dehydrant",
+      "Fractional distillation with a dehydrant",
+      "Column chromatography",
+      "Evaporation"
+    ],
+    "answer": 2,
+    "exam": [
+      "JAMB"
+    ],
+    "level": "medium",
+    "topic": "Practical Chemistry: Separation Techniques",
+    "marks": 2,
+    "explanation": "Ethanol and water form an azeotrope at approximately 95.6% ethanol. Simple or fractional distillation alone cannot exceed this concentration. To obtain high-quality ethanol (>95%), a dehydrating agent (such as quicklime, molecular sieves, or azeotropic distillation with benzene) is used to remove the remaining water. Fractional distillation with a dehydrant breaks the azeotrope.",
+    "hint": "Ethanol-water azeotrope limits distillation without a dehydrant.",
+    "timeLimit": 45,
+    "year": 1983,
+    "tags": [
+      "chemistry",
+      "distillation",
+      "azeotrope",
+      "ethanol",
+      "jamb"
+    ],
+    "requiresCalculator": false,
+    "calculatorType": "none",
+    "formula": "",
+    "constants": {},
+    "createdBy": "OAE Admin",
+    "lastUpdated": "2026-04-05"
+  },
+  {
+    "id": "CHEM-JAMB-0035",
+    "question": "Increasing the pressure of a gas",
+    "options": [
+      "lowers the average kinetic energy of the molecules",
+      "decreases the density of the gas",
+      "decreases the temperature of the gas",
+      "increases the density of the gas",
+      "increases the volume of the gas"
+    ],
+    "answer": 3,
+    "exam": [
+      "JAMB"
+    ],
+    "level": "easy",
+    "topic": "Acids, Bases & Salts",
+    "marks": 1,
+    "explanation": "According to Boyle's law, at constant temperature, pressure is inversely proportional to volume. Increasing pressure decreases volume. Density = mass/volume. Since mass remains constant and volume decreases, density increases. Average kinetic energy depends on temperature, not pressure.",
+    "hint": "Density = mass/volume; volume decreases when pressure increases.",
+    "timeLimit": 30,
+    "year": 1983,
+    "tags": [
+      "chemistry",
+      "gas laws",
+      "boyle",
+      "density",
+      "jamb"
+    ],
+    "requiresCalculator": false,
+    "calculatorType": "none",
+    "formula": "",
+    "constants": {},
+    "createdBy": "OAE Admin",
+    "lastUpdated": "2026-04-05"
+  },
+  {
+    "id": "CHEM-JAMB-0036",
+    "question": "2.5 g of a hydrated barium salt gave on heating, 2.13 g of the anhydrous salt. Given that the relative molecular mass of the anhydrous salt is 208, the number of molecules of water of crystallization of the barium salt is",
+    "options": [
+      "10",
+      "7",
+      "5",
+      "2",
+      "1"
+    ],
+    "answer": 3,
+    "exam": [
+      "JAMB"
+    ],
+    "level": "medium",
+    "topic": "Acids, Bases & Salts",
+    "marks": 2,
+    "explanation": "Mass of water lost = 2.50g - 2.13g = 0.37g. Molar mass H2O = 18 g/mol. Moles H2O lost = 0.37/18 = 0.02056 mol. Moles anhydrous salt = 2.13/208 = 0.01024 mol. Ratio = 0.02056/0.01024 ≈ 2.01 ≈ 2. Therefore, the hydrated salt contains 2 molecules of water of crystallization (dihydrate).",
+    "hint": "Find moles of water lost and moles of anhydrous salt, then ratio.",
+    "timeLimit": 60,
+    "year": 1983,
+    "tags": [
+      "chemistry",
+      "hydrates",
+      "stoichiometry",
+      "calculation",
+      "jamb"
+    ],
+    "requiresCalculator": true,
+    "calculatorType": "basic",
+    "formula": "n = m/M",
+    "constants": {
+      "H2O": 18,
+      "anhydrous salt": 208
+    },
+    "createdBy": "OAE Admin",
+    "lastUpdated": "2026-04-05"
+  },
+  {
+    "id": "CHEM-JAMB-0037",
+    "question": "3.06 g of a sample of potassium trioxochlorate(V) (KClO3) was required to make a saturated solution with 10 cm³ of water at 25°C. The solubility of the salt at 25°C is [K=39, Cl=35.5, O=16]",
+    "options": [
+      "5.0 mol/dm³",
+      "3.0 mol/dm³",
+      "2.5 mol/dm³",
+      "1.0 mol/dm³",
+      "0.5 mol/dm³"
+    ],
+    "answer": 2,
+    "exam": [
+      "JAMB"
+    ],
+    "level": "medium",
+    "topic": "Acids, Bases & Salts",
+    "marks": 2,
+    "explanation": "Molar mass KClO3 = 39 + 35.5 + (16×3) = 39 + 35.5 + 48 = 122.5 g/mol. Moles KClO3 = 3.06 g / 122.5 g/mol = 0.025 mol. Volume of water = 10 cm³ = 0.010 dm³. Solubility = moles/volume = 0.025 mol / 0.010 dm³ = 2.5 mol/dm³.",
+    "hint": "Solubility in mol/dm³ = moles of solute / volume of solvent (dm³).",
+    "timeLimit": 60,
+    "year": 1983,
+    "tags": [
+      "chemistry",
+      "solubility",
+      "stoichiometry",
+      "calculation",
+      "jamb"
+    ],
+    "requiresCalculator": true,
+    "calculatorType": "basic",
+    "formula": "Solubility = n/V",
+    "constants": {
+      "K": 39,
+      "Cl": 35.5,
+      "O": 16
+    },
+    "createdBy": "OAE Admin",
+    "lastUpdated": "2026-04-05"
+  },
+  {
+    "id": "CHEM-JAMB-0038",
+    "question": "The cracking process is very important in the petroleum industry because it",
+    "options": [
+      "gives purer products",
+      "yields more lubricants",
+      "yields more engine fuels",
+      "yields more asphalt",
+      "yields more candle wax"
+    ],
+    "answer": 2,
+    "exam": [
+      "JAMB"
+    ],
+    "level": "easy",
+    "topic": "Organic Chemistry",
+    "marks": 1,
+    "explanation": "Cracking is the process of breaking down large, less volatile hydrocarbon molecules into smaller, more volatile molecules. This increases the yield of more valuable products such as petrol (gasoline), diesel, and other engine fuels. It does not primarily yield more lubricants, asphalt, or candle wax; those are heavier fractions.",
+    "hint": "Cracking makes large hydrocarbons smaller, increasing fuel yield.",
+    "timeLimit": 30,
+    "year": 1983,
+    "tags": [
+      "chemistry",
+      "petroleum",
+      "cracking",
+      "organic chemistry",
+      "jamb"
+    ],
+    "requiresCalculator": false,
+    "calculatorType": "none",
+    "formula": "",
+    "constants": {},
+    "createdBy": "OAE Admin",
+    "lastUpdated": "2026-04-05"
+  },
+  {
+    "id": "CHEM-JAMB-0039",
+    "question": "A gas that can behave as reducing agent towards chlorine and as an oxidizing agent towards hydrogen sulphide is",
+    "options": [
+      "O2",
+      "NO",
+      "SO2",
+      "NH3",
+      "CO2"
+    ],
+    "answer": 2,
+    "exam": [
+      "JAMB"
+    ],
+    "level": "hard",
+    "topic": "Electrochemistry & Redox",
+    "marks": 2,
+    "explanation": "SO2 (sulphur dioxide) is a versatile gas. It acts as a reducing agent towards chlorine: SO2 + Cl2 + 2H2O → H2SO4 + 2HCl (SO2 oxidized to SO4²⁻). It acts as an oxidizing agent towards hydrogen sulphide: SO2 + 2H2S → 3S + 2H2O (SO2 reduced to S, H2S oxidized to S).",
+    "hint": "SO2 can be both oxidized and reduced.",
+    "timeLimit": 60,
+    "year": 1983,
+    "tags": [
+      "chemistry",
+      "oxidizing agent",
+      "reducing agent",
+      "SO2",
+      "jamb"
+    ],
+    "requiresCalculator": false,
+    "calculatorType": "none",
+    "formula": "",
+    "constants": {},
+    "createdBy": "OAE Admin",
+    "lastUpdated": "2026-04-05"
+  },
+  {
+    "id": "CHEM-JAMB-0040",
+    "question": "Which of the following solutions will give a white precipitate with barium chloride solution and a green flame test?",
+    "options": [
+      "Na2SO4",
+      "CuSO4",
+      "CaSO4",
+      "CaCl2",
+      "(NH4)2SO4"
+    ],
+    "answer": 1,
+    "exam": [
+      "JAMB"
+    ],
+    "level": "medium",
+    "topic": "Organic Chemistry",
+    "marks": 2,
+    "explanation": "Barium chloride test: White precipitate insoluble in dilute HCl indicates sulfate ion. CuSO4 contains SO4²⁻, giving white BaSO4 precipitate. Copper(II) ions impart a blue/green color to the flame. Therefore, CuSO4 matches both properties. Na2SO4 gives white precipitate but sodium flame is yellow. CaSO4 gives white precipitate but calcium flame is brick-red. (NH4)2SO4 gives white precipitate but ammonium gives no flame color.",
+    "hint": "Green flame = copper or barium; white precipitate with BaCl2 = sulfate.",
+    "timeLimit": 45,
+    "year": 1983,
+    "tags": [
+      "chemistry",
+      "qualitative analysis",
+      "flame test",
+      "sulfate test",
+      "jamb"
+    ],
+    "requiresCalculator": false,
+    "calculatorType": "none",
+    "formula": "",
+    "constants": {},
+    "createdBy": "OAE Admin",
+    "lastUpdated": "2026-04-05"
+  },
+  {
+    "id": "CHEM-JAMB-0041",
+    "question": "The mass of an atom is determined by",
+    "options": [
+      "its ionization potential",
+      "its electrochemical potential",
+      "the number of protons",
+      "the number of neutrons and protons",
+      "the number of neutrons and electrons"
+    ],
+    "answer": 3,
+    "exam": [
+      "JAMB"
+    ],
+    "level": "easy",
+    "topic": "Atomic Structure",
+    "marks": 1,
+    "explanation": "The mass of an atom is concentrated in its nucleus, which contains protons and neutrons. Electrons have negligible mass. Therefore, the atomic mass (mass number) is approximately the sum of the number of protons and neutrons. Ionization potential and electrochemical potential are properties related to energy, not mass.",
+    "hint": "Mass number = protons + neutrons.",
+    "timeLimit": 30,
+    "year": 1983,
+    "tags": [
+      "chemistry",
+      "atomic structure",
+      "mass number",
+      "jamb"
+    ],
+    "requiresCalculator": false,
+    "calculatorType": "none",
+    "formula": "",
+    "constants": {},
+    "createdBy": "OAE Admin",
+    "lastUpdated": "2026-04-05"
+  },
+  {
+    "id": "CHEM-JAMB-0042",
+    "question": "Which of the following is a neutralization reaction?",
+    "options": [
+      "Addition of chloride solution",
+      "Addition of trioxonitrate(V) acid (nitric acid) to distilled water",
+      "Addition of trioxonitrate(V) acid (nitric acid) to tetraoxosulphate(VI) acid (sulphuric acid)",
+      "Addition of trioxonitrate(V) (potassium nitrate) solution",
+      "Addition of trioxonitrate(V) acid (nitric acid) to potassium hydroxide solution"
+    ],
+    "answer": 4,
+    "exam": [
+      "JAMB"
+    ],
+    "level": "easy",
+    "topic": "Acids, Bases & Salts",
+    "marks": 1,
+    "explanation": "Neutralization is a reaction between an acid and a base to form salt and water. HNO3 (acid) + KOH (base) → KNO3 (salt) + H2O (water). Option A is vague, B is dilution of acid, C is mixing two acids, D is a salt solution. Only E is acid + base.",
+    "hint": "Neutralization = acid + base → salt + water.",
+    "timeLimit": 30,
+    "year": 1983,
+    "tags": [
+      "chemistry",
+      "neutralization",
+      "acid-base",
+      "jamb"
+    ],
+    "requiresCalculator": false,
+    "calculatorType": "none",
+    "formula": "",
+    "constants": {},
+    "createdBy": "OAE Admin",
+    "lastUpdated": "2026-04-05"
+  },
+  {
+    "id": "CHEM-JAMB-0043",
+    "question": "A jet plane carrying 3,000 kg of ethane burns off all the gas forming water and carbon dioxide. If all the carbon dioxide is expelled and the water formed is condensed and kept on board the plane, then the gain in weight is",
+    "options": [
+      "1,800 kg",
+      "900 kg",
+      "600 kg",
+      "2,400 kg",
+      "1,200 kg"
+    ],
+    "answer": 3,
+    "exam": [
+      "JAMB"
+    ],
+    "level": "hard",
+    "topic": "Acids, Bases & Salts",
+    "marks": 3,
+    "explanation": "Combustion of ethane: 2C2H6 + 7O2 → 4CO2 + 6H2O. Molar mass C2H6 = 30 g/mol, H2O = 18 g/mol. From 60g ethane, 108g water produced. Mass of water from 3000 kg ethane = (108/60) × 3000 = 5400 kg. The ethane (3000 kg) is consumed, CO2 is expelled, water (5400 kg) is kept. Gain in weight = mass of water kept - mass of fuel consumed = 5400 kg - 3000 kg = 2400 kg.",
+    "hint": "Gain = mass of water formed - mass of ethane burned.",
+    "timeLimit": 90,
+    "year": 1983,
+    "tags": [
+      "chemistry",
+      "stoichiometry",
+      "combustion",
+      "calculation",
+      "jamb"
+    ],
+    "requiresCalculator": true,
+    "calculatorType": "basic",
+    "formula": "2C2H6 + 7O2 -> 4CO2 + 6H2O",
+    "constants": {
+      "C2H6": 30,
+      "H2O": 18
+    },
+    "createdBy": "OAE Admin",
+    "lastUpdated": "2026-04-05"
+  },
+  {
+    "id": "CHEM-JAMB-0044",
+    "question": "Liquid X, reacts with sodium trioxocarbonate (IV) (Na2CO3) to give a gas which turns calcium chloride solution milky. X is",
+    "options": [
+      "Na2SO4 (aq)",
+      "KI (aq)",
+      "An alkali",
+      "An acid",
+      "A hydrocarbon"
+    ],
+    "answer": 3,
+    "exam": [
+      "JAMB"
+    ],
+    "level": "easy",
+    "topic": "Organic Chemistry",
+    "marks": 1,
+    "explanation": "Sodium trioxocarbonate(IV) is Na2CO3. When an acid reacts with carbonate, it produces CO2 gas. CO2 turns lime water (calcium hydroxide) milky, but the question says 'calcium chloride' — this is likely an error in the original; it should be lime water (calcium hydroxide). Regardless, only an acid will liberate CO2 from carbonate. Therefore, X is an acid.",
+    "hint": "Carbonate + acid → CO2 (turns lime water milky).",
+    "timeLimit": 30,
+    "year": 1983,
+    "tags": [
+      "chemistry",
+      "carbonate",
+      "acid",
+      "jamb"
+    ],
+    "requiresCalculator": false,
+    "calculatorType": "none",
+    "formula": "",
+    "constants": {},
+    "createdBy": "OAE Admin",
+    "lastUpdated": "2026-04-05"
+  },
+  {
+    "id": "CHEM-JAMB-0045",
+    "question": "Which of the following statements is FALSE?",
+    "options": [
+      "copper (II) ion can be reduced to copper (I) ion by hydrochloric acid and zinc",
+      "Sodium metal dissolves in water giving oxygen",
+      "Nitrogen is insoluble in water",
+      "Carbon dioxide is soluble in water",
+      "Lead has a higher atomic weight than copper"
+    ],
+    "answer": 1,
+    "exam": [
+      "JAMB"
+    ],
+    "level": "easy",
+    "topic": "Atomic Structure",
+    "marks": 1,
+    "explanation": "Sodium metal dissolves in water, reacting violently to produce hydrogen gas, not oxygen: 2Na + 2H2O → 2NaOH + H2. Therefore, statement B is false. Copper(II) can be reduced to copper(I) under certain conditions. Nitrogen is slightly soluble but generally considered insoluble. CO2 is soluble in water. Lead (207.2) has higher atomic weight than copper (63.5).",
+    "hint": "Sodium reacts with water to produce hydrogen, not oxygen.",
+    "timeLimit": 30,
+    "year": 1983,
+    "tags": [
+      "chemistry",
+      "sodium",
+      "properties",
+      "jamb"
+    ],
+    "requiresCalculator": false,
+    "calculatorType": "none",
+    "formula": "",
+    "constants": {},
+    "createdBy": "OAE Admin",
+    "lastUpdated": "2026-04-05"
+  },
+  {
+    "id": "CHEM-JAMB-0046",
+    "question": "When sodium dioxonitrate (III) (NaNO2) dissolves is",
+    "options": [
+      "Exothermic",
+      "Endothermic",
+      "Isothermic",
+      "Isomeric",
+      "Hygroscopic"
+    ],
+    "answer": 0,
+    "exam": [
+      "JAMB"
+    ],
+    "level": "medium",
+    "topic": "Acids, Bases & Salts",
+    "marks": 1,
+    "explanation": "Sodium dioxonitrate(III) is sodium nitrite (NaNO2). The dissolution of most ionic salts in water is exothermic due to hydration of ions releasing more energy than the lattice energy absorbs. Sodium nitrite dissolution is exothermic. The question likely meant 'dissolves in water' and the process is exothermic.",
+    "hint": "Most ionic salt dissolutions release heat (exothermic).",
+    "timeLimit": 30,
+    "year": 1983,
+    "tags": [
+      "chemistry",
+      "thermochemistry",
+      "dissolution",
+      "jamb"
+    ],
+    "requiresCalculator": false,
+    "calculatorType": "none",
+    "formula": "",
+    "constants": {},
+    "createdBy": "OAE Admin",
+    "lastUpdated": "2026-04-05"
+  },
+  {
+    "id": "CHEM-JAMB-0047",
+    "question": "The equilibrium reaction between copper (I) chloride and chlorine at 25°C and 1 atmosphere is represented by the equation: 2CuCl + Cl2 ⇌ 2CuCl2; ΔH = -166 kJ. Which of the following statement is TRUE for the reaction, pressure remaining constant.",
+    "options": [
+      "More CuCl2 is formed at 40°C",
+      "More CuCl2 is formed at 10°C",
+      "Less CuCl2 is formed at 10°C",
+      "There is no change in CuCl2 formed at 40°C and 10°C",
+      "More CuCl2 is consumed at 40°C"
+    ],
+    "answer": 1,
+    "exam": [
+      "JAMB"
+    ],
+    "level": "medium",
+    "topic": "Acids, Bases & Salts",
+    "marks": 2,
+    "explanation": "The reaction has ΔH = -166 kJ, meaning it is exothermic (heat is released). According to Le Chatelier's principle, for an exothermic reaction, decreasing the temperature favors the forward reaction, producing more product (CuCl2). Therefore, more CuCl2 is formed at a lower temperature (10°C) than at a higher temperature (40°C). Option B is correct; E is incorrect because more CuCl2 is formed, not consumed, at lower T.",
+    "hint": "Exothermic reaction: lower temperature shifts equilibrium toward products.",
+    "timeLimit": 45,
+    "year": 1983,
+    "tags": [
+      "chemistry",
+      "equilibrium",
+      "le chatelier",
+      "exothermic",
+      "jamb"
+    ],
+    "requiresCalculator": false,
+    "calculatorType": "none",
+    "formula": "",
+    "constants": {},
+    "createdBy": "OAE Admin",
+    "lastUpdated": "2026-04-05"
+  },
+  {
+    "id": "CHEM-JAMB-0048",
+    "question": "Zn + H2SO4 → ZnSO4 + H2. The rate of the above reaction will be greatly increased if",
+    "options": [
+      "the zinc is in the powdered form",
+      "a greater volume of the acid is used",
+      "a smaller volume of the acid is used",
+      "the reaction vessel is immersed in an ice-bath",
+      "the zinc is in the form of pellets"
+    ],
+    "answer": 0,
+    "exam": [
+      "JAMB"
+    ],
+    "level": "easy",
+    "topic": "Acids, Bases & Salts",
+    "marks": 1,
+    "explanation": "The rate of a heterogeneous reaction depends on the surface area of the solid reactant. Powdered zinc has a much larger surface area than pellets, allowing more frequent collisions between Zn atoms and H⁺ ions from the acid. This increases the rate of reaction. Greater volume of acid does not increase concentration; ice-bath decreases temperature and rate.",
+    "hint": "Powder increases surface area, increasing reaction rate.",
+    "timeLimit": 30,
+    "year": 1983,
+    "tags": [
+      "chemistry",
+      "reaction rate",
+      "surface area",
+      "jamb"
+    ],
+    "requiresCalculator": false,
+    "calculatorType": "none",
+    "formula": "",
+    "constants": {},
+    "createdBy": "OAE Admin",
+    "lastUpdated": "2026-04-05"
+  },
+  {
+    "id": "CHEM-JAMB-0049",
+    "question": "Zn + H2SO4 → ZnSO4 + H2. In the above reaction how much zinc will be left undissolved if 2.00 g of zinc treated with 10 cm³ of 1.0 M H2SO4? [Zn = 65, S = 32, O = 16, H = 1]",
+    "options": [
+      "1.35 g",
+      "1.00 g",
+      "0.70 g",
+      "0.65 g",
+      "0.06 g"
+    ],
+    "answer": 0,
+    "exam": [
+      "JAMB"
+    ],
+    "level": "medium",
+    "topic": "Acids, Bases & Salts",
+    "marks": 2,
+    "explanation": "Moles H2SO4 = (1.0 mol/dm³) × (10/1000) dm³ = 0.01 mol. Reaction: Zn + H2SO4 → ZnSO4 + H2, mole ratio 1:1. Moles Zn that react = 0.01 mol. Mass Zn reacted = 0.01 mol × 65 g/mol = 0.65 g. Initial mass Zn = 2.00 g. Mass Zn left undissolved = 2.00 - 0.65 = 1.35 g.",
+    "hint": "Find limiting reagent first. Here acid is limiting.",
+    "timeLimit": 60,
+    "year": 1983,
+    "tags": [
+      "chemistry",
+      "stoichiometry",
+      "limiting reagent",
+      "calculation",
+      "jamb"
+    ],
+    "requiresCalculator": true,
+    "calculatorType": "basic",
+    "formula": "n = CV, m = nM",
+    "constants": {
+      "Zn": 65
+    },
+    "createdBy": "OAE Admin",
+    "lastUpdated": "2026-04-05"
+  },
+  {
+    "id": "CHEM-JAMB-0050",
+    "question": "30 cm³ of 0.1 M Al(NO3)3 solution is reacted with 100 cm³ of 0.15 M NaOH solution. Which is in excess and by how much?",
+    "options": [
+      "NaOH solution, by 70 cm³",
+      "NaOH solution, by 60 cm³",
+      "NaOH solution by 40 cm³",
+      "Al(NO3)3 solution by 20 cm³",
+      "Al(NO3)3 solution by 10 cm³"
+    ],
+    "answer": 2,
+    "exam": [
+      "JAMB"
+    ],
+    "level": "hard",
+    "topic": "Acids, Bases & Salts",
+    "marks": 3,
+    "explanation": "Reaction: Al(NO3)3 + 3NaOH → Al(OH)3 + 3NaNO3. Mole ratio Al(NO3)3 : NaOH = 1:3. Moles Al(NO3)3 = (0.1 mol/dm³) × (30/1000) dm³ = 0.003 mol. Moles NaOH = (0.15 mol/dm³) × (100/1000) dm³ = 0.015 mol. Moles NaOH required for 0.003 mol Al(NO3)3 = 0.003 × 3 = 0.009 mol. Moles NaOH in excess = 0.015 - 0.009 = 0.006 mol. Volume of 0.15 M NaOH containing 0.006 mol = (0.006 mol) / (0.15 mol/dm³) = 0.04 dm³ = 40 cm³. Therefore, NaOH is in excess by 40 cm³.",
+    "hint": "Calculate required moles, subtract from available, convert back to volume.",
+    "timeLimit": 90,
+    "year": 1983,
+    "tags": [
+      "chemistry",
+      "stoichiometry",
+      "excess reagent",
+      "calculation",
+      "jamb"
+    ],
+    "requiresCalculator": true,
+    "calculatorType": "basic",
+    "formula": "Al(NO3)3 + 3NaOH -> Al(OH)3 + 3NaNO3",
+    "constants": {},
+    "createdBy": "OAE Admin",
+    "lastUpdated": "2026-04-05"
+  }
+]

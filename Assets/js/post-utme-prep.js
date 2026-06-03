@@ -4,10 +4,14 @@ const schoolDatabase = {
     unilag: {
         name: "University of Lagos (UNILAG)",
         logo: "UL",
+        logoImg: "/Assets/images/logos/unilag_logo.png",
         type: "Strict CBT Aptitude Test",
         questions: "40",
         time: "30 Minutes",
         subjects: "Mathematics, Use of English, General Paper",
+        cutoff: "Varies (Min 200 JAMB, highly competitive)",
+        calculator: "Not Allowed",
+        negativeMarking: "No",
         tip: "UNILAG tests Mathematics and General Paper for ALL candidates regardless of the course you applied for. Speed is your absolute biggest advantage here.",
         requiresFaculty: false
     },
@@ -18,6 +22,9 @@ const schoolDatabase = {
         questions: "40",
         time: "40 Minutes",
         subjects: "Aptitude + 3 JAMB Subjects",
+        cutoff: "200 JAMB baseline",
+        calculator: "Basic On-Screen Only",
+        negativeMarking: "No",
         tip: "OAU focuses heavily on the subjects you wrote in JAMB plus a tough aptitude/current affairs section. Accuracy is key.",
         requiresFaculty: true
     },
@@ -28,6 +35,9 @@ const schoolDatabase = {
         questions: "100",
         time: "90 Minutes",
         subjects: "Your 4 JAMB Subjects",
+        cutoff: "200 JAMB baseline (Highly course dependent)",
+        calculator: "Not Allowed",
+        negativeMarking: "No",
         tip: "UI's Post-UTME is notoriously difficult and mirrors advanced JAMB questions. You must study beyond the basic syllabus.",
         requiresFaculty: true
     },
@@ -38,6 +48,9 @@ const schoolDatabase = {
         questions: "50",
         time: "30 Minutes",
         subjects: "English, Maths, General Knowledge",
+        cutoff: "Varies (180 - 220 based on course)",
+        calculator: "Not Allowed",
+        negativeMarking: "No",
         tip: "UNILORIN does not usually test your specific JAMB subjects. Focus entirely on speed in English, basic Math, and current affairs.",
         requiresFaculty: false
     },
@@ -48,6 +61,9 @@ const schoolDatabase = {
         questions: "60",
         time: "60 Minutes",
         subjects: "Your 4 JAMB Subjects",
+        cutoff: "200 JAMB baseline",
+        calculator: "Not Allowed",
+        negativeMarking: "No",
         tip: "UNN sets exactly 15 questions per subject for the 4 subjects you wrote in JAMB. Their questions often involve deep logical reasoning.",
         requiresFaculty: true
     },
@@ -58,6 +74,9 @@ const schoolDatabase = {
         questions: "50",
         time: "60 Minutes",
         subjects: "English, Maths, Current Affairs, Core Subjects",
+        cutoff: "180 JAMB baseline",
+        calculator: "Not Allowed",
+        negativeMarking: "No",
         tip: "ABU blends core JAMB subjects with general knowledge and current affairs. Stay updated on national history and current events.",
         requiresFaculty: true
     },
@@ -68,6 +87,9 @@ const schoolDatabase = {
         questions: "100",
         time: "60 Minutes",
         subjects: "English, General Knowledge + 2 Subjects",
+        cutoff: "200 JAMB baseline",
+        calculator: "Not Allowed",
+        negativeMarking: "No",
         tip: "UNIBEN is famous for speed testing. You have very limited time (60 mins for 100 questions). Practice skipping difficult questions instantly.",
         requiresFaculty: true
     },
@@ -78,6 +100,9 @@ const schoolDatabase = {
         questions: "60",
         time: "45 Minutes",
         subjects: "English, Maths, Biology/Agric, Physics, Chem",
+        cutoff: "180 JAMB baseline",
+        calculator: "Not Allowed",
+        negativeMarking: "No",
         tip: "Since it's a specialized agricultural university, science subjects are compulsory. Expect questions covering O'level practicals.",
         requiresFaculty: false
     },
@@ -88,6 +113,9 @@ const schoolDatabase = {
         questions: "50",
         time: "30 Minutes",
         subjects: "English + 3 JAMB Subjects",
+        cutoff: "180 JAMB baseline",
+        calculator: "Basic On-Screen",
+        negativeMarking: "No",
         tip: "FUTA tests exactly what you wrote in JAMB but with a strong emphasis on computational and theoretical accuracy. Time is extremely tight.",
         requiresFaculty: true
     },
@@ -98,6 +126,9 @@ const schoolDatabase = {
         questions: "50",
         time: "30 Minutes",
         subjects: "English, Maths, General Paper",
+        cutoff: "195 JAMB baseline",
+        calculator: "Not Allowed",
+        negativeMarking: "No",
         tip: "LASU often uses an online screening format or a standard CBT. Focus on Use of English and basic Mathematics irrespective of your course.",
         requiresFaculty: false
     },
@@ -108,6 +139,9 @@ const schoolDatabase = {
         questions: "50",
         time: "30 Minutes",
         subjects: "Math, English + 2 Core Subjects",
+        cutoff: "180 JAMB baseline",
+        calculator: "Not Allowed",
+        negativeMarking: "No",
         tip: "UNIPORT emphasizes speed and accuracy. Make sure you revise past questions thoroughly as they frequently repeat them.",
         requiresFaculty: true
     },
@@ -118,6 +152,9 @@ const schoolDatabase = {
         questions: "50",
         time: "40 Minutes",
         subjects: "Your 4 JAMB Subjects",
+        cutoff: "180 JAMB baseline",
+        calculator: "Not Allowed",
+        negativeMarking: "No",
         tip: "BUK screening is usually a CBT test of the same subjects you wrote in JAMB.",
         requiresFaculty: true
     },
@@ -128,6 +165,9 @@ const schoolDatabase = {
         questions: "50",
         time: "30 Minutes",
         subjects: "Your 4 JAMB Subjects",
+        cutoff: "180 JAMB baseline",
+        calculator: "Not Allowed",
+        negativeMarking: "No",
         tip: "UNIUYO focuses on core JAMB subjects. Time management is crucial as questions can be wordy.",
         requiresFaculty: true
     },
@@ -138,6 +178,9 @@ const schoolDatabase = {
         questions: "40",
         time: "30 Minutes",
         subjects: "English, Maths, Core Subjects",
+        cutoff: "160 JAMB baseline",
+        calculator: "Not Allowed",
+        negativeMarking: "No",
         tip: "UNICAL often includes basic English and Math regardless of your chosen course, alongside your core subjects.",
         requiresFaculty: true
     },
@@ -148,6 +191,9 @@ const schoolDatabase = {
         questions: "50",
         time: "30 Minutes",
         subjects: "English + 3 JAMB Subjects",
+        cutoff: "160 JAMB baseline",
+        calculator: "Basic On-Screen",
+        negativeMarking: "No",
         tip: "FUTO tests are notoriously calculation-heavy. Master your Physics and Math formulas.",
         requiresFaculty: true
     },
@@ -158,6 +204,9 @@ const schoolDatabase = {
         questions: "50",
         time: "30 Minutes",
         subjects: "English + 3 JAMB Subjects",
+        cutoff: "160 JAMB baseline",
+        calculator: "Not Allowed",
+        negativeMarking: "No",
         tip: "OOU questions are straightforward but speed is heavily tested.",
         requiresFaculty: true
     },
@@ -168,6 +217,9 @@ const schoolDatabase = {
         questions: "50",
         time: "40 Minutes",
         subjects: "English, General Knowledge, Core Subjects",
+        cutoff: "160 JAMB baseline",
+        calculator: "Not Allowed",
+        negativeMarking: "No",
         tip: "AAUA includes a few current affairs and general knowledge questions. Don't ignore them.",
         requiresFaculty: true
     },
@@ -178,6 +230,9 @@ const schoolDatabase = {
         questions: "50",
         time: "40 Minutes",
         subjects: "Your 4 JAMB Subjects",
+        cutoff: "160 JAMB baseline",
+        calculator: "Not Allowed",
+        negativeMarking: "No",
         tip: "EKSU mostly recycles JAMB and WAEC past questions. Thorough revision of past questions is highly advised.",
         requiresFaculty: true
     },
@@ -188,6 +243,9 @@ const schoolDatabase = {
         questions: "50",
         time: "30 Minutes",
         subjects: "Aptitude, English, Core Subjects",
+        cutoff: "170 JAMB baseline",
+        calculator: "Not Allowed",
+        negativeMarking: "No",
         tip: "DELSU includes quantitative and verbal reasoning alongside core subjects.",
         requiresFaculty: true
     },
@@ -198,6 +256,9 @@ const schoolDatabase = {
         questions: "50",
         time: "30 Minutes",
         subjects: "Your 4 JAMB Subjects",
+        cutoff: "180 JAMB baseline",
+        calculator: "Not Allowed",
+        negativeMarking: "No",
         tip: "RSU focuses strictly on your JAMB subject combination.",
         requiresFaculty: true
     },
@@ -208,6 +269,9 @@ const schoolDatabase = {
         questions: "50",
         time: "45 Minutes",
         subjects: "Your 4 JAMB Subjects",
+        cutoff: "180 JAMB baseline",
+        calculator: "Not Allowed",
+        negativeMarking: "No",
         tip: "UNIABUJA questions cover a wide range of the syllabus. Ensure you have read broadly.",
         requiresFaculty: true
     },
@@ -218,6 +282,9 @@ const schoolDatabase = {
         questions: "50",
         time: "30 Minutes",
         subjects: "Your 4 JAMB Subjects",
+        cutoff: "160 JAMB baseline",
+        calculator: "Not Allowed",
+        negativeMarking: "No",
         tip: "NDU CBT is fast-paced. Practice answering questions under 40 seconds each.",
         requiresFaculty: true
     },
@@ -228,6 +295,9 @@ const schoolDatabase = {
         questions: "50",
         time: "30 Minutes",
         subjects: "Your 4 JAMB Subjects",
+        cutoff: "160 JAMB baseline",
+        calculator: "Not Allowed",
+        negativeMarking: "No",
         tip: "UNIOSUN usually repeats questions from standard O'level past questions.",
         requiresFaculty: true
     },
@@ -238,6 +308,9 @@ const schoolDatabase = {
         questions: "50",
         time: "30 Minutes",
         subjects: "English, Maths, General Knowledge",
+        cutoff: "200 JAMB baseline",
+        calculator: "Not Allowed",
+        negativeMarking: "No",
         tip: "UNIZIK sometimes tests general aptitude. Be prepared for logical reasoning questions.",
         requiresFaculty: false
     },
@@ -248,6 +321,9 @@ const schoolDatabase = {
         questions: "50",
         time: "30 Minutes",
         subjects: "Your 4 JAMB Subjects",
+        cutoff: "160 JAMB baseline",
+        calculator: "Not Allowed",
+        negativeMarking: "No",
         tip: "Focus on science core subjects as MOUAU is heavily science-oriented.",
         requiresFaculty: true
     },
@@ -258,6 +334,9 @@ const schoolDatabase = {
         questions: "50",
         time: "40 Minutes",
         subjects: "Your 4 JAMB Subjects",
+        cutoff: "170 JAMB baseline",
+        calculator: "Not Allowed",
+        negativeMarking: "No",
         tip: "KASU screening focuses heavily on theoretical knowledge.",
         requiresFaculty: true
     },
@@ -268,6 +347,9 @@ const schoolDatabase = {
         questions: "50",
         time: "30 Minutes",
         subjects: "English + 3 JAMB Subjects",
+        cutoff: "170 JAMB baseline",
+        calculator: "Basic On-Screen",
+        negativeMarking: "No",
         tip: "LAUTECH questions are very calculation intensive for science students.",
         requiresFaculty: true
     },
@@ -278,6 +360,9 @@ const schoolDatabase = {
         questions: "50",
         time: "30 Minutes",
         subjects: "English, Aptitude, Core Subjects",
+        cutoff: "170 JAMB baseline",
+        calculator: "Not Allowed",
+        negativeMarking: "No",
         tip: "TASUED tests teaching aptitude and general English heavily.",
         requiresFaculty: true
     },
@@ -288,6 +373,9 @@ const schoolDatabase = {
         questions: "50",
         time: "40 Minutes",
         subjects: "Your 4 JAMB Subjects",
+        cutoff: "160 JAMB baseline",
+        calculator: "Not Allowed",
+        negativeMarking: "No",
         tip: "KSU focuses on deep syllabus questions.",
         requiresFaculty: true
     },
@@ -298,6 +386,9 @@ const schoolDatabase = {
         questions: "50",
         time: "40 Minutes",
         subjects: "Your 4 JAMB Subjects",
+        cutoff: "160 JAMB baseline",
+        calculator: "Not Allowed",
+        negativeMarking: "No",
         tip: "UNIMAID tests strictly your JAMB combination.",
         requiresFaculty: true
     },
@@ -308,6 +399,9 @@ const schoolDatabase = {
         questions: "50",
         time: "40 Minutes",
         subjects: "English, Current Affairs, Logic",
+        cutoff: "180 JAMB baseline",
+        calculator: "Not Allowed",
+        negativeMarking: "No",
         tip: "UNIJOS screening is often heavily tilted towards aptitude and current affairs.",
         requiresFaculty: false
     },
@@ -318,6 +412,9 @@ const schoolDatabase = {
         questions: "50",
         time: "30 Minutes",
         subjects: "English + 3 JAMB Subjects",
+        cutoff: "165 JAMB baseline",
+        calculator: "Basic On-Screen",
+        negativeMarking: "No",
         tip: "FUTMINNA expects high proficiency in basic engineering/science mathematics.",
         requiresFaculty: true
     },
@@ -328,6 +425,9 @@ const schoolDatabase = {
         questions: "50",
         time: "40 Minutes",
         subjects: "English + 3 JAMB Subjects",
+        cutoff: "160 JAMB baseline",
+        calculator: "Not Allowed",
+        negativeMarking: "No",
         tip: "ATBU focuses on core sciences. Re-read your SS2 and SS3 notes thoroughly.",
         requiresFaculty: true
     }
@@ -335,6 +435,8 @@ const schoolDatabase = {
 
 document.addEventListener('DOMContentLoaded', () => {
     const schoolSelect = document.getElementById('schoolSelect');
+    if (!schoolSelect) return; // Only run this logic on the prep page
+    
     const facultySelect = document.getElementById('facultySelect');
     const courseGroup = document.getElementById('courseGroup');
     const startBtn = document.getElementById('startExamBtn');
@@ -349,6 +451,9 @@ document.addEventListener('DOMContentLoaded', () => {
     const cfgQuestions = document.getElementById('cfgQuestions');
     const cfgTime = document.getElementById('cfgTime');
     const cfgSubjects = document.getElementById('cfgSubjects');
+    const cfgCutoff = document.getElementById('cfgCutoff');
+    const cfgCalculator = document.getElementById('cfgCalculator');
+    const cfgNegative = document.getElementById('cfgNegative');
     const cfgTip = document.getElementById('cfgTip');
 
     function updateConfig() {
@@ -368,13 +473,24 @@ document.addEventListener('DOMContentLoaded', () => {
         emptyConfig.style.display = 'none';
         activeConfig.style.display = 'block';
         
-        cfgLogo.innerText = data.logo;
-        cfgName.innerText = data.name;
-        cfgType.innerText = data.type;
-        cfgQuestions.innerText = data.questions;
-        cfgTime.innerText = data.time;
-        cfgSubjects.innerText = data.subjects;
-        cfgTip.innerText = data.tip;
+        if(cfgLogo) {
+            if (data.logoImg) {
+                cfgLogo.innerHTML = `<img src="${data.logoImg}" style="width:100%;height:100%;object-fit:cover;border-radius:12px;">`;
+                cfgLogo.style.background = "transparent";
+            } else {
+                cfgLogo.innerText = data.logo;
+                cfgLogo.style.background = ""; // reset
+            }
+        }
+        if(cfgName) cfgName.innerText = data.name;
+        if(cfgType) cfgType.innerText = data.type;
+        if(cfgQuestions) cfgQuestions.innerText = data.questions;
+        if(cfgTime) cfgTime.innerText = data.time;
+        if(cfgSubjects) cfgSubjects.innerText = data.subjects;
+        if(cfgCutoff) cfgCutoff.innerText = data.cutoff || 'Varies';
+        if(cfgCalculator) cfgCalculator.innerText = data.calculator || 'Not Allowed';
+        if(cfgNegative) cfgNegative.innerText = data.negativeMarking || 'No';
+        if(cfgTip) cfgTip.innerText = data.tip;
 
         // Handle Faculty selection logic
         if (data.requiresFaculty) {
@@ -394,16 +510,13 @@ document.addEventListener('DOMContentLoaded', () => {
     facultySelect.addEventListener('change', updateConfig);
 
     startBtn.addEventListener('click', () => {
-        const school = schoolDatabase[schoolSelect.value];
+        const schoolKey = schoolSelect.value;
         const faculty = facultySelect.value;
         
-        // In a real app, this would route to the quiz engine with query parameters
-        // Example: /Quizzes/quiz.htm?type=postutme&school=unilag&faculty=science
         startBtn.innerHTML = '<i class="fas fa-circle-notch fa-spin"></i> Generating Mock...';
         
         setTimeout(() => {
-            alert(`Generating highly targeted Post-UTME mock for ${school.name}... (This would launch the Quiz CBT Engine)`);
-            startBtn.innerHTML = '<i class="fas fa-play"></i> Start Simulation';
+            window.location.href = `/Quizzes/post-utme-arena.htm?school=${schoolKey}&faculty=${faculty}`;
         }, 1500);
     });
 });

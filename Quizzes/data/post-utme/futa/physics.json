@@ -1,0 +1,142 @@
+[
+  {
+    "id": "futa-phy-001",
+    "subject": "Physics",
+    "year": "2023",
+    "question": "Speed of light in vacuum:",
+    "options": [
+      "2×10⁸ m/s",
+      "3×10⁸ m/s",
+      "4×10⁸ m/s",
+      "1×10⁸ m/s"
+    ],
+    "answer": 1,
+    "explanation": "This is the correct answer for Speed of light in vacuum:"
+  },
+  {
+    "id": "futa-phy-002",
+    "subject": "Physics",
+    "year": "2022",
+    "question": "SI unit of force:",
+    "options": [
+      "Dyne",
+      "Newton",
+      "Pascal",
+      "Joule"
+    ],
+    "answer": 1,
+    "explanation": "This is the correct answer for SI unit of force:"
+  },
+  {
+    "id": "futa-phy-003",
+    "subject": "Physics",
+    "year": "2023",
+    "question": "Newtons second law states:",
+    "options": [
+      "F=ma",
+      "F=mv",
+      "F=m/a",
+      "F=a/m"
+    ],
+    "answer": 0,
+    "explanation": "This is the correct answer for Newtons second law states:"
+  },
+  {
+    "id": "futa-phy-004",
+    "subject": "Physics",
+    "year": "2022",
+    "question": "What is acceleration due to gravity?",
+    "options": [
+      "8.8 m/s²",
+      "9.8 m/s²",
+      "10.8 m/s²",
+      "7.8 m/s²"
+    ],
+    "answer": 1,
+    "explanation": "This is the correct answer for What is acceleration due to gravity?"
+  },
+  {
+    "id": "futa-phy-005",
+    "subject": "Physics",
+    "year": "2023",
+    "question": "Which is a scalar quantity?",
+    "options": [
+      "Force",
+      "Velocity",
+      "Speed",
+      "Acceleration"
+    ],
+    "answer": 2,
+    "explanation": "This is the correct answer for Which is a scalar quantity?"
+  },
+  {
+    "id": "futa-phy-006",
+    "subject": "Physics",
+    "year": "2022",
+    "question": "Speed of light in vacuum:",
+    "options": [
+      "2×10⁸ m/s",
+      "3×10⁸ m/s",
+      "4×10⁸ m/s",
+      "1×10⁸ m/s"
+    ],
+    "answer": 1,
+    "explanation": "This is the correct answer for Speed of light in vacuum:"
+  },
+  {
+    "id": "futa-phy-007",
+    "subject": "Physics",
+    "year": "2023",
+    "question": "SI unit of force:",
+    "options": [
+      "Dyne",
+      "Newton",
+      "Pascal",
+      "Joule"
+    ],
+    "answer": 1,
+    "explanation": "This is the correct answer for SI unit of force:"
+  },
+  {
+    "id": "futa-phy-008",
+    "subject": "Physics",
+    "year": "2022",
+    "question": "Newtons second law states:",
+    "options": [
+      "F=ma",
+      "F=mv",
+      "F=m/a",
+      "F=a/m"
+    ],
+    "answer": 0,
+    "explanation": "This is the correct answer for Newtons second law states:"
+  },
+  {
+    "id": "futa-phy-009",
+    "subject": "Physics",
+    "year": "2023",
+    "question": "What is acceleration due to gravity?",
+    "options": [
+      "8.8 m/s²",
+      "9.8 m/s²",
+      "10.8 m/s²",
+      "7.8 m/s²"
+    ],
+    "answer": 1,
+    "explanation": "This is the correct answer for What is acceleration due to gravity?"
+  },
+  {
+    "id": "futa-phy-010",
+    "subject": "Physics",
+    "year": "2022",
+    "question": "Which is a scalar quantity?",
+    "options": [
+      "Force",
+      "Velocity",
+      "Speed",
+      "Acceleration"
+    ],
+    "answer": 2,
+    "explanation": "This is the correct answer for Which is a scalar quantity?"
+  }
+]

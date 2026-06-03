@@ -13,7 +13,7 @@
       "JAMB"
     ],
     "level": "easy",
-    "topic": "Basic Economic Concepts",
+    "topic": "Economic Systems",
     "marks": 1,
     "explanation": "Scarcity is the fundamental economic problem that arises because human wants are infinite, but the resources available to satisfy those wants are finite. This forces individuals and societies to make choices about resource allocation.",
     "hint": "Think about unlimited desires vs. limited means.",
@@ -46,7 +46,7 @@
       "JAMB"
     ],
     "level": "easy",
-    "topic": "Basic Economic Concepts",
+    "topic": "Economic Systems",
     "marks": 1,
     "explanation": "Economics is fundamentally about scarcity—unlimited wants vs. limited resources. Therefore, the core problem economics solves is how to make the best or most 'efficient' use of these limited resources to satisfy human wants. While production, companies, and income are parts of economic activity, the broadest and most correct definition is the study of how societies choose to allocate scarce resources efficiently among competing uses.",
     "hint": "Focus on the concept of scarcity and choice.",
@@ -79,7 +79,7 @@
       "JAMB"
     ],
     "level": "easy",
-    "topic": "Basic Economic Concepts",
+    "topic": "Economic Systems",
     "marks": 1,
     "explanation": "The 'invisible hand' is a concept introduced by Adam Smith in his book 'The Wealth of Nations' (1776). It describes how individuals, by pursuing their own self-interest in a free market, are guided as if by an invisible hand to produce outcomes that benefit society as a whole.",
     "hint": "Remember Adam Smith is the father of modern economics and wrote about the invisible hand.",
@@ -112,7 +112,7 @@
       "JAMB"
     ],
     "level": "easy",
-    "topic": "Tools of Economic Analysis",
+    "topic": "Economic Systems",
     "marks": 1,
     "explanation": "The mean is calculated using the formula: Mean = Σfx / N. Here, Σfx = 60 and N = 12. Therefore, Mean = 60/12 = 5.",
     "hint": "Mean = Sum of all values divided by number of values.",
@@ -146,7 +146,7 @@
       "JAMB"
     ],
     "level": "easy",
-    "topic": "Tools of Economic Analysis",
+    "topic": "Economic Systems",
     "marks": 1,
     "explanation": "Standard deviation tells us how spread out the numbers in a data set are around the mean. A low standard deviation means data points are close to the mean, while a high standard deviation means they are spread out. It is a measure of dispersion (spread), not central tendency (which includes mean, median, mode).",
     "hint": "Standard deviation measures how spread out data points are.",
@@ -180,7 +180,7 @@
       "JAMB"
     ],
     "level": "easy",
-    "topic": "Tools of Economic Analysis",
+    "topic": "Economic Systems",
     "marks": 1,
     "explanation": "The mean incorporates every value in the data set, which is an advantage because it uses all available information. However, this is also a disadvantage because extreme values (outliers) can distort it. The median is not affected by outliers and can be found by inspection.",
     "hint": "Think about which measure uses every data point.",
@@ -214,7 +214,7 @@
       "JAMB"
     ],
     "level": "easy",
-    "topic": "Tools of Economic Analysis",
+    "topic": "Economic Systems",
     "marks": 1,
     "explanation": "The mode is the value that appears most often in a data set. For example, if more people buy size 8 shoes than any other size, size 8 is the mode. The mean is the average, the median is the middle value, and the range is the difference between the largest and smallest values.",
     "hint": "Mode = Most Often.",
@@ -248,7 +248,7 @@
       "JAMB"
     ],
     "level": "medium",
-    "topic": "Elasticity",
+    "topic": "Microeconomics",
     "marks": 2,
     "explanation": "Tax burden falls more on the side of the market that is less elastic (more inelastic). If demand is more elastic than supply, it means supply is relatively inelastic. Therefore, producers cannot easily reduce quantity supplied, so they bear a larger share of the tax burden. Consumers, being more elastic, will reduce consumption significantly when price rises, forcing producers to absorb more of the tax.",
     "hint": "Tax burden falls on the less elastic side.",
@@ -281,7 +281,7 @@
       "JAMB"
     ],
     "level": "medium",
-    "topic": "Demand & Supply",
+    "topic": "Microeconomics",
     "marks": 2,
     "explanation": "Elastic demand means the percentage change in quantity demanded is greater than the percentage change in price. When price increases, quantity demanded falls by a larger proportion, causing total revenue (Price × Quantity) to decrease. For example, a 10% price increase causing a 20% drop in sales reduces total revenue.",
     "hint": "Elastic → price up → revenue down.",
@@ -314,7 +314,7 @@
       "JAMB"
     ],
     "level": "easy",
-    "topic": "Demand & Supply",
+    "topic": "Microeconomics",
     "marks": 1,
     "explanation": "Excess demand (shortage) occurs when the quantity demanded exceeds the quantity supplied at the current price. This happens when the market price is set below the equilibrium price, often due to a price ceiling (maximum price) set by the government or by market forces.",
     "hint": "Shortage → price too low.",
@@ -348,7 +348,7 @@
       "JAMB"
     ],
     "level": "medium",
-    "topic": "Consumer Theory",
+    "topic": "Microeconomics",
     "marks": 2,
     "explanation": "Consumer surplus is the difference between what consumers are willing to pay and what they actually pay. When demand is inelastic, consumers value the good highly and are less responsive to price changes. This means the demand curve is steeper, and the area under the curve above the market price (consumer surplus) is larger compared to elastic demand.",
     "hint": "Inelastic demand → consumers willing to pay much more.",
@@ -381,7 +381,7 @@
       "JAMB"
     ],
     "level": "easy",
-    "topic": "Consumer Theory",
+    "topic": "Microeconomics",
     "marks": 1,
     "explanation": "Ordinal utility theory, associated with Hicks and Allen, assumes that consumers can rank their preferences (e.g., prefer bundle A to bundle B) but cannot measure the exact amount of satisfaction in numerical units (utils). This contrasts with cardinal utility theory, which assumes measurable utility.",
     "hint": "Ordinal = order/rank, not numbers.",
@@ -415,7 +415,7 @@
       "JAMB"
     ],
     "level": "medium",
-    "topic": "Consumer Theory",
+    "topic": "Microeconomics",
     "marks": 2,
     "explanation": "The law of diminishing marginal utility states that as a consumer consumes more units of a good, the additional satisfaction (marginal utility) from each extra unit decreases. To induce the consumer to buy more units, the price must fall to compensate for the lower marginal utility. This inverse relationship between price and quantity demanded explains the downward-sloping demand curve.",
     "hint": "More consumption → less extra satisfaction → lower price needed.",
@@ -448,7 +448,7 @@
       "JAMB"
     ],
     "level": "easy",
-    "topic": "Consumer Theory",
+    "topic": "Microeconomics",
     "marks": 1,
     "explanation": "Consumer surplus is the difference between what a consumer is willing to pay and what they actually pay. Here, willingness to pay = ₦150, actual price = ₦120. Therefore, Consumer Surplus = ₦150 - ₦120 = ₦30.",
     "hint": "CS = Willingness to pay - Actual price.",
@@ -481,7 +481,7 @@
       "JAMB"
     ],
     "level": "easy",
-    "topic": "Demand & Supply",
+    "topic": "Microeconomics",
     "marks": 1,
     "explanation": "A shift of the supply curve to the right indicates an increase in supply at every price level. Factors that can cause this include: technological improvements (lower production costs), lower input prices, favorable weather (for agriculture), and subsidies. A change in the good's own price causes a movement along the curve, not a shift.",
     "hint": "Shift factors are non-price determinants.",
@@ -514,7 +514,7 @@
       "JAMB"
     ],
     "level": "easy",
-    "topic": "Demand & Supply",
+    "topic": "Microeconomics",
     "marks": 1,
     "explanation": "Price elasticity of supply (PES) measures the responsiveness of quantity supplied to price changes. If PES > 1, it means the percentage change in quantity supplied is greater than the percentage change in price. This is defined as elastic supply. PES = 0 is perfectly inelastic, 0 < PES < 1 is inelastic, and PES = 1 is unit elastic.",
     "hint": "PES > 1 → elastic (responsive supply).",
@@ -546,7 +546,7 @@
       "JAMB"
     ],
     "level": "easy",
-    "topic": "Demand & Supply",
+    "topic": "Microeconomics",
     "marks": 1,
     "explanation": "Joint supply occurs when the production of one good inevitably results in the production of another good. For example, crude oil refining produces gasoline, diesel, and asphalt simultaneously. You cannot produce one without producing the others. Competitive supply is when resources can produce alternative goods. Composite supply is when a good comes from multiple sources.",
     "hint": "Joint = produced together.",
@@ -579,7 +579,7 @@
       "JAMB"
     ],
     "level": "easy",
-    "topic": "Market Structures",
+    "topic": "Microeconomics",
     "marks": 1,
     "explanation": "In perfect competition, there are many buyers and sellers, and no single buyer or seller can influence the market price. The price is determined by the interaction of total market demand and total market supply. Individual firms are price takers and must accept the market price.",
     "hint": "Many buyers + many sellers → price taker.",
@@ -612,7 +612,7 @@
       "JAMB"
     ],
     "level": "easy",
-    "topic": "Price System",
+    "topic": "Microeconomics",
     "marks": 1,
     "explanation": "A maximum price (price ceiling) is a legal limit set below the equilibrium price to make goods affordable for consumers, especially during shortages or for essential items. A minimum price (price floor) is set above equilibrium to protect producers (e.g., minimum wage, agricultural support prices).",
     "hint": "Maximum price = price ceiling = protects consumers.",
@@ -645,7 +645,7 @@
       "JAMB"
     ],
     "level": "medium",
-    "topic": "Production & Costs",
+    "topic": "Microeconomics",
     "marks": 2,
     "explanation": "The relationship between average product (AP) and marginal product (MP) is that when MP is above AP, AP is rising; when MP is below AP, AP is falling; and when MP = AP, AP is at its maximum. Therefore, when AP is increasing (rising), MP must be greater than AP.",
     "hint": "MP pulls AP up when MP > AP.",
@@ -679,7 +679,7 @@
       "JAMB"
     ],
     "level": "easy",
-    "topic": "Production & Costs",
+    "topic": "Microeconomics",
     "marks": 1,
     "explanation": "Economies of scale are cost advantages that a firm obtains due to expansion. As output increases, the firm can spread fixed costs over more units, use specialized machinery, and get bulk discounts. This leads to a decrease in long-run average cost. Diseconomies of scale cause average cost to increase at very high output levels.",
     "hint": "Economies = falling average costs.",
@@ -712,7 +712,7 @@
       "JAMB"
     ],
     "level": "easy",
-    "topic": "Production & Costs",
+    "topic": "Microeconomics",
     "marks": 1,
     "explanation": "The long-run average cost (LRAC) curve is U-shaped. The falling part shows economies of scale, the flat part shows constant returns to scale, and the rising part shows diseconomies of scale. Diseconomies occur when a firm becomes too large, leading to management inefficiencies, communication problems, and higher average costs.",
     "hint": "Rising costs = diseconomies.",
@@ -745,7 +745,7 @@
       "JAMB"
     ],
     "level": "medium",
-    "topic": "Demand & Supply",
+    "topic": "Microeconomics",
     "marks": 2,
     "explanation": "If firms are operating below capacity, they have idle resources (unused factories, equipment, or workers). When price increases, they can quickly increase output without incurring significant extra costs. This makes supply more elastic (responsive). If firms are at full capacity, they cannot easily increase output, making supply inelastic.",
     "hint": "Spare capacity → can increase output easily → elastic supply.",
@@ -778,7 +778,7 @@
       "JAMB"
     ],
     "level": "easy",
-    "topic": "Market Structures",
+    "topic": "Microeconomics",
     "marks": 1,
     "explanation": "Monopolistic competition is characterized by many sellers, product differentiation (each firm's product is slightly different), easy entry and exit, and some control over price (price makers, not takers). Perfect competition has homogeneous products and perfect information. A single seller describes a monopoly.",
     "hint": "Many firms + different but similar products.",
@@ -811,7 +811,7 @@
       "JAMB"
     ],
     "level": "medium",
-    "topic": "Theory of Distribution",
+    "topic": "Microeconomics",
     "marks": 2,
     "explanation": "The demand for a factor (e.g., labour) is derived from the demand for the final good. Due to the law of diminishing marginal returns, as more of a variable factor (labour) is added to fixed factors, the marginal product of each additional unit eventually decreases. Since firms hire factors up to the point where wage = marginal revenue product, the demand curve for the factor slopes downward.",
     "hint": "Diminishing returns → less extra output → lower demand for factor at higher prices.",
@@ -844,7 +844,7 @@
       "JAMB"
     ],
     "level": "easy",
-    "topic": "Market Structures",
+    "topic": "Microeconomics",
     "marks": 1,
     "explanation": "A cartel is a formal agreement among competing firms to control prices, limit output, and divide markets to act like a monopoly. OPEC (Organization of Petroleum Exporting Countries) is a well-known example of a cartel. Collusion is the broader term for any secret agreement, while a cartel is a specific organized form of collusion.",
     "hint": "Cartel = formal price-fixing agreement (e.g., OPEC).",
@@ -877,7 +877,7 @@
       "JAMB"
     ],
     "level": "easy",
-    "topic": "National Income",
+    "topic": "Microeconomics",
     "marks": 1,
     "explanation": "Consumption expenditure by households on goods and services (food, rent, clothing, healthcare) is typically the largest component of aggregate demand in most economies, often accounting for 60-70% of GDP. Investment, government spending, and net exports are usually smaller.",
     "hint": "Think about what households spend money on daily.",
@@ -911,7 +911,7 @@
       "JAMB"
     ],
     "level": "easy",
-    "topic": "Macroeconomic Theory",
+    "topic": "Economic Systems",
     "marks": 1,
     "explanation": "A sustained decrease in aggregate spending (total demand) means consumers, businesses, and government are buying less. Producers respond by reducing production and laying off workers. This leads to a recession—a period of declining economic output, rising unemployment, and falling incomes. Inflation is caused by too much spending, not too little.",
     "hint": "Less spending → less production → recession.",
@@ -945,7 +945,7 @@
       "JAMB"
     ],
     "level": "medium",
-    "topic": "Macroeconomic Theory",
+    "topic": "Economic Systems",
     "marks": 2,
     "explanation": "The multiplier (k) = 1 / (1 - MPC) = 1 / (1 - 0.8) = 1 / 0.2 = 5. The change in national income (ΔY) = multiplier × change in government spending (ΔG) = 5 × ₦100 million = ₦500 million.",
     "hint": "Multiplier = 1/(1-MPC). Then ΔY = multiplier × ΔG.",
@@ -980,7 +980,7 @@
       "JAMB"
     ],
     "level": "easy",
-    "topic": "Money & Banking",
+    "topic": "Microeconomics",
     "marks": 1,
     "explanation": "Money as a medium of exchange eliminates the need for barter and the double coincidence of wants. This allows people to specialize in producing one good or service and then use money to buy other goods they need. Without a medium of exchange, division of labour would be severely limited.",
     "hint": "Medium of exchange = what you use to buy and sell.",
@@ -1013,7 +1013,7 @@
       "JAMB"
     ],
     "level": "medium",
-    "topic": "Money & Banking",
+    "topic": "Microeconomics",
     "marks": 2,
     "explanation": "When the Central Bank sells treasury bills (open market sale), commercial banks pay money to the Central Bank, reducing their reserves. With lower reserves, banks can lend less money, which reduces the money supply in the economy. This is a contractionary monetary policy used to combat inflation.",
     "hint": "Sell securities → take money out of economy → reduce money supply.",
@@ -1047,7 +1047,7 @@
       "JAMB"
     ],
     "level": "medium",
-    "topic": "Money & Banking",
+    "topic": "Microeconomics",
     "marks": 2,
     "explanation": "The velocity of money (V) is the average number of times a unit of money is spent in a given period. From the equation of exchange (M × V = P × Y), where M is money supply, P is price level, and Y is real output, we get V = (P × Y) / M. P × Y is Nominal GDP. Therefore, V = Nominal GDP / Money Supply.",
     "hint": "Velocity = how fast money changes hands = Nominal GDP ÷ Money Supply.",
@@ -1080,7 +1080,7 @@
       "JAMB"
     ],
     "level": "easy",
-    "topic": "Money & Banking",
+    "topic": "Microeconomics",
     "marks": 1,
     "explanation": "The primary functions of commercial banks are to accept deposits from customers (savings, current, fixed deposits) and to grant loans and advances to individuals and businesses. This is how they earn profit (interest rate spread). Regulating money supply and issuing currency are functions of the Central Bank.",
     "hint": "Commercial banks = deposit-taking and lending institutions.",
@@ -1113,7 +1113,7 @@
       "JAMB"
     ],
     "level": "medium",
-    "topic": "Macroeconomic Theory",
+    "topic": "Economic Systems",
     "marks": 2,
     "explanation": "Cyclical unemployment occurs during a recession when aggregate demand is low. Expansionary fiscal policy (increasing government spending and/or decreasing taxes) boosts aggregate demand, leading to more production and hiring. Contractionary policy (cutting spending or raising taxes) would worsen unemployment.",
     "hint": "Expansionary policy = more spending or lower taxes = boost demand = reduce unemployment.",
@@ -1146,7 +1146,7 @@
       "JAMB"
     ],
     "level": "easy",
-    "topic": "Public Finance",
+    "topic": "Microeconomics",
     "marks": 1,
     "explanation": "A budget surplus occurs when government revenue (mainly from taxes) is greater than government expenditure. A deficit occurs when expenditure exceeds revenue. A balanced budget occurs when revenue equals expenditure.",
     "hint": "Revenue > Expenditure = Surplus.",
@@ -1346,7 +1346,7 @@
       "JAMB"
     ],
     "level": "easy",
-    "topic": "International Trade",
+    "topic": "International Economics",
     "marks": 1,
     "explanation": "Dependence on imported petroleum products makes Nigeria vulnerable to global supply disruptions, price shocks, and geopolitical events in other countries. This can lead to fuel shortages, long queues, and economic disruptions within Nigeria, as the country has limited control over external supply.",
     "hint": "Imports = reliance on others = risk.",
@@ -1380,7 +1380,7 @@
       "JAMB"
     ],
     "level": "easy",
-    "topic": "Theory of the Firm",
+    "topic": "Microeconomics",
     "marks": 1,
     "explanation": "A public limited liability company (PLC) can sell shares to the general public through the stock exchange, so there is no legal maximum on the number of shareholders. A private limited company (Ltd) typically has a maximum (often 50), but the question specifies 'public'.",
     "hint": "Public company → shares sold to anyone → unlimited shareholders.",
@@ -1413,7 +1413,7 @@
       "JAMB"
     ],
     "level": "easy",
-    "topic": "Basic Economic Concepts",
+    "topic": "Economic Systems",
     "marks": 1,
     "explanation": "From the perspective of an individual producer (entrepreneur), the primary motive for engaging in production is to earn a profit—the financial reward for taking risks and organizing factors of production. While production does satisfy wants, that is the social outcome, not the individual's primary motive.",
     "hint": "Individual producer → profit motive.",
@@ -1446,7 +1446,7 @@
       "JAMB"
     ],
     "level": "easy",
-    "topic": "Population",
+    "topic": "Microeconomics",
     "marks": 1,
     "explanation": "Population growth rate = [(New Population - Old Population) / Old Population] × 100 = [(50 - 40) / 40] × 100 = (10/40) × 100 = 0.25 × 100 = 25%.",
     "hint": "Growth rate = (change ÷ original) × 100.",
@@ -1480,7 +1480,7 @@
       "JAMB"
     ],
     "level": "easy",
-    "topic": "Population",
+    "topic": "Microeconomics",
     "marks": 1,
     "explanation": "Percentage of working population = (Working Population / Total Population) × 100 = (32 million / 40 million) × 100 = 0.8 × 100 = 80%.",
     "hint": "Working % = (working ÷ total) × 100.",
@@ -1514,7 +1514,7 @@
       "JAMB"
     ],
     "level": "easy",
-    "topic": "International Trade",
+    "topic": "International Economics",
     "marks": 1,
     "explanation": "In a free trade area, member countries agree to eliminate tariffs and quotas on trade among themselves. However, each country maintains its own separate trade policies (including tariffs) with non-member countries. A common external tariff is a feature of a customs union, and free factor movement is a feature of a common market.",
     "hint": "Free trade area = internal barriers removed, external barriers independent.",
@@ -1547,7 +1547,7 @@
       "JAMB"
     ],
     "level": "medium",
-    "topic": "International Trade",
+    "topic": "International Economics",
     "marks": 2,
     "explanation": "Imports of goods (machinery) are recorded as a debit (negative entry) in Nigeria's Current Account because money is flowing out of Nigeria to pay for the goods. Exports are recorded as credits. The capital account records financial investments and loans, not physical goods.",
     "hint": "Imports = money out = debit. Exports = money in = credit.",
@@ -1581,7 +1581,7 @@
       "JAMB"
     ],
     "level": "easy",
-    "topic": "International Trade",
+    "topic": "International Economics",
     "marks": 1,
     "explanation": "The African Development Bank (AfDB) is a regional multilateral development bank whose primary objective is to promote economic and social development in its regional member countries (African nations) by financing projects, providing loans, offering technical assistance, and mobilizing resources.",
     "hint": "AfDB → Africa + development bank.",
@@ -1614,7 +1614,7 @@
       "JAMB"
     ],
     "level": "medium",
-    "topic": "Production & Costs",
+    "topic": "Microeconomics",
     "marks": 2,
     "explanation": "Firms choose production methods based on the relative prices and availability of factors of production. If labour is abundant and cheap (e.g., developing countries), labour-intensive methods are chosen. If capital is relatively cheap and labour is expensive (e.g., developed countries), capital-intensive methods are preferred. This is the principle of factor substitution.",
     "hint": "Cheaper factors → more of that factor used.",
@@ -1647,7 +1647,7 @@
       "JAMB"
     ],
     "level": "medium",
-    "topic": "Theory of Distribution",
+    "topic": "Microeconomics",
     "marks": 2,
     "explanation": "A profit-maximizing firm hires labour up to the point where the marginal revenue product of labour (MRP = MP × P) equals the wage rate. The MRP measures the additional revenue generated by the last worker hired. This is the fundamental determinant of labour demand, not just availability or demographics.",
     "hint": "Firm hires until wage = MRP.",
@@ -1680,7 +1680,7 @@
       "JAMB"
     ],
     "level": "easy",
-    "topic": "Basic Economic Concepts",
+    "topic": "Economic Systems",
     "marks": 1,
     "explanation": "Due to scarcity, every society must answer: (1) What goods and services should be produced? (2) How should they be produced (labour-intensive or capital-intensive)? (3) For whom are they produced (who gets to consume them)? These are the three fundamental economic questions.",
     "hint": "What, how, and for whom.",
@@ -1713,7 +1713,7 @@
       "JAMB"
     ],
     "level": "medium",
-    "topic": "Money & Banking",
+    "topic": "Microeconomics",
     "marks": 2,
     "explanation": "Demand-pull inflation is caused by too much money chasing too few goods. To control it, contractionary monetary policy is used: increasing interest rates (discourages borrowing and spending) and reducing the money supply (through open market sales of securities, increasing reserve requirements). This reduces aggregate demand.",
     "hint": "Too much demand → reduce demand with higher rates and less money.",
@@ -1747,7 +1747,7 @@
       "JAMB"
     ],
     "level": "medium",
-    "topic": "Basic Economic Concepts",
+    "topic": "Economic Systems",
     "marks": 2,
     "explanation": "The PPC shows the maximum combinations of two goods an economy can produce with full employment and efficient use of resources. A major limitation is that it does not incorporate consumer preferences or demand—it shows what can be produced, not what society wants or should produce. It is a technical, supply-side model only.",
     "hint": "PPC shows capacity, not desirability.",
@@ -1781,7 +1781,7 @@
       "JAMB"
     ],
     "level": "easy",
-    "topic": "Tools of Economic Analysis",
+    "topic": "Economic Systems",
     "marks": 1,
     "explanation": "The arithmetic mean is sensitive to extreme values (outliers). For example, in a data set of incomes where most people earn around ₦50,000 but one person earns ₦50 million, the mean will be pulled upward and not represent the typical income. The median is more robust to outliers.",
     "hint": "Outliers distort the mean.",
@@ -1815,7 +1815,7 @@
       "JAMB"
     ],
     "level": "easy",
-    "topic": "Demand & Supply",
+    "topic": "Microeconomics",
     "marks": 1,
     "explanation": "Consumer sovereignty is the principle that consumers, through their spending decisions ('voting with their wallets'), determine what goods and services are produced. Producers respond to consumer demand to earn profits. In a market economy, it is consumers, not the government or producers alone, who ultimately drive demand patterns.",
     "hint": "Consumer is king in market economy.",
@@ -1848,7 +1848,7 @@
       "JAMB"
     ],
     "level": "medium",
-    "topic": "Consumer Theory",
+    "topic": "Microeconomics",
     "marks": 2,
     "explanation": "Consumer surplus is the difference between what consumers are willing to pay (total utility or value they place on a good) and what they actually pay (total expenditure). Graphically, it is the area under the demand curve above the market price.",
     "hint": "Consumer surplus = willingness to pay - actual payment.",
@@ -1881,7 +1881,7 @@
       "JAMB"
     ],
     "level": "easy",
-    "topic": "Demand & Supply",
+    "topic": "Microeconomics",
     "marks": 1,
     "explanation": "Substitute goods are those that can be used in place of each other (e.g., tea and coffee, butter and margarine). If the price of one substitute increases, consumers switch to the other, increasing its demand. Cross elasticity of demand for substitutes is positive.",
     "hint": "Substitutes: price up for A → demand up for B.",
@@ -1915,7 +1915,7 @@
       "JAMB"
     ],
     "level": "medium",
-    "topic": "Demand & Supply",
+    "topic": "Microeconomics",
     "marks": 2,
     "explanation": "The law of demand states that as price increases, quantity demanded decreases (downward slope). If a demand schedule shows the opposite—higher price leads to higher quantity demanded—it violates the law of demand. This is an abnormal (or exceptional) demand curve, which can occur for Giffen goods (inferior staples) or Veblen goods (status symbols).",
     "hint": "Normal demand = downward slope. Abnormal = upward slope.",
@@ -1948,7 +1948,7 @@
       "JAMB"
     ],
     "level": "easy",
-    "topic": "Tools of Economic Analysis",
+    "topic": "Economic Systems",
     "marks": 1,
     "explanation": "The median is the middle value when data are ordered. For an odd number of observations (n), the median is the value at position (n+1)/2. For example, in the set {5, 8, 12, 15, 20} (n=5), the median is the 3rd value (12). For even n, the median is the average of the two middle values.",
     "hint": "Odd number of values → single middle value.",
@@ -1982,7 +1982,7 @@
       "JAMB"
     ],
     "level": "easy",
-    "topic": "Demand & Supply",
+    "topic": "Microeconomics",
     "marks": 1,
     "explanation": "An increase in demand (shift to the right of the demand curve) with supply constant leads to a new equilibrium at a higher price and a higher quantity. Both price and quantity rise.",
     "hint": "Demand up → price up, quantity up.",
@@ -2015,7 +2015,7 @@
       "JAMB"
     ],
     "level": "medium",
-    "topic": "Production & Costs",
+    "topic": "Microeconomics",
     "marks": 2,
     "explanation": "Total product (TP) increases as long as marginal product (MP) is positive. When MP becomes zero, adding more of the variable input does not increase total output—TP is at its maximum. If MP becomes negative, TP starts to fall.",
     "hint": "TP max when MP = 0.",
@@ -2049,7 +2049,7 @@
       "JAMB"
     ],
     "level": "medium",
-    "topic": "Demand & Supply",
+    "topic": "Microeconomics",
     "marks": 2,
     "explanation": "Midpoint formula: PES = [(Q2-Q1)/((Q2+Q1)/2)] / [(P2-P1)/((P2+P1)/2)] = [(150-100)/(125)] / [(6-4)/(5)] = (50/125) / (2/5) = 0.4 / 0.4 = 1.0. Supply is unit elastic.",
     "hint": "Use midpoint formula: percentage change using averages.",
@@ -2083,7 +2083,7 @@
       "JAMB"
     ],
     "level": "medium",
-    "topic": "Consumer Theory",
+    "topic": "Microeconomics",
     "marks": 2,
     "explanation": "Consumer equilibrium occurs where the budget line is tangent to the indifference curve. At this point, the slope of the indifference curve (MRS = MUx/MUy) equals the slope of the budget line (Px/Py). Therefore, MRSxy = Px/Py.",
     "hint": "Tangency condition: slope of IC = slope of budget line.",
@@ -2117,7 +2117,7 @@
       "JAMB"
     ],
     "level": "easy",
-    "topic": "Price System",
+    "topic": "Microeconomics",
     "marks": 1,
     "explanation": "A minimum price set above equilibrium encourages producers to supply more (higher price incentive) but discourages consumers from buying (higher price reduces quantity demanded). The result is excess supply—a surplus. Examples include minimum wage (surplus of labour = unemployment) and agricultural price supports.",
     "hint": "Price floor above equilibrium → surplus.",
@@ -2151,7 +2151,7 @@
       "JAMB"
     ],
     "level": "easy",
-    "topic": "Consumer Theory",
+    "topic": "Microeconomics",
     "marks": 1,
     "explanation": "Ordinal utility theory assumes consumers can rank bundles of goods in order of preference (e.g., Bundle A is preferred to Bundle B) but cannot assign exact numerical values to utility. Cardinal utility assumes utility can be measured in absolute units ('utils').",
     "hint": "Ordinal = order/rank. Cardinal = numbers.",
@@ -2184,7 +2184,7 @@
       "JAMB"
     ],
     "level": "easy",
-    "topic": "Demand & Supply",
+    "topic": "Microeconomics",
     "marks": 1,
     "explanation": "Price elasticity of supply (PES) > 1 means supply is elastic. The percentage change in quantity supplied is greater than the percentage change in price. So a small price increase leads to a larger percentage increase in quantity supplied. This occurs when firms can easily expand production.",
     "hint": "Elastic supply = quantity very responsive to price.",
@@ -2217,7 +2217,7 @@
       "JAMB"
     ],
     "level": "medium",
-    "topic": "Market Structures",
+    "topic": "Microeconomics",
     "marks": 2,
     "explanation": "In perfect competition, a firm maximizes profit (or minimizes loss) where marginal revenue (MR) equals marginal cost (MC). For a price-taking firm, MR = market price (P). So the condition is P = MC, provided that price is above average variable cost (shutdown point).",
     "hint": "Profit max: MR = MC.",
@@ -2250,7 +2250,7 @@
       "JAMB"
     ],
     "level": "easy",
-    "topic": "Production & Costs",
+    "topic": "Microeconomics",
     "marks": 1,
     "explanation": "Diseconomies of scale occur when a firm becomes too large, leading to rising long-run average costs. Causes include: communication breakdowns, bureaucracy, principal-agent problems, coordination difficulties, and loss of managerial control. Specialization and technology reduce costs (economies of scale).",
     "hint": "Too big → inefficiency → diseconomies.",
@@ -2283,7 +2283,7 @@
       "JAMB"
     ],
     "level": "easy",
-    "topic": "Production & Costs",
+    "topic": "Microeconomics",
     "marks": 1,
     "explanation": "The law of diminishing marginal returns states that as more of a variable input (e.g., labour) is added to fixed inputs (e.g., capital, land), the marginal product of the variable input will eventually decrease. This law operates only in the short run, where at least one factor is fixed. In the long run, all factors are variable.",
     "hint": "Short run = at least one fixed factor.",
@@ -2317,7 +2317,7 @@
       "JAMB"
     ],
     "level": "medium",
-    "topic": "Production & Costs",
+    "topic": "Microeconomics",
     "marks": 2,
     "explanation": "The total product (TP) curve increases as long as marginal product (MP) is positive. When MP becomes zero, adding more of the variable input does not increase TP—TP reaches its maximum. If MP becomes negative, TP declines. Therefore, MP = 0 at the maximum of TP.",
     "hint": "MP = 0 at the peak of TP.",
@@ -2351,7 +2351,7 @@
       "JAMB"
     ],
     "level": "easy",
-    "topic": "Macroeconomic Theory",
+    "topic": "Economic Systems",
     "marks": 1,
     "explanation": "Real income = Nominal income / Price level. If nominal income is constant but real income increases, the denominator (price level) must have decreased. A fall in the general price level (deflation) increases the purchasing power of the same nominal income.",
     "hint": "Real income up, nominal same → prices down.",
@@ -2385,7 +2385,7 @@
       "JAMB"
     ],
     "level": "easy",
-    "topic": "Market Structures",
+    "topic": "Microeconomics",
     "marks": 1,
     "explanation": "Oligopoly is a market structure dominated by a few large firms. These firms may sell identical products (e.g., oil, steel) or differentiated products (e.g., automobiles, soft drinks). Key features include interdependence among firms and barriers to entry.",
     "hint": "Few large sellers = oligopoly.",
@@ -2418,7 +2418,7 @@
       "JAMB"
     ],
     "level": "easy",
-    "topic": "Production & Costs",
+    "topic": "Microeconomics",
     "marks": 1,
     "explanation": "Total Cost (TC) = Total Fixed Cost (TFC) + Total Variable Cost (TVC) = ₦100 + ₦200 = ₦300. Average Total Cost (ATC) = TC / Quantity = ₦300 / 20 units = ₦15 per unit.",
     "hint": "ATC = (TFC + TVC) / Q.",
@@ -2451,7 +2451,7 @@
       "JAMB"
     ],
     "level": "easy",
-    "topic": "Production & Costs",
+    "topic": "Microeconomics",
     "marks": 1,
     "explanation": "Total Cost (TC) = Total Fixed Cost (TFC) + Total Variable Cost (TVC) = ₦100 + ₦200 = ₦300.",
     "hint": "TC = TFC + TVC.",
@@ -2484,7 +2484,7 @@
       "JAMB"
     ],
     "level": "easy",
-    "topic": "Market Structures",
+    "topic": "Microeconomics",
     "marks": 1,
     "explanation": "Unlike perfect competition, a monopolist can earn supernormal profits in the long run because there are barriers to entry that prevent new firms from entering the market to compete away those profits. Barriers include patents, control of resources, economies of scale, and legal restrictions.",
     "hint": "Barriers to entry protect monopoly profits.",
@@ -2518,7 +2518,7 @@
       "JAMB"
     ],
     "level": "easy",
-    "topic": "Money & Banking",
+    "topic": "Microeconomics",
     "marks": 1,
     "explanation": "The bank consolidation policy (2004-2005) required Nigerian banks to increase their minimum capital base to ₦25 billion. The primary aim was to create stronger, more resilient banks capable of financing large projects, reducing the risk of bank failures, and enhancing the stability of the financial system.",
     "hint": "Consolidation = stronger, larger banks.",
@@ -2552,7 +2552,7 @@
       "JAMB"
     ],
     "level": "easy",
-    "topic": "Money & Banking",
+    "topic": "Microeconomics",
     "marks": 1,
     "explanation": "According to the quantity theory of money (MV = PY), if the money supply (M) increases and output (Y) remains constant, the price level (P) must rise. This is inflation—too much money chasing the same amount of goods.",
     "hint": "More money, same goods → higher prices.",
@@ -2586,7 +2586,7 @@
       "JAMB"
     ],
     "level": "medium",
-    "topic": "National Income",
+    "topic": "Microeconomics",
     "marks": 2,
     "explanation": "Transfer payments (pensions, scholarships, welfare benefits, unemployment benefits) are not included in GDP because they are not payments for currently produced goods or services. They are simply transfers of income from the government to individuals. GDP only counts spending on final goods and services.",
     "hint": "Transfers = no production → not in GDP.",
@@ -2620,7 +2620,7 @@
       "JAMB"
     ],
     "level": "easy",
-    "topic": "Macroeconomic Theory",
+    "topic": "Economic Systems",
     "marks": 1,
     "explanation": "If aggregate demand (spending) is less than total output, goods produced are not being fully purchased. Inventories accumulate, so firms cut back production and reduce employment. This leads to a fall in national income and output in the next period until a new, lower equilibrium is reached.",
     "hint": "Demand < output → unsold goods → production cut → income falls.",
@@ -2654,7 +2654,7 @@
       "JAMB"
     ],
     "level": "easy",
-    "topic": "Money & Banking",
+    "topic": "Microeconomics",
     "marks": 1,
     "explanation": "Before the invention of money, the barter system was used—direct exchange of goods for other goods (e.g., a farmer trading wheat for a blacksmith's tools). Barter requires a double coincidence of wants, which is inefficient, leading to the development of money as a medium of exchange.",
     "hint": "Barter = goods for goods.",
@@ -2753,7 +2753,7 @@
       "JAMB"
     ],
     "level": "easy",
-    "topic": "Public Finance",
+    "topic": "Microeconomics",
     "marks": 1,
     "explanation": "Deficit financing (expansionary fiscal policy) involves the government spending more than it earns, financed by borrowing. It increases aggregate demand, which can stimulate economic activity, create jobs, and help an economy recover from a recession. It is not used to fight inflation (which requires reduced demand).",
     "hint": "Deficit spending = boost demand = fight recession.",
@@ -2787,7 +2787,7 @@
       "JAMB"
     ],
     "level": "medium",
-    "topic": "Macroeconomic Theory",
+    "topic": "Economic Systems",
     "marks": 2,
     "explanation": "A deflationary (or recessionary) gap exists when the actual level of real GDP (determined by aggregate demand) is less than the potential GDP (full employment output). This indicates unused resources and unemployment. The gap represents the amount of additional spending needed to reach full employment.",
     "hint": "Actual < Potential = recessionary gap.",
@@ -2821,7 +2821,7 @@
       "JAMB"
     ],
     "level": "easy",
-    "topic": "Macroeconomic Theory",
+    "topic": "Economic Systems",
     "marks": 1,
     "explanation": "The output gap is the difference between an economy's actual GDP and its potential GDP (the maximum output at full employment). A positive output gap means actual > potential (inflationary pressure); a negative output gap means actual < potential (recessionary pressure).",
     "hint": "Output gap = Actual GDP - Potential GDP.",
@@ -3056,7 +3056,7 @@
       "JAMB"
     ],
     "level": "easy",
-    "topic": "International Trade",
+    "topic": "International Economics",
     "marks": 1,
     "explanation": "The Balance of Payments (BOP) is a comprehensive record of all economic transactions (goods, services, income, transfers, financial assets) between residents of a country and the rest of the world over a period. The balance of trade (goods only) and current account are subsets of the BOP.",
     "hint": "BOP = complete record of all international transactions.",
@@ -3122,7 +3122,7 @@
       "JAMB"
     ],
     "level": "medium",
-    "topic": "International Trade",
+    "topic": "International Economics",
     "marks": 2,
     "explanation": "A dual exchange rate system exists when a country has two different exchange rates: an official rate set by the government for certain transactions (e.g., essential imports, debt repayment) and a parallel market rate (or autonomous rate) determined by supply and demand for other transactions. This is often used to manage foreign exchange scarcity.",
     "hint": "Dual = two different rates at the same time.",
@@ -3155,7 +3155,7 @@
       "JAMB"
     ],
     "level": "easy",
-    "topic": "Population",
+    "topic": "Microeconomics",
     "marks": 1,
     "explanation": "Malthus predicted that population would grow geometrically while food production grows arithmetically, leading to famine. However, technological progress—especially the Green Revolution (high-yield crop varieties, fertilizers, irrigation, mechanization)—has allowed food production to increase at an unprecedented rate, far outpacing population growth in many regions.",
     "hint": "Technology boosted food production beyond Malthus's predictions.",
@@ -3189,7 +3189,7 @@
       "JAMB"
     ],
     "level": "easy",
-    "topic": "Population",
+    "topic": "Microeconomics",
     "marks": 1,
     "explanation": "Optimum population is the ideal population size that, given a country's resources and technology, maximizes output per head (per capita income or standard of living). At this point, adding more people would reduce average income (due to diminishing returns), and fewer people would also reduce average income (due to underutilized resources).",
     "hint": "Optimum = highest income per person.",
@@ -3222,7 +3222,7 @@
       "JAMB"
     ],
     "level": "easy",
-    "topic": "Labour & Wages",
+    "topic": "Microeconomics",
     "marks": 1,
     "explanation": "Horizontal mobility refers to a worker changing jobs at the same skill level or status but in a different industry or occupation (e.g., a teacher becoming a bank clerk). Vertical mobility involves moving up (promotion) or down (demotion) in status or income. Geographical mobility involves moving to a different location.",
     "hint": "Horizontal = same level, different industry.",
@@ -3255,7 +3255,7 @@
       "JAMB"
     ],
     "level": "easy",
-    "topic": "Theory of Distribution",
+    "topic": "Microeconomics",
     "marks": 1,
     "explanation": "The wage rate is the price paid per unit of labour, typically per hour, per day, or per piece of output. Salary is usually a fixed regular payment (often monthly) regardless of hours worked. Bonus is an additional payment. Rent is payment for land or property.",
     "hint": "Wage rate = hourly or daily labour payment.",
@@ -3288,7 +3288,7 @@
       "JAMB"
     ],
     "level": "easy",
-    "topic": "International Trade",
+    "topic": "International Economics",
     "marks": 1,
     "explanation": "The fundamental basis for international trade is the principle of comparative advantage, developed by David Ricardo. Even if one country is less efficient at producing everything (absolute disadvantage), it can still benefit from trade by specializing in the good where its disadvantage is smallest (lowest opportunity cost). This allows both countries to consume beyond their production possibilities.",
     "hint": "Comparative advantage = lower opportunity cost.",
@@ -3321,7 +3321,7 @@
       "JAMB"
     ],
     "level": "easy",
-    "topic": "International Trade",
+    "topic": "International Economics",
     "marks": 1,
     "explanation": "The WTO is the global international organization that deals with the rules of trade between nations. Its main functions are to: (1) negotiate trade liberalization (reducing tariffs and non-tariff barriers), (2) administer trade agreements, (3) provide a forum for trade negotiations, and (4) settle trade disputes between member countries.",
     "hint": "WTO = trade rules and dispute resolution.",
@@ -3354,7 +3354,7 @@
       "JAMB"
     ],
     "level": "easy",
-    "topic": "Market Structures",
+    "topic": "Microeconomics",
     "marks": 1,
     "explanation": "Monopolistic competition is characterized by many firms, product differentiation (each firm's product is slightly different), easy entry and exit, and some control over price. Examples include restaurants, hair salons, and clothing brands. Perfect competition has identical products; oligopoly has few sellers; monopoly has one seller.",
     "hint": "Many firms + different products = monopolistic competition.",
@@ -6704,6 +6704,8 @@
         "lastUpdated": "2026-01-08"
       }
     ],
-    "topic": "General"
+    "topic": "Microeconomics",
+    "explanation": "[Explanation needed for Q_101]",
+    "marks": 1
   }
 ]

@@ -1101,7 +1101,7 @@
       "JAMB"
     ],
     "level": "hard",
-    "topic": "Properties of Matter",
+    "topic": "Mechanics",
     "marks": 3,
     "explanation": "Mass of one drop = total mass/1000 = (5×10⁻⁴)/1000 = 5×10⁻⁷ kg. Volume of one drop = mass/density = (5×10⁻⁷)/5000 = 1×10⁻¹⁰ m³. When spread as a thin film of area 0.5 m², thickness = volume/area = (1×10⁻¹⁰)/0.5 = 2×10⁻¹⁰ m = 2×10⁻⁸ cm? Wait: 2×10⁻¹⁰ m = 2×10⁻⁸ cm. But options are in meters: 2×10⁻¹⁰ m = 2×10⁻¹⁰ m. Option A says 2×10⁻⁸ m which is 100 times larger. Recalculate: Volume = mass/density = (5×10⁻⁷)/5000 = 1×10⁻¹⁰ m³. Area = 0.5 m². Thickness = Volume/Area = (1×10⁻¹⁰)/0.5 = 2×10⁻¹⁰ m. None of the options show 2×10⁻¹⁰ m exactly. Option A is 2×10⁻⁸ m (100× larger). There may be a typo in the options. Given the options, 2×10⁻⁸ m is the closest, but mathematically it should be 2×10⁻¹⁰ m.",
     "hint": "Thickness = (mass of one drop)/(density × area).",
@@ -1213,7 +1213,7 @@
       "JAMB"
     ],
     "level": "easy",
-    "topic": "Atomic & Nuclear Physics",
+    "topic": "Heat & Thermodynamics",
     "marks": 1,
     "explanation": "Statement I is correct: mass number = protons + neutrons. Statement II is correct: atomic number = number of protons. Statement III is false: number of electrons equals number of protons (not protons + neutrons) in a neutral atom.",
     "hint": "Atomic number Z = protons, Mass number A = protons + neutrons.",
@@ -3628,7 +3628,9 @@
         "lastUpdated": "2026-01-08"
       }
     ],
-    "topic": "General"
+    "topic": "Mechanics",
+    "explanation": "[Explanation needed for Q_50]",
+    "marks": 1
   },
   {
     "subject": "Physics",
@@ -5448,7 +5450,9 @@
         "lastUpdated": "2026-01-08"
       }
     ],
-    "topic": "General"
+    "topic": "Mechanics",
+    "explanation": "[Explanation needed for Q_51]",
+    "marks": 1
   },
   {
     "subject": "Physics",
@@ -7282,7 +7286,9 @@
         "lastUpdated": "2026-01-08"
       }
     ],
-    "topic": "General"
+    "topic": "Mechanics",
+    "explanation": "[Explanation needed for Q_52]",
+    "marks": 1
   },
   {
     "subject": "Physics",
@@ -9111,7 +9117,9 @@
         "lastUpdated": "2026-01-08"
       }
     ],
-    "topic": "General"
+    "topic": "Mechanics",
+    "explanation": "[Explanation needed for Q_53]",
+    "marks": 1
   },
   {
     "subject": "Physics",
@@ -10940,7 +10948,9 @@
         "lastUpdated": "2026-01-08"
       }
     ],
-    "topic": "General"
+    "topic": "Mechanics",
+    "explanation": "[Explanation needed for Q_54]",
+    "marks": 1
   },
   {
     "subject": "Physics",
@@ -12767,6 +12777,8 @@
         "lastUpdated": "2026-01-08"
       }
     ],
-    "topic": "General"
+    "topic": "Mechanics",
+    "explanation": "[Explanation needed for Q_55]",
+    "marks": 1
   }
 ]

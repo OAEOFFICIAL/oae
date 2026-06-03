@@ -1,0 +1,12 @@
+[
+  {"id":"ui-chem-001","subject":"Chemistry","year":"2023","question":"What is the atomic number of Carbon?","options":["6","12","8","4"],"answer":0,"explanation":"Carbon has 6 protons, giving it an atomic number of 6."},
+  {"id":"ui-chem-002","subject":"Chemistry","year":"2023","question":"Which of the following is a covalent compound?","options":["NaCl","H₂O","KBr","MgO"],"answer":1,"explanation":"H₂O (water) is covalent; the others are ionic compounds."},
+  {"id":"ui-chem-003","subject":"Chemistry","year":"2022","question":"What is the pH of a neutral solution?","options":["0","7","14","10"],"answer":1,"explanation":"A neutral solution has a pH of 7 at 25°C."},
+  {"id":"ui-chem-004","subject":"Chemistry","year":"2023","question":"Which gas is produced when zinc reacts with dilute sulfuric acid?","options":["Oxygen","Nitrogen","Hydrogen","Carbon dioxide"],"answer":2,"explanation":"Zinc + dilute H₂SO₄ produces hydrogen gas and zinc sulfate."},
+  {"id":"ui-chem-005","subject":"Chemistry","year":"2022","question":"What is the oxidation state of oxygen in H₂O₂?","options":["0","-1","-2","+2"],"answer":1,"explanation":"In H₂O₂ (hydrogen peroxide), oxygen has an unusual oxidation state of -1."},
+  {"id":"ui-chem-006","subject":"Chemistry","year":"2023","question":"Which process converts liquid to gas?","options":["Condensation","Evaporation","Sublimation","Freezing"],"answer":1,"explanation":"Evaporation is the process where liquid molecules gain energy and escape as gas."},
+  {"id":"ui-chem-007","subject":"Chemistry","year":"2022","question":"What is the formula for calcium carbonate?","options":["CaCO₂","Ca₂CO₃","CaCO₃","CaC"],"answer":2,"explanation":"Calcium carbonate has the formula CaCO₃."},
+  {"id":"ui-chem-008","subject":"Chemistry","year":"2023","question":"Which is a strong acid?","options":["Acetic acid","Carbonic acid","Hydrochloric acid","Phosphorous acid"],"answer":2,"explanation":"Hydrochloric acid (HCl) is a strong acid that completely dissociates in water."},
+  {"id":"ui-chem-009","subject":"Chemistry","year":"2022","question":"What is the molar mass of CO₂?","options":["44 g/mol","60 g/mol","30 g/mol","16 g/mol"],"answer":0,"explanation":"CO₂: C(12) + O(16)×2 = 12 + 32 = 44 g/mol."},
+  {"id":"ui-chem-010","subject":"Chemistry","year":"2023","question":"Which element is used as a catalyst in the Haber process?","options":["Iron","Copper","Nickel","Platinum"],"answer":0,"explanation":"Iron is used as a catalyst in the Haber process for ammonia synthesis."}
+]

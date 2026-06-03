@@ -1,0 +1,92 @@
+[
+  {
+    "id": "oau-gp-001",
+    "subject": "General Paper",
+    "year": "2023",
+    "question": "Who was the first and only Prime Minister of independent Nigeria?",
+    "options": ["Nnamdi Azikiwe", "Obafemi Awolowo", "Abubakar Tafawa Balewa", "Ahmadu Bello"],
+    "answer": 2,
+    "explanation": "Sir Abubakar Tafawa Balewa served as Prime Minister from 1960 until 1966."
+  },
+  {
+    "id": "oau-gp-002",
+    "subject": "General Paper",
+    "year": "2023",
+    "question": "In what year did Nigeria gain independence from British colonial rule?",
+    "options": ["1960", "1963", "1966", "1970"],
+    "answer": 0,
+    "explanation": "Nigeria gained independence on October 1, 1960."
+  },
+  {
+    "id": "oau-gp-003",
+    "subject": "General Paper",
+    "year": "2022",
+    "question": "Which Nigerian state is known as the 'Giant of Africa'?",
+    "options": ["Lagos", "Kano", "Katsina", "Oyo"],
+    "answer": 0,
+    "explanation": "Nigeria is referred to as the 'Giant of Africa' due to its large population and economic influence."
+  },
+  {
+    "id": "oau-gp-004",
+    "subject": "General Paper",
+    "year": "2023",
+    "question": "What is the capital of Nigeria?",
+    "options": ["Lagos", "Abuja", "Ibadan", "Kano"],
+    "answer": 1,
+    "explanation": "Abuja replaced Lagos as the capital of Nigeria in 1991."
+  },
+  {
+    "id": "oau-gp-005",
+    "subject": "General Paper",
+    "year": "2022",
+    "question": "How many states are in Nigeria?",
+    "options": ["34", "36", "37", "38"],
+    "answer": 1,
+    "explanation": "Nigeria has 36 states plus the Federal Capital Territory (Abuja), making it 37 total."
+  },
+  {
+    "id": "oau-gp-006",
+    "subject": "General Paper",
+    "year": "2023",
+    "question": "Which of the following is NOT a major ethnic group in Nigeria?",
+    "options": ["Yoruba", "Igbo", "Hausa-Fulani", "Swedish"],
+    "answer": 3,
+    "explanation": "Swedish refers to people from Sweden, not a Nigerian ethnic group. The three major Nigerian ethnic groups are Yoruba, Igbo, and Hausa-Fulani."
+  },
+  {
+    "id": "oau-gp-007",
+    "subject": "General Paper",
+    "year": "2022",
+    "question": "What is the largest river in Nigeria?",
+    "options": ["River Niger", "River Benue", "River Orashi", "River Gongola"],
+    "answer": 0,
+    "explanation": "The River Niger is the largest and longest river in Nigeria, flowing through several states."
+  },
+  {
+    "id": "oau-gp-008",
+    "subject": "General Paper",
+    "year": "2023",
+    "question": "In which year did Nigeria experience a military coup that led to the overthrow of the First Republic?",
+    "options": ["1963", "1966", "1970", "1975"],
+    "answer": 1,
+    "explanation": "The first military coup in Nigeria occurred on January 15, 1966, ending the First Republic."
+  },
+  {
+    "id": "oau-gp-009",
+    "subject": "General Paper",
+    "year": "2022",
+    "question": "What is the official language of Nigeria?",
+    "options": ["Yoruba", "Hausa", "English", "Igbo"],
+    "answer": 2,
+    "explanation": "English is the official language of Nigeria, though over 500 languages are spoken."
+  },
+  {
+    "id": "oau-gp-010",
+    "subject": "General Paper",
+    "year": "2023",
+    "question": "Which famous Nigerian author won the Nobel Prize for Literature?",
+    "options": ["Chinua Achebe", "Wole Soyinka", "Buchi Emecheta", "Ben Okri"],
+    "answer": 1,
+    "explanation": "Wole Soyinka won the Nobel Prize for Literature in 1986, becoming the first African to do so."
+  }
+]

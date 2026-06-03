@@ -51,7 +51,7 @@
       "JAMB"
     ],
     "level": "easy",
-    "topic": "Arithmetic",
+    "topic": "Number & Numeration",
     "marks": 1,
     "explanation": "Ratio X:Y = 4:5. Difference = 1 part = #5,000. Total parts = 4+5 = 9. Total profit = 9 × #5,000 = #45,000.",
     "hint": "Find the value of one part from the difference given.",
@@ -89,7 +89,7 @@
       "JAMB"
     ],
     "level": "easy",
-    "topic": "Geometry",
+    "topic": "Geometry & Trigonometry",
     "marks": 1,
     "explanation": "Sum of interior angles = (n-2) × 180° = (6-2) × 180° = 720°. Each interior angle = 720° ÷ 6 = 120°.",
     "hint": "Use formula: (n-2) × 180° / n for regular polygons.",
@@ -1874,7 +1874,9 @@
         "questionFormat": "text"
       }
     ],
-    "topic": "General"
+    "topic": "Number & Numeration",
+    "explanation": "[Explanation needed for Q_5]",
+    "marks": 1
   },
   {
     "id": "MATH-JAMB-051",
@@ -1890,7 +1892,7 @@
       "JAMB"
     ],
     "level": "easy",
-    "topic": "Arithmetic",
+    "topic": "Number & Numeration",
     "marks": 1,
     "explanation": "First, (2/3 - 1/5) = (10/15 - 3/15) = 7/15. 'of' means multiplication: (1/3) × (2/5) = 2/15. Then 7/15 - 2/15 = 5/15 = 1/3.",
     "hint": "Remember BODMAS: 'of' comes before subtraction.",
@@ -1927,7 +1929,7 @@
       "JAMB"
     ],
     "level": "medium",
-    "topic": "Number Bases",
+    "topic": "Number & Numeration",
     "marks": 2,
     "explanation": "Let base = b. Then (2b²+6b+3) + (4b²+4b+1) = (6b²+10b+4). Right side: 7b²+1b+4. Equate: 6b²+10b+4 = 7b²+b+4 → 0 = b² - 9b → b(b-9)=0 → b=9 (since b≠0).",
     "hint": "Convert each number to base 10 and add.",
@@ -1963,7 +1965,7 @@
       "JAMB"
     ],
     "level": "medium",
-    "topic": "Arithmetic",
+    "topic": "Number & Numeration",
     "marks": 2,
     "explanation": "Let cost for P = x. Q bought at 1.1x. Q sold to R at 0.95 × 1.1x = 1.045x = 209 → x = 209/1.045 = 200.",
     "hint": "Work backwards from R to P.",
@@ -2000,7 +2002,7 @@
       "JAMB"
     ],
     "level": "hard",
-    "topic": "Arithmetic",
+    "topic": "Number & Numeration",
     "marks": 3,
     "explanation": "Let present price = p kobo. #2.40 = 240 kobo. Number at present = 240/p. New price = p + 0.5. New number = 240/(p+0.5). Equation: 240/p - 240/(p+0.5) = 16 → Multiply: 240[(p+0.5)-p]/[p(p+0.5)] = 16 → 240×0.5 = 16p(p+0.5) → 120 = 16p²+8p → 16p²+8p-120=0 → divide 8: 2p²+p-15=0 → (2p-5)(p+3)=0 → p=2.5 or p=-3. So p=2.5 kobo = 2½ kobo.",
     "hint": "Let the unknown be the present price.",
@@ -2038,7 +2040,7 @@
       "JAMB"
     ],
     "level": "medium",
-    "topic": "Arithmetic",
+    "topic": "Number & Numeration",
     "marks": 2,
     "explanation": "Let x = amount at 8%, then 50000-x at 6%. Yield: 0.08x + 0.06(50000-x) = 3700 → 0.08x + 3000 - 0.06x = 3700 → 0.02x = 700 → x = 35,000.",
     "hint": "Set up an equation for total yield.",
@@ -2149,7 +2151,7 @@
       "JAMB"
     ],
     "level": "easy",
-    "topic": "Probability",
+    "topic": "Statistics",
     "marks": 1,
     "explanation": "Numbers divisible by 4 from 1 to 300: floor(300/4) = 75. Probability = 75/300 = 1/4.",
     "hint": "Count multiples of 4 up to 300.",
@@ -2186,7 +2188,7 @@
       "JAMB"
     ],
     "level": "medium",
-    "topic": "Coordinate Geometry",
+    "topic": "Geometry & Trigonometry",
     "marks": 2,
     "explanation": "Slope = 4/1 = 4. Point (0,-3). Equation: y - (-3) = 4(x - 0) → y + 3 = 4x.",
     "hint": "The slope is the change in y over change in x.",
@@ -2223,7 +2225,7 @@
       "JAMB"
     ],
     "level": "hard",
-    "topic": "Number Bases",
+    "topic": "Number & Numeration",
     "marks": 3,
     "explanation": "103₅ = 1×25+0×5+3=28. 14₅=1×5+4=9. Cost=28×9=252. 24₅=2×5+4=14. Revenue=28×14=392. Gain=392-252=140. Convert 140 to base 5: 140÷5=28 rem 0, 28÷5=5 rem 3, 5÷5=1 rem 0, 1÷5=0 rem 1 → 1030₅.",
     "hint": "Convert to base 10, calculate, then convert back.",
@@ -2260,7 +2262,7 @@
       "JAMB"
     ],
     "level": "medium",
-    "topic": "Indices",
+    "topic": "Number & Numeration",
     "marks": 2,
     "explanation": "Numerator = 3^(n-1)(3-1)=2×3^(n-1). Denominator = 3^(n+3) - 3^3 × 3^(n-1) = 3^(n+3) - 3^(n+2) = 3^(n+2)(3-1)=2×3^(n+2). Ratio = [2×3^(n-1)]/[2×3^(n+2)] = 1/3³ = 1/27.",
     "hint": "Factor out common powers of 3.",
@@ -2297,7 +2299,7 @@
       "JAMB"
     ],
     "level": "medium",
-    "topic": "Variation",
+    "topic": "Number & Numeration",
     "marks": 2,
     "explanation": "p ∝ q²/r → p = k q²/r. 36 = k×9/4 → k = 36×4/9 = 16. Then p = 16×25/2 = 16×12.5 = 200.",
     "hint": "Find constant of proportionality first.",
@@ -2371,7 +2373,7 @@
       "JAMB"
     ],
     "level": "hard",
-    "topic": "Coordinate Geometry",
+    "topic": "Geometry & Trigonometry",
     "marks": 3,
     "explanation": "Since (5,5) lies on y=mx, m=1. Intersection: x = x² - 12x + 40 → x² - 13x + 40 = 0 → (x-5)(x-8)=0 → x=5 or x=8. Other point: x=8, y=8 → (8,8).",
     "hint": "Substitute the known point to find m, then solve the quadratic.",
@@ -2408,7 +2410,7 @@
       "JAMB"
     ],
     "level": "medium",
-    "topic": "Inequalities",
+    "topic": "Algebra",
     "marks": 2,
     "explanation": "Musa's total = 5 + (x+10) = x+15. Ngozi's total = 118. Musa was second, so Musa < Ngozi → x+15 < 118 → x < 103. Also distance positive: x+10 > 0 → x > -10. Also Musa's second hour distance must be reasonable. Given options, 0 < x < 15 is most plausible for a typical JAMB question.",
     "hint": "Interpret 'second' as finishing after Ngozi.",
@@ -2445,7 +2447,7 @@
       "JAMB"
     ],
     "level": "hard",
-    "topic": "Arithmetic",
+    "topic": "Number & Numeration",
     "marks": 3,
     "explanation": "Shola's time = x+15. Work rates: 1/x + 1/(x+15) = 1/18. Multiply: 18(x+15 + x) = x(x+15) → 18(2x+15) = x²+15x → 36x+270 = x²+15x → 0 = x² - 21x - 270.",
     "hint": "Use combined work formula: 1/T₁ + 1/T₂ = 1/T_total.",
@@ -2595,7 +2597,7 @@
       "JAMB"
     ],
     "level": "hard",
-    "topic": "Mensuration",
+    "topic": "Number & Numeration",
     "marks": 3,
     "explanation": "Radius of sector R = 6 cm. Arc length = (210/360) × 2π×6 = (7/12) × 12π = 7π cm. This arc becomes circumference of cone base: 2πr = 7π → r = 3.5 cm.",
     "hint": "Arc length of sector = circumference of cone base.",
@@ -2635,7 +2637,7 @@
       "JAMB"
     ],
     "level": "hard",
-    "topic": "Trigonometry",
+    "topic": "Geometry & Trigonometry",
     "marks": 3,
     "explanation": "Largest side is x+4. Cosine rule: cos θ = [x² + (x-4)² - (x+4)²] / [2×x×(x-4)]. Simplify numerator: x² + x²-8x+16 - (x²+8x+16) = 2x²-8x+16 - x²-8x-16 = x² -16x. Denominator: 2x(x-4)=2x²-8x. So cos θ = (x²-16x)/(2x²-8x) = (x-16)/(2x-8) = 1/5. Cross multiply: 5(x-16)=2x-8 → 5x-80=2x-8 → 3x=72 → x=24.",
     "hint": "Largest angle is opposite largest side.",
@@ -2709,7 +2711,7 @@
       "JAMB"
     ],
     "level": "medium",
-    "topic": "Inequalities",
+    "topic": "Algebra",
     "marks": 2,
     "explanation": "-3 < 2-5x → -5 < -5x → 1 > x → x < 1. 2-5x < 12 → -5x < 10 → x > -2. So -2 < x < 1. Integral values: -1, 0.",
     "hint": "Solve both inequalities separately.",
@@ -2745,7 +2747,7 @@
       "JAMB"
     ],
     "level": "hard",
-    "topic": "Mensuration",
+    "topic": "Number & Numeration",
     "marks": 3,
     "explanation": "Area of segment = area of sector - area of triangle. For angle 60°, sector area = (60/360)πr² = πr²/6. Triangle area = ½r² sin 60° = ½r² × √3/2 = r²√3/4. Segment area = πr²/6 - r²√3/4 = r²(2π/12 - 3√3/12) = r²(2π - 3√3)/12. Multiply numerator and denominator: (r²/4)(4π - 6√3)/3? Not matching. Given options, A is standard formula for a different angle. I'll keep A as given.",
     "hint": "Area of segment = (θ/360)πr² - ½r² sin θ.",
@@ -2820,7 +2822,7 @@
       "JAMB"
     ],
     "level": "medium",
-    "topic": "Trigonometry",
+    "topic": "Geometry & Trigonometry",
     "marks": 2,
     "explanation": "Vertical angle 2y° means angle at apex is 2y. Half-angle at apex is y. In the right triangle formed by height h, radius r, and slant height, tan y = r/h → h = r / tan y = r cot y.",
     "hint": "Draw the cross-section through the apex.",
@@ -2857,7 +2859,7 @@
       "JAMB"
     ],
     "level": "easy",
-    "topic": "Probability",
+    "topic": "Statistics",
     "marks": 1,
     "explanation": "Total outcomes = 36. Favorable: (1,1),(2,2),(3,3),(4,4),(5,5),(6,6) = 6. Probability = 6/36 = 1/6.",
     "hint": "Count the doubles.",
@@ -2931,7 +2933,7 @@
       "JAMB"
     ],
     "level": "easy",
-    "topic": "Coordinate Geometry",
+    "topic": "Geometry & Trigonometry",
     "marks": 1,
     "explanation": "x² = 4x → x² - 4x = 0 → x(x-4)=0 → x=0 or x=4.",
     "hint": "Set the equations equal to each other.",
@@ -2968,7 +2970,7 @@
       "JAMB"
     ],
     "level": "medium",
-    "topic": "Trigonometry",
+    "topic": "Geometry & Trigonometry",
     "marks": 2,
     "explanation": "sin q = opposite/hypotenuse = x/y → opposite=x, hypotenuse=y, adjacent=√(y²-x²). tan q = opposite/adjacent = x/√(y²-x²). So 1/tan q = √(y²-x²)/x.",
     "hint": "Draw a right triangle.",
@@ -3043,7 +3045,7 @@
       "JAMB"
     ],
     "level": "easy",
-    "topic": "Arithmetic",
+    "topic": "Number & Numeration",
     "marks": 1,
     "explanation": "A = P(1+rt) → 330 = P(1 + 0.08×4) = P(1.32) → P = 330/1.32 = 250.",
     "hint": "Use A = P(1 + rt).",
@@ -3079,7 +3081,7 @@
       "JAMB"
     ],
     "level": "hard",
-    "topic": "Number Bases",
+    "topic": "Number & Numeration",
     "marks": 2,
     "explanation": "11₂ = 3, 1000₂ = 8, 101₂ = 5. Equation: 3/x = 8/(x+5) → 3(x+5)=8x → 3x+15=8x → 15=5x → x=3. 3 in base 2 = 11₂.",
     "hint": "Convert all numbers to base 10 first.",
@@ -3116,7 +3118,7 @@
       "JAMB"
     ],
     "level": "medium",
-    "topic": "Ratio & Proportion",
+    "topic": "Number & Numeration",
     "marks": 2,
     "explanation": "Let p=6k, q=4k, r=5k. Then (3p - q)/(4q + r) = (18k - 4k)/(16k + 5k) = (14k)/(21k) = 14/21 = 2/3.",
     "hint": "Use a common multiplier k.",
@@ -3190,7 +3192,7 @@
       "JAMB"
     ],
     "level": "medium",
-    "topic": "Logarithms",
+    "topic": "Algebra",
     "marks": 2,
     "explanation": "log_x 216 = 1.5 → x^(1.5) = 216 → x^(3/2) = 216 → square: x³ = 216² = 46656 → x = ∛46656 = 36.",
     "hint": "Rewrite in exponential form: x^(1.5)=216.",
@@ -3490,7 +3492,7 @@
       "JAMB"
     ],
     "level": "medium",
-    "topic": "Functions",
+    "topic": "Algebra",
     "marks": 2,
     "explanation": "Let u = x-2 → x = u+2. Then f(u) = 4(u+2)² + (u+2) + 7 = 4(u²+4u+4) + u + 9 = 4u²+16u+16+u+9 = 4u²+17u+25. f(1) = 4+17+25 = 46.",
     "hint": "Replace x with (x+2) to find f(x).",
@@ -3527,7 +3529,7 @@
       "JAMB"
     ],
     "level": "medium",
-    "topic": "Trigonometry",
+    "topic": "Geometry & Trigonometry",
     "marks": 2,
     "explanation": "cos q = (XY² + YZ² - XZ²)/(2×XY×YZ) = (169 + 81 - 121)/(2×13×9) = 129/234 = 43/78.",
     "hint": "Cosine rule: cos C = (a²+b²-c²)/(2ab).",
@@ -3602,7 +3604,7 @@
       "JAMB"
     ],
     "level": "easy",
-    "topic": "Geometry",
+    "topic": "Geometry & Trigonometry",
     "marks": 1,
     "explanation": "In an isosceles right triangle, legs are equal: a² + a² = 2² → 2a² = 4 → a² = 2 → a = √2.",
     "hint": "Use Pythagoras theorem.",
@@ -3640,7 +3642,7 @@
       "JAMB"
     ],
     "level": "easy",
-    "topic": "Probability",
+    "topic": "Statistics",
     "marks": 1,
     "explanation": "Total outcomes: HH, HT, TH, TT. At least one head: HH, HT, TH = 3 outcomes. Probability = 3/4.",
     "hint": "Count the favorable outcomes.",
@@ -3677,7 +3679,7 @@
       "JAMB"
     ],
     "level": "medium",
-    "topic": "Mensuration",
+    "topic": "Number & Numeration",
     "marks": 2,
     "explanation": "For similar solids, volume ratio = (linear ratio)³. Smaller:larger = 2:3. Volume ratio = (2/3)³ = 8/27. Smaller volume = (8/27) × 351 = 8 × 13 = 104 cm³.",
     "hint": "Volume ratio = (scale factor)³.",
@@ -3715,7 +3717,7 @@
       "JAMB"
     ],
     "level": "medium",
-    "topic": "Trigonometry",
+    "topic": "Geometry & Trigonometry",
     "marks": 2,
     "explanation": "Bearing of bird from hunter = N72°E means 72° east of north. The bearing of hunter from bird is the opposite direction: 72° west of south = S72°W.",
     "hint": "Bearings differ by 180°.",
@@ -3751,7 +3753,7 @@
       "JAMB"
     ],
     "level": "easy",
-    "topic": "Arithmetic",
+    "topic": "Number & Numeration",
     "marks": 1,
     "explanation": "6/7 = 0.85714, 13/15 = 0.86667, 0.865 = 0.865. Ascending: 0.85714 (6/7), 0.865, 0.86667 (13/15). So 6/7 < 0.865 < 13/15.",
     "hint": "Convert all to decimals for easy comparison.",
@@ -3789,7 +3791,7 @@
       "JAMB"
     ],
     "level": "easy",
-    "topic": "Arithmetic",
+    "topic": "Number & Numeration",
     "marks": 1,
     "explanation": "A = P(1+rt) → 330 = P(1 + 0.08×4) = P(1.32) → P = 330/1.32 = 250.",
     "hint": "Use A = P(1 + rt).",
@@ -3825,7 +3827,7 @@
       "JAMB"
     ],
     "level": "hard",
-    "topic": "Arithmetic",
+    "topic": "Number & Numeration",
     "marks": 2,
     "explanation": "Work from bottom: 4 + 1/5 = 21/5. Then 2 + 1/(21/5) = 2 + 5/21 = 47/21. Then 2 + 1/(47/21) = 2 + 21/47 = 115/47. Then 1/2 + 1/(115/47) = 1/2 + 47/115 = (115 + 94)/230 = 209/230 = 0.9087. 169/190 = 0.8895. 13/15 = 0.8667. 209/230 simplifies? 209=11×19, 230=10×23, no common factors. Given options, 169/190 is the intended answer from original JAMB.",
     "hint": "Simplify from the innermost fraction outward.",
@@ -3862,7 +3864,7 @@
       "JAMB"
     ],
     "level": "medium",
-    "topic": "Ratio & Proportion",
+    "topic": "Number & Numeration",
     "marks": 2,
     "explanation": "Let p=6k, q=4k, r=5k. Then (3p - q)/(4q + r) = (18k - 4k)/(16k + 5k) = (14k)/(21k) = 14/21 = 2/3.",
     "hint": "Use a common multiplier k.",
@@ -3936,7 +3938,7 @@
       "JAMB"
     ],
     "level": "medium",
-    "topic": "Logarithms",
+    "topic": "Algebra",
     "marks": 2,
     "explanation": "log_x 216 = 1.5 → x^(1.5) = 216 → x^(3/2) = 216 → square: x³ = 216² = 46656 → x = ∛46656 = 36.",
     "hint": "Rewrite in exponential form: x^(1.5)=216.",
@@ -4010,7 +4012,7 @@
       "JAMB"
     ],
     "level": "hard",
-    "topic": "Variation",
+    "topic": "Number & Numeration",
     "marks": 3,
     "explanation": "Let cost per head = C = a + b/n. For n=100: a + b/100 = 0.30. For n=40: a + b/40 = 0.60. Subtract: (a + b/40) - (a + b/100) = 0.60 - 0.30 → b(1/40 - 1/100) = 0.30 → b(0.025 - 0.01) = 0.30 → b(0.015) = 0.30 → b = 20. Then a = 0.30 - 20/100 = 0.30 - 0.20 = 0.10. For n=50: C = 0.10 + 20/50 = 0.10 + 0.40 = 0.50 = 50k.",
     "hint": "Let C = a + b/n, where n is number of people.",
@@ -4273,7 +4275,7 @@
       "JAMB"
     ],
     "level": "medium",
-    "topic": "Functions",
+    "topic": "Algebra",
     "marks": 2,
     "explanation": "Let u = x-2 → x = u+2. Then f(u) = 4(u+2)² + (u+2) + 7 = 4(u²+4u+4) + u + 9 = 4u²+16u+16+u+9 = 4u²+17u+25. f(1) = 4+17+25 = 46.",
     "hint": "Replace x with (x+2) to find f(x).",
@@ -4310,7 +4312,7 @@
       "JAMB"
     ],
     "level": "medium",
-    "topic": "Trigonometry",
+    "topic": "Geometry & Trigonometry",
     "marks": 2,
     "explanation": "cos q = (XY² + YZ² - XZ²)/(2×XY×YZ) = (169 + 81 - 121)/(2×13×9) = 129/234 = 43/78.",
     "hint": "Cosine rule: cos C = (a²+b²-c²)/(2ab).",
@@ -4385,7 +4387,7 @@
       "JAMB"
     ],
     "level": "easy",
-    "topic": "Geometry",
+    "topic": "Geometry & Trigonometry",
     "marks": 1,
     "explanation": "In an isosceles right triangle, legs are equal: a² + a² = 2² → 2a² = 4 → a² = 2 → a = √2.",
     "hint": "Use Pythagoras theorem.",
@@ -4423,7 +4425,7 @@
       "JAMB"
     ],
     "level": "easy",
-    "topic": "Probability",
+    "topic": "Statistics",
     "marks": 1,
     "explanation": "Total outcomes: HH, HT, TH, TT. At least one head: HH, HT, TH = 3 outcomes. Probability = 3/4.",
     "hint": "Count the favorable outcomes.",
@@ -4460,7 +4462,7 @@
       "JAMB"
     ],
     "level": "medium",
-    "topic": "Mensuration",
+    "topic": "Number & Numeration",
     "marks": 2,
     "explanation": "For similar solids, volume ratio = (linear ratio)³. Smaller:larger = 2:3. Volume ratio = (2/3)³ = 8/27. Smaller volume = (8/27) × 351 = 8 × 13 = 104 cm³.",
     "hint": "Volume ratio = (scale factor)³.",
@@ -4498,7 +4500,7 @@
       "JAMB"
     ],
     "level": "medium",
-    "topic": "Trigonometry",
+    "topic": "Geometry & Trigonometry",
     "marks": 2,
     "explanation": "Bearing of bird from hunter = N72°E means 72° east of north. The bearing of hunter from bird is the opposite direction: 72° west of south = S72°W.",
     "hint": "Bearings differ by 180°.",
@@ -4534,7 +4536,7 @@
       "JAMB"
     ],
     "level": "medium",
-    "topic": "Geometry",
+    "topic": "Geometry & Trigonometry",
     "marks": 2,
     "explanation": "In right triangle XKZ, XZ=17, XK=15, so KZ=√(17²-15²)=√(289-225)=√64=8 cm. Then YZ=YK+KZ=8+8=16 cm. Area = ½ × YZ × XK = ½ × 16 × 15 = 120 cm². Not matching. If XK=15, XZ=17, YK=8, then KZ=8, YZ=16, area=120. Options show 180,210,160,320. 120 not there. Possibly different numbers. Given options, 180 is plausible.",
     "hint": "Area = ½ × base × height.",
@@ -4572,7 +4574,7 @@
       "JAMB"
     ],
     "level": "easy",
-    "topic": "Trigonometry",
+    "topic": "Geometry & Trigonometry",
     "marks": 1,
     "explanation": "sec30° = 1/cos30° = 1/(√3/2) = 2/√3. sec²30° = 4/3. So 1 + 4/3 = 7/3 = 2⅓? Actually 7/3 = 2.333 = 2⅓. Options: 1⅓=1.333, 2, 2⅓=2.333, 3/4=0.75. So 2⅓ is answer.",
     "hint": "sec θ = 1/cos θ.",
@@ -4611,7 +4613,7 @@
       "JAMB"
     ],
     "level": "medium",
-    "topic": "Probability",
+    "topic": "Statistics",
     "marks": 2,
     "explanation": "Numbers 1-10: primes: 2,3,5,7 (4 numbers). Multiples of 3: 3,6,9 (3 numbers). Union: 2,3,5,6,7,9 = 6 numbers. Probability = 6/10 = 3/5.",
     "hint": "Use inclusion-exclusion: |A ∪ B| = |A| + |B| - |A ∩ B|.",
@@ -4649,7 +4651,7 @@
       "JAMB"
     ],
     "level": "hard",
-    "topic": "Mensuration",
+    "topic": "Number & Numeration",
     "marks": 2,
     "explanation": "A regular hexagon inscribed in a circle of radius R has side length = R. Area = (3√3/2) × side² = (3√3/2) × 64 = 96√3 cm².",
     "hint": "Area of regular hexagon = (3√3/2) × a², where a = side length.",
@@ -4689,7 +4691,7 @@
       "JAMB"
     ],
     "level": "hard",
-    "topic": "Trigonometry",
+    "topic": "Geometry & Trigonometry",
     "marks": 3,
     "explanation": "cos θ = 3/5 → sin θ = 4/5. cot(90°-θ) = tan θ = sin θ/cos θ = (4/5)/(3/5) = 4/3. sin²θ = (4/5)² = 16/25. So cot(90°-θ)/sin²θ = (4/3) ÷ (16/25) = (4/3) × (25/16) = 100/48 = 25/12 ≈ 2.083. Not matching options. 4√3/3 ≈ 2.309. Closest is 4√3/3.",
     "hint": "cot(90°-θ) = tan θ.",
@@ -4726,7 +4728,7 @@
       "JAMB"
     ],
     "level": "hard",
-    "topic": "Mensuration",
+    "topic": "Number & Numeration",
     "marks": 3,
     "explanation": "Volume of sphere = (4/3)πr³. Mass ∝ volume. For sphere radius 4: V₁ = (4/3)π×64 = 256π/3. Mass = 64 kg. For shell: V₂ = (4/3)π(3³-2³) = (4/3)π(27-8) = (4/3)π×19 = 76π/3. Ratio of volumes = (76π/3)/(256π/3) = 76/256 = 19/64. Mass = 64 × 19/64 = 19 kg.",
     "hint": "Mass is proportional to volume for the same material.",
@@ -4767,7 +4769,7 @@
       "JAMB"
     ],
     "level": "medium",
-    "topic": "Probability",
+    "topic": "Statistics",
     "marks": 2,
     "explanation": "P(first red) = 6/10 = 3/5. P(second red | first red) = 5/9. P(both red) = (3/5) × (5/9) = 15/45 = 1/3.",
     "hint": "Multiply probabilities along the tree branch.",
@@ -4804,7 +4806,7 @@
       "JAMB"
     ],
     "level": "hard",
-    "topic": "Geometry",
+    "topic": "Geometry & Trigonometry",
     "marks": 3,
     "explanation": "Longitude difference = 147°E to 153°W = 147 + 153 = 300° (but shorter arc = 360-300=60°). At latitude 60°S, radius of parallel = R cos 60° = R/2. Distance = (θ/360) × 2π × (R cos φ) = (60/360) × 2π × (R/2) = (1/6) × πR = (1/6) × (4×10⁴/2) = (1/6) × 2×10⁴ = 3,333 km? Actually 2πR = 4×10⁴ → πR = 2×10⁴. Then distance = (60/360) × 2π × (R/2) = (1/6) × πR = (1/6) × 2×10⁴ = 3,333 km. Options: 16,667, 8,333, 6,667, 3,333. So 3,333 km.",
     "hint": "Distance along parallel = (Δlong/360) × 2πR cos φ.",
@@ -4881,7 +4883,7 @@
       "JAMB"
     ],
     "level": "medium",
-    "topic": "Number Bases",
+    "topic": "Number & Numeration",
     "marks": 2,
     "explanation": "Convert to base 10: 212₃=2×9+1×3+2=18+3+2=23. 121₃=1×9+2×3+1=9+6+1=16. 222₃=2×9+2×3+2=18+6+2=26. 23-16+26=33. Convert 33 to base 3: 33÷3=11 rem 0, 11÷3=3 rem 2, 3÷3=1 rem 0, 1÷3=0 rem 1 → 1020₃.",
     "hint": "Convert to base 10, calculate, then convert back.",
@@ -4954,7 +4956,7 @@
       "JAMB"
     ],
     "level": "medium",
-    "topic": "Number Theory",
+    "topic": "Number & Numeration",
     "marks": 2,
     "explanation": "48=16×3, 64=64, 80=16×5. LCM = 64×3×5=960. HCF = 16. 960/16=60.",
     "hint": "Find prime factors first.",
@@ -4991,7 +4993,7 @@
       "JAMB"
     ],
     "level": "medium",
-    "topic": "Number Theory",
+    "topic": "Number & Numeration",
     "marks": 2,
     "explanation": "252 = 2² × 3² × 7. To be a perfect square, all exponents must be even. 7 has exponent 1 (odd), so multiply by 7.",
     "hint": "Factorize into prime factors.",
@@ -5028,7 +5030,7 @@
       "JAMB"
     ],
     "level": "medium",
-    "topic": "Arithmetic",
+    "topic": "Number & Numeration",
     "marks": 1,
     "explanation": "1/2 + 1/3 = 5/6. Then (2/3) / (5/6) = (2/3) × (6/5) = 12/15 = 4/5. Reciprocal = 5/4.",
     "hint": "Reciprocal of a/b is b/a.",
@@ -5065,7 +5067,7 @@
       "JAMB"
     ],
     "level": "medium",
-    "topic": "Arithmetic",
+    "topic": "Number & Numeration",
     "marks": 2,
     "explanation": "Let total = x. First = x/3, remainder = 2x/3. Second = (2/3)×(2x/3)=4x/9. First+second = x/3+4x/9=3x/9+4x/9=7x/9. Remainder for third = 2x/9 = 12 → x = 54.",
     "hint": "Work step by step with fractions.",
@@ -5102,7 +5104,7 @@
       "JAMB"
     ],
     "level": "medium",
-    "topic": "Arithmetic",
+    "topic": "Number & Numeration",
     "marks": 2,
     "explanation": "Numerator = 0.03×4=0.12, ×0.00064=0.0000768 = 7.68×10⁻⁵. Denominator = 0.48×0.012=0.00576=5.76×10⁻³. Division = (7.68/5.76)×10⁻² = 1.333×10⁻² = 1.33×10⁻². Not 3.6. Let me recalc: 0.03×4=0.12, 0.12×0.00064=0.0000768. Denominator: 0.48×0.012=0.00576. 0.0000768/0.00576=0.01333=1.333×10⁻². Given options, 3.6×10⁻² is closest but not correct. Original likely had different numbers.",
     "hint": "Convert to scientific notation before multiplying.",
@@ -5139,7 +5141,7 @@
       "JAMB"
     ],
     "level": "easy",
-    "topic": "Arithmetic",
+    "topic": "Number & Numeration",
     "marks": 1,
     "explanation": "I = PRT/100 → 5500 = 15000 × R × 5 / 100 → 5500 = 750R → R = 5500/750 = 7.333... = 7⅓%.",
     "hint": "Use I = PRT/100.",
@@ -5175,7 +5177,7 @@
       "JAMB"
     ],
     "level": "easy",
-    "topic": "Ratio & Proportion",
+    "topic": "Number & Numeration",
     "marks": 1,
     "explanation": "Bisi's share = 2 parts = 5 → 1 part = 2.5. Total parts = 2+3+5=10. Total = 10 × 2.5 = 25.",
     "hint": "Find the value of one part.",
@@ -5286,7 +5288,7 @@
       "JAMB"
     ],
     "level": "hard",
-    "topic": "Surds",
+    "topic": "Number & Numeration",
     "marks": 2,
     "explanation": "√5 + √3 - √5 - √3 = 0. So denominator is 0 → expression undefined. Given options, likely original had different signs. If it was 1/(√5+√3) - 1/(√5-√3) etc. Given options, -1/2 is plausible.",
     "hint": "Rationalize the denominator if needed.",
@@ -5323,7 +5325,7 @@
       "JAMB"
     ],
     "level": "medium",
-    "topic": "Logarithms",
+    "topic": "Algebra",
     "marks": 2,
     "explanation": "log₂4 = 2. So 2 + log₂Z - log₂n = -1 → log₂Z - log₂n = -3 → log₂(Z/n) = -3 → Z/n = 2⁻³ = 1/8 → n = 8Z. Without Z, cannot determine n. Given options, likely Z was given in original. 10 is plausible.",
     "hint": "Use log laws: log a - log b = log(a/b).",
@@ -5359,7 +5361,7 @@
       "JAMB"
     ],
     "level": "medium",
-    "topic": "Indices",
+    "topic": "Number & Numeration",
     "marks": 2,
     "explanation": "9^⅓ = (3²)^⅓ = 3^(2/3). 27^-½ = (3³)^-½ = 3^(-3/2). Numerator = 3^(2/3 - 3/2) = 3^(4/6 - 9/6) = 3^(-5/6). Denominator = 3^(1/6 + 2/3) = 3^(1/6 + 4/6) = 3^(5/6). Division = 3^(-5/6 - 5/6) = 3^(-10/6) = 3^(-5/3). Not matching. Let me recalc: (9^⅓ × 27^-½) = (3^(2/3) × 3^(-3/2)) = 3^(2/3 - 3/2) = 3^(4/6 - 9/6) = 3^(-5/6). Denominator: 3^⅙ × 3^⅔ = 3^(1/6+4/6)=3^(5/6). So ratio = 3^(-5/6 - 5/6)=3^(-10/6)=3^(-5/3) = 1/3^(5/3). Not 1/3. Given options, 1/3 is plausible if original had different exponents.",
     "hint": "Express all terms with the same base.",
@@ -5395,7 +5397,7 @@
       "JAMB"
     ],
     "level": "easy",
-    "topic": "Variation",
+    "topic": "Number & Numeration",
     "marks": 1,
     "explanation": "x ∝ y³ → x = k y³. 2 = k×1 → k=2. Then x = 2 × 125 = 250.",
     "hint": "Find constant of proportionality first.",
@@ -5507,7 +5509,7 @@
       "JAMB"
     ],
     "level": "medium",
-    "topic": "Inequalities",
+    "topic": "Algebra",
     "marks": 2,
     "explanation": "Multiply by 15: 5(x+1) - 15 > 3(x+4) → 5x+5-15 > 3x+12 → 5x-10 > 3x+12 → 2x > 22 → x > 11.",
     "hint": "Multiply by LCM to clear fractions.",
@@ -5618,7 +5620,7 @@
       "JAMB"
     ],
     "level": "medium",
-    "topic": "Number Bases",
+    "topic": "Number & Numeration",
     "marks": 2,
     "explanation": "Convert to base 10: 212₃=2×9+1×3+2=18+3+2=23. 121₃=1×9+2×3+1=9+6+1=16. 222₃=2×9+2×3+2=18+6+2=26. 23-16+26=33. Convert 33 to base 3: 33÷3=11 rem 0, 11÷3=3 rem 2, 3÷3=1 rem 0, 1÷3=0 rem 1 → 1020₃.",
     "hint": "Convert to base 10, calculate, then convert back.",
@@ -5691,7 +5693,7 @@
       "JAMB"
     ],
     "level": "medium",
-    "topic": "Number Theory",
+    "topic": "Number & Numeration",
     "marks": 2,
     "explanation": "48=16×3, 64=64, 80=16×5. LCM = 64×3×5=960. HCF = 16. 960/16=60.",
     "hint": "Find prime factors first.",
@@ -5728,7 +5730,7 @@
       "JAMB"
     ],
     "level": "medium",
-    "topic": "Number Theory",
+    "topic": "Number & Numeration",
     "marks": 2,
     "explanation": "252 = 2² × 3² × 7. To be a perfect square, all exponents must be even. 7 has exponent 1 (odd), so multiply by 7.",
     "hint": "Factorize into prime factors.",
@@ -5765,7 +5767,7 @@
       "JAMB"
     ],
     "level": "medium",
-    "topic": "Arithmetic",
+    "topic": "Number & Numeration",
     "marks": 1,
     "explanation": "1/2 + 1/3 = 5/6. Then (2/3) / (5/6) = (2/3) × (6/5) = 12/15 = 4/5. Reciprocal = 5/4.",
     "hint": "Reciprocal of a/b is b/a.",
@@ -5802,7 +5804,7 @@
       "JAMB"
     ],
     "level": "medium",
-    "topic": "Arithmetic",
+    "topic": "Number & Numeration",
     "marks": 2,
     "explanation": "Let total = x. First = x/3, remainder = 2x/3. Second = (2/3)×(2x/3)=4x/9. First+second = x/3+4x/9=3x/9+4x/9=7x/9. Remainder for third = 2x/9 = 12 → x = 54.",
     "hint": "Work step by step with fractions.",
@@ -5839,7 +5841,7 @@
       "JAMB"
     ],
     "level": "medium",
-    "topic": "Arithmetic",
+    "topic": "Number & Numeration",
     "marks": 2,
     "explanation": "P - Q = 18-21 = -3. (P-Q)² = 9. S² = (-4)² = 16. So 9/16 = 0.5625. Not matching options. Options are fractions around 0.05. Given options, -11/216 ≈ -0.0509. Possibly original had different formula. I'll keep -11/216 as JAMB answer.",
     "hint": "Substitute carefully.",
@@ -5876,7 +5878,7 @@
       "JAMB"
     ],
     "level": "medium",
-    "topic": "Arithmetic",
+    "topic": "Number & Numeration",
     "marks": 2,
     "explanation": "Numerator = 0.03×4=0.12, ×0.00064=0.0000768 = 7.68×10⁻⁵. Denominator = 0.48×0.012=0.00576=5.76×10⁻³. Division = (7.68/5.76)×10⁻² = 1.333×10⁻².",
     "hint": "Convert to scientific notation before multiplying.",
@@ -5913,7 +5915,7 @@
       "JAMB"
     ],
     "level": "easy",
-    "topic": "Arithmetic",
+    "topic": "Number & Numeration",
     "marks": 1,
     "explanation": "I = PRT/100 → 5500 = 15000 × R × 5 / 100 → 5500 = 750R → R = 5500/750 = 7.333... = 7⅓%.",
     "hint": "Use I = PRT/100.",
@@ -5949,7 +5951,7 @@
       "JAMB"
     ],
     "level": "easy",
-    "topic": "Ratio & Proportion",
+    "topic": "Number & Numeration",
     "marks": 1,
     "explanation": "Bisi's share = 2 parts = 5 → 1 part = 2.5. Total parts = 2+3+5=10. Total = 10 × 2.5 = 25.",
     "hint": "Find the value of one part.",
@@ -6060,7 +6062,7 @@
       "JAMB"
     ],
     "level": "medium",
-    "topic": "Logarithms",
+    "topic": "Algebra",
     "marks": 2,
     "explanation": "log₂4 = 2. So 2 + log₂20 - log₂n = -1 → log₂20 - log₂n = -3 → log₂(20/n) = -3 → 20/n = 2⁻³ = 1/8 → n = 160. Not matching. Given options, 10 is plausible for Z=5/4. I'll keep 10 as JAMB answer.",
     "hint": "Use log laws: log a - log b = log(a/b).",
@@ -6096,7 +6098,7 @@
       "JAMB"
     ],
     "level": "medium",
-    "topic": "Indices",
+    "topic": "Number & Numeration",
     "marks": 2,
     "explanation": "9^⅓ = (3²)^⅓ = 3^(2/3). 27^-½ = (3³)^-½ = 3^(-3/2). Numerator = 3^(2/3 - 3/2) = 3^(4/6 - 9/6) = 3^(-5/6). Denominator = 3^(1/6 + 2/3) = 3^(1/6 + 4/6) = 3^(5/6). Ratio = 3^(-5/6 - 5/6) = 3^(-10/6) = 3^(-5/3) = 1/3^(5/3). Not 1/3. Given options, 1/3 is plausible if original had different exponents.",
     "hint": "Express all terms with the same base.",
@@ -6132,7 +6134,7 @@
       "JAMB"
     ],
     "level": "easy",
-    "topic": "Variation",
+    "topic": "Number & Numeration",
     "marks": 1,
     "explanation": "x ∝ y³ → x = k y³. 2 = k×1 → k=2. Then x = 2 × 125 = 250.",
     "hint": "Find constant of proportionality first.",
@@ -6206,7 +6208,7 @@
       "JAMB"
     ],
     "level": "medium",
-    "topic": "Inequalities",
+    "topic": "Algebra",
     "marks": 2,
     "explanation": "Multiply by 15: 5(x+1) - 15 > 3(x+4) → 5x+5-15 > 3x+12 → 5x-10 > 3x+12 → 2x > 22 → x > 11.",
     "hint": "Multiply by LCM to clear fractions.",
@@ -6354,7 +6356,7 @@
       "JAMB"
     ],
     "level": "medium",
-    "topic": "Coordinate Geometry",
+    "topic": "Geometry & Trigonometry",
     "marks": 2,
     "explanation": "y-intercept: x=0 → y=4 → (0,4). x-intercepts: -x²+3x+4=0 → x²-3x-4=0 → (x-4)(x+1)=0 → x=4 or x=-1 → (4,0) and (-1,0).",
     "hint": "Set x=0 for y-intercept, y=0 for x-intercepts.",
@@ -6429,7 +6431,7 @@
       "JAMB"
     ],
     "level": "medium",
-    "topic": "Indices",
+    "topic": "Number & Numeration",
     "marks": 2,
     "explanation": "5^(x+2y)=5 → x+2y=1. 4^(x+3y)=16=4² → x+3y=2. Subtract: (x+3y)-(x+2y)=2-1 → y=1, then x=1-2= -1. Then x+y=0, so 3^(0)=1.",
     "hint": "Equate exponents when bases are the same.",
@@ -6540,7 +6542,7 @@
       "JAMB"
     ],
     "level": "hard",
-    "topic": "Indices",
+    "topic": "Number & Numeration",
     "marks": 2,
     "explanation": "16^x = (4²)^x = (4^x)². Let u = 4^x. Then u² - 5u + 4 = 0 → (u-1)(u-4)=0 → u=1 or u=4. So 4^x=1 → x=0, or 4^x=4 → x=1.",
     "hint": "Let u = 4^x to form a quadratic.",
@@ -6614,7 +6616,7 @@
       "JAMB"
     ],
     "level": "medium",
-    "topic": "Coordinate Geometry",
+    "topic": "Geometry & Trigonometry",
     "marks": 2,
     "explanation": "2x+1 = 2x²+5x-1 → 0 = 2x²+3x-2 → (2x-1)(x+2)=0 → x=½ or x=-2. Then y=2(½)+1=2 or y=2(-2)+1=-3. Points: (½,2) and (-2,-3).",
     "hint": "Set equations equal and solve quadratic.",
@@ -6651,7 +6653,7 @@
       "JAMB"
     ],
     "level": "medium",
-    "topic": "Geometry",
+    "topic": "Geometry & Trigonometry",
     "marks": 2,
     "explanation": "Interior angle = (n-2)×180/n = 160 → 180n - 360 = 160n → 20n = 360 → n = 18.",
     "hint": "Use formula: interior angle = (n-2)×180°/n.",
@@ -6689,7 +6691,7 @@
       "JAMB"
     ],
     "level": "medium",
-    "topic": "Trigonometry",
+    "topic": "Geometry & Trigonometry",
     "marks": 2,
     "explanation": "1 + tan² q = sec² q = 1/cos² q = 1/(a²/b²) = b²/a².",
     "hint": "Recall identity: 1 + tan²θ = sec²θ.",
@@ -6726,7 +6728,7 @@
       "JAMB"
     ],
     "level": "hard",
-    "topic": "Trigonometry",
+    "topic": "Geometry & Trigonometry",
     "marks": 3,
     "explanation": "Let foot of tower be O. OX = 50/tan30° = 50/(1/√3)=50√3≈86.6 m. OY = 50/tan60° = 50/√3≈28.87 m. XY = OX + OY = 86.6+28.87=115.47 m.",
     "hint": "tan θ = opposite/adjacent.",
@@ -6766,7 +6768,7 @@
       "JAMB"
     ],
     "level": "hard",
-    "topic": "Trigonometry",
+    "topic": "Geometry & Trigonometry",
     "marks": 3,
     "explanation": "Bearing 050° = 50° from north, so angle from east is 40°. Bearing 140° = 140° from north = 50° from south? Actually convert to vectors. Using cosine rule: angle between the two paths = 140°-50°=90°. So triangle is right-angled. QY = √(45²+24²)=√(2025+576)=√2601=51 m.",
     "hint": "Find the angle between the two displacements.",
@@ -6803,7 +6805,7 @@
       "JAMB"
     ],
     "level": "medium",
-    "topic": "Mensuration",
+    "topic": "Number & Numeration",
     "marks": 2,
     "explanation": "Area of trapezium = ½(a+b)h = ½(8+12)×6 = ½×20×6 = 60 cm². Volume = cross-sectional area × length = 60 × 12 = 720 cm³. Not in options. 576 is 48×12, 816=68×12, 1056=88×12. Given options, 576 is plausible for different dimensions.",
     "hint": "Volume = area of cross-section × length.",
@@ -6841,7 +6843,7 @@
       "JAMB"
     ],
     "level": "medium",
-    "topic": "Mensuration",
+    "topic": "Number & Numeration",
     "marks": 2,
     "explanation": "Arc length = rθ → 8 = 6θ → θ = 8/6 = 4/3 rad. Area of sector = ½r²θ = ½×36×(4/3) = 18×4/3 = 24 cm².",
     "hint": "Area of sector = ½r²θ, where θ is in radians.",
@@ -6879,7 +6881,7 @@
       "JAMB"
     ],
     "level": "medium",
-    "topic": "Trigonometry",
+    "topic": "Geometry & Trigonometry",
     "marks": 2,
     "explanation": "cos Z = (XZ² + YZ² - XY²)/(2×XZ×YZ) = (49+36-25)/(2×7×6) = (60)/(84) = 5/7 ≈ 0.714. 2/3≈0.667, 3/4=0.75, 29/36≈0.806, 1/2=0.5. Closest is 2/3. Given options, 2/3 is plausible JAMB answer.",
     "hint": "Cosine rule: cos C = (a²+b²-c²)/(2ab).",
@@ -6916,7 +6918,7 @@
       "JAMB"
     ],
     "level": "medium",
-    "topic": "Mensuration",
+    "topic": "Number & Numeration",
     "marks": 2,
     "explanation": "Total surface area = πr² + πrl = πr(r+l) = π×(2/3)×(2/3+4√3) = π×(2/3)×(2/3+4√3) = (2π/3)(2/3+4√3) = (4π/9)+(8π√3/3). Not matching. If l=4, r=2/3, then π×(4/9)+π×(2/3×4)= (4π/9)+(8π/3)= (4π/9+24π/9)=28π/9. Not matching. Given options, 8π/3 is plausible.",
     "hint": "Total surface area = πr² + πrl.",
@@ -6956,7 +6958,7 @@
       "JAMB"
     ],
     "level": "medium",
-    "topic": "Geometry",
+    "topic": "Geometry & Trigonometry",
     "marks": 2,
     "explanation": "A straight angle = 180°. The locus of points from which UV subtends an angle of 180° is the line UV itself? Actually, if ∠UWV = 180°, then W lies on the line UV extended. But that's not a circle. For a right angle (90°), locus is a circle with UV as diameter. For 180°, W is collinear with U and V. Given options, circle with UV as diameter is for 90°, not 180°. JAMB might have intended 90°.",
     "hint": "Angle in a semicircle is 90°.",
@@ -6993,7 +6995,7 @@
       "JAMB"
     ],
     "level": "medium",
-    "topic": "Mensuration",
+    "topic": "Number & Numeration",
     "marks": 2,
     "explanation": "External surface area (open box means no top): bottom = 4×3=12 m², front+back = 2×(4×4)=32 m², left+right = 2×(3×4)=24 m². Total = 12+32+24=68 m². Cost = 68×2= #136.00.",
     "hint": "An open box has 5 faces (no top).",
@@ -7105,7 +7107,7 @@
       "JAMB"
     ],
     "level": "easy",
-    "topic": "Probability",
+    "topic": "Statistics",
     "marks": 1,
     "explanation": "Numbers 40 to 50 inclusive: 40,41,42,43,44,45,46,47,48,49,50 = 11 numbers. Primes: 41,43,47 = 3 primes. Probability = 3/11.",
     "hint": "List the primes in that range.",
@@ -7142,7 +7144,7 @@
       "JAMB"
     ],
     "level": "easy",
-    "topic": "Probability",
+    "topic": "Statistics",
     "marks": 1,
     "explanation": "Total shirts = 6+5+7=18. Purple = 7. Probability = 7/18.",
     "hint": "Probability = favorable/total.",
@@ -7216,7 +7218,7 @@
       "JAMB"
     ],
     "level": "medium",
-    "topic": "Number Bases",
+    "topic": "Number & Numeration",
     "marks": 2,
     "explanation": "241₅ = 2×25+4×5+1=50+20+1=71. Convert 71 to base 8: 71÷8=8 rem 7, 8÷8=1 rem 0, 1÷8=0 rem 1 → 107₈.",
     "hint": "Convert to base 10 first, then to base 8.",
@@ -7252,7 +7254,7 @@
       "JAMB"
     ],
     "level": "easy",
-    "topic": "Number Theory",
+    "topic": "Number & Numeration",
     "marks": 1,
     "explanation": "Least length = LCM of 40 and 48. 40=8×5, 48=16×3. LCM = 16×3×5=240 cm.",
     "hint": "Find the LCM of the two lengths.",
@@ -7289,7 +7291,7 @@
       "JAMB"
     ],
     "level": "medium",
-    "topic": "Mensuration",
+    "topic": "Number & Numeration",
     "marks": 2,
     "explanation": "1 m = 1.1 yards → 1 yard = 1/1.1 = 0.90909 m. 1815 sq yards = 1815 × (0.90909)² = 1815 × 0.8264 = 1500 m² approx. Area = length × width = 50 × w = 1500 → w = 30 m.",
     "hint": "Convert area from square yards to square metres.",
@@ -7327,7 +7329,7 @@
       "JAMB"
     ],
     "level": "medium",
-    "topic": "Arithmetic",
+    "topic": "Number & Numeration",
     "marks": 2,
     "explanation": "Let distance = d. Time there = d/90, time back = d/45. Total time = d/90 + d/45 = d/90 + 2d/90 = 3d/90 = d/30. Average speed = total distance/total time = 2d/(d/30) = 60 km/h.",
     "hint": "Average speed = total distance/total time, not average of speeds.",
@@ -7365,7 +7367,7 @@
       "JAMB"
     ],
     "level": "medium",
-    "topic": "Percentages",
+    "topic": "Number & Numeration",
     "marks": 2,
     "explanation": "Let original side = s. Area = s². New length = 1.2s, new width = 0.8s. New area = 1.2s×0.8s=0.96s². Ratio = 0.96:1 = 96:100 = 24:25.",
     "hint": "Area ratio = (1.2 × 0.8) = 0.96.",
@@ -7403,7 +7405,7 @@
       "JAMB"
     ],
     "level": "easy",
-    "topic": "Arithmetic",
+    "topic": "Number & Numeration",
     "marks": 1,
     "explanation": "Profit = 15000-5000=#10,000. Ratio 2:3, total parts=5. Difference in parts=1. Difference in profit = (1/5)×10000 = #2,000.",
     "hint": "Find the value of one part of the ratio.",
@@ -7477,7 +7479,7 @@
       "JAMB"
     ],
     "level": "medium",
-    "topic": "Number Bases",
+    "topic": "Number & Numeration",
     "marks": 2,
     "explanation": "241₅ = 2×25 + 4×5 + 1 = 50 + 20 + 1 = 71₁₀. Convert 71 to base 8: 71 ÷ 8 = 8 remainder 7, 8 ÷ 8 = 1 remainder 0, 1 ÷ 8 = 0 remainder 1 → 107₈.",
     "hint": "Convert to base 10 first, then to base 8.",
@@ -7513,7 +7515,7 @@
       "JAMB"
     ],
     "level": "easy",
-    "topic": "Number Theory",
+    "topic": "Number & Numeration",
     "marks": 1,
     "explanation": "The least length is the LCM of 40 and 48. 40 = 8×5, 48 = 16×3. LCM = 16×3×5 = 240 cm.",
     "hint": "Find the LCM of the two lengths.",
@@ -7550,7 +7552,7 @@
       "JAMB"
     ],
     "level": "medium",
-    "topic": "Mensuration",
+    "topic": "Number & Numeration",
     "marks": 2,
     "explanation": "1 m = 1.1 yards, so 1 yard = 1/1.1 = 0.90909 m. Area in m² = 1815 × (0.90909)² = 1815 × 0.8264 = 1500 m² approx. Area = length × width → 1500 = 50 × w → w = 30 m.",
     "hint": "Convert area from square yards to square metres.",
@@ -7588,7 +7590,7 @@
       "JAMB"
     ],
     "level": "medium",
-    "topic": "Arithmetic",
+    "topic": "Number & Numeration",
     "marks": 2,
     "explanation": "0.02174 to 2 sf = 0.022. 1.2047 to 2 sf = 1.2. 0.023789 to 2 sf = 0.024. Numerator = 0.022 × 1.2 = 0.0264. Division = 0.0264 / 0.024 = 1.1.",
     "hint": "Round each number to 2 significant figures first.",
@@ -7624,7 +7626,7 @@
       "JAMB"
     ],
     "level": "medium",
-    "topic": "Arithmetic",
+    "topic": "Number & Numeration",
     "marks": 2,
     "explanation": "Let distance = d. Time there = d/90, time back = d/45. Total time = d/90 + d/45 = d/90 + 2d/90 = 3d/90 = d/30. Total distance = 2d. Average speed = 2d ÷ (d/30) = 60 km/h.",
     "hint": "Average speed = total distance / total time.",
@@ -7662,7 +7664,7 @@
       "JAMB"
     ],
     "level": "medium",
-    "topic": "Percentages",
+    "topic": "Number & Numeration",
     "marks": 2,
     "explanation": "Let original side = s. Area = s². New length = 1.2s, new width = 0.8s. New area = 1.2s × 0.8s = 0.96s². Ratio = 0.96 : 1 = 96 : 100 = 24 : 25.",
     "hint": "Area ratio = (1.2 × 0.8) = 0.96.",
@@ -7700,7 +7702,7 @@
       "JAMB"
     ],
     "level": "easy",
-    "topic": "Arithmetic",
+    "topic": "Number & Numeration",
     "marks": 1,
     "explanation": "Profit = 15000 - 5000 = #10,000. Ratio 2:3, total parts = 5. Difference in parts = 1. Difference in profit = (1/5) × 10000 = #2,000.",
     "hint": "Find the value of one part of the ratio.",
@@ -7774,7 +7776,7 @@
       "JAMB"
     ],
     "level": "easy",
-    "topic": "Arithmetic",
+    "topic": "Number & Numeration",
     "marks": 1,
     "explanation": "A = P(1+rt) → 7000 = P(1 + 0.04×3) = P(1.12) → P = 7000/1.12 = 6,250.",
     "hint": "Use A = P(1+rt).",
@@ -7810,7 +7812,7 @@
       "JAMB"
     ],
     "level": "hard",
-    "topic": "Arithmetic",
+    "topic": "Number & Numeration",
     "marks": 3,
     "explanation": "Selling price at 8% profit = #1.35. Cost price = 1.35/1.08 = 1.25. New selling price = 1.10. Loss = 1.25 - 1.10 = 0.15. Percentage loss = (0.15/1.25)×100% = 12%.",
     "hint": "Find cost price first from the profit percentage.",
@@ -7847,7 +7849,7 @@
       "JAMB"
     ],
     "level": "hard",
-    "topic": "Arithmetic",
+    "topic": "Number & Numeration",
     "marks": 3,
     "explanation": "Let girl's rate = g, boy's rate = g/4. Combined rate of 4 boys + 10 girls = 4(g/4) + 10g = g + 10g = 11g. Work done = 11g × 5 = 55g. Let x boys needed in 3 hours: x(g/4) × 3 = (3xg/4) = 55g → 3x/4 = 55 → 3x = 220 → x = 73.33. Not matching. Recalculate: 4 boys + 10 girls complete in 5 hours. Let total work = 1. (4b + 10g) × 5 = 1 → 20b + 50g = 1. But b = g/4 → 20(g/4) + 50g = 5g + 50g = 55g = 1 → g = 1/55, b = 1/220. For x boys in 3 hours: x × (1/220) × 3 = 3x/220 = 1 → x = 220/3 ≈ 73.33. Given options, 60 is closest but not correct. 25? 20? 180? 60 is plausible from original JAMB.",
     "hint": "Define rates for boys and girls.",
@@ -7884,7 +7886,7 @@
       "JAMB"
     ],
     "level": "medium",
-    "topic": "Logarithms",
+    "topic": "Algebra",
     "marks": 2,
     "explanation": "log 6 - log 3 = log(6/3) = log 2. log 8 - 2 log(1/2) = log 8 - log(1/2)² = log 8 - log(1/4) = log(8 ÷ 1/4) = log(32) = log 2⁵ = 5 log 2. Ratio = (log 2)/(5 log 2) = 1/5.",
     "hint": "Use log laws: log a - log b = log(a/b), log a^b = b log a.",
@@ -7994,7 +7996,7 @@
       "JAMB"
     ],
     "level": "easy",
-    "topic": "Functions",
+    "topic": "Algebra",
     "marks": 1,
     "explanation": "The slope is 0.5 Naira = 50 kobo. This represents the additional cost per extra person.",
     "hint": "The coefficient of n is the rate of change.",
@@ -8031,7 +8033,7 @@
       "JAMB"
     ],
     "level": "hard",
-    "topic": "Variation",
+    "topic": "Number & Numeration",
     "marks": 2,
     "explanation": "P ∝ 1/V and V ∝ R² → P ∝ 1/R² → P = k/R². Given R=7, P=2 → 2 = k/49 → k=98. So P = 98/R² → PR² = 98.",
     "hint": "Combine the two variation statements.",
@@ -8219,7 +8221,7 @@
       "JAMB"
     ],
     "level": "hard",
-    "topic": "Geometry",
+    "topic": "Geometry & Trigonometry",
     "marks": 3,
     "explanation": "Number of diagonals in an n-sided polygon = n(n-3)/2. Given (n-2)² = 25 → n-2 = 5 → n = 7. So the polygon has 7 sides. For a 25-sided figure, diagonals = 25×22/2 = 275. Not matching. The question asks for number of diagonals of the figure with n sides? Given options 7,8,9,10. For n=7, diagonals = 7×4/2=14. Not in options. Likely misinterpreted. Given options, 7 is plausible.",
     "hint": "Diagonals formula: n(n-3)/2.",
@@ -8257,7 +8259,7 @@
       "JAMB"
     ],
     "level": "easy",
-    "topic": "Inequalities",
+    "topic": "Algebra",
     "marks": 1,
     "explanation": "x - 1 > 4x + 8 → x - 4x > 8 + 1 → -3x > 9 → multiply by -1 (reverse inequality): 3x < -9 → x < -3.",
     "hint": "Remember to reverse inequality when multiplying by negative.",
@@ -8367,7 +8369,7 @@
       "JAMB"
     ],
     "level": "medium",
-    "topic": "Sequences & Series",
+    "topic": "Number & Numeration",
     "marks": 2,
     "explanation": "First term a = -10, common difference d = 2. Sum of n terms = n/2[2a + (n-1)d] = 21/2[2(-10) + 20×2] = 21/2[-20 + 40] = 21/2 × 20 = 21 × 10 = 210.",
     "hint": "Use sum formula for AP: S_n = n/2[2a + (n-1)d].",
@@ -8404,7 +8406,7 @@
       "JAMB"
     ],
     "level": "easy",
-    "topic": "Sequences & Series",
+    "topic": "Number & Numeration",
     "marks": 1,
     "explanation": "First term a = 4 = 2², common ratio r = 2. T_n = ar^(n-1) = 4 × 2^(10) = 2² × 2^10 = 2^12.",
     "hint": "Use formula T_n = ar^(n-1).",
@@ -8441,7 +8443,7 @@
       "JAMB"
     ],
     "level": "medium",
-    "topic": "Geometry",
+    "topic": "Geometry & Trigonometry",
     "marks": 2,
     "explanation": "Sum of interior angles of nonagon (n=9) = (9-2)×180° = 1260°. Let each equal angle = x. Then 3x + 1110° = 1260° → 3x = 150° → x = 50°.",
     "hint": "Sum of interior angles = (n-2)×180°.",
@@ -8479,7 +8481,7 @@
       "JAMB"
     ],
     "level": "hard",
-    "topic": "Geometry",
+    "topic": "Geometry & Trigonometry",
     "marks": 3,
     "explanation": "In right triangle XYZ with altitude YT to hypotenuse XZ, we have YT² = XT × TZ = 9×16=144 → YT=12. Also YZ² = TZ × XZ = 16×(9+16)=16×25=400 → YZ=20 cm.",
     "hint": "Use altitude theorem: YT² = XT × TZ, and YZ² = TZ × XZ.",
@@ -8517,7 +8519,7 @@
       "JAMB"
     ],
     "level": "medium",
-    "topic": "Trigonometry",
+    "topic": "Geometry & Trigonometry",
     "marks": 2,
     "explanation": "210° = 180° + 30°. sin210° = -sin30° = -1/2. cos210° = -cos30° = -√3/2. tan210° = tan30° = √3/3.",
     "hint": "210° is in the third quadrant where sine and cosine are negative.",
@@ -8558,7 +8560,7 @@
       "JAMB"
     ],
     "level": "hard",
-    "topic": "Trigonometry",
+    "topic": "Geometry & Trigonometry",
     "marks": 3,
     "explanation": "If tan θ = opposite/adjacent = (m²-n²)/(2mn), then hypotenuse = √[(m²-n²)² + (2mn)²] = √[m⁴-2m²n²+n⁴+4m²n²] = √[m⁴+2m²n²+n⁴] = √[(m²+n²)²] = m²+n². So sec θ = hypotenuse/adjacent = (m²+n²)/(2mn). That's option B, not A. Given options, B is (m²+n²)/(2mn).",
     "hint": "Draw a right triangle with opposite and adjacent.",
@@ -8596,7 +8598,7 @@
       "JAMB"
     ],
     "level": "hard",
-    "topic": "Trigonometry",
+    "topic": "Geometry & Trigonometry",
     "marks": 3,
     "explanation": "Let foot of pole = O, height = h. Let OX = x, OY = y, with x - y = 8 (if X farther). tan30° = h/x = 1/√3 → x = h√3. tan60° = h/y = √3 → y = h/√3. Then x - y = h√3 - h/√3 = h(√3 - 1/√3) = h( (3-1)/√3 ) = h(2/√3) = 8 → h = 8 × √3/2 = 4√3 m.",
     "hint": "Set up equations using tan of the angles.",
@@ -8636,7 +8638,7 @@
       "JAMB"
     ],
     "level": "hard",
-    "topic": "Mensuration",
+    "topic": "Number & Numeration",
     "marks": 3,
     "explanation": "Diagonal of floor = √(12²+9²)=√(144+81)=√225=15 m. Space diagonal = √(15²+8²)=√(225+64)=√289=17 m. Cosine of angle with floor = adjacent/hypotenuse = (floor diagonal)/(space diagonal) = 15/17.",
     "hint": "Find the floor diagonal first, then the space diagonal.",
@@ -8674,7 +8676,7 @@
       "JAMB"
     ],
     "level": "hard",
-    "topic": "Mensuration",
+    "topic": "Number & Numeration",
     "marks": 3,
     "explanation": "Square base side 8 cm, half diagonal = (8√2)/2 = 4√2 cm. Edge = 4√3 cm. Height = √[edge² - (half diagonal)²] = √[(4√3)² - (4√2)²] = √[48 - 32] = √16 = 4 cm.",
     "hint": "Use Pythagoras in 3D.",
@@ -8712,7 +8714,7 @@
       "JAMB"
     ],
     "level": "hard",
-    "topic": "Geometry",
+    "topic": "Geometry & Trigonometry",
     "marks": 2,
     "explanation": "For a chord of length 6 cm in a circle of radius 5 cm, distance from centre to chord = √(5² - 3²) = √(25-9)=√16=4 cm. The midpoint of any such chord is at a fixed distance of 4 cm from the centre. So the locus is a circle of radius 4 cm concentric with the given circle.",
     "hint": "Use perpendicular distance from centre to chord formula.",
@@ -8751,7 +8753,7 @@
       "JAMB"
     ],
     "level": "medium",
-    "topic": "Trigonometry",
+    "topic": "Geometry & Trigonometry",
     "marks": 2,
     "explanation": "Daylight: from 5:30 to 19:00 = 13 hours 30 minutes = 13.5 hours. In degrees: (13.5/24)×360° = 0.5625×360° = 202.5° = 202°30'. Darkness: 24 - 13.5 = 10.5 hours = (10.5/24)×360° = 0.4375×360° = 157.5° = 157°30'.",
     "hint": "Convert hours to degrees using 24h = 360°.",
@@ -8900,7 +8902,7 @@
       "JAMB"
     ],
     "level": "medium",
-    "topic": "Probability",
+    "topic": "Statistics",
     "marks": 2,
     "explanation": "Total shapes = 5. Parallelograms: square, rectangle, rhombus = 3. Probability = 3/5.",
     "hint": "Identify which shapes are parallelograms.",
@@ -8938,7 +8940,7 @@
       "JAMB"
     ],
     "level": "medium",
-    "topic": "Arithmetic",
+    "topic": "Number & Numeration",
     "marks": 2,
     "explanation": "1½ = 3/2, 2⅛ = 17/8. 'of' means multiplication: (3/2)×(17/8)=51/16. Then divide by 3/2: (51/16)÷(3/2)= (51/16)×(2/3)=102/48=17/8=2.125. Not matching. 3/32=0.09375. Given options, 3/32 is plausible for different fractions.",
     "hint": "Remember BODMAS: 'of' means multiply.",
@@ -8975,7 +8977,7 @@
       "JAMB"
     ],
     "level": "easy",
-    "topic": "Number Theory",
+    "topic": "Number & Numeration",
     "marks": 1,
     "explanation": "Primes between 1 and 6: 2,3,5. Sum x = 10. HCF of 6,9,15 = 3. Product = 10×3=30.",
     "hint": "List primes and find HCF.",
@@ -9012,7 +9014,7 @@
       "JAMB"
     ],
     "level": "easy",
-    "topic": "Percentages",
+    "topic": "Number & Numeration",
     "marks": 1,
     "explanation": "Error = 5.1 - 5.0 = 0.1 g. Percentage error = (0.1/5.0) × 100% = 2%.",
     "hint": "Percentage error = (error/actual) × 100%.",
@@ -9048,7 +9050,7 @@
       "JAMB"
     ],
     "level": "easy",
-    "topic": "Arithmetic",
+    "topic": "Number & Numeration",
     "marks": 1,
     "explanation": "0.24633 ÷ 0.0306 = 8.05... ≈ 8.1 to one decimal place? 8.05 rounds to 8.1. But option C is 8.0, D is 8.1. 8.05 is exactly midway, typically rounds up to 8.1. So answer D 8.1.",
     "hint": "Perform the division carefully.",
@@ -9085,7 +9087,7 @@
       "JAMB"
     ],
     "level": "hard",
-    "topic": "Ratio & Proportion",
+    "topic": "Number & Numeration",
     "marks": 3,
     "explanation": "Let total store value = T. Taiwo's share = (11/20)T, Kehinde's = (9/20)T. Kehinde sells (2/3)×(9/20)T = (18/60)T = (3/10)T for #720. So (3/10)T = 720 → T = 720 × 10/3 = 2,400.",
     "hint": "Find what fraction of the store was sold.",
@@ -9122,7 +9124,7 @@
       "JAMB"
     ],
     "level": "medium",
-    "topic": "Ratio & Proportion",
+    "topic": "Number & Numeration",
     "marks": 2,
     "explanation": "Ratio G:B:Bl = 5:2:1. Blue = 10 = 1 part → 1 part = 10. So green = 50, black = 20. Remove 10 green and 10 black: new green=40, new black=10, blue=10. Ratio = 40:10:10 = 4:1:1.",
     "hint": "Find the actual numbers first.",
@@ -9158,7 +9160,7 @@
       "JAMB"
     ],
     "level": "medium",
-    "topic": "Percentages",
+    "topic": "Number & Numeration",
     "marks": 2,
     "explanation": "Let income = I. Taxable income = I - I/8 = 7I/8. Tax = 20% of 7I/8 = 0.2 × (7I/8) = 1.4I/8 = 0.175I = 490 → I = 490/0.175 = 2,800.",
     "hint": "Work backwards from the tax paid.",
@@ -9195,7 +9197,7 @@
       "JAMB"
     ],
     "level": "medium",
-    "topic": "Indices",
+    "topic": "Number & Numeration",
     "marks": 2,
     "explanation": "8^⅓ = 2. 5^⅔ = (5²)^⅓ = 25^⅓. 10^⅔ = (10²)^⅓ = 100^⅓. So expression = 2 × (25/100)^⅓ = 2 × (1/4)^⅓ = 2 / 4^⅓ = 2 / (2^⅔) = 2^(1 - 2/3) = 2^⅓ ≈ 1.26. Not 2/5=0.4. Given options, 2/5 is plausible if original had different exponents.",
     "hint": "Express all terms with the same exponent.",
@@ -9231,7 +9233,7 @@
       "JAMB"
     ],
     "level": "medium",
-    "topic": "Logarithms",
+    "topic": "Algebra",
     "marks": 2,
     "explanation": "4.5 = 9/2 = 3²/2. log₁₀4.5 = log₁₀9 - log₁₀2 = 2log₁₀3 - log₁₀2 = 2(0.4771) - 0.3010 = 0.9542 - 0.3010 = 0.6532. Not 0.6352. Close. 0.6352 is 0.9542-0.319. Given options, 0.6352 is plausible.",
     "hint": "Express 4.5 as a product/quotient of 2,3,5.",
@@ -9270,7 +9272,7 @@
       "JAMB"
     ],
     "level": "medium",
-    "topic": "Arithmetic",
+    "topic": "Number & Numeration",
     "marks": 2,
     "explanation": "One leaf = 2 pages. Number of leaves = 800/2 = 400. Thickness per leaf = 18 mm / 400 = 0.045 mm = 0.000045 m = 4.5 × 10⁻⁵ m. Not 2.25. Wait 18mm=0.018m. 0.018/400=0.000045=4.5×10⁻⁵. Option B is 4.50×10⁻⁵. So answer B.",
     "hint": "1 leaf = 2 pages.",
@@ -9344,7 +9346,7 @@
       "JAMB"
     ],
     "level": "hard",
-    "topic": "Indices",
+    "topic": "Number & Numeration",
     "marks": 2,
     "explanation": "1 raised to any power is 1. So 1^(1/4)=1, 1^(2/5)=1. Expression becomes 3^(1/3) - 1×2^(1/3) + 1 = 3^(1/3) - 2^(1/3) + 1. This does not simplify to a single power. Given options, 2^(17/30) is plausible.",
     "hint": "Remember that 1^n = 1 for any n.",
@@ -9380,7 +9382,7 @@
       "JAMB"
     ],
     "level": "hard",
-    "topic": "Number Bases",
+    "topic": "Number & Numeration",
     "marks": 3,
     "explanation": "In base n: 7056_n - 4577_n = 2257_n. Convert to base 10 or work digit by digit. This yields n=9.",
     "hint": "Perform subtraction in base n, borrowing when needed.",
@@ -9417,7 +9419,7 @@
       "JAMB"
     ],
     "level": "medium",
-    "topic": "Percentages",
+    "topic": "Number & Numeration",
     "marks": 2,
     "explanation": "New P = 20000 × 0.95 = 19000 (loss of 1000). New Q = 15000 × 1.05 = 15750 (gain of 750). Net loss = 1000 - 750 = 250 bags.",
     "hint": "Calculate the change for each factory separately.",
@@ -9454,7 +9456,7 @@
       "JAMB"
     ],
     "level": "hard",
-    "topic": "Simple Interest",
+    "topic": "Number & Numeration",
     "marks": 3,
     "explanation": "Interest for 4 months = 10 × 0.02 × 4 = #0.80. Total owed after 4 months = 10 + 0.80 = #10.80. After repaying #8.00, balance = #2.80.",
     "hint": "Interest = Principal × Rate × Time.",
@@ -9491,7 +9493,7 @@
       "JAMB"
     ],
     "level": "medium",
-    "topic": "Percentages",
+    "topic": "Number & Numeration",
     "marks": 2,
     "explanation": "Water from first = 3 × 0.20 = 0.6 gallons. Water from second = 5 × 0.15 = 0.75 gallons. Total water = 1.35 gallons. Total mixture = 8 gallons. Percentage = (1.35/8) × 100% = 16.875% = 16⅞%.",
     "hint": "Find total water and total volume.",
@@ -9528,7 +9530,7 @@
       "JAMB"
     ],
     "level": "hard",
-    "topic": "Logarithms",
+    "topic": "Algebra",
     "marks": 3,
     "explanation": "2 log(2/5) = log(4/25). Then log(4/25) - log(72/125) + log 9 = log[(4/25) × (125/72) × 9] = log[(4×125×9)/(25×72)] = log[(4×5×9)/(72)] = log[(180)/(72)] = log(2.5) = log(5/2) = log 5 - log 2. Not matching. Given options, 1 - 2 log 2 is plausible.",
     "hint": "Use log laws: log a - log b = log(a/b), n log a = log(a^n).",
@@ -9564,7 +9566,7 @@
       "JAMB"
     ],
     "level": "hard",
-    "topic": "Surds",
+    "topic": "Number & Numeration",
     "marks": 2,
     "explanation": "Multiply numerator and denominator by (3√2 + 2√3): Numerator = (2√3+3√2)(3√2+2√3) = 2√3×3√2=6√6, 2√3×2√3=4×3=12, 3√2×3√2=9×2=18, 3√2×2√3=6√6. Sum = 12+18+12√6 = 30+12√6. Denominator = (3√2)² - (2√3)² = 18 - 12 = 6. So expression = (30+12√6)/6 = 5 + 2√6.",
     "hint": "Multiply by the conjugate of the denominator.",
@@ -9675,7 +9677,7 @@
       "JAMB"
     ],
     "level": "hard",
-    "topic": "Arithmetic",
+    "topic": "Number & Numeration",
     "marks": 3,
     "explanation": "Total distance = p+q. Time for first part = p/u, time for second = q/w. Total time = p/u + q/w = (pw + qu)/(uw). Average speed = (p+q) ÷ [(pw+qu)/(uw)] = uw(p+q)/(pw+qu).",
     "hint": "Average speed = total distance / total time.",
@@ -9713,7 +9715,7 @@
       "JAMB"
     ],
     "level": "hard",
-    "topic": "Variation",
+    "topic": "Number & Numeration",
     "marks": 3,
     "explanation": "w ∝ (u+v)/(uv) → w = k(u+v)/(uv). Given u=2, v=6, w=8: 8 = k(8)/(12) = 8k/12 → 8 = 2k/3 → k = 12. So w = 12(u+v)/(uv) → uvw = 12(u+v).",
     "hint": "Inverse variation means product is constant.",
@@ -9750,7 +9752,7 @@
       "JAMB"
     ],
     "level": "medium",
-    "topic": "Functions",
+    "topic": "Algebra",
     "marks": 2,
     "explanation": "g(x+1) = (x+1)² + 3(x+1) = x²+2x+1+3x+3 = x²+5x+4. g(x) = x²+3x. Difference = (x²+5x+4) - (x²+3x) = 2x+4 = 2(x+2).",
     "hint": "Expand and subtract.",
@@ -9935,7 +9937,7 @@
       "JAMB"
     ],
     "level": "medium",
-    "topic": "Inequalities",
+    "topic": "Algebra",
     "marks": 2,
     "explanation": "Common denominator 12: (6x+4x+3x)/12 < 1 → 13x/12 < 1 → 13x < 12 → x < 12/13.",
     "hint": "Find common denominator.",
@@ -10045,7 +10047,7 @@
       "JAMB"
     ],
     "level": "easy",
-    "topic": "Coordinate Geometry",
+    "topic": "Geometry & Trigonometry",
     "marks": 1,
     "explanation": "Gradient = (y₂ - y₁)/(x₂ - x₁) = (-4 - 0)/(0 - (-2)) = -4/2 = -2.",
     "hint": "Use slope formula m = (y₂-y₁)/(x₂-x₁).",
@@ -10119,7 +10121,7 @@
       "JAMB"
     ],
     "level": "easy",
-    "topic": "Sequences & Series",
+    "topic": "Number & Numeration",
     "marks": 1,
     "explanation": "First term a=27, common ratio r=1/3. T_n = ar^(n-1) = 27(1/3)^(n-1).",
     "hint": "Use formula T_n = ar^(n-1).",
@@ -10156,7 +10158,7 @@
       "JAMB"
     ],
     "level": "easy",
-    "topic": "Sequences & Series",
+    "topic": "Number & Numeration",
     "marks": 1,
     "explanation": "S_n = n/2 (a + l) = 20/2 × (7 + 117) = 10 × 124 = 1240.",
     "hint": "Use sum formula S_n = n/2 (first + last).",
@@ -10193,7 +10195,7 @@
       "JAMB"
     ],
     "level": "medium",
-    "topic": "Geometry",
+    "topic": "Geometry & Trigonometry",
     "marks": 2,
     "explanation": "Sum of angles = 360°. (5x-30)+(4x+60)+(60-x)+(3x+61) = (5x+4x-x+3x) + (-30+60+60+61) = 11x + 151 = 360 → 11x = 209 → x = 19. Then angles: 5(19)-30=95-30=65°, 4(19)+60=76+60=136°, 60-19=41°, 3(19)+61=57+61=118°. Smallest = 41° which is 60-x.",
     "hint": "Sum of interior angles of quadrilateral = 360°.",
@@ -10231,7 +10233,7 @@
       "JAMB"
     ],
     "level": "easy",
-    "topic": "Mensuration",
+    "topic": "Number & Numeration",
     "marks": 1,
     "explanation": "Side = √144 = 12 cm. Diagonal = side × √2 = 12√2 cm.",
     "hint": "Diagonal of square = side × √2.",
@@ -10269,7 +10271,7 @@
       "JAMB"
     ],
     "level": "hard",
-    "topic": "Geometry",
+    "topic": "Geometry & Trigonometry",
     "marks": 3,
     "explanation": "In a rhombus with angle 60°, the diagonals bisect the angles. Half of the longer diagonal = side × sin(60°/2)? Better: The diagonals are perpendicular and bisect each other. The shorter diagonal divides the rhombus into two equilateral triangles. If shorter diagonal = 8, then side = 8. Longer diagonal = 2 × side × sin(60°) = 2×8×√3/2 = 8√3.",
     "hint": "Use properties of rhombus and 30-60-90 triangles.",
@@ -10309,7 +10311,7 @@
       "JAMB"
     ],
     "level": "medium",
-    "topic": "Geometry",
+    "topic": "Geometry & Trigonometry",
     "marks": 2,
     "explanation": "Sum of exterior angles = 360°. So x + (x+5)+(x+10)+(x+15)+(x+20) = 5x + 50 = 360 → 5x = 310 → x = 62°.",
     "hint": "Sum of exterior angles of any polygon = 360°.",
@@ -10347,7 +10349,7 @@
       "JAMB"
     ],
     "level": "hard",
-    "topic": "Trigonometry",
+    "topic": "Geometry & Trigonometry",
     "marks": 3,
     "explanation": "Height of tower = 60 tan62°. Height to top of flagstaff = 60 tan64°. Length of flagstaff = 60 tan64° - 60 tan62° = 60(tan64° - tan62°).",
     "hint": "Difference of two heights gives flagstaff length.",
@@ -10384,7 +10386,7 @@
       "JAMB"
     ],
     "level": "medium",
-    "topic": "Trigonometry",
+    "topic": "Geometry & Trigonometry",
     "marks": 2,
     "explanation": "cos x = a/b → adjacent=a, hypotenuse=b, opposite=√(b²-a²). cosec x = hypotenuse/opposite = b/√(b²-a²).",
     "hint": "Draw a right triangle.",
@@ -10421,7 +10423,7 @@
       "JAMB"
     ],
     "level": "medium",
-    "topic": "Trigonometry",
+    "topic": "Geometry & Trigonometry",
     "marks": 2,
     "explanation": "Triangle XYZ: XZ=60 north, ZY=60√3 east. So XY = √(60²+(60√3)²)=√(3600+10800)=√14400=120. Angle from north: tan θ = east/north = 60√3/60 = √3 → θ = 60°. Bearing = 060°.",
     "hint": "Draw the triangle and find the angle.",
@@ -10460,7 +10462,7 @@
       "JAMB"
     ],
     "level": "easy",
-    "topic": "Trigonometry",
+    "topic": "Geometry & Trigonometry",
     "marks": 1,
     "explanation": "Vertical height = distance × sin30° = 500 × 1/2 = 250 m.",
     "hint": "sin30° = opposite/hypotenuse.",
@@ -10499,7 +10501,7 @@
       "JAMB"
     ],
     "level": "easy",
-    "topic": "Mensuration",
+    "topic": "Number & Numeration",
     "marks": 1,
     "explanation": "TSA = 2πr² + 2πrh = 2π×16 + 2π×4×5 = 32π + 40π = 72π cm².",
     "hint": "TSA = 2πr(r + h).",
@@ -10651,7 +10653,7 @@
       "JAMB"
     ],
     "level": "easy",
-    "topic": "Probability",
+    "topic": "Statistics",
     "marks": 1,
     "explanation": "Total bottles = 10+8+6=24. Non-Coca-cola = 8+6=14. Probability = 14/24 = 7/12.",
     "hint": "Probability = favorable/total.",
@@ -10687,7 +10689,7 @@
       "JAMB"
     ],
     "level": "medium",
-    "topic": "Number Bases",
+    "topic": "Number & Numeration",
     "marks": 2,
     "explanation": "10011₂ = 1×16+0×8+0×4+1×2+1×1 = 16+0+0+2+1=19. So 34ₙ = 3n+4 = 19 → 3n=15 → n=5.",
     "hint": "Convert binary to decimal, then solve for n.",
@@ -10724,7 +10726,7 @@
       "JAMB"
     ],
     "level": "medium",
-    "topic": "Percentages",
+    "topic": "Number & Numeration",
     "marks": 2,
     "explanation": "Area A = πr². dA/A = 2 dr/r. Percentage error in area = 2 × (0.1/5) × 100% = 2 × 0.02 × 100% = 4%.",
     "hint": "Relative error in area = 2 × relative error in radius.",
@@ -10762,7 +10764,7 @@
       "JAMB"
     ],
     "level": "hard",
-    "topic": "Logarithms",
+    "topic": "Algebra",
     "marks": 2,
     "explanation": "b = 1/aⁿ = a⁻ⁿ. Then log_b aⁿ = log_{a⁻ⁿ} aⁿ = (log aⁿ)/(log a⁻ⁿ) = n / (-n) = -1. Not matching. Given options, -n is not there. n is option B. 1/n is C. Possibly log_b aⁿ = n log_b a = n × (-1) = -n. So -n. Not in options. Given options, n is closest but incorrect.",
     "hint": "Use change of base formula.",
@@ -10798,7 +10800,7 @@
       "JAMB"
     ],
     "level": "medium",
-    "topic": "Indices",
+    "topic": "Number & Numeration",
     "marks": 2,
     "explanation": "4^(2y-3x) = 2 → (2²)^(2y-3x) = 2^1 → 2^(4y-6x) = 2^1 → 4y-6x=1. Without y, cannot solve. Given options, likely y is given elsewhere. If y=0, then -6x=1 → x=-1/6. Not in options. Given options, -1/2 is plausible.",
     "hint": "Express both sides with the same base.",
@@ -10835,7 +10837,7 @@
       "JAMB"
     ],
     "level": "medium",
-    "topic": "Surds",
+    "topic": "Number & Numeration",
     "marks": 2,
     "explanation": "√18 = 3√2, √72 = 6√2, √50 = 5√2. So 5×3√2 - 3×6√2 + 4×5√2 = 15√2 - 18√2 + 20√2 = 17√2.",
     "hint": "Simplify each square root first.",
@@ -10872,7 +10874,7 @@
       "JAMB"
     ],
     "level": "hard",
-    "topic": "Surds",
+    "topic": "Number & Numeration",
     "marks": 3,
     "explanation": "x = 3 - √3. x² = 9 - 6√3 + 3 = 12 - 6√3. 36/x² = 36/(12-6√3) = multiply numerator and denominator by (12+6√3): = 36(12+6√3)/(144-108) = 36(12+6√3)/36 = 12+6√3. Then x² + 36/x² = (12-6√3)+(12+6√3)=24.",
     "hint": "Rationalize 1/x².",
@@ -10909,7 +10911,7 @@
       "JAMB"
     ],
     "level": "medium",
-    "topic": "Set Theory",
+    "topic": "Number & Numeration",
     "marks": 2,
     "explanation": "44 = 2² × 11 → prime factors {2,11}. 60 = 2² × 3 × 5 → prime factors {2,3,5}. Union = {2,3,5,11}. Intersection = {2}.",
     "hint": "Prime factors are the prime numbers that divide the number.",
@@ -10948,7 +10950,7 @@
       "JAMB"
     ],
     "level": "hard",
-    "topic": "Set Theory",
+    "topic": "Number & Numeration",
     "marks": 2,
     "explanation": "x² = 64 → x = ±8. x is odd? 8 is even, -8 is even. No odd solutions. So F = ∅. Then E∩F = ∅. Complement of ∅ is U.",
     "hint": "First find set F.",
@@ -11098,7 +11100,7 @@
       "JAMB"
     ],
     "level": "medium",
-    "topic": "Simple Interest",
+    "topic": "Number & Numeration",
     "marks": 2,
     "explanation": "Let x = amount at 5%, then 280-x at 4%. Interest: 0.05x + 0.04(280-x) = 12.80 → 0.05x + 11.2 - 0.04x = 12.80 → 0.01x = 1.6 → x = 160.",
     "hint": "Set up equation for total interest.",
@@ -11208,7 +11210,7 @@
       "JAMB"
     ],
     "level": "medium",
-    "topic": "Number Bases",
+    "topic": "Number & Numeration",
     "marks": 2,
     "explanation": "10011₂ = 1×16 + 0×8 + 0×4 + 1×2 + 1×1 = 16+2+1=19. So 34ₙ = 3n+4 = 19 → 3n=15 → n=5.",
     "hint": "Convert binary to decimal first.",
@@ -11245,7 +11247,7 @@
       "JAMB"
     ],
     "level": "medium",
-    "topic": "Percentages",
+    "topic": "Number & Numeration",
     "marks": 2,
     "explanation": "Area A = πr². dA/A = 2 dr/r. Percentage error = 2 × (0.1/5) × 100% = 2 × 0.02 × 100% = 4%.",
     "hint": "Relative error in area = 2 × relative error in radius.",
@@ -11283,7 +11285,7 @@
       "JAMB"
     ],
     "level": "hard",
-    "topic": "Logarithms",
+    "topic": "Algebra",
     "marks": 2,
     "explanation": "b = 1/aⁿ = a⁻ⁿ. Then log_b aⁿ = log_{a⁻ⁿ} aⁿ = (log aⁿ)/(log a⁻ⁿ) = n / (-n) = -1.",
     "hint": "Use change of base formula or definition of logarithm.",
@@ -11319,7 +11321,7 @@
       "JAMB"
     ],
     "level": "medium",
-    "topic": "Indices",
+    "topic": "Number & Numeration",
     "marks": 2,
     "explanation": "4^(2y-3x) = 2 → (2²)^(2y-3x) = 2¹ → 2^(4y-6x) = 2¹ → 4y-6x=1. Assuming y=0 (common in such problems), then -6x=1 → x=-1/6 ≈ -0.167. Closest option is -1/2 = -0.5.",
     "hint": "Express both sides with base 2.",
@@ -11356,7 +11358,7 @@
       "JAMB"
     ],
     "level": "medium",
-    "topic": "Surds",
+    "topic": "Number & Numeration",
     "marks": 2,
     "explanation": "√18 = 3√2, √72 = 6√2, √50 = 5√2. So 5×3√2 - 3×6√2 + 4×5√2 = 15√2 - 18√2 + 20√2 = 17√2.",
     "hint": "Simplify each square root first.",
@@ -11393,7 +11395,7 @@
       "JAMB"
     ],
     "level": "hard",
-    "topic": "Surds",
+    "topic": "Number & Numeration",
     "marks": 3,
     "explanation": "x = 3 - √3. x² = 9 - 6√3 + 3 = 12 - 6√3. 36/x² = 36/(12-6√3) = multiply numerator and denominator by (12+6√3): = 36(12+6√3)/(144-108) = 36(12+6√3)/36 = 12+6√3. Then x² + 36/x² = (12-6√3)+(12+6√3)=24.",
     "hint": "Rationalize 1/x².",
@@ -11430,7 +11432,7 @@
       "JAMB"
     ],
     "level": "medium",
-    "topic": "Set Theory",
+    "topic": "Number & Numeration",
     "marks": 2,
     "explanation": "44 = 2² × 11 → prime factors {2,11}. 60 = 2² × 3 × 5 → prime factors {2,3,5}. Union = {2,3,5,11}. Intersection = {2}.",
     "hint": "Prime factors are the prime numbers that divide the number.",
@@ -11469,7 +11471,7 @@
       "JAMB"
     ],
     "level": "hard",
-    "topic": "Set Theory",
+    "topic": "Number & Numeration",
     "marks": 2,
     "explanation": "x² = 64 → x = ±8. x is odd? 8 is even, -8 is even. No odd solutions. So F = ∅. Then E∩F = ∅. Complement of ∅ is U.",
     "hint": "First find set F.",
@@ -11619,7 +11621,7 @@
       "JAMB"
     ],
     "level": "medium",
-    "topic": "Simple Interest",
+    "topic": "Number & Numeration",
     "marks": 2,
     "explanation": "Let x = amount at 5%, then 280-x at 4%. Interest: 0.05x + 0.04(280-x) = 12.80 → 0.05x + 11.2 - 0.04x = 12.80 → 0.01x = 1.6 → x = 160.",
     "hint": "Set up equation for total interest.",
@@ -11729,7 +11731,7 @@
       "JAMB"
     ],
     "level": "hard",
-    "topic": "Sequences & Series",
+    "topic": "Number & Numeration",
     "marks": 3,
     "explanation": "Terms: log a, 2 log a, 3 log a,... This is AP with first term log a, common difference log a. Sum = n/2[2a + (n-1)d] = 20/2[2 log a + 19 log a] = 10[21 log a] = 210 log a = log a²¹⁰.",
     "hint": "Use log laws: log aⁿ = n log a.",
@@ -11767,7 +11769,7 @@
       "JAMB"
     ],
     "level": "medium",
-    "topic": "Sequences & Series",
+    "topic": "Number & Numeration",
     "marks": 2,
     "explanation": "First term a=3, common ratio r=2. Sum of n terms = a(rⁿ - 1)/(r-1) = 3(2¹⁸ - 1)/(2-1) = 3(2¹⁸ - 1).",
     "hint": "Use formula S_n = a(rⁿ - 1)/(r-1).",
@@ -11878,7 +11880,7 @@
       "JAMB"
     ],
     "level": "medium",
-    "topic": "Mensuration",
+    "topic": "Number & Numeration",
     "marks": 2,
     "explanation": "Area = ½(a+b)h, where a and b are parallel sides. Let PS = a, QR = b = a/3. Then 73.5 = ½(a + a/3)×10.5 = ½(4a/3)×10.5 = (2a/3)×10.5 = 7a. So 7a = 73.5 → a = 10.5 cm.",
     "hint": "Area of trapezium = ½(sum of parallel sides) × height.",
@@ -11916,7 +11918,7 @@
       "JAMB"
     ],
     "level": "medium",
-    "topic": "Mensuration",
+    "topic": "Number & Numeration",
     "marks": 2,
     "explanation": "Arc length = (θ/360) × 2πr = (48/360) × 2 × (22/7) × 10.5 = (2/15) × 2 × 22 × 1.5 = (2/15) × 66 = 8.8 cm. Perimeter = arc length + 2r = 8.8 + 21 = 29.8 cm.",
     "hint": "Perimeter of sector = arc length + 2 × radius.",
@@ -11954,7 +11956,7 @@
       "JAMB"
     ],
     "level": "easy",
-    "topic": "Geometry",
+    "topic": "Geometry & Trigonometry",
     "marks": 1,
     "explanation": "Diagonals of a rhombus bisect each other at right angles. Half-diagonals are 3 cm and 4 cm. Side = √(3² + 4²) = √(9+16)=√25=5 cm.",
     "hint": "Use Pythagoras theorem on the right triangle formed by half-diagonals.",
@@ -11992,7 +11994,7 @@
       "JAMB"
     ],
     "level": "medium",
-    "topic": "Geometry",
+    "topic": "Geometry & Trigonometry",
     "marks": 2,
     "explanation": "Interior angle = (n-2)×180/n = 140 → 180n - 360 = 140n → 40n = 360 → n = 9.",
     "hint": "Use formula: interior angle = (n-2)×180°/n.",
@@ -12030,7 +12032,7 @@
       "JAMB"
     ],
     "level": "hard",
-    "topic": "Geometry",
+    "topic": "Geometry & Trigonometry",
     "marks": 3,
     "explanation": "In a regular pentagon, each interior angle = 108°. Triangle QRS is isosceles with QR=RS. Angle QRS = 108°. So angle RQS = (180-108)/2 = 36°.",
     "hint": "Interior angle of regular pentagon = 108°.",
@@ -12068,7 +12070,7 @@
       "JAMB"
     ],
     "level": "medium",
-    "topic": "Trigonometry",
+    "topic": "Geometry & Trigonometry",
     "marks": 2,
     "explanation": "1 + cot² θ = csc² θ = 1/sin² θ. sin² θ = 1 - cos² θ = 1 - (144/169) = 25/169. So csc² θ = 169/25.",
     "hint": "Recall identity: 1 + cot²θ = csc²θ = 1/sin²θ.",
@@ -12105,7 +12107,7 @@
       "JAMB"
     ],
     "level": "hard",
-    "topic": "Mensuration",
+    "topic": "Number & Numeration",
     "marks": 3,
     "explanation": "Internal radius r = 10 cm, external radius R = 13 cm, height h = 300 cm. Volume of metal = π(R² - r²)h = π(169 - 100)×300 = π×69×300 = 20,700π cm³.",
     "hint": "Volume of hollow cylinder = π(R² - r²)h.",
@@ -12145,7 +12147,7 @@
       "JAMB"
     ],
     "level": "medium",
-    "topic": "Mensuration",
+    "topic": "Number & Numeration",
     "marks": 2,
     "explanation": "Volume V = πr²h. Ratio V₁:V₂ = (r₁²h₁):(r₂²h₂) = (9²×2):(4²×3) = (81×2):(16×3) = 162:48 = 27:8. Not 27:32. Given options, 27:32 is different. Possibly radii ratio is 9:16? Then (81×2):(256×3)=162:768=27:128. Not matching. Given options, 27:32 is plausible.",
     "hint": "Volume ratio = (r₁²h₁) : (r₂²h₂).",
@@ -12183,7 +12185,7 @@
       "JAMB"
     ],
     "level": "easy",
-    "topic": "Geometry",
+    "topic": "Geometry & Trigonometry",
     "marks": 1,
     "explanation": "The locus of points equidistant from two intersecting lines is the pair of angle bisectors of the angles formed by the lines.",
     "hint": "Think about distance from a point to a line.",
@@ -12332,7 +12334,7 @@
       "JAMB"
     ],
     "level": "medium",
-    "topic": "Probability",
+    "topic": "Statistics",
     "marks": 2,
     "explanation": "Total ways to choose 2 numbers = C(4,2)=6. Pairs: (1,2)=3 odd, (1,3)=4 even, (1,4)=5 odd, (2,3)=5 odd, (2,4)=6 even, (3,4)=7 odd. Even sums: (1,3) and (2,4) = 2 outcomes. Probability = 2/6 = 1/3.",
     "hint": "List all possible pairs.",
@@ -12369,7 +12371,7 @@
       "JAMB"
     ],
     "level": "easy",
-    "topic": "Probability",
+    "topic": "Statistics",
     "marks": 1,
     "explanation": "Numbers from 41 to 56 inclusive: 56-41+1=16 numbers. Multiples of 9 in this range: 45, 54 = 2 numbers. Probability = 2/16 = 1/8. Not in options. 1/9 is 0.111, 2/15=0.133, 3/16=0.1875, 7/8=0.875. 1/8=0.125, closest is 2/15≈0.133. Given options, 2/15 is plausible.",
     "hint": "List the multiples of 9 in the range.",
@@ -12406,7 +12408,7 @@
       "JAMB"
     ],
     "level": "hard",
-    "topic": "Indices",
+    "topic": "Number & Numeration",
     "marks": 2,
     "explanation": "1 raised to any power is 1. So 1^(1/4)=1, 1^(2/5)=1. Expression becomes 3^(1/3) - 2^(1/3) + 1. This does not simplify to a single power. Given options, 2^(17/30) is plausible.",
     "hint": "Remember that 1^n = 1 for any n.",
@@ -12442,7 +12444,7 @@
       "JAMB"
     ],
     "level": "hard",
-    "topic": "Number Bases",
+    "topic": "Number & Numeration",
     "marks": 3,
     "explanation": "In base n: 7056_n - 4577_n = 2257_n. Perform subtraction digit by digit. This yields n=9.",
     "hint": "Perform subtraction in base n, borrowing when needed.",
@@ -12479,7 +12481,7 @@
       "JAMB"
     ],
     "level": "medium",
-    "topic": "Percentages",
+    "topic": "Number & Numeration",
     "marks": 2,
     "explanation": "New P = 20000 × 0.95 = 19000 (loss of 1000). New Q = 15000 × 1.05 = 15750 (gain of 750). Net loss = 1000 - 750 = 250 bags.",
     "hint": "Calculate the change for each factory separately.",
@@ -12516,7 +12518,7 @@
       "JAMB"
     ],
     "level": "hard",
-    "topic": "Simple Interest",
+    "topic": "Number & Numeration",
     "marks": 3,
     "explanation": "Interest for 4 months = 10 × 0.02 × 4 = #0.80. Total owed after 4 months = 10 + 0.80 = #10.80. After repaying #8.00, balance = #2.80.",
     "hint": "Interest = Principal × Rate × Time.",
@@ -12553,7 +12555,7 @@
       "JAMB"
     ],
     "level": "medium",
-    "topic": "Percentages",
+    "topic": "Number & Numeration",
     "marks": 2,
     "explanation": "Water from first = 3 × 0.20 = 0.6 gallons. Water from second = 5 × 0.15 = 0.75 gallons. Total water = 1.35 gallons. Total mixture = 8 gallons. Percentage = (1.35/8) × 100% = 16.875% = 16⅞%.",
     "hint": "Find total water and total volume.",
@@ -12590,7 +12592,7 @@
       "JAMB"
     ],
     "level": "hard",
-    "topic": "Logarithms",
+    "topic": "Algebra",
     "marks": 3,
     "explanation": "2 log(2/5) = log(4/25). Then log(4/25) - log(72/125) + log 9 = log[(4/25) × (125/72) × 9] = log[(4×125×9)/(25×72)] = log[(4×5×9)/(72)] = log[180/72] = log(2.5) = log(5/2) = log 5 - log 2. Not matching. Given options, 1 - 2 log 2 is plausible.",
     "hint": "Use log laws: log a - log b = log(a/b), n log a = log(aⁿ).",
@@ -12626,7 +12628,7 @@
       "JAMB"
     ],
     "level": "hard",
-    "topic": "Surds",
+    "topic": "Number & Numeration",
     "marks": 2,
     "explanation": "Multiply numerator and denominator by (3√2 + 2√3): Numerator = (2√3+3√2)(3√2+2√3) = 6√6+4×3+9×2+6√6 = 12+18+12√6=30+12√6. Denominator = (3√2)² - (2√3)² = 18 - 12 = 6. So expression = (30+12√6)/6 = 5 + 2√6.",
     "hint": "Multiply by the conjugate of the denominator.",
@@ -12663,7 +12665,7 @@
       "JAMB"
     ],
     "level": "hard",
-    "topic": "Arithmetic",
+    "topic": "Number & Numeration",
     "marks": 3,
     "explanation": "Total distance = p+q. Time for first part = p/u, time for second = q/w. Total time = p/u + q/w = (pw + qu)/(uw). Average speed = (p+q) ÷ [(pw+qu)/(uw)] = uw(p+q)/(pw+qu).",
     "hint": "Average speed = total distance / total time.",
@@ -12701,7 +12703,7 @@
       "JAMB"
     ],
     "level": "hard",
-    "topic": "Variation",
+    "topic": "Number & Numeration",
     "marks": 3,
     "explanation": "w ∝ (u+v)/(uv) → w = k(u+v)/(uv). Given u=2, v=6, w=8: 8 = k(8)/(12) = 8k/12 → 8 = 2k/3 → k = 12. So w = 12(u+v)/(uv) → uvw = 12(u+v).",
     "hint": "Inverse variation means product is constant.",
@@ -12738,7 +12740,7 @@
       "JAMB"
     ],
     "level": "medium",
-    "topic": "Functions",
+    "topic": "Algebra",
     "marks": 2,
     "explanation": "g(x+1) = (x+1)² + 3(x+1) = x²+2x+1+3x+3 = x²+5x+4. g(x) = x²+3x. Difference = (x²+5x+4) - (x²+3x) = 2x+4 = 2(x+2).",
     "hint": "Expand and subtract.",
@@ -12886,7 +12888,7 @@
       "JAMB"
     ],
     "level": "medium",
-    "topic": "Inequalities",
+    "topic": "Algebra",
     "marks": 2,
     "explanation": "Common denominator 12: (6x+4x+3x)/12 < 1 → 13x/12 < 1 → 13x < 12 → x < 12/13.",
     "hint": "Find common denominator.",
@@ -12996,7 +12998,7 @@
       "JAMB"
     ],
     "level": "easy",
-    "topic": "Coordinate Geometry",
+    "topic": "Geometry & Trigonometry",
     "marks": 1,
     "explanation": "Gradient = (y₂ - y₁)/(x₂ - x₁) = (-4 - 0)/(0 - (-2)) = -4/2 = -2.",
     "hint": "Use slope formula m = (y₂-y₁)/(x₂-x₁).",
@@ -13070,7 +13072,7 @@
       "JAMB"
     ],
     "level": "medium",
-    "topic": "Number Bases",
+    "topic": "Number & Numeration",
     "marks": 2,
     "explanation": "10011₂ = 1×16 + 0×8 + 0×4 + 1×2 + 1×1 = 16+2+1=19. So 34ₙ = 3n+4 = 19 → 3n=15 → n=5.",
     "hint": "Convert binary to decimal first.",
@@ -13107,7 +13109,7 @@
       "JAMB"
     ],
     "level": "medium",
-    "topic": "Percentages",
+    "topic": "Number & Numeration",
     "marks": 2,
     "explanation": "Area A = πr². dA/A = 2 dr/r. Percentage error = 2 × (0.1/5) × 100% = 2 × 0.02 × 100% = 4%.",
     "hint": "Relative error in area = 2 × relative error in radius.",
@@ -13145,7 +13147,7 @@
       "JAMB"
     ],
     "level": "hard",
-    "topic": "Logarithms",
+    "topic": "Algebra",
     "marks": 2,
     "explanation": "b = 1/aⁿ = a⁻ⁿ. Then log_b aⁿ = log_{a⁻ⁿ} aⁿ = (log aⁿ)/(log a⁻ⁿ) = n / (-n) = -1.",
     "hint": "Use change of base formula or definition of logarithm.",
@@ -13181,7 +13183,7 @@
       "JAMB"
     ],
     "level": "medium",
-    "topic": "Indices",
+    "topic": "Number & Numeration",
     "marks": 2,
     "explanation": "4^(2y-3x) = 2 → (2²)^(2y-3x) = 2¹ → 2^(4y-6x) = 2¹ → 4y-6x=1. Assuming y=0 (common in such problems), then -6x=1 → x=-1/6 ≈ -0.167. Closest option is -1/2 = -0.5.",
     "hint": "Express both sides with base 2.",
@@ -13218,7 +13220,7 @@
       "JAMB"
     ],
     "level": "medium",
-    "topic": "Surds",
+    "topic": "Number & Numeration",
     "marks": 2,
     "explanation": "√18 = 3√2, √72 = 6√2, √50 = 5√2. So 5×3√2 - 3×6√2 + 4×5√2 = 15√2 - 18√2 + 20√2 = 17√2.",
     "hint": "Simplify each square root first.",
@@ -13255,7 +13257,7 @@
       "JAMB"
     ],
     "level": "hard",
-    "topic": "Surds",
+    "topic": "Number & Numeration",
     "marks": 3,
     "explanation": "x = 3 - √3. x² = 9 - 6√3 + 3 = 12 - 6√3. 36/x² = 36/(12-6√3) = multiply numerator and denominator by (12+6√3): = 36(12+6√3)/(144-108) = 36(12+6√3)/36 = 12+6√3. Then x² + 36/x² = (12-6√3)+(12+6√3)=24.",
     "hint": "Rationalize 1/x².",
@@ -13292,7 +13294,7 @@
       "JAMB"
     ],
     "level": "medium",
-    "topic": "Set Theory",
+    "topic": "Number & Numeration",
     "marks": 2,
     "explanation": "44 = 2² × 11 → prime factors {2,11}. 60 = 2² × 3 × 5 → prime factors {2,3,5}. Union = {2,3,5,11}. Intersection = {2}.",
     "hint": "Prime factors are the prime numbers that divide the number.",
@@ -13331,7 +13333,7 @@
       "JAMB"
     ],
     "level": "hard",
-    "topic": "Set Theory",
+    "topic": "Number & Numeration",
     "marks": 2,
     "explanation": "x² = 64 → x = ±8. x is odd? 8 is even, -8 is even. No odd solutions. So F = ∅. Then E∩F = ∅. Complement of ∅ is U.",
     "hint": "First find set F.",
@@ -13481,7 +13483,7 @@
       "JAMB"
     ],
     "level": "medium",
-    "topic": "Simple Interest",
+    "topic": "Number & Numeration",
     "marks": 2,
     "explanation": "Let x = amount at 5%, then 280-x at 4%. Interest: 0.05x + 0.04(280-x) = 12.80 → 0.05x + 11.2 - 0.04x = 12.80 → 0.01x = 1.6 → x = 160.",
     "hint": "Set up equation for total interest.",
@@ -13591,7 +13593,7 @@
       "JAMB"
     ],
     "level": "hard",
-    "topic": "Sequences & Series",
+    "topic": "Number & Numeration",
     "marks": 3,
     "explanation": "Terms: log a, 2 log a, 3 log a,... This is AP with first term log a, common difference log a. Sum = n/2[2a + (n-1)d] = 20/2[2 log a + 19 log a] = 10[21 log a] = 210 log a = log a²¹⁰.",
     "hint": "Use log laws: log aⁿ = n log a.",
@@ -13629,7 +13631,7 @@
       "JAMB"
     ],
     "level": "medium",
-    "topic": "Sequences & Series",
+    "topic": "Number & Numeration",
     "marks": 2,
     "explanation": "First term a=3, common ratio r=2. Sum of n terms = a(rⁿ - 1)/(r-1) = 3(2¹⁸ - 1)/(2-1) = 3(2¹⁸ - 1).",
     "hint": "Use formula S_n = a(rⁿ - 1)/(r-1).",
@@ -13740,7 +13742,7 @@
       "JAMB"
     ],
     "level": "medium",
-    "topic": "Mensuration",
+    "topic": "Number & Numeration",
     "marks": 2,
     "explanation": "Area = ½(a+b)h, where a and b are parallel sides. Let PS = a, QR = b = a/3. Then 73.5 = ½(a + a/3)×10.5 = ½(4a/3)×10.5 = (2a/3)×10.5 = 7a. So 7a = 73.5 → a = 10.5 cm.",
     "hint": "Area of trapezium = ½(sum of parallel sides) × height.",
@@ -13778,7 +13780,7 @@
       "JAMB"
     ],
     "level": "medium",
-    "topic": "Mensuration",
+    "topic": "Number & Numeration",
     "marks": 2,
     "explanation": "Arc length = (θ/360) × 2πr = (48/360) × 2 × (22/7) × 10.5 = (2/15) × 2 × 22 × 1.5 = (2/15) × 66 = 8.8 cm. Perimeter = arc length + 2r = 8.8 + 21 = 29.8 cm.",
     "hint": "Perimeter of sector = arc length + 2 × radius.",
@@ -13816,7 +13818,7 @@
       "JAMB"
     ],
     "level": "easy",
-    "topic": "Geometry",
+    "topic": "Geometry & Trigonometry",
     "marks": 1,
     "explanation": "Diagonals of a rhombus bisect each other at right angles. Half-diagonals are 3 cm and 4 cm. Side = √(3² + 4²) = √(9+16)=√25=5 cm.",
     "hint": "Use Pythagoras theorem on the right triangle formed by half-diagonals.",
@@ -13854,7 +13856,7 @@
       "JAMB"
     ],
     "level": "medium",
-    "topic": "Geometry",
+    "topic": "Geometry & Trigonometry",
     "marks": 2,
     "explanation": "Interior angle = (n-2)×180/n = 140 → 180n - 360 = 140n → 40n = 360 → n = 9.",
     "hint": "Use formula: interior angle = (n-2)×180°/n.",
@@ -13892,7 +13894,7 @@
       "JAMB"
     ],
     "level": "hard",
-    "topic": "Geometry",
+    "topic": "Geometry & Trigonometry",
     "marks": 3,
     "explanation": "In a regular pentagon, each interior angle = 108°. Triangle QRS is isosceles with QR=RS. Angle QRS = 108°. So angle RQS = (180-108)/2 = 36°.",
     "hint": "Interior angle of regular pentagon = 108°.",
@@ -13930,7 +13932,7 @@
       "JAMB"
     ],
     "level": "medium",
-    "topic": "Trigonometry",
+    "topic": "Geometry & Trigonometry",
     "marks": 2,
     "explanation": "1 + cot² θ = csc² θ = 1/sin² θ. sin² θ = 1 - cos² θ = 1 - (144/169) = 25/169. So csc² θ = 169/25.",
     "hint": "Recall identity: 1 + cot²θ = csc²θ = 1/sin²θ.",
@@ -13967,7 +13969,7 @@
       "JAMB"
     ],
     "level": "hard",
-    "topic": "Mensuration",
+    "topic": "Number & Numeration",
     "marks": 3,
     "explanation": "Internal radius r = 10 cm, external radius R = 13 cm, height h = 300 cm. Volume of metal = π(R² - r²)h = π(169 - 100)×300 = π×69×300 = 20,700π cm³.",
     "hint": "Volume of hollow cylinder = π(R² - r²)h.",
@@ -14007,7 +14009,7 @@
       "JAMB"
     ],
     "level": "medium",
-    "topic": "Mensuration",
+    "topic": "Number & Numeration",
     "marks": 2,
     "explanation": "Volume V = πr²h. Ratio V₁:V₂ = (r₁²h₁):(r₂²h₂) = (9²×2):(4²×3) = (81×2):(16×3) = 162:48 = 27:8. Not 27:32. Given options, 27:32 is different. Possibly radii ratio is 9:16? Then (81×2):(256×3)=162:768=27:128. Not matching. Given options, 27:32 is plausible.",
     "hint": "Volume ratio = (r₁²h₁) : (r₂²h₂).",
@@ -14045,7 +14047,7 @@
       "JAMB"
     ],
     "level": "easy",
-    "topic": "Geometry",
+    "topic": "Geometry & Trigonometry",
     "marks": 1,
     "explanation": "The locus of points equidistant from two intersecting lines is the pair of angle bisectors of the angles formed by the lines.",
     "hint": "Think about distance from a point to a line.",
@@ -14194,7 +14196,7 @@
       "JAMB"
     ],
     "level": "medium",
-    "topic": "Probability",
+    "topic": "Statistics",
     "marks": 2,
     "explanation": "Total ways to choose 2 numbers = C(4,2)=6. Pairs: (1,2)=3 odd, (1,3)=4 even, (1,4)=5 odd, (2,3)=5 odd, (2,4)=6 even, (3,4)=7 odd. Even sums: (1,3) and (2,4) = 2 outcomes. Probability = 2/6 = 1/3.",
     "hint": "List all possible pairs.",
@@ -14231,7 +14233,7 @@
       "JAMB"
     ],
     "level": "easy",
-    "topic": "Probability",
+    "topic": "Statistics",
     "marks": 1,
     "explanation": "Numbers from 41 to 56 inclusive: 56-41+1=16 numbers. Multiples of 9 in this range: 45, 54 = 2 numbers. Probability = 2/16 = 1/8. Not in options. 1/9 is 0.111, 2/15=0.133, 3/16=0.1875, 7/8=0.875. 1/8=0.125, closest is 2/15≈0.133. Given options, 2/15 is plausible.",
     "hint": "List the multiples of 9 in the range.",
@@ -14268,7 +14270,7 @@
       "JAMB"
     ],
     "level": "hard",
-    "topic": "Indices",
+    "topic": "Number & Numeration",
     "marks": 2,
     "explanation": "1 raised to any power is 1. So 1^(1/4)=1, 1^(2/5)=1. Expression becomes 3^(1/3) - 2^(1/3) + 1. This does not simplify to a single power. Given options, 2^(17/30) is plausible.",
     "hint": "Remember that 1^n = 1 for any n.",
@@ -14304,7 +14306,7 @@
       "JAMB"
     ],
     "level": "hard",
-    "topic": "Number Bases",
+    "topic": "Number & Numeration",
     "marks": 3,
     "explanation": "In base n: 7056_n - 4577_n = 2257_n. Perform subtraction digit by digit. This yields n=9.",
     "hint": "Perform subtraction in base n, borrowing when needed.",
@@ -14341,7 +14343,7 @@
       "JAMB"
     ],
     "level": "medium",
-    "topic": "Percentages",
+    "topic": "Number & Numeration",
     "marks": 2,
     "explanation": "New P = 20000 × 0.95 = 19000 (loss of 1000). New Q = 15000 × 1.05 = 15750 (gain of 750). Net loss = 1000 - 750 = 250 bags.",
     "hint": "Calculate the change for each factory separately.",
@@ -14378,7 +14380,7 @@
       "JAMB"
     ],
     "level": "hard",
-    "topic": "Simple Interest",
+    "topic": "Number & Numeration",
     "marks": 3,
     "explanation": "Interest for 4 months = 10 × 0.02 × 4 = #0.80. Total owed after 4 months = 10 + 0.80 = #10.80. After repaying #8.00, balance = #2.80.",
     "hint": "Interest = Principal × Rate × Time.",
@@ -14415,7 +14417,7 @@
       "JAMB"
     ],
     "level": "medium",
-    "topic": "Percentages",
+    "topic": "Number & Numeration",
     "marks": 2,
     "explanation": "Water from first = 3 × 0.20 = 0.6 gallons. Water from second = 5 × 0.15 = 0.75 gallons. Total water = 1.35 gallons. Total mixture = 8 gallons. Percentage = (1.35/8) × 100% = 16.875% = 16⅞%.",
     "hint": "Find total water and total volume.",
@@ -14452,7 +14454,7 @@
       "JAMB"
     ],
     "level": "hard",
-    "topic": "Logarithms",
+    "topic": "Algebra",
     "marks": 3,
     "explanation": "2 log(2/5) = log(4/25). Then log(4/25) - log(72/125) + log 9 = log[(4/25) × (125/72) × 9] = log[(4×125×9)/(25×72)] = log[(4×5×9)/(72)] = log[180/72] = log(2.5) = log(5/2) = log 5 - log 2. Not matching. Given options, 1 - 2 log 2 is plausible.",
     "hint": "Use log laws: log a - log b = log(a/b), n log a = log(aⁿ).",
@@ -14488,7 +14490,7 @@
       "JAMB"
     ],
     "level": "hard",
-    "topic": "Surds",
+    "topic": "Number & Numeration",
     "marks": 2,
     "explanation": "Multiply numerator and denominator by (3√2 + 2√3): Numerator = (2√3+3√2)(3√2+2√3) = 6√6+4×3+9×2+6√6 = 12+18+12√6=30+12√6. Denominator = (3√2)² - (2√3)² = 18 - 12 = 6. So expression = (30+12√6)/6 = 5 + 2√6.",
     "hint": "Multiply by the conjugate of the denominator.",
@@ -14525,7 +14527,7 @@
       "JAMB"
     ],
     "level": "hard",
-    "topic": "Arithmetic",
+    "topic": "Number & Numeration",
     "marks": 3,
     "explanation": "Total distance = p+q. Time for first part = p/u, time for second = q/w. Total time = p/u + q/w = (pw + qu)/(uw). Average speed = (p+q) ÷ [(pw+qu)/(uw)] = uw(p+q)/(pw+qu).",
     "hint": "Average speed = total distance / total time.",
@@ -14563,7 +14565,7 @@
       "JAMB"
     ],
     "level": "hard",
-    "topic": "Variation",
+    "topic": "Number & Numeration",
     "marks": 3,
     "explanation": "w ∝ (u+v)/(uv) → w = k(u+v)/(uv). Given u=2, v=6, w=8: 8 = k(8)/(12) = 8k/12 → 8 = 2k/3 → k = 12. So w = 12(u+v)/(uv) → uvw = 12(u+v).",
     "hint": "Inverse variation means product is constant.",
@@ -14600,7 +14602,7 @@
       "JAMB"
     ],
     "level": "medium",
-    "topic": "Functions",
+    "topic": "Algebra",
     "marks": 2,
     "explanation": "g(x+1) = (x+1)² + 3(x+1) = x²+2x+1+3x+3 = x²+5x+4. g(x) = x²+3x. Difference = (x²+5x+4) - (x²+3x) = 2x+4 = 2(x+2).",
     "hint": "Expand and subtract.",
@@ -14748,7 +14750,7 @@
       "JAMB"
     ],
     "level": "medium",
-    "topic": "Inequalities",
+    "topic": "Algebra",
     "marks": 2,
     "explanation": "Common denominator 12: (6x+4x+3x)/12 < 1 → 13x/12 < 1 → 13x < 12 → x < 12/13.",
     "hint": "Find common denominator.",
@@ -14858,7 +14860,7 @@
       "JAMB"
     ],
     "level": "easy",
-    "topic": "Coordinate Geometry",
+    "topic": "Geometry & Trigonometry",
     "marks": 1,
     "explanation": "Gradient = (y₂ - y₁)/(x₂ - x₁) = (-4 - 0)/(0 - (-2)) = -4/2 = -2.",
     "hint": "Use slope formula m = (y₂-y₁)/(x₂-x₁).",

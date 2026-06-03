@@ -51,15 +51,15 @@
         <aside class="dash-sidebar">
             <div class="user-profile-widget">
                 <div class="user-avatar" id="dashAvatar">U</div>
-                <div id="dashNameDisplay" style="font-weight:bold; color:#0f172a; margin-bottom:5px;">User Name</div>
+                <div id="dashNameDisplay" style="font-weight:bold; color:var(--text-heading, #0f172a); margin-bottom:5px;">User Name</div>
                 <div class="user-email" id="dashEmail" style="margin-bottom:10px;">student@example.com</div>
-                <button id="editProfileBtn" style="background:transparent; border:1px solid #cbd5e1; border-radius:5px; padding:4px 8px; font-size:0.8rem; cursor:pointer; color:#64748b;">
+                <button id="editProfileBtn" style="background:transparent; border:1px solid var(--border-light, #e2e8f0); border-radius:5px; padding:4px 8px; font-size:0.8rem; cursor:pointer; color:var(--text-secondary, #64748b);">
                     <i class="fas fa-edit"></i> Edit Name
                 </button>
                 
                 <!-- Edit Mode Hidden by Default -->
                 <div id="editProfileForm" style="display:none; margin-top:10px; text-align:left;">
-                    <input type="text" id="editNameInput" style="width:100%; padding:5px; margin-bottom:5px; border:1px solid #cbd5e1; border-radius:4px; box-sizing:border-box;" placeholder="New Name">
+                    <input type="text" id="editNameInput" style="width:100%; padding:5px; margin-bottom:5px; border:1px solid var(--border-light, #e2e8f0); border-radius:4px; box-sizing:border-box; background:var(--bg-input, #f8fafc); color:var(--text-body, #334155);" placeholder="New Name">
                     <button id="saveProfileBtn" style="background:#10b981; color:white; border:none; padding:4px 8px; border-radius:4px; cursor:pointer; font-size:0.8rem;">Save</button>
                     <button id="cancelProfileBtn" style="background:#ef4444; color:white; border:none; padding:4px 8px; border-radius:4px; cursor:pointer; font-size:0.8rem;">Cancel</button>
                 </div>
@@ -71,6 +71,9 @@
             <a href="/jamb.htm" class="dash-nav-btn"><i class="fas fa-laptop-code"></i> Quiz Arena</a>
             <a href="/admission/updates/index.html" class="dash-nav-btn"><i class="fas fa-bullhorn"></i> Live News</a>
             
+            <button class="dark-mode-toggle" id="darkModeToggle">
+                <i class="fas fa-moon"></i> <span id="darkModeLabel">Dark Mode</span>
+            </button>
             <button class="dash-nav-btn logout-btn" id="logoutBtn"><i class="fas fa-sign-out-alt"></i> Logout</button>
         </aside>
 
@@ -106,16 +109,85 @@
                 <div class="metric-card success">
                     <div class="metric-title">Computed Aggregate Score</div>
                     <div class="metric-value" id="savedAggregateVal">Not Computed</div>
-                    <div id="savedAggregateSchool" style="font-size:0.85rem; color:#64748b; font-weight:bold; margin-bottom:15px; text-transform:uppercase;"></div>
+                    <div id="savedAggregateSchool" style="font-size:0.85rem; color:var(--text-secondary, #64748b); font-weight:bold; margin-bottom:15px; text-transform:uppercase;"></div>
                     <a href="/admission/aggregate-calculator/index.html" class="metric-action primary"><i class="fas fa-calculator"></i> Re-Calculate</a>
                 </div>
 
-                <!-- Quiz Progress Box -->
+                <!-- Learning Streak Card -->
                 <div class="metric-card warning">
-                    <div class="metric-title">Recent Quiz Average</div>
-                    <div class="metric-value">0%</div>
-                    <p style="font-size:0.85rem; color:#64748b; margin-bottom:15px;">You haven't completed any quizzes yet.</p>
+                    <div class="metric-title">Learning Streak</div>
+                    <div class="metric-value" id="streakVal">0 Days <i class="fas fa-fire" style="color:#f59e0b; margin-left:5px;"></i></div>
+                    <p style="font-size:0.85rem; color:var(--text-secondary, #64748b); margin-bottom:15px;">Keep practicing to grow your fire!</p>
                     <a href="/jamb.htm" class="metric-action primary"><i class="fas fa-play"></i> Start Practice</a>
+                </div>
+
+                <!-- Total Quizzes Box -->
+                <div class="metric-card purple">
+                    <div class="metric-title">Total Quizzes Taken</div>
+                    <div class="metric-value" id="totalQuizzesVal">0</div>
+                    <p style="font-size:0.85rem; color:var(--text-secondary, #64748b); margin-bottom:15px;">Practice makes perfect progress.</p>
+                    <a href="/jamb.htm" class="metric-action primary"><i class="fas fa-eye"></i> View Arena</a>
+                </div>
+
+                <!-- Average Performance Box -->
+                <div class="metric-card blue">
+                    <div class="metric-title">Recent Quiz Average</div>
+                    <div class="metric-value" id="averageScoreVal">0%</div>
+                    <p style="font-size:0.85rem; color:var(--text-secondary, #64748b); margin-bottom:15px;">Target a solid 75%+ score.</p>
+                    <a href="#quizHistoryTable" class="metric-action primary"><i class="fas fa-history"></i> Check History</a>
+                </div>
+
+                <!-- High Score Box -->
+                <div class="metric-card orange">
+                    <div class="metric-title">Highest Score</div>
+                    <div class="metric-value" id="highScoreVal">0%</div>
+                    <p style="font-size:0.85rem; color:var(--text-secondary, #64748b); margin-bottom:15px;">Your personal best performance.</p>
+                    <a href="/admission/career-advisor/index.html" class="metric-action primary"><i class="fas fa-compass"></i> Career Hub</a>
+                </div>
+            </div>
+
+            <!-- PERFORMANCE CHARTS -->
+            <div class="charts-grid-layout" style="display: none;" id="chartsSectionWrapper">
+                <div class="chart-container-card">
+                    <h2 class="section-title"><i class="fas fa-chart-bar" style="color: #10b981;"></i> Subject Mastery Breakdown</h2>
+                    <div class="chart-wrapper">
+                        <canvas id="subjectBarChart"></canvas>
+                    </div>
+                </div>
+                <div class="chart-container-card">
+                    <h2 class="section-title"><i class="fas fa-chart-line" style="color: #6366f1;"></i> Academic Progress Trend</h2>
+                    <div class="chart-wrapper">
+                        <canvas id="progressLineChart"></canvas>
+                    </div>
+                </div>
+            </div>
+
+            <!-- MOCK EXAMS HISTORY -->
+            <div class="history-section">
+                <h2 class="section-title"><i class="fas fa-history"></i> Recent Mock Exam History</h2>
+                <div class="table-wrapper">
+                    <table class="history-table" id="quizHistoryTable">
+                        <thead>
+                            <tr>
+                                <th>Date & Time</th>
+                                <th>Mode</th>
+                                <th>Raw Score</th>
+                                <th>Percentage</th>
+                                <th>Subject Breakdown</th>
+                            </tr>
+                        </thead>
+                        <tbody id="historyTableBody">
+                            <tr>
+                                <td colspan="5" class="empty-history" style="text-align: center; padding: 40px 20px; color: #94a3b8;">
+                                    <i class="fas fa-folder-open" style="font-size: 3rem; color: #cbd5e1; margin-bottom: 15px; display: block;"></i>
+                                    <p style="font-weight: 500; margin-bottom: 15px;">No mock exams taken yet. Start practicing in the Quiz Arena to build your dashboard!</p>
+                                    <button id="loadDemoBtn" class="tracker-btn" style="background: linear-gradient(135deg, #6366f1 0%, #4f46e5 100%); border: none; box-shadow: 0 4px 15px rgba(99, 102, 241, 0.3); font-weight: 700; display: inline-flex; align-items: center; gap: 8px; margin: 0 auto;">
+                                        <i class="fas fa-magic"></i> Load Demo Performance Data
+                                    </button>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
                 </div>
             </div>
 
@@ -249,12 +321,13 @@
     <!-- FOOTER -->
     <footer class="oae-footer">
       <div class="footer-bottom">
-        <p>🌍 Trusted by <strong>15,000+ learners</strong> across Nigeria, Africa, and the world.</p>
+        <p><i class="fas fa-globe-africa" style="color:var(--brand-teal);"></i> Trusted by <strong>15,000+ learners</strong> across Nigeria, Africa, and the world.</p>
         <p>© 2025 OAE — Oluwatosin Academy of Excellence. All rights reserved.</p>
       </div>
     </footer>
 
     <!-- Scripts -->
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
     <script src="/Assets/js/post-jamb-navbar.js"></script>
     <script src="/Assets/js/dashboard.js"></script>
 </body>

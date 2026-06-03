@@ -1,0 +1,577 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>Study Notes Library — OAE</title>
+    
+    <link rel="stylesheet" href="../Assets/css/style.css">
+    <link rel="stylesheet" href="../Assets/css/quiz-navbar.css">
+    <link rel="stylesheet" href="../Assets/css/footer.css">
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@3.5.0/fonts/remixicon.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    
+    <style>
+        body {
+            background-color: var(--bg-body, #f8fafc);
+            font-family: 'Inter', system-ui, sans-serif;
+            margin: 0;
+            padding: 0;
+            overflow-x: hidden;
+        }
+
+        /* --- HERO SECTION --- */
+        .notes-hero {
+            background: linear-gradient(135deg, var(--darkgreen, #086b24) 0%, var(--green, #0a8a2f) 100%);
+            padding: 70px 20px;
+            text-align: center;
+            color: white;
+            position: relative;
+        }
+        
+        .notes-hero h1 {
+            font-size: 2.8rem;
+            font-weight: 800;
+            margin-bottom: 15px;
+            letter-spacing: -1px;
+        }
+
+        .notes-hero p {
+            font-size: 1.15rem;
+            max-width: 650px;
+            margin: 0 auto;
+            color: rgba(255, 255, 255, 0.9);
+            line-height: 1.6;
+        }
+
+        /* --- SEARCH BAR --- */
+        .search-wrapper {
+            max-width: 600px;
+            margin: 30px auto 0;
+            position: relative;
+        }
+
+        .search-wrapper input {
+            width: 100%;
+            padding: 18px 25px 18px 55px;
+            border-radius: 50px;
+            border: none;
+            font-size: 1.1rem;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+            outline: none;
+        }
+
+        .search-wrapper i {
+            position: absolute;
+            left: 20px;
+            top: 50%;
+            transform: translateY(-50%);
+            color: var(--muted, #94a3b8);
+            font-size: 1.3rem;
+        }
+
+        /* --- LIBRARY VIEW --- */
+        .library-container {
+            max-width: 1200px;
+            margin: 50px auto;
+            padding: 0 20px;
+            animation: fadeIn 0.5s ease;
+        }
+
+        .category-title {
+            font-size: 1.5rem;
+            color: var(--oae-dark, #0f172a);
+            margin-bottom: 20px;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+
+        .category-title i {
+            color: var(--green, #0a8a2f);
+        }
+
+        .subjects-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+            gap: 25px;
+            margin-bottom: 50px;
+        }
+
+        .subject-card {
+            background: var(--card, white);
+            border-radius: 16px;
+            padding: 25px;
+            border: 1px solid var(--card-border, #e2e8f0);
+            box-shadow: 0 10px 25px rgba(10, 138, 47, 0.05);
+            cursor: pointer;
+            transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+            display: flex;
+            flex-direction: column;
+        }
+
+        .subject-card:hover {
+            transform: translateY(-5px);
+            border-color: var(--green, #0a8a2f);
+            box-shadow: 0 15px 35px rgba(10, 138, 47, 0.1);
+        }
+
+        .subj-icon {
+            width: 50px;
+            height: 50px;
+            border-radius: 12px;
+            background: rgba(10, 138, 47, 0.1);
+            color: var(--green, #0a8a2f);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 1.5rem;
+            margin-bottom: 20px;
+        }
+
+        .subject-card h3 {
+            margin: 0 0 10px;
+            font-size: 1.25rem;
+            color: var(--oae-dark, #0f172a);
+        }
+
+        .subject-card p {
+            margin: 0 0 20px;
+            color: var(--muted, #64748b);
+            font-size: 0.95rem;
+            line-height: 1.5;
+            flex-grow: 1;
+        }
+
+        .subj-meta {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding-top: 15px;
+            border-top: 1px solid var(--card-border, #e2e8f0);
+            font-size: 0.85rem;
+            font-weight: 600;
+            color: var(--green, #0a8a2f);
+        }
+
+        /* --- READER VIEW (Hidden initially) --- */
+        .reader-container {
+            display: none;
+            max-width: 1000px;
+            margin: 40px auto;
+            padding: 0 20px;
+            animation: fadeIn 0.5s ease;
+        }
+
+        .reader-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 30px;
+        }
+
+        .btn-back {
+            background: transparent;
+            border: 2px solid var(--card-border, #e2e8f0);
+            color: var(--oae-dark, #0f172a);
+            padding: 10px 20px;
+            border-radius: 10px;
+            font-weight: 600;
+            cursor: pointer;
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            transition: 0.3s;
+        }
+
+        .btn-back:hover {
+            border-color: var(--green, #0a8a2f);
+            color: var(--green, #0a8a2f);
+            background: rgba(10, 138, 47, 0.05);
+        }
+
+        .reader-tools {
+            display: flex;
+            gap: 15px;
+        }
+
+        .tool-btn {
+            width: 40px;
+            height: 40px;
+            border-radius: 50%;
+            background: var(--card, white);
+            border: 1px solid var(--card-border, #e2e8f0);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            cursor: pointer;
+            color: var(--oae-dark, #0f172a);
+            transition: 0.2s;
+        }
+
+        .tool-btn:hover {
+            background: rgba(10, 138, 47, 0.1);
+            color: var(--green, #0a8a2f);
+            border-color: var(--green, #0a8a2f);
+        }
+
+        .article-card {
+            background: var(--card, white);
+            border-radius: 20px;
+            padding: 50px 60px;
+            box-shadow: 0 15px 40px rgba(0, 0, 0, 0.04);
+            border: 1px solid var(--card-border, #e2e8f0);
+            line-height: 1.8;
+            color: var(--oae-dark, #334155);
+            font-size: 1.15rem;
+        }
+
+        .article-title {
+            font-size: 2.5rem;
+            color: var(--oae-dark, #0f172a);
+            margin: 0 0 10px;
+            line-height: 1.2;
+        }
+
+        .article-meta {
+            color: var(--muted, #94a3b8);
+            font-size: 0.95rem;
+            margin-bottom: 40px;
+            padding-bottom: 20px;
+            border-bottom: 2px solid var(--card-border, #e2e8f0);
+            display: flex;
+            gap: 20px;
+        }
+
+        .article-meta span {
+            display: flex;
+            align-items: center;
+            gap: 6px;
+        }
+
+        /* 8-Point Structure Elements */
+        .concept-box {
+            background: rgba(10, 138, 47, 0.05);
+            border-left: 5px solid var(--green, #0a8a2f);
+            padding: 20px 25px;
+            border-radius: 0 12px 12px 0;
+            margin: 30px 0;
+        }
+
+        .concept-box h4 {
+            margin: 0 0 10px;
+            color: var(--green, #0a8a2f);
+            font-size: 1.1rem;
+            display: flex;
+            align-items: center;
+            gap: 8px;
+        }
+
+        .analogy-box {
+            background: #fffbeb;
+            border: 1px solid #fde68a;
+            padding: 25px;
+            border-radius: 12px;
+            margin: 30px 0;
+        }
+
+        .analogy-box h4 {
+            margin: 0 0 10px;
+            color: #b45309;
+            display: flex;
+            align-items: center;
+            gap: 8px;
+        }
+
+        .pitfall-box {
+            background: #fef2f2;
+            border: 1px solid #fecaca;
+            padding: 25px;
+            border-radius: 12px;
+            margin: 30px 0;
+        }
+
+        .pitfall-box h4 {
+            margin: 0 0 10px;
+            color: #ef4444;
+            display: flex;
+            align-items: center;
+            gap: 8px;
+        }
+
+        .step-list {
+            list-style: none;
+            padding: 0;
+            margin: 30px 0;
+        }
+
+        .step-list li {
+            position: relative;
+            padding-left: 45px;
+            margin-bottom: 20px;
+        }
+
+        .step-list li::before {
+            content: counter(step-counter);
+            counter-increment: step-counter;
+            position: absolute;
+            left: 0;
+            top: 2px;
+            width: 30px;
+            height: 30px;
+            background: var(--green, #0a8a2f);
+            color: white;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-weight: bold;
+            font-size: 0.9rem;
+        }
+
+        .reader-footer {
+            margin-top: 50px;
+            padding-top: 30px;
+            border-top: 2px solid var(--card-border, #e2e8f0);
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .btn-take-quiz {
+            background: linear-gradient(135deg, var(--green, #0a8a2f), var(--darkgreen, #086b24));
+            color: white;
+            border: none;
+            padding: 15px 35px;
+            border-radius: 12px;
+            font-weight: 700;
+            font-size: 1.1rem;
+            cursor: pointer;
+            box-shadow: 0 10px 25px rgba(10, 138, 47, 0.3);
+            transition: 0.3s;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+
+        .btn-take-quiz:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 15px 35px rgba(10, 138, 47, 0.4);
+        }
+
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(15px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+
+        @media (max-width: 768px) {
+            .article-card { padding: 30px 20px; }
+            .article-title { font-size: 2rem; }
+            .reader-footer { flex-direction: column; gap: 20px; text-align: center; }
+            .btn-take-quiz { width: 100%; justify-content: center; }
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Standard Quiz Navbar -->
+    <nav class="quiz-navbar">
+        <div class="quiz-logo">
+            <a href="/Index.htm">
+               <img class="logo-quiz" src="/oae.png" alt="OAE">
+            </a>
+        </div>
+        <div class="quiz-search-section">
+            <div class="quiz-search-container">
+                <i class="fas fa-search"></i>
+                <input placeholder="Search library...">
+                <button class="quiz-search-btn">Search</button>
+            </div>
+        </div>
+        <div class="quiz-nav-container">
+            <ul class="quiz-nav-links">
+                <li><a href="quiz.htm">Practice Quiz</a></li>
+                <li><a href="#" style="color: var(--green);">Study Notes</a></li>
+                <li><a href="post-utme.html">Post-UTME</a></li>
+            </ul>
+        </div>
+        <button class="quiz-join-btn">Join OAE</button>
+        <button class="quiz-hamburger"><i class="fas fa-bars"></i></button>
+    </nav>
+
+    <!-- LIBRARY VIEW -->
+    <div id="libraryView">
+        <div class="notes-hero">
+            <h1>OAE Smart Library</h1>
+            <p>Master difficult concepts with our slow-learner-friendly study notes. Packed with real-world analogies, step-by-step breakdowns, and exam secrets.</p>
+            
+            <div class="search-wrapper">
+                <i class="fas fa-search"></i>
+                <input type="text" placeholder="Search for a topic... (e.g., Kinematics, Integration, Cytology)">
+            </div>
+        </div>
+
+        <div class="library-container">
+            <h2 class="category-title"><i class="fas fa-flask"></i> Science & Technology</h2>
+            <div class="subjects-grid">
+                <!-- Physics Card -->
+                <div class="subject-card" onclick="openReader('physics-kinematics')">
+                    <div class="subj-icon"><i class="fas fa-atom"></i></div>
+                    <h3>Physics</h3>
+                    <p>Master motion, electricity, and thermodynamics through intuitive analogies and formula breakdowns.</p>
+                    <div class="subj-meta">
+                        <span><i class="fas fa-book-open"></i> 45 Topics</span>
+                        <span>View Notes <i class="fas fa-arrow-right"></i></span>
+                    </div>
+                </div>
+
+                <!-- Biology Card -->
+                <div class="subject-card" onclick="openReader()">
+                    <div class="subj-icon" style="color:#3b82f6; background:rgba(59,130,246,0.1);"><i class="fas fa-dna"></i></div>
+                    <h3 style="color:#1e3a8a;">Biology</h3>
+                    <p>Understand the science of life. From cytology to genetics, detailed with clear illustrations.</p>
+                    <div class="subj-meta" style="color:#3b82f6;">
+                        <span><i class="fas fa-book-open"></i> 62 Topics</span>
+                        <span>View Notes <i class="fas fa-arrow-right"></i></span>
+                    </div>
+                </div>
+
+                <!-- Chemistry Card -->
+                <div class="subject-card" onclick="openReader()">
+                    <div class="subj-icon" style="color:#8b5cf6; background:rgba(139,92,246,0.1);"><i class="fas fa-vial"></i></div>
+                    <h3 style="color:#4c1d95;">Chemistry</h3>
+                    <p>Demystify organic and inorganic chemistry with step-by-step reaction breakdowns.</p>
+                    <div class="subj-meta" style="color:#8b5cf6;">
+                        <span><i class="fas fa-book-open"></i> 50 Topics</span>
+                        <span>View Notes <i class="fas fa-arrow-right"></i></span>
+                    </div>
+                </div>
+            </div>
+
+            <h2 class="category-title"><i class="fas fa-calculator"></i> Mathematics & Logic</h2>
+            <div class="subjects-grid">
+                <!-- Mathematics Card -->
+                <div class="subject-card" onclick="openReader()">
+                    <div class="subj-icon" style="color:#ef4444; background:rgba(239,68,68,0.1);"><i class="fas fa-square-root-alt"></i></div>
+                    <h3 style="color:#991b1b;">Mathematics</h3>
+                    <p>Clear, step-by-step solutions to calculus, algebra, and geometry problems.</p>
+                    <div class="subj-meta" style="color:#ef4444;">
+                        <span><i class="fas fa-book-open"></i> 80 Topics</span>
+                        <span>View Notes <i class="fas fa-arrow-right"></i></span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- READER VIEW -->
+    <div id="readerView" class="reader-container">
+        <div class="reader-header">
+            <button class="btn-back" onclick="closeReader()"><i class="fas fa-arrow-left"></i> Back to Library</button>
+            <div class="reader-tools">
+                <button class="tool-btn" title="Decrease Font" onclick="adjustFontSize(-1)"><i class="fas fa-font" style="font-size:0.8rem;"></i></button>
+                <button class="tool-btn" title="Increase Font" onclick="adjustFontSize(1)"><i class="fas fa-font"></i></button>
+                <button class="tool-btn" title="Toggle Dark Mode" onclick="toggleDarkMode()"><i class="fas fa-moon"></i></button>
+            </div>
+        </div>
+
+        <article class="article-card" id="articleBody" style="counter-reset: step-counter;">
+            <div class="article-meta">
+                <span><i class="fas fa-folder"></i> Physics</span>
+                <span><i class="fas fa-clock"></i> 5 Min Read</span>
+                <span><i class="fas fa-layer-group"></i> SS2 Level</span>
+            </div>
+
+            <h1 class="article-title">Understanding Kinematics: The Equations of Motion</h1>
+            
+            <div class="concept-box">
+                <h4><i class="fas fa-book"></i> What is Kinematics?</h4>
+                <p style="margin:0;">Kinematics is the branch of mechanics that describes the motion of points, bodies, and systems of bodies without considering the forces that cause the motion. It strictly focuses on velocity, acceleration, displacement, and time.</p>
+            </div>
+
+            <p>When studying motion, many students get confused by the four standard equations. The secret to mastering kinematics is not memorizing the formulas, but understanding what each variable represents and knowing when to use which equation.</p>
+
+            <div class="analogy-box">
+                <h4><i class="fas fa-lightbulb"></i> Real-World Analogy: The Road Trip</h4>
+                <p style="margin:0; color: #78350f;">Imagine you are driving from Lagos to Ibadan. Your starting speed is your <strong>Initial Velocity (u)</strong>. If you step on the gas pedal, you are experiencing <strong>Acceleration (a)</strong>. Your speed when you arrive is your <strong>Final Velocity (v)</strong>. The distance between the cities is <strong>Displacement (s)</strong>, and the duration of the trip is <strong>Time (t)</strong>.</p>
+            </div>
+
+            <h3>Step-by-Step Problem Solving Breakdown</h3>
+            <p>To solve any motion calculation question in JAMB or WAEC, simply follow this 3-step framework:</p>
+            
+            <ul class="step-list">
+                <li><strong>List the Knowns:</strong> Read the question and write out the variables given. (e.g., "A car starts from rest" means `u = 0`).</li>
+                <li><strong>Identify the Unknown:</strong> What is the question asking for? Is it distance (`s`) or final velocity (`v`)?</li>
+                <li><strong>Select the Missing-Variable Equation:</strong> Look at your list. Which of the 4 variables is completely missing (not given and not asked for)? Pick the equation that ignores that variable.</li>
+            </ul>
+
+            <div class="pitfall-box">
+                <h4><i class="fas fa-exclamation-triangle"></i> Common Exam Pitfall</h4>
+                <p style="margin:0; color: #991b1b;">When a question says "brakes are applied" or "comes to a halt", your Final Velocity (v) is 0, and your Acceleration (a) must be negative (deceleration). Forgetting the minus sign is the #1 reason students fail these questions!</p>
+            </div>
+
+            <h3>Summary</h3>
+            <p>Always draw a mental picture of the motion before picking a formula. Master the abbreviations (u, v, a, s, t), and remember that dropping the negative sign during deceleration will ruin your final answer.</p>
+
+            <div class="reader-footer">
+                <div>
+                    <h4 style="margin:0 0 5px; color: var(--oae-dark);">Ready to test your knowledge?</h4>
+                    <p style="margin:0; color: var(--muted); font-size: 0.95rem;">Jump into the Quiz Arena and filter by Physics -> Kinematics.</p>
+                </div>
+                <button class="btn-take-quiz" onclick="window.location.href='quiz.htm'">
+                    Take Practice Quiz <i class="fas fa-play-circle"></i>
+                </button>
+            </div>
+        </article>
+    </div>
+
+    <!-- Standard Footer -->
+    <footer class="oae-footer">
+        <div class="footer-connect">
+            <h3>Connect With Us</h3>
+            <hr>
+            <div class="socials-bar">
+                <a href="https://linkedin.com/in/oaeofficial123" target="_blank"><i class="ri-linkedin-fill"></i></a>
+                <a href="https://x.com/oaeofficial123" target="_blank"><i class="ri-twitter-x-fill"></i></a>
+                <a href="mailto:oaeofficial123@gmail.com"><i class="ri-mail-line"></i></a>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>© 2025 OAE — Oluwatosin Academy of Excellence. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script>
+        // UI Navigation Logic
+        const libraryView = document.getElementById('libraryView');
+        const readerView = document.getElementById('readerView');
+        const articleBody = document.getElementById('articleBody');
+        let currentFontSize = 1.15;
+
+        function openReader(topicId) {
+            libraryView.style.display = 'none';
+            readerView.style.display = 'block';
+            window.scrollTo({ top: 0, behavior: 'smooth' });
+        }
+
+        function closeReader() {
+            readerView.style.display = 'none';
+            libraryView.style.display = 'block';
+            window.scrollTo({ top: 0, behavior: 'smooth' });
+        }
+
+        function adjustFontSize(dir) {
+            currentFontSize += (dir * 0.1);
+            // Cap it between 1rem and 1.6rem
+            if (currentFontSize < 1.0) currentFontSize = 1.0;
+            if (currentFontSize > 1.6) currentFontSize = 1.6;
+            articleBody.style.fontSize = currentFontSize + 'rem';
+        }
+
+        function toggleDarkMode() {
+            document.body.classList.toggle('dark-mode');
+            // If the main app has a dark mode manager, we can sync it here.
+        }
+    </script>
+</body>
+</html>

@@ -82,7 +82,7 @@
       "JAMB"
     ],
     "level": "easy",
-    "topic": "Practical Chemistry: Flame Types",
+    "topic": "Organic Chemistry",
     "marks": 1,
     "explanation": "Welding and cutting of metals require a flame with a very high temperature. The oxy-acetylene flame, produced by combusting acetylene (C2H2) in pure oxygen, reaches approximately 3500°C, making it suitable for metalworking. 'Cotton metals' is likely a typographical error for 'cutting metals'. Acetylene alone burns with a sooty, lower-temperature flame; oxygen is required to achieve welding temperatures.",
     "hint": "Welders use a mixture of a fuel gas and pure oxygen.",
@@ -152,7 +152,7 @@
       "JAMB"
     ],
     "level": "easy",
-    "topic": "Atomic Structure",
+    "topic": "Atomic Structure & Bonding",
     "marks": 1,
     "explanation": "The given configuration ends in 3p2, meaning the highest energy electron occupies the p-subshell. Elements with their outermost electron in a p-orbital are classified as p-block elements. This configuration corresponds to silicon (atomic number 14), which is in Group IVA (Group 14) of the p-block. It is not an s-block element, alkaline earth metal, or transition metal.",
     "hint": "The last subshell determines the block.",
@@ -226,7 +226,7 @@
       "JAMB"
     ],
     "level": "easy",
-    "topic": "Chemical Bonding",
+    "topic": "Atomic Structure & Bonding",
     "marks": 1,
     "explanation": "Methane (CH4) has a central carbon atom bonded to four hydrogen atoms with no lone pairs. According to Valence Shell Electron Pair Repulsion (VSEPR) theory, four bonding pairs arrange themselves as far apart as possible, resulting in a tetrahedral geometry with bond angles of approximately 109.5°.",
     "hint": "Four bonds, no lone pairs = tetrahedral.",
@@ -370,7 +370,7 @@
       "JAMB"
     ],
     "level": "medium",
-    "topic": "Practical Chemistry: Separation Techniques",
+    "topic": "Organic Chemistry",
     "marks": 2,
     "explanation": "Ammonium chloride sublimes on heating (changes directly from solid to gas), leaving behind common salt (NaCl) and barium sulphate (BaSO4). After sublimation, add water to dissolve NaCl (soluble), while BaSO4 remains insoluble. Filtration separates BaSO4 as residue. Evaporating the filtrate recovers NaCl. Sublimation first is essential to prevent NH4Cl from dissolving in water along with NaCl.",
     "hint": "NH4Cl sublimes; NaCl dissolves; BaSO4 is insoluble.",
@@ -818,7 +818,7 @@
       "JAMB"
     ],
     "level": "easy",
-    "topic": "Metals & Extraction",
+    "topic": "Atomic Structure & Bonding",
     "marks": 1,
     "explanation": "Oil spills on water are commonly treated using dispersants or detergents (surfactants). These chemicals break down the oil into small droplets, which are then more readily biodegraded by microorganisms and dispersed in the water column. Heating, stirring, organic solvents, and cooling are impractical or environmentally harmful methods.",
     "hint": "Dispersants break oil into smaller droplets.",
@@ -853,7 +853,7 @@
       "JAMB"
     ],
     "level": "easy",
-    "topic": "Atomic Structure",
+    "topic": "Atomic Structure & Bonding",
     "marks": 1,
     "explanation": "Electronegativity is the measure of the tendency of an atom to attract shared electrons towards itself in a chemical bond. An electronegative element has a high tendency to gain electrons (to form negative ions) or attract bonding electrons. Elements that lose electrons readily are electropositive.",
     "hint": "Electronegative = electron-loving.",
@@ -1160,7 +1160,7 @@
       "JAMB"
     ],
     "level": "medium",
-    "topic": "Practical Chemistry: Separation Techniques",
+    "topic": "Organic Chemistry",
     "marks": 2,
     "explanation": "Ethanol and water form an azeotrope at approximately 95.6% ethanol. Simple or fractional distillation alone cannot exceed this concentration. To obtain high-quality ethanol (>95%), a dehydrating agent (such as quicklime, molecular sieves, or azeotropic distillation with benzene) is used to remove the remaining water. Fractional distillation with a dehydrant breaks the azeotrope.",
     "hint": "Ethanol-water azeotrope limits distillation without a dehydrant.",
@@ -1342,7 +1342,7 @@
       "JAMB"
     ],
     "level": "hard",
-    "topic": "Electrochemistry & Redox",
+    "topic": "Atomic Structure & Bonding",
     "marks": 2,
     "explanation": "SO2 (sulphur dioxide) is a versatile gas. It acts as a reducing agent towards chlorine: SO2 + Cl2 + 2H2O → H2SO4 + 2HCl (SO2 oxidized to SO4²⁻). It acts as an oxidizing agent towards hydrogen sulphide: SO2 + 2H2S → 3S + 2H2O (SO2 reduced to S, H2S oxidized to S).",
     "hint": "SO2 can be both oxidized and reduced.",
@@ -1412,7 +1412,7 @@
       "JAMB"
     ],
     "level": "easy",
-    "topic": "Atomic Structure",
+    "topic": "Atomic Structure & Bonding",
     "marks": 1,
     "explanation": "The mass of an atom is concentrated in its nucleus, which contains protons and neutrons. Electrons have negligible mass. Therefore, the atomic mass (mass number) is approximately the sum of the number of protons and neutrons. Ionization potential and electrochemical potential are properties related to energy, not mass.",
     "hint": "Mass number = protons + neutrons.",
@@ -1552,7 +1552,7 @@
       "JAMB"
     ],
     "level": "easy",
-    "topic": "Atomic Structure",
+    "topic": "Atomic Structure & Bonding",
     "marks": 1,
     "explanation": "Sodium metal dissolves in water, reacting violently to produce hydrogen gas, not oxygen: 2Na + 2H2O → 2NaOH + H2. Therefore, statement B is false. Copper(II) can be reduced to copper(I) under certain conditions. Nitrogen is slightly soluble but generally considered insoluble. CO2 is soluble in water. Lead (207.2) has higher atomic weight than copper (63.5).",
     "hint": "Sodium reacts with water to produce hydrogen, not oxygen.",

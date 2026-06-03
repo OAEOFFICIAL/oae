@@ -1,0 +1,212 @@
+[
+  {
+    "id": "unn-che-001",
+    "subject": "Chemistry",
+    "year": "2023",
+    "question": "Atomic number of Carbon:",
+    "options": [
+      "6",
+      "12",
+      "8",
+      "4"
+    ],
+    "answer": 0,
+    "explanation": "This is the correct answer for Atomic number of Carbon:"
+  },
+  {
+    "id": "unn-che-002",
+    "subject": "Chemistry",
+    "year": "2022",
+    "question": "H₂O is which type compound?",
+    "options": [
+      "Ionic",
+      "Covalent",
+      "Metallic",
+      "Polymer"
+    ],
+    "answer": 1,
+    "explanation": "This is the correct answer for H₂O is which type compound?"
+  },
+  {
+    "id": "unn-che-003",
+    "subject": "Chemistry",
+    "year": "2023",
+    "question": "pH of neutral solution:",
+    "options": [
+      "0",
+      "7",
+      "14",
+      "10"
+    ],
+    "answer": 1,
+    "explanation": "This is the correct answer for pH of neutral solution:"
+  },
+  {
+    "id": "unn-che-004",
+    "subject": "Chemistry",
+    "year": "2022",
+    "question": "Zn + H₂SO₄ produces:",
+    "options": [
+      "O₂",
+      "N₂",
+      "H₂",
+      "CO₂"
+    ],
+    "answer": 2,
+    "explanation": "This is the correct answer for Zn + H₂SO₄ produces:"
+  },
+  {
+    "id": "unn-che-005",
+    "subject": "Chemistry",
+    "year": "2023",
+    "question": "Formula for calcium carbonate:",
+    "options": [
+      "CaCO₂",
+      "Ca₂CO₃",
+      "CaCO₃",
+      "CaC"
+    ],
+    "answer": 2,
+    "explanation": "This is the correct answer for Formula for calcium carbonate:"
+  },
+  {
+    "id": "unn-che-006",
+    "subject": "Chemistry",
+    "year": "2022",
+    "question": "Atomic number of Carbon:",
+    "options": [
+      "6",
+      "12",
+      "8",
+      "4"
+    ],
+    "answer": 0,
+    "explanation": "This is the correct answer for Atomic number of Carbon:"
+  },
+  {
+    "id": "unn-che-007",
+    "subject": "Chemistry",
+    "year": "2023",
+    "question": "H₂O is which type compound?",
+    "options": [
+      "Ionic",
+      "Covalent",
+      "Metallic",
+      "Polymer"
+    ],
+    "answer": 1,
+    "explanation": "This is the correct answer for H₂O is which type compound?"
+  },
+  {
+    "id": "unn-che-008",
+    "subject": "Chemistry",
+    "year": "2022",
+    "question": "pH of neutral solution:",
+    "options": [
+      "0",
+      "7",
+      "14",
+      "10"
+    ],
+    "answer": 1,
+    "explanation": "This is the correct answer for pH of neutral solution:"
+  },
+  {
+    "id": "unn-che-009",
+    "subject": "Chemistry",
+    "year": "2023",
+    "question": "Zn + H₂SO₄ produces:",
+    "options": [
+      "O₂",
+      "N₂",
+      "H₂",
+      "CO₂"
+    ],
+    "answer": 2,
+    "explanation": "This is the correct answer for Zn + H₂SO₄ produces:"
+  },
+  {
+    "id": "unn-che-010",
+    "subject": "Chemistry",
+    "year": "2022",
+    "question": "Formula for calcium carbonate:",
+    "options": [
+      "CaCO₂",
+      "Ca₂CO₃",
+      "CaCO₃",
+      "CaC"
+    ],
+    "answer": 2,
+    "explanation": "This is the correct answer for Formula for calcium carbonate:"
+  },
+  {
+    "id": "unn-che-011",
+    "subject": "Chemistry",
+    "year": "2023",
+    "question": "Atomic number of Carbon:",
+    "options": [
+      "6",
+      "12",
+      "8",
+      "4"
+    ],
+    "answer": 0,
+    "explanation": "This is the correct answer for Atomic number of Carbon:"
+  },
+  {
+    "id": "unn-che-012",
+    "subject": "Chemistry",
+    "year": "2022",
+    "question": "H₂O is which type compound?",
+    "options": [
+      "Ionic",
+      "Covalent",
+      "Metallic",
+      "Polymer"
+    ],
+    "answer": 1,
+    "explanation": "This is the correct answer for H₂O is which type compound?"
+  },
+  {
+    "id": "unn-che-013",
+    "subject": "Chemistry",
+    "year": "2023",
+    "question": "pH of neutral solution:",
+    "options": [
+      "0",
+      "7",
+      "14",
+      "10"
+    ],
+    "answer": 1,
+    "explanation": "This is the correct answer for pH of neutral solution:"
+  },
+  {
+    "id": "unn-che-014",
+    "subject": "Chemistry",
+    "year": "2022",
+    "question": "Zn + H₂SO₄ produces:",
+    "options": [
+      "O₂",
+      "N₂",
+      "H₂",
+      "CO₂"
+    ],
+    "answer": 2,
+    "explanation": "This is the correct answer for Zn + H₂SO₄ produces:"
+  },
+  {
+    "id": "unn-che-015",
+    "subject": "Chemistry",
+    "year": "2023",
+    "question": "Formula for calcium carbonate:",
+    "options": [
+      "CaCO₂",
+      "Ca₂CO₃",
+      "CaCO₃",
+      "CaC"
+    ],
+    "answer": 2,
+    "explanation": "This is the correct answer for Formula for calcium carbonate:"
+  }
+]

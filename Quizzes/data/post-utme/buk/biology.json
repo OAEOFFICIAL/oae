@@ -1,0 +1,142 @@
+[
+  {
+    "id": "buk-bio-001",
+    "subject": "Biology",
+    "year": "2023",
+    "question": "What is the basic unit of life?",
+    "options": [
+      "Tissue",
+      "Atom",
+      "Cell",
+      "Organ"
+    ],
+    "answer": 2,
+    "explanation": "This is the correct answer for What is the basic unit of life?"
+  },
+  {
+    "id": "buk-bio-002",
+    "subject": "Biology",
+    "year": "2022",
+    "question": "Which organelle produces energy?",
+    "options": [
+      "Nucleus",
+      "Mitochondrion",
+      "Ribosome",
+      "Golgi"
+    ],
+    "answer": 1,
+    "explanation": "This is the correct answer for Which organelle produces energy?"
+  },
+  {
+    "id": "buk-bio-003",
+    "subject": "Biology",
+    "year": "2023",
+    "question": "Process of plant food production:",
+    "options": [
+      "Respiration",
+      "Photosynthesis",
+      "Fermentation",
+      "Digestion"
+    ],
+    "answer": 1,
+    "explanation": "This is the correct answer for Process of plant food production:"
+  },
+  {
+    "id": "buk-bio-004",
+    "subject": "Biology",
+    "year": "2022",
+    "question": "How many chromosomes in humans?",
+    "options": [
+      "23",
+      "46",
+      "92",
+      "48"
+    ],
+    "answer": 1,
+    "explanation": "This is the correct answer for How many chromosomes in humans?"
+  },
+  {
+    "id": "buk-bio-005",
+    "subject": "Biology",
+    "year": "2023",
+    "question": "Function of red blood cells:",
+    "options": [
+      "Fight infections",
+      "Transport oxygen",
+      "Clot blood",
+      "Produce antibodies"
+    ],
+    "answer": 1,
+    "explanation": "This is the correct answer for Function of red blood cells:"
+  },
+  {
+    "id": "buk-bio-006",
+    "subject": "Biology",
+    "year": "2022",
+    "question": "What is the basic unit of life?",
+    "options": [
+      "Tissue",
+      "Atom",
+      "Cell",
+      "Organ"
+    ],
+    "answer": 2,
+    "explanation": "This is the correct answer for What is the basic unit of life?"
+  },
+  {
+    "id": "buk-bio-007",
+    "subject": "Biology",
+    "year": "2023",
+    "question": "Which organelle produces energy?",
+    "options": [
+      "Nucleus",
+      "Mitochondrion",
+      "Ribosome",
+      "Golgi"
+    ],
+    "answer": 1,
+    "explanation": "This is the correct answer for Which organelle produces energy?"
+  },
+  {
+    "id": "buk-bio-008",
+    "subject": "Biology",
+    "year": "2022",
+    "question": "Process of plant food production:",
+    "options": [
+      "Respiration",
+      "Photosynthesis",
+      "Fermentation",
+      "Digestion"
+    ],
+    "answer": 1,
+    "explanation": "This is the correct answer for Process of plant food production:"
+  },
+  {
+    "id": "buk-bio-009",
+    "subject": "Biology",
+    "year": "2023",
+    "question": "How many chromosomes in humans?",
+    "options": [
+      "23",
+      "46",
+      "92",
+      "48"
+    ],
+    "answer": 1,
+    "explanation": "This is the correct answer for How many chromosomes in humans?"
+  },
+  {
+    "id": "buk-bio-010",
+    "subject": "Biology",
+    "year": "2022",
+    "question": "Function of red blood cells:",
+    "options": [
+      "Fight infections",
+      "Transport oxygen",
+      "Clot blood",
+      "Produce antibodies"
+    ],
+    "answer": 1,
+    "explanation": "This is the correct answer for Function of red blood cells:"
+  }
+]

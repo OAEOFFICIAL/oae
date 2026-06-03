@@ -1,0 +1,45 @@
+[
+  {
+    "id": "unilag-mat-001",
+    "subject": "Mathematics",
+    "year": "2023",
+    "question": "If the perimeter of a rectangle is 24cm and its length is 8cm, what is the area?",
+    "options": [
+      "32 cm²",
+      "64 cm²",
+      "16 cm²",
+      "48 cm²"
+    ],
+    "answer": "32 cm²",
+    "explanation": "Perimeter = 2(L + B). So 24 = 2(8 + B) ➔ 12 = 8 + B ➔ B = 4cm. Area = L * B = 8 * 4 = 32 cm²."
+  },
+  {
+    "id": "unilag-eng-001",
+    "subject": "Use of English",
+    "year": "2023",
+    "instruction": "Choose the word nearest in meaning to the underlined word.",
+    "question": "The board of directors were *appalled* by the sudden drop in revenue.",
+    "options": [
+      "delighted",
+      "shocked",
+      "confused",
+      "impressed"
+    ],
+    "answer": "shocked",
+    "explanation": "'Appalled' means greatly dismayed or horrified, which is closest in meaning to shocked."
+  },
+  {
+    "id": "unilag-gp-001",
+    "subject": "General Paper",
+    "year": "2023",
+    "question": "Who was the first and only Prime Minister of an independent Nigeria?",
+    "options": [
+      "Nnamdi Azikiwe",
+      "Obafemi Awolowo",
+      "Abubakar Tafawa Balewa",
+      "Ahmadu Bello"
+    ],
+    "answer": "Abubakar Tafawa Balewa",
+    "explanation": "Sir Abubakar Tafawa Balewa served as the Prime Minister of Nigeria from independence in 1960 until 1966."
+  }
+]

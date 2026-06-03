@@ -490,6 +490,33 @@ const QuizRenderer = (function() {
     const subjectScores = results.subjectScores;
     const pct = results.percentage;
     
+    // Save to oae_quiz_history
+    try {
+      const history = JSON.parse(localStorage.getItem('oae_quiz_history')) || [];
+      const newEntry = {
+        id: 'quiz_' + Date.now(),
+        timestamp: new Date().toISOString(),
+        mode: engine.config.mode || 'quiz',
+        percentage: parseFloat(pct),
+        totalCorrect: results.totalCorrect,
+        totalQuestions: results.totalQuestions,
+        totalMarks: results.totalMarks,
+        maxMarks: results.maxMarks,
+        subjects: Object.entries(subjectScores).map(([id, score]) => ({
+          id,
+          name: score.name,
+          correct: score.correct,
+          total: score.total,
+          marks: score.marks,
+          totalMarks: score.totalMarks
+        }))
+      };
+      history.push(newEntry);
+      localStorage.setItem('oae_quiz_history', JSON.stringify(history));
+    } catch (err) {
+      console.error('Error saving quiz results to history:', err);
+    }
+    
     let subjectBreakdownHtml = '';
     Object.entries(subjectScores).forEach(([subj, score]) => {
       subjectBreakdownHtml += `

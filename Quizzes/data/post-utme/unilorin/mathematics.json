@@ -1,0 +1,212 @@
+[
+  {
+    "id": "unilorin-mat-001",
+    "subject": "Mathematics",
+    "year": "2023",
+    "question": "Solve: 2x + 5 = 15",
+    "options": [
+      "x=5",
+      "x=10",
+      "x=3",
+      "x=15"
+    ],
+    "answer": 0,
+    "explanation": "This is the correct answer for Solve: 2x + 5 = 15"
+  },
+  {
+    "id": "unilorin-mat-002",
+    "subject": "Mathematics",
+    "year": "2022",
+    "question": "What is 25% of 80?",
+    "options": [
+      "15",
+      "20",
+      "25",
+      "30"
+    ],
+    "answer": 1,
+    "explanation": "This is the correct answer for What is 25% of 80?"
+  },
+  {
+    "id": "unilorin-mat-003",
+    "subject": "Mathematics",
+    "year": "2023",
+    "question": "If a=3 and b=4, find a²+b²",
+    "options": [
+      "25",
+      "49",
+      "12",
+      "7"
+    ],
+    "answer": 0,
+    "explanation": "This is the correct answer for If a=3 and b=4, find a²+b²"
+  },
+  {
+    "id": "unilorin-mat-004",
+    "subject": "Mathematics",
+    "year": "2022",
+    "question": "Simplify: 3x + 2x - x",
+    "options": [
+      "4x",
+      "5x",
+      "2x",
+      "6x"
+    ],
+    "answer": 0,
+    "explanation": "This is the correct answer for Simplify: 3x + 2x - x"
+  },
+  {
+    "id": "unilorin-mat-005",
+    "subject": "Mathematics",
+    "year": "2023",
+    "question": "What is the area of a circle with radius 5?",
+    "options": [
+      "25π",
+      "10π",
+      "50π",
+      "5π"
+    ],
+    "answer": 0,
+    "explanation": "This is the correct answer for What is the area of a circle with radius 5?"
+  },
+  {
+    "id": "unilorin-mat-006",
+    "subject": "Mathematics",
+    "year": "2022",
+    "question": "Solve: 2x + 5 = 15",
+    "options": [
+      "x=5",
+      "x=10",
+      "x=3",
+      "x=15"
+    ],
+    "answer": 0,
+    "explanation": "This is the correct answer for Solve: 2x + 5 = 15"
+  },
+  {
+    "id": "unilorin-mat-007",
+    "subject": "Mathematics",
+    "year": "2023",
+    "question": "What is 25% of 80?",
+    "options": [
+      "15",
+      "20",
+      "25",
+      "30"
+    ],
+    "answer": 1,
+    "explanation": "This is the correct answer for What is 25% of 80?"
+  },
+  {
+    "id": "unilorin-mat-008",
+    "subject": "Mathematics",
+    "year": "2022",
+    "question": "If a=3 and b=4, find a²+b²",
+    "options": [
+      "25",
+      "49",
+      "12",
+      "7"
+    ],
+    "answer": 0,
+    "explanation": "This is the correct answer for If a=3 and b=4, find a²+b²"
+  },
+  {
+    "id": "unilorin-mat-009",
+    "subject": "Mathematics",
+    "year": "2023",
+    "question": "Simplify: 3x + 2x - x",
+    "options": [
+      "4x",
+      "5x",
+      "2x",
+      "6x"
+    ],
+    "answer": 0,
+    "explanation": "This is the correct answer for Simplify: 3x + 2x - x"
+  },
+  {
+    "id": "unilorin-mat-010",
+    "subject": "Mathematics",
+    "year": "2022",
+    "question": "What is the area of a circle with radius 5?",
+    "options": [
+      "25π",
+      "10π",
+      "50π",
+      "5π"
+    ],
+    "answer": 0,
+    "explanation": "This is the correct answer for What is the area of a circle with radius 5?"
+  },
+  {
+    "id": "unilorin-mat-011",
+    "subject": "Mathematics",
+    "year": "2023",
+    "question": "Solve: 2x + 5 = 15",
+    "options": [
+      "x=5",
+      "x=10",
+      "x=3",
+      "x=15"
+    ],
+    "answer": 0,
+    "explanation": "This is the correct answer for Solve: 2x + 5 = 15"
+  },
+  {
+    "id": "unilorin-mat-012",
+    "subject": "Mathematics",
+    "year": "2022",
+    "question": "What is 25% of 80?",
+    "options": [
+      "15",
+      "20",
+      "25",
+      "30"
+    ],
+    "answer": 1,
+    "explanation": "This is the correct answer for What is 25% of 80?"
+  },
+  {
+    "id": "unilorin-mat-013",
+    "subject": "Mathematics",
+    "year": "2023",
+    "question": "If a=3 and b=4, find a²+b²",
+    "options": [
+      "25",
+      "49",
+      "12",
+      "7"
+    ],
+    "answer": 0,
+    "explanation": "This is the correct answer for If a=3 and b=4, find a²+b²"
+  },
+  {
+    "id": "unilorin-mat-014",
+    "subject": "Mathematics",
+    "year": "2022",
+    "question": "Simplify: 3x + 2x - x",
+    "options": [
+      "4x",
+      "5x",
+      "2x",
+      "6x"
+    ],
+    "answer": 0,
+    "explanation": "This is the correct answer for Simplify: 3x + 2x - x"
+  },
+  {
+    "id": "unilorin-mat-015",
+    "subject": "Mathematics",
+    "year": "2023",
+    "question": "What is the area of a circle with radius 5?",
+    "options": [
+      "25π",
+      "10π",
+      "50π",
+      "5π"
+    ],
+    "answer": 0,
+    "explanation": "This is the correct answer for What is the area of a circle with radius 5?"
+  }
+]

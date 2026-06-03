@@ -1,0 +1,102 @@
+[
+  {
+    "id": "oau-eng-001",
+    "subject": "Use of English",
+    "year": "2023",
+    "question": "The board of directors were *appalled* by the sudden drop in revenue.",
+    "instruction": "Choose the word nearest in meaning to the underlined word.",
+    "options": ["delighted", "shocked", "confused", "impressed"],
+    "answer": 1,
+    "explanation": "'Appalled' means greatly dismayed or horrified, which is closest in meaning to shocked."
+  },
+  {
+    "id": "oau-eng-002",
+    "subject": "Use of English",
+    "year": "2023",
+    "question": "Despite his *prodigious* talent, he remained humble and grounded.",
+    "instruction": "Choose the word nearest in meaning to the underlined word.",
+    "options": ["limited", "mediocre", "remarkable", "ordinary"],
+    "answer": 2,
+    "explanation": "'Prodigious' means extraordinarily great in extent or degree, similar to remarkable."
+  },
+  {
+    "id": "oau-eng-003",
+    "subject": "Use of English",
+    "year": "2022",
+    "question": "The CEO's *inexorable* rise to success was attributed to his persistence and vision.",
+    "instruction": "Choose the word nearest in meaning to the underlined word.",
+    "options": ["rapid", "unstoppable", "gradual", "questionable"],
+    "answer": 1,
+    "explanation": "'Inexorable' means unstoppable; unable to be prevented or reversed."
+  },
+  {
+    "id": "oau-eng-004",
+    "subject": "Use of English",
+    "year": "2023",
+    "question": "Choose the option that corrects the error in the sentence: 'Neither the students nor the teacher were satisfied with the results.'",
+    "instruction": "Identify the grammatical error.",
+    "options": ["Change 'were' to 'was'", "Change 'satisfied' to 'satisfying'", "Change 'Neither' to 'Either'", "No correction needed"],
+    "answer": 0,
+    "explanation": "When neither...nor is used with singular subjects, the verb should agree with the nearest subject (teacher = singular), so 'was' is correct."
+  },
+  {
+    "id": "oau-eng-005",
+    "subject": "Use of English",
+    "year": "2022",
+    "question": "Which sentence uses the semi-colon correctly?",
+    "instruction": "Choose the correct option.",
+    "options": ["He studied hard; he wanted to pass the exam.", "She ran to the store; buying groceries.", "They waited outside; while it rained.", "The car broke down; therefore we walked home."],
+    "answer": 0,
+    "explanation": "A semi-colon connects two independent clauses. Option A correctly uses it between two complete sentences."
+  },
+  {
+    "id": "oau-eng-006",
+    "subject": "Use of English",
+    "year": "2023",
+    "question": "What is the meaning of the phrase 'to let the cat out of the bag'?",
+    "instruction": "Choose the best meaning.",
+    "options": ["To free a trapped cat", "To reveal a secret", "To be careless with animals", "To take responsibility for something"],
+    "answer": 1,
+    "explanation": "This idiom means to accidentally or intentionally reveal a secret or hidden information."
+  },
+  {
+    "id": "oau-eng-007",
+    "subject": "Use of English",
+    "year": "2022",
+    "question": "Identify the word that is spelled correctly:",
+    "instruction": "Choose the correctly spelled word.",
+    "options": ["occassion", "occasion", "ocasion", "occation"],
+    "answer": 1,
+    "explanation": "The correct spelling is 'occasion' with double 'c' and single 's'."
+  },
+  {
+    "id": "oau-eng-008",
+    "subject": "Use of English",
+    "year": "2023",
+    "question": "Choose the option that best completes the sentence: 'If I _____ known about the event, I would have attended.'",
+    "instruction": "Select the correct verb form.",
+    "options": ["had", "have", "would have", "did"],
+    "answer": 0,
+    "explanation": "In third conditional sentences, 'had' is used in the if-clause (If I had known...) followed by would have in the main clause."
+  },
+  {
+    "id": "oau-eng-009",
+    "subject": "Use of English",
+    "year": "2022",
+    "question": "What is the antonym of 'benevolent'?",
+    "instruction": "Choose the word opposite in meaning.",
+    "options": ["generous", "kind", "malevolent", "helpful"],
+    "answer": 2,
+    "explanation": "'Benevolent' means kind and generous; the antonym is 'malevolent' which means evil or harmful."
+  },
+  {
+    "id": "oau-eng-010",
+    "subject": "Use of English",
+    "year": "2023",
+    "question": "Identify the part of speech of the underlined word in: 'He spoke in an *undertone*.'",
+    "instruction": "Choose the correct part of speech.",
+    "options": ["verb", "adjective", "noun", "adverb"],
+    "answer": 2,
+    "explanation": "'Undertone' is a noun referring to a low or subdued sound or tone."
+  }
+]

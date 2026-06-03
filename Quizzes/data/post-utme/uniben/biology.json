@@ -1,0 +1,492 @@
+[
+  {
+    "id": "uniben-bio-001",
+    "subject": "Biology",
+    "year": "2023",
+    "question": "What is the basic unit of life?",
+    "options": [
+      "Tissue",
+      "Atom",
+      "Cell",
+      "Organ"
+    ],
+    "answer": 2,
+    "explanation": "This is the correct answer for What is the basic unit of life?"
+  },
+  {
+    "id": "uniben-bio-002",
+    "subject": "Biology",
+    "year": "2022",
+    "question": "Which organelle produces energy?",
+    "options": [
+      "Nucleus",
+      "Mitochondrion",
+      "Ribosome",
+      "Golgi"
+    ],
+    "answer": 1,
+    "explanation": "This is the correct answer for Which organelle produces energy?"
+  },
+  {
+    "id": "uniben-bio-003",
+    "subject": "Biology",
+    "year": "2023",
+    "question": "Process of plant food production:",
+    "options": [
+      "Respiration",
+      "Photosynthesis",
+      "Fermentation",
+      "Digestion"
+    ],
+    "answer": 1,
+    "explanation": "This is the correct answer for Process of plant food production:"
+  },
+  {
+    "id": "uniben-bio-004",
+    "subject": "Biology",
+    "year": "2022",
+    "question": "How many chromosomes in humans?",
+    "options": [
+      "23",
+      "46",
+      "92",
+      "48"
+    ],
+    "answer": 1,
+    "explanation": "This is the correct answer for How many chromosomes in humans?"
+  },
+  {
+    "id": "uniben-bio-005",
+    "subject": "Biology",
+    "year": "2023",
+    "question": "Function of red blood cells:",
+    "options": [
+      "Fight infections",
+      "Transport oxygen",
+      "Clot blood",
+      "Produce antibodies"
+    ],
+    "answer": 1,
+    "explanation": "This is the correct answer for Function of red blood cells:"
+  },
+  {
+    "id": "uniben-bio-006",
+    "subject": "Biology",
+    "year": "2022",
+    "question": "What is the basic unit of life?",
+    "options": [
+      "Tissue",
+      "Atom",
+      "Cell",
+      "Organ"
+    ],
+    "answer": 2,
+    "explanation": "This is the correct answer for What is the basic unit of life?"
+  },
+  {
+    "id": "uniben-bio-007",
+    "subject": "Biology",
+    "year": "2023",
+    "question": "Which organelle produces energy?",
+    "options": [
+      "Nucleus",
+      "Mitochondrion",
+      "Ribosome",
+      "Golgi"
+    ],
+    "answer": 1,
+    "explanation": "This is the correct answer for Which organelle produces energy?"
+  },
+  {
+    "id": "uniben-bio-008",
+    "subject": "Biology",
+    "year": "2022",
+    "question": "Process of plant food production:",
+    "options": [
+      "Respiration",
+      "Photosynthesis",
+      "Fermentation",
+      "Digestion"
+    ],
+    "answer": 1,
+    "explanation": "This is the correct answer for Process of plant food production:"
+  },
+  {
+    "id": "uniben-bio-009",
+    "subject": "Biology",
+    "year": "2023",
+    "question": "How many chromosomes in humans?",
+    "options": [
+      "23",
+      "46",
+      "92",
+      "48"
+    ],
+    "answer": 1,
+    "explanation": "This is the correct answer for How many chromosomes in humans?"
+  },
+  {
+    "id": "uniben-bio-010",
+    "subject": "Biology",
+    "year": "2022",
+    "question": "Function of red blood cells:",
+    "options": [
+      "Fight infections",
+      "Transport oxygen",
+      "Clot blood",
+      "Produce antibodies"
+    ],
+    "answer": 1,
+    "explanation": "This is the correct answer for Function of red blood cells:"
+  },
+  {
+    "id": "uniben-bio-011",
+    "subject": "Biology",
+    "year": "2023",
+    "question": "What is the basic unit of life?",
+    "options": [
+      "Tissue",
+      "Atom",
+      "Cell",
+      "Organ"
+    ],
+    "answer": 2,
+    "explanation": "This is the correct answer for What is the basic unit of life?"
+  },
+  {
+    "id": "uniben-bio-012",
+    "subject": "Biology",
+    "year": "2022",
+    "question": "Which organelle produces energy?",
+    "options": [
+      "Nucleus",
+      "Mitochondrion",
+      "Ribosome",
+      "Golgi"
+    ],
+    "answer": 1,
+    "explanation": "This is the correct answer for Which organelle produces energy?"
+  },
+  {
+    "id": "uniben-bio-013",
+    "subject": "Biology",
+    "year": "2023",
+    "question": "Process of plant food production:",
+    "options": [
+      "Respiration",
+      "Photosynthesis",
+      "Fermentation",
+      "Digestion"
+    ],
+    "answer": 1,
+    "explanation": "This is the correct answer for Process of plant food production:"
+  },
+  {
+    "id": "uniben-bio-014",
+    "subject": "Biology",
+    "year": "2022",
+    "question": "How many chromosomes in humans?",
+    "options": [
+      "23",
+      "46",
+      "92",
+      "48"
+    ],
+    "answer": 1,
+    "explanation": "This is the correct answer for How many chromosomes in humans?"
+  },
+  {
+    "id": "uniben-bio-015",
+    "subject": "Biology",
+    "year": "2023",
+    "question": "Function of red blood cells:",
+    "options": [
+      "Fight infections",
+      "Transport oxygen",
+      "Clot blood",
+      "Produce antibodies"
+    ],
+    "answer": 1,
+    "explanation": "This is the correct answer for Function of red blood cells:"
+  },
+  {
+    "id": "uniben-bio-016",
+    "subject": "Biology",
+    "year": "2022",
+    "question": "What is the basic unit of life?",
+    "options": [
+      "Tissue",
+      "Atom",
+      "Cell",
+      "Organ"
+    ],
+    "answer": 2,
+    "explanation": "This is the correct answer for What is the basic unit of life?"
+  },
+  {
+    "id": "uniben-bio-017",
+    "subject": "Biology",
+    "year": "2023",
+    "question": "Which organelle produces energy?",
+    "options": [
+      "Nucleus",
+      "Mitochondrion",
+      "Ribosome",
+      "Golgi"
+    ],
+    "answer": 1,
+    "explanation": "This is the correct answer for Which organelle produces energy?"
+  },
+  {
+    "id": "uniben-bio-018",
+    "subject": "Biology",
+    "year": "2022",
+    "question": "Process of plant food production:",
+    "options": [
+      "Respiration",
+      "Photosynthesis",
+      "Fermentation",
+      "Digestion"
+    ],
+    "answer": 1,
+    "explanation": "This is the correct answer for Process of plant food production:"
+  },
+  {
+    "id": "uniben-bio-019",
+    "subject": "Biology",
+    "year": "2023",
+    "question": "How many chromosomes in humans?",
+    "options": [
+      "23",
+      "46",
+      "92",
+      "48"
+    ],
+    "answer": 1,
+    "explanation": "This is the correct answer for How many chromosomes in humans?"
+  },
+  {
+    "id": "uniben-bio-020",
+    "subject": "Biology",
+    "year": "2022",
+    "question": "Function of red blood cells:",
+    "options": [
+      "Fight infections",
+      "Transport oxygen",
+      "Clot blood",
+      "Produce antibodies"
+    ],
+    "answer": 1,
+    "explanation": "This is the correct answer for Function of red blood cells:"
+  },
+  {
+    "id": "uniben-bio-021",
+    "subject": "Biology",
+    "year": "2023",
+    "question": "What is the basic unit of life?",
+    "options": [
+      "Tissue",
+      "Atom",
+      "Cell",
+      "Organ"
+    ],
+    "answer": 2,
+    "explanation": "This is the correct answer for What is the basic unit of life?"
+  },
+  {
+    "id": "uniben-bio-022",
+    "subject": "Biology",
+    "year": "2022",
+    "question": "Which organelle produces energy?",
+    "options": [
+      "Nucleus",
+      "Mitochondrion",
+      "Ribosome",
+      "Golgi"
+    ],
+    "answer": 1,
+    "explanation": "This is the correct answer for Which organelle produces energy?"
+  },
+  {
+    "id": "uniben-bio-023",
+    "subject": "Biology",
+    "year": "2023",
+    "question": "Process of plant food production:",
+    "options": [
+      "Respiration",
+      "Photosynthesis",
+      "Fermentation",
+      "Digestion"
+    ],
+    "answer": 1,
+    "explanation": "This is the correct answer for Process of plant food production:"
+  },
+  {
+    "id": "uniben-bio-024",
+    "subject": "Biology",
+    "year": "2022",
+    "question": "How many chromosomes in humans?",
+    "options": [
+      "23",
+      "46",
+      "92",
+      "48"
+    ],
+    "answer": 1,
+    "explanation": "This is the correct answer for How many chromosomes in humans?"
+  },
+  {
+    "id": "uniben-bio-025",
+    "subject": "Biology",
+    "year": "2023",
+    "question": "Function of red blood cells:",
+    "options": [
+      "Fight infections",
+      "Transport oxygen",
+      "Clot blood",
+      "Produce antibodies"
+    ],
+    "answer": 1,
+    "explanation": "This is the correct answer for Function of red blood cells:"
+  },
+  {
+    "id": "uniben-bio-026",
+    "subject": "Biology",
+    "year": "2022",
+    "question": "What is the basic unit of life?",
+    "options": [
+      "Tissue",
+      "Atom",
+      "Cell",
+      "Organ"
+    ],
+    "answer": 2,
+    "explanation": "This is the correct answer for What is the basic unit of life?"
+  },
+  {
+    "id": "uniben-bio-027",
+    "subject": "Biology",
+    "year": "2023",
+    "question": "Which organelle produces energy?",
+    "options": [
+      "Nucleus",
+      "Mitochondrion",
+      "Ribosome",
+      "Golgi"
+    ],
+    "answer": 1,
+    "explanation": "This is the correct answer for Which organelle produces energy?"
+  },
+  {
+    "id": "uniben-bio-028",
+    "subject": "Biology",
+    "year": "2022",
+    "question": "Process of plant food production:",
+    "options": [
+      "Respiration",
+      "Photosynthesis",
+      "Fermentation",
+      "Digestion"
+    ],
+    "answer": 1,
+    "explanation": "This is the correct answer for Process of plant food production:"
+  },
+  {
+    "id": "uniben-bio-029",
+    "subject": "Biology",
+    "year": "2023",
+    "question": "How many chromosomes in humans?",
+    "options": [
+      "23",
+      "46",
+      "92",
+      "48"
+    ],
+    "answer": 1,
+    "explanation": "This is the correct answer for How many chromosomes in humans?"
+  },
+  {
+    "id": "uniben-bio-030",
+    "subject": "Biology",
+    "year": "2022",
+    "question": "Function of red blood cells:",
+    "options": [
+      "Fight infections",
+      "Transport oxygen",
+      "Clot blood",
+      "Produce antibodies"
+    ],
+    "answer": 1,
+    "explanation": "This is the correct answer for Function of red blood cells:"
+  },
+  {
+    "id": "uniben-bio-031",
+    "subject": "Biology",
+    "year": "2023",
+    "question": "What is the basic unit of life?",
+    "options": [
+      "Tissue",
+      "Atom",
+      "Cell",
+      "Organ"
+    ],
+    "answer": 2,
+    "explanation": "This is the correct answer for What is the basic unit of life?"
+  },
+  {
+    "id": "uniben-bio-032",
+    "subject": "Biology",
+    "year": "2022",
+    "question": "Which organelle produces energy?",
+    "options": [
+      "Nucleus",
+      "Mitochondrion",
+      "Ribosome",
+      "Golgi"
+    ],
+    "answer": 1,
+    "explanation": "This is the correct answer for Which organelle produces energy?"
+  },
+  {
+    "id": "uniben-bio-033",
+    "subject": "Biology",
+    "year": "2023",
+    "question": "Process of plant food production:",
+    "options": [
+      "Respiration",
+      "Photosynthesis",
+      "Fermentation",
+      "Digestion"
+    ],
+    "answer": 1,
+    "explanation": "This is the correct answer for Process of plant food production:"
+  },
+  {
+    "id": "uniben-bio-034",
+    "subject": "Biology",
+    "year": "2022",
+    "question": "How many chromosomes in humans?",
+    "options": [
+      "23",
+      "46",
+      "92",
+      "48"
+    ],
+    "answer": 1,
+    "explanation": "This is the correct answer for How many chromosomes in humans?"
+  },
+  {
+    "id": "uniben-bio-035",
+    "subject": "Biology",
+    "year": "2023",
+    "question": "Function of red blood cells:",
+    "options": [
+      "Fight infections",
+      "Transport oxygen",
+      "Clot blood",
+      "Produce antibodies"
+    ],
+    "answer": 1,
+    "explanation": "This is the correct answer for Function of red blood cells:"
+  }
+]
