@@ -5,9 +5,9 @@
   <meta name="viewport" content="width=device-width,initial-scale=1" />
   <title>OAE — Post-UTME Automated Prep Engine</title>
   
-  <link rel="stylesheet" href="../Assets/css/style.css">
-  <link rel="stylesheet" href="../Assets/css/quiz-navbar.css">
-  <link rel="stylesheet" href="../Assets/css/footer.css">
+  <link rel="stylesheet" href="/Assets/css/style.css">
+  <link rel="stylesheet" href="/Assets/css/quiz-navbar.css">
+  <link rel="stylesheet" href="/Assets/css/footer.css">
   <link href="https://cdn.jsdelivr.net/npm/remixicon@3.5.0/fonts/remixicon.css" rel="stylesheet">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
   
@@ -392,14 +392,34 @@
       body.dark-mode::-webkit-scrollbar-thumb:hover {
         background: #64748b;
       }
+
+      .config-warning {
+        display: flex;
+        align-items: flex-start;
+        gap: 10px;
+        background: rgba(10,138,47,0.07);
+        border: 1px solid rgba(10,138,47,0.2);
+        border-radius: 8px;
+        padding: 14px 16px;
+        margin-top: 16px;
+        color: #065f20;
+        font-size: 0.9rem;
+        line-height: 1.5;
+      }
+
+      body.dark-mode .config-warning {
+        background: rgba(10,138,47,0.12);
+        color: #86efac;
+        border-color: rgba(10,138,47,0.3);
+      }
     </style>
 </head>
 <body>
     <!-- Quiz Navbar -->
     <nav class="quiz-navbar">
         <div class="quiz-logo">
-            <a href="../../Index.htm">
-               <img class="logo-quiz" src="../../oae.png" alt="OAE">
+            <a href="/">
+               <img class="logo-quiz" src="/oae.png" alt="OAE">
             </a>
         </div>
         <div class="quiz-search-section">
