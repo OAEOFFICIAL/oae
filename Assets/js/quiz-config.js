@@ -301,6 +301,10 @@ const QuizConfig = (function() {
         step3Grid.querySelectorAll('.wizard-card').forEach(card => {
           card.addEventListener('click', () => {
             const examId = card.dataset.exam;
+            if (examId === 'post-utme') {
+              window.location.href = 'post-utme.html';
+              return;
+            }
             applyExamSetup(examId);
             finishOnboarding();
           });

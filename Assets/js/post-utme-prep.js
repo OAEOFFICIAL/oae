@@ -475,11 +475,13 @@ document.addEventListener('DOMContentLoaded', () => {
         
         if(cfgLogo) {
             if (data.logoImg) {
-                cfgLogo.innerHTML = `<img src="${data.logoImg}" style="width:100%;height:100%;object-fit:cover;border-radius:12px;">`;
-                cfgLogo.style.background = "transparent";
+                cfgLogo.innerHTML = `<img src="${data.logoImg}" alt="${data.name} logo">`;
+                cfgLogo.style.background = 'transparent';
+                cfgLogo.style.boxShadow = 'none';
             } else {
-                cfgLogo.innerText = data.logo;
-                cfgLogo.style.background = ""; // reset
+                cfgLogo.innerHTML = data.logo;
+                cfgLogo.style.background = '';
+                cfgLogo.style.boxShadow = '';
             }
         }
         if(cfgName) cfgName.innerText = data.name;
