@@ -3625,5 +3625,109 @@
     ],
     "answer": "would have passed",
     "explanation": "This is a past unreal conditional (third conditional). The structure is \"Had + past participle, … would have + past participle\". So \"Had she studied harder, she would have passed the exam.\" Option (b) is correct."
+  },
+  {
+    "id": "unilag-eng-301",
+    "year": "OAE generated questions",
+    "question": "Sentence: The greatness of the creator of the universe is always inexpressible to many adherents of certain faiths.",
+    "options": [
+      "inevitable",
+      "wonderful",
+      "ineffable",
+      "unbearable"
+    ],
+    "answer": "ineffable",
+    "explanation": "“Inexpressible” means too great for words; “ineffable” is the direct synonym. “Inevitable” means unavoidable; “wonderful” means amazing; “unbearable” means intolerable. So (c) is correct."
+  },
+  {
+    "id": "unilag-eng-302",
+    "year": "OAE generated questions",
+    "question": "Sentence: We made a pile in the business deal.",
+    "options": [
+      "lost a lot of money",
+      "earned a lot of money",
+      "broke even",
+      "cut corners"
+    ],
+    "answer": "earned a lot of money",
+    "explanation": "“Make a pile” is an idiom meaning to earn a large amount of money. So (b) is correct."
+  },
+  {
+    "id": "unilag-eng-303",
+    "year": "OAE generated questions",
+    "question": "Sentence: No wonder Dekemi later became a detective; she has been very observant.",
+    "options": [
+      "curious",
+      "perceptive",
+      "inductive",
+      "inquisitive"
+    ],
+    "answer": "perceptive",
+    "explanation": "“Observant” means quick to notice things; “perceptive” means having keen insight. The others are not exact synonyms. So (b) is correct."
+  },
+  {
+    "id": "unilag-eng-304",
+    "year": "OAE generated questions",
+    "question": "Sentence: Nigeria has been playing a vital role in the political and economic development of Africa.",
+    "options": [
+      "creditable",
+      "crucial",
+      "respectable",
+      "laudable"
+    ],
+    "answer": "crucial",
+    "explanation": "“Vital” means extremely important; “crucial” means the same. The others mean praiseworthy or decent. So (b) is correct."
+  },
+  {
+    "id": "unilag-eng-305",
+    "year": "OAE generated questions",
+    "question": "Sentence: Emeka's painting was so realistic that it could almost have been a photograph.",
+    "options": [
+      "picturesque",
+      "concrete",
+      "lively",
+      "authentic"
+    ],
+    "answer": "authentic",
+    "explanation": "“Realistic” means true to reality; “authentic” means genuine and real. “Picturesque” is visually pleasing; “concrete” is specific; “lively” is energetic. So (d) is correct."
+  },
+  {
+    "id": "unilag-eng-306",
+    "year": "OAE generated questions",
+    "question": "Sentence: Courteously, Ade stood back to let his teacher go first through the door.",
+    "options": [
+      "Patiently",
+      "Politely",
+      "Carefully",
+      "Calmly"
+    ],
+    "answer": "Politely",
+    "explanation": "“Courteously” means with good manners; “politely” is the direct synonym. So (b) is correct."
+  },
+  {
+    "id": "unilag-eng-307",
+    "year": "OAE generated questions",
+    "question": "Sentence: Many people used to live in poverty.",
+    "options": [
+      "instability",
+      "want",
+      "difficulty",
+      "the slums"
+    ],
+    "answer": "want",
+    "explanation": "“Poverty” means lack of basic necessities; “want” (as a noun) can mean the same. The others are not direct synonyms. So (b) is correct."
+  },
+  {
+    "id": "unilag-eng-308",
+    "year": "OAE generated questions",
+    "question": "Sentence: The manager described Mfon as a man of vehement character.",
+    "options": [
+      "weak and uninterested",
+      "strong and insistent",
+      "troublesome and noisy",
+      "clever and helpful"
+    ],
+    "answer": "strong and insistent",
+    "explanation": "“Vehement” means showing strong feeling, forceful; “strong and insistent” matches. The others are either opposite or unrelated. So (b) is correct."
   }
 ]

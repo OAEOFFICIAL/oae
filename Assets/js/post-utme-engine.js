@@ -17,6 +17,9 @@ class PostUTMEEngine {
         this.timeRemaining = 0;
         this.timerInterval = null;
         this.reviewMode = false; // Tracks if we are reviewing corrections
+        
+        this.mode = this.params.get('mode') || 'exam';
+        this.studySubjects = this.params.get('subjects') ? this.params.get('subjects').split(',') : null;
 
         this.init();
     }
@@ -38,27 +41,32 @@ class PostUTMEEngine {
         const jamb4 = {
             science: [eng, math, (l) => createSub('physics', l), (l) => createSub('chemistry', l)],
             arts: [eng, (l) => createSub('literature', l), (l) => createSub('government', l), (l) => createSub('crs', l)],
-            commercial: [eng, math, (l) => createSub('economics', l), (l) => createSub('accounting', l)],
-            social: [eng, math, (l) => createSub('economics', l), (l) => createSub('government', l)]
+            commercial: [eng, math, (l) => createSub('economics', l), (l) => createSub('accounting', l)]
         };
         
         const j = jamb4[f] || jamb4.science;
 
+        let allSubjects = [];
         switch(this.schoolKey) {
-            case 'unilag': return [math(15), eng(15), gen(10)];
-            case 'unilorin': return [eng(20), math(15), gen(15)]; 
-            case 'lasu': return [eng(20), math(15), gen(15)];
-            case 'oau': return [gen(10), j[0](10), j[1](10), j[2](10)];
-            case 'ui': return [j[0](25), j[1](25), j[2](25), j[3](25)];
-            case 'unn': return [j[0](15), j[1](15), j[2](15), j[3](15)];
-            case 'buk': return [j[0](15), j[1](15), j[2](10), j[3](10)];
-            case 'abu': return [eng(15), math(15), gen(10), j[2](10)];
-            case 'uniben': return [eng(25), gen(25), j[1](25), j[2](25)];
-            case 'funaab': return [eng(15), math(15), createSub('biology', 15), createSub('chemistry', 15)];
-            case 'futa': return [eng(15), math(15), createSub('physics', 10), createSub('chemistry', 10)];
-            case 'uniport': return [eng(15), math(15), j[2](10), j[3](10)];
-            default: return [j[0](15), j[1](15), j[2](10), j[3](10)]; // Default fallback
+            case 'unilag': allSubjects = [math(15), eng(15), gen(10)]; break;
+            case 'unilorin': allSubjects = [eng(20), math(15), gen(15)]; break;
+            case 'lasu': allSubjects = [eng(20), math(15), gen(15)]; break;
+            case 'oau': allSubjects = [gen(10), j[0](10), j[1](10), j[2](10)]; break;
+            case 'ui': allSubjects = [j[0](25), j[1](25), j[2](25), j[3](25)]; break;
+            case 'unn': allSubjects = [j[0](15), j[1](15), j[2](15), j[3](15)]; break;
+            case 'buk': allSubjects = [j[0](15), j[1](15), j[2](10), j[3](10)]; break;
+            case 'abu': allSubjects = [eng(15), math(15), gen(10), j[2](10)]; break;
+            case 'uniben': allSubjects = [eng(25), gen(25), j[1](25), j[2](25)]; break;
+            case 'funaab': allSubjects = [eng(15), math(15), createSub('biology', 15), createSub('chemistry', 15)]; break;
+            case 'futa': allSubjects = [eng(15), math(15), createSub('physics', 10), createSub('chemistry', 10)]; break;
+            case 'uniport': allSubjects = [eng(15), math(15), j[2](10), j[3](10)]; break;
+            default: allSubjects = [j[0](15), j[1](15), j[2](10), j[3](10)]; break; // Default fallback
         }
+
+        if (this.mode === 'study' && this.studySubjects) {
+            return allSubjects.filter(sub => this.studySubjects.includes(sub.id));
+        }
+        return allSubjects;
     }
 
     async init() {
@@ -91,7 +99,7 @@ class PostUTMEEngine {
         }
         if (schoolName) schoolName.innerText = this.schoolConfig.name;
         if (schoolDesc) {
-            let desc = `Post-UTME Mock`;
+            let desc = this.mode === 'study' ? 'Interactive Study Session' : 'Post-UTME Mock';
             if (this.faculty) {
                 desc += ` • ${this.faculty.charAt(0).toUpperCase() + this.faculty.slice(1)}`;
             }
@@ -102,11 +110,15 @@ class PostUTMEEngine {
         const btnNext = document.getElementById('btn-next');
         const btnSubmit = document.getElementById('btn-submit-exam');
 
+        if (this.mode === 'study' && btnSubmit) {
+            btnSubmit.innerHTML = '<i class="fas fa-check-circle"></i> Finish Study Session';
+        }
+
         if (btnPrev) btnPrev.addEventListener('click', () => this.navigate(-1));
         if (btnNext) btnNext.addEventListener('click', () => this.navigate(1));
         if (btnSubmit) btnSubmit.addEventListener('click', () => {
-            if (this.reviewMode) {
-                window.location.href = 'post-utme.html'; // Exit review
+            if (this.reviewMode || this.mode === 'study') {
+                window.location.href = 'post-utme.html'; // Exit review or study
             } else {
                 this.submitExam();
             }
@@ -147,7 +159,19 @@ class PostUTMEEngine {
                     }
                 }
                 
-                const shuffled = data.sort(() => 0.5 - Math.random());
+                let subQuestions = data.questions || data.data || [];
+                
+                // --- DEPARTMENTAL FILTERING LOGIC ---
+                // For subjects like UNILAG General Paper where questions are department-specific
+                if (sub.id === 'general-paper' && this.faculty) {
+                    subQuestions = subQuestions.filter(q => {
+                        if (!q.tag) return true;
+                        const t = q.tag.toLowerCase();
+                        return t === 'general' || t === this.faculty.toLowerCase();
+                    });
+                }
+                
+                const shuffled = subQuestions.sort(() => 0.5 - Math.random());
                 const selected = shuffled.slice(0, sub.limit);
                 
                 this.questions.push({
@@ -167,11 +191,21 @@ class PostUTMEEngine {
     }
 
     startTimer() {
+        const display = document.querySelector('.timer-display');
+        
+        if (this.mode === 'study') {
+            if (display) {
+                display.innerHTML = '<i class="fas fa-infinity" style="font-size:1.8rem;"></i>';
+                display.style.color = 'var(--green)';
+                const label = display.nextElementSibling;
+                if(label) label.innerText = "Study Mode";
+            }
+            return;
+        }
+
         const timeMatch = this.schoolConfig.time.match(/\d+/);
         const minutes = timeMatch ? parseInt(timeMatch[0]) : 30;
         this.timeRemaining = minutes * 60;
-
-        const display = document.querySelector('.timer-display');
         
         this.timerInterval = setInterval(() => {
             if (this.reviewMode) return; // Stop ticking in review mode
@@ -242,9 +276,10 @@ class PostUTMEEngine {
         const letters = ['A', 'B', 'C', 'D', 'E'];
         const savedAnswer = this.answers[qData.id];
         
-        // Find correct index for review mode
+        // Find correct index for review mode or study mode feedback
         let correctIdx = -1;
-        if (this.reviewMode) {
+        const isStudyAnswered = this.mode === 'study' && savedAnswer !== undefined;
+        if (this.reviewMode || isStudyAnswered) {
             correctIdx = qData.options.findIndex(o => o.trim() === qData.answer.trim());
         }
 
@@ -252,12 +287,12 @@ class PostUTMEEngine {
             const optDiv = document.createElement('div');
             optDiv.className = 'option-item';
             
-            if (!this.reviewMode && savedAnswer === idx) {
+            if (!this.reviewMode && !isStudyAnswered && savedAnswer === idx) {
                 optDiv.classList.add('selected');
             }
 
-            // --- REVIEW MODE STYLING ---
-            if (this.reviewMode) {
+            // --- REVIEW / STUDY MODE STYLING ---
+            if (this.reviewMode || isStudyAnswered) {
                 optDiv.style.cursor = 'default';
                 if (idx === correctIdx) {
                     // Correct Answer gets Green Outline/Background
@@ -281,6 +316,16 @@ class PostUTMEEngine {
                         <div class="opt-text">${opt}</div>
                     `;
                 }
+                
+                // Allow changing answer in study mode, but keep feedback visible
+                if (this.mode === 'study' && !this.reviewMode) {
+                    optDiv.style.cursor = 'pointer';
+                    optDiv.onclick = () => {
+                        this.answers[qData.id] = idx;
+                        this.renderQuestion();
+                        this.renderPalette();
+                    };
+                }
             } else {
                 optDiv.innerHTML = `
                     <div class="opt-letter">${letters[idx]}</div>
@@ -290,6 +335,10 @@ class PostUTMEEngine {
                     Array.from(optsContainer.children).forEach(c => c.classList.remove('selected'));
                     optDiv.classList.add('selected');
                     this.answers[qData.id] = idx;
+                    
+                    if (this.mode === 'study') {
+                        this.renderQuestion(); // Re-render to show feedback
+                    }
                     this.renderPalette();
                 };
             }
@@ -301,14 +350,15 @@ class PostUTMEEngine {
         container.insertBefore(qTitle, nav);
         container.insertBefore(optsContainer, nav);
 
-        // --- RENDER EXPLANATION IN REVIEW MODE ---
-        if (this.reviewMode && qData.explanation) {
+        // --- RENDER EXPLANATION IN REVIEW MODE OR STUDY MODE ---
+        if ((this.reviewMode || isStudyAnswered) && qData.explanation) {
             const expDiv = document.createElement('div');
             expDiv.className = 'explanation-box';
             expDiv.style.background = '#f8fafc';
             expDiv.style.borderLeft = '4px solid #3b82f6';
             expDiv.style.padding = '15px 20px';
             expDiv.style.marginTop = '20px';
+            expDiv.style.marginBottom = '20px';
             expDiv.style.borderRadius = '0 8px 8px 0';
             expDiv.innerHTML = `<strong style="color:#1e40af;"><i class="fas fa-lightbulb"></i> Explanation:</strong><p style="margin:8px 0 0; color:#334155; line-height:1.5;">${qData.explanation}</p>`;
             container.insertBefore(expDiv, nav);
@@ -338,13 +388,13 @@ class PostUTMEEngine {
             btn.className = 'p-btn';
             btn.innerText = idx + 1;
             
-            if (this.reviewMode) {
-                // In review mode, show green for right, red for wrong, grey for missed
+            if (this.reviewMode || (this.mode === 'study' && this.answers[q.id] !== undefined)) {
+                // Show green for right, red for wrong
                 const userAnsIdx = this.answers[q.id];
                 const correctIdx = q.options.findIndex(o => o.trim() === q.answer.trim());
                 
                 if (userAnsIdx === undefined) {
-                    btn.style.background = '#e2e8f0'; // missed
+                    btn.style.background = '#e2e8f0'; // missed (review mode only)
                 } else if (userAnsIdx === correctIdx) {
                     btn.style.background = '#10b981'; btn.style.color = 'white'; btn.style.borderColor = '#10b981';
                 } else {

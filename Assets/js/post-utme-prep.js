@@ -13,7 +13,7 @@ const schoolDatabase = {
         calculator: "Not Allowed",
         negativeMarking: "No",
         tip: "UNILAG tests Mathematics and General Paper for ALL candidates regardless of the course you applied for. Speed is your absolute biggest advantage here.",
-        requiresFaculty: false
+        requiresFaculty: true
     },
     oau: {
         name: "Obafemi Awolowo University (OAU)",
@@ -31,6 +31,7 @@ const schoolDatabase = {
     ui: {
         name: "University of Ibadan (UI)",
         logo: "UI",
+        logoImg: "/Assets/images/logos/UI_logo.png",
         type: "Advanced Subject CBT",
         questions: "100",
         time: "90 Minutes",
@@ -52,7 +53,7 @@ const schoolDatabase = {
         calculator: "Not Allowed",
         negativeMarking: "No",
         tip: "UNILORIN does not usually test your specific JAMB subjects. Focus entirely on speed in English, basic Math, and current affairs.",
-        requiresFaculty: false
+        requiresFaculty: true
     },
     unn: {
         name: "University of Nigeria, Nsukka (UNN)",
@@ -104,7 +105,7 @@ const schoolDatabase = {
         calculator: "Not Allowed",
         negativeMarking: "No",
         tip: "Since it's a specialized agricultural university, science subjects are compulsory. Expect questions covering O'level practicals.",
-        requiresFaculty: false
+        requiresFaculty: true
     },
     futa: {
         name: "Federal Univ. of Technology (FUTA)",
@@ -130,7 +131,7 @@ const schoolDatabase = {
         calculator: "Not Allowed",
         negativeMarking: "No",
         tip: "LASU often uses an online screening format or a standard CBT. Focus on Use of English and basic Mathematics irrespective of your course.",
-        requiresFaculty: false
+        requiresFaculty: true
     },
     uniport: {
         name: "University of Port Harcourt (UNIPORT)",
@@ -312,7 +313,7 @@ const schoolDatabase = {
         calculator: "Not Allowed",
         negativeMarking: "No",
         tip: "UNIZIK sometimes tests general aptitude. Be prepared for logical reasoning questions.",
-        requiresFaculty: false
+        requiresFaculty: true
     },
     mouau: {
         name: "Michael Okpara Univ. of Agriculture (MOUAU)",
@@ -403,7 +404,7 @@ const schoolDatabase = {
         calculator: "Not Allowed",
         negativeMarking: "No",
         tip: "UNIJOS screening is often heavily tilted towards aptitude and current affairs.",
-        requiresFaculty: false
+        requiresFaculty: true
     },
     futminna: {
         name: "Federal Univ. of Technology, Minna (FUTMINNA)",
@@ -440,6 +441,9 @@ document.addEventListener('DOMContentLoaded', () => {
     const facultySelect = document.getElementById('facultySelect');
     const courseGroup = document.getElementById('courseGroup');
     const startBtn = document.getElementById('startExamBtn');
+    const modeGroup = document.getElementById('modeGroup');
+    const subjectPicker = document.getElementById('subjectPicker');
+    const subjectChips = document.getElementById('subjectChips');
     
     // UI Elements
     const emptyConfig = document.getElementById('emptyConfig');
@@ -456,6 +460,115 @@ document.addEventListener('DOMContentLoaded', () => {
     const cfgNegative = document.getElementById('cfgNegative');
     const cfgTip = document.getElementById('cfgTip');
 
+    let currentMode = 'exam';
+    let selectedStudySubjects = new Set();
+
+    // ── Subject mapping per school+faculty ──
+    // Returns array of { id, name, icon } for subjects that school actually tests
+    function getSchoolSubjects(schoolKey, faculty) {
+        const f = faculty || 'science';
+        const sub = (id, name, icon) => ({ id, name, icon });
+
+        const eng = sub('english', 'Use of English', 'fa-pen-fancy');
+        const math = sub('mathematics', 'Mathematics', 'fa-calculator');
+        const gen = sub('general-paper', 'General Paper', 'fa-newspaper');
+        const phy = sub('physics', 'Physics', 'fa-atom');
+        const chem = sub('chemistry', 'Chemistry', 'fa-flask');
+        const bio = sub('biology', 'Biology', 'fa-dna');
+        const lit = sub('literature', 'Literature', 'fa-feather-alt');
+        const gov = sub('government', 'Government', 'fa-landmark');
+        const crs = sub('crs', 'CRS/IRS', 'fa-cross');
+        const eco = sub('economics', 'Economics', 'fa-chart-line');
+        const acc = sub('accounting', 'Accounting', 'fa-file-invoice-dollar');
+        const com = sub('commerce', 'Commerce', 'fa-store');
+        const geo = sub('geography', 'Geography', 'fa-globe-africa');
+
+        // Department-based JAMB 4 subjects
+        const jamb4 = {
+            science: [eng, math, phy, chem],
+            arts: [eng, lit, gov, crs],
+            commercial: [eng, math, eco, acc]
+        };
+        const j = jamb4[f] || jamb4.science;
+
+        switch(schoolKey) {
+            case 'unilag': return [math, eng, gen];
+            case 'unilorin': return [eng, math, gen];
+            case 'lasu': return [eng, math, gen];
+            case 'oau': return [gen, ...j];
+            case 'ui': return [...j];
+            case 'unn': return [...j];
+            case 'buk': return [...j];
+            case 'abu': return [eng, math, gen, ...j.filter(s => s.id !== 'english' && s.id !== 'mathematics')];
+            case 'uniben': return [eng, gen, ...j.filter(s => s.id !== 'english')];
+            case 'funaab': return [eng, math, bio, chem];
+            case 'futa': return [eng, math, phy, chem];
+            case 'uniport': return [eng, math, ...j.slice(2)];
+            default: return [...j];
+        }
+    }
+
+    function renderSubjectChips() {
+        if (!subjectChips) return;
+        const schoolKey = schoolSelect.value;
+        const faculty = facultySelect.value;
+        if (!schoolKey) return;
+
+        const subjects = getSchoolSubjects(schoolKey, faculty);
+        subjectChips.innerHTML = '';
+        selectedStudySubjects.clear();
+
+        subjects.forEach(sub => {
+            selectedStudySubjects.add(sub.id); // Select all by default
+            const chip = document.createElement('div');
+            chip.className = 'subject-chip selected';
+            chip.dataset.subjectId = sub.id;
+            chip.innerHTML = `<i class="fas ${sub.icon}"></i> ${sub.name}`;
+            chip.addEventListener('click', () => {
+                if (selectedStudySubjects.has(sub.id)) {
+                    if (selectedStudySubjects.size <= 1) return; // Must have at least 1
+                    selectedStudySubjects.delete(sub.id);
+                    chip.classList.remove('selected');
+                } else {
+                    selectedStudySubjects.add(sub.id);
+                    chip.classList.add('selected');
+                }
+                validateForm();
+            });
+            subjectChips.appendChild(chip);
+        });
+    }
+
+    // ── Mode Selection ──
+    document.querySelectorAll('.mode-option').forEach(card => {
+        card.addEventListener('click', () => {
+            document.querySelectorAll('.mode-option').forEach(c => c.classList.remove('selected'));
+            card.classList.add('selected');
+            currentMode = card.dataset.mode;
+
+            if (currentMode === 'study') {
+                subjectPicker.classList.add('active');
+                renderSubjectChips();
+                startBtn.innerHTML = '<i class="fas fa-book-open"></i> Start Study Session';
+            } else {
+                subjectPicker.classList.remove('active');
+                startBtn.innerHTML = '<i class="fas fa-play"></i> Start Simulation';
+            }
+            validateForm();
+        });
+    });
+
+    function validateForm() {
+        const schoolKey = schoolSelect.value;
+        if (!schoolKey) { startBtn.disabled = true; return; }
+        
+        const data = schoolDatabase[schoolKey];
+        if (data.requiresFaculty && !facultySelect.value) { startBtn.disabled = true; return; }
+        if (currentMode === 'study' && selectedStudySubjects.size === 0) { startBtn.disabled = true; return; }
+        
+        startBtn.disabled = false;
+    }
+
     function updateConfig() {
         const schoolKey = schoolSelect.value;
         
@@ -463,6 +576,8 @@ document.addEventListener('DOMContentLoaded', () => {
             emptyConfig.style.display = 'block';
             activeConfig.style.display = 'none';
             courseGroup.style.display = 'none';
+            modeGroup.classList.remove('active');
+            subjectPicker.classList.remove('active');
             startBtn.disabled = true;
             return;
         }
@@ -484,41 +599,78 @@ document.addEventListener('DOMContentLoaded', () => {
                 cfgLogo.style.boxShadow = '';
             }
         }
+
+        // Handle Department selection logic & Dynamic Subjects
+        let finalSubjects = data.subjects;
+        
+        if (data.requiresFaculty) {
+            courseGroup.style.display = 'block';
+            const selectedFac = facultySelect.value;
+            
+            if (selectedFac) {
+                const facMap = {
+                    'science': 'Physics, Chemistry, Biology',
+                    'arts': 'Literature, Government, CRS/IRS',
+                    'commercial': 'Accounting, Economics, Commerce'
+                };
+                finalSubjects = `${data.subjects} + ${facMap[selectedFac]}`;
+                modeGroup.classList.add('active');
+                if (currentMode === 'study') renderSubjectChips();
+            } else {
+                modeGroup.classList.remove('active');
+                subjectPicker.classList.remove('active');
+            }
+        } else {
+            courseGroup.style.display = 'none';
+            modeGroup.classList.add('active');
+            if (currentMode === 'study') renderSubjectChips();
+        }
+
         if(cfgName) cfgName.innerText = data.name;
         if(cfgType) cfgType.innerText = data.type;
         if(cfgQuestions) cfgQuestions.innerText = data.questions;
         if(cfgTime) cfgTime.innerText = data.time;
-        if(cfgSubjects) cfgSubjects.innerText = data.subjects;
+        if(cfgSubjects) cfgSubjects.innerText = finalSubjects;
         if(cfgCutoff) cfgCutoff.innerText = data.cutoff || 'Varies';
         if(cfgCalculator) cfgCalculator.innerText = data.calculator || 'Not Allowed';
         if(cfgNegative) cfgNegative.innerText = data.negativeMarking || 'No';
         if(cfgTip) cfgTip.innerText = data.tip;
 
-        // Handle Faculty selection logic
-        if (data.requiresFaculty) {
-            courseGroup.style.display = 'block';
-            startBtn.disabled = !facultySelect.value;
-        } else {
-            courseGroup.style.display = 'none';
-            startBtn.disabled = false;
-        }
+        validateForm();
     }
 
     schoolSelect.addEventListener('change', () => {
         facultySelect.value = ""; // Reset faculty
+        currentMode = 'exam'; // Reset mode
+        document.querySelectorAll('.mode-option').forEach(c => c.classList.remove('selected'));
+        document.querySelector('.mode-option[data-mode="exam"]').classList.add('selected');
+        subjectPicker.classList.remove('active');
+        startBtn.innerHTML = '<i class="fas fa-play"></i> Start Simulation';
         updateConfig();
     });
 
-    facultySelect.addEventListener('change', updateConfig);
+    facultySelect.addEventListener('change', () => {
+        if (currentMode === 'study') renderSubjectChips();
+        updateConfig();
+    });
 
     startBtn.addEventListener('click', () => {
         const schoolKey = schoolSelect.value;
         const faculty = facultySelect.value;
         
-        startBtn.innerHTML = '<i class="fas fa-circle-notch fa-spin"></i> Generating Mock...';
-        
-        setTimeout(() => {
-            window.location.href = `/Quizzes/post-utme-arena.htm?school=${schoolKey}&faculty=${faculty}`;
-        }, 1500);
+        if (currentMode === 'study') {
+            startBtn.innerHTML = '<i class="fas fa-circle-notch fa-spin"></i> Loading Study Session...';
+            const subjects = Array.from(selectedStudySubjects).join(',');
+            setTimeout(() => {
+                window.location.href = `/Quizzes/post-utme-arena.htm?school=${schoolKey}&faculty=${faculty}&mode=study&subjects=${subjects}`;
+            }, 1200);
+        } else {
+            startBtn.innerHTML = '<i class="fas fa-circle-notch fa-spin"></i> Generating Mock...';
+            setTimeout(() => {
+                window.location.href = `/Quizzes/post-utme-arena.htm?school=${schoolKey}&faculty=${faculty}&mode=exam`;
+            }, 1500);
+        }
     });
 });
+
+

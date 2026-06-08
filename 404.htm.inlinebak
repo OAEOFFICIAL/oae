@@ -10,7 +10,7 @@
 </head>
 <body>
   <header class="navbar" role="banner">
-    <a class="brand" href="Index.htm" aria-label="OAE home">
+    <a class="brand" href="/" aria-label="OAE home">
       <div class="logo"><img src="OAE.png" alt="OAE Logo" class="logo-img"></div>
     </a>
     
@@ -23,7 +23,7 @@
       <button onclick="closeMobileMenu()" style="background:none;border:none;font-size:20px;cursor:pointer">×</button>
     </div>
     <nav style="margin-top:20px;display:flex;flex-direction:column;gap:12px">
-      <a href="Index.htm" style="text-decoration:none;color:#174d3a;font-weight:500">Home</a>
+      <a href="/" style="text-decoration:none;color:#174d3a;font-weight:500">Home</a>
       <a href="learning-hub.htm" style="text-decoration:none;color:#174d3a;font-weight:500">Learning Hub</a>
       <a href="jamb.htm" style="text-decoration:none;color:#174d3a;font-weight:500">JAMB</a>
       <a href="tech-careers.htm" style="text-decoration:none;color:#174d3a;font-weight:500">Tech Careers</a>
@@ -38,7 +38,7 @@
 
   <main style="padding:40px;text-align:center">
     <h1>404 | Page not found</h1>
-    <p class="muted">The page you requested doesn't exist. <a href="Index.htm">Return home</a>.</p>
+    <p class="muted">The page you requested doesn't exist. <a href="/">Return home</a>.</p>
   </main>
 
   
