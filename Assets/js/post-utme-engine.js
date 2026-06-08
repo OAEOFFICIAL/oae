@@ -159,7 +159,7 @@ class PostUTMEEngine {
                     }
                 }
                 
-                let subQuestions = data.questions || data.data || [];
+                let subQuestions = Array.isArray(data) ? data : (data.questions || data.data || []);
                 
                 // --- DEPARTMENTAL FILTERING LOGIC ---
                 // For subjects like UNILAG General Paper where questions are department-specific
