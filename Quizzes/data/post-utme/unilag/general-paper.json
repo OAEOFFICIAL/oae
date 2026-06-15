@@ -6360,7 +6360,7 @@
       "Debit Drawings, Credit Inventory",
       "Debit Purchases, Credit Drawings"
     ],
-    "answer": "Debit Drawings, Credit Purchases (or Credit Inventory)",
+    "answer": "Debit Drawings, Credit Purchases",
     "explanation": "Owner’s personal use of goods reduces purchases (or inventory) and increases drawings (a reduction in capital). The most common entry is Debit Drawings, Credit Purchases (if using periodic inventory) or Debit Drawings, Credit Inventory (if using perpetual). Option (a) is standard for many curricula.",
     "tag": "commercial"
   },
@@ -8362,7 +8362,7 @@
       "Dáadáa",
       "O ṣeun"
     ],
-    "answer": "Ẹ ṣé (or “Ẹ ṣéun”)",
+    "answer": "Ẹ ṣé",
     "explanation": "“Ẹ ṣé” or “Ẹ ṣéun” means thank you. “Jọ̀ọ́” is please; “Dáadáa” is good/fine; “O ṣeun” is also thank you but singular. The most common polite form is “Ẹ ṣé”.",
     "tag": "arts"
   },
