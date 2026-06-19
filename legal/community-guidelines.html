@@ -1,0 +1,617 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Community Guidelines | OAE</title>
+  <link rel="stylesheet" href="/Assets/css/style.css">
+  <link rel="stylesheet" href="/Assets/css/navbar.css">
+  <link rel="stylesheet" href="/Assets/css/footer.css">
+  <link rel="stylesheet" href="/Assets/css/legal.css">
+  <link href="https://cdn.jsdelivr.net/npm/remixicon@3.5.0/fonts/remixicon.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+</head>
+<body class="legal-page">
+
+<nav class="navbar">
+        <!-- Logo - Left side -->
+        <div class="logo-section">
+                <img src="/oae.png" alt="OAE"class="logoimg">
+        </div>
+
+        <!-- Search Section - Middle -->
+        <div class="middle-section">
+            <div class="search-section">
+                <i class="fas fa-search"></i>
+                <input type="search" id="site-search" placeholder="Search lessons, exams, careers...">
+                <button class="search-btn" id="search-btn">Search</button>
+            </div>
+        </div>
+
+        <!-- Right Navigation Section - Right side -->
+        <div class="right-section">
+            <!-- Desktop Navigation Links - TEXT BEFORE ICONS -->
+            <ul class="nav-links">
+                <li>
+                    <a href="#">
+                         <i class="fas fa-chevron-down"></i>
+                         Services <i class="fas fa-cogs"></i>
+                    </a>
+                    <div class="dropdown services-dropdown">
+                        <div class="dropdown-section">
+                            <h4> <i class="fas fa-cogs"></i> Services </h4>
+                            <ul class="dropdown-links">
+                                <li><a href="/Quizzes/index.html">Smart Quiz Arena <i class="fas fa-brain"></i></a></li>
+                                <li><a href="/admission/subject-combinations/index.html">JAMB Subject Combos <i class="fas fa-graduation-cap"></i></a></li>
+                                <li><a href="/admission/post-jamb/index.html">Post-UTME & School Screening <i class="fas fa-university"></i></a></li>
+                                <li><a href="/admission/aggregate-calculator/index.html">Aggregate Calculator <i class="fas fa-calculator"></i></a></li>
+                                <li><a href="#">Scholarships & Opportunities <i class="fas fa-award"></i></a></li>
+                                <li><a href="#">Learning Hub <i class="fas fa-book"></i></a></li>
+                                <li><a href="#">Past Questions & Solutions <i class="fas fa-file-alt"></i></a></li>
+                                <li><a href="#">Tech Careers Hub <i class="fas fa-laptop-code"></i></a></li>
+                                <li><a href="#">School Updates & News <i class="fas fa-newspaper"></i></a></li>
+                                <li><a href="#">Resources Library <i class="fas fa-book-open"></i></a></li>
+                                <li><a href="#">OAE Community <i class="fas fa-users"></i></a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <a href="#">
+                         <i class="fas fa-chevron-down"></i>
+                         Explore <i class="fas fa-compass"></i>
+                    </a>
+                    <div class="dropdown explore-dropdown">
+                        <div class="explore-grid">
+                            <!-- Learning Hub Section -->
+                            <div class="dropdown-section">
+                                <h4>Learning Hub <i class="fas fa-book"></i></h4>
+                                <ul class="dropdown-links">
+                                    <li><a href="#"><i class="fas fa-arrow-right"></i> Science <i class="fas fa-flask"></i> </a></li>
+                                    <li><a href="#"><i class="fas fa-arrow-right"></i> Art <i class="fas fa-paint-brush"></i> </a></li>
+                                    <li><a href="#"><i class="fas fa-arrow-right"></i> Commercial <i class="fas fa-chart-line"></i> </a></li>
+                                </ul>
+                            </div>
+                            
+                            <!-- Exams & Tutorials Section -->
+                            <div class="dropdown-section">
+                                <h4>Exams & Tutorials <i class="fas fa-graduation-cap"></i></h4>
+                                <ul class="dropdown-links">
+                                    <li><a href="#">JAMB <i class="fas fa-file-alt"></i></a></li>
+                                    <li><a href="#">WAEC <i class="fas fa-certificate"></i></a></li>
+                                    <li><a href="#">NECO <i class="fas fa-award"></i></a></li>
+                                    <li><a href="#">GCE <i class="fas fa-book-open"></i></a></li>
+                                    <li><a href="/admission/post-jamb/index.html">POST UTME <i class="fas fa-university"></i></a></li>
+                                </ul>
+                            </div>
+                            
+                            <!-- Tech Careers Section -->
+                            <div class="dropdown-section">
+                                <h4>Tech Careers <i class="fas fa-laptop-code"></i></h4>
+                                <ul class="dropdown-links">
+                                    <li><a href="#">Web Development <i class="fas fa-code"></i></a></li>
+                                    <li><a href="#">Mobile Development <i class="fas fa-mobile-alt"></i></a></li>
+                                    <li><a href="#">Data Science <i class="fas fa-chart-bar"></i></a></li>
+                                    <li><a href="#">Cybersecurity <i class="fas fa-shield-alt"></i></a></li>
+                                    <li><a href="#">AI & ML <i class="fas fa-robot"></i></a></li>
+                                    <li><a href="#">UI/UX Design <i class="fas fa-palette"></i></a></li>
+                                    <li><a href="#">Cloud & DevOps <i class="fas fa-cloud"></i></a></li>
+                                    <li><a href="#">Blockchain & Web3 <i class="fas fa-link"></i></a></li>
+                                    <li><a href="#">Game Development <i class="fas fa-gamepad"></i></a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+                <li><a href="#">Media TV <i class="fas fa-tv"></i></a></li>
+                <li><a href="#">Community <i class="fas fa-users"></i></a></li>
+                <li>
+    <a href="#">
+        <i class="fas fa-chevron-down"></i> Resources <i class="fas fa-book-open"></i> 
+    </a>
+
+                       
+    <div class="dropdown resources-dropdown">
+        <div class="dropdown-section">
+            <h4>Resources <i class="fas fa-book-open"></i></h4>
+            <ul class="dropdown-links">
+                <li><a href="#">Past Questions & Solutions <i class="fas fa-file-alt"></i></a></li>
+                <li><a href="#">Study Materials Library <i class="fas fa-book"></i></a></li>
+                <li><a href="#">Study Timetables <i class="fas fa-calendar-alt"></i></a></li>
+                <li><a href="#">Exam Tips & Guides <i class="fas fa-lightbulb"></i></a></li>
+                <li><a href="#">School Updates & News <i class="fas fa-newspaper"></i></a></li>
+            </ul>
+        </div>
+    </div>
+
+</li>
+            </ul>
+
+            <!-- Join OAE Button -->
+            <button class="join-btn">Join OAE</button>
+            
+            <!-- Hamburger Menu - Hidden on desktop, shown on mobile at right edge -->
+            <button class="hamburger">
+                <i class="fas fa-bars"></i>
+            </button>
+        </div>
+
+        <!-- Mobile Menu -->
+        <div class="mobile-menu" id="mobileMenu">
+            <ul class="mobile-links">
+                <li><a href="#"><i class="fas fa-home"></i> Home</a></li>
+                <li>
+                    <a href="#" class="mobile-dropdown-toggle">
+                        <span><i class="fas fa-cogs"></i> Services</span>
+                        <i class="fas fa-chevron-down"></i>
+                    </a>
+                    <ul class="mobile-dropdown">
+                        <li><a href="./Quizzes/index.html"><i class="fas fa-brain"></i> Smart Quiz Arena</a></li>
+                        <li><a href="/admission/subject-combinations/index.html"><i class="fas fa-graduation-cap"></i> JAMB Subject Combos</a></li>
+                        <li><a href="/admission/post-jamb/index.html"><i class="fas fa-university"></i> Post-UTME & Screening</a></li>
+                        <li><a href="/admission/aggregate-calculator/index.html"><i class="fas fa-calculator"></i> Aggregate Calculator</a></li>
+                        <li><a href="#"><i class="fas fa-award"></i> Scholarships & Opportunities</a></li>
+                        <li><a href="#"><i class="fas fa-book"></i> Learning Hub</a></li>
+                        <li><a href="#"><i class="fas fa-file-alt"></i> Past Questions & Solutions</a></li>
+                        <li><a href="#"><i class="fas fa-laptop-code"></i> Tech Careers Hub</a></li>
+                        <li><a href="#"><i class="fas fa-newspaper"></i> School Updates & News</a></li>
+                        <li><a href="#"><i class="fas fa-book-open"></i> Resources Library</a></li>
+                        <li><a href="#"><i class="fas fa-users"></i> OAE Community</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="#" class="mobile-dropdown-toggle explore-main">
+                        <span><i class="fas fa-compass"></i> Explore</span>
+                        <i class="fas fa-chevron-down"></i>
+                    </a>
+                    <ul class="mobile-dropdown">
+                        <!-- Learning Hub with nested dropdown -->
+                        <li>
+                            <a href="#" class="mobile-nested-toggle">
+                                <span><i class="fas fa-book"></i> Learning Hub</span>
+                                <i class="fas fa-chevron-down"></i>
+                            </a>
+                            <ul class="mobile-nested-dropdown">
+                                <li><a href="#"><i class="fas fa-flask"></i> Science <i class="fas fa-arrow-right"></i></a></li>
+                                <li><a href="#"><i class="fas fa-paint-brush"></i> Art <i class="fas fa-arrow-right"></i></a></li>
+                                <li><a href="#"><i class="fas fa-chart-line"></i> Commercial <i class="fas fa-arrow-right"></i></a></li>
+                            </ul>
+                        </li>
+                        
+                        <!-- Exams & Tutorials with nested dropdown -->
+                        <li>
+                            <a href="#" class="mobile-nested-toggle">
+                                <span><i class="fas fa-graduation-cap"></i> Exams & Tutorials</span>
+                                <i class="fas fa-chevron-down"></i>
+                            </a>
+                            <ul class="mobile-nested-dropdown">
+                                <li><a href="#"><i class="fas fa-file-alt"></i> JAMB</a></li>
+                                <li><a href="#"><i class="fas fa-certificate"></i> WAEC</a></li>
+                                <li><a href="#"><i class="fas fa-award"></i> NECO</a></li>
+                                <li><a href="#"><i class="fas fa-book-open"></i> GCE</a></li>
+                                <li><a href="/admission/post-jamb/index.html"><i class="fas fa-university"></i> POST UTME</a></li>
+                            </ul>
+                        </li>
+                        
+                        <!-- Tech Careers with nested dropdown -->
+                        <li>
+                            <a href="#" class="mobile-nested-toggle">
+                                <span><i class="fas fa-laptop-code"></i> Tech Careers</span>
+                                <i class="fas fa-chevron-down"></i>
+                            </a>
+                            <ul class="mobile-nested-dropdown">
+                                <li><a href="#"><i class="fas fa-code"></i> Web Development</a></li>
+                                <li><a href="#"><i class="fas fa-mobile-alt"></i> Mobile Development</a></li>
+                                <li><a href="#"><i class="fas fa-chart-bar"></i> Data Science</a></li>
+                                <li><a href="#"><i class="fas fa-shield-alt"></i> Cybersecurity</a></li>
+                                <li><a href="#"><i class="fas fa-robot"></i> AI & ML</a></li>
+                                <li><a href="#"><i class="fas fa-palette"></i> UI/UX Design</a></li>
+                                <li><a href="#"><i class="fas fa-cloud"></i> Cloud & DevOps</a></li>
+                                <li><a href="#"><i class="fas fa-link"></i> Blockchain & Web3</a></li>
+                                <li><a href="#"><i class="fas fa-gamepad"></i> Game Development</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </li>
+                <li><a href="#"><i class="fas fa-tv"></i> Media TV</a></li>
+                <li><a href="#"><i class="fas fa-users"></i> Community</a></li>
+                <li><a href="#"><i class="fas fa-book-open"></i> Resources</a></li>
+                <li><a href="#" class="join-btn-mobile" >Join OAE</a></li>
+                <li><a href="#" class="quiz-btn-mobile">Take Quiz</a></li>
+            </ul>
+        </div>
+    </nav>
+
+  <!-- Hub Header Banner -->
+  <section class="legal-header">
+    <div style="position: relative; z-index: 2;">
+      <h1>Community Guidelines</h1>
+      <p>Understand our safe-space standards, peer-learning code of conduct, and policies against academic cheating or harassment.</p>
+    </div>
+  </section>
+
+  <div class="legal-container">
+    <!-- Sidebar Navigation -->
+    <aside class="legal-sidebar">
+      <h3 class="sidebar-title">Legal Policies</h3>
+      <ul class="sidebar-menu">
+        <li class=""><a href="/legal/index.html"><i class="ri-home-4-line"></i> Legal Hub</a></li>
+        <li class=""><a href="/legal/terms-and-conditions.html"><i class="ri-article-line"></i> Terms & Conditions</a></li>
+        <li class=""><a href="/legal/privacy-policy.html"><i class="ri-shield-user-line"></i> Privacy Policy</a></li>
+        <li class="active"><a href="/legal/community-guidelines.html"><i class="ri-group-line"></i> Community Guidelines</a></li>
+        <li class=""><a href="/legal/copyright-policy.html"><i class="ri-copyright-line"></i> Copyright Policy</a></li>
+        <li class=""><a href="/legal/disclaimer.html"><i class="ri-alert-line"></i> Disclaimer Notice</a></li>
+        <li class=""><a href="/legal/advertising-policy.html"><i class="ri-advertisement-line"></i> Advertising Policy</a></li>
+        <li class=""><a href="/legal/cookie-policy.html"><i class="ri-cookie-line"></i> Cookie Policy</a></li>
+      </ul>
+    </aside>
+
+    <!-- Main Content -->
+    <main class="legal-content">\n      <div class="last-updated"><i class="ri-time-line"></i> Last Updated: June 19, 2026</div>
+      
+      <p>Welcome to the OAE (Oluwatosin Academy of Excellence) Community.</p>
+      <p>These Community Guidelines exist to help create a safe, respectful, educational, and productive environment for students, educators, parents, contributors, and visitors who interact with OAE through our website, social media pages, messaging platforms, discussion groups, comment sections, events, classes, and any other community spaces.</p>
+      <p>By participating in the OAE community, you agree to follow these Guidelines in addition to our Terms & Conditions and other applicable policies.</p>
+      <p><strong>Our goal is simple:</strong></p>
+      <p>To build a community where people can learn, grow, ask questions, share knowledge, and support one another respectfully.</p>
+
+      <h2>1. OUR COMMUNITY VALUES</h2>
+      <p>OAE is built on the following principles:</p>
+      <ul>
+        <li>Respect</li>
+        <li>Honesty</li>
+        <li>Learning</li>
+        <li>Excellence</li>
+        <li>Responsibility</li>
+        <li>Inclusiveness</li>
+        <li>Academic Integrity</li>
+        <li>Safety</li>
+      </ul>
+      <p>Every member is expected to contribute positively to these values.</p>
+
+      <h2>2. BE RESPECTFUL</h2>
+      <p>Treat all members with respect regardless of:</p>
+      <ul>
+        <li>Age</li>
+        <li>Gender</li>
+        <li>Nationality</li>
+        <li>School</li>
+        <li>Academic performance</li>
+        <li>Religion</li>
+        <li>Background</li>
+        <li>Experience level</li>
+        <li>Opinions</li>
+      </ul>
+      <p>Healthy disagreement is allowed.</p>
+      <p>Personal attacks are not.</p>
+      <p>You may challenge ideas, but do not attack people.</p>
+
+      <h2>3. NO HARASSMENT OR BULLYING</h2>
+      <p>The following behaviors are prohibited:</p>
+      <ul>
+        <li>Bullying</li>
+        <li>Harassment</li>
+        <li>Intimidation</li>
+        <li>Threats</li>
+        <li>Mocking others</li>
+        <li>Name-calling</li>
+        <li>Public humiliation</li>
+        <li>Personal attacks</li>
+        <li>Targeted abuse</li>
+        <li>Cyberbullying</li>
+      </ul>
+      <p>Any attempt to make another user feel unsafe may result in content removal or account restrictions.</p>
+
+      <h2>4. NO HATEFUL CONTENT</h2>
+      <p>OAE does not allow content that promotes:</p>
+      <ul>
+        <li>Hatred</li>
+        <li>Discrimination</li>
+        <li>Violence</li>
+        <li>Extremism</li>
+        <li>Bigotry</li>
+        <li>Harm against individuals or groups</li>
+      </ul>
+      <p>Content targeting people based on personal characteristics is not permitted.</p>
+
+      <h2>5. KEEP DISCUSSIONS EDUCATIONAL</h2>
+      <p>OAE is primarily an educational platform.</p>
+      <p>Community spaces should focus on:</p>
+      <ul>
+        <li>Learning</li>
+        <li>Academic discussions</li>
+        <li>Educational news</li>
+        <li>School admissions</li>
+        <li>Examinations</li>
+        <li>Scholarships</li>
+        <li>Tutorials</li>
+        <li>Student development</li>
+        <li>Career guidance</li>
+        <li>Constructive conversations</li>
+      </ul>
+      <p>Off-topic discussions may be limited, redirected, or removed.</p>
+
+      <h2>6. NO SPAM</h2>
+      <p>Spam is not allowed.</p>
+      <p>Examples include:</p>
+      <ul>
+        <li>Repeated messages</li>
+        <li>Mass posting</li>
+        <li>Irrelevant promotions</li>
+        <li>Fake giveaways</li>
+        <li>Clickbait links</li>
+        <li>Excessive advertisements</li>
+        <li>Unsolicited marketing</li>
+        <li>Referral spam</li>
+        <li>Repetitive comments</li>
+      </ul>
+      <p>Users who repeatedly spam may be restricted or removed.</p>
+
+      <h2>7. NO MISLEADING INFORMATION</h2>
+      <p>Accuracy matters.</p>
+      <p>Do not post:</p>
+      <ul>
+        <li>Fake admission news</li>
+        <li>Fake examination updates</li>
+        <li>False school announcements</li>
+        <li>Misleading scholarship information</li>
+        <li>Fabricated results</li>
+        <li>Unverified rumors presented as facts</li>
+      </ul>
+      <p>If you are unsure whether information is correct, clearly state that it is unconfirmed.</p>
+
+      <h2>8. ACADEMIC INTEGRITY</h2>
+      <p>OAE supports honest learning.</p>
+      <p>Do not:</p>
+      <ul>
+        <li>Share examination malpractice materials</li>
+        <li>Promote cheating</li>
+        <li>Sell leaked examination questions</li>
+        <li>Encourage academic dishonesty</li>
+        <li>Request unauthorized access to examination systems</li>
+        <li>Share stolen academic materials</li>
+      </ul>
+      <p>We encourage genuine learning and fair academic practices.</p>
+
+      <h2>9. NO ILLEGAL ACTIVITIES</h2>
+      <p>You may not use OAE to:</p>
+      <ul>
+        <li>Violate laws</li>
+        <li>Promote illegal activities</li>
+        <li>Commit fraud</li>
+        <li>Impersonate others</li>
+        <li>Distribute malware</li>
+        <li>Share stolen content</li>
+        <li>Engage in scams</li>
+      </ul>
+      <p>Content involving illegal activities may be removed immediately.</p>
+
+      <h2>10. RESPECT PRIVACY</h2>
+      <p>Protect your own privacy and the privacy of others.</p>
+      <p>Do not share:</p>
+      <ul>
+        <li>Personal addresses</li>
+        <li>Phone numbers</li>
+        <li>Private emails</li>
+        <li>Identification documents</li>
+        <li>Examination numbers</li>
+        <li>Financial information</li>
+        <li>Login credentials</li>
+        <li>Private conversations without permission</li>
+      </ul>
+      <p>Always obtain consent before sharing someone else's information.</p>
+
+      <h2>11. APPROPRIATE CONTENT ONLY</h2>
+      <p>Content shared within OAE should remain appropriate for a broad educational audience.</p>
+      <p>Avoid:</p>
+      <ul>
+        <li>Explicit sexual content</li>
+        <li>Graphic violence</li>
+        <li>Excessive profanity</li>
+        <li>Obscene materials</li>
+        <li>Disturbing images</li>
+        <li>Adult-only content</li>
+      </ul>
+      <p>Educational discussions involving sensitive subjects should remain respectful and appropriate.</p>
+
+      <h2>12. INTELLECTUAL PROPERTY</h2>
+      <p>Respect the work of others.</p>
+      <p>Do not:</p>
+      <ul>
+        <li>Upload copyrighted materials without permission</li>
+        <li>Claim another person's work as your own</li>
+        <li>Remove author credits</li>
+        <li>Distribute pirated content</li>
+        <li>Share paid materials illegally</li>
+      </ul>
+      <p>Always provide proper attribution where necessary.</p>
+
+      <h2>13. RESPONSIBLE USE OF AI TOOLS</h2>
+      <p>Where AI tools are used within OAE:</p>
+      <ul>
+        <li>Do not present AI-generated information as verified fact without checking it</li>
+        <li>Clearly identify AI-generated content where appropriate</li>
+        <li>Do not use AI to deceive, scam, impersonate, or spread misinformation</li>
+        <li>Verify important educational information before sharing</li>
+      </ul>
+
+      <h2>14. REPORTING CONTENT</h2>
+      <p>If you see content that violates these Guidelines, please report it.</p>
+      <p>Reports may include:</p>
+      <ul>
+        <li>Harassment</li>
+        <li>Spam</li>
+        <li>Fake information</li>
+        <li>Copyright violations</li>
+        <li>Safety concerns</li>
+        <li>Fraudulent activity</li>
+      </ul>
+      <p>We review reports in good faith and take appropriate action where necessary.</p>
+
+      <h2>15. MODERATION</h2>
+      <p>OAE reserves the right to:</p>
+      <ul>
+        <li>Review content</li>
+        <li>Remove content</li>
+        <li>Edit content</li>
+        <li>Restrict visibility</li>
+        <li>Suspend accounts</li>
+        <li>Ban users</li>
+        <li>Close discussions</li>
+        <li>Limit participation</li>
+      </ul>
+      <p>Moderation decisions are made to protect the community and platform integrity.</p>
+
+      <h2>16. ENFORCEMENT ACTIONS</h2>
+      <p>Violations may result in:</p>
+      <p><strong>Level 1:</strong></p>
+      <ul>
+        <li>Warning</li>
+        <li>Content removal</li>
+      </ul>
+      <p><strong>Level 2:</strong></p>
+      <ul>
+        <li>Temporary restrictions</li>
+        <li>Reduced platform access</li>
+      </ul>
+      <p><strong>Level 3:</strong></p>
+      <ul>
+        <li>Temporary suspension</li>
+      </ul>
+      <p><strong>Level 4:</strong></p>
+      <ul>
+        <li>Permanent removal from the community</li>
+      </ul>
+      <p>Serious violations may skip directly to higher enforcement levels.</p>
+
+      <h2>17. APPEALS</h2>
+      <p>If you believe a moderation action was made in error, you may contact OAE and request a review.</p>
+      <p>Submitting an appeal does not guarantee reversal of the decision.</p>
+
+      <h2>18. CHANGES TO THESE GUIDELINES</h2>
+      <p>OAE may update these Guidelines from time to time.</p>
+      <p>Changes become effective when published unless otherwise stated.</p>
+      <p>Continued participation in OAE means acceptance of the updated Guidelines.</p>
+
+      <h2>19. OUR COMMUNITY COMMITMENT</h2>
+      <p>We believe education thrives when people can:</p>
+      <ul>
+        <li>Learn freely</li>
+        <li>Share respectfully</li>
+        <li>Ask questions confidently</li>
+        <li>Support one another</li>
+        <li>Grow together</li>
+      </ul>
+      <p>Every member helps shape the OAE community.</p>
+
+      <h2>20. CONTACT US</h2>
+      <p>Questions regarding these Community Guidelines may be sent to:</p>
+      <div class="placeholder-text">
+        <strong>OAE (Oluwatosin Academy of Excellence)</strong><br>
+        Email: <a href="mailto:oaeofficial123@gmail.com">oaeofficial123@gmail.com</a><br>
+        Phone/WhatsApp: +234 705 176 3835<br>
+        Website: <a href="https://oaeofficial.com">oaeofficial.com</a><br>
+      </div>
+      <p>Thank you for helping us build a positive, respectful, and educational community.</p>
+\n    </main>
+  </div>
+
+<footer class="oae-footer">
+
+  <!-- CONNECT WITH US BAR -->
+  <div class="footer-connect">
+    <h3>Connect With Us</h3>
+    <hr>
+    <div class="socials-bar">
+      <a href="https://linkedin.com/in/oaeofficial123" target="_blank"><i class="ri-linkedin-fill"></i></a>
+      <a href="https://x.com/oaeofficial123" target="_blank"><i class="ri-twitter-x-fill"></i></a>
+      <a href="https://youtube.com/@oaeofficial123" target="_blank"><i class="ri-youtube-fill"></i></a>
+      <a href="https://facebook.com/oaeofficial123" target="_blank"><i class="ri-facebook-circle-fill"></i></a>
+      <a href="https://instagram.com/oaeofficial123" target="_blank"><i class="ri-instagram-fill"></i></a>
+      <a href="https://tiktok.com/@oaeofficial123" target="_blank"><i class="ri-tiktok-fill"></i></a>
+      <a href="https://t.me/OAECONNECT"><i class="ri-telegram-fill"></i></a>
+      <a href="mailto:oaeofficial123@gmail.com"><i class="ri-mail-line"></i></a>
+    </div>
+  </div>
+
+  <!-- TOP SECTION: Mission, Vision, Ambition (Summarized) -->
+  <div class="footer-top">
+    <div class="mission-container">
+      <img src="oaepic2.png" alt="OAE Mission" class="mission-img">
+      <div class="mission-text">
+        <p class="footer-mission-summary">
+          OAE is committed to delivering high-quality digital education from Nigeria to learners across Africa and the world. We provide verified exam preparation resources, tech tutorials, AI-enabled learning tools, and Web3-ready career pathways, helping students succeed academically and develop practical skills for the future.
+        </p>
+      </div>
+    </div>
+
+    <p class="short-about">
+      Oluwatosin Academy of Excellence (OAE) is a Nigerian EdTech organisation delivering exam preparation, tech tutorials, and learning tools to students in Nigeria, across Africa, and worldwide.
+    </p>
+
+    <!-- Newsletter -->
+    <div class="newsletter">
+      <input type="email" placeholder="Enter your email for updates">
+      <button>Subscribe</button>
+    </div>
+  </div>
+
+  <!-- GRID SECTION: Clean links without bullets -->
+  <div class="footer-grid">
+    <div class="footer-col">
+      <h3>About OAE</h3>
+      <a href="#">Who We Are</a>
+      <a href="#">Our Mission</a>
+      <a href="#">Our Team</a>
+      <a href="#">Our Story</a>
+      <a href="#">Careers</a>
+    </div>
+
+    <div class="footer-col">
+      <h3>Navigation</h3>
+      <a href="#">News & Updates</a>
+      <a href="#">Past Questions</a>
+      <a href="#">Exam Tips</a>
+      <a href="#">Tutorials</a>
+      <a href="#">Coding Lessons</a>
+    </div>
+
+    <div class="footer-col">
+      <h3>Exam Categories</h3>
+      <a href="#">JAMB Resources</a>
+      <a href="#">WAEC Materials</a>
+      <a href="#">NECO Guides</a>
+      <a href="#">Post-UTME</a>
+      <a href="#">Mock Exams</a>
+    </div>
+
+    <div class="footer-col">
+      <h3>Contact</h3>
+      <div class="contact-item"><i class="ri-map-pin-line"></i> Lagos, Nigeria</div>
+      <div class="contact-item"><i class="ri-mail-line"></i> oaeofficial123@gmail.com</div>
+      <div class="contact-item"><i class="ri-phone-line"></i> +234 705 176 3835</div>
+      <div class="contact-item"><i class="ri-whatsapp-line"></i> WhatsApp Available</div>
+    </div>
+  </div>
+
+  <!-- BOTTOM -->
+  <div class="footer-bottom">
+    <p>🌍 Trusted by <strong>15,000+ learners</strong> across Nigeria, Africa, and the world.</p>
+    <p>© 2025 OAE — Oluwatosin Academy of Excellence. All rights reserved.</p>
+
+        <div class="legal-links">
+      <a href="/legal/terms-and-conditions.html">Terms & Conditions</a>
+      <a href="/legal/privacy-policy.html">Privacy Policy</a>
+      <a href="/legal/community-guidelines.html">Community</a>
+      <a href="/legal/disclaimer.html">Disclaimer</a>
+      <a href="/legal/copyright-policy.html">Copyright</a>
+      <a href="/legal/advertising-policy.html">Advertising</a>
+      <a href="/legal/cookie-policy.html">Cookie Policy</a>
+    </div>
+  </div>
+</footer>
+
+  <script src="/Assets/js/home.js" defer></script>
+  <script src="/Assets/js/navbar.js" defer></script>
+</body>
+</html>

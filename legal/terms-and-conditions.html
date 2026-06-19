@@ -1,32 +1,648 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width,initial-scale=1">
-  <title>Terms | OAE</title>
-  <link rel="stylesheet" href="Assets/css/style.css">
-  <link rel="stylesheet" href="Assets/css/navbar-footer.css">
-<link href="https://cdn.jsdelivr.net/npm/remixicon@3.5.0/fonts/remixicon.css" rel="stylesheet">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Terms & Conditions | OAE</title>
+  <link rel="stylesheet" href="/Assets/css/style.css">
+  <link rel="stylesheet" href="/Assets/css/navbar.css">
+  <link rel="stylesheet" href="/Assets/css/footer.css">
+  <link rel="stylesheet" href="/Assets/css/legal.css">
+  <link href="https://cdn.jsdelivr.net/npm/remixicon@3.5.0/fonts/remixicon.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
 </head>
-<body>
-  <header class="navbar" role="banner">
-    <a class="brand" href="/" aria-label="OAE home">
-      <div class="logo"><img src="OAE.png" alt="OAE Logo" class="logo-img"></div>
+<body class="legal-page">
+
+<nav class="navbar">
+        <!-- Logo - Left side -->
+        <div class="logo-section">
+                <img src="/oae.png" alt="OAE"class="logoimg">
+        </div>
+
+        <!-- Search Section - Middle -->
+        <div class="middle-section">
+            <div class="search-section">
+                <i class="fas fa-search"></i>
+                <input type="search" id="site-search" placeholder="Search lessons, exams, careers...">
+                <button class="search-btn" id="search-btn">Search</button>
+            </div>
+        </div>
+
+        <!-- Right Navigation Section - Right side -->
+        <div class="right-section">
+            <!-- Desktop Navigation Links - TEXT BEFORE ICONS -->
+            <ul class="nav-links">
+                <li>
+                    <a href="#">
+                         <i class="fas fa-chevron-down"></i>
+                         Services <i class="fas fa-cogs"></i>
+                    </a>
+                    <div class="dropdown services-dropdown">
+                        <div class="dropdown-section">
+                            <h4> <i class="fas fa-cogs"></i> Services </h4>
+                            <ul class="dropdown-links">
+                                <li><a href="/Quizzes/index.html">Smart Quiz Arena <i class="fas fa-brain"></i></a></li>
+                                <li><a href="/admission/subject-combinations/index.html">JAMB Subject Combos <i class="fas fa-graduation-cap"></i></a></li>
+                                <li><a href="/admission/post-jamb/index.html">Post-UTME & School Screening <i class="fas fa-university"></i></a></li>
+                                <li><a href="/admission/aggregate-calculator/index.html">Aggregate Calculator <i class="fas fa-calculator"></i></a></li>
+                                <li><a href="#">Scholarships & Opportunities <i class="fas fa-award"></i></a></li>
+                                <li><a href="#">Learning Hub <i class="fas fa-book"></i></a></li>
+                                <li><a href="#">Past Questions & Solutions <i class="fas fa-file-alt"></i></a></li>
+                                <li><a href="#">Tech Careers Hub <i class="fas fa-laptop-code"></i></a></li>
+                                <li><a href="#">School Updates & News <i class="fas fa-newspaper"></i></a></li>
+                                <li><a href="#">Resources Library <i class="fas fa-book-open"></i></a></li>
+                                <li><a href="#">OAE Community <i class="fas fa-users"></i></a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <a href="#">
+                         <i class="fas fa-chevron-down"></i>
+                         Explore <i class="fas fa-compass"></i>
+                    </a>
+                    <div class="dropdown explore-dropdown">
+                        <div class="explore-grid">
+                            <!-- Learning Hub Section -->
+                            <div class="dropdown-section">
+                                <h4>Learning Hub <i class="fas fa-book"></i></h4>
+                                <ul class="dropdown-links">
+                                    <li><a href="#"><i class="fas fa-arrow-right"></i> Science <i class="fas fa-flask"></i> </a></li>
+                                    <li><a href="#"><i class="fas fa-arrow-right"></i> Art <i class="fas fa-paint-brush"></i> </a></li>
+                                    <li><a href="#"><i class="fas fa-arrow-right"></i> Commercial <i class="fas fa-chart-line"></i> </a></li>
+                                </ul>
+                            </div>
+                            
+                            <!-- Exams & Tutorials Section -->
+                            <div class="dropdown-section">
+                                <h4>Exams & Tutorials <i class="fas fa-graduation-cap"></i></h4>
+                                <ul class="dropdown-links">
+                                    <li><a href="#">JAMB <i class="fas fa-file-alt"></i></a></li>
+                                    <li><a href="#">WAEC <i class="fas fa-certificate"></i></a></li>
+                                    <li><a href="#">NECO <i class="fas fa-award"></i></a></li>
+                                    <li><a href="#">GCE <i class="fas fa-book-open"></i></a></li>
+                                    <li><a href="/admission/post-jamb/index.html">POST UTME <i class="fas fa-university"></i></a></li>
+                                </ul>
+                            </div>
+                            
+                            <!-- Tech Careers Section -->
+                            <div class="dropdown-section">
+                                <h4>Tech Careers <i class="fas fa-laptop-code"></i></h4>
+                                <ul class="dropdown-links">
+                                    <li><a href="#">Web Development <i class="fas fa-code"></i></a></li>
+                                    <li><a href="#">Mobile Development <i class="fas fa-mobile-alt"></i></a></li>
+                                    <li><a href="#">Data Science <i class="fas fa-chart-bar"></i></a></li>
+                                    <li><a href="#">Cybersecurity <i class="fas fa-shield-alt"></i></a></li>
+                                    <li><a href="#">AI & ML <i class="fas fa-robot"></i></a></li>
+                                    <li><a href="#">UI/UX Design <i class="fas fa-palette"></i></a></li>
+                                    <li><a href="#">Cloud & DevOps <i class="fas fa-cloud"></i></a></li>
+                                    <li><a href="#">Blockchain & Web3 <i class="fas fa-link"></i></a></li>
+                                    <li><a href="#">Game Development <i class="fas fa-gamepad"></i></a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+                <li><a href="#">Media TV <i class="fas fa-tv"></i></a></li>
+                <li><a href="#">Community <i class="fas fa-users"></i></a></li>
+                <li>
+    <a href="#">
+        <i class="fas fa-chevron-down"></i> Resources <i class="fas fa-book-open"></i> 
     </a>
-  </header>
 
-  <main class="section">
-    <h2>Terms & Conditions</h2>
-    <p class="muted">Standard terms will go here.</p>
-  </main>
+                       
+    <div class="dropdown resources-dropdown">
+        <div class="dropdown-section">
+            <h4>Resources <i class="fas fa-book-open"></i></h4>
+            <ul class="dropdown-links">
+                <li><a href="#">Past Questions & Solutions <i class="fas fa-file-alt"></i></a></li>
+                <li><a href="#">Study Materials Library <i class="fas fa-book"></i></a></li>
+                <li><a href="#">Study Timetables <i class="fas fa-calendar-alt"></i></a></li>
+                <li><a href="#">Exam Tips & Guides <i class="fas fa-lightbulb"></i></a></li>
+                <li><a href="#">School Updates & News <i class="fas fa-newspaper"></i></a></li>
+            </ul>
+        </div>
+    </div>
 
-  
+</li>
+            </ul>
 
-  <script src="Assets/js/home.js" defer></script>
-  <script src="Assets/js/navbar.js" defer></script>
+            <!-- Join OAE Button -->
+            <button class="join-btn">Join OAE</button>
+            
+            <!-- Hamburger Menu - Hidden on desktop, shown on mobile at right edge -->
+            <button class="hamburger">
+                <i class="fas fa-bars"></i>
+            </button>
+        </div>
 
+        <!-- Mobile Menu -->
+        <div class="mobile-menu" id="mobileMenu">
+            <ul class="mobile-links">
+                <li><a href="#"><i class="fas fa-home"></i> Home</a></li>
+                <li>
+                    <a href="#" class="mobile-dropdown-toggle">
+                        <span><i class="fas fa-cogs"></i> Services</span>
+                        <i class="fas fa-chevron-down"></i>
+                    </a>
+                    <ul class="mobile-dropdown">
+                        <li><a href="./Quizzes/index.html"><i class="fas fa-brain"></i> Smart Quiz Arena</a></li>
+                        <li><a href="/admission/subject-combinations/index.html"><i class="fas fa-graduation-cap"></i> JAMB Subject Combos</a></li>
+                        <li><a href="/admission/post-jamb/index.html"><i class="fas fa-university"></i> Post-UTME & Screening</a></li>
+                        <li><a href="/admission/aggregate-calculator/index.html"><i class="fas fa-calculator"></i> Aggregate Calculator</a></li>
+                        <li><a href="#"><i class="fas fa-award"></i> Scholarships & Opportunities</a></li>
+                        <li><a href="#"><i class="fas fa-book"></i> Learning Hub</a></li>
+                        <li><a href="#"><i class="fas fa-file-alt"></i> Past Questions & Solutions</a></li>
+                        <li><a href="#"><i class="fas fa-laptop-code"></i> Tech Careers Hub</a></li>
+                        <li><a href="#"><i class="fas fa-newspaper"></i> School Updates & News</a></li>
+                        <li><a href="#"><i class="fas fa-book-open"></i> Resources Library</a></li>
+                        <li><a href="#"><i class="fas fa-users"></i> OAE Community</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="#" class="mobile-dropdown-toggle explore-main">
+                        <span><i class="fas fa-compass"></i> Explore</span>
+                        <i class="fas fa-chevron-down"></i>
+                    </a>
+                    <ul class="mobile-dropdown">
+                        <!-- Learning Hub with nested dropdown -->
+                        <li>
+                            <a href="#" class="mobile-nested-toggle">
+                                <span><i class="fas fa-book"></i> Learning Hub</span>
+                                <i class="fas fa-chevron-down"></i>
+                            </a>
+                            <ul class="mobile-nested-dropdown">
+                                <li><a href="#"><i class="fas fa-flask"></i> Science <i class="fas fa-arrow-right"></i></a></li>
+                                <li><a href="#"><i class="fas fa-paint-brush"></i> Art <i class="fas fa-arrow-right"></i></a></li>
+                                <li><a href="#"><i class="fas fa-chart-line"></i> Commercial <i class="fas fa-arrow-right"></i></a></li>
+                            </ul>
+                        </li>
+                        
+                        <!-- Exams & Tutorials with nested dropdown -->
+                        <li>
+                            <a href="#" class="mobile-nested-toggle">
+                                <span><i class="fas fa-graduation-cap"></i> Exams & Tutorials</span>
+                                <i class="fas fa-chevron-down"></i>
+                            </a>
+                            <ul class="mobile-nested-dropdown">
+                                <li><a href="#"><i class="fas fa-file-alt"></i> JAMB</a></li>
+                                <li><a href="#"><i class="fas fa-certificate"></i> WAEC</a></li>
+                                <li><a href="#"><i class="fas fa-award"></i> NECO</a></li>
+                                <li><a href="#"><i class="fas fa-book-open"></i> GCE</a></li>
+                                <li><a href="/admission/post-jamb/index.html"><i class="fas fa-university"></i> POST UTME</a></li>
+                            </ul>
+                        </li>
+                        
+                        <!-- Tech Careers with nested dropdown -->
+                        <li>
+                            <a href="#" class="mobile-nested-toggle">
+                                <span><i class="fas fa-laptop-code"></i> Tech Careers</span>
+                                <i class="fas fa-chevron-down"></i>
+                            </a>
+                            <ul class="mobile-nested-dropdown">
+                                <li><a href="#"><i class="fas fa-code"></i> Web Development</a></li>
+                                <li><a href="#"><i class="fas fa-mobile-alt"></i> Mobile Development</a></li>
+                                <li><a href="#"><i class="fas fa-chart-bar"></i> Data Science</a></li>
+                                <li><a href="#"><i class="fas fa-shield-alt"></i> Cybersecurity</a></li>
+                                <li><a href="#"><i class="fas fa-robot"></i> AI & ML</a></li>
+                                <li><a href="#"><i class="fas fa-palette"></i> UI/UX Design</a></li>
+                                <li><a href="#"><i class="fas fa-cloud"></i> Cloud & DevOps</a></li>
+                                <li><a href="#"><i class="fas fa-link"></i> Blockchain & Web3</a></li>
+                                <li><a href="#"><i class="fas fa-gamepad"></i> Game Development</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </li>
+                <li><a href="#"><i class="fas fa-tv"></i> Media TV</a></li>
+                <li><a href="#"><i class="fas fa-users"></i> Community</a></li>
+                <li><a href="#"><i class="fas fa-book-open"></i> Resources</a></li>
+                <li><a href="#" class="join-btn-mobile" >Join OAE</a></li>
+                <li><a href="#" class="quiz-btn-mobile">Take Quiz</a></li>
+            </ul>
+        </div>
+    </nav>
 
+  <!-- Hub Header Banner -->
+  <section class="legal-header">
+    <div style="position: relative; z-index: 2;">
+      <h1>Terms & Conditions</h1>
+      <p>Read the official rules, licensing agreements, and guidelines for using the OAE platform, mobile quiz app, and study resources.</p>
+    </div>
+  </section>
 
+  <div class="legal-container">
+    <!-- Sidebar Navigation -->
+    <aside class="legal-sidebar">
+      <h3 class="sidebar-title">Legal Policies</h3>
+      <ul class="sidebar-menu">
+        <li class=""><a href="/legal/index.html"><i class="ri-home-4-line"></i> Legal Hub</a></li>
+        <li class="active"><a href="/legal/terms-and-conditions.html"><i class="ri-article-line"></i> Terms & Conditions</a></li>
+        <li class=""><a href="/legal/privacy-policy.html"><i class="ri-shield-user-line"></i> Privacy Policy</a></li>
+        <li class=""><a href="/legal/community-guidelines.html"><i class="ri-group-line"></i> Community Guidelines</a></li>
+        <li class=""><a href="/legal/copyright-policy.html"><i class="ri-copyright-line"></i> Copyright Policy</a></li>
+        <li class=""><a href="/legal/disclaimer.html"><i class="ri-alert-line"></i> Disclaimer Notice</a></li>
+        <li class=""><a href="/legal/advertising-policy.html"><i class="ri-advertisement-line"></i> Advertising Policy</a></li>
+        <li class=""><a href="/legal/cookie-policy.html"><i class="ri-cookie-line"></i> Cookie Policy</a></li>
+      </ul>
+    </aside>
+
+    <!-- Main Content -->
+    <main class="legal-content">
+      <div class="last-updated"><i class="ri-time-line"></i> Last Updated: June 19, 2026</div>
+      
+      <p>Welcome to OAE (Oluwatosin Academy of Excellence).</p>
+      <p>These Terms & Conditions (“Terms”) govern your access to and use of the OAE website, mobile pages, learning materials, admission updates, educational news, tutorials, quizzes, articles, community features, social media channels, and any other related services, products, or content made available by OAE, whether now existing or created in the future.</p>
+      <p>By accessing, browsing, registering with, contributing to, or using OAE in any way, you agree that you have read, understood, and accepted these Terms. If you do not agree with these Terms, you must stop using OAE immediately.</p>
+      <p>These Terms should be read together with our Privacy Policy, Community Guidelines, Copyright Policy, Disclaimer, and any other policy published by OAE from time to time.</p>
+
+      <h2>1. ABOUT OAE</h2>
+      <p>OAE is an educational platform created to provide students, learners, parents, and the general public with access to educational news, admission updates, tutorial content, exam preparation materials, academic guidance, school-related information, and community engagement.</p>
+      <p>OAE may publish content related to:</p>
+      <ul>
+        <li>admission news</li>
+        <li>school updates</li>
+        <li>educational resources</li>
+        <li>tutorials and study materials</li>
+        <li>quizzes and practice questions</li>
+        <li>scholarship updates</li>
+        <li>student guidance</li>
+        <li>academic announcements</li>
+        <li>general educational commentary</li>
+        <li>community posts and discussions</li>
+        <li>sponsored or promotional content where applicable</li>
+      </ul>
+      <p>OAE is a private educational platform and is not affiliated with any government agency, examination body, or educational institution unless clearly stated otherwise.</p>
+
+      <h2>2. DEFINITIONS</h2>
+      <p>In these Terms, the following words have the meanings below:</p>
+      <ul>
+        <li>“OAE”, “we”, “us”, and “our” refer to Oluwatosin Academy of Excellence and its owners, admins, editors, contributors, moderators, representatives, and affiliates.</li>
+        <li>“User”, “you”, and “your” refer to any person who visits, uses, registers on, comments on, shares, submits, or interacts with OAE.</li>
+        <li>“Content” means any text, image, video, audio, graphic, post, comment, document, file, announcement, design, or material published on or submitted to OAE.</li>
+        <li>“Services” means all features, pages, tools, resources, and content made available through OAE.</li>
+        <li>“Third-Party Services” means external websites, platforms, apps, tools, forms, channels, advertisers, sponsors, or links not controlled by OAE.</li>
+      </ul>
+
+      <h2>3. ACCEPTANCE OF TERMS</h2>
+      <p>Your use of OAE means that you accept these Terms and any updates made to them.</p>
+      <p>If you are using OAE on behalf of a school, organization, business, or other legal entity, you confirm that you have authority to bind that entity to these Terms.</p>
+      <p>If you do not agree to any part of these Terms, you must not use OAE.</p>
+
+      <h2>4. ELIGIBILITY AND ACCESS</h2>
+      <p>OAE is intended for users who can lawfully access and use digital services in their jurisdiction.</p>
+      <p>By using OAE, you confirm that:</p>
+      <ul>
+        <li>you are legally permitted to use the platform</li>
+        <li>all information you provide is truthful and accurate to the best of your knowledge</li>
+        <li>if you are under the age of legal capacity in your jurisdiction, you are using OAE with the knowledge or supervision of a parent, guardian, school authority, or responsible adult where necessary</li>
+      </ul>
+      <p>We reserve the right to restrict access to any part of OAE at our discretion, including by age, region, device, account status, or violation history.</p>
+
+      <h2>5. CHANGES TO THE TERMS</h2>
+      <p>OAE may revise, update, replace, or remove any part of these Terms at any time.</p>
+      <p>When we update these Terms, we may:</p>
+      <ul>
+        <li>post the new version on this page</li>
+        <li>update the “Last Updated” date</li>
+        <li>notify users through the website, email, social media, or other reasonable means where appropriate</li>
+      </ul>
+      <p>Continued use of OAE after changes are posted means you accept the revised Terms.</p>
+
+      <h2>6. USE OF THE PLATFORM</h2>
+      <p>You agree to use OAE only for lawful, respectful, and appropriate purposes.</p>
+      <p>You must not:</p>
+      <ul>
+        <li>use OAE to break any law or regulation</li>
+        <li>attempt to hack, disrupt, damage, or overload the platform</li>
+        <li>introduce malware, harmful scripts, bots, or unauthorized automation</li>
+        <li>copy, scrape, or harvest content or user data without permission</li>
+        <li>impersonate OAE, our staff, or another user</li>
+        <li>post false, misleading, defamatory, abusive, hateful, obscene, or threatening content</li>
+        <li>send spam, scams, phishing messages, or deceptive links</li>
+        <li>misuse forms, comment sections, contact channels, or community features</li>
+        <li>interfere with site security, functionality, moderation, or administration</li>
+        <li>use OAE in a way that could damage our reputation, services, or users</li>
+      </ul>
+      <p>We may monitor, moderate, restrict, or remove any activity that violates these Terms or that we believe may harm OAE or its users.</p>
+
+      <h2>7. EDUCATIONAL PURPOSE ONLY</h2>
+      <p>OAE is primarily an educational and informational platform.</p>
+      <p>Content published by OAE is provided for general educational support, academic awareness, and informational purposes only. It is not a substitute for:</p>
+      <ul>
+        <li>official school announcements</li>
+        <li>official examination notices</li>
+        <li>certified professional advice</li>
+        <li>legal advice</li>
+        <li>financial advice</li>
+        <li>medical advice</li>
+        <li>career counseling from licensed professionals</li>
+        <li>institutional verification where required</li>
+      </ul>
+      <p>You are responsible for verifying important information from official and reliable sources before making decisions based on OAE content.</p>
+
+      <h2>8. NO GUARANTEE OF OUTCOMES</h2>
+      <p>OAE does not guarantee any particular result from use of the platform, including but not limited to:</p>
+      <ul>
+        <li>admission into any institution</li>
+        <li>passing any exam</li>
+        <li>obtaining a scholarship</li>
+        <li>winning a competition</li>
+        <li>improving grades</li>
+        <li>securing employment</li>
+        <li>gaining followers, reach, or engagement</li>
+        <li>receiving replies from third parties</li>
+        <li>accuracy, completeness, or timeliness of every post</li>
+      </ul>
+      <p>Academic success depends on many factors beyond our control.</p>
+
+      <h2>9. INFORMATION ACCURACY AND UPDATES</h2>
+      <p>We aim to provide useful, timely, and relevant information. However, educational updates, admission deadlines, school policies, result notices, scholarship details, and examination news may change without notice.</p>
+      <p>OAE does not guarantee that every piece of information is:</p>
+      <ul>
+        <li>current</li>
+        <li>complete</li>
+        <li>error-free</li>
+        <li>officially confirmed at the time you read it</li>
+      </ul>
+      <p>Where possible, we encourage users to check official school websites, official admission portals, official examination bodies, or other primary sources before taking action.</p>
+
+      <h2>10. REGISTRATION AND ACCOUNTS</h2>
+      <p>Some parts of OAE may require registration or account creation.</p>
+      <p>If you create an account or provide personal details, you agree to:</p>
+      <ul>
+        <li>provide accurate and current information</li>
+        <li>keep your login details secure</li>
+        <li>not share your password or access credentials with unauthorized persons</li>
+        <li>notify us of any suspected unauthorized access</li>
+        <li>take responsibility for activity carried out through your account unless caused by our fault</li>
+      </ul>
+      <p>We may suspend, restrict, or close accounts that appear fake, abusive, harmful, or in violation of these Terms.</p>
+
+      <h2>11. USER CONTENT AND SUBMISSIONS</h2>
+      <p>You may be able to submit comments, messages, questions, posts, materials, photos, documents, suggestions, reviews, or other content through OAE.</p>
+      <p>By submitting content to OAE, you confirm that:</p>
+      <ul>
+        <li>you own the content or have permission to share it</li>
+        <li>your content does not violate any law or third-party rights</li>
+        <li>your content is not harmful, misleading, defamatory, hateful, obscene, or infringing</li>
+        <li>your content does not contain malware, spam, or unauthorized promotional material</li>
+      </ul>
+      <p>Unless we clearly state otherwise, by submitting content to OAE you grant us a non-exclusive, worldwide, royalty-free, transferable, and sublicensable license to use, reproduce, display, publish, adapt, edit, translate, store, distribute, and remove that content for platform-related purposes.</p>
+      <p>We may remove, hide, edit, or refuse to publish content at our discretion.</p>
+
+      <h2>12. COMMUNITY RULES</h2>
+      <p>If OAE provides comment sections, groups, forums, chats, or public discussion spaces, the following rules apply:</p>
+      <p>You must:</p>
+      <ul>
+        <li>respect other users</li>
+        <li>stay on topic where possible</li>
+        <li>avoid offensive, abusive, or misleading messages</li>
+        <li>use proper language and honest communication</li>
+        <li>report harmful, fake, or suspicious content where appropriate</li>
+      </ul>
+      <p>You must not:</p>
+      <ul>
+        <li>attack, harass, bully, shame, threaten, or insult others</li>
+        <li>post explicit, violent, or hateful content</li>
+        <li>spread rumors, fake results, fake admission updates, or false announcements</li>
+        <li>post unrelated adverts or repeated promotions</li>
+        <li>impersonate teachers, officials, admins, or institutions</li>
+        <li>manipulate engagement, votes, or rankings unfairly</li>
+        <li>share private information of others without permission</li>
+      </ul>
+      <p>We may moderate discussion spaces before or after publication.</p>
+
+      <h2>13. CONTENT OWNERSHIP AND INTELLECTUAL PROPERTY</h2>
+      <p>Unless otherwise stated, all original OAE content and branding, including but not limited to:</p>
+      <ul>
+        <li>logo</li>
+        <li>website design</li>
+        <li>layout</li>
+        <li>text</li>
+        <li>articles</li>
+        <li>graphics</li>
+        <li>educational materials</li>
+        <li>branding elements</li>
+        <li>templates</li>
+        <li>downloadable resources</li>
+        <li>video scripts</li>
+        <li>headings</li>
+        <li>page structure</li>
+        <li>unique creative work</li>
+      </ul>
+      <p>belongs to OAE or its licensors and is protected by applicable intellectual property laws.</p>
+      <p>You may not, without prior written permission:</p>
+      <ul>
+        <li>copy and republish OAE content as your own</li>
+        <li>resell our materials</li>
+        <li>remove our branding or attribution</li>
+        <li>use our designs to mislead users</li>
+        <li>create derivative works that compete unfairly with OAE</li>
+        <li>distribute large portions of our content commercially</li>
+      </ul>
+      <p>You may share OAE content for personal, non-commercial, educational, and reference use, provided you do not misrepresent ownership and you retain any required credit.</p>
+
+      <h2>14. THIRD-PARTY CONTENT AND LINKS</h2>
+      <p>OAE may contain links, embeds, references, widgets, advertisements, or promotions connected to third-party services.</p>
+      <p>These third-party services may include:</p>
+      <ul>
+        <li>external school websites</li>
+        <li>WhatsApp or Telegram channels</li>
+        <li>payment processors</li>
+        <li>social media platforms</li>
+        <li>learning tools</li>
+        <li>analytics tools</li>
+        <li>advertising networks</li>
+        <li>affiliate partners</li>
+        <li>external documents or forms</li>
+      </ul>
+      <p>OAE does not control third-party services and is not responsible for their:</p>
+      <ul>
+        <li>content</li>
+        <li>accuracy</li>
+        <li>policies</li>
+        <li>availability</li>
+        <li>security</li>
+        <li>privacy practices</li>
+        <li>products</li>
+        <li>services</li>
+        <li>losses or damages</li>
+      </ul>
+      <p>You use third-party services at your own risk and should review their terms and privacy policies.</p>
+
+      <h2>15. ADVERTISING, SPONSORSHIP, AND AFFILIATE DISCLOSURE</h2>
+      <p>OAE may display:</p>
+      <ul>
+        <li>sponsored posts</li>
+        <li>paid promotions</li>
+        <li>affiliate links</li>
+        <li>banner ads</li>
+        <li>brand partnerships</li>
+        <li>advertorial content</li>
+        <li>product mentions</li>
+        <li>promotional announcements</li>
+      </ul>
+      <p>Where appropriate, we will label or distinguish such content, but not every promotional connection may be visible in every format.</p>
+      <p>OAE is not responsible for claims made by advertisers, sponsors, or affiliate partners. Any decision to buy, subscribe, register, donate, or interact with a third-party offer is your personal choice.</p>
+
+      <h2>16. DIGITAL PRODUCTS, DOWNLOADS, AND RESOURCES</h2>
+      <p>From time to time, OAE may provide downloads, PDFs, study notes, templates, question banks, guides, or other digital materials.</p>
+      <p>Unless stated otherwise:</p>
+      <ul>
+        <li>downloads are for personal use only</li>
+        <li>you may not resell or redistribute them without permission</li>
+        <li>some downloads may be free, while others may be paid</li>
+        <li>access may be temporary or limited</li>
+        <li>files may be updated, replaced, or removed without notice</li>
+      </ul>
+      <p>You are responsible for ensuring your device can safely open and store downloaded files.</p>
+
+      <h2>17. PAID SERVICES, FEES, AND PAYMENTS</h2>
+      <p>If OAE later offers paid services, premium content, memberships, advertising packages, or sponsored placements, additional terms may apply.</p>
+      <p>Where payments are involved:</p>
+      <ul>
+        <li>all prices may change without notice</li>
+        <li>payments must be made through approved methods only</li>
+        <li>we may refuse, reverse, or investigate suspicious payments</li>
+        <li>fees are generally non-transferable unless otherwise stated</li>
+        <li>digital services may be delivered electronically</li>
+        <li>refunds, if any, will be governed by the specific refund policy in force at the time</li>
+      </ul>
+      <p>No payment is confirmed until it has been successfully received and verified by us or our payment processor.</p>
+
+      <h2>18. REFUNDS AND CANCELLATIONS</h2>
+      <p>Unless a separate policy says otherwise:</p>
+      <ul>
+        <li>digital content may not be refundable once delivered, accessed, or downloaded</li>
+        <li>service cancellations may be subject to notice periods or processing rules</li>
+        <li>any refund request will be reviewed according to the specific product, package, or service involved</li>
+      </ul>
+      <p>If OAE introduces paid services, a more detailed Refund Policy may be published separately.</p>
+
+      <h2>19. SUSPENSION, RESTRICTION, AND TERMINATION</h2>
+      <p>We may suspend, limit, disable, delete, or terminate your access to OAE at any time, with or without notice, if:</p>
+      <ul>
+        <li>you violate these Terms</li>
+        <li>your conduct harms the platform or other users</li>
+        <li>you misuse our content or services</li>
+        <li>we believe your activity is fraudulent, abusive, unlawful, or risky</li>
+        <li>required by law, court order, or regulatory direction</li>
+        <li>we decide to discontinue a feature or service</li>
+      </ul>
+      <p>Termination does not remove obligations or rights that are meant to continue after termination.</p>
+
+      <h2>20. SECURITY</h2>
+      <p>We take reasonable steps to protect OAE and our users. However, no digital system is perfectly secure.</p>
+      <p>You acknowledge that:</p>
+      <ul>
+        <li>internet-based services may be interrupted</li>
+        <li>unauthorized access may occur despite our safeguards</li>
+        <li>delays, bugs, outages, and technical errors may happen</li>
+        <li>content transmission over the internet can never be guaranteed as completely secure</li>
+      </ul>
+      <p>You are responsible for using secure devices, updated software, and safe browsing practices.</p>
+
+      <h2>21. PRIVACY AND DATA PROTECTION</h2>
+      <p>Your use of OAE may involve the collection, use, storage, sharing, or processing of personal information.</p>
+      <p>We handle personal data in accordance with our Privacy Policy and applicable law, including Nigeria’s current data protection framework under the Nigeria Data Protection Act 2023. The NDPC describes the Act as the current Nigerian data protection law and explains that data subjects have rights such as being informed, accessing data, rectification, objection, restriction, portability, erasure, and protection from certain automated decisions.</p>
+      <p>By using OAE, you agree that we may process your data for legitimate platform purposes such as:</p>
+      <ul>
+        <li>operating the website</li>
+        <li>responding to inquiries</li>
+        <li>improving content and user experience</li>
+        <li>preventing fraud or abuse</li>
+        <li>sending updates, notices, or alerts where permitted</li>
+        <li>managing community participation</li>
+        <li>complying with legal obligations</li>
+      </ul>
+      <p>For full details, please read our Privacy Policy.</p>
+
+      <h2>22. COOKIES AND ANALYTICS</h2>
+      <p>OAE may use cookies, pixels, analytics tools, tracking technologies, and similar systems to:</p>
+      <ul>
+        <li>improve site performance</li>
+        <li>remember preferences</li>
+        <li>understand visitor activity</li>
+        <li>measure traffic and engagement</li>
+        <li>personalize content</li>
+        <li>support security and fraud prevention</li>
+      </ul>
+      <p>You may be able to manage cookie settings through your browser or device settings. Some site functions may not work properly if cookies are disabled.</p>
+
+      <h2>23. DISCLAIMER OF WARRANTIES</h2>
+      <p>To the fullest extent permitted by law, OAE is provided on an “as is” and “as available” basis.</p>
+      <p>We do not guarantee that:</p>
+      <ul>
+        <li>the platform will always be available</li>
+        <li>content will always be accurate, complete, or updated</li>
+        <li>the platform will be free of errors, viruses, or defects</li>
+        <li>every link or service will function without interruption</li>
+        <li>every user experience will meet your expectations</li>
+      </ul>
+      <p>We disclaim all warranties, whether express, implied, or statutory, including any implied warranties of merchantability, fitness for a particular purpose, and non-infringement, to the extent permitted by law.</p>
+
+      <h2>24. LIMITATION OF LIABILITY</h2>
+      <p>To the fullest extent permitted by law, OAE and its owners, editors, administrators, contributors, affiliates, and partners will not be liable for any direct, indirect, incidental, consequential, special, exemplary, or punitive damages arising from or related to:</p>
+      <ul>
+        <li>your use or inability to use OAE</li>
+        <li>reliance on any content published on OAE</li>
+        <li>errors, omissions, delays, or inaccuracies</li>
+        <li>loss of data, opportunity, profit, goodwill, or reputation</li>
+        <li>technical failures, security incidents, or service interruptions</li>
+        <li>third-party links, advertisements, or external services</li>
+        <li>conduct of other users or third parties</li>
+      </ul>
+      <p>If any liability is found despite this section, our liability shall be limited to the extent allowed by law and, where applicable, to the amount paid by you for the specific service giving rise to the claim.</p>
+
+      <h2>25. INDEMNITY</h2>
+      <p>You agree to defend, indemnify, and hold harmless OAE and its owners, editors, administrators, staff, contributors, partners, and affiliates from and against any claims, losses, damages, liabilities, costs, and expenses arising from:</p>
+      <ul>
+        <li>your use of OAE</li>
+        <li>your breach of these Terms</li>
+        <li>your violation of any law or third-party right</li>
+        <li>your submission of unlawful or harmful content</li>
+        <li>your misuse of the platform or our services</li>
+      </ul>
+
+      <h2>26. GOVERNING LAW</h2>
+      <p>These Terms shall be governed by and interpreted in accordance with the laws of the Federal Republic of Nigeria, without regard to conflict of law principles, except where mandatory local laws require otherwise.</p>
+      <p>If any dispute arises, the parties should first attempt to resolve the matter amicably and in good faith before taking further legal action.</p>
+
+      <h2>27. DISPUTE RESOLUTION</h2>
+      <p>Before starting formal proceedings, you agree to contact us and allow a reasonable time for us to review and respond to your complaint.</p>
+      <p>Where permitted by law, disputes may be resolved through:</p>
+      <ul>
+        <li>informal negotiation</li>
+        <li>mediation</li>
+        <li>arbitration</li>
+        <li>court proceedings in a competent Nigerian court</li>
+      </ul>
+      <p>The exact process may depend on the nature of the issue and applicable law.</p>
+
+      <h2>28. SEVERABILITY</h2>
+      <p>If any part of these Terms is found to be invalid, unlawful, or unenforceable, that part will be interpreted in a way that best reflects the original intent. The remaining parts will continue to apply in full.</p>
+
+      <h2>29. WAIVER</h2>
+      <p>If we do not immediately enforce any part of these Terms, that does not mean we have waived our right to enforce it later.</p>
+
+      <h2>30. ENTIRE AGREEMENT</h2>
+      <p>These Terms, together with our Privacy Policy and other published policies, form the entire agreement between you and OAE regarding your use of the platform, unless a separate written agreement says otherwise.</p>
+
+      <h2>31. CONTACT US</h2>
+      <p>If you have questions, complaints, copyright concerns, privacy concerns, or general inquiries about these Terms, contact us at:</p>
+      <div class="placeholder-text">
+        <strong>OAE (Oluwatosin Academy of Excellence)</strong><br>
+        Email: <a href="mailto:oaeofficial123@gmail.com">oaeofficial123@gmail.com</a><br>
+        Phone/WhatsApp: +234 705 176 3835<br>
+        Website: <a href="https://oaeofficial.com">oaeofficial.com</a><br>
+        Address: Lagos, Nigeria<br>
+        Social Media: 
+        <a href="https://linkedin.com/in/oaeofficial123" target="_blank">LinkedIn</a> |
+        <a href="https://x.com/oaeofficial123" target="_blank">X (Twitter)</a> |
+        <a href="https://facebook.com/oaeofficial123" target="_blank">Facebook</a>
+      </div>
+\n    </main>
+  </div>
 
 <footer class="oae-footer">
 
@@ -111,16 +727,19 @@
     <p>🌍 Trusted by <strong>15,000+ learners</strong> across Nigeria, Africa, and the world.</p>
     <p>© 2025 OAE — Oluwatosin Academy of Excellence. All rights reserved.</p>
 
-    <div class="legal-links">
-      <a href="#">Terms of Use</a>
-      <a href="#">Privacy Policy</a>
-      <a href="#">Cookie Notice</a>
-      <a href="#">Accessibility</a>
+        <div class="legal-links">
+      <a href="/legal/terms-and-conditions.html">Terms & Conditions</a>
+      <a href="/legal/privacy-policy.html">Privacy Policy</a>
+      <a href="/legal/community-guidelines.html">Community</a>
+      <a href="/legal/disclaimer.html">Disclaimer</a>
+      <a href="/legal/copyright-policy.html">Copyright</a>
+      <a href="/legal/advertising-policy.html">Advertising</a>
+      <a href="/legal/cookie-policy.html">Cookie Policy</a>
     </div>
   </div>
-
-  
 </footer>
 
+  <script src="/Assets/js/home.js" defer></script>
+  <script src="/Assets/js/navbar.js" defer></script>
 </body>
 </html>

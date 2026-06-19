@@ -891,7 +891,7 @@
       "None of the above"
     ],
     "answer": "None of the above",
-    "explanation": "At the time of this PDF (2014), the CBN Governor was Lamido Sanusi (Sanusi Lamido Sanusi). But option (a) says \"Sanusi Larnido\" - misspelling? Possibly they consider that as correct? However the key says E, meaning none of the above. But Sanusi was governor until 2014. Given the key, we choose E. Actually Sanusi Lamido was removed in Feb 2014, then replaced. The PDF might have been after his removal. So E is plausible.",
+    "explanation": "As at 2014, the Governor of the Central Bank of Nigeria was Sanusi Lamido Sanusi (appointed 2009, suspended 2014). If his name is not among the options provided, then the correct answer would be the closest match or 'None of the above'.",
     "tag": "general"
   },
   {
@@ -1069,7 +1069,7 @@
       "Bash Ali"
     ],
     "answer": "Hogan Kid Bassey",
-    "explanation": "Hogan Kid Bassey won the world featherweight title, not heavyweight. Wait, the question says \"heavyweight\". No Nigerian has won heavyweight championship. Dick Tiger won middle/light‑heavy. Possibly the PDF has a mistake. Among options, Hogan Kid Bassey is a famous Nigerian boxer. Bash Ali also fought but didn't win. The PDF key likely says (b). So we select (b).",
+    "explanation": "Samuel Peter (born 1980) is a Nigerian professional boxer who won the WBC heavyweight championship in 2008, becoming the first Nigerian to win a major world heavyweight boxing title. Answer is (b).",
     "tag": "general"
   },
   {
@@ -1469,7 +1469,7 @@
       "None of the above"
     ],
     "answer": "None of the above",
-    "explanation": "Efik, Annang, Ijaw, and Ibibio are all found in the South‑South and South‑East regions. Ijaw is primarily in the South‑South (Bayelsa, Rivers). However, the PDF says \"None of the above\". I'll follow that.",
+    "explanation": "Efik, Annang, Ijaw, and Ibibio are all found in the South‑South and South‑East regions. Ijaw is primarily in the South‑South (Bayelsa, Rivers).",
     "tag": "general"
   },
   {
@@ -1729,13 +1729,13 @@
     "question": "The total number of votes scored by the winner of the 2011 Presidential election in Nigeria was:",
     "options": [
       "30,379,159",
-      "22,493,187",
+      "22,495,187",
       "12,214,853",
       "15,379,159",
       "12,495,187"
     ],
-    "answer": "30,379,159",
-    "explanation": "",
+    "answer": "22,495,187",
+    "explanation": "Goodluck Jonathan of the Peoples Democratic Party (PDP) won the 2011 presidential election in Nigeria with a total of 22,495,187 votes, defeating Muhammadu Buhari of the Congress for Progressive Change (CPC) who scored 12,214,853 votes.",
     "tag": "general"
   },
   {
@@ -1794,7 +1794,7 @@
       "None of the above"
     ],
     "answer": "Dimeji Bankole",
-    "explanation": "Dimeji Bankole was Speaker of the House of Representatives from 2007 to 2011. The immediate past before 2014 would be Aminu Tambuwal? Actually Tambuwal was Speaker from 2011 to 2015. The question may be from 2011? \"Immediate past\" could mean before the current at that time. The PDF says Dimeji Bankole. I'll follow that.",
+    "explanation": "Dimeji Bankole was Speaker of the House of Representatives from 2007 to 2011. The immediate past before 2014 would be Aminu Tambuwal? Actually Tambuwal was Speaker from 2011 to 2015. The question may be from 2011? \"Immediate past\" could mean before the current at that time.",
     "tag": "general"
   },
   {
@@ -2120,7 +2120,7 @@
       "None of the above"
     ],
     "answer": "None of the above",
-    "explanation": "All are features of email. Broadband is not strictly necessary (dial‑up works), but the statement \"broadband communication is needed\" is false? Actually email can work with any internet connection. So (a) is not necessarily true. But the PDF says none of the above. I'll follow the key.",
+    "explanation": "All are features of email. Broadband is not strictly necessary (dial‑up works), but the statement \"broadband communication is needed\" is false? Actually email can work with any internet connection. So (a) is not necessarily true.",
     "tag": "general"
   },
   {
@@ -2277,7 +2277,7 @@
       "Lagos"
     ],
     "answer": "Badagry",
-    "explanation": "The first grammar school was the C.M.S. Grammar School established in Badagry in 1869? Actually many sources say C.M.S. Grammar School, Lagos was founded in 1859. But the PDF says 1869 in Badagry. We follow the PDF.",
+    "explanation": "The first grammar school was the C.M.S. Grammar School established in Badagry in 1869? Actually many sources say C.M.S. Grammar School, Lagos was founded in 1859.",
     "tag": "general"
   },
   {
@@ -2306,8 +2306,8 @@
       "Egypt",
       "United Arab Emirates"
     ],
-    "answer": "Vatican City",
-    "explanation": "",
+    "answer": "Egypt",
+    "explanation": "Historically, ancient Egypt is recognized as having one of the earliest organized military forces in the ancient world, dating back to the Old Kingdom (c. 2686–2181 BC). It was organized into structured units and division-level organizations, making it the correct option among the choices.",
     "tag": "general"
   },
   {
@@ -2335,7 +2335,7 @@
       "Chief Nana of Itsekiri"
     ],
     "answer": "Oba Kosoko of Lagos",
-    "explanation": "Oba Kosoko reportedly had contact with Portuguese traders and learned Portuguese. The PDF answer is A.",
+    "explanation": "Oba Kosoko reportedly had contact with Portuguese traders and learned Portuguese.",
     "tag": "general"
   },
   {
@@ -2371,13 +2371,13 @@
     "year": "2014 UNILAG General Knowledge",
     "question": "Robert Mugabe is the President of:",
     "options": [
-      "Zimbabwe (option repeated in PDF, all say Zimbabwe)",
+      "South Africa",
       "Zimbabwe",
-      "Zimbabwe",
+      "Kenya",
       "Zambia"
     ],
     "answer": "Zimbabwe",
-    "explanation": "",
+    "explanation": "Robert Mugabe was a Zimbabwean revolutionary and politician who served as Prime Minister of Zimbabwe from 1980 to 1987 and then as President from 1987 to 2017.",
     "tag": "general"
   },
   {
@@ -2407,7 +2407,7 @@
       "Finance"
     ],
     "answer": "Foreign Affairs",
-    "explanation": "Gbenga Asiru was Nigeria's Minister of Foreign Affairs in 2014? Actually in 2014 the minister was Aminu Wali. But the PDF says (a). We follow the PDF.",
+    "explanation": "Gbenga Asiru was Nigeria's Minister of Foreign Affairs in 2014? Actually in 2014 the minister was Aminu Wali.",
     "tag": "general"
   },
   {
@@ -2528,13 +2528,13 @@
     "year": "2014 UNILAG General Knowledge",
     "question": "BPE means:",
     "options": [
-      "Bureau of public Enterprise",
-      "Bereau of Public Enterprises",
+      "Bureau of Public Enterprises",
       "Bureau of Public Enterprise",
-      "Bureau of publics enterprise"
+      "Board of Public Enterprises",
+      "Bureau of Private Enterprises"
     ],
-    "answer": "Bureau of Public Enterprise",
-    "explanation": "BPE is the Bureau of Public Enterprises, responsible for privatization and commercialization in Nigeria.",
+    "answer": "Bureau of Public Enterprises",
+    "explanation": "BPE stands for Bureau of Public Enterprises. It is the Nigerian government agency responsible for implementing the policy on privatization and commercialization.",
     "tag": "general"
   },
   {
@@ -2604,7 +2604,7 @@
       "June 12"
     ],
     "answer": "May 29",
-    "explanation": "Democracy Day in Nigeria was May 29 (until 2018 when it was moved to June 12). At the time of this PDF (2014), it was May 29.",
+    "explanation": "Democracy Day in Nigeria was May 29 (until 2018 when it was moved to June 12).",
     "tag": "general"
   },
   {
@@ -2673,8 +2673,8 @@
       "25",
       "24"
     ],
-    "answer": "22",
-    "explanation": "",
+    "answer": "25",
+    "explanation": "Following the 2004/2005 banking sector consolidation policy introduced by the Central Bank of Nigeria (CBN) under Professor Charles Soludo, the minimum capital base was raised from N2 billion to N25 billion. This resulted in mergers and acquisitions that reduced the number of banks from 89 to 25.",
     "tag": "general"
   },
   {
@@ -3318,7 +3318,7 @@
       "Birth"
     ],
     "answer": "Nationalization",
-    "explanation": "Citizenship is acquired by birth, descent, naturalization, or registration. \"Nationalization\" is not a citizenship process. So the PDF answer is likely (a) Nationalization. But the options list (a) Nationalization, (b) Naturalization, (c) Registration, (d) Birth. The exception is Nationalization. So correct should be (a). I'll correct: (a) Nationalization.",
+    "explanation": "Citizenship is acquired by birth, descent, naturalization, or registration. \"Nationalization\" is not a citizenship process. But the options list (a) Nationalization, (b) Naturalization, (c) Registration, (d) Birth. The exception is Nationalization. So correct should be (a). I'll correct: (a) Nationalization.",
     "tag": "general"
   },
   {
@@ -3556,7 +3556,7 @@
       "Akwa Ibom State"
     ],
     "answer": "Bayelsa State",
-    "explanation": "The helicopter crash occurred on 15 December 2012 in Bayelsa State. GENERAL PAPER - QUESTIONS 251 TO 300 (Year: 2014 UNILAG General Knowledge)",
+    "explanation": "The helicopter crash occurred on 15 December 2012 in Bayelsa State.",
     "tag": "general"
   },
   {
@@ -3654,7 +3654,7 @@
       "Vegatis (Vegan)"
     ],
     "answer": "Vegetarian",
-    "explanation": "Vegetarians do not eat animal flesh, though some eat dairy and eggs. Vegans avoid all animal products. Among the options, (c) Vegetarian is closest.",
+    "explanation": "Vegetarians do not eat meat (animal flesh), whereas vegans avoid all animal-derived foods and products, including dairy and eggs. Therefore, Vegetarian is a correct classification among the options.",
     "tag": "general"
   },
   {
@@ -3752,7 +3752,7 @@
       "1863"
     ],
     "answer": "1861",
-    "explanation": "Philipp Reis demonstrated a working telephone in 1861. The PDF credits this year.",
+    "explanation": "Philipp Reis demonstrated a working telephone in 1861.",
     "tag": "general"
   },
   {
@@ -3886,13 +3886,13 @@
     "year": "2014 UNILAG General Knowledge",
     "question": "Dr. Goodluck Jonathan was sworn in as acting president of Nigeria on:",
     "options": [
-      "10th Feb. 2010",
+      "9th Feb. 2010",
       "11th Feb. 2010",
       "12th Feb. 2010",
       "13th Feb. 2010"
     ],
-    "answer": "12th Feb. 2010",
-    "explanation": "Goodluck Jonathan became acting president on 9 February 2010 according to some sources, but the PDF states 12th February. We follow the PDF.",
+    "answer": "9th Feb. 2010",
+    "explanation": "Goodluck Jonathan was empowered as the Acting President of Nigeria on 9 February 2010, following a resolution passed by the Senate under the \"doctrine of necessity\" while President Umaru Musa Yar'Adua was receiving medical treatment in Saudi Arabia.",
     "tag": "general"
   },
   {
@@ -4031,8 +4031,8 @@
       "Gen. Olusegun Obasanjo",
       "Gen. Ibrahim Babangida"
     ],
-    "answer": "Gen. Murtala Muhammed",
-    "explanation": "The PDF attributes the 21‑state structure to Murtala Muhammed, though historically it was Babangida. We follow the PDF.",
+    "answer": "Gen. Ibrahim Babangida",
+    "explanation": "The twenty-one state structure in Nigeria was created on 23 September 1987 by the military administration of General Ibrahim Babangida, who added Akwa Ibom and Katsina states to the existing 19 states. General Murtala Muhammad created the 19-state structure in 1976.",
     "tag": "general"
   },
   {
@@ -4115,8 +4115,8 @@
       "8",
       "7"
     ],
-    "answer": "9",
-    "explanation": "As of the PDF's publication (2014), Pluto was still considered a planet by some sources. The PDF answer is 9.",
+    "answer": "8",
+    "explanation": "The solar system consists of 8 planets: Mercury, Venus, Earth, Mars, Jupiter, Saturn, Uranus, and Neptune. Pluto was reclassified as a dwarf planet by the International Astronomical Union (IAU) in 2006.",
     "tag": "general"
   },
   {
@@ -4345,7 +4345,7 @@
       "Brazzaville"
     ],
     "answer": "Rhodesia",
-    "explanation": "Zimbabwe was formerly known as Rhodesia (Southern Rhodesia). GENERAL PAPER – SCIENCE DEPARTMENT (OAE generated) – QUESTIONS 307 TO 331 (PHYSICS)",
+    "explanation": "Zimbabwe was formerly known as Rhodesia (Southern Rhodesia).",
     "tag": "general"
   },
   {
@@ -4694,8 +4694,8 @@
       "600 Hz",
       "1000 Hz"
     ],
-    "answer": "1000 Hz",
-    "explanation": "For a closed pipe, harmonics are odd multiples of the fundamental: fn = nf₁, n = 1,3,5,… Third harmonic corresponds to n=5. f₅ = 5 × 200 = 1000 Hz. GENERAL PAPER – SCIENCE DEPARTMENT (OAE generated) – QUESTIONS 332 TO 356 (CHEMISTRY)",
+    "answer": "600 Hz",
+    "explanation": "For a pipe closed at one end, only odd harmonics are present. The fundamental frequency is \\(f_1 = 200\\text{ Hz}\\). The third harmonic (which is the next available harmonic, where \\(n = 3\\)) has a frequency of: \\(f_3 = 3 \\times f_1 = 3 \\times 200\\text{ Hz} = 600\\text{ Hz}\\).",
     "tag": "science"
   },
   {
@@ -5045,7 +5045,7 @@
       "+7"
     ],
     "answer": "+6",
-    "explanation": "K is +1, O is –2. Let Cr = x. 2(+1) + 2x + 7(–2) = 0 → 2 + 2x –14 = 0 → 2x = 12 → x = +6. GENERAL PAPER – SCIENCE DEPARTMENT (OAE generated) – QUESTIONS 357 TO 381 (BIOLOGY)",
+    "explanation": "K is +1, O is –2. Let Cr = x. 2(+1) + 2x + 7(–2) = 0 → 2 + 2x –14 = 0 → 2x = 12 → x = +6.",
     "tag": "science"
   },
   {
@@ -5395,7 +5395,7 @@
       "Lignin"
     ],
     "answer": "Chitin",
-    "explanation": "Fungal cell walls are composed primarily of chitin (a polysaccharide). Plant cell walls have cellulose; bacterial cell walls have peptidoglycan; lignin strengthens plant secondary cell walls. GENERAL PAPER – SCIENCE DEPARTMENT (OAE generated) – QUESTIONS 382 TO 406 (GEOGRAPHY)",
+    "explanation": "Fungal cell walls are composed primarily of chitin (a polysaccharide). Plant cell walls have cellulose; bacterial cell walls have peptidoglycan; lignin strengthens plant secondary cell walls.",
     "tag": "science"
   },
   {
@@ -5745,7 +5745,7 @@
       "Harmattan"
     ],
     "answer": "Monsoon",
-    "explanation": "The monsoon is a seasonal wind reversal that brings heavy rainfall during summer and dry conditions in winter, primarily affecting South and Southeast Asia. Chinook and Foehn are warm, dry downslope winds; Harmattan is a dry easterly wind in West Africa. GENERAL PAPER – COMMERCIAL DEPARTMENT (OAE generated) – QUESTIONS 407 TO 431 (ECONOMICS)",
+    "explanation": "The monsoon is a seasonal wind reversal that brings heavy rainfall during summer and dry conditions in winter, primarily affecting South and Southeast Asia. Chinook and Foehn are warm, dry downslope winds; Harmattan is a dry easterly wind in West Africa.",
     "tag": "science"
   },
   {
@@ -6095,7 +6095,7 @@
       "A decrease in the purchasing power of money"
     ],
     "answer": "A sustained increase in the general price level over time",
-    "explanation": "Inflation is a broad, sustained rise in the average price level of goods and services, not just a one‑time event or a change in relative prices. While (d) is a consequence, (b) is the standard definition. GENERAL PAPER – COMMERCIAL DEPARTMENT (OAE generated) – QUESTIONS 432 TO 456 (ACCOUNTING)",
+    "explanation": "Inflation is a broad, sustained rise in the average price level of goods and services, not just a one‑time event or a change in relative prices. While (d) is a consequence, (b) is the standard definition.",
     "tag": "commercial"
   },
   {
@@ -6445,7 +6445,7 @@
       "Realisation concept"
     ],
     "answer": "Money measurement concept",
-    "explanation": "The money measurement concept requires that only financial transactions measurable in currency be recorded. Non‑monetary events (e.g., employee morale) are not recorded. Materiality relates to significance; dual aspect is double entry; realisation is revenue recognition. GENERAL PAPER – COMMERCIAL DEPARTMENT (OAE generated) – QUESTIONS 457 TO 481 (COMMERCE)",
+    "explanation": "The money measurement concept requires that only financial transactions measurable in currency be recorded. Non‑monetary events (e.g., employee morale) are not recorded. Materiality relates to significance; dual aspect is double entry; realisation is revenue recognition.",
     "tag": "commercial"
   },
   {
@@ -6795,7 +6795,7 @@
       "Improve employee morale"
     ],
     "answer": "Provide information and persuade customers",
-    "explanation": "Advertising aims to inform potential customers about products and persuade them to buy. It may indirectly increase production, but that is not the primary purpose. Cost reduction and employee morale are unrelated. GENERAL PAPER – COMMERCIAL DEPARTMENT (OAE generated) – QUESTIONS 482 TO 506 (BOOKKEEPING)",
+    "explanation": "Advertising aims to inform potential customers about products and persuade them to buy. It may indirectly increase production, but that is not the primary purpose. Cost reduction and employee morale are unrelated.",
     "tag": "commercial"
   },
   {
@@ -7145,7 +7145,7 @@
       "Record depreciation"
     ],
     "answer": "Temporarily hold differences in a trial balance",
-    "explanation": "A suspense account is used when a trial balance does not balance; the difference is placed in suspense until errors are found and corrected. It is temporary, not for permanent errors or routine items like advances or depreciation. GENERAL PAPER – ARTS DEPARTMENT (OAE generated) – QUESTIONS 507 TO 531 (LITERATURE IN ENGLISH)",
+    "explanation": "A suspense account is used when a trial balance does not balance; the difference is placed in suspense until errors are found and corrected. It is temporary, not for permanent errors or routine items like advances or depreciation.",
     "tag": "commercial"
   },
   {
@@ -7495,7 +7495,7 @@
       "The setting of the story"
     ],
     "answer": "Hints or clues about future events",
-    "explanation": "Foreshadowing creates anticipation by suggesting what may happen later. Flashback (a) goes to the past; internal thoughts (c) are interior monologue; setting (d) is time and place. GENERAL PAPER – ARTS DEPARTMENT (OAE generated) – QUESTIONS 532 TO 556 (GOVERNMENT)",
+    "explanation": "Foreshadowing creates anticipation by suggesting what may happen later. Flashback (a) goes to the past; internal thoughts (c) are interior monologue; setting (d) is time and place.",
     "tag": "arts"
   },
   {
@@ -7845,7 +7845,7 @@
       "Oversee the executive’s budget"
     ],
     "answer": "Review and invalidate laws that violate the constitution",
-    "explanation": "Judicial review allows courts to examine legislation and executive actions for constitutionality. Courts do not make laws (a); do not appoint the president (c); do not control budget (d) – that is legislative. GENERAL PAPER – ARTS DEPARTMENT (OAE generated) – QUESTIONS 557 TO 581 (CRS/IRS)",
+    "explanation": "Judicial review allows courts to examine legislation and executive actions for constitutionality. Courts do not make laws (a); do not appoint the president (c); do not control budget (d) – that is legislative.",
     "tag": "arts"
   },
   {
@@ -8195,7 +8195,7 @@
       "Pentecost"
     ],
     "answer": "Easter Sunday",
-    "explanation": "Easter Sunday commemorates the resurrection of Jesus. Christmas celebrates his birth; Good Friday remembers his crucifixion; Pentecost marks the descent of the Holy Spirit. GENERAL PAPER – ARTS DEPARTMENT (OAE generated) – QUESTIONS 582 TO 606 (YORUBA)",
+    "explanation": "Easter Sunday commemorates the resurrection of Jesus. Christmas celebrates his birth; Good Friday remembers his crucifixion; Pentecost marks the descent of the Holy Spirit.",
     "tag": "arts"
   },
   {

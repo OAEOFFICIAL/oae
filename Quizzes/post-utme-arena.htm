@@ -14,6 +14,21 @@
     <link href="https://cdn.jsdelivr.net/npm/remixicon@3.5.0/fonts/remixicon.css" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
     
+    <!-- MathJax for Formula Rendering -->
+    <script>
+        window.MathJax = {
+            tex: {
+                inlineMath: [['\\(', '\\)'], ['$', '$']],
+                displayMath: [['\\[', '\\]'], ['$$', '$$']],
+                processEscapes: true
+            },
+            options: {
+                skipHtmlTags: ['script', 'noscript', 'style', 'textarea', 'pre']
+            }
+        };
+    </script>
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+
     <style>
         * {
             box-sizing: border-box;
@@ -334,6 +349,48 @@
             font-weight: 500;
         }
 
+        /* === RICH TEXT FORMATTING === */
+        /* Instruction lines (e.g. "Read the passage and answer...") */
+        .q-instruction {
+            display: block;
+            font-style: italic;
+            color: var(--muted);
+            font-size: 0.97rem;
+            border-left: 3px solid var(--green);
+            padding-left: 10px;
+            margin-bottom: 6px;
+            font-weight: 400;
+        }
+
+        /* Sub/sup in question text and options — keep compact, no line-height disruption */
+        .question-text sub,
+        .question-text sup,
+        .opt-text sub,
+        .opt-text sup,
+        .explanation-box sub,
+        .explanation-box sup {
+            font-size: 0.72em;
+            line-height: 0;
+            position: relative;
+            vertical-align: baseline;
+        }
+        .question-text sup, .opt-text sup, .explanation-box sup { top: -0.5em; }
+        .question-text sub, .opt-text sub, .explanation-box sub { bottom: -0.3em; }
+
+        /* Bold/italic/underline in quiz content */
+        .question-text strong, .opt-text strong, .explanation-box strong {
+            font-weight: 700;
+            color: inherit;
+        }
+        .question-text em, .opt-text em {
+            font-style: italic;
+            color: inherit;
+        }
+        .question-text u, .opt-text u {
+            text-decoration: underline;
+            text-underline-offset: 2px;
+        }
+
         /* === NAVIGATION === */
         .nav-controls {
             display: flex;
@@ -483,6 +540,216 @@
             width: 14px;
             height: 14px;
             border-radius: 4px;
+        }
+
+        /* ============================================
+           MOBILE RESPONSIVENESS
+           ============================================ */
+
+        /* --- Tablet & small laptop (≤1024px) --- */
+        @media (max-width: 1024px) {
+            .quiz-wrap {
+                margin: 20px auto;
+                padding: 12px;
+            }
+
+            .main-panel {
+                padding: 24px 20px;
+            }
+
+            .side-panel {
+                position: static;
+                order: 2;
+            }
+
+            .question-text {
+                font-size: 1.15rem;
+                margin-bottom: 24px;
+            }
+        }
+
+        /* --- Mobile (≤768px) --- */
+        @media (max-width: 768px) {
+            .quiz-wrap {
+                margin: 10px auto;
+                padding: 8px;
+            }
+
+            .arena-layout {
+                gap: 16px;
+            }
+
+            .main-panel {
+                padding: 20px 16px;
+                border-radius: 12px;
+            }
+
+            .side-panel {
+                padding: 20px 16px;
+                border-radius: 12px;
+            }
+
+            .question-text {
+                font-size: 1.08rem;
+                line-height: 1.65;
+                margin-bottom: 20px;
+            }
+
+            .q-instruction {
+                font-size: 0.88rem;
+            }
+
+            /* Options: stack comfortably for thumb taps */
+            .option-item {
+                padding: 14px 16px;
+                gap: 14px;
+                border-radius: 10px;
+            }
+
+            .option-item:hover {
+                transform: none; /* No translateX on mobile — looks wrong */
+            }
+
+            .opt-letter {
+                width: 38px;
+                min-width: 38px;
+                height: 38px;
+                font-size: 0.95rem;
+                border-radius: 8px;
+            }
+
+            .opt-text {
+                font-size: 0.98rem;
+            }
+
+            /* Subject tabs: scrollable row, smaller pills */
+            .subject-tabs {
+                gap: 8px;
+                margin-bottom: 20px;
+            }
+
+            .subject-tab {
+                padding: 10px 18px;
+                font-size: 0.85rem;
+            }
+
+            /* Palette grid: 6 columns on phone for more space */
+            .review-board {
+                grid-template-columns: repeat(6, 1fr);
+                gap: 8px;
+            }
+
+            .p-btn {
+                font-size: 0.85rem;
+                border-radius: 6px;
+            }
+
+            /* Question counter */
+            .question-counter {
+                font-size: 0.8rem;
+                padding: 5px 10px;
+            }
+
+            .question-header {
+                margin-bottom: 16px;
+                padding-bottom: 12px;
+            }
+
+            /* Explanation box on mobile */
+            .explanation-box {
+                font-size: 0.92rem !important;
+                padding: 12px 14px !important;
+            }
+
+            /* Nav buttons */
+            .btn-outline, .btn-primary, .btn-nav {
+                padding: 12px 20px;
+                font-size: 0.92rem;
+            }
+
+            .btn-submit {
+                padding: 12px 24px;
+                font-size: 0.95rem;
+            }
+        }
+
+        /* --- Small phone (≤480px) --- */
+        @media (max-width: 480px) {
+            .arena-header {
+                padding: 14px;
+                gap: 12px;
+                border-radius: 10px;
+            }
+
+            .arena-header::before {
+                width: 6px;
+            }
+
+            .school-logo {
+                width: 48px;
+                height: 48px;
+                min-width: 48px;
+                font-size: 1.4rem;
+            }
+
+            .school-info h2 {
+                font-size: 1rem;
+            }
+
+            .school-info p {
+                font-size: 0.78rem;
+            }
+
+            .timer-display {
+                font-size: 1.5rem;
+            }
+
+            .main-panel {
+                padding: 16px 12px;
+            }
+
+            .question-text {
+                font-size: 1rem;
+                line-height: 1.6;
+                margin-bottom: 16px;
+            }
+
+            .option-item {
+                padding: 12px 12px;
+                gap: 10px;
+            }
+
+            .opt-letter {
+                width: 34px;
+                min-width: 34px;
+                height: 34px;
+                font-size: 0.88rem;
+            }
+
+            .opt-text {
+                font-size: 0.9rem;
+                line-height: 1.45;
+            }
+
+            .review-board {
+                grid-template-columns: repeat(7, 1fr);
+                gap: 6px;
+            }
+
+            .p-btn {
+                font-size: 0.78rem;
+            }
+
+            .nav-controls {
+                padding-top: 16px;
+            }
+
+            /* Subject tabs: smaller on tiny screens */
+            .subject-tab {
+                padding: 8px 14px;
+                font-size: 0.8rem;
+                border-radius: 8px;
+            }
         }
     </style>
 </head>

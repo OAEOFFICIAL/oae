@@ -249,6 +249,86 @@ class PostUTMEEngine {
         });
     }
 
+    // ---------------------------------------------------------------
+    // Rich Text Formatter
+    // Supports:
+    //   **bold**  *italic*  __underline__
+    //   ^{sup} or ^x  (superscript)       _{sub} or _x (subscript)
+    //   Auto chemical formulas: H2O → H<sub>2</sub>O
+    //   MathJax: $...$ and \(...\) pass through untouched
+    // ---------------------------------------------------------------
+    formatText(str) {
+        if (!str) return '';
+        let s = String(str);
+
+        // 1. Protect MathJax delimiters with a safe placeholder.
+        //    Format: \x01mx{N}\x01  — all lowercase, no A-Z+digit pattern,
+        //    so the chemical formula regex below can never corrupt them.
+        const mathChunks = [];
+        const protect = (match) => {
+            const idx = mathChunks.length;
+            mathChunks.push(match);
+            return `\x01mx${idx}\x01`;
+        };
+        // Display math  \[...\]  and  $$...$$
+        s = s.replace(/\\\[[\s\S]*?\\\]/g, protect);
+        s = s.replace(/\$\$[\s\S]*?\$\$/g, protect);
+        // Inline math  \(...\)  and  $...$
+        s = s.replace(/\\\([\s\S]*?\\\)/g, protect);
+        s = s.replace(/\$[^$\n]+?\$/g, protect);
+
+        // 2. Bold:  **text**
+        s = s.replace(/\*\*(.+?)\*\*/g, '<strong>$1</strong>');
+
+        // 3. Italic:  *text*  (single star, not inside a word boundary to avoid false matches)
+        s = s.replace(/(?<![\w*])\*(?!\*)(.+?)(?<!\*)\*(?![\w*])/g, '<em>$1</em>');
+
+        // 4. Underline:  __text__
+        s = s.replace(/(?<!_)__(.+?)__(?!_)/g, '<u>$1</u>');
+
+        // 5. Explicit superscript:  ^{text}  or  ^x (single char)
+        s = s.replace(/\^\{([^}]+)\}/g, '<sup>$1</sup>');
+        s = s.replace(/\^(\w)/g, '<sup>$1</sup>');
+
+        // 6. Explicit subscript:  _{text}  or  _x (single char)
+        s = s.replace(/\_\{([^}]+)\}/g, '<sub>$1</sub>');
+        // Note: bare _x is skipped to avoid mangling snake_case words
+
+        // 7. Auto chemical formula subscripting:
+        //    Matches sequences like H2O, CO2, H2SO4, C6H12O6, Na2CO3, H2SO4
+        //    Strategy: look for ElementSymbol+digits patterns within what
+        //    looks like a formula (capital-letter-starts, chemical-ish pattern).
+        //    We use a conservative regex that subscripts digits immediately
+        //    following one or two letters where the first is uppercase.
+        //    Runs multiple passes to handle chains like C6H12O6.
+        s = s.replace(/([A-Z][a-z]?)(\d+)(?=[A-Z()|,;. \x01]|$)/g, '$1<sub>$2</sub>');
+        // Second pass for trailing numbers at end of token
+        s = s.replace(/([A-Z][a-z]?)(\d+)/g, (m, elem, num) => {
+            // Don't double-wrap if already inside <sub>
+            return `${elem}<sub>${num}</sub>`;
+        });
+
+        // 8. Restore protected math chunks
+        s = s.replace(/\x01mx(\d+)\x01/g, (_, i) => mathChunks[parseInt(i, 10)]);
+
+        return s;
+    }
+
+    // Resolves the correct answer index regardless of whether `answer`
+    // is stored as a full option string (UNILAG) or an integer index.
+    getCorrectAnswerIndex(q) {
+        if (q.answer === undefined || q.answer === null) return -1;
+        if (typeof q.answer === 'number') return q.answer;
+        const answerStr = String(q.answer).trim();
+        // Check if the value is a stringified integer index (e.g. "2")
+        const numAns = parseInt(answerStr, 10);
+        if (!isNaN(numAns) && numAns >= 0 && q.options && numAns < q.options.length && answerStr === numAns.toString()) {
+            return numAns;
+        }
+        // Fall back to matching by the full option text
+        return q.options ? q.options.findIndex(o => String(o).trim() === answerStr) : -1;
+    }
+
     renderQuestion() {
         const currentSub = this.questions[this.currentSubjectIndex];
         const qData = currentSub ? currentSub.data[this.currentQuestionIndex] : null;
@@ -267,7 +347,8 @@ class PostUTMEEngine {
         // Create Title
         const qTitle = document.createElement('h3');
         qTitle.className = 'question-text';
-        qTitle.innerHTML = `<span class="q-number">Q${this.currentQuestionIndex + 1}.</span> ${qData.instruction ? `<em>${qData.instruction}</em><br><br>` : ''}${qData.question}`;
+        const instructionHtml = qData.instruction ? `<em class="q-instruction">${this.formatText(qData.instruction)}</em><br><br>` : '';
+        qTitle.innerHTML = `<span class="q-number">Q${this.currentQuestionIndex + 1}.</span> ${instructionHtml}${this.formatText(qData.question)}`;
 
         // Create Options
         const optsContainer = document.createElement('div');
@@ -280,7 +361,13 @@ class PostUTMEEngine {
         let correctIdx = -1;
         const isStudyAnswered = this.mode === 'study' && savedAnswer !== undefined;
         if (this.reviewMode || isStudyAnswered) {
-            correctIdx = qData.options.findIndex(o => o.trim() === qData.answer.trim());
+            correctIdx = this.getCorrectAnswerIndex(qData);
+        }
+
+        // Update the question counter element
+        const counterEl = document.getElementById('question-counter');
+        if (counterEl && currentSub) {
+            counterEl.innerText = `Question ${this.currentQuestionIndex + 1} of ${currentSub.data.length}`;
         }
 
         qData.options.forEach((opt, idx) => {
@@ -300,7 +387,7 @@ class PostUTMEEngine {
                     optDiv.style.background = 'rgba(16, 185, 129, 0.1)';
                     optDiv.innerHTML = `
                         <div class="opt-letter" style="background:#10b981; color:white;">${letters[idx]}</div>
-                        <div class="opt-text" style="color:#0f172a; font-weight:bold;">${opt} <i class="fas fa-check" style="color:#10b981; margin-left:10px;"></i></div>
+                        <div class="opt-text" style="color:var(--oae-dark); font-weight:bold;">${this.formatText(opt)} <i class="fas fa-check" style="color:#10b981; margin-left:10px;"></i></div>
                     `;
                 } else if (savedAnswer === idx && savedAnswer !== correctIdx) {
                     // Wrong Answer gets Red Outline/Background
@@ -308,12 +395,12 @@ class PostUTMEEngine {
                     optDiv.style.background = 'rgba(239, 68, 68, 0.1)';
                     optDiv.innerHTML = `
                         <div class="opt-letter" style="background:#ef4444; color:white;">${letters[idx]}</div>
-                        <div class="opt-text" style="color:#ef4444; font-weight:bold;">${opt} <i class="fas fa-times" style="color:#ef4444; margin-left:10px;"></i></div>
+                        <div class="opt-text" style="color:#ef4444; font-weight:bold;">${this.formatText(opt)} <i class="fas fa-times" style="color:#ef4444; margin-left:10px;"></i></div>
                     `;
                 } else {
                     optDiv.innerHTML = `
                         <div class="opt-letter">${letters[idx]}</div>
-                        <div class="opt-text">${opt}</div>
+                        <div class="opt-text">${this.formatText(opt)}</div>
                     `;
                 }
                 
@@ -329,7 +416,7 @@ class PostUTMEEngine {
             } else {
                 optDiv.innerHTML = `
                     <div class="opt-letter">${letters[idx]}</div>
-                    <div class="opt-text">${opt}</div>
+                    <div class="opt-text">${this.formatText(opt)}</div>
                 `;
                 optDiv.onclick = () => {
                     Array.from(optsContainer.children).forEach(c => c.classList.remove('selected'));
@@ -354,13 +441,13 @@ class PostUTMEEngine {
         if ((this.reviewMode || isStudyAnswered) && qData.explanation) {
             const expDiv = document.createElement('div');
             expDiv.className = 'explanation-box';
-            expDiv.style.background = '#f8fafc';
+            expDiv.style.background = 'rgba(59,130,246,0.06)';
             expDiv.style.borderLeft = '4px solid #3b82f6';
             expDiv.style.padding = '15px 20px';
             expDiv.style.marginTop = '20px';
             expDiv.style.marginBottom = '20px';
             expDiv.style.borderRadius = '0 8px 8px 0';
-            expDiv.innerHTML = `<strong style="color:#1e40af;"><i class="fas fa-lightbulb"></i> Explanation:</strong><p style="margin:8px 0 0; color:#334155; line-height:1.5;">${qData.explanation}</p>`;
+            expDiv.innerHTML = `<strong style="color:#3b82f6;"><i class="fas fa-lightbulb"></i> Explanation:</strong><p style="margin:8px 0 0; color:var(--oae-dark); line-height:1.6;">${this.formatText(qData.explanation)}</p>`;
             container.insertBefore(expDiv, nav);
         }
 
@@ -372,6 +459,13 @@ class PostUTMEEngine {
             btnNext.innerHTML = (this.currentQuestionIndex === currentSub.data.length - 1) 
                 ? 'Next Section <i class="fas fa-arrow-right"></i>' 
                 : 'Next <i class="fas fa-arrow-right"></i>';
+        }
+
+        // Trigger MathJax rendering for newly injected HTML equations
+        if (window.MathJax && typeof window.MathJax.typesetPromise === 'function') {
+            window.MathJax.typesetPromise().catch(function (err) {
+                console.warn('MathJax typesetting error:', err);
+            });
         }
     }
 
@@ -391,7 +485,7 @@ class PostUTMEEngine {
             if (this.reviewMode || (this.mode === 'study' && this.answers[q.id] !== undefined)) {
                 // Show green for right, red for wrong
                 const userAnsIdx = this.answers[q.id];
-                const correctIdx = q.options.findIndex(o => o.trim() === q.answer.trim());
+                const correctIdx = this.getCorrectAnswerIndex(q);
                 
                 if (userAnsIdx === undefined) {
                     btn.style.background = '#e2e8f0'; // missed (review mode only)
@@ -461,7 +555,7 @@ class PostUTMEEngine {
                 totalQuestions++;
                 const userAnsIdx = this.answers[q.id];
                 if (userAnsIdx !== undefined) {
-                    const correctIdx = q.options.findIndex(o => o.trim() === q.answer.trim());
+                    const correctIdx = this.getCorrectAnswerIndex(q);
                     if (userAnsIdx === correctIdx) {
                         correctAnswers++;
                     }
@@ -505,13 +599,20 @@ class PostUTMEEngine {
                     <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 20px;">
                         <div>
                             <label style="display:block; font-weight:bold; color:var(--oae-dark); margin-bottom:8px;">JAMB Score (0-400)</label>
-                            <input type="number" id="predJamb" placeholder="e.g. 250" style="width:100%; padding:14px; border-radius:10px; border:2px solid var(--card-border); outline:none; font-size:1.1rem;">
+                            <input type="number" id="predJamb" placeholder="e.g. 250" min="0" max="400" style="width:100%; padding:14px; border-radius:10px; border:2px solid var(--card-border); background:var(--body-bg); color:var(--oae-dark); outline:none; font-size:1.1rem;">
                         </div>
                         <div>
                             <label style="display:block; font-weight:bold; color:var(--oae-dark); margin-bottom:8px;">Target Course Cutoff (Optional)</label>
-                            <input type="number" id="predCutoff" placeholder="e.g. 65" style="width:100%; padding:14px; border-radius:10px; border:2px solid var(--card-border); outline:none; font-size:1.1rem;">
+                            <input type="number" id="predCutoff" placeholder="e.g. 65" style="width:100%; padding:14px; border-radius:10px; border:2px solid var(--card-border); background:var(--body-bg); color:var(--oae-dark); outline:none; font-size:1.1rem;">
                         </div>
                     </div>
+                    ${['unilag', 'oau'].includes(this.schoolKey) ? `
+                    <div style="margin-top:20px;">
+                        <label style="display:block; font-weight:bold; color:var(--oae-dark); margin-bottom:8px;">
+                            O'Level Score ${ this.schoolKey === 'unilag' ? '(out of 20)' : '(out of 10)' }
+                        </label>
+                        <input type="number" id="predOlevel" placeholder="${ this.schoolKey === 'unilag' ? 'e.g. 15' : 'e.g. 7' }" min="0" max="${ this.schoolKey === 'unilag' ? 20 : 10 }" style="width:100%; padding:14px; border-radius:10px; border:2px solid var(--card-border); background:var(--body-bg); color:var(--oae-dark); outline:none; font-size:1.1rem;">
+                    </div>` : ''}
                     <button onclick="window.postUTMEEngine.calculateAdmission(${correctAnswers}, ${totalQuestions})" style="background: #0f172a; color: white; border: none; padding: 15px 30px; border-radius: 10px; font-weight:bold; font-size:1.1rem; width:100%; margin-top:20px; cursor:pointer; transition:0.3s;">
                         Calculate Official Aggregate
                     </button>
@@ -548,19 +649,34 @@ class PostUTMEEngine {
         let percentageMock = (mockScore / maxScore) * 100;
         let formulaUsed = "";
         
+        const oLevelInput = document.getElementById('predOlevel');
+        const oLevelVal = oLevelInput ? parseFloat(oLevelInput.value) : NaN;
+
         switch(this.schoolKey) {
-            case 'unilag':
-                totalAggregate = (jamb / 8) + (mockScore / maxScore * 30) + 15; 
-                formulaUsed = "(JAMB/8) + (Post-UTME out of 30) + (O'Level Avg 15)";
+            case 'unilag': {
+                // Validate O'Level score (required for UNILAG)
+                if (isNaN(oLevelVal) || oLevelVal < 0 || oLevelVal > 20) {
+                    alert("Please enter your O'Level score (0–20) for the UNILAG formula.");
+                    return;
+                }
+                totalAggregate = (jamb / 8) + (mockScore / maxScore * 30) + oLevelVal;
+                formulaUsed = `(JAMB/8) + (Post-UTME out of 30) + (O'Level: ${oLevelVal})`;
                 break;
+            }
             case 'ui':
                 totalAggregate = (jamb / 8) + (mockScore / maxScore * 50);
                 formulaUsed = "(JAMB/8) + (Post-UTME out of 50)";
                 break;
-            case 'oau':
-                totalAggregate = (jamb / 8) + (mockScore / maxScore * 40) + 7;
-                formulaUsed = "(JAMB/8) + (Post-UTME out of 40) + (O'Level Avg 7)";
+            case 'oau': {
+                // Validate O'Level score (required for OAU)
+                if (isNaN(oLevelVal) || oLevelVal < 0 || oLevelVal > 10) {
+                    alert("Please enter your O'Level score (0–10) for the OAU formula.");
+                    return;
+                }
+                totalAggregate = (jamb / 8) + (mockScore / maxScore * 40) + oLevelVal;
+                formulaUsed = `(JAMB/8) + (Post-UTME out of 40) + (O'Level: ${oLevelVal})`;
                 break;
+            }
             case 'unn':
             case 'uniben':
             case 'abu':

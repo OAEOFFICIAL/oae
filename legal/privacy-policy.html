@@ -1,32 +1,510 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width,initial-scale=1">
-  <title>Privacy | OAE</title>
-  <link rel="stylesheet" href="Assets/css/style.css">
-  <link rel="stylesheet" href="Assets/css/navbar-footer.css">
-<link href="https://cdn.jsdelivr.net/npm/remixicon@3.5.0/fonts/remixicon.css" rel="stylesheet">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Privacy Policy | OAE</title>
+  <link rel="stylesheet" href="/Assets/css/style.css">
+  <link rel="stylesheet" href="/Assets/css/navbar.css">
+  <link rel="stylesheet" href="/Assets/css/footer.css">
+  <link rel="stylesheet" href="/Assets/css/legal.css">
+  <link href="https://cdn.jsdelivr.net/npm/remixicon@3.5.0/fonts/remixicon.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
 </head>
-<body>
-  <header class="navbar" role="banner">
-    <a class="brand" href="/" aria-label="OAE home">
-      <div class="logo"><img src="OAE.png" alt="OAE Logo" class="logo-img"></div>
+<body class="legal-page">
+
+<nav class="navbar">
+        <!-- Logo - Left side -->
+        <div class="logo-section">
+                <img src="/oae.png" alt="OAE"class="logoimg">
+        </div>
+
+        <!-- Search Section - Middle -->
+        <div class="middle-section">
+            <div class="search-section">
+                <i class="fas fa-search"></i>
+                <input type="search" id="site-search" placeholder="Search lessons, exams, careers...">
+                <button class="search-btn" id="search-btn">Search</button>
+            </div>
+        </div>
+
+        <!-- Right Navigation Section - Right side -->
+        <div class="right-section">
+            <!-- Desktop Navigation Links - TEXT BEFORE ICONS -->
+            <ul class="nav-links">
+                <li>
+                    <a href="#">
+                         <i class="fas fa-chevron-down"></i>
+                         Services <i class="fas fa-cogs"></i>
+                    </a>
+                    <div class="dropdown services-dropdown">
+                        <div class="dropdown-section">
+                            <h4> <i class="fas fa-cogs"></i> Services </h4>
+                            <ul class="dropdown-links">
+                                <li><a href="/Quizzes/index.html">Smart Quiz Arena <i class="fas fa-brain"></i></a></li>
+                                <li><a href="/admission/subject-combinations/index.html">JAMB Subject Combos <i class="fas fa-graduation-cap"></i></a></li>
+                                <li><a href="/admission/post-jamb/index.html">Post-UTME & School Screening <i class="fas fa-university"></i></a></li>
+                                <li><a href="/admission/aggregate-calculator/index.html">Aggregate Calculator <i class="fas fa-calculator"></i></a></li>
+                                <li><a href="#">Scholarships & Opportunities <i class="fas fa-award"></i></a></li>
+                                <li><a href="#">Learning Hub <i class="fas fa-book"></i></a></li>
+                                <li><a href="#">Past Questions & Solutions <i class="fas fa-file-alt"></i></a></li>
+                                <li><a href="#">Tech Careers Hub <i class="fas fa-laptop-code"></i></a></li>
+                                <li><a href="#">School Updates & News <i class="fas fa-newspaper"></i></a></li>
+                                <li><a href="#">Resources Library <i class="fas fa-book-open"></i></a></li>
+                                <li><a href="#">OAE Community <i class="fas fa-users"></i></a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <a href="#">
+                         <i class="fas fa-chevron-down"></i>
+                         Explore <i class="fas fa-compass"></i>
+                    </a>
+                    <div class="dropdown explore-dropdown">
+                        <div class="explore-grid">
+                            <!-- Learning Hub Section -->
+                            <div class="dropdown-section">
+                                <h4>Learning Hub <i class="fas fa-book"></i></h4>
+                                <ul class="dropdown-links">
+                                    <li><a href="#"><i class="fas fa-arrow-right"></i> Science <i class="fas fa-flask"></i> </a></li>
+                                    <li><a href="#"><i class="fas fa-arrow-right"></i> Art <i class="fas fa-paint-brush"></i> </a></li>
+                                    <li><a href="#"><i class="fas fa-arrow-right"></i> Commercial <i class="fas fa-chart-line"></i> </a></li>
+                                </ul>
+                            </div>
+                            
+                            <!-- Exams & Tutorials Section -->
+                            <div class="dropdown-section">
+                                <h4>Exams & Tutorials <i class="fas fa-graduation-cap"></i></h4>
+                                <ul class="dropdown-links">
+                                    <li><a href="#">JAMB <i class="fas fa-file-alt"></i></a></li>
+                                    <li><a href="#">WAEC <i class="fas fa-certificate"></i></a></li>
+                                    <li><a href="#">NECO <i class="fas fa-award"></i></a></li>
+                                    <li><a href="#">GCE <i class="fas fa-book-open"></i></a></li>
+                                    <li><a href="/admission/post-jamb/index.html">POST UTME <i class="fas fa-university"></i></a></li>
+                                </ul>
+                            </div>
+                            
+                            <!-- Tech Careers Section -->
+                            <div class="dropdown-section">
+                                <h4>Tech Careers <i class="fas fa-laptop-code"></i></h4>
+                                <ul class="dropdown-links">
+                                    <li><a href="#">Web Development <i class="fas fa-code"></i></a></li>
+                                    <li><a href="#">Mobile Development <i class="fas fa-mobile-alt"></i></a></li>
+                                    <li><a href="#">Data Science <i class="fas fa-chart-bar"></i></a></li>
+                                    <li><a href="#">Cybersecurity <i class="fas fa-shield-alt"></i></a></li>
+                                    <li><a href="#">AI & ML <i class="fas fa-robot"></i></a></li>
+                                    <li><a href="#">UI/UX Design <i class="fas fa-palette"></i></a></li>
+                                    <li><a href="#">Cloud & DevOps <i class="fas fa-cloud"></i></a></li>
+                                    <li><a href="#">Blockchain & Web3 <i class="fas fa-link"></i></a></li>
+                                    <li><a href="#">Game Development <i class="fas fa-gamepad"></i></a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+                <li><a href="#">Media TV <i class="fas fa-tv"></i></a></li>
+                <li><a href="#">Community <i class="fas fa-users"></i></a></li>
+                <li>
+    <a href="#">
+        <i class="fas fa-chevron-down"></i> Resources <i class="fas fa-book-open"></i> 
     </a>
-  </header>
 
-  <main class="section">
-    <h2>Privacy Policy</h2>
-    <p class="muted">Privacy policy will be added.</p>
-  </main>
+                       
+    <div class="dropdown resources-dropdown">
+        <div class="dropdown-section">
+            <h4>Resources <i class="fas fa-book-open"></i></h4>
+            <ul class="dropdown-links">
+                <li><a href="#">Past Questions & Solutions <i class="fas fa-file-alt"></i></a></li>
+                <li><a href="#">Study Materials Library <i class="fas fa-book"></i></a></li>
+                <li><a href="#">Study Timetables <i class="fas fa-calendar-alt"></i></a></li>
+                <li><a href="#">Exam Tips & Guides <i class="fas fa-lightbulb"></i></a></li>
+                <li><a href="#">School Updates & News <i class="fas fa-newspaper"></i></a></li>
+            </ul>
+        </div>
+    </div>
 
-  
+</li>
+            </ul>
 
-  <script src="Assets/js/home.js" defer></script>
-  <script src="Assets/js/navbar.js" defer></script>
+            <!-- Join OAE Button -->
+            <button class="join-btn">Join OAE</button>
+            
+            <!-- Hamburger Menu - Hidden on desktop, shown on mobile at right edge -->
+            <button class="hamburger">
+                <i class="fas fa-bars"></i>
+            </button>
+        </div>
 
+        <!-- Mobile Menu -->
+        <div class="mobile-menu" id="mobileMenu">
+            <ul class="mobile-links">
+                <li><a href="#"><i class="fas fa-home"></i> Home</a></li>
+                <li>
+                    <a href="#" class="mobile-dropdown-toggle">
+                        <span><i class="fas fa-cogs"></i> Services</span>
+                        <i class="fas fa-chevron-down"></i>
+                    </a>
+                    <ul class="mobile-dropdown">
+                        <li><a href="./Quizzes/index.html"><i class="fas fa-brain"></i> Smart Quiz Arena</a></li>
+                        <li><a href="/admission/subject-combinations/index.html"><i class="fas fa-graduation-cap"></i> JAMB Subject Combos</a></li>
+                        <li><a href="/admission/post-jamb/index.html"><i class="fas fa-university"></i> Post-UTME & Screening</a></li>
+                        <li><a href="/admission/aggregate-calculator/index.html"><i class="fas fa-calculator"></i> Aggregate Calculator</a></li>
+                        <li><a href="#"><i class="fas fa-award"></i> Scholarships & Opportunities</a></li>
+                        <li><a href="#"><i class="fas fa-book"></i> Learning Hub</a></li>
+                        <li><a href="#"><i class="fas fa-file-alt"></i> Past Questions & Solutions</a></li>
+                        <li><a href="#"><i class="fas fa-laptop-code"></i> Tech Careers Hub</a></li>
+                        <li><a href="#"><i class="fas fa-newspaper"></i> School Updates & News</a></li>
+                        <li><a href="#"><i class="fas fa-book-open"></i> Resources Library</a></li>
+                        <li><a href="#"><i class="fas fa-users"></i> OAE Community</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="#" class="mobile-dropdown-toggle explore-main">
+                        <span><i class="fas fa-compass"></i> Explore</span>
+                        <i class="fas fa-chevron-down"></i>
+                    </a>
+                    <ul class="mobile-dropdown">
+                        <!-- Learning Hub with nested dropdown -->
+                        <li>
+                            <a href="#" class="mobile-nested-toggle">
+                                <span><i class="fas fa-book"></i> Learning Hub</span>
+                                <i class="fas fa-chevron-down"></i>
+                            </a>
+                            <ul class="mobile-nested-dropdown">
+                                <li><a href="#"><i class="fas fa-flask"></i> Science <i class="fas fa-arrow-right"></i></a></li>
+                                <li><a href="#"><i class="fas fa-paint-brush"></i> Art <i class="fas fa-arrow-right"></i></a></li>
+                                <li><a href="#"><i class="fas fa-chart-line"></i> Commercial <i class="fas fa-arrow-right"></i></a></li>
+                            </ul>
+                        </li>
+                        
+                        <!-- Exams & Tutorials with nested dropdown -->
+                        <li>
+                            <a href="#" class="mobile-nested-toggle">
+                                <span><i class="fas fa-graduation-cap"></i> Exams & Tutorials</span>
+                                <i class="fas fa-chevron-down"></i>
+                            </a>
+                            <ul class="mobile-nested-dropdown">
+                                <li><a href="#"><i class="fas fa-file-alt"></i> JAMB</a></li>
+                                <li><a href="#"><i class="fas fa-certificate"></i> WAEC</a></li>
+                                <li><a href="#"><i class="fas fa-award"></i> NECO</a></li>
+                                <li><a href="#"><i class="fas fa-book-open"></i> GCE</a></li>
+                                <li><a href="/admission/post-jamb/index.html"><i class="fas fa-university"></i> POST UTME</a></li>
+                            </ul>
+                        </li>
+                        
+                        <!-- Tech Careers with nested dropdown -->
+                        <li>
+                            <a href="#" class="mobile-nested-toggle">
+                                <span><i class="fas fa-laptop-code"></i> Tech Careers</span>
+                                <i class="fas fa-chevron-down"></i>
+                            </a>
+                            <ul class="mobile-nested-dropdown">
+                                <li><a href="#"><i class="fas fa-code"></i> Web Development</a></li>
+                                <li><a href="#"><i class="fas fa-mobile-alt"></i> Mobile Development</a></li>
+                                <li><a href="#"><i class="fas fa-chart-bar"></i> Data Science</a></li>
+                                <li><a href="#"><i class="fas fa-shield-alt"></i> Cybersecurity</a></li>
+                                <li><a href="#"><i class="fas fa-robot"></i> AI & ML</a></li>
+                                <li><a href="#"><i class="fas fa-palette"></i> UI/UX Design</a></li>
+                                <li><a href="#"><i class="fas fa-cloud"></i> Cloud & DevOps</a></li>
+                                <li><a href="#"><i class="fas fa-link"></i> Blockchain & Web3</a></li>
+                                <li><a href="#"><i class="fas fa-gamepad"></i> Game Development</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </li>
+                <li><a href="#"><i class="fas fa-tv"></i> Media TV</a></li>
+                <li><a href="#"><i class="fas fa-users"></i> Community</a></li>
+                <li><a href="#"><i class="fas fa-book-open"></i> Resources</a></li>
+                <li><a href="#" class="join-btn-mobile" >Join OAE</a></li>
+                <li><a href="#" class="quiz-btn-mobile">Take Quiz</a></li>
+            </ul>
+        </div>
+    </nav>
 
+  <!-- Hub Header Banner -->
+  <section class="legal-header">
+    <div style="position: relative; z-index: 2;">
+      <h1>Privacy Policy</h1>
+      <p>Learn how we collect, store, and process your personal details, exam scores, and learning data under NDPR/GDPR rules.</p>
+    </div>
+  </section>
 
+  <div class="legal-container">
+    <!-- Sidebar Navigation -->
+    <aside class="legal-sidebar">
+      <h3 class="sidebar-title">Legal Policies</h3>
+      <ul class="sidebar-menu">
+        <li class=""><a href="/legal/index.html"><i class="ri-home-4-line"></i> Legal Hub</a></li>
+        <li class=""><a href="/legal/terms-and-conditions.html"><i class="ri-article-line"></i> Terms & Conditions</a></li>
+        <li class="active"><a href="/legal/privacy-policy.html"><i class="ri-shield-user-line"></i> Privacy Policy</a></li>
+        <li class=""><a href="/legal/community-guidelines.html"><i class="ri-group-line"></i> Community Guidelines</a></li>
+        <li class=""><a href="/legal/copyright-policy.html"><i class="ri-copyright-line"></i> Copyright Policy</a></li>
+        <li class=""><a href="/legal/disclaimer.html"><i class="ri-alert-line"></i> Disclaimer Notice</a></li>
+        <li class=""><a href="/legal/advertising-policy.html"><i class="ri-advertisement-line"></i> Advertising Policy</a></li>
+        <li class=""><a href="/legal/cookie-policy.html"><i class="ri-cookie-line"></i> Cookie Policy</a></li>
+      </ul>
+    </aside>
+
+    <!-- Main Content -->
+    <main class="legal-content">
+      <div class="last-updated"><i class="ri-time-line"></i> Last Updated: June 19, 2026</div>
+      
+      <p>This Privacy Policy explains how OAE (Oluwatosin Academy of Excellence) collects, uses, stores, shares, protects, and processes personal information when you visit our website, use our services, interact with our content, subscribe to updates, contact us, submit forms, join our community, or otherwise engage with OAE.</p>
+      <p>By using OAE, you agree to the practices described in this Privacy Policy. If you do not agree with this Policy, please do not use our platform.</p>
+      <p>This Privacy Policy should be read together with our Terms & Conditions, Community Guidelines, Cookie Notice, and any other policy we may publish from time to time.</p>
+
+      <h2>1. WHO WE ARE</h2>
+      <p>OAE is an educational platform that provides educational news, admission updates, tutorials, study materials, academic resources, community content, and related services to users.</p>
+      <p>For the purposes of this Privacy Policy, “OAE”, “we”, “us”, and “our” refer to Oluwatosin Academy of Excellence and its owners, admins, editors, moderators, contributors, partners, and authorized representatives.</p>
+
+      <h2>2. INFORMATION WE COLLECT</h2>
+      <p>We may collect personal information and non-personal information directly from you, automatically through our website or services, and from third parties where lawful and appropriate.</p>
+
+      <h3>A. Information you provide directly</h3>
+      <p>We may collect information when you:</p>
+      <ul>
+        <li>fill out a form</li>
+        <li>subscribe to our newsletter or updates</li>
+        <li>contact us through email, WhatsApp, phone, or website forms</li>
+        <li>comment on or interact with our content</li>
+        <li>register for an event, class, quiz, or service</li>
+        <li>submit a suggestion, complaint, file, image, or document</li>
+        <li>participate in surveys, polls, or promotions</li>
+        <li>request support or ask for information</li>
+      </ul>
+      <p>This may include:</p>
+      <ul>
+        <li>full name</li>
+        <li>email address</li>
+        <li>phone number</li>
+        <li>WhatsApp number</li>
+        <li>school or institution name</li>
+        <li>class level or academic interest</li>
+        <li>location or region</li>
+        <li>username or profile details</li>
+        <li>message content</li>
+        <li>uploaded files or attachments</li>
+        <li>payment-related details where applicable</li>
+        <li>any other information you voluntarily provide</li>
+      </ul>
+
+      <h3>B. Information collected automatically</h3>
+      <p>When you visit or use OAE, we may automatically collect:</p>
+      <ul>
+        <li>IP address</li>
+        <li>device type</li>
+        <li>browser type</li>
+        <li>operating system</li>
+        <li>pages viewed</li>
+        <li>time spent on pages</li>
+        <li>referral source</li>
+        <li>approximate location</li>
+        <li>click activity</li>
+        <li>session data</li>
+        <li>cookies and similar technologies</li>
+        <li>usage statistics</li>
+        <li>error logs</li>
+        <li>analytics information</li>
+      </ul>
+
+      <h3>C. Information from third parties</h3>
+      <p>We may receive information from:</p>
+      <ul>
+        <li>social media platforms</li>
+        <li>analytics services</li>
+        <li>advertising partners</li>
+        <li>email or messaging providers</li>
+        <li>embedded third-party tools</li>
+        <li>payment processors</li>
+        <li>other users who refer you to us</li>
+        <li>publicly available sources where lawful</li>
+      </ul>
+
+      <h2>3. HOW WE USE YOUR INFORMATION</h2>
+      <p>We may use the information we collect for the following purposes:</p>
+      <ul>
+        <li>to operate and maintain OAE</li>
+        <li>to display, improve, and personalize our content</li>
+        <li>to respond to inquiries and messages</li>
+        <li>to send updates, newsletters, announcements, and notifications</li>
+        <li>to manage community participation and moderation</li>
+        <li>to provide educational resources and related services</li>
+        <li>to process registrations, submissions, or requests</li>
+        <li>to analyze traffic, usage, and performance</li>
+        <li>to prevent fraud, abuse, spam, or misuse</li>
+        <li>to maintain security and detect suspicious activity</li>
+        <li>to comply with legal, regulatory, or contractual obligations</li>
+        <li>to communicate service changes, policy updates, or important notices</li>
+        <li>to administer promotions, partnerships, sponsorships, or campaigns</li>
+        <li>to support internal reporting and business operations</li>
+      </ul>
+
+      <h2>4. LEGAL BASES FOR PROCESSING</h2>
+      <p>We process personal data only where we have a lawful basis to do so. Depending on the situation, our legal basis may include:</p>
+      <ul>
+        <li>your consent</li>
+        <li>performance of a contract or pre-contract request</li>
+        <li>compliance with a legal obligation</li>
+        <li>protection of vital interests</li>
+        <li>performance of a task carried out in the public interest where applicable</li>
+        <li>our legitimate interests, provided those interests do not override your rights and freedoms</li>
+      </ul>
+
+      <h2>5. COOKIES AND SIMILAR TECHNOLOGIES</h2>
+      <p>OAE may use cookies, pixels, tags, scripts, and similar technologies to:</p>
+      <ul>
+        <li>remember your preferences</li>
+        <li>keep you signed in where applicable</li>
+        <li>measure website traffic and engagement</li>
+        <li>improve user experience</li>
+        <li>personalize content</li>
+        <li>support security and fraud prevention</li>
+        <li>analyze how our platform is used</li>
+      </ul>
+      <p>You can usually control cookies through your browser settings. If you disable cookies, some parts of OAE may not function properly.</p>
+
+      <h2>6. HOW WE SHARE INFORMATION</h2>
+      <p>We do not sell your personal information as a business model.</p>
+      <p>However, we may share information in the following situations:</p>
+
+      <h3>A. Service providers</h3>
+      <p>We may share data with trusted service providers who help us operate OAE, such as:</p>
+      <ul>
+        <li>hosting providers</li>
+        <li>analytics providers</li>
+        <li>email delivery services</li>
+        <li>payment processors</li>
+        <li>communication tools</li>
+        <li>security and anti-spam tools</li>
+        <li>advertising or marketing partners</li>
+        <li>technical support providers</li>
+      </ul>
+      <p>These third parties are expected to handle data responsibly and only for the purposes we authorize.</p>
+
+      <h3>B. Legal compliance</h3>
+      <p>We may disclose information if required to:</p>
+      <ul>
+        <li>comply with law</li>
+        <li>respond to a court order or legal request</li>
+        <li>cooperate with law enforcement or regulators</li>
+        <li>protect our rights, users, property, or safety</li>
+        <li>investigate suspected fraud, abuse, or illegal activity</li>
+      </ul>
+
+      <h3>C. Business transfers</h3>
+      <p>If OAE is involved in a merger, acquisition, restructuring, sale, transfer, or asset transaction, personal data may be transferred as part of that transaction, subject to applicable law.</p>
+
+      <h3>D. With your consent</h3>
+      <p>We may share your information in any other manner where you have given permission.</p>
+
+      <h2>7. USER-GENERATED CONTENT</h2>
+      <p>If you post comments, messages, or other content publicly on OAE, that content may be visible to others depending on the feature used.</p>
+      <p>Please avoid sharing sensitive personal information in public spaces. Information you choose to post publicly may be copied, shared, saved, or used by others outside our control.</p>
+
+      <h2>8. DATA RETENTION</h2>
+      <p>We retain personal information only for as long as necessary to:</p>
+      <ul>
+        <li>provide our services</li>
+        <li>fulfill the purpose for which it was collected</li>
+        <li>comply with legal, accounting, or reporting obligations</li>
+        <li>resolve disputes</li>
+        <li>enforce our agreements</li>
+        <li>maintain security and operational records</li>
+      </ul>
+      <p>When data is no longer needed, we may delete, anonymize, archive, or securely store it according to our internal retention practices and legal requirements.</p>
+
+      <h2>9. DATA SECURITY</h2>
+      <p>We use reasonable administrative, technical, and organizational safeguards to protect personal information from loss, misuse, unauthorized access, alteration, or disclosure.</p>
+      <p>However, no online system is completely secure. You acknowledge that:</p>
+      <ul>
+        <li>internet transmission may carry risks</li>
+        <li>unauthorized access may occur despite safeguards</li>
+        <li>no method of storage or transfer is 100% secure</li>
+      </ul>
+      <p>You are responsible for protecting your own device, login details, and online activity.</p>
+
+      <h2>10. YOUR RIGHTS</h2>
+      <p>Depending on applicable law and the nature of our processing, you may have rights regarding your personal data. These may include the right to:</p>
+      <ul>
+        <li>be informed about how your data is used</li>
+        <li>access your personal data</li>
+        <li>request correction or rectification</li>
+        <li>object to certain processing</li>
+        <li>request restriction of processing</li>
+        <li>request data portability</li>
+        <li>request deletion or erasure</li>
+        <li>withdraw consent where processing relies on consent</li>
+        <li>complain to the appropriate regulatory authority</li>
+        <li>not be subject to certain automated decision-making where applicable</li>
+      </ul>
+      <p>If you want to exercise any of these rights, contact us using the details in Section 18.</p>
+
+      <h2>11. CHILDREN’S PRIVACY</h2>
+      <p>OAE is an educational platform that may be used by students, including minors in some cases.</p>
+      <p>We do not knowingly collect personal data from children in a way that violates applicable law. If you are a parent, guardian, teacher, or school authority and believe a child has provided personal information to us improperly, contact us so we can review and take appropriate action.</p>
+      <p>Where required by law, we may ask for parental or guardian consent before collecting certain information from minors.</p>
+
+      <h2>12. THIRD-PARTY LINKS AND EMBEDS</h2>
+      <p>OAE may contain links, embedded content, forms, videos, social media plugins, or other third-party elements. Those services have their own privacy policies and terms.</p>
+      <p>We are not responsible for the privacy practices, content, or security of third-party websites or services that we do not control. You should review their policies before providing personal information.</p>
+
+      <h2>13. EMAILS, NEWSLETTERS, AND NOTIFICATIONS</h2>
+      <p>If you subscribe to OAE updates, we may send:</p>
+      <ul>
+        <li>educational news</li>
+        <li>admission updates</li>
+        <li>announcements</li>
+        <li>class reminders</li>
+        <li>policy updates</li>
+        <li>promotional or sponsored messages where permitted</li>
+        <li>platform notifications</li>
+      </ul>
+      <p>You may opt out of non-essential communications at any time by following the unsubscribe steps in the message or contacting us directly.</p>
+
+      <h2>14. ADVERTISING, SPONSORSHIP, AND AFFILIATE LINKS</h2>
+      <p>OAE may display advertisements, sponsored content, affiliate links, or partner promotions.</p>
+      <p>These features may involve the use of tracking tools or third-party technologies. We do not control the privacy practices of advertisers or affiliate partners, and their collection of data is governed by their own policies.</p>
+
+      <h2>15. INTERNATIONAL DATA TRANSFERS</h2>
+      <p>If your data is processed, stored, or accessed outside your country, we will take reasonable steps to ensure appropriate safeguards are in place where required by law.</p>
+      <p>By using OAE, you understand that information may be transferred to and processed in locations where data protection laws may differ from those in your country.</p>
+
+      <h2>16. YOUR RESPONSIBILITY</h2>
+      <p>You are responsible for:</p>
+      <ul>
+        <li>providing accurate information</li>
+        <li>keeping your contact details up to date</li>
+        <li>protecting your login credentials where applicable</li>
+        <li>avoiding the submission of unnecessary sensitive information</li>
+        <li>reviewing the privacy settings of third-party platforms you use alongside OAE</li>
+      </ul>
+
+      <h2>17. CHANGES TO THIS POLICY</h2>
+      <p>We may update this Privacy Policy from time to time to reflect changes in our practices, legal requirements, technology, or services.</p>
+      <p>When we make changes, we may:</p>
+      <ul>
+        <li>post the revised version on this page</li>
+        <li>update the “Last Updated” date</li>
+        <li>notify users through the website or other reasonable channels where appropriate</li>
+      </ul>
+      <p>Continued use of OAE after changes means you accept the updated Privacy Policy.</p>
+
+      <h2>18. CONTACT US</h2>
+      <p>If you have questions, requests, complaints, or concerns about this Privacy Policy or your personal data, contact us at:</p>
+      <div class="placeholder-text">
+        <strong>OAE (Oluwatosin Academy of Excellence)</strong><br>
+        Email: <a href="mailto:oaeofficial123@gmail.com">oaeofficial123@gmail.com</a><br>
+        Phone/WhatsApp: +234 705 176 3835<br>
+        Website: <a href="https://oaeofficial.com">oaeofficial.com</a><br>
+        Address: Lagos, Nigeria<br>
+        Privacy Contact: <a href="mailto:oaeofficial123@gmail.com">oaeofficial123@gmail.com</a>
+      </div>
+
+      <h2>19. COMPLAINTS AND ESCALATION</h2>
+      <p>If you believe your privacy rights have been violated, please contact us first so we can review the issue. If needed, you may also contact the appropriate data protection authority in your jurisdiction.</p>
+\n    </main>
+  </div>
 
 <footer class="oae-footer">
 
@@ -111,13 +589,19 @@
     <p>🌍 Trusted by <strong>15,000+ learners</strong> across Nigeria, Africa, and the world.</p>
     <p>© 2025 OAE — Oluwatosin Academy of Excellence. All rights reserved.</p>
 
-    <div class="legal-links">
-      <a href="#">Terms of Use</a>
-      <a href="#">Privacy Policy</a>
-      <a href="#">Cookie Notice</a>
-      <a href="#">Accessibility</a>
+        <div class="legal-links">
+      <a href="/legal/terms-and-conditions.html">Terms & Conditions</a>
+      <a href="/legal/privacy-policy.html">Privacy Policy</a>
+      <a href="/legal/community-guidelines.html">Community</a>
+      <a href="/legal/disclaimer.html">Disclaimer</a>
+      <a href="/legal/copyright-policy.html">Copyright</a>
+      <a href="/legal/advertising-policy.html">Advertising</a>
+      <a href="/legal/cookie-policy.html">Cookie Policy</a>
     </div>
   </div>
-
 </footer>
+
+  <script src="/Assets/js/home.js" defer></script>
+  <script src="/Assets/js/navbar.js" defer></script>
+</body>
 </html>
